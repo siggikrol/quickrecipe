@@ -1,0 +1,24 @@
+{
+  "name": "quickrecipe",
+  "version": "1.0.0",
+  "description": "My recipes",
+  "main": "sw.js",
+  "scripts": {
+    "test": "node smoke-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siggikrol/quickrecipe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/siggikrol/quickrecipe/issues"
+  },
+  "homepage": "https://github.com/siggikrol/quickrecipe#readme",
+  "dependencies": {
+    "jsdom": "^30.0.1"
+  }
+}
