@@ -620,5 +620,928 @@
       "Slowly drizzle in olive oil while whisking until emulsified.",
       "Stir in Parmesan. Season with pepper and salt if needed."
     ]
+  },
+
+  {
+    "id": "gotteri-blaberja-ostakaka",
+    "category": "Cheesecake",
+    "title": "Bláberjasostakaka",
+    "desc": "Baked blueberry cheesecake with a digestive base and berry jelly topping.",
+    "yield": "1 × 24–26 cm",
+    "prep": "20 min",
+    "bake": "30 min",
+    "tempC": 180,
+    "ingredients": [
+      ["Digestive biscuits", 300, "g", "other"],
+      ["Brown sugar — base", 25, "g", "sugar"],
+      ["Butter — base", 120, "g", "fat"],
+      ["Philadelphia cream cheese", 600, "g", "dairy"],
+      ["Lemon juice", 15, "ml", "liquid"],
+      ["Blueberry jam", 45, "g", "other"],
+      ["Sugar", 100, "g", "sugar"],
+      ["Eggs", 3, "pc", "egg"],
+      ["Blueberry juice", 350, "ml", "liquid"],
+      ["Gelatin powder (Melatin Blue)", 1, "sachet", "other"],
+      ["Fresh blueberries — topping", 100, "g", "fruit"]
+    ],
+    "steps": [
+      "Heat oven to 180°C. Crush biscuits, mix with brown sugar and melted butter, press into base and sides of a 24–26 cm springform. Bake 5 min.",
+      "Beat cream cheese, lemon juice, blueberry jam, sugar and eggs until smooth.",
+      "Pour over the pre-baked base and bake 25 min. Cool at room temperature then refrigerate several hours.",
+      "Bring blueberry juice to a boil with gelatin powder as directed, add food colouring if desired. Pour jelly over the cold cake and decorate with fresh blueberries."
+    ]
+  },
+  {
+    "id": "gotteri-vanillu-ostakaka-berjasosu",
+    "category": "Cheesecake",
+    "title": "Vanillu Ostakaka með Berjasósu",
+    "desc": "No-bake vanilla cheesecake with a warm mixed berry sauce.",
+    "yield": "1 × 20 cm or 8 glasses",
+    "prep": "30 min",
+    "ingredients": [
+      ["Digestive oat biscuits", 130, "g", "other"],
+      ["Lu Bastogne biscuits", 70, "g", "other"],
+      ["Butter — base", 90, "g", "fat"],
+      ["Philadelphia cream cheese", 250, "g", "dairy"],
+      ["Sugar", 50, "g", "sugar"],
+      ["Vanilla pod seeds", 1, "pc", "other"],
+      ["Vanilla extract", 5, "ml", "liquid"],
+      ["Double cream", 250, "ml", "liquid"],
+      ["Mixed frozen berries", 300, "g", "fruit"],
+      ["Sugar — berry sauce", 120, "g", "sugar"],
+      ["Lemon juice", 10, "ml", "liquid"]
+    ],
+    "steps": [
+      "Melt butter, crush biscuits, mix together and press into a 20 cm springform. Chill.",
+      "Beat cream cheese and sugar until light. Add vanilla seeds and extract.",
+      "Whip cream and fold gently into the cream cheese mixture. Pour over base and chill.",
+      "Simmer berries, sugar and lemon juice 10–15 min until saucy. Cool, then pour over the cake."
+    ]
+  },
+  {
+    "id": "gotteri-berjabomba",
+    "category": "Cheesecake",
+    "title": "Berjabomba",
+    "desc": "No-bake vanilla cheesecake piled high with fresh strawberries, raspberries, blueberries and redcurrants.",
+    "yield": "1 × 25 cm",
+    "prep": "25 min",
+    "ingredients": [
+      ["Digestive biscuits", 250, "g", "other"],
+      ["Sugar — base", 25, "g", "sugar"],
+      ["Butter — base", 100, "g", "fat"],
+      ["Salt — base", 2, "g", "salt"],
+      ["Philadelphia cream cheese", 270, "g", "dairy"],
+      ["Icing sugar", 130, "g", "sugar"],
+      ["Vanilla skyr", 130, "g", "dairy"],
+      ["Vanilla extract", 10, "ml", "liquid"],
+      ["Vanilla pod seeds", 1, "pc", "other"],
+      ["Salt", 1, "g", "salt"],
+      ["Double cream", 350, "ml", "liquid"],
+      ["Mixed fresh berries — topping", 400, "g", "fruit"]
+    ],
+    "steps": [
+      "Crush biscuits, mix with sugar, salt and melted butter and press into a 25 cm springform.",
+      "Beat cream cheese, then mix in icing sugar, skyr, vanilla extract, vanilla seeds and salt.",
+      "Whip cream and fold into the mixture. Pour over base and refrigerate overnight.",
+      "Top generously with fresh mixed berries before serving."
+    ]
+  },
+  {
+    "id": "gotteri-oreo-ostakaka-brownies",
+    "category": "Cheesecake",
+    "title": "Oreo Ostakakubrownies",
+    "desc": "Fudgy chocolate brownie swirled with vanilla cream cheese and crushed Oreos.",
+    "yield": "1 × 22×22 cm tin",
+    "prep": "20 min",
+    "bake": "25 min",
+    "tempC": 175,
+    "ingredients": [
+      ["Butter", 120, "g", "fat"],
+      ["Sugar", 100, "g", "sugar"],
+      ["Eggs", 2, "pc", "egg"],
+      ["Philadelphia cream cheese", 200, "g", "dairy"],
+      ["Icing sugar", 90, "g", "sugar"],
+      ["Vanilla extract", 10, "ml", "liquid"],
+      ["Plain flour", 110, "g", "flour"],
+      ["Cocoa powder", 25, "g", "cocoa"],
+      ["Salt", 2, "g", "salt"],
+      ["Dark chocolate — melted", 100, "g", "chocolate"],
+      ["Oreo biscuits — crushed", 12, "pc", "other"],
+      ["Oreo biscuits — topping", 4, "pc", "other"]
+    ],
+    "steps": [
+      "Heat oven to 175°C. Melt butter with sugar.",
+      "Beat cream cheese, icing sugar and vanilla until smooth.",
+      "Beat eggs, add butter-sugar mixture, flour, cocoa, salt, melted chocolate and 12 crushed Oreos.",
+      "Spread half the brownie batter in the tin, pour cream cheese mixture over, dot remaining batter on top and swirl with a skewer. Crush 4 Oreos over the top. Bake 25 min."
+    ]
+  },
+  {
+    "id": "gotteri-gudddomleg-oreo-ostakaka",
+    "category": "Cheesecake",
+    "title": "Guðdómleg Oreo Ostakaka",
+    "desc": "Triple-layer no-bake Oreo cheesecake served in glasses — white, chocolate and Oreo layers.",
+    "yield": "10–12 glasses",
+    "prep": "30 min",
+    "ingredients": [
+      ["Oreo biscuits — base", 18, "pc", "other"],
+      ["Dark chocolate", 200, "g", "chocolate"],
+      ["Double cream — chocolate", 50, "ml", "liquid"],
+      ["Double cream", 500, "ml", "liquid"],
+      ["Philadelphia cream cheese", 300, "g", "dairy"],
+      ["Icing sugar", 150, "g", "sugar"],
+      ["Vanilla extract", 10, "ml", "liquid"],
+      ["Oreo biscuits — filling, roughly crushed", 15, "pc", "other"],
+      ["Double cream — topping", 300, "ml", "liquid"],
+      ["Oreo biscuits — topping", 10, "pc", "other"]
+    ],
+    "steps": [
+      "Crush Oreos for base. Melt chocolate with 50 ml cream and cool.",
+      "Whip 500 ml cream. Beat cream cheese, icing sugar and vanilla, then fold in whipped cream.",
+      "Divide into 3 portions: leave one plain, fold chocolate into one, fold roughly crushed Oreos into one.",
+      "Layer in glasses: Oreo crumbs → white layer → Oreo layer → chocolate layer. Chill 2–3 hours. Top with whipped cream and whole Oreos."
+    ]
+  },
+  {
+    "id": "gotteri-toblerone-ostakaka",
+    "category": "Cheesecake",
+    "title": "Toblerone Ostakaka",
+    "desc": "No-bake Toblerone cheesecake with a raspberry swirl, on an Oreo base.",
+    "yield": "1 × 20 cm",
+    "prep": "25 min",
+    "ingredients": [
+      ["Oreo biscuits", 16, "pc", "other"],
+      ["Butter — base", 70, "g", "fat"],
+      ["Philadelphia cream cheese", 500, "g", "dairy"],
+      ["Sugar", 170, "g", "sugar"],
+      ["Cocoa powder", 15, "g", "cocoa"],
+      ["Gelatin leaves", 3, "pc", "other"],
+      ["Boiling water — gelatin", 60, "ml", "liquid"],
+      ["Toblerone — melted", 200, "g", "chocolate"],
+      ["Vanilla extract", 5, "ml", "liquid"],
+      ["Double cream — lightly whipped", 250, "ml", "liquid"],
+      ["Raspberries — puréed", 125, "g", "fruit"]
+    ],
+    "steps": [
+      "Press crushed Oreos and melted butter into a 20 cm springform. Chill 1 hour.",
+      "Soak gelatin leaves, dissolve in 60 ml boiling water and cool to room temperature.",
+      "Beat cream cheese and sugar; add cocoa, gelatin, melted Toblerone and vanilla. Fold in lightly whipped cream.",
+      "Pour into tin, drizzle raspberry purée over and drag a knife through for a swirl. Chill until set."
+    ]
+  },
+  {
+    "id": "gotteri-daim-ostakaka",
+    "category": "Cheesecake",
+    "title": "Daim Ostakaka",
+    "desc": "No-bake white Toblerone cheesecake loaded with crushed Daim on a Bastogne base.",
+    "yield": "1 × 20 cm",
+    "prep": "25 min",
+    "ingredients": [
+      ["Lu Bastogne biscuits", 200, "g", "other"],
+      ["Butter — base", 60, "g", "fat"],
+      ["Philadelphia cream cheese", 600, "g", "dairy"],
+      ["Sugar", 150, "g", "sugar"],
+      ["Icing sugar", 100, "g", "sugar"],
+      ["White Toblerone — melted", 200, "g", "chocolate"],
+      ["Gelatin leaves", 3, "pc", "other"],
+      ["Boiling water — gelatin", 60, "ml", "liquid"],
+      ["Vanilla sugar", 10, "g", "sugar"],
+      ["Daim — roughly crushed", 150, "g", "other"],
+      ["Double cream", 250, "ml", "liquid"]
+    ],
+    "steps": [
+      "Press crushed Bastogne biscuits and melted butter into a 20 cm springform. Chill.",
+      "Soak gelatin leaves then dissolve in 60 ml boiling water. Melt white Toblerone.",
+      "Beat cream cheese, sugar, icing sugar and vanilla sugar. Mix in gelatin and melted Toblerone.",
+      "Fold in whipped cream and crushed Daim. Pour into tin and chill at least 4 hours."
+    ]
+  },
+  {
+    "id": "gotteri-biscoff-ostakaka",
+    "category": "Cheesecake",
+    "title": "Biscoff Ostakaka",
+    "desc": "No-bake Biscoff cheesecake on a cinnamon biscuit base with a drizzled Biscoff topping.",
+    "yield": "1 × 18–20 cm",
+    "prep": "20 min",
+    "ingredients": [
+      ["Lu Bastogne cinnamon biscuits", 200, "g", "other"],
+      ["Butter — base", 100, "g", "fat"],
+      ["Cream cheese", 100, "g", "dairy"],
+      ["Biscoff spread", 150, "g", "other"],
+      ["Icing sugar", 50, "g", "sugar"],
+      ["Vanilla sugar", 10, "g", "sugar"],
+      ["Double cream", 400, "ml", "liquid"],
+      ["Biscoff spread — topping", 30, "g", "other"]
+    ],
+    "steps": [
+      "Press crushed biscuits and melted butter into an 18–20 cm springform. Chill.",
+      "Beat cream cheese and Biscoff spread until smooth. Add icing sugar and vanilla sugar.",
+      "Fold in whipped cream, pour into tin and chill until set.",
+      "Warm remaining Biscoff spread slightly and drizzle over the top with a sprinkle of biscuit crumbs."
+    ]
+  },
+  {
+    "id": "gotteri-jardarberja-ostakaka",
+    "category": "Cheesecake",
+    "title": "Jarðarberja Ostakaka",
+    "desc": "No-bake strawberry cheesecake on an Oreo base, topped with whole strawberries and dark chocolate.",
+    "yield": "1 × 20 cm",
+    "prep": "25 min",
+    "ingredients": [
+      ["Oreo biscuits", 16, "pc", "other"],
+      ["Butter — base", 70, "g", "fat"],
+      ["Gelatin leaves", 4, "pc", "other"],
+      ["Boiling water — gelatin", 50, "ml", "liquid"],
+      ["Philadelphia cream cheese", 500, "g", "dairy"],
+      ["Sugar", 150, "g", "sugar"],
+      ["Icing sugar", 100, "g", "sugar"],
+      ["Vanilla sugar", 10, "g", "sugar"],
+      ["Fresh strawberries — puréed", 200, "g", "fruit"],
+      ["Double cream", 250, "ml", "liquid"],
+      ["Fresh strawberries — topping", 400, "g", "fruit"],
+      ["Dark chocolate — melted", 80, "g", "chocolate"]
+    ],
+    "steps": [
+      "Press crushed Oreos and melted butter into a 20 cm springform.",
+      "Soak gelatin then dissolve in 50 ml boiling water. Beat cream cheese, sugar, icing sugar and vanilla sugar. Add strawberry purée and gelatin.",
+      "Fold in whipped cream and pour over base. Chill until set.",
+      "Arrange whole strawberries over the top and drizzle with melted dark chocolate."
+    ]
+  },
+  {
+    "id": "gotteri-lemon-curd-ostakaka",
+    "category": "Cheesecake",
+    "title": "Lemon Curd Ostakaka",
+    "desc": "Light no-bake lemon curd cheesecake served in individual glasses on an oat biscuit base.",
+    "yield": "6–8 glasses",
+    "prep": "20 min",
+    "ingredients": [
+      ["Oat biscuits", 200, "g", "other"],
+      ["Butter — base", 40, "g", "fat"],
+      ["Cream cheese", 350, "g", "dairy"],
+      ["Sugar", 150, "g", "sugar"],
+      ["Vanilla sugar", 5, "g", "sugar"],
+      ["Lemon curd", 80, "g", "other"],
+      ["Double cream", 400, "ml", "liquid"],
+      ["Lemon curd — topping", 30, "g", "other"]
+    ],
+    "steps": [
+      "Crush biscuits, mix with melted butter and divide between glasses.",
+      "Beat cream cheese, sugar and vanilla sugar. Stir in lemon curd gently.",
+      "Fold in whipped cream. Pipe into glasses and top with a spoonful of lemon curd and a pinch of biscuit crumbs."
+    ]
+  },
+  {
+    "id": "gotteri-espresso-martini-ostakaka",
+    "category": "Cheesecake",
+    "title": "Espresso Martini Ostakaka",
+    "desc": "No-bake espresso martini cheesecake in glasses — bold coffee and dark chocolate, finished with coffee beans.",
+    "yield": "6 glasses",
+    "prep": "20 min",
+    "ingredients": [
+      ["Oreo biscuits", 12, "pc", "other"],
+      ["Butter — base", 40, "g", "fat"],
+      ["Cream cheese", 500, "g", "dairy"],
+      ["Sugar", 160, "g", "sugar"],
+      ["Cocoa powder", 15, "g", "cocoa"],
+      ["Vanilla sugar", 10, "g", "sugar"],
+      ["Strong espresso", 50, "ml", "liquid"],
+      ["Dark chocolate — melted", 100, "g", "chocolate"],
+      ["Double cream", 300, "ml", "liquid"],
+      ["Coffee beans — garnish", 12, "pc", "other"]
+    ],
+    "steps": [
+      "Crush Oreos with melted butter and press into the base of each glass.",
+      "Beat cream cheese, sugar, cocoa and vanilla sugar. Add espresso and melted chocolate and mix well.",
+      "Fold in whipped cream with a spatula. Pipe into glasses, chill, then dust with cocoa and garnish with coffee beans."
+    ]
+  },
+  {
+    "id": "gotteri-pekanhnetu-ostakaka",
+    "category": "Cheesecake",
+    "title": "Pekanhnetu Ostakaka",
+    "desc": "No-bake cheesecake with a caramelised pecan and oat biscuit base, set with coffee gelatin.",
+    "yield": "1 × 20 cm, 10–12 servings",
+    "prep": "35 min",
+    "ingredients": [
+      ["Pecans", 200, "g", "other"],
+      ["Brown sugar — caramel", 50, "g", "sugar"],
+      ["Butter — caramel", 20, "g", "fat"],
+      ["McVities oat biscuits", 200, "g", "other"],
+      ["Butter — base", 70, "g", "fat"],
+      ["Cream cheese", 500, "g", "dairy"],
+      ["Brown sugar", 120, "g", "sugar"],
+      ["Icing sugar", 90, "g", "sugar"],
+      ["Gelatin leaves", 4, "pc", "other"],
+      ["Hot strong coffee — gelatin", 50, "ml", "liquid"],
+      ["Vanilla pod seeds", 1, "pc", "other"],
+      ["Double cream", 250, "ml", "liquid"]
+    ],
+    "steps": [
+      "Melt sugar and butter in a pan, toss in pecans, cool on baking paper and roughly chop.",
+      "Blitz biscuits and 100 g of the caramel pecans in a food processor, mix with melted butter and press into a 20 cm springform.",
+      "Dissolve soaked gelatin in 50 ml hot coffee and cool. Beat cream cheese, brown sugar, icing sugar and vanilla seeds. Stir in gelatin.",
+      "Fold in whipped cream. Pour into tin, chill until set and top with remaining caramel pecans."
+    ]
+  },
+  {
+    "id": "gotteri-flamberud-ostakaka",
+    "category": "Cheesecake",
+    "title": "Flamberuð Ostakaka",
+    "desc": "Dark chocolate and liquorice cheesecake topped with a blowtorch-torched Italian meringue.",
+    "yield": "1 × 20 cm",
+    "prep": "35 min",
+    "ingredients": [
+      ["Chocolate cream biscuits / Oreo", 200, "g", "other"],
+      ["Butter — base", 60, "g", "fat"],
+      ["Gelatin leaves", 4, "pc", "other"],
+      ["Boiling water — gelatin", 50, "ml", "liquid"],
+      ["Cream cheese", 500, "g", "dairy"],
+      ["Sugar", 150, "g", "sugar"],
+      ["Dark chocolate — melted", 200, "g", "chocolate"],
+      ["Vanilla sugar", 5, "g", "sugar"],
+      ["Double cream", 250, "ml", "liquid"],
+      ["Liquorice caramel balls — chopped", 60, "g", "other"],
+      ["Egg whites — meringue", 3, "pc", "egg"],
+      ["Sugar — meringue", 170, "g", "sugar"],
+      ["Cream of tartar", 2, "g", "other"],
+      ["Vanilla extract", 5, "ml", "liquid"],
+      ["Salt", 1, "g", "salt"]
+    ],
+    "steps": [
+      "Press crushed biscuits and melted butter into a 20 cm springform. Chill.",
+      "Dissolve soaked gelatin in 50 ml boiling water. Beat cream cheese and sugar; add vanilla, melted chocolate and gelatin. Fold in whipped cream and chopped liquorice balls. Chill until set.",
+      "Beat egg whites with cream of tartar, sugar, vanilla and salt to stiff glossy peaks. Pipe over the cheesecake and torch with a blowtorch until golden."
+    ]
+  },
+  {
+    "id": "gotteri-ostakaka-appelsinu",
+    "category": "Cheesecake",
+    "title": "Ostakaka með Appelsínukeim",
+    "desc": "No-bake white Toblerone cheesecake with a fresh orange and vanilla flavour.",
+    "yield": "1 × 20 cm",
+    "prep": "25 min",
+    "ingredients": [
+      ["Lu Bastogne Duo biscuits", 260, "g", "other"],
+      ["Butter — base", 40, "g", "fat"],
+      ["Orange — juice and zest", 1, "pc", "fruit"],
+      ["Gelatin leaves", 4, "pc", "other"],
+      ["Cream cheese", 500, "g", "dairy"],
+      ["Sugar", 180, "g", "sugar"],
+      ["Vanilla pod seeds", 1, "pc", "other"],
+      ["White Toblerone — melted", 200, "g", "chocolate"],
+      ["Double cream", 250, "ml", "liquid"]
+    ],
+    "steps": [
+      "Press crushed biscuits and melted butter into a 20 cm springform. Chill.",
+      "Heat orange juice and zest to a simmer, dissolve soaked gelatin in it and cool to room temperature.",
+      "Melt Toblerone. Beat cream cheese, sugar and vanilla seeds; mix in Toblerone and orange gelatin.",
+      "Fold in whipped cream and pour into tin. Chill until set."
+    ]
+  },
+  {
+    "id": "gotteri-hatidleg-ostakaka",
+    "category": "Cheesecake",
+    "title": "Hátíðleg Ostakaka",
+    "desc": "Festive no-bake white Toblerone cheesecake with Daim bites on an Oreo base.",
+    "yield": "1 × 20 cm",
+    "prep": "25 min",
+    "ingredients": [
+      ["Oreo biscuits", 16, "pc", "other"],
+      ["Butter — base", 70, "g", "fat"],
+      ["Cream cheese", 500, "g", "dairy"],
+      ["Sugar", 150, "g", "sugar"],
+      ["Icing sugar", 100, "g", "sugar"],
+      ["White Toblerone — melted", 200, "g", "chocolate"],
+      ["Gelatin leaves", 3, "pc", "other"],
+      ["Boiling water — gelatin", 60, "ml", "liquid"],
+      ["Vanilla sugar", 10, "g", "sugar"],
+      ["Marabou Daim bites — roughly chopped", 150, "g", "other"],
+      ["Double cream", 250, "ml", "liquid"]
+    ],
+    "steps": [
+      "Press crushed Oreos and melted butter into a 20 cm springform.",
+      "Dissolve soaked gelatin in 60 ml boiling water. Beat cream cheese, sugar, icing sugar and vanilla sugar; add gelatin and melted Toblerone.",
+      "Fold in whipped cream and chopped Daim bites. Pour into tin and chill overnight."
+    ]
+  },
+  {
+    "id": "gotteri-ostakokubomba",
+    "category": "Cheesecake",
+    "title": "Ostakökubomba",
+    "desc": "No-bake vanilla cheesecake with a cherry swirl, on a fudgy brownie base, topped with torched meringue.",
+    "yield": "1 × 20–22 cm",
+    "prep": "35 min",
+    "bake": "25 min",
+    "tempC": 160,
+    "ingredients": [
+      ["Butter — brownie", 60, "g", "fat"],
+      ["Dark chocolate — brownie", 200, "g", "chocolate"],
+      ["Brown sugar — brownie", 80, "g", "sugar"],
+      ["Vanilla extract — brownie", 5, "ml", "liquid"],
+      ["Egg — brownie", 1, "pc", "egg"],
+      ["Plain flour — brownie", 70, "g", "flour"],
+      ["Gelatin leaves", 4, "pc", "other"],
+      ["Boiling water — gelatin", 40, "ml", "liquid"],
+      ["Cream cheese", 500, "g", "dairy"],
+      ["Sugar", 125, "g", "sugar"],
+      ["Icing sugar", 100, "g", "sugar"],
+      ["Vanilla pod seeds", 1, "pc", "other"],
+      ["Double cream", 250, "ml", "liquid"],
+      ["Black cherry jam", 160, "g", "other"],
+      ["Egg whites — meringue", 3, "pc", "egg"],
+      ["Salt — meringue", 1, "g", "salt"],
+      ["Icing sugar — meringue", 250, "g", "sugar"],
+      ["Vanilla extract — meringue", 5, "ml", "liquid"]
+    ],
+    "steps": [
+      "Bake brownie base: melt butter and chocolate, mix in sugar, vanilla, egg and flour. Bake at 160°C for 25 min. Cool.",
+      "Dissolve soaked gelatin in 40 ml boiling water. Beat cream cheese, sugar, icing sugar and vanilla seeds. Add gelatin and whipped cream, then swirl in cherry jam. Pour over brownie. Chill.",
+      "Beat egg whites with salt and icing sugar to stiff peaks. Pipe over the cheesecake and torch until golden."
+    ]
+  },
+  {
+    "id": "gotteri-rolo-ostakaka",
+    "category": "Cheesecake",
+    "title": "Rolo Ostakaka",
+    "desc": "No-bake vanilla cheesecake studded with Rolo caramel chocolates.",
+    "yield": "1 × 22 cm",
+    "prep": "25 min",
+    "ingredients": [
+      ["Homeblest biscuits / digestive", 200, "g", "other"],
+      ["Butter — base", 60, "g", "fat"],
+      ["Gelatin leaves", 4, "pc", "other"],
+      ["Boiling water — gelatin", 50, "ml", "liquid"],
+      ["Cream cheese", 600, "g", "dairy"],
+      ["Sugar", 150, "g", "sugar"],
+      ["Icing sugar", 120, "g", "sugar"],
+      ["Vanilla pod seeds", 1, "pc", "other"],
+      ["Double cream", 300, "ml", "liquid"],
+      ["Rolo chocolates — halved", 166, "g", "other"]
+    ],
+    "steps": [
+      "Press crushed biscuits and melted butter into a 22 cm springform.",
+      "Soak gelatin, dissolve in 50 ml boiling water, cool to room temperature.",
+      "Beat cream cheese, sugar, icing sugar and vanilla seeds. Mix in gelatin.",
+      "Fold in whipped cream and halved Rolo pieces. Pour into tin and chill until set."
+    ]
+  },
+  {
+    "id": "gotteri-hatidarostakaka-glос",
+    "category": "Cheesecake",
+    "title": "Hátíðarostakaka í Glösum",
+    "desc": "Light no-bake vanilla cheesecake in glasses with a warm Dumle caramel sauce and fresh berries.",
+    "yield": "8–12 glasses",
+    "prep": "20 min",
+    "ingredients": [
+      ["Oreo biscuits — crushed", 30, "pc", "other"],
+      ["Butter — base", 50, "g", "fat"],
+      ["Cream cheese", 500, "g", "dairy"],
+      ["Sugar", 270, "g", "sugar"],
+      ["Vanilla sugar", 10, "g", "sugar"],
+      ["Double cream", 500, "ml", "liquid"],
+      ["Dumle Polka caramels", 230, "g", "other"],
+      ["Double cream — caramel", 100, "ml", "liquid"],
+      ["Fresh mixed berries — garnish", 200, "g", "fruit"]
+    ],
+    "steps": [
+      "Mix crushed Oreos with melted butter and press 1 tbsp into the base of each glass.",
+      "Beat cream cheese, sugar and vanilla sugar. Fold in whipped cream and divide between glasses.",
+      "Melt Dumle caramels with 100 ml cream in a saucepan, cool to room temperature and spoon over each cheesecake. Garnish with berries."
+    ]
+  },
+  {
+    "id": "gotteri-ostakaka-karamella-kanilkex",
+    "category": "Cheesecake",
+    "title": "Ostakaka með Karamellu og Kanilkexi",
+    "desc": "No-bake vanilla cheesecake in glasses with a homemade brown-sugar caramel on a cinnamon biscuit base.",
+    "yield": "6–8 glasses",
+    "prep": "20 min",
+    "ingredients": [
+      ["Spiced cream biscuits (Jóla kremkex)", 170, "g", "other"],
+      ["Cream cheese", 400, "g", "dairy"],
+      ["Sugar", 180, "g", "sugar"],
+      ["Vanilla pod seeds", 1, "pc", "other"],
+      ["Double cream", 400, "ml", "liquid"],
+      ["Butter — caramel", 60, "g", "fat"],
+      ["Brown sugar — caramel", 110, "g", "sugar"],
+      ["Double cream — caramel", 80, "ml", "liquid"]
+    ],
+    "steps": [
+      "Divide crushed biscuits between glasses.",
+      "Beat cream cheese, sugar and vanilla seeds. Fold in whipped cream and pipe into glasses.",
+      "Melt butter with brown sugar and cream in a saucepan until sugar dissolves. Cool and spoon over each glass."
+    ]
+  },
+  {
+    "id": "gotteri-hatidleg-hindberja-ostakaka",
+    "category": "Cheesecake",
+    "title": "Hátíðleg Hindberja Ostakaka",
+    "desc": "No-bake white Toblerone and raspberry cheesecake — soft pink, elegant and fruity.",
+    "yield": "1 × 18–20 cm",
+    "prep": "25 min",
+    "ingredients": [
+      ["Lu Bastogne biscuits", 200, "g", "other"],
+      ["Butter — base", 70, "g", "fat"],
+      ["Philadelphia cream cheese", 400, "g", "dairy"],
+      ["Sugar", 120, "g", "sugar"],
+      ["Icing sugar", 50, "g", "sugar"],
+      ["Gelatin leaves", 3, "pc", "other"],
+      ["Boiling water — gelatin", 50, "ml", "liquid"],
+      ["Vanilla sugar", 10, "g", "sugar"],
+      ["White Toblerone — melted", 200, "g", "chocolate"],
+      ["Double cream", 200, "ml", "liquid"],
+      ["Fresh raspberries — mashed", 150, "g", "fruit"],
+      ["Fresh raspberries — topping", 200, "g", "fruit"]
+    ],
+    "steps": [
+      "Press crushed biscuits and melted butter into an 18–20 cm springform.",
+      "Dissolve soaked gelatin in 50 ml boiling water. Beat cream cheese, sugar and icing sugar; add vanilla, melted Toblerone and gelatin.",
+      "Fold in whipped cream and mashed raspberries. Chill until set. Top with fresh raspberries and a dusting of icing sugar."
+    ]
+  },
+  {
+    "id": "gotteri-sernik",
+    "category": "Cheesecake",
+    "title": "Sernik — Pólska Ostakaka",
+    "desc": "Traditional Polish baked cheesecake (Sernik) made with Twaróg curd cheese and a crumble top.",
+    "yield": "1 × 24–26 cm",
+    "prep": "35 min",
+    "bake": "85 min",
+    "tempC": 180,
+    "ingredients": [
+      ["Plain flour — pastry", 250, "g", "flour"],
+      ["Cocoa powder — pastry", 25, "g", "cocoa"],
+      ["Sugar — pastry", 100, "g", "sugar"],
+      ["Baking powder — pastry", 4, "g", "leavener"],
+      ["Salt — pastry", 1, "g", "salt"],
+      ["Cold butter — pastry", 150, "g", "fat"],
+      ["Egg yolk — pastry", 1, "pc", "egg"],
+      ["Sour cream — pastry", 50, "g", "dairy"],
+      ["Vanilla extract — pastry", 5, "ml", "liquid"],
+      ["Butter — filling", 200, "g", "fat"],
+      ["Egg yolks — filling", 6, "pc", "egg"],
+      ["Sugar — filling", 250, "g", "sugar"],
+      ["Twaróg curd cheese", 1000, "g", "dairy"],
+      ["Vanilla extract — filling", 10, "ml", "liquid"],
+      ["Orange zest", 1, "pc", "fruit"],
+      ["Egg whites — filling", 7, "pc", "egg"],
+      ["Vanilla custard powder", 40, "g", "other"]
+    ],
+    "steps": [
+      "Make pastry: rub butter into flour, cocoa, sugar, baking powder and salt. Mix in egg yolk, sour cream and vanilla to form a dough. Divide 2/3 into the fridge, 1/3 into the freezer. Bake the 2/3 portion blind in a lined springform for 15 min at 180°C.",
+      "Beat butter with 6 egg yolks and half the sugar until pale. Mix in Twaróg, vanilla and orange zest.",
+      "Whisk 7 egg whites with remaining sugar and custard powder to stiff peaks. Fold carefully into the cheese mixture.",
+      "Pour filling over the pre-baked base. Grate the frozen pastry dough over the top. Bake at 180°C for 70 min. Cool in the tin."
+    ]
+  },
+  {
+    "id": "gotteri-baron-ostakaka",
+    "category": "Cheesecake",
+    "title": "Barón Ostakaka",
+    "desc": "No-bake vanilla cheesecake in glasses with a Síríus dark and caramel chocolate ganache.",
+    "yield": "8–10 glasses",
+    "prep": "20 min",
+    "ingredients": [
+      ["Cinnamon biscuits", 200, "g", "other"],
+      ["Butter — base", 30, "g", "fat"],
+      ["Cream cheese", 400, "g", "dairy"],
+      ["Sugar", 180, "g", "sugar"],
+      ["Vanilla sugar", 10, "g", "sugar"],
+      ["Double cream", 400, "ml", "liquid"],
+      ["Dark chocolate (56%)", 50, "g", "chocolate"],
+      ["Caramel chocolate drops", 50, "g", "chocolate"],
+      ["Double cream — ganache", 100, "ml", "liquid"],
+      ["Maple syrup", 15, "ml", "liquid"]
+    ],
+    "steps": [
+      "Mix crushed cinnamon biscuits with melted butter and press into glasses.",
+      "Beat cream cheese, sugar and vanilla sugar. Fold in whipped cream and pipe into glasses.",
+      "Chop chocolates, pour hot cream over, stir until smooth, add maple syrup. Spoon 2 tbsp ganache over each glass."
+    ]
+  },
+  {
+    "id": "gotteri-hindberja-skyrkaka-sukkuladiskal",
+    "category": "Skyr Cake",
+    "title": "Hindberja Skyrkaka í Súkkulaðiskál",
+    "desc": "Raspberry skyr mousse served in hand-made chocolate bowls on an oat biscuit base.",
+    "yield": "8–10 chocolate bowls",
+    "prep": "40 min",
+    "ingredients": [
+      ["Chocolate coating", 500, "g", "chocolate"],
+      ["Small balloons", 10, "pc", "other"],
+      ["Double cream", 500, "ml", "liquid"],
+      ["Vanilla skyr", 500, "g", "dairy"],
+      ["Vanilla pod seeds", 1, "pc", "other"],
+      ["Fresh raspberries — puréed", 250, "g", "fruit"],
+      ["Lu Bastogne biscuits — crushed", 125, "g", "other"],
+      ["Butter — base", 40, "g", "fat"],
+      ["Fresh raspberries — garnish", 125, "g", "fruit"]
+    ],
+    "steps": [
+      "Inflate balloons, dip the bottom into melted chocolate coating, set on baking paper and refrigerate. Once firm, pop and remove balloons to reveal chocolate bowls.",
+      "Whip cream, then fold vanilla skyr and vanilla seeds in gently.",
+      "Mix crushed biscuits with melted butter. Press 1 tbsp into the base of each chocolate bowl.",
+      "Divide skyr mixture over the biscuit bases, top with raspberry purée and fresh raspberries."
+    ]
+  },
+  {
+    "id": "gotteri-jardaberja-ostakaka-sukkuladiskal",
+    "category": "Cheesecake",
+    "title": "Jarðaberja Ostakaka í Súkkulaðiskál",
+    "desc": "Strawberry cheesecake mousse served in hand-made chocolate bowls.",
+    "yield": "8–10 chocolate bowls",
+    "prep": "40 min",
+    "ingredients": [
+      ["Chocolate coating", 500, "g", "chocolate"],
+      ["Small balloons", 10, "pc", "other"],
+      ["Philadelphia cream cheese", 300, "g", "dairy"],
+      ["Icing sugar", 80, "g", "sugar"],
+      ["Vanilla sugar", 10, "g", "sugar"],
+      ["Double cream", 500, "ml", "liquid"],
+      ["Fresh strawberries — puréed", 400, "g", "fruit"],
+      ["Lu Digestive biscuits — crushed", 200, "g", "other"],
+      ["Butter — base", 40, "g", "fat"],
+      ["Fresh strawberries — garnish", 200, "g", "fruit"]
+    ],
+    "steps": [
+      "Make chocolate bowls: inflate balloons, dip bases into melted chocolate, chill until firm, then pop balloons.",
+      "Beat cream cheese with icing sugar and vanilla sugar. Add puréed strawberries, then fold in whipped cream.",
+      "Mix crushed biscuits with melted butter and press into the chocolate bowl bases.",
+      "Fill bowls with the cheesecake mixture and garnish with fresh strawberries and whipped cream."
+    ]
+  },
+  {
+    "id": "gotteri-jardaberja-skyrkaka-kokteill",
+    "category": "Skyr Cake",
+    "title": "Jarðaberja Skyrköku Kokteill",
+    "desc": "Strawberry skyr cheesecake cocktail in glasses with a cooked strawberry glaze.",
+    "yield": "8–10 glasses",
+    "prep": "30 min",
+    "ingredients": [
+      ["Lu Digestive biscuits — crushed", 200, "g", "other"],
+      ["Butter — base", 40, "g", "fat"],
+      ["Double cream", 500, "ml", "liquid"],
+      ["Cream cheese", 300, "g", "dairy"],
+      ["Icing sugar", 150, "g", "sugar"],
+      ["Vanilla sugar", 10, "g", "sugar"],
+      ["Strawberries — puréed", 250, "ml", "liquid"],
+      ["Sugar — glaze", 250, "g", "sugar"],
+      ["Cornflour", 30, "g", "other"],
+      ["Water", 200, "ml", "liquid"],
+      ["Fresh strawberries — garnish", 200, "g", "fruit"]
+    ],
+    "steps": [
+      "Cook glaze: heat puréed strawberries, sugar, cornflour and water 5–8 min until thick. Add red food colouring if desired. Cool.",
+      "Whip cream. Beat cream cheese, icing sugar and vanilla sugar, fold in whipped cream.",
+      "Layer in glasses: crushed biscuit → cream cheese mixture → sliced fresh strawberries → strawberry glaze."
+    ]
+  },
+  {
+    "id": "gotteri-mini-blaberja-skyrkokur",
+    "category": "Skyr Cake",
+    "title": "Mini Bláberjaskyrkökur",
+    "desc": "Individual skyr and blueberry cups with a cooked blueberry sauce on a digestive base.",
+    "yield": "6–8 glasses",
+    "prep": "20 min",
+    "ingredients": [
+      ["Digestive biscuits", 300, "g", "other"],
+      ["Butter — base", 50, "g", "fat"],
+      ["KEA vanilla skyr", 500, "g", "dairy"],
+      ["Double cream", 500, "ml", "liquid"],
+      ["Blueberries — sauce", 250, "g", "fruit"],
+      ["Water", 50, "ml", "liquid"],
+      ["Sugar — sauce", 40, "g", "sugar"],
+      ["Lemon juice", 5, "ml", "liquid"],
+      ["Vanilla extract", 5, "ml", "liquid"],
+      ["Fresh blueberries — topping", 125, "g", "fruit"]
+    ],
+    "steps": [
+      "Mix crushed biscuits with melted butter and divide between glasses.",
+      "Simmer blueberries, water, sugar, lemon juice and vanilla extract for 10 min until saucy. Cool.",
+      "Whip cream and fold vanilla skyr in gently.",
+      "Layer glasses: biscuit base → skyr mixture → blueberry sauce → fresh blueberries."
+    ]
+  },
+  {
+    "id": "gotteri-vanillu-skyrkaka-musli",
+    "category": "Skyr Cake",
+    "title": "Vanillu Skyrkaka með Múslí og Hindberjum",
+    "desc": "Simple and fresh skyr mousse cup with chocolate granola and raspberries.",
+    "yield": "6 glasses",
+    "prep": "15 min",
+    "ingredients": [
+      ["Chocolate muesli granola", 120, "g", "other"],
+      ["Double cream", 300, "ml", "liquid"],
+      ["KEA vanilla skyr", 300, "g", "dairy"],
+      ["Fresh raspberries", 200, "g", "fruit"]
+    ],
+    "steps": [
+      "Put 2 tbsp of muesli in the base of each glass.",
+      "Whip cream and fold vanilla skyr in gently.",
+      "Divide skyr mixture between glasses and top with fresh raspberries. Chill 1 hour before serving."
+    ]
+  },
+  {
+    "id": "gotteri-skyrkaka-heidu",
+    "category": "Skyr Cake",
+    "title": "Skyrkaka Heiðu",
+    "desc": "Easy layered skyr cake in a bowl — berry skyr, cream, chopped chocolate and fresh berries.",
+    "yield": "1 large serving dish",
+    "prep": "15 min",
+    "ingredients": [
+      ["Lu Bastogne biscuits", 200, "g", "other"],
+      ["Butter — base", 50, "g", "fat"],
+      ["KEA blueberry and strawberry skyr", 500, "g", "dairy"],
+      ["Double cream", 500, "ml", "liquid"],
+      ["Dark chocolate — chopped", 70, "g", "chocolate"],
+      ["Fresh blueberries", 125, "g", "fruit"],
+      ["Fresh strawberries", 125, "g", "fruit"]
+    ],
+    "steps": [
+      "Crush biscuits, mix with melted butter and press into the base of a serving dish. Chill.",
+      "Whip cream and fold skyr in gently with a spatula.",
+      "Spread skyr mixture over the base, scatter chopped chocolate and fresh berries on top. Chill 1–2 hours."
+    ]
+  },
+  {
+    "id": "gotteri-sukkuladi-skyrkokur",
+    "category": "Skyr Cake",
+    "title": "Súkkulaðiskyrkökur",
+    "desc": "Quick chocolate skyr mousse cups with granola and raspberry garnish.",
+    "yield": "6–8 glasses",
+    "prep": "15 min",
+    "ingredients": [
+      ["Ísey chocolate vanilla skyr", 500, "g", "dairy"],
+      ["Double cream", 400, "ml", "liquid"],
+      ["Double cream — topping", 200, "ml", "liquid"],
+      ["Chocolate muesli", 80, "g", "other"],
+      ["Fresh raspberries", 125, "g", "fruit"],
+      ["Chocolate shavings", 30, "g", "chocolate"],
+      ["Cocoa powder — garnish", 10, "g", "cocoa"]
+    ],
+    "steps": [
+      "Whip 400 ml cream and fold skyr gently through. Divide between glasses.",
+      "Scatter chocolate muesli over each.",
+      "Whip 200 ml cream, pipe on top, dust with cocoa and garnish with raspberries and chocolate shavings."
+    ]
+  },
+  {
+    "id": "gotteri-skyrkaka-hriskokuskal",
+    "category": "Skyr Cake",
+    "title": "Skyrkaka í Hrískökuskál",
+    "desc": "Strawberry skyr mousse set inside a crispy chocolate Rice Krispie bowl.",
+    "yield": "1 × 22 cm",
+    "prep": "30 min",
+    "ingredients": [
+      ["Butter — bowl", 30, "g", "fat"],
+      ["Dark chocolate — bowl", 150, "g", "chocolate"],
+      ["Golden syrup — bowl", 180, "g", "other"],
+      ["Rice Krispies", 100, "g", "other"],
+      ["Ísey strawberry & white chocolate skyr", 510, "g", "dairy"],
+      ["Double cream", 500, "ml", "liquid"],
+      ["White chocolate — garnish", 100, "g", "chocolate"],
+      ["Fresh strawberries — garnish", 250, "g", "fruit"]
+    ],
+    "steps": [
+      "Melt butter, dark chocolate and golden syrup in a saucepan, bring to a simmer for 1 min. Stir in Rice Krispies and press into the base and sides of a 22 cm springform. Chill.",
+      "Whip cream to stiff peaks and fold skyr in carefully.",
+      "Pour skyr mousse into the Rice Krispie shell. Top with grated white chocolate and fresh strawberries."
+    ]
+  },
+  {
+    "id": "gotteri-thjodhatidardesert",
+    "category": "Skyr Cake",
+    "title": "Þjóðhátíðardesertinn",
+    "desc": "Icelandic national holiday dessert — vanilla skyr mousse on a Prince Polo base, decorated as the Icelandic flag with berries.",
+    "yield": "1 × 25×35 cm tray",
+    "prep": "20 min",
+    "ingredients": [
+      ["Prince Polo chocolate wafers", 350, "g", "other"],
+      ["Vanilla skyr", 700, "g", "dairy"],
+      ["Double cream", 800, "ml", "liquid"],
+      ["Fresh blueberries", 750, "g", "fruit"],
+      ["Fresh raspberries", 375, "g", "fruit"]
+    ],
+    "steps": [
+      "Crush Prince Polo wafers and spread over the base of a large serving tray.",
+      "Whip cream; set a little aside in a piping bag. Fold vanilla skyr into the rest and spread over the base.",
+      "Decorate to resemble the Icelandic flag: a cross of raspberries down the centre, piped cream dots on the border, and blueberries in the four corners."
+    ]
+  },
+  {
+    "id": "gotteri-skyrkaka-mondlu-sitronum",
+    "category": "Skyr Cake",
+    "title": "Skyrkaka með Möndlu- og Sítrónukeim",
+    "desc": "Set vanilla skyr cake with lemon and almond notes on a lemon almond biscuit base.",
+    "yield": "1 × 20–22 cm",
+    "prep": "25 min",
+    "ingredients": [
+      ["Almond and lemon biscuits", 300, "g", "other"],
+      ["Ghee butter — base", 100, "g", "fat"],
+      ["Double cream", 500, "ml", "liquid"],
+      ["Icing sugar", 25, "g", "sugar"],
+      ["Vanilla sugar", 10, "g", "sugar"],
+      ["Lemon extract", 3, "ml", "liquid"],
+      ["Vanilla skyr", 650, "g", "dairy"],
+      ["Gelatin leaves", 6, "pc", "other"],
+      ["Water — gelatin", 50, "ml", "liquid"],
+      ["Flaked almonds — garnish", 30, "g", "other"],
+      ["Lemon slices — garnish", 3, "pc", "fruit"]
+    ],
+    "steps": [
+      "Press crushed biscuits and melted ghee into a 20–22 cm springform and freeze while making the filling.",
+      "Dissolve soaked gelatin in 50 ml hot water and cool.",
+      "Whip cream with icing sugar, vanilla sugar and lemon extract. Fold vanilla skyr through, then add gelatin in a thin stream.",
+      "Pour into tin and chill overnight. Garnish with flaked almonds and lemon slices."
+    ]
+  },
+  {
+    "id": "gotteri-sumarleg-skyrkaka",
+    "category": "Skyr Cake",
+    "title": "Sumarleg Skyrkaka",
+    "desc": "Set summer skyr cake with strawberry and blueberry skyr on an oat biscuit base.",
+    "yield": "1 × 20–22 cm",
+    "prep": "25 min",
+    "ingredients": [
+      ["Oat biscuits", 260, "g", "other"],
+      ["Butter — base", 100, "g", "fat"],
+      ["Double cream", 350, "ml", "liquid"],
+      ["Icing sugar", 25, "g", "sugar"],
+      ["Vanilla sugar", 10, "g", "sugar"],
+      ["KEA berry skyr", 500, "g", "dairy"],
+      ["Gelatin leaves", 5, "pc", "other"],
+      ["Milk — gelatin", 50, "ml", "liquid"],
+      ["Fresh berries — garnish", 200, "g", "fruit"],
+      ["Dark chocolate — garnish", 30, "g", "chocolate"]
+    ],
+    "steps": [
+      "Press crushed oat biscuits and melted butter into a 20–22 cm springform and freeze.",
+      "Heat milk and dissolve soaked gelatin in it. Cool.",
+      "Whip cream with icing sugar and vanilla sugar. Fold berry skyr through, then add gelatin in a thin stream.",
+      "Pour into tin and chill at least 5 hours. Top with fresh berries and chopped dark chocolate."
+    ]
+  },
+  {
+    "id": "gotteri-berjaskyrkaka",
+    "category": "Skyr Cake",
+    "title": "Berjaskyrkaka",
+    "desc": "Simple layered berry skyr cake in a serving dish — skyr mousse, fresh berries and chocolate.",
+    "yield": "1 serving dish",
+    "prep": "15 min",
+    "ingredients": [
+      ["Lu Bastogne biscuits", 200, "g", "other"],
+      ["Butter — base", 60, "g", "fat"],
+      ["Ísey blueberry and raspberry skyr", 500, "g", "dairy"],
+      ["Double cream", 500, "ml", "liquid"],
+      ["Fresh blueberries", 125, "g", "fruit"],
+      ["Fresh raspberries", 125, "g", "fruit"],
+      ["Dark chocolate — chopped", 30, "g", "chocolate"]
+    ],
+    "steps": [
+      "Mix crushed Bastogne biscuits with melted butter and press into the base of a serving dish. Chill.",
+      "Whip cream and fold skyr through gently.",
+      "Spread over the biscuit base and decorate with fresh berries and chopped dark chocolate."
+    ]
+  },
+  {
+    "id": "gotteri-skyrkokur-noakroppi",
+    "category": "Skyr Cake",
+    "title": "Skyrkökur með Nóakroppi",
+    "desc": "Berry skyr mousse cups with a cinnamon biscuit and Nóakropp chocolate pebble base.",
+    "yield": "8–10 glasses",
+    "prep": "15 min",
+    "ingredients": [
+      ["Cinnamon biscuits", 150, "g", "other"],
+      ["Nóakropp chocolate pebbles — base", 100, "g", "chocolate"],
+      ["Butter — base", 40, "g", "fat"],
+      ["Blueberry and strawberry skyr", 650, "g", "dairy"],
+      ["Double cream", 600, "ml", "liquid"],
+      ["Nóakropp chocolate pebbles — topping", 100, "g", "chocolate"]
+    ],
+    "steps": [
+      "Blitz biscuits and Nóakropp together, mix with melted butter and divide between glasses.",
+      "Whip cream to stiff peaks and fold skyr through gently.",
+      "Pipe into glasses and top generously with Nóakropp. Chill 1 hour."
+    ]
+  },
+  {
+    "id": "gotteri-vanillu-skyrkaka-lakkris",
+    "category": "Skyr Cake",
+    "title": "Vanillu Skyrkaka með Lakkrískeim",
+    "desc": "Vanilla skyr mousse in glasses with a liquorice caramel and Oreo base — a fun salty-sweet combo.",
+    "yield": "8–10 glasses",
+    "prep": "15 min",
+    "ingredients": [
+      ["Panda liquorice caramel balls — chopped", 100, "g", "other"],
+      ["Oreo biscuits — crushed", 100, "g", "other"],
+      ["Vanilla skyr", 500, "g", "dairy"],
+      ["Double cream", 500, "ml", "liquid"]
+    ],
+    "steps": [
+      "Chop liquorice caramel balls. Mix half with crushed Oreos and put 1 tbsp in the base of each glass.",
+      "Whip cream and fold vanilla skyr through gently.",
+      "Pipe into glasses and top with the remaining chopped liquorice caramel balls."
+    ]
   }
 ]
