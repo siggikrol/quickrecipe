@@ -229,10 +229,22 @@ function categories() {
   return ['All', ...new Set(recipes.map(r => r.category || 'Other'))];
 }
 function renderChips() {
-  document.getElementById('chips').innerHTML = categories()
+  const container = document.getElementById('chips');
+  const cats = categories();
+  const currentButtons = container.querySelectorAll('[data-cat]');
+  const currentCats = Array.from(currentButtons).map(b => b.dataset.cat);
+
+  if (currentCats.length === cats.length && currentCats.every((c, i) => c === cats[i])) {
+    currentButtons.forEach(b => {
+      b.classList.toggle('active', b.dataset.cat === category);
+    });
+    return;
+  }
+
+  container.innerHTML = cats
     .map(c => `<button class="chip ${category === c ? 'active' : ''}" data-cat="${esc(c)}">${esc(c)}</button>`)
     .join('');
-  document.querySelectorAll('[data-cat]').forEach(b => {
+  container.querySelectorAll('[data-cat]').forEach(b => {
     b.onclick = () => { category = b.dataset.cat; render(); };
   });
 }
