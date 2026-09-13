@@ -1106,7 +1106,7 @@
   },
   {
     "id": "choc-orange-cheesecake",
-    "category": "Cake",
+    "category": "Cheesecake",
     "title": "Chocolate Orange Cheesecake",
     "desc": "Baked chocolate cheesecake with orange and ganache topping.",
     "yield": "1 × 18 cm / 6 servings",
@@ -1340,7 +1340,7 @@
   },
   {
     "id": "lemon-meringue-cheesecake",
-    "category": "Cake",
+    "category": "Cheesecake",
     "title": "Lemon Meringue Cheesecake",
     "desc": "Baked lemon cheesecake with lemon curd and meringue.",
     "yield": "1 × 23 cm / 10 slices",
