@@ -1,11 +1,11 @@
-const CACHE = 'quickrecipe-v20';
+const CACHE = 'quickrecipe-v22';
 const ASSETS = [
   './',
   './index.html',
   './style.css',
   './style.css?v=20',
   './app.js',
-  './app.js?v=19',
+  './app.js?v=22',
   './recipes.json',
   './recipes.json?v=19',
   './manifest.webmanifest',

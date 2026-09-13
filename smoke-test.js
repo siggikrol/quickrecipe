@@ -23,7 +23,8 @@ const dom = new JSDOM(html, {
       return Promise.reject(new Error(`fetch not mocked for: ${url}`));
     };
     /* Mock matchMedia (not available in jsdom) */
-    window.matchMedia = () => ({ matches: false, addEventListener: () => {} });
+    window.compactMedia = { matches: false, addEventListener: () => {} };
+    window.matchMedia = query => query === '(max-width: 860px)' ? window.compactMedia : { matches: false, addEventListener: () => {} };
     /* Suppress CSS parse warnings */
     window.console.error = () => {};
   },
@@ -110,6 +111,84 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   if (document.querySelector('.app').classList.contains('reading-recipe')) {
     throw new Error('Back navigation did not close the recipe');
   }
+  dom.window.compactMedia.matches = true;
+  const recipePane = document.getElementById('detail');
+  const touch = (type, target, x, y, count = 1) => {
+    const event = new dom.window.Event(type, { bubbles: true, cancelable: true });
+    const points = Array.from({ length: count }, (_, identifier) => ({ identifier, clientX: x, clientY: y }));
+    event.touches = type === 'touchend' || type === 'touchcancel' ? [] : points;
+    event.changedTouches = points;
+    target.dispatchEvent(event);
+    return event;
+  };
+  const isReading = () => document.querySelector('.app').classList.contains('reading-recipe');
+  document.getElementById('list').scrollTop = 200;
+  document.querySelector('.card').click();
+  touch('touchstart', recipePane, 40, 200);
+  const horizontal = touch('touchmove', recipePane, 150, 205);
+  touch('touchend', recipePane, 180, 208);
+  assert.equal(horizontal.defaultPrevented, true);
+  assert.equal(isReading(), false, 'Right swipe should go back');
+  assert.equal(document.getElementById('list').scrollTop, 200);
+  for (const [dx, dy] of [[15, 2], [-120, 0], [20, 140], [100, 100]]) {
+    document.querySelector('.card').click();
+    touch('touchstart', recipePane, 150, 200);
+    touch('touchmove', recipePane, 150 + dx, 200 + dy);
+    touch('touchend', recipePane, 150 + dx, 200 + dy);
+    assert.equal(isReading(), true, 'Short, left, vertical, and diagonal gestures must not go back');
+  }
+  const slider = document.getElementById('hydRange');
+  touch('touchstart', slider, 50, 200);
+  assert.equal(touch('touchmove', slider, 200, 200).defaultPrevented, false);
+  touch('touchend', slider, 200, 200);
+  assert.equal(isReading(), true, 'Slider gestures must not go back');
+  touch('touchstart', recipePane, 50, 200);
+  touch('touchmove', recipePane, 200, 200, 2);
+  touch('touchend', recipePane, 200, 200);
+  assert.equal(isReading(), true, 'Multitouch must not go back');
+  touch('touchstart', recipePane, 50, 200);
+  touch('touchmove', recipePane, 200, 200);
+  touch('touchcancel', recipePane, 200, 200);
+  touch('touchend', recipePane, 200, 200);
+  assert.equal(isReading(), true, 'Cancelled gestures must not go back');
+  document.getElementById('backBtn').click();
+  document.querySelector('[data-browse="desserts"]').click();
+  document.querySelector('[data-cat="Skyr Cake"]').click();
+  const filteredIds = [...document.querySelectorAll('.card')].map(card => card.dataset.id);
+  list.scrollTop = 240;
+  document.querySelector('.card').click();
+  const swipeLeft = target => {
+    touch('touchstart', target, 280, 200);
+    touch('touchmove', target, 160, 205);
+    touch('touchend', target, 120, 208);
+  };
+  document.querySelector('[data-scale="2"]').click();
+  recipePane.scrollTop = 150;
+  swipeLeft(recipePane);
+  assert.equal(document.querySelector('.card.active').dataset.id, filteredIds[1]);
+  assert.equal(document.querySelector('[data-scale="1"]').classList.contains('active'), true);
+  assert.equal(recipePane.scrollTop, 0);
+  assert.equal(isReading(), true);
+  const currentId = document.querySelector('.card.active').dataset.id;
+  swipeLeft(document.getElementById('detailFav'));
+  assert.equal(document.querySelector('.card.active').dataset.id, currentId, 'Control swipes must not advance');
+  document.getElementById('backBtn').click();
+  assert.equal(list.scrollTop, 240, 'Next recipe must preserve original list position');
+  document.querySelector(`[data-id="${filteredIds.at(-1)}"]`).click();
+  swipeLeft(recipePane);
+  assert.equal(document.querySelector('.card.active').dataset.id, filteredIds.at(-1));
+  assert.equal(document.getElementById('toast').textContent, 'You’re at the last recipe');
+  document.getElementById('backBtn').click();
+  document.querySelector('[data-browse="All"]').click();
+  const recipeSearch = document.getElementById('search');
+  recipeSearch.value = 'bread';
+  recipeSearch.dispatchEvent(new dom.window.Event('input'));
+  const searchIds = [...document.querySelectorAll('.card')].map(card => card.dataset.id);
+  document.querySelector('.card').click();
+  swipeLeft(recipePane);
+  assert.equal(document.querySelector('.card.active').dataset.id, searchIds[1], 'Next recipe must respect search');
+  document.getElementById('backBtn').click();
+  dom.window.compactMedia.matches = false;
   const search = document.getElementById('search');
   search.value = 'zzzz-no-matching-recipe';
   search.dispatchEvent(new dom.window.Event('input'));

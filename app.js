@@ -381,12 +381,16 @@ function matches(r, q) {
   return !q || r.title.toLowerCase().includes(q) || (r.desc || '').toLowerCase().includes(q)
     || r.ingredients.some(i => i[0].toLowerCase().includes(q));
 }
-function renderList() {
-  const q     = document.getElementById('search').value.trim();
-  const shown = recipes.filter(r =>
+function filteredRecipes() {
+  const q = document.getElementById('search').value.trim();
+  return recipes.filter(r =>
     (q || ((recipeSection === 'All' || sectionForRecipe(r) === recipeSection) && (category === 'All' || (r.category || 'Other') === category))) &&
     (!onlyFavs || favs.has(r.id)) && matches(r, q)
   );
+}
+function renderList() {
+  const q = document.getElementById('search').value.trim();
+  const shown = filteredRecipes();
   if (!shown.some(r => r.id === selectedId)) {
     selectedId = shown[0]?.id || null;
     scale = 1; view = 'amounts'; focusedSection = null;
@@ -451,6 +455,64 @@ function closeDetailPanel() {
   document.querySelector('.card.active')?.focus({ preventScroll: true });
 }
 compactLayout.addEventListener('change', syncNavigation);
+
+function openNextRecipe() {
+  const shown = filteredRecipes();
+  const index = shown.findIndex(r => r.id === selectedId);
+  if (index < 0 || index === shown.length - 1) {
+    toast('You’re at the last recipe');
+    return;
+  }
+  selectedId = shown[index + 1].id;
+  scale = 1;
+  view = 'amounts';
+  focusedSection = null;
+  render();
+  // Keep the original list position for Back; only reset the recipe scroll.
+  document.getElementById('detail').scrollTop = 0;
+}
+
+function initRecipeGestures() {
+  const detail = document.getElementById('detail');
+  let swipe = null;
+  const isReading = () => compactLayout.matches && document.querySelector('.app').classList.contains('reading-recipe');
+  detail.addEventListener('touchstart', e => {
+    swipe = null;
+    if (!isReading() || e.touches.length !== 1 ||
+        e.target.closest('button, input, select, textarea, a, [contenteditable]') ||
+        window.getSelection()?.toString()) return;
+    const touch = e.touches[0];
+    swipe = { id: touch.identifier, x: touch.clientX, y: touch.clientY, started: performance.now(), horizontal: false };
+  }, { passive: true });
+  detail.addEventListener('touchmove', e => {
+    if (!swipe) return;
+    if (!isReading() || e.touches.length !== 1) { swipe = null; return; }
+    const touch = e.touches[0];
+    const dx = touch.clientX - swipe.x;
+    const dy = Math.abs(touch.clientY - swipe.y);
+    if (!swipe.horizontal) {
+      if (Math.max(Math.abs(dx), dy) < 12) return;
+      // Once a gesture starts scrolling, never turn it into navigation.
+      if (Math.abs(dx) < dy * 2) { swipe = null; return; }
+      swipe.horizontal = true;
+    }
+    if (e.cancelable) e.preventDefault();
+    else swipe = null;
+  }, { passive: false });
+  detail.addEventListener('touchend', e => {
+    const gesture = swipe;
+    swipe = null;
+    if (!gesture?.horizontal || !isReading() || e.touches.length ||
+        performance.now() - gesture.started > 1000) return;
+    const touch = [...e.changedTouches].find(t => t.identifier === gesture.id);
+    if (!touch) return;
+    const dx = touch.clientX - gesture.x;
+    const dy = Math.abs(touch.clientY - gesture.y);
+    if (dx >= 80 && dx > dy * 2) closeDetailPanel();
+    else if (dx <= -80 && -dx > dy * 2) openNextRecipe();
+  }, { passive: true });
+  detail.addEventListener('touchcancel', () => { swipe = null; }, { passive: true });
+}
 
 /* ─── Render ingredients with Focus support ─── */
 function renderIngredients(r) {
@@ -778,6 +840,7 @@ async function init() {
   document.getElementById('saveBtn').onclick        = saveRecipe;
   document.getElementById('deleteBtn').onclick      = deleteRecipe;
   document.getElementById('backBtn')?.addEventListener('click', closeDetailPanel);
+  initRecipeGestures();
   document.getElementById('modalBackdrop').onclick  = e => { if (e.target.id === 'modalBackdrop') closeModal(); };
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
   document.addEventListener('visibilitychange', () => {
