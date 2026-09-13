@@ -15,6 +15,18 @@ let selectedId     = null;
 let scale          = 1;
 let view           = 'amounts';
 let category       = 'All';
+let recipeSection = 'All';
+let listScrollTop = 0;
+const recipeSections = [
+  { id: 'baking', label: 'Bread & baking', categories: ['Bread', 'Loaves', 'Rolls', 'Flatbreads', 'Pastries'] },
+  { id: 'desserts', label: 'Cakes & desserts', categories: ['Cake', 'Cakes', 'Cheesecake', 'Cheesecakes', 'Skyr Cake', 'Cookies', 'Dessert', 'Desserts'] },
+  { id: 'meals', label: 'Meals', categories: ['Breakfast', 'Soups', 'Salads', 'Mains', 'Sides'] },
+  { id: 'sauces', label: 'Dressings & sauces', categories: ['Dressings', 'Sauce', 'Sauces', 'Dips'] },
+];
+function sectionForRecipe(r) {
+  if (recipeSections.some(section => section.id === r.section)) return r.section;
+  return recipeSections.find(section => section.categories.some(c => c.toLowerCase() === (r.category || '').toLowerCase()))?.id || 'meals';
+}
 let onlyFavs       = false;
 let editingId      = null;
 let hydrationState = {};
@@ -70,7 +82,7 @@ function saveAll() {
   localStorage.setItem(LS.favs,      JSON.stringify([...favs]));
   localStorage.setItem(LS.unit,      unit);
   localStorage.setItem(LS.hydration, JSON.stringify(hydrationState));
-  localStorage.setItem(LS.ui,        JSON.stringify({ selectedId, category, onlyFavs }));
+  localStorage.setItem(LS.ui,        JSON.stringify({ selectedId, category, onlyFavs, recipeSection }));
 }
 
 /* ─── Seed merge ─── */
@@ -90,6 +102,9 @@ function restoreUiState() {
   const saved = load(LS.ui, { selectedId: null, category: 'All', onlyFavs: false });
   if (saved.selectedId && recipes.some(r => r.id === saved.selectedId)) selectedId = saved.selectedId;
   category = saved.category === 'Sauce' ? 'Dressings' : saved.category || 'All';
+  recipeSection = recipeSections.some(section => section.id === saved.recipeSection) ? saved.recipeSection :
+    category === 'All' ? 'All' : sectionForRecipe({ category });
+  if (!recipes.some(r => r.category === category && sectionForRecipe(r) === recipeSection)) category = 'All';
   onlyFavs = Boolean(saved.onlyFavs);
   if (!selectedId && recipes[0]) selectedId = recipes[0].id;
 }
@@ -317,27 +332,46 @@ async function releaseWakeLock() {
 
 /* ─── Chips ─── */
 function categories() {
-  return ['All', ...new Set(recipes.map(r => r.category || 'Other'))];
+  return ['All', ...new Set(recipes.filter(r => sectionForRecipe(r) === recipeSection).map(r => r.category || 'Other'))];
+}
+function browseSection(id) {
+  recipeSection = id;
+  category = 'All';
+  onlyFavs = false;
+  document.getElementById('search').value = '';
+  document.querySelector('.app').classList.remove('reading-recipe');
+  render();
+  document.getElementById('list').scrollTop = 0;
 }
 function renderChips() {
-  const container = document.getElementById('chips');
-  const cats = categories();
-  const currentButtons = container.querySelectorAll('[data-cat]');
-  const currentCats = Array.from(currentButtons).map(b => b.dataset.cat);
-
-  if (currentCats.length === cats.length && currentCats.every((c, i) => c === cats[i])) {
-    currentButtons.forEach(b => {
-      b.classList.toggle('active', b.dataset.cat === category);
-      b.setAttribute('aria-pressed', b.dataset.cat === category);
-    });
-    return;
+  const searching = Boolean(document.getElementById('search').value.trim());
+  const sections = [{ id: 'All', label: 'All recipes' }, ...recipeSections];
+  const nav = document.getElementById('sections');
+  if (!nav.children.length) {
+    nav.innerHTML = sections.map(section => `<button class="section-link" data-browse="${section.id}">${esc(section.label)} <span class="section-count"></span></button>`).join('');
+    nav.querySelectorAll('[data-browse]').forEach(b => b.onclick = () => browseSection(b.dataset.browse));
+    document.getElementById('sectionSelect').innerHTML = sections.map(section => `<option value="${section.id}">${esc(section.label)}</option>`).join('');
   }
-
-  container.innerHTML = cats
-    .map(c => `<button class="chip ${category === c ? 'active' : ''}" data-cat="${esc(c)}" aria-pressed="${category === c}">${esc(c)}</button>`)
-    .join('');
+  nav.querySelectorAll('[data-browse]').forEach(b => {
+    const active = !searching && !onlyFavs && b.dataset.browse === recipeSection;
+    b.classList.toggle('active', active);
+    b.setAttribute('aria-pressed', active);
+    b.querySelector('.section-count').textContent = recipes.filter(r => b.dataset.browse === 'All' || sectionForRecipe(r) === b.dataset.browse).length;
+  });
+  document.getElementById('sectionSelect').value = searching ? 'All' : recipeSection;
+  const container = document.getElementById('chips');
+  container.hidden = searching || recipeSection === 'All';
+  const cats = categories();
+  const current = [...container.querySelectorAll('[data-cat]')].map(b => b.dataset.cat);
+  if (JSON.stringify(current) !== JSON.stringify(cats)) {
+    container.innerHTML = cats.map(c => `<button class="chip" data-cat="${esc(c)}">${esc(c)}</button>`).join('');
+    container.querySelectorAll('[data-cat]').forEach(b => {
+      b.onclick = () => { category = b.dataset.cat; render(); document.getElementById('list').scrollTop = 0; };
+    });
+  }
   container.querySelectorAll('[data-cat]').forEach(b => {
-    b.onclick = () => { category = b.dataset.cat; render(); };
+    b.classList.toggle('active', b.dataset.cat === category);
+    b.setAttribute('aria-pressed', b.dataset.cat === category);
   });
 }
 
@@ -350,14 +384,20 @@ function matches(r, q) {
 function renderList() {
   const q     = document.getElementById('search').value.trim();
   const shown = recipes.filter(r =>
-    (category === 'All' || r.category === category) && (!onlyFavs || favs.has(r.id)) && matches(r, q)
+    (q || ((recipeSection === 'All' || sectionForRecipe(r) === recipeSection) && (category === 'All' || (r.category || 'Other') === category))) &&
+    (!onlyFavs || favs.has(r.id)) && matches(r, q)
   );
   if (!shown.some(r => r.id === selectedId)) {
     selectedId = shown[0]?.id || null;
     scale = 1; view = 'amounts'; focusedSection = null;
   }
 
-  document.getElementById('list').innerHTML = shown.map(r => `
+  const scope = q ? `Search ${onlyFavs ? 'favourites' : 'all recipes'}: “${q}”` : onlyFavs ? 'Favourites' :
+    [recipeSections.find(section => section.id === recipeSection)?.label || 'All recipes', category === 'All' ? '' : category].filter(Boolean).join(' / ');
+  document.getElementById('resultSummary').textContent = `${scope} · ${shown.length} ${shown.length === 1 ? 'recipe' : 'recipes'}`;
+  const list = document.getElementById('list');
+  const previousScroll = list.scrollTop;
+  list.innerHTML = shown.map(r => `
     <button class="card ${r.id === selectedId ? 'active' : ''}" data-id="${r.id}" aria-current="${r.id === selectedId ? 'true' : 'false'}">
       <div class="card-top">
         <div>
@@ -372,7 +412,8 @@ function renderList() {
         ${r.bake      ? `<span class="stat">${esc(r.bake)}</span>` : ''}
       </div>
     </button>
-  `).join('') || `<div class="empty"><div class="empty-icon">🔍</div>No recipes found.</div>`;
+  `).join('') || `<div class="empty"><div class="empty-icon">🔍</div>${q || onlyFavs || category !== 'All' ? 'No recipes found. Try another search or filter.' : 'No recipes here yet. Add a recipe to get started.'}</div>`;
+  list.scrollTop = previousScroll;
 
   document.querySelectorAll('.card[data-id]').forEach(b => {
     b.onclick = e => {
@@ -397,6 +438,7 @@ function syncNavigation() {
   document.getElementById('detail').inert = compactLayout.matches && !open;
 }
 function openDetailPanel() {
+  listScrollTop = document.getElementById('list').scrollTop;
   document.querySelector('.app').classList.add('reading-recipe');
   syncNavigation();
   document.getElementById('detail').scrollTop = 0;
@@ -405,6 +447,7 @@ function openDetailPanel() {
 function closeDetailPanel() {
   document.querySelector('.app').classList.remove('reading-recipe');
   syncNavigation();
+  document.getElementById('list').scrollTop = listScrollTop;
   document.querySelector('.card.active')?.focus({ preventScroll: true });
 }
 compactLayout.addEventListener('change', syncNavigation);
@@ -617,7 +660,9 @@ function openModal(r = null) {
   document.getElementById('deleteBtn').style.visibility = r ? 'visible' : 'hidden';
   const set = (id, v = '') => document.getElementById(id).value = v;
   set('fTitle',       r?.title);
-  set('fCategory',    r?.category || 'Bread');
+  set('fCategory',    r?.category || (recipeSections.find(section => section.id === recipeSection)?.categories[0] || 'Bread'));
+  document.getElementById('fSection').innerHTML = recipeSections.map(section => `<option value="${section.id}">${esc(section.label)}</option>`).join('');
+  set('fSection', r ? sectionForRecipe(r) : recipeSection === 'All' ? 'baking' : recipeSection);
   set('fDesc',        r?.desc);
   set('fYield',       r?.yield);
   set('fTemp',        r?.tempC);
@@ -651,6 +696,7 @@ function saveRecipe() {
     id:        editingId || `r_${Date.now()}`,
     title,
     category:  document.getElementById('fCategory').value.trim() || 'Other',
+    section:   document.getElementById('fSection').value,
     desc:      document.getElementById('fDesc').value.trim(),
     yield:     document.getElementById('fYield').value.trim(),
     tempC:     Number(document.getElementById('fTemp').value) || 0,
@@ -664,6 +710,7 @@ function saveRecipe() {
   if (editingId) { recipes = recipes.map(r => r.id === editingId ? data : r); }
   else recipes.unshift(data);
   selectedId = data.id;
+  recipeSection = sectionForRecipe(data);
   category   = 'All';
   onlyFavs = false;
   document.getElementById('search').value = '';
@@ -704,7 +751,7 @@ async function init() {
 
   /* Fetch seed recipes */
   try {
-    const res = await fetch('./recipes.json?v=18');
+    const res = await fetch('./recipes.json?v=19');
     seedRecipes = await res.json();
   } catch (e) {
     console.warn('Could not load recipes.json', e);
@@ -721,10 +768,11 @@ async function init() {
 
   /* Static event listeners */
   document.getElementById('themeBtn').onclick       = toggleTheme;
-  document.getElementById('search').oninput         = render;
+  document.getElementById('search').oninput = () => { render(); document.getElementById('list').scrollTop = 0; };
+  document.getElementById('sectionSelect').onchange = e => browseSection(e.target.value);
   document.getElementById('metricBtn').onclick      = () => { unit = 'metric';   saveAll(); render(); };
   document.getElementById('imperialBtn').onclick    = () => { unit = 'imperial'; saveAll(); render(); };
-  document.getElementById('favFilter').onclick      = () => { onlyFavs = !onlyFavs; saveAll(); render(); };
+  document.getElementById('favFilter').onclick      = () => { onlyFavs = !onlyFavs; recipeSection = 'All'; category = 'All'; document.getElementById('search').value = ''; document.querySelector('.app').classList.remove('reading-recipe'); render(); document.getElementById('list').scrollTop = 0; };
   document.getElementById('addBtn').onclick         = () => openModal();
   document.getElementById('cancelBtn').onclick      = closeModal;
   document.getElementById('saveBtn').onclick        = saveRecipe;

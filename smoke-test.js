@@ -55,6 +55,35 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
     throw new Error('Recipe detail pane missing');
   }
 
+  document.querySelector('[data-browse="desserts"]').click();
+  assert.deepEqual([...document.querySelectorAll('[data-cat]')].map(b => b.dataset.cat).sort(), ['All', 'Cake', 'Cheesecake', 'Dessert', 'Skyr Cake'].sort());
+  document.querySelector('[data-cat="Skyr Cake"]').click();
+  assert.ok([...document.querySelectorAll('.card .tag')].every(el => el.textContent === 'Skyr Cake'));
+  const list = document.getElementById('list');
+  list.scrollTop = 220;
+  document.querySelector('.card').click();
+  document.getElementById('backBtn').click();
+  assert.equal(list.scrollTop, 220);
+  assert.equal(document.querySelector('[data-cat="Skyr Cake"]').getAttribute('aria-pressed'), 'true');
+  const globalSearch = document.getElementById('search');
+  globalSearch.value = 'Caesar';
+  globalSearch.dispatchEvent(new dom.window.Event('input'));
+  assert.equal(document.querySelectorAll('.card').length, 1);
+  assert.equal(document.querySelector('.card h3').textContent, 'Caesar Salad Dressing');
+  assert.equal(document.getElementById('chips').hidden, true);
+  globalSearch.value = '';
+  globalSearch.dispatchEvent(new dom.window.Event('input'));
+  assert.equal(document.querySelector('[data-cat="Skyr Cake"]').getAttribute('aria-pressed'), 'true');
+  document.querySelector('[data-browse="meals"]').click();
+  assert.equal(document.querySelectorAll('.card').length, 0);
+  document.querySelector('[data-browse="sauces"]').click();
+  document.querySelector('[data-fav]').click();
+  document.getElementById('favFilter').click();
+  assert.equal(document.querySelectorAll('.card').length, 1);
+  assert.equal(document.querySelector('.card h3').textContent, 'Caesar Salad Dressing');
+  document.querySelector('[data-browse="All"]').click();
+  assert.equal(document.querySelectorAll('.card').length, cards);
+
   const sandwich = JSON.parse(recipes).find(r => r.title === 'Soft Sandwich Bread');
   document.querySelector(`[data-id="${sandwich.id}"]`).click();
   const baseMeta = [...document.querySelectorAll('.meta .stat:not(#recipeYield)')].map(el => el.textContent);
