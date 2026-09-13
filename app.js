@@ -84,12 +84,12 @@ function mergeSeedRecipes(existing) {
   });
   const ids = new Set(merged.map(r => r.id));
   seedRecipes.forEach(r => { if (!ids.has(r.id)) merged.push(cloneValue(r)); });
-  return merged;
+  return merged.map(r => r.category === 'Sauce' ? { ...r, category: 'Dressings' } : r);
 }
 function restoreUiState() {
   const saved = load(LS.ui, { selectedId: null, category: 'All', onlyFavs: false });
   if (saved.selectedId && recipes.some(r => r.id === saved.selectedId)) selectedId = saved.selectedId;
-  category = saved.category  || 'All';
+  category = saved.category === 'Sauce' ? 'Dressings' : saved.category || 'All';
   onlyFavs = Boolean(saved.onlyFavs);
   if (!selectedId && recipes[0]) selectedId = recipes[0].id;
 }
@@ -109,6 +109,33 @@ function amountText(v, u) {
   if (u === 'g')  return `${fmt(gToOz(v))} oz`;
   if (u === 'ml') return `${fmt(mlToFloz(v))} fl oz`;
   return `${fmt(v)} ${u}`;
+}
+
+function yieldText(value, multiplier = scale) {
+  if (multiplier === 1) return value;
+  // Keep pan dimensions intact; only batch quantities should change.
+  const dimensions = [];
+  const panCount = value.match(/^(\d+(?:\.\d+)?\s*×\s*)(?=\d)/)?.[0] || '';
+  const protectedValue = panCount + value.slice(panCount.length).replace(/\d+(?:\.\d+)?(?:\s*[×x–-]\s*\d+(?:\.\d+)?)*\s*(?:cm|mm|inches|inch|in)\b/gi, match => {
+    dimensions.push(match);
+    return '\uFFF0';
+  });
+  const plurals = { loaf: 'loaves', tray: 'trays', cake: 'cakes', tin: 'tins', bun: 'buns', roll: 'rolls', baguette: 'baguettes', serving: 'servings', slice: 'slices', glass: 'glasses', bowl: 'bowls', dish: 'dishes' };
+  let changed = false;
+  const scaled = protectedValue.replace(/(\d+(?:\.\d+)?)(?:([–-])(\d+(?:\.\d+)?))?(\s+(?:(?:large|small|chocolate|serving)\s+)?(?:loaves|loaf|trays?|cakes?|tins?|buns?|rolls?|baguettes?|servings?|slices?|glasses|glass|bowls?|dishes|dish)\b)?/g,
+    (_, low, dash, high, label = '') => {
+      changed = true;
+      const quantity = Number(low) * multiplier;
+      const singular = !high && quantity === 1;
+      label = label.replace(/\w+$/, noun => {
+        const base = Object.keys(plurals).find(key => key === noun || plurals[key] === noun);
+        return base ? (singular ? base : plurals[base]) : noun;
+      });
+      return `${fmt(quantity)}${high ? dash + fmt(Number(high) * multiplier) : ''}${label}`;
+    });
+  let dimensionIndex = 0;
+  const result = scaled.replace(/\uFFF0/g, () => dimensions[dimensionIndex++]);
+  return changed ? result : `${fmt(multiplier)}× batch · original yield: ${value}`;
 }
 
 /* ─── Baker's math ─── */
@@ -301,12 +328,13 @@ function renderChips() {
   if (currentCats.length === cats.length && currentCats.every((c, i) => c === cats[i])) {
     currentButtons.forEach(b => {
       b.classList.toggle('active', b.dataset.cat === category);
+      b.setAttribute('aria-pressed', b.dataset.cat === category);
     });
     return;
   }
 
   container.innerHTML = cats
-    .map(c => `<button class="chip ${category === c ? 'active' : ''}" data-cat="${esc(c)}">${esc(c)}</button>`)
+    .map(c => `<button class="chip ${category === c ? 'active' : ''}" data-cat="${esc(c)}" aria-pressed="${category === c}">${esc(c)}</button>`)
     .join('');
   container.querySelectorAll('[data-cat]').forEach(b => {
     b.onclick = () => { category = b.dataset.cat; render(); };
@@ -324,10 +352,13 @@ function renderList() {
   const shown = recipes.filter(r =>
     (category === 'All' || r.category === category) && (!onlyFavs || favs.has(r.id)) && matches(r, q)
   );
-  if (!shown.some(r => r.id === selectedId) && shown[0]) selectedId = shown[0].id;
+  if (!shown.some(r => r.id === selectedId)) {
+    selectedId = shown[0]?.id || null;
+    scale = 1; view = 'amounts'; focusedSection = null;
+  }
 
   document.getElementById('list').innerHTML = shown.map(r => `
-    <button class="card ${r.id === selectedId ? 'active' : ''}" data-id="${r.id}">
+    <button class="card ${r.id === selectedId ? 'active' : ''}" data-id="${r.id}" aria-current="${r.id === selectedId ? 'true' : 'false'}">
       <div class="card-top">
         <div>
           <div class="tag">${esc(r.category || 'Recipe')}</div>
@@ -350,12 +381,33 @@ function renderList() {
       focusedSection = null; /* clear focus when switching recipe */
       saveAll(); scale = 1; view = 'amounts';
       render();
+      openDetailPanel();
     };
   });
   document.querySelectorAll('[data-fav]').forEach(h => {
     h.onclick = e => { e.stopPropagation(); toggleFav(h.dataset.fav); };
   });
 }
+
+/* ─── Compact list/detail navigation ─── */
+const compactLayout = window.matchMedia('(max-width: 860px)');
+function syncNavigation() {
+  const open = document.querySelector('.app').classList.contains('reading-recipe');
+  document.getElementById('list').inert = compactLayout.matches && open;
+  document.getElementById('detail').inert = compactLayout.matches && !open;
+}
+function openDetailPanel() {
+  document.querySelector('.app').classList.add('reading-recipe');
+  syncNavigation();
+  document.getElementById('detail').scrollTop = 0;
+  if (compactLayout.matches) document.getElementById('backBtn').focus();
+}
+function closeDetailPanel() {
+  document.querySelector('.app').classList.remove('reading-recipe');
+  syncNavigation();
+  document.querySelector('.card.active')?.focus({ preventScroll: true });
+}
+compactLayout.addEventListener('change', syncNavigation);
 
 /* ─── Render ingredients with Focus support ─── */
 function renderIngredients(r) {
@@ -467,7 +519,7 @@ function renderDetail() {
       ${r.ferment? `<span class="stat">Rest ${esc(r.ferment)}</span>`: ''}
       ${r.bake   ? `<span class="stat">Bake ${esc(r.bake)}</span>`   : ''}
       ${r.tempC  ? `<span class="stat">${temp}</span>`               : ''}
-      ${r.yield  ? `<span class="stat">${esc(r.yield)}</span>`       : ''}
+      ${r.yield  ? `<span class="stat" id="recipeYield">${esc(yieldText(r.yield))}</span>` : ''}
     </div>`;
 
   /* Scale */
@@ -548,10 +600,13 @@ function toggleFav(id) {
 function render() {
   document.getElementById('metricBtn').classList.toggle('active', unit === 'metric');
   document.getElementById('imperialBtn').classList.toggle('active', unit === 'imperial');
-  document.getElementById('favFilter').classList.toggle('primary', onlyFavs);
+  document.getElementById('favFilter').classList.toggle('active', onlyFavs);
+  document.getElementById('favFilter').setAttribute('aria-pressed', onlyFavs);
+  ['metric', 'imperial'].forEach(value => document.getElementById(value + 'Btn').setAttribute('aria-pressed', unit === value));
   renderChips();
   renderList();
   renderDetail();
+  syncNavigation();
   saveAll();
 }
 
@@ -610,9 +665,12 @@ function saveRecipe() {
   else recipes.unshift(data);
   selectedId = data.id;
   category   = 'All';
+  onlyFavs = false;
+  document.getElementById('search').value = '';
   saveAll();
   closeModal();
   render();
+  openDetailPanel();
   toast(editingId ? 'Recipe updated' : 'Recipe added');
 }
 function deleteRecipe() {
@@ -646,7 +704,7 @@ async function init() {
 
   /* Fetch seed recipes */
   try {
-    const res = await fetch('./recipes.json?v=13');
+    const res = await fetch('./recipes.json?v=18');
     seedRecipes = await res.json();
   } catch (e) {
     console.warn('Could not load recipes.json', e);
@@ -658,7 +716,6 @@ async function init() {
   unit           = localStorage.getItem(LS.unit) || 'metric';
   hydrationState = load(LS.hydration, {});
   recipes        = mergeSeedRecipes(load(LS.recipes, seedRecipes));
-  saveAll();
   selectedId     = recipes.find(r => r.id === 'ciabatta')?.id || recipes[0]?.id || null;
   restoreUiState();
 
@@ -672,6 +729,7 @@ async function init() {
   document.getElementById('cancelBtn').onclick      = closeModal;
   document.getElementById('saveBtn').onclick        = saveRecipe;
   document.getElementById('deleteBtn').onclick      = deleteRecipe;
+  document.getElementById('backBtn')?.addEventListener('click', closeDetailPanel);
   document.getElementById('modalBackdrop').onclick  = e => { if (e.target.id === 'modalBackdrop') closeModal(); };
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
   document.addEventListener('visibilitychange', () => {

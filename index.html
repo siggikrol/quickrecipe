@@ -9,7 +9,7 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="style.css?v=13" />
+  <link rel="stylesheet" href="style.css?v=17" />
   <title>QuickRecipe</title>
 </head>
 <body>
@@ -23,8 +23,8 @@
       </div>
       <div class="top-actions">
         <button class="btn btn-icon" id="themeBtn" title="Toggle theme" aria-label="Toggle colour theme">🌙</button>
-        <button class="btn" id="favFilter">♡ <span>Favourites</span></button>
-        <button class="btn primary" id="addBtn">＋ <span>Add recipe</span></button>
+        <button class="btn" id="favFilter" aria-pressed="false">♡ <span>Favourites</span></button>
+        <button class="btn primary" id="addBtn" aria-label="Add recipe">＋ <span>Add recipe</span></button>
       </div>
     </header>
 
@@ -38,12 +38,16 @@
     </section>
 
     <!-- Category chips -->
-    <div id="chips" class="chips" role="list" aria-label="Recipe categories"></div>
+    <div id="chips" class="chips" role="group" aria-label="Recipe categories"></div>
 
     <!-- Main layout -->
     <main class="layout">
+      <nav class="recipe-nav" aria-label="Recipe navigation">
+        <button class="back-btn" id="backBtn">← Back to recipes</button>
+      </nav>
       <section id="list"   class="list"   aria-label="Recipe list"></section>
-      <section id="detail" class="detail" aria-label="Recipe detail" aria-live="polite"></section>
+      <section id="detail" class="detail" aria-label="Recipe detail" aria-live="polite">
+      </section>
     </main>
 
   </div><!-- /.app -->
@@ -120,6 +124,6 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script src="app.js?v=13"></script>
+  <script src="app.js?v=18"></script>
 </body>
 </html>
