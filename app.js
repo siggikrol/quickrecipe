@@ -75,8 +75,10 @@ function saveAll() {
 
 /* ─── Seed merge ─── */
 function mergeSeedRecipes(existing) {
+  const seedIds = new Set(seedRecipes.map(r => r.id));
+  const cleanExisting = (existing || []).filter(r => seedIds.has(r.id) || !r.id.startsWith('gotteri-'));
   const byId   = new Map(seedRecipes.map(r => [r.id, r]));
-  const merged = existing.map(r => {
+  const merged = cleanExisting.map(r => {
     const seed = byId.get(r.id);
     return seed ? { ...r, ...seed } : r;
   });
@@ -181,22 +183,7 @@ const sectionPlans = {
   'gotteri-sumarleg-skyrkaka':                [[0, 'Base'], [2, 'Berry skyr filling'], [8, 'Garnish']],
   'gotteri-berjaskyrkaka':                    [[0, 'Base'], [2, 'Skyr mousse'], [4, 'Topping']],
   'gotteri-skyrkokur-noakroppi':              [[0, 'Base'], [3, 'Skyr mousse'], [5, 'Topping']],
-  'gotteri-vanillu-skyrkaka-lakkris':         [[0, 'Base'], [2, 'Vanilla skyr mousse']],
-
-
-  // ── Gotteri Scraped Cakes ──
-  'gotteri-rosakaka': [[0,"Cake"],[10,"Chocolate frosting"],[15,"Vanilla frosting"]],
-  'gotteri-sukkuladiterta': [[0,"Cake"],[11,"Frosting"]],
-  'gotteri-paskabomba': [[0,"Cake"],[3,"Frosting"],[7,"Frosting"],[13,"Chocolate ganache"],[16,"Decoration"]],
-  'gotteri-haustkaka': [[0,"Cake"],[14,"Frosting"],[19,"Decoration"],[20,"Decoration"]],
-  'gotteri-regnbogakaka': [[0,"Cake"],[5,"Frosting"]],
-  'gotteri-regnbogakaka-2': [[0,"Cake"],[1,"Chocolate frosting"],[7,"Vanilla frosting"]],
-  'gotteri-saltkaramelludraumur': [[0,"Cake"],[11,"Decoration"]],
-  'gotteri-aramotakakan': [[0,"Cake"],[1,"Frosting"]],
-  'gotteri-sukkuladikaka-med-dumlekremi': [[0,"Caramel frosting"],[6,"Frosting"]],
-  'gotteri-thjodhatidarkakan-2': [[0,"Cake"],[2,"Cake"],[12,"Cake"]],
-  'gotteri-kryddkaka-i-jolabuningi': [[0,"Cake"],[6,"Frosting"],[13,"Decoration"]],
-  'gotteri-piparkokukaka': [[0,"Cake"],[16,"Frosting"],[21,"Decoration"]],
+  'gotteri-vanillu-skyrkaka-lakkris':         [[0, 'Base'], [2, 'Vanilla skyr mousse']]
 };
 
 /* ─── Section plans for steps (Focus mode) ─── */
@@ -251,21 +238,7 @@ const stepSectionPlans = {
   'gotteri-sumarleg-skyrkaka':                [[0, 'Base'], [1, 'Berry skyr filling'], [3, 'Garnish & chill']],
   'gotteri-berjaskyrkaka':                    [[0, 'Base'], [1, 'Skyr mousse'], [2, 'Topping']],
   'gotteri-skyrkokur-noakroppi':              [[0, 'Base'], [1, 'Skyr mousse'], [2, 'Topping']],
-  'gotteri-vanillu-skyrkaka-lakkris':         [[0, 'Base'], [1, 'Vanilla skyr mousse'], [2, 'Topping']],
-
-
-  // ── Gotteri Scraped Cake Steps ──
-  'gotteri-rosakaka': [[0,"Cake"],[7,"Chocolate frosting"],[9,"Vanilla frosting"]],
-  'gotteri-sukkuladiterta': [[0,"Cake"],[7,"Frosting"]],
-  'gotteri-paskabomba': [[0,"Cake"],[1,"Frosting"],[6,"Frosting"],[11,"Chocolate ganache"],[12,"Decoration"]],
-  'gotteri-haustkaka': [[0,"Cake"],[7,"Frosting"],[10,"Decoration"],[16,"Decoration"]],
-  'gotteri-regnbogakaka-2': [[0,"Chocolate frosting"],[2,"Vanilla frosting"]],
-  'gotteri-saltkaramelludraumur': [[0,"Cake"],[8,"Caramel sauce"],[20,"Caramel frosting"],[29,"Frosting"],[33,"Decoration"]],
-  'gotteri-aramotakakan': [[0,"Cake"],[2,"Frosting"]],
-  'gotteri-sukkuladikaka-med-dumlekremi': [[0,"Caramel frosting"],[3,"Frosting"]],
-  'gotteri-thjodhatidarkakan-2': [[0,"Cake"],[20,"Cake"],[40,"Cake"]],
-  'gotteri-kryddkaka-i-jolabuningi': [[0,"Cake"],[7,"Frosting"],[12,"Decoration"]],
-  'gotteri-piparkokukaka': [[0,"Cake"],[9,"Frosting"],[13,"Decoration"]],
+  'gotteri-vanillu-skyrkaka-lakkris':         [[0, 'Base'], [1, 'Vanilla skyr mousse'], [2, 'Topping']]
 };
 
 function sectionFor(r, idx, name) {
@@ -673,7 +646,7 @@ async function init() {
 
   /* Fetch seed recipes */
   try {
-    const res = await fetch('./recipes.json');
+    const res = await fetch('./recipes.json?v=13');
     seedRecipes = await res.json();
   } catch (e) {
     console.warn('Could not load recipes.json', e);
@@ -685,6 +658,7 @@ async function init() {
   unit           = localStorage.getItem(LS.unit) || 'metric';
   hydrationState = load(LS.hydration, {});
   recipes        = mergeSeedRecipes(load(LS.recipes, seedRecipes));
+  saveAll();
   selectedId     = recipes.find(r => r.id === 'ciabatta')?.id || recipes[0]?.id || null;
   restoreUiState();
 

@@ -1,13 +1,13 @@
-const CACHE = 'quickrecipe-v12';
+const CACHE = 'quickrecipe-v13';
 const ASSETS = [
   './',
   './index.html',
   './style.css',
-  './style.css?v=12',
+  './style.css?v=13',
   './app.js',
-  './app.js?v=12',
+  './app.js?v=13',
   './recipes.json',
-  './recipes.json?v=12',
+  './recipes.json?v=13',
   './manifest.webmanifest',
 ];
 
