@@ -131,6 +131,7 @@ function bakers(r, ing) {
 
 /* ─── Section plans for ingredients ─── */
 const sectionPlans = {
+  // ── Original recipes ──
   'drommekage':             [[0, 'Cake'], [7, 'Coconut topping']],
   'bounty-cake':            [[0, 'Coconut cake'], [3, 'Chocolate cream'], [7, 'Finish']],
   'carrot-cake':            [[0, 'Cake'], [7, 'Frosting']],
@@ -140,10 +141,21 @@ const sectionPlans = {
   'choc-orange-cheesecake': [[0, 'Base'], [2, 'Filling'], [10, 'Topping']],
   'date-cake-caramel':      [[0, 'Cake'], [10, 'Caramel sauce']],
   'lemon-meringue-cheesecake': [[0, 'Crust'], [3, 'Filling'], [11, 'Lemon curd'], [16, 'Meringue']],
+  // ── Gotteri recipes ──
+  'gotteri-blaberja-ostakaka':          [[0, 'Base'], [3, 'Filling'], [8, 'Jelly topping']],
+  'gotteri-vanillu-ostakaka-berjasosu': [[0, 'Base'], [3, 'Filling'], [8, 'Berry sauce']],
+  'gotteri-berjabomba':                 [[0, 'Base'], [4, 'Filling'], [11, 'Topping']],
+  'gotteri-gudddomleg-oreo-ostakaka':   [[0, 'Base'], [4, 'Filling'], [8, 'Topping']],
+  'gotteri-pekanhnetu-ostakaka':        [[0, 'Caramel pecans'], [3, 'Base'], [5, 'Filling']],
+  'gotteri-flamberud-ostakaka':         [[0, 'Base'], [2, 'Filling'], [10, 'Meringue']],
+  'gotteri-ostakokubomba':              [[0, 'Brownie base'], [6, 'Cheesecake'], [14, 'Meringue']],
+  'gotteri-sernik':                     [[0, 'Pastry'], [9, 'Filling']],
+  'gotteri-mini-blaberja-skyrkokur':    [[0, 'Base'], [2, 'Skyr mousse'], [4, 'Blueberry sauce']],
 };
 
 /* ─── Section plans for steps (Focus mode) ─── */
 const stepSectionPlans = {
+  // ── Original recipes ──
   'drommekage':             [[0, 'Cake'],          [3, 'Coconut topping']],
   'bounty-cake':            [[0, 'Coconut cake'],  [2, 'Chocolate cream'], [4, 'Finish']],
   'carrot-cake':            [[0, 'Cake'],          [3, 'Frosting']],
@@ -153,17 +165,24 @@ const stepSectionPlans = {
   'choc-orange-cheesecake': [[0, 'Base'],          [1, 'Filling'],         [4, 'Topping']],
   'date-cake-caramel':      [[0, 'Cake'],          [4, 'Caramel sauce']],
   'lemon-meringue-cheesecake': [[0, 'Crust'], [1, 'Filling'], [3, 'Lemon curd'], [4, 'Meringue']],
+  // ── Gotteri recipes ──
+  'gotteri-blaberja-ostakaka':          [[0, 'Base'], [1, 'Filling'], [3, 'Jelly topping']],
+  'gotteri-vanillu-ostakaka-berjasosu': [[0, 'Base'], [1, 'Filling'], [3, 'Berry sauce']],
+  'gotteri-berjabomba':                 [[0, 'Base'], [1, 'Filling'], [3, 'Topping']],
+  'gotteri-gudddomleg-oreo-ostakaka':   [[0, 'Base'], [1, 'Filling'], [3, 'Topping']],
+  'gotteri-pekanhnetu-ostakaka':        [[0, 'Caramel pecans'], [1, 'Base'], [2, 'Filling']],
+  'gotteri-flamberud-ostakaka':         [[0, 'Base'], [1, 'Filling'], [2, 'Meringue']],
+  'gotteri-ostakokubomba':              [[0, 'Brownie base'], [1, 'Cheesecake'], [2, 'Meringue']],
+  'gotteri-sernik':                     [[0, 'Pastry'], [1, 'Filling']],
+  'gotteri-mini-blaberja-skyrkokur':    [[0, 'Base'], [1, 'Blueberry sauce'], [2, 'Skyr mousse']],
 };
 
 function sectionFor(r, idx, name) {
   const plan = sectionPlans[r.id];
-  if (plan) {
-    let sec = '';
-    for (const [start, label] of plan) { if (idx >= start) sec = label; else break; }
-    return sec;
-  }
-  const m = String(name).match(/\s+—\s+(.+)$/);
-  return m ? m[1].replace(/\b\w/g, c => c.toUpperCase()) : '';
+  if (!plan) return '';   /* no plan → no sections, no Focus mode for this recipe */
+  let sec = '';
+  for (const [start, label] of plan) { if (idx >= start) sec = label; else break; }
+  return sec;
 }
 
 function stepSectionFor(r, stepIdx) {
@@ -282,7 +301,7 @@ function renderIngredients(r) {
       >${esc(sec)}</button>`;
     }
     last = sec || last;
-    html += `<div class="ingredient${ingDimmed ? ' dimmed' : ''}">
+    html += `<div class="ingredient${ingDimmed ? ' dimmed' : ''}" data-section="${esc(sec)}">
       <span>${esc(cleanIngredientName(i[0]))}</span>
       <span class="amount">${view === 'bakers' ? bakers(r, i) : amountText(adjustedIngredientValue(r, i), i[2])}</span>
     </div>`;
@@ -327,7 +346,7 @@ function renderDetail() {
   const stepsHtml = r.steps.map((s, idx) => {
     const stepSec = stepSectionFor(r, idx);
     const dimmed  = focusedSection && stepSec && stepSec !== focusedSection;
-    return `<li class="${dimmed ? 'dimmed' : ''}">${esc(s)}</li>`;
+    return `<li class="${dimmed ? 'dimmed' : ''}" data-section="${esc(stepSec || '')}">${esc(s)}</li>`;
   }).join('');
 
   el.innerHTML = `
@@ -397,14 +416,48 @@ function renderDetail() {
   /* Fav / edit */
   document.getElementById('detailFav').onclick = () => toggleFav(r.id);
 
-  /* ── Focus mode: ingredient section click handlers ── */
+  /* ── Focus mode: ingredient section click handlers — class-only, no re-render ── */
   document.querySelectorAll('.ingredient-section[data-section]').forEach(btn => {
     btn.onclick = () => {
       const sec = btn.dataset.section;
       focusedSection = focusedSection === sec ? null : sec;
-      renderDetail();
+      applyFocusClasses();
     };
   });
+}
+
+/* ─── Focus: toggle classes without re-rendering ─── */
+function applyFocusClasses() {
+  /* Section header buttons */
+  document.querySelectorAll('.ingredient-section[data-section]').forEach(btn => {
+    const isFocused = btn.dataset.section === focusedSection;
+    const isDimmed  = Boolean(focusedSection) && !isFocused;
+    btn.classList.toggle('focused', isFocused);
+    btn.classList.toggle('dimmed',  isDimmed);
+    btn.setAttribute('aria-pressed', String(isFocused));
+    btn.title = isFocused ? 'Click to clear focus' : 'Click to focus this section';
+  });
+
+  /* Ingredient rows */
+  document.querySelectorAll('.ingredient[data-section]').forEach(el => {
+    const s = el.dataset.section;
+    el.classList.toggle('dimmed', Boolean(focusedSection) && s !== focusedSection);
+  });
+
+  /* Method steps */
+  document.querySelectorAll('.steps li[data-section]').forEach(el => {
+    const s = el.dataset.section;
+    const hasSec = Boolean(s);
+    el.classList.toggle('dimmed', Boolean(focusedSection) && hasSec && s !== focusedSection);
+  });
+
+  /* Method heading label */
+  const methodH2 = document.querySelector('.pane:last-child > h2');
+  if (methodH2) {
+    methodH2.innerHTML = focusedSection
+      ? `Method · <span style="color:var(--accent)">${esc(focusedSection)}</span>`
+      : 'Method';
+  }
 }
 
 /* ─── Favourites ─── */

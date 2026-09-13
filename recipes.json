@@ -14,11 +14,36 @@
     "bake": "30–35 min",
     "tempC": 220,
     "ingredients": [
-      ["Bread flour", 500, "g", "flour"],
-      ["Water", 325, "ml", "water"],
-      ["Instant yeast", 6, "g", "yeast"],
-      ["Salt", 10, "g", "salt"],
-      ["Butter", 20, "g", "fat"]
+      [
+        "Bread flour",
+        500,
+        "g",
+        "flour"
+      ],
+      [
+        "Water",
+        325,
+        "ml",
+        "water"
+      ],
+      [
+        "Instant yeast",
+        6,
+        "g",
+        "yeast"
+      ],
+      [
+        "Salt",
+        10,
+        "g",
+        "salt"
+      ],
+      [
+        "Butter",
+        20,
+        "g",
+        "fat"
+      ]
     ],
     "steps": [
       "Mix flour, water and yeast. Rest 15 min.",
@@ -43,12 +68,42 @@
     "bake": "22–28 min",
     "tempC": 250,
     "ingredients": [
-      ["Bread flour", 500, "g", "flour"],
-      ["Water", 360, "ml", "water"],
-      ["Instant yeast", 2, "g", "yeast"],
-      ["Salt", 10, "g", "salt"],
-      ["Olive oil", 10, "ml", "fat"],
-      ["Flour or semolina for dusting", 20, "g", "other"]
+      [
+        "Bread flour",
+        500,
+        "g",
+        "flour"
+      ],
+      [
+        "Water",
+        360,
+        "ml",
+        "water"
+      ],
+      [
+        "Instant yeast",
+        2,
+        "g",
+        "yeast"
+      ],
+      [
+        "Salt",
+        10,
+        "g",
+        "salt"
+      ],
+      [
+        "Olive oil",
+        10,
+        "ml",
+        "fat"
+      ],
+      [
+        "Flour or semolina for dusting",
+        20,
+        "g",
+        "other"
+      ]
     ],
     "steps": [
       "Mix flour, yeast and most of the water. Rest 20–30 min.",
@@ -74,11 +129,36 @@
     "bake": "22–28 min",
     "tempC": 230,
     "ingredients": [
-      ["Bread flour", 500, "g", "flour"],
-      ["Water", 375, "ml", "water"],
-      ["Instant yeast", 4, "g", "yeast"],
-      ["Salt", 10, "g", "salt"],
-      ["Olive oil", 35, "ml", "fat"]
+      [
+        "Bread flour",
+        500,
+        "g",
+        "flour"
+      ],
+      [
+        "Water",
+        375,
+        "ml",
+        "water"
+      ],
+      [
+        "Instant yeast",
+        4,
+        "g",
+        "yeast"
+      ],
+      [
+        "Salt",
+        10,
+        "g",
+        "salt"
+      ],
+      [
+        "Olive oil",
+        35,
+        "ml",
+        "fat"
+      ]
     ],
     "steps": [
       "Mix flour, water and yeast. Rest 20 min.",
@@ -103,10 +183,30 @@
     "bake": "20–24 min",
     "tempC": 250,
     "ingredients": [
-      ["Bread flour", 500, "g", "flour"],
-      ["Water", 350, "ml", "water"],
-      ["Instant yeast", 2, "g", "yeast"],
-      ["Salt", 10, "g", "salt"]
+      [
+        "Bread flour",
+        500,
+        "g",
+        "flour"
+      ],
+      [
+        "Water",
+        350,
+        "ml",
+        "water"
+      ],
+      [
+        "Instant yeast",
+        2,
+        "g",
+        "yeast"
+      ],
+      [
+        "Salt",
+        10,
+        "g",
+        "salt"
+      ]
     ],
     "steps": [
       "Mix flour, water and yeast. Rest 20 min.",
@@ -131,12 +231,42 @@
     "bake": "30–35 min",
     "tempC": 200,
     "ingredients": [
-      ["Bread flour", 500, "g", "flour"],
-      ["Milk", 315, "ml", "water"],
-      ["Instant yeast", 6, "g", "yeast"],
-      ["Salt", 9, "g", "salt"],
-      ["Sugar", 30, "g", "sugar"],
-      ["Butter", 40, "g", "fat"]
+      [
+        "Bread flour",
+        500,
+        "g",
+        "flour"
+      ],
+      [
+        "Milk",
+        315,
+        "ml",
+        "water"
+      ],
+      [
+        "Instant yeast",
+        6,
+        "g",
+        "yeast"
+      ],
+      [
+        "Salt",
+        9,
+        "g",
+        "salt"
+      ],
+      [
+        "Sugar",
+        30,
+        "g",
+        "sugar"
+      ],
+      [
+        "Butter",
+        40,
+        "g",
+        "fat"
+      ]
     ],
     "steps": [
       "Mix flour, milk and yeast. Rest 10 min.",
@@ -161,10 +291,30 @@
     "bake": "35–40 min",
     "tempC": 240,
     "ingredients": [
-      ["Bread flour", 500, "g", "flour"],
-      ["Water", 360, "ml", "water"],
-      ["Instant yeast", 1, "g", "yeast"],
-      ["Salt", 10, "g", "salt"]
+      [
+        "Bread flour",
+        500,
+        "g",
+        "flour"
+      ],
+      [
+        "Water",
+        360,
+        "ml",
+        "water"
+      ],
+      [
+        "Instant yeast",
+        1,
+        "g",
+        "yeast"
+      ],
+      [
+        "Salt",
+        10,
+        "g",
+        "salt"
+      ]
     ],
     "steps": [
       "Mix everything until no dry flour remains.",
@@ -188,13 +338,48 @@
     "bake": "15–18 min",
     "tempC": 200,
     "ingredients": [
-      ["Bread flour", 500, "g", "flour"],
-      ["Milk", 310, "ml", "water"],
-      ["Instant yeast", 7, "g", "yeast"],
-      ["Salt", 9, "g", "salt"],
-      ["Sugar", 35, "g", "sugar"],
-      ["Butter", 45, "g", "fat"],
-      ["Egg", 1, "pc", "egg"]
+      [
+        "Bread flour",
+        500,
+        "g",
+        "flour"
+      ],
+      [
+        "Milk",
+        310,
+        "ml",
+        "water"
+      ],
+      [
+        "Instant yeast",
+        7,
+        "g",
+        "yeast"
+      ],
+      [
+        "Salt",
+        9,
+        "g",
+        "salt"
+      ],
+      [
+        "Sugar",
+        35,
+        "g",
+        "sugar"
+      ],
+      [
+        "Butter",
+        45,
+        "g",
+        "fat"
+      ],
+      [
+        "Egg",
+        1,
+        "pc",
+        "egg"
+      ]
     ],
     "steps": [
       "Mix flour, milk and yeast. Rest 10 min.",
@@ -219,12 +404,42 @@
     "bake": "18–22 min",
     "tempC": 195,
     "ingredients": [
-      ["Bread flour", 500, "g", "flour"],
-      ["Milk", 320, "ml", "water"],
-      ["Instant yeast", 6, "g", "yeast"],
-      ["Salt", 9, "g", "salt"],
-      ["Sugar", 25, "g", "sugar"],
-      ["Butter", 40, "g", "fat"]
+      [
+        "Bread flour",
+        500,
+        "g",
+        "flour"
+      ],
+      [
+        "Milk",
+        320,
+        "ml",
+        "water"
+      ],
+      [
+        "Instant yeast",
+        6,
+        "g",
+        "yeast"
+      ],
+      [
+        "Salt",
+        9,
+        "g",
+        "salt"
+      ],
+      [
+        "Sugar",
+        25,
+        "g",
+        "sugar"
+      ],
+      [
+        "Butter",
+        40,
+        "g",
+        "fat"
+      ]
     ],
     "steps": [
       "Mix flour, milk and yeast. Rest 10 min.",
@@ -249,11 +464,36 @@
     "bake": "40–45 min",
     "tempC": 240,
     "ingredients": [
-      ["Bread flour", 450, "g", "flour"],
-      ["Whole wheat flour", 50, "g", "flour"],
-      ["Water", 360, "ml", "water"],
-      ["Active starter", 100, "g", "starter"],
-      ["Salt", 10, "g", "salt"]
+      [
+        "Bread flour",
+        450,
+        "g",
+        "flour"
+      ],
+      [
+        "Whole wheat flour",
+        50,
+        "g",
+        "flour"
+      ],
+      [
+        "Water",
+        360,
+        "ml",
+        "water"
+      ],
+      [
+        "Active starter",
+        100,
+        "g",
+        "starter"
+      ],
+      [
+        "Salt",
+        10,
+        "g",
+        "salt"
+      ]
     ],
     "steps": [
       "Mix flours and most of the water. Rest 30 min.",
@@ -274,22 +514,102 @@
     "bake": "22–28 min",
     "tempC": 180,
     "ingredients": [
-      ["Bread flour", 1000, "g", "flour"],
-      ["Whole milk", 500, "ml", "liquid"],
-      ["Instant dry yeast", 14, "g", "yeast"],
-      ["Sugar", 140, "g", "sugar"],
-      ["Eggs", 2, "pc", "egg"],
-      ["Egg yolks", 2, "pc", "egg"],
-      ["Butter — dough", 150, "g", "fat"],
-      ["Salt", 16, "g", "salt"],
-      ["Butter — filling", 200, "g", "fat"],
-      ["Dark brown sugar", 320, "g", "sugar"],
-      ["Ground cinnamon", 30, "g", "spice"],
-      ["Cream cheese", 240, "g", "dairy"],
-      ["Butter — frosting", 100, "g", "fat"],
-      ["Icing sugar", 200, "g", "sugar"],
-      ["Vanilla extract", 10, "ml", "liquid"],
-      ["Milk — frosting", 45, "ml", "liquid"]
+      [
+        "Bread flour",
+        1000,
+        "g",
+        "flour"
+      ],
+      [
+        "Whole milk",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Instant dry yeast",
+        14,
+        "g",
+        "yeast"
+      ],
+      [
+        "Sugar",
+        140,
+        "g",
+        "sugar"
+      ],
+      [
+        "Eggs",
+        2,
+        "pc",
+        "egg"
+      ],
+      [
+        "Egg yolks",
+        2,
+        "pc",
+        "egg"
+      ],
+      [
+        "Butter — dough",
+        150,
+        "g",
+        "fat"
+      ],
+      [
+        "Salt",
+        16,
+        "g",
+        "salt"
+      ],
+      [
+        "Butter — filling",
+        200,
+        "g",
+        "fat"
+      ],
+      [
+        "Dark brown sugar",
+        320,
+        "g",
+        "sugar"
+      ],
+      [
+        "Ground cinnamon",
+        30,
+        "g",
+        "spice"
+      ],
+      [
+        "Cream cheese",
+        240,
+        "g",
+        "dairy"
+      ],
+      [
+        "Butter — frosting",
+        100,
+        "g",
+        "fat"
+      ],
+      [
+        "Icing sugar",
+        200,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla extract",
+        10,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Milk — frosting",
+        45,
+        "ml",
+        "liquid"
+      ]
     ],
     "steps": [
       "Mix flour, yeast, sugar, milk, eggs and yolks. Knead 5 min.",
@@ -310,17 +630,72 @@
     "bake": "40–45 min",
     "tempC": 175,
     "ingredients": [
-      ["Eggs", 4, "pc", "egg"],
-      ["Sugar", 300, "g", "sugar"],
-      ["Vanilla extract", 10, "ml", "liquid"],
-      ["Flour", 250, "g", "flour"],
-      ["Baking powder", 12, "g", "leavener"],
-      ["Butter", 50, "g", "fat"],
-      ["Milk", 200, "ml", "liquid"],
-      ["Butter — topping", 100, "g", "fat"],
-      ["Brown sugar — topping", 200, "g", "sugar"],
-      ["Milk — topping", 70, "ml", "liquid"],
-      ["Desiccated coconut", 150, "g", "coconut"]
+      [
+        "Eggs",
+        4,
+        "pc",
+        "egg"
+      ],
+      [
+        "Sugar",
+        300,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla extract",
+        10,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Flour",
+        250,
+        "g",
+        "flour"
+      ],
+      [
+        "Baking powder",
+        12,
+        "g",
+        "leavener"
+      ],
+      [
+        "Butter",
+        50,
+        "g",
+        "fat"
+      ],
+      [
+        "Milk",
+        200,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Butter — topping",
+        100,
+        "g",
+        "fat"
+      ],
+      [
+        "Brown sugar — topping",
+        200,
+        "g",
+        "sugar"
+      ],
+      [
+        "Milk — topping",
+        70,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Desiccated coconut",
+        150,
+        "g",
+        "coconut"
+      ]
     ],
     "steps": [
       "Beat eggs, sugar and vanilla until pale and fluffy.",
@@ -340,14 +715,54 @@
     "bake": "40 min",
     "tempC": 150,
     "ingredients": [
-      ["Egg whites", 4, "pc", "egg"],
-      ["Icing sugar — cake", 140, "g", "sugar"],
-      ["Desiccated coconut", 140, "g", "coconut"],
-      ["Butter — cream", 100, "g", "fat"],
-      ["Dark baking chocolate", 100, "g", "chocolate"],
-      ["Icing sugar — cream", 60, "g", "sugar"],
-      ["Egg yolks", 4, "pc", "egg"],
-      ["Desiccated coconut — finish", 10, "g", "coconut"]
+      [
+        "Egg whites",
+        4,
+        "pc",
+        "egg"
+      ],
+      [
+        "Icing sugar — cake",
+        140,
+        "g",
+        "sugar"
+      ],
+      [
+        "Desiccated coconut",
+        140,
+        "g",
+        "coconut"
+      ],
+      [
+        "Butter — cream",
+        100,
+        "g",
+        "fat"
+      ],
+      [
+        "Dark baking chocolate",
+        100,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Icing sugar — cream",
+        60,
+        "g",
+        "sugar"
+      ],
+      [
+        "Egg yolks",
+        4,
+        "pc",
+        "egg"
+      ],
+      [
+        "Desiccated coconut — finish",
+        10,
+        "g",
+        "coconut"
+      ]
     ],
     "steps": [
       "Beat egg whites with 140 g icing sugar until thick and fluffy.",
@@ -367,16 +782,66 @@
     "bake": "40–45 min",
     "tempC": 175,
     "ingredients": [
-      ["Flour", 250, "g", "flour"],
-      ["Brown sugar", 180, "g", "sugar"],
-      ["Baking powder", 8, "g", "leavener"],
-      ["Cinnamon", 5, "g", "spice"],
-      ["Eggs", 3, "pc", "egg"],
-      ["Neutral oil", 180, "ml", "fat"],
-      ["Grated carrot", 300, "g", "vegetable"],
-      ["Cream cheese", 250, "g", "dairy"],
-      ["Butter — frosting", 60, "g", "fat"],
-      ["Icing sugar", 100, "g", "sugar"]
+      [
+        "Flour",
+        250,
+        "g",
+        "flour"
+      ],
+      [
+        "Brown sugar",
+        180,
+        "g",
+        "sugar"
+      ],
+      [
+        "Baking powder",
+        8,
+        "g",
+        "leavener"
+      ],
+      [
+        "Cinnamon",
+        5,
+        "g",
+        "spice"
+      ],
+      [
+        "Eggs",
+        3,
+        "pc",
+        "egg"
+      ],
+      [
+        "Neutral oil",
+        180,
+        "ml",
+        "fat"
+      ],
+      [
+        "Grated carrot",
+        300,
+        "g",
+        "vegetable"
+      ],
+      [
+        "Cream cheese",
+        250,
+        "g",
+        "dairy"
+      ],
+      [
+        "Butter — frosting",
+        60,
+        "g",
+        "fat"
+      ],
+      [
+        "Icing sugar",
+        100,
+        "g",
+        "sugar"
+      ]
     ],
     "steps": [
       "Mix flour, sugar, baking powder and cinnamon.",
@@ -395,14 +860,54 @@
     "bake": "30–35 min",
     "tempC": 180,
     "ingredients": [
-      ["Flour", 220, "g", "flour"],
-      ["Cocoa powder", 60, "g", "cocoa"],
-      ["Sugar", 220, "g", "sugar"],
-      ["Baking powder", 8, "g", "leavener"],
-      ["Eggs", 2, "pc", "egg"],
-      ["Milk", 200, "ml", "liquid"],
-      ["Neutral oil", 100, "ml", "fat"],
-      ["Hot coffee", 150, "ml", "liquid"]
+      [
+        "Flour",
+        220,
+        "g",
+        "flour"
+      ],
+      [
+        "Cocoa powder",
+        60,
+        "g",
+        "cocoa"
+      ],
+      [
+        "Sugar",
+        220,
+        "g",
+        "sugar"
+      ],
+      [
+        "Baking powder",
+        8,
+        "g",
+        "leavener"
+      ],
+      [
+        "Eggs",
+        2,
+        "pc",
+        "egg"
+      ],
+      [
+        "Milk",
+        200,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Neutral oil",
+        100,
+        "ml",
+        "fat"
+      ],
+      [
+        "Hot coffee",
+        150,
+        "ml",
+        "liquid"
+      ]
     ],
     "steps": [
       "Mix flour, cocoa, sugar and baking powder.",
@@ -421,16 +926,66 @@
     "bake": "75–90 min",
     "tempC": 120,
     "ingredients": [
-      ["Egg whites", 4, "pc", "egg"],
-      ["Caster sugar", 250, "g", "sugar"],
-      ["Cornstarch", 6, "g", "other"],
-      ["Lemon juice or white vinegar", 5, "ml", "liquid"],
-      ["Vanilla extract", 5, "ml", "liquid"],
-      ["Egg yolks — curd", 4, "pc", "egg"],
-      ["Caster sugar — curd", 100, "g", "sugar"],
-      ["Lemon zest", 2, "pc", "other"],
-      ["Lemon juice", 100, "ml", "liquid"],
-      ["Butter", 85, "g", "fat"]
+      [
+        "Egg whites",
+        4,
+        "pc",
+        "egg"
+      ],
+      [
+        "Caster sugar",
+        250,
+        "g",
+        "sugar"
+      ],
+      [
+        "Cornstarch",
+        6,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice or white vinegar",
+        5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Vanilla extract",
+        5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Egg yolks — curd",
+        4,
+        "pc",
+        "egg"
+      ],
+      [
+        "Caster sugar — curd",
+        100,
+        "g",
+        "sugar"
+      ],
+      [
+        "Lemon zest",
+        2,
+        "pc",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        100,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Butter",
+        85,
+        "g",
+        "fat"
+      ]
     ],
     "steps": [
       "Whip egg whites to soft peaks. Add sugar gradually until glossy and dissolved.",
@@ -450,21 +1005,96 @@
     "bake": "35–40 min",
     "tempC": 175,
     "ingredients": [
-      ["Flour", 250, "g", "flour"],
-      ["Sugar", 150, "g", "sugar"],
-      ["Baking powder", 8, "g", "leavener"],
-      ["Baking soda", 2.5, "g", "leavener"],
-      ["Salt", 2, "g", "salt"],
-      ["Cinnamon", 5, "g", "spice"],
-      ["Eggs", 2, "pc", "egg"],
-      ["Neutral oil", 120, "ml", "fat"],
-      ["Buttermilk", 240, "ml", "liquid"],
-      ["Vanilla extract", 5, "ml", "liquid"],
-      ["Apples, chopped", 325, "g", "fruit"],
-      ["Flour — crumb", 95, "g", "flour"],
-      ["Brown sugar — crumb", 100, "g", "sugar"],
-      ["Cinnamon — crumb", 5, "g", "spice"],
-      ["Butter — crumb", 55, "g", "fat"]
+      [
+        "Flour",
+        250,
+        "g",
+        "flour"
+      ],
+      [
+        "Sugar",
+        150,
+        "g",
+        "sugar"
+      ],
+      [
+        "Baking powder",
+        8,
+        "g",
+        "leavener"
+      ],
+      [
+        "Baking soda",
+        2.5,
+        "g",
+        "leavener"
+      ],
+      [
+        "Salt",
+        2,
+        "g",
+        "salt"
+      ],
+      [
+        "Cinnamon",
+        5,
+        "g",
+        "spice"
+      ],
+      [
+        "Eggs",
+        2,
+        "pc",
+        "egg"
+      ],
+      [
+        "Neutral oil",
+        120,
+        "ml",
+        "fat"
+      ],
+      [
+        "Buttermilk",
+        240,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Vanilla extract",
+        5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Apples, chopped",
+        325,
+        "g",
+        "fruit"
+      ],
+      [
+        "Flour — crumb",
+        95,
+        "g",
+        "flour"
+      ],
+      [
+        "Brown sugar — crumb",
+        100,
+        "g",
+        "sugar"
+      ],
+      [
+        "Cinnamon — crumb",
+        5,
+        "g",
+        "spice"
+      ],
+      [
+        "Butter — crumb",
+        55,
+        "g",
+        "fat"
+      ]
     ],
     "steps": [
       "Heat oven to 175°C. Grease and line a 23 cm pan.",
@@ -484,20 +1114,90 @@
     "bake": "80 min",
     "tempC": 160,
     "ingredients": [
-      ["Digestive biscuits", 120, "g", "other"],
-      ["Butter — base", 50, "g", "fat"],
-      ["Sugar", 75, "g", "sugar"],
-      ["Orange zest", 0.5, "pc", "fruit"],
-      ["Eggs", 125, "g", "egg"],
-      ["Mascarpone", 245, "g", "dairy"],
-      ["Cream cheese", 490, "g", "dairy"],
-      ["Sour cream", 35, "g", "dairy"],
-      ["Dark chocolate", 175, "g", "chocolate"],
-      ["Cocoa powder", 8, "g", "cocoa"],
-      ["Heavy cream — topping", 150, "ml", "liquid"],
-      ["Honey", 25, "g", "sugar"],
-      ["Dark chocolate — topping", 90, "g", "chocolate"],
-      ["Butter — topping", 35, "g", "fat"]
+      [
+        "Digestive biscuits",
+        120,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        50,
+        "g",
+        "fat"
+      ],
+      [
+        "Sugar",
+        75,
+        "g",
+        "sugar"
+      ],
+      [
+        "Orange zest",
+        0.5,
+        "pc",
+        "fruit"
+      ],
+      [
+        "Eggs",
+        125,
+        "g",
+        "egg"
+      ],
+      [
+        "Mascarpone",
+        245,
+        "g",
+        "dairy"
+      ],
+      [
+        "Cream cheese",
+        490,
+        "g",
+        "dairy"
+      ],
+      [
+        "Sour cream",
+        35,
+        "g",
+        "dairy"
+      ],
+      [
+        "Dark chocolate",
+        175,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Cocoa powder",
+        8,
+        "g",
+        "cocoa"
+      ],
+      [
+        "Heavy cream — topping",
+        150,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Honey",
+        25,
+        "g",
+        "sugar"
+      ],
+      [
+        "Dark chocolate — topping",
+        90,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Butter — topping",
+        35,
+        "g",
+        "fat"
+      ]
     ],
     "steps": [
       "Crush biscuits, mix with melted butter and press into 18 cm tin. Chill.",
@@ -517,19 +1217,84 @@
     "bake": "35–40 min",
     "tempC": 180,
     "ingredients": [
-      ["Sugar", 60, "g", "sugar"],
-      ["Butter", 120, "g", "fat"],
-      ["Eggs", 2, "pc", "egg"],
-      ["Flour", 100, "g", "flour"],
-      ["Dates", 210, "g", "fruit"],
-      ["Baking soda", 5, "g", "leavener"],
-      ["Cinnamon", 2.5, "g", "spice"],
-      ["Salt", 2.5, "g", "salt"],
-      ["Vanilla extract", 2.5, "ml", "liquid"],
-      ["Baking powder", 6, "g", "leavener"],
-      ["Butter — sauce", 120, "g", "fat"],
-      ["Cream — sauce", 150, "ml", "liquid"],
-      ["Brown sugar — sauce", 120, "g", "sugar"]
+      [
+        "Sugar",
+        60,
+        "g",
+        "sugar"
+      ],
+      [
+        "Butter",
+        120,
+        "g",
+        "fat"
+      ],
+      [
+        "Eggs",
+        2,
+        "pc",
+        "egg"
+      ],
+      [
+        "Flour",
+        100,
+        "g",
+        "flour"
+      ],
+      [
+        "Dates",
+        210,
+        "g",
+        "fruit"
+      ],
+      [
+        "Baking soda",
+        5,
+        "g",
+        "leavener"
+      ],
+      [
+        "Cinnamon",
+        2.5,
+        "g",
+        "spice"
+      ],
+      [
+        "Salt",
+        2.5,
+        "g",
+        "salt"
+      ],
+      [
+        "Vanilla extract",
+        2.5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Baking powder",
+        6,
+        "g",
+        "leavener"
+      ],
+      [
+        "Butter — sauce",
+        120,
+        "g",
+        "fat"
+      ],
+      [
+        "Cream — sauce",
+        150,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Brown sugar — sauce",
+        120,
+        "g",
+        "sugar"
+      ]
     ],
     "steps": [
       "Heat oven to 180°C. Cover dates with water, boil, remove from heat 3–4 min and mash lightly. Stir in baking soda.",
@@ -547,9 +1312,24 @@
     "yield": "4 servings",
     "prep": "20 min",
     "ingredients": [
-      ["Strawberries, puréed", 400, "g", "fruit"],
-      ["White sugar", 400, "g", "sugar"],
-      ["Egg white", 1, "pc", "egg"]
+      [
+        "Strawberries, puréed",
+        400,
+        "g",
+        "fruit"
+      ],
+      [
+        "White sugar",
+        400,
+        "g",
+        "sugar"
+      ],
+      [
+        "Egg white",
+        1,
+        "pc",
+        "egg"
+      ]
     ],
     "steps": [
       "Put egg white and about 2 tbsp sugar in a heatproof bowl over a bain-marie.",
@@ -568,25 +1348,120 @@
     "bake": "60 min",
     "tempC": 140,
     "ingredients": [
-      ["Digestive biscuits", 200, "g", "other"],
-      ["Butter — crust", 113, "g", "fat"],
-      ["Sugar — crust", 12, "g", "sugar"],
-      ["Cream cheese", 550, "g", "dairy"],
-      ["Sugar", 200, "g", "sugar"],
-      ["Lemon zest", 15, "g", "fruit"],
-      ["Vanilla extract", 5, "ml", "liquid"],
-      ["Sour cream", 100, "g", "dairy"],
-      ["Eggs", 3, "pc", "egg"],
-      ["Lemon juice", 60, "ml", "liquid"],
-      ["Cornstarch", 16, "g", "other"],
-      ["Lemon juice — curd", 80, "ml", "liquid"],
-      ["Sugar — curd", 135, "g", "sugar"],
-      ["Butter — curd", 80, "g", "fat"],
-      ["Egg — curd", 1, "pc", "egg"],
-      ["Egg yolks — curd", 3, "pc", "egg"],
-      ["Egg whites — meringue", 3, "pc", "egg"],
-      ["Sugar — meringue", 150, "g", "sugar"],
-      ["Cream of tartar", 2, "g", "other"]
+      [
+        "Digestive biscuits",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — crust",
+        113,
+        "g",
+        "fat"
+      ],
+      [
+        "Sugar — crust",
+        12,
+        "g",
+        "sugar"
+      ],
+      [
+        "Cream cheese",
+        550,
+        "g",
+        "dairy"
+      ],
+      [
+        "Sugar",
+        200,
+        "g",
+        "sugar"
+      ],
+      [
+        "Lemon zest",
+        15,
+        "g",
+        "fruit"
+      ],
+      [
+        "Vanilla extract",
+        5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Sour cream",
+        100,
+        "g",
+        "dairy"
+      ],
+      [
+        "Eggs",
+        3,
+        "pc",
+        "egg"
+      ],
+      [
+        "Lemon juice",
+        60,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Cornstarch",
+        16,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice — curd",
+        80,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Sugar — curd",
+        135,
+        "g",
+        "sugar"
+      ],
+      [
+        "Butter — curd",
+        80,
+        "g",
+        "fat"
+      ],
+      [
+        "Egg — curd",
+        1,
+        "pc",
+        "egg"
+      ],
+      [
+        "Egg yolks — curd",
+        3,
+        "pc",
+        "egg"
+      ],
+      [
+        "Egg whites — meringue",
+        3,
+        "pc",
+        "egg"
+      ],
+      [
+        "Sugar — meringue",
+        150,
+        "g",
+        "sugar"
+      ],
+      [
+        "Cream of tartar",
+        2,
+        "g",
+        "other"
+      ]
     ],
     "steps": [
       "Bake biscuit crust 7–8 min at 180°C. Reduce oven to 140°C.",
@@ -604,16 +1479,66 @@
     "yield": "About 150 ml",
     "prep": "10 min",
     "ingredients": [
-      ["Egg yolk or mayonnaise", 1, "pc", "egg"],
-      ["Anchovy fillets", 2, "pc", "other"],
-      ["Garlic clove", 1, "pc", "other"],
-      ["Dijon mustard", 5, "g", "other"],
-      ["Lemon juice", 15, "ml", "liquid"],
-      ["Worcestershire sauce", 2.5, "ml", "liquid"],
-      ["Olive oil", 60, "ml", "fat"],
-      ["Parmesan", 30, "g", "dairy"],
-      ["Black pepper", 1, "g", "spice"],
-      ["Salt", 1, "g", "salt"]
+      [
+        "Egg yolk or mayonnaise",
+        1,
+        "pc",
+        "egg"
+      ],
+      [
+        "Anchovy fillets",
+        2,
+        "pc",
+        "other"
+      ],
+      [
+        "Garlic clove",
+        1,
+        "pc",
+        "other"
+      ],
+      [
+        "Dijon mustard",
+        5,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        15,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Worcestershire sauce",
+        2.5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Olive oil",
+        60,
+        "ml",
+        "fat"
+      ],
+      [
+        "Parmesan",
+        30,
+        "g",
+        "dairy"
+      ],
+      [
+        "Black pepper",
+        1,
+        "g",
+        "spice"
+      ],
+      [
+        "Salt",
+        1,
+        "g",
+        "salt"
+      ]
     ],
     "steps": [
       "Whisk yolk, anchovy, garlic, Dijon, lemon juice and Worcestershire together.",
@@ -621,28 +1546,82 @@
       "Stir in Parmesan. Season with pepper and salt if needed."
     ]
   },
-
   {
     "id": "gotteri-blaberja-ostakaka",
     "category": "Cheesecake",
-    "title": "Bláberjasostakaka",
-    "desc": "Baked blueberry cheesecake with a digestive base and berry jelly topping.",
+    "title": "Wild Blueberry Glazed Cheesecake",
+    "desc": "Baked cheesecake with a digestive base, blueberry filling and set blueberry jelly topping.",
     "yield": "1 × 24–26 cm",
     "prep": "20 min",
     "bake": "30 min",
     "tempC": 180,
     "ingredients": [
-      ["Digestive biscuits", 300, "g", "other"],
-      ["Brown sugar — base", 25, "g", "sugar"],
-      ["Butter — base", 120, "g", "fat"],
-      ["Philadelphia cream cheese", 600, "g", "dairy"],
-      ["Lemon juice", 15, "ml", "liquid"],
-      ["Blueberry jam", 45, "g", "other"],
-      ["Sugar", 100, "g", "sugar"],
-      ["Eggs", 3, "pc", "egg"],
-      ["Blueberry juice", 350, "ml", "liquid"],
-      ["Gelatin powder (Melatin Blue)", 1, "sachet", "other"],
-      ["Fresh blueberries — topping", 100, "g", "fruit"]
+      [
+        "Digestive biscuits",
+        300,
+        "g",
+        "other"
+      ],
+      [
+        "Brown sugar — base",
+        25,
+        "g",
+        "sugar"
+      ],
+      [
+        "Butter — base",
+        120,
+        "g",
+        "fat"
+      ],
+      [
+        "Philadelphia cream cheese",
+        600,
+        "g",
+        "dairy"
+      ],
+      [
+        "Lemon juice",
+        15,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Blueberry jam",
+        45,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        100,
+        "g",
+        "sugar"
+      ],
+      [
+        "Eggs",
+        3,
+        "pc",
+        "egg"
+      ],
+      [
+        "Blueberry juice",
+        350,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Gelatin powder (Melatin Blue)",
+        1,
+        "sachet",
+        "other"
+      ],
+      [
+        "Fresh blueberries — topping",
+        100,
+        "g",
+        "fruit"
+      ]
     ],
     "steps": [
       "Heat oven to 180°C. Crush biscuits, mix with brown sugar and melted butter, press into base and sides of a 24–26 cm springform. Bake 5 min.",
@@ -654,22 +1633,77 @@
   {
     "id": "gotteri-vanillu-ostakaka-berjasosu",
     "category": "Cheesecake",
-    "title": "Vanillu Ostakaka með Berjasósu",
-    "desc": "No-bake vanilla cheesecake with a warm mixed berry sauce.",
+    "title": "Vanilla Dream with Warm Berry Sauce",
+    "desc": "No-bake vanilla cheesecake finished with a glossy warm mixed berry sauce.",
     "yield": "1 × 20 cm or 8 glasses",
     "prep": "30 min",
     "ingredients": [
-      ["Digestive oat biscuits", 130, "g", "other"],
-      ["Lu Bastogne biscuits", 70, "g", "other"],
-      ["Butter — base", 90, "g", "fat"],
-      ["Philadelphia cream cheese", 250, "g", "dairy"],
-      ["Sugar", 50, "g", "sugar"],
-      ["Vanilla pod seeds", 1, "pc", "other"],
-      ["Vanilla extract", 5, "ml", "liquid"],
-      ["Double cream", 250, "ml", "liquid"],
-      ["Mixed frozen berries", 300, "g", "fruit"],
-      ["Sugar — berry sauce", 120, "g", "sugar"],
-      ["Lemon juice", 10, "ml", "liquid"]
+      [
+        "Digestive oat biscuits",
+        130,
+        "g",
+        "other"
+      ],
+      [
+        "Lu Bastogne biscuits",
+        70,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        90,
+        "g",
+        "fat"
+      ],
+      [
+        "Philadelphia cream cheese",
+        250,
+        "g",
+        "dairy"
+      ],
+      [
+        "Sugar",
+        50,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla pod seeds",
+        1,
+        "pc",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Double cream",
+        250,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Mixed frozen berries",
+        300,
+        "g",
+        "fruit"
+      ],
+      [
+        "Sugar — berry sauce",
+        120,
+        "g",
+        "sugar"
+      ],
+      [
+        "Lemon juice",
+        10,
+        "ml",
+        "liquid"
+      ]
     ],
     "steps": [
       "Melt butter, crush biscuits, mix together and press into a 20 cm springform. Chill.",
@@ -681,23 +1715,83 @@
   {
     "id": "gotteri-berjabomba",
     "category": "Cheesecake",
-    "title": "Berjabomba",
-    "desc": "No-bake vanilla cheesecake piled high with fresh strawberries, raspberries, blueberries and redcurrants.",
+    "title": "Berry Explosion Cheesecake",
+    "desc": "No-bake vanilla cheesecake piled sky-high with fresh strawberries, raspberries, blueberries and redcurrants.",
     "yield": "1 × 25 cm",
     "prep": "25 min",
     "ingredients": [
-      ["Digestive biscuits", 250, "g", "other"],
-      ["Sugar — base", 25, "g", "sugar"],
-      ["Butter — base", 100, "g", "fat"],
-      ["Salt — base", 2, "g", "salt"],
-      ["Philadelphia cream cheese", 270, "g", "dairy"],
-      ["Icing sugar", 130, "g", "sugar"],
-      ["Vanilla skyr", 130, "g", "dairy"],
-      ["Vanilla extract", 10, "ml", "liquid"],
-      ["Vanilla pod seeds", 1, "pc", "other"],
-      ["Salt", 1, "g", "salt"],
-      ["Double cream", 350, "ml", "liquid"],
-      ["Mixed fresh berries — topping", 400, "g", "fruit"]
+      [
+        "Digestive biscuits",
+        250,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar — base",
+        25,
+        "g",
+        "sugar"
+      ],
+      [
+        "Butter — base",
+        100,
+        "g",
+        "fat"
+      ],
+      [
+        "Salt — base",
+        2,
+        "g",
+        "salt"
+      ],
+      [
+        "Philadelphia cream cheese",
+        270,
+        "g",
+        "dairy"
+      ],
+      [
+        "Icing sugar",
+        130,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla skyr",
+        130,
+        "g",
+        "dairy"
+      ],
+      [
+        "Vanilla extract",
+        10,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Vanilla pod seeds",
+        1,
+        "pc",
+        "other"
+      ],
+      [
+        "Salt",
+        1,
+        "g",
+        "salt"
+      ],
+      [
+        "Double cream",
+        350,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Mixed fresh berries — topping",
+        400,
+        "g",
+        "fruit"
+      ]
     ],
     "steps": [
       "Crush biscuits, mix with sugar, salt and melted butter and press into a 25 cm springform.",
@@ -709,25 +1803,85 @@
   {
     "id": "gotteri-oreo-ostakaka-brownies",
     "category": "Cheesecake",
-    "title": "Oreo Ostakakubrownies",
-    "desc": "Fudgy chocolate brownie swirled with vanilla cream cheese and crushed Oreos.",
+    "title": "Oreo Cream Cheese Swirl Brownies",
+    "desc": "Fudgy dark chocolate brownies swirled with vanilla cream cheese and crushed Oreos.",
     "yield": "1 × 22×22 cm tin",
     "prep": "20 min",
     "bake": "25 min",
     "tempC": 175,
     "ingredients": [
-      ["Butter", 120, "g", "fat"],
-      ["Sugar", 100, "g", "sugar"],
-      ["Eggs", 2, "pc", "egg"],
-      ["Philadelphia cream cheese", 200, "g", "dairy"],
-      ["Icing sugar", 90, "g", "sugar"],
-      ["Vanilla extract", 10, "ml", "liquid"],
-      ["Plain flour", 110, "g", "flour"],
-      ["Cocoa powder", 25, "g", "cocoa"],
-      ["Salt", 2, "g", "salt"],
-      ["Dark chocolate — melted", 100, "g", "chocolate"],
-      ["Oreo biscuits — crushed", 12, "pc", "other"],
-      ["Oreo biscuits — topping", 4, "pc", "other"]
+      [
+        "Butter",
+        120,
+        "g",
+        "fat"
+      ],
+      [
+        "Sugar",
+        100,
+        "g",
+        "sugar"
+      ],
+      [
+        "Eggs",
+        2,
+        "pc",
+        "egg"
+      ],
+      [
+        "Philadelphia cream cheese",
+        200,
+        "g",
+        "dairy"
+      ],
+      [
+        "Icing sugar",
+        90,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla extract",
+        10,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Plain flour",
+        110,
+        "g",
+        "flour"
+      ],
+      [
+        "Cocoa powder",
+        25,
+        "g",
+        "cocoa"
+      ],
+      [
+        "Salt",
+        2,
+        "g",
+        "salt"
+      ],
+      [
+        "Dark chocolate — melted",
+        100,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Oreo biscuits — crushed",
+        12,
+        "pc",
+        "other"
+      ],
+      [
+        "Oreo biscuits — topping",
+        4,
+        "pc",
+        "other"
+      ]
     ],
     "steps": [
       "Heat oven to 175°C. Melt butter with sugar.",
@@ -739,21 +1893,71 @@
   {
     "id": "gotteri-gudddomleg-oreo-ostakaka",
     "category": "Cheesecake",
-    "title": "Guðdómleg Oreo Ostakaka",
-    "desc": "Triple-layer no-bake Oreo cheesecake served in glasses — white, chocolate and Oreo layers.",
+    "title": "Triple-Layer Oreo Cloud Cups",
+    "desc": "Three-layer no-bake cheesecake in glasses — pure vanilla, dark chocolate and crushed Oreo.",
     "yield": "10–12 glasses",
     "prep": "30 min",
     "ingredients": [
-      ["Oreo biscuits — base", 18, "pc", "other"],
-      ["Dark chocolate", 200, "g", "chocolate"],
-      ["Double cream — chocolate", 50, "ml", "liquid"],
-      ["Double cream", 500, "ml", "liquid"],
-      ["Philadelphia cream cheese", 300, "g", "dairy"],
-      ["Icing sugar", 150, "g", "sugar"],
-      ["Vanilla extract", 10, "ml", "liquid"],
-      ["Oreo biscuits — filling, roughly crushed", 15, "pc", "other"],
-      ["Double cream — topping", 300, "ml", "liquid"],
-      ["Oreo biscuits — topping", 10, "pc", "other"]
+      [
+        "Oreo biscuits — base",
+        18,
+        "pc",
+        "other"
+      ],
+      [
+        "Dark chocolate",
+        200,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Double cream — chocolate",
+        50,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Philadelphia cream cheese",
+        300,
+        "g",
+        "dairy"
+      ],
+      [
+        "Icing sugar",
+        150,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla extract",
+        10,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Oreo biscuits — filling, roughly crushed",
+        15,
+        "pc",
+        "other"
+      ],
+      [
+        "Double cream — topping",
+        300,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Oreo biscuits — topping",
+        10,
+        "pc",
+        "other"
+      ]
     ],
     "steps": [
       "Crush Oreos for base. Melt chocolate with 50 ml cream and cool.",
@@ -765,22 +1969,77 @@
   {
     "id": "gotteri-toblerone-ostakaka",
     "category": "Cheesecake",
-    "title": "Toblerone Ostakaka",
-    "desc": "No-bake Toblerone cheesecake with a raspberry swirl, on an Oreo base.",
+    "title": "Toblerone & Raspberry Swirl Cheesecake",
+    "desc": "No-bake Toblerone cheesecake with a vivid raspberry swirl on an Oreo base.",
     "yield": "1 × 20 cm",
     "prep": "25 min",
     "ingredients": [
-      ["Oreo biscuits", 16, "pc", "other"],
-      ["Butter — base", 70, "g", "fat"],
-      ["Philadelphia cream cheese", 500, "g", "dairy"],
-      ["Sugar", 170, "g", "sugar"],
-      ["Cocoa powder", 15, "g", "cocoa"],
-      ["Gelatin leaves", 3, "pc", "other"],
-      ["Boiling water — gelatin", 60, "ml", "liquid"],
-      ["Toblerone — melted", 200, "g", "chocolate"],
-      ["Vanilla extract", 5, "ml", "liquid"],
-      ["Double cream — lightly whipped", 250, "ml", "liquid"],
-      ["Raspberries — puréed", 125, "g", "fruit"]
+      [
+        "Oreo biscuits",
+        16,
+        "pc",
+        "other"
+      ],
+      [
+        "Butter — base",
+        70,
+        "g",
+        "fat"
+      ],
+      [
+        "Philadelphia cream cheese",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Sugar",
+        170,
+        "g",
+        "sugar"
+      ],
+      [
+        "Cocoa powder",
+        15,
+        "g",
+        "cocoa"
+      ],
+      [
+        "Gelatin leaves",
+        3,
+        "pc",
+        "other"
+      ],
+      [
+        "Boiling water — gelatin",
+        60,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Toblerone — melted",
+        200,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Vanilla extract",
+        5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Double cream — lightly whipped",
+        250,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Raspberries — puréed",
+        125,
+        "g",
+        "fruit"
+      ]
     ],
     "steps": [
       "Press crushed Oreos and melted butter into a 20 cm springform. Chill 1 hour.",
@@ -792,22 +2051,77 @@
   {
     "id": "gotteri-daim-ostakaka",
     "category": "Cheesecake",
-    "title": "Daim Ostakaka",
-    "desc": "No-bake white Toblerone cheesecake loaded with crushed Daim on a Bastogne base.",
+    "title": "White Chocolate & Daim Crunch Cheesecake",
+    "desc": "No-bake white Toblerone cheesecake loaded with crushed Daim on a spiced Bastogne base.",
     "yield": "1 × 20 cm",
     "prep": "25 min",
     "ingredients": [
-      ["Lu Bastogne biscuits", 200, "g", "other"],
-      ["Butter — base", 60, "g", "fat"],
-      ["Philadelphia cream cheese", 600, "g", "dairy"],
-      ["Sugar", 150, "g", "sugar"],
-      ["Icing sugar", 100, "g", "sugar"],
-      ["White Toblerone — melted", 200, "g", "chocolate"],
-      ["Gelatin leaves", 3, "pc", "other"],
-      ["Boiling water — gelatin", 60, "ml", "liquid"],
-      ["Vanilla sugar", 10, "g", "sugar"],
-      ["Daim — roughly crushed", 150, "g", "other"],
-      ["Double cream", 250, "ml", "liquid"]
+      [
+        "Lu Bastogne biscuits",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        60,
+        "g",
+        "fat"
+      ],
+      [
+        "Philadelphia cream cheese",
+        600,
+        "g",
+        "dairy"
+      ],
+      [
+        "Sugar",
+        150,
+        "g",
+        "sugar"
+      ],
+      [
+        "Icing sugar",
+        100,
+        "g",
+        "sugar"
+      ],
+      [
+        "White Toblerone — melted",
+        200,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Gelatin leaves",
+        3,
+        "pc",
+        "other"
+      ],
+      [
+        "Boiling water — gelatin",
+        60,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Vanilla sugar",
+        10,
+        "g",
+        "sugar"
+      ],
+      [
+        "Daim — roughly crushed",
+        150,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        250,
+        "ml",
+        "liquid"
+      ]
     ],
     "steps": [
       "Press crushed Bastogne biscuits and melted butter into a 20 cm springform. Chill.",
@@ -819,19 +2133,59 @@
   {
     "id": "gotteri-biscoff-ostakaka",
     "category": "Cheesecake",
-    "title": "Biscoff Ostakaka",
-    "desc": "No-bake Biscoff cheesecake on a cinnamon biscuit base with a drizzled Biscoff topping.",
+    "title": "Lotus Biscoff Velvet Cheesecake",
+    "desc": "No-bake Biscoff cheesecake on a cinnamon biscuit base with a warm Biscoff drizzle.",
     "yield": "1 × 18–20 cm",
     "prep": "20 min",
     "ingredients": [
-      ["Lu Bastogne cinnamon biscuits", 200, "g", "other"],
-      ["Butter — base", 100, "g", "fat"],
-      ["Cream cheese", 100, "g", "dairy"],
-      ["Biscoff spread", 150, "g", "other"],
-      ["Icing sugar", 50, "g", "sugar"],
-      ["Vanilla sugar", 10, "g", "sugar"],
-      ["Double cream", 400, "ml", "liquid"],
-      ["Biscoff spread — topping", 30, "g", "other"]
+      [
+        "Lu Bastogne cinnamon biscuits",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        100,
+        "g",
+        "fat"
+      ],
+      [
+        "Cream cheese",
+        100,
+        "g",
+        "dairy"
+      ],
+      [
+        "Biscoff spread",
+        150,
+        "g",
+        "other"
+      ],
+      [
+        "Icing sugar",
+        50,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla sugar",
+        10,
+        "g",
+        "sugar"
+      ],
+      [
+        "Double cream",
+        400,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Biscoff spread — topping",
+        30,
+        "g",
+        "other"
+      ]
     ],
     "steps": [
       "Press crushed biscuits and melted butter into an 18–20 cm springform. Chill.",
@@ -843,23 +2197,83 @@
   {
     "id": "gotteri-jardarberja-ostakaka",
     "category": "Cheesecake",
-    "title": "Jarðarberja Ostakaka",
-    "desc": "No-bake strawberry cheesecake on an Oreo base, topped with whole strawberries and dark chocolate.",
+    "title": "Strawberry & Dark Chocolate Cheesecake",
+    "desc": "No-bake strawberry cheesecake on an Oreo base, crowned with whole berries and a dark chocolate drizzle.",
     "yield": "1 × 20 cm",
     "prep": "25 min",
     "ingredients": [
-      ["Oreo biscuits", 16, "pc", "other"],
-      ["Butter — base", 70, "g", "fat"],
-      ["Gelatin leaves", 4, "pc", "other"],
-      ["Boiling water — gelatin", 50, "ml", "liquid"],
-      ["Philadelphia cream cheese", 500, "g", "dairy"],
-      ["Sugar", 150, "g", "sugar"],
-      ["Icing sugar", 100, "g", "sugar"],
-      ["Vanilla sugar", 10, "g", "sugar"],
-      ["Fresh strawberries — puréed", 200, "g", "fruit"],
-      ["Double cream", 250, "ml", "liquid"],
-      ["Fresh strawberries — topping", 400, "g", "fruit"],
-      ["Dark chocolate — melted", 80, "g", "chocolate"]
+      [
+        "Oreo biscuits",
+        16,
+        "pc",
+        "other"
+      ],
+      [
+        "Butter — base",
+        70,
+        "g",
+        "fat"
+      ],
+      [
+        "Gelatin leaves",
+        4,
+        "pc",
+        "other"
+      ],
+      [
+        "Boiling water — gelatin",
+        50,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Philadelphia cream cheese",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Sugar",
+        150,
+        "g",
+        "sugar"
+      ],
+      [
+        "Icing sugar",
+        100,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla sugar",
+        10,
+        "g",
+        "sugar"
+      ],
+      [
+        "Fresh strawberries — puréed",
+        200,
+        "g",
+        "fruit"
+      ],
+      [
+        "Double cream",
+        250,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Fresh strawberries — topping",
+        400,
+        "g",
+        "fruit"
+      ],
+      [
+        "Dark chocolate — melted",
+        80,
+        "g",
+        "chocolate"
+      ]
     ],
     "steps": [
       "Press crushed Oreos and melted butter into a 20 cm springform.",
@@ -871,19 +2285,59 @@
   {
     "id": "gotteri-lemon-curd-ostakaka",
     "category": "Cheesecake",
-    "title": "Lemon Curd Ostakaka",
-    "desc": "Light no-bake lemon curd cheesecake served in individual glasses on an oat biscuit base.",
+    "title": "Lemon Curd Cheesecake Cups",
+    "desc": "Light no-bake lemon curd cheesecake served in individual glasses on an oat biscuit crumb.",
     "yield": "6–8 glasses",
     "prep": "20 min",
     "ingredients": [
-      ["Oat biscuits", 200, "g", "other"],
-      ["Butter — base", 40, "g", "fat"],
-      ["Cream cheese", 350, "g", "dairy"],
-      ["Sugar", 150, "g", "sugar"],
-      ["Vanilla sugar", 5, "g", "sugar"],
-      ["Lemon curd", 80, "g", "other"],
-      ["Double cream", 400, "ml", "liquid"],
-      ["Lemon curd — topping", 30, "g", "other"]
+      [
+        "Oat biscuits",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        40,
+        "g",
+        "fat"
+      ],
+      [
+        "Cream cheese",
+        350,
+        "g",
+        "dairy"
+      ],
+      [
+        "Sugar",
+        150,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla sugar",
+        5,
+        "g",
+        "sugar"
+      ],
+      [
+        "Lemon curd",
+        80,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        400,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Lemon curd — topping",
+        30,
+        "g",
+        "other"
+      ]
     ],
     "steps": [
       "Crush biscuits, mix with melted butter and divide between glasses.",
@@ -894,21 +2348,71 @@
   {
     "id": "gotteri-espresso-martini-ostakaka",
     "category": "Cheesecake",
-    "title": "Espresso Martini Ostakaka",
-    "desc": "No-bake espresso martini cheesecake in glasses — bold coffee and dark chocolate, finished with coffee beans.",
+    "title": "Espresso Martini Cheesecake Glasses",
+    "desc": "No-bake espresso and dark chocolate cheesecake in glasses, finished with coffee beans.",
     "yield": "6 glasses",
     "prep": "20 min",
     "ingredients": [
-      ["Oreo biscuits", 12, "pc", "other"],
-      ["Butter — base", 40, "g", "fat"],
-      ["Cream cheese", 500, "g", "dairy"],
-      ["Sugar", 160, "g", "sugar"],
-      ["Cocoa powder", 15, "g", "cocoa"],
-      ["Vanilla sugar", 10, "g", "sugar"],
-      ["Strong espresso", 50, "ml", "liquid"],
-      ["Dark chocolate — melted", 100, "g", "chocolate"],
-      ["Double cream", 300, "ml", "liquid"],
-      ["Coffee beans — garnish", 12, "pc", "other"]
+      [
+        "Oreo biscuits",
+        12,
+        "pc",
+        "other"
+      ],
+      [
+        "Butter — base",
+        40,
+        "g",
+        "fat"
+      ],
+      [
+        "Cream cheese",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Sugar",
+        160,
+        "g",
+        "sugar"
+      ],
+      [
+        "Cocoa powder",
+        15,
+        "g",
+        "cocoa"
+      ],
+      [
+        "Vanilla sugar",
+        10,
+        "g",
+        "sugar"
+      ],
+      [
+        "Strong espresso",
+        50,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Dark chocolate — melted",
+        100,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Double cream",
+        300,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Coffee beans — garnish",
+        12,
+        "pc",
+        "other"
+      ]
     ],
     "steps": [
       "Crush Oreos with melted butter and press into the base of each glass.",
@@ -919,23 +2423,83 @@
   {
     "id": "gotteri-pekanhnetu-ostakaka",
     "category": "Cheesecake",
-    "title": "Pekanhnetu Ostakaka",
-    "desc": "No-bake cheesecake with a caramelised pecan and oat biscuit base, set with coffee gelatin.",
+    "title": "Caramel Pecan & Coffee Cheesecake",
+    "desc": "No-bake cheesecake set with coffee gelatin, topped with hand-caramelised pecans.",
     "yield": "1 × 20 cm, 10–12 servings",
     "prep": "35 min",
     "ingredients": [
-      ["Pecans", 200, "g", "other"],
-      ["Brown sugar — caramel", 50, "g", "sugar"],
-      ["Butter — caramel", 20, "g", "fat"],
-      ["McVities oat biscuits", 200, "g", "other"],
-      ["Butter — base", 70, "g", "fat"],
-      ["Cream cheese", 500, "g", "dairy"],
-      ["Brown sugar", 120, "g", "sugar"],
-      ["Icing sugar", 90, "g", "sugar"],
-      ["Gelatin leaves", 4, "pc", "other"],
-      ["Hot strong coffee — gelatin", 50, "ml", "liquid"],
-      ["Vanilla pod seeds", 1, "pc", "other"],
-      ["Double cream", 250, "ml", "liquid"]
+      [
+        "Pecans",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Brown sugar — caramel",
+        50,
+        "g",
+        "sugar"
+      ],
+      [
+        "Butter — caramel",
+        20,
+        "g",
+        "fat"
+      ],
+      [
+        "McVities oat biscuits",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        70,
+        "g",
+        "fat"
+      ],
+      [
+        "Cream cheese",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Brown sugar",
+        120,
+        "g",
+        "sugar"
+      ],
+      [
+        "Icing sugar",
+        90,
+        "g",
+        "sugar"
+      ],
+      [
+        "Gelatin leaves",
+        4,
+        "pc",
+        "other"
+      ],
+      [
+        "Hot strong coffee — gelatin",
+        50,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Vanilla pod seeds",
+        1,
+        "pc",
+        "other"
+      ],
+      [
+        "Double cream",
+        250,
+        "ml",
+        "liquid"
+      ]
     ],
     "steps": [
       "Melt sugar and butter in a pan, toss in pecans, cool on baking paper and roughly chop.",
@@ -947,26 +2511,101 @@
   {
     "id": "gotteri-flamberud-ostakaka",
     "category": "Cheesecake",
-    "title": "Flamberuð Ostakaka",
-    "desc": "Dark chocolate and liquorice cheesecake topped with a blowtorch-torched Italian meringue.",
+    "title": "Torched Meringue Dark Chocolate Cheesecake",
+    "desc": "Dark chocolate and liquorice cheesecake crowned with a blowtorch-toasted Italian meringue.",
     "yield": "1 × 20 cm",
     "prep": "35 min",
     "ingredients": [
-      ["Chocolate cream biscuits / Oreo", 200, "g", "other"],
-      ["Butter — base", 60, "g", "fat"],
-      ["Gelatin leaves", 4, "pc", "other"],
-      ["Boiling water — gelatin", 50, "ml", "liquid"],
-      ["Cream cheese", 500, "g", "dairy"],
-      ["Sugar", 150, "g", "sugar"],
-      ["Dark chocolate — melted", 200, "g", "chocolate"],
-      ["Vanilla sugar", 5, "g", "sugar"],
-      ["Double cream", 250, "ml", "liquid"],
-      ["Liquorice caramel balls — chopped", 60, "g", "other"],
-      ["Egg whites — meringue", 3, "pc", "egg"],
-      ["Sugar — meringue", 170, "g", "sugar"],
-      ["Cream of tartar", 2, "g", "other"],
-      ["Vanilla extract", 5, "ml", "liquid"],
-      ["Salt", 1, "g", "salt"]
+      [
+        "Chocolate cream biscuits / Oreo",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        60,
+        "g",
+        "fat"
+      ],
+      [
+        "Gelatin leaves",
+        4,
+        "pc",
+        "other"
+      ],
+      [
+        "Boiling water — gelatin",
+        50,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Cream cheese",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Sugar",
+        150,
+        "g",
+        "sugar"
+      ],
+      [
+        "Dark chocolate — melted",
+        200,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Vanilla sugar",
+        5,
+        "g",
+        "sugar"
+      ],
+      [
+        "Double cream",
+        250,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Liquorice caramel balls — chopped",
+        60,
+        "g",
+        "other"
+      ],
+      [
+        "Egg whites — meringue",
+        3,
+        "pc",
+        "egg"
+      ],
+      [
+        "Sugar — meringue",
+        170,
+        "g",
+        "sugar"
+      ],
+      [
+        "Cream of tartar",
+        2,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Salt",
+        1,
+        "g",
+        "salt"
+      ]
     ],
     "steps": [
       "Press crushed biscuits and melted butter into a 20 cm springform. Chill.",
@@ -977,20 +2616,65 @@
   {
     "id": "gotteri-ostakaka-appelsinu",
     "category": "Cheesecake",
-    "title": "Ostakaka með Appelsínukeim",
-    "desc": "No-bake white Toblerone cheesecake with a fresh orange and vanilla flavour.",
+    "title": "White Chocolate & Orange Cheesecake",
+    "desc": "No-bake white Toblerone cheesecake with a fresh orange and vanilla gelatin set.",
     "yield": "1 × 20 cm",
     "prep": "25 min",
     "ingredients": [
-      ["Lu Bastogne Duo biscuits", 260, "g", "other"],
-      ["Butter — base", 40, "g", "fat"],
-      ["Orange — juice and zest", 1, "pc", "fruit"],
-      ["Gelatin leaves", 4, "pc", "other"],
-      ["Cream cheese", 500, "g", "dairy"],
-      ["Sugar", 180, "g", "sugar"],
-      ["Vanilla pod seeds", 1, "pc", "other"],
-      ["White Toblerone — melted", 200, "g", "chocolate"],
-      ["Double cream", 250, "ml", "liquid"]
+      [
+        "Lu Bastogne Duo biscuits",
+        260,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        40,
+        "g",
+        "fat"
+      ],
+      [
+        "Orange — juice and zest",
+        1,
+        "pc",
+        "fruit"
+      ],
+      [
+        "Gelatin leaves",
+        4,
+        "pc",
+        "other"
+      ],
+      [
+        "Cream cheese",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Sugar",
+        180,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla pod seeds",
+        1,
+        "pc",
+        "other"
+      ],
+      [
+        "White Toblerone — melted",
+        200,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Double cream",
+        250,
+        "ml",
+        "liquid"
+      ]
     ],
     "steps": [
       "Press crushed biscuits and melted butter into a 20 cm springform. Chill.",
@@ -1002,22 +2686,77 @@
   {
     "id": "gotteri-hatidleg-ostakaka",
     "category": "Cheesecake",
-    "title": "Hátíðleg Ostakaka",
-    "desc": "Festive no-bake white Toblerone cheesecake with Daim bites on an Oreo base.",
+    "title": "Celebration White Chocolate Daim Cheesecake",
+    "desc": "Festive no-bake white Toblerone cheesecake studded with Daim bites — party perfect.",
     "yield": "1 × 20 cm",
     "prep": "25 min",
     "ingredients": [
-      ["Oreo biscuits", 16, "pc", "other"],
-      ["Butter — base", 70, "g", "fat"],
-      ["Cream cheese", 500, "g", "dairy"],
-      ["Sugar", 150, "g", "sugar"],
-      ["Icing sugar", 100, "g", "sugar"],
-      ["White Toblerone — melted", 200, "g", "chocolate"],
-      ["Gelatin leaves", 3, "pc", "other"],
-      ["Boiling water — gelatin", 60, "ml", "liquid"],
-      ["Vanilla sugar", 10, "g", "sugar"],
-      ["Marabou Daim bites — roughly chopped", 150, "g", "other"],
-      ["Double cream", 250, "ml", "liquid"]
+      [
+        "Oreo biscuits",
+        16,
+        "pc",
+        "other"
+      ],
+      [
+        "Butter — base",
+        70,
+        "g",
+        "fat"
+      ],
+      [
+        "Cream cheese",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Sugar",
+        150,
+        "g",
+        "sugar"
+      ],
+      [
+        "Icing sugar",
+        100,
+        "g",
+        "sugar"
+      ],
+      [
+        "White Toblerone — melted",
+        200,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Gelatin leaves",
+        3,
+        "pc",
+        "other"
+      ],
+      [
+        "Boiling water — gelatin",
+        60,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Vanilla sugar",
+        10,
+        "g",
+        "sugar"
+      ],
+      [
+        "Marabou Daim bites — roughly chopped",
+        150,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        250,
+        "ml",
+        "liquid"
+      ]
     ],
     "steps": [
       "Press crushed Oreos and melted butter into a 20 cm springform.",
@@ -1028,31 +2767,121 @@
   {
     "id": "gotteri-ostakokubomba",
     "category": "Cheesecake",
-    "title": "Ostakökubomba",
-    "desc": "No-bake vanilla cheesecake with a cherry swirl, on a fudgy brownie base, topped with torched meringue.",
+    "title": "Brownie, Black Cherry & Meringue Bomb",
+    "desc": "Fudgy brownie base topped with cherry-swirled cheesecake and a torched meringue crown.",
     "yield": "1 × 20–22 cm",
     "prep": "35 min",
     "bake": "25 min",
     "tempC": 160,
     "ingredients": [
-      ["Butter — brownie", 60, "g", "fat"],
-      ["Dark chocolate — brownie", 200, "g", "chocolate"],
-      ["Brown sugar — brownie", 80, "g", "sugar"],
-      ["Vanilla extract — brownie", 5, "ml", "liquid"],
-      ["Egg — brownie", 1, "pc", "egg"],
-      ["Plain flour — brownie", 70, "g", "flour"],
-      ["Gelatin leaves", 4, "pc", "other"],
-      ["Boiling water — gelatin", 40, "ml", "liquid"],
-      ["Cream cheese", 500, "g", "dairy"],
-      ["Sugar", 125, "g", "sugar"],
-      ["Icing sugar", 100, "g", "sugar"],
-      ["Vanilla pod seeds", 1, "pc", "other"],
-      ["Double cream", 250, "ml", "liquid"],
-      ["Black cherry jam", 160, "g", "other"],
-      ["Egg whites — meringue", 3, "pc", "egg"],
-      ["Salt — meringue", 1, "g", "salt"],
-      ["Icing sugar — meringue", 250, "g", "sugar"],
-      ["Vanilla extract — meringue", 5, "ml", "liquid"]
+      [
+        "Butter — brownie",
+        60,
+        "g",
+        "fat"
+      ],
+      [
+        "Dark chocolate — brownie",
+        200,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Brown sugar — brownie",
+        80,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla extract — brownie",
+        5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Egg — brownie",
+        1,
+        "pc",
+        "egg"
+      ],
+      [
+        "Plain flour — brownie",
+        70,
+        "g",
+        "flour"
+      ],
+      [
+        "Gelatin leaves",
+        4,
+        "pc",
+        "other"
+      ],
+      [
+        "Boiling water — gelatin",
+        40,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Cream cheese",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Sugar",
+        125,
+        "g",
+        "sugar"
+      ],
+      [
+        "Icing sugar",
+        100,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla pod seeds",
+        1,
+        "pc",
+        "other"
+      ],
+      [
+        "Double cream",
+        250,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Black cherry jam",
+        160,
+        "g",
+        "other"
+      ],
+      [
+        "Egg whites — meringue",
+        3,
+        "pc",
+        "egg"
+      ],
+      [
+        "Salt — meringue",
+        1,
+        "g",
+        "salt"
+      ],
+      [
+        "Icing sugar — meringue",
+        250,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla extract — meringue",
+        5,
+        "ml",
+        "liquid"
+      ]
     ],
     "steps": [
       "Bake brownie base: melt butter and chocolate, mix in sugar, vanilla, egg and flour. Bake at 160°C for 25 min. Cool.",
@@ -1063,21 +2892,71 @@
   {
     "id": "gotteri-rolo-ostakaka",
     "category": "Cheesecake",
-    "title": "Rolo Ostakaka",
-    "desc": "No-bake vanilla cheesecake studded with Rolo caramel chocolates.",
+    "title": "Caramel Rolo Cheesecake",
+    "desc": "No-bake vanilla cheesecake generously studded with halved Rolo caramel chocolates.",
     "yield": "1 × 22 cm",
     "prep": "25 min",
     "ingredients": [
-      ["Homeblest biscuits / digestive", 200, "g", "other"],
-      ["Butter — base", 60, "g", "fat"],
-      ["Gelatin leaves", 4, "pc", "other"],
-      ["Boiling water — gelatin", 50, "ml", "liquid"],
-      ["Cream cheese", 600, "g", "dairy"],
-      ["Sugar", 150, "g", "sugar"],
-      ["Icing sugar", 120, "g", "sugar"],
-      ["Vanilla pod seeds", 1, "pc", "other"],
-      ["Double cream", 300, "ml", "liquid"],
-      ["Rolo chocolates — halved", 166, "g", "other"]
+      [
+        "Homeblest biscuits / digestive",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        60,
+        "g",
+        "fat"
+      ],
+      [
+        "Gelatin leaves",
+        4,
+        "pc",
+        "other"
+      ],
+      [
+        "Boiling water — gelatin",
+        50,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Cream cheese",
+        600,
+        "g",
+        "dairy"
+      ],
+      [
+        "Sugar",
+        150,
+        "g",
+        "sugar"
+      ],
+      [
+        "Icing sugar",
+        120,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla pod seeds",
+        1,
+        "pc",
+        "other"
+      ],
+      [
+        "Double cream",
+        300,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Rolo chocolates — halved",
+        166,
+        "g",
+        "other"
+      ]
     ],
     "steps": [
       "Press crushed biscuits and melted butter into a 22 cm springform.",
@@ -1089,20 +2968,65 @@
   {
     "id": "gotteri-hatidarostakaka-glос",
     "category": "Cheesecake",
-    "title": "Hátíðarostakaka í Glösum",
-    "desc": "Light no-bake vanilla cheesecake in glasses with a warm Dumle caramel sauce and fresh berries.",
+    "title": "Dumle Caramel Cheesecake Glasses",
+    "desc": "Light vanilla cheesecake cups with a silky Dumle caramel sauce and fresh berry garnish.",
     "yield": "8–12 glasses",
     "prep": "20 min",
     "ingredients": [
-      ["Oreo biscuits — crushed", 30, "pc", "other"],
-      ["Butter — base", 50, "g", "fat"],
-      ["Cream cheese", 500, "g", "dairy"],
-      ["Sugar", 270, "g", "sugar"],
-      ["Vanilla sugar", 10, "g", "sugar"],
-      ["Double cream", 500, "ml", "liquid"],
-      ["Dumle Polka caramels", 230, "g", "other"],
-      ["Double cream — caramel", 100, "ml", "liquid"],
-      ["Fresh mixed berries — garnish", 200, "g", "fruit"]
+      [
+        "Oreo biscuits — crushed",
+        30,
+        "pc",
+        "other"
+      ],
+      [
+        "Butter — base",
+        50,
+        "g",
+        "fat"
+      ],
+      [
+        "Cream cheese",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Sugar",
+        270,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla sugar",
+        10,
+        "g",
+        "sugar"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Dumle Polka caramels",
+        230,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream — caramel",
+        100,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Fresh mixed berries — garnish",
+        200,
+        "g",
+        "fruit"
+      ]
     ],
     "steps": [
       "Mix crushed Oreos with melted butter and press 1 tbsp into the base of each glass.",
@@ -1113,19 +3037,59 @@
   {
     "id": "gotteri-ostakaka-karamella-kanilkex",
     "category": "Cheesecake",
-    "title": "Ostakaka með Karamellu og Kanilkexi",
-    "desc": "No-bake vanilla cheesecake in glasses with a homemade brown-sugar caramel on a cinnamon biscuit base.",
+    "title": "Cinnamon & Brown Sugar Caramel Cheesecake Cups",
+    "desc": "Vanilla cheesecake glasses on a spiced biscuit crumb with a poured brown-sugar caramel.",
     "yield": "6–8 glasses",
     "prep": "20 min",
     "ingredients": [
-      ["Spiced cream biscuits (Jóla kremkex)", 170, "g", "other"],
-      ["Cream cheese", 400, "g", "dairy"],
-      ["Sugar", 180, "g", "sugar"],
-      ["Vanilla pod seeds", 1, "pc", "other"],
-      ["Double cream", 400, "ml", "liquid"],
-      ["Butter — caramel", 60, "g", "fat"],
-      ["Brown sugar — caramel", 110, "g", "sugar"],
-      ["Double cream — caramel", 80, "ml", "liquid"]
+      [
+        "Spiced cream biscuits (Jóla kremkex)",
+        170,
+        "g",
+        "other"
+      ],
+      [
+        "Cream cheese",
+        400,
+        "g",
+        "dairy"
+      ],
+      [
+        "Sugar",
+        180,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla pod seeds",
+        1,
+        "pc",
+        "other"
+      ],
+      [
+        "Double cream",
+        400,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Butter — caramel",
+        60,
+        "g",
+        "fat"
+      ],
+      [
+        "Brown sugar — caramel",
+        110,
+        "g",
+        "sugar"
+      ],
+      [
+        "Double cream — caramel",
+        80,
+        "ml",
+        "liquid"
+      ]
     ],
     "steps": [
       "Divide crushed biscuits between glasses.",
@@ -1136,23 +3100,83 @@
   {
     "id": "gotteri-hatidleg-hindberja-ostakaka",
     "category": "Cheesecake",
-    "title": "Hátíðleg Hindberja Ostakaka",
-    "desc": "No-bake white Toblerone and raspberry cheesecake — soft pink, elegant and fruity.",
+    "title": "White Chocolate & Fresh Raspberry Cheesecake",
+    "desc": "Elegant no-bake white Toblerone cheesecake with mashed and fresh raspberries throughout.",
     "yield": "1 × 18–20 cm",
     "prep": "25 min",
     "ingredients": [
-      ["Lu Bastogne biscuits", 200, "g", "other"],
-      ["Butter — base", 70, "g", "fat"],
-      ["Philadelphia cream cheese", 400, "g", "dairy"],
-      ["Sugar", 120, "g", "sugar"],
-      ["Icing sugar", 50, "g", "sugar"],
-      ["Gelatin leaves", 3, "pc", "other"],
-      ["Boiling water — gelatin", 50, "ml", "liquid"],
-      ["Vanilla sugar", 10, "g", "sugar"],
-      ["White Toblerone — melted", 200, "g", "chocolate"],
-      ["Double cream", 200, "ml", "liquid"],
-      ["Fresh raspberries — mashed", 150, "g", "fruit"],
-      ["Fresh raspberries — topping", 200, "g", "fruit"]
+      [
+        "Lu Bastogne biscuits",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        70,
+        "g",
+        "fat"
+      ],
+      [
+        "Philadelphia cream cheese",
+        400,
+        "g",
+        "dairy"
+      ],
+      [
+        "Sugar",
+        120,
+        "g",
+        "sugar"
+      ],
+      [
+        "Icing sugar",
+        50,
+        "g",
+        "sugar"
+      ],
+      [
+        "Gelatin leaves",
+        3,
+        "pc",
+        "other"
+      ],
+      [
+        "Boiling water — gelatin",
+        50,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Vanilla sugar",
+        10,
+        "g",
+        "sugar"
+      ],
+      [
+        "White Toblerone — melted",
+        200,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Double cream",
+        200,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Fresh raspberries — mashed",
+        150,
+        "g",
+        "fruit"
+      ],
+      [
+        "Fresh raspberries — topping",
+        200,
+        "g",
+        "fruit"
+      ]
     ],
     "steps": [
       "Press crushed biscuits and melted butter into an 18–20 cm springform.",
@@ -1163,30 +3187,115 @@
   {
     "id": "gotteri-sernik",
     "category": "Cheesecake",
-    "title": "Sernik — Pólska Ostakaka",
-    "desc": "Traditional Polish baked cheesecake (Sernik) made with Twaróg curd cheese and a crumble top.",
+    "title": "Polish Baked Curd Cheesecake",
+    "desc": "Traditional Sernik — baked with Twaróg curd cheese and finished with a grated cocoa-pastry crumble.",
     "yield": "1 × 24–26 cm",
     "prep": "35 min",
     "bake": "85 min",
     "tempC": 180,
     "ingredients": [
-      ["Plain flour — pastry", 250, "g", "flour"],
-      ["Cocoa powder — pastry", 25, "g", "cocoa"],
-      ["Sugar — pastry", 100, "g", "sugar"],
-      ["Baking powder — pastry", 4, "g", "leavener"],
-      ["Salt — pastry", 1, "g", "salt"],
-      ["Cold butter — pastry", 150, "g", "fat"],
-      ["Egg yolk — pastry", 1, "pc", "egg"],
-      ["Sour cream — pastry", 50, "g", "dairy"],
-      ["Vanilla extract — pastry", 5, "ml", "liquid"],
-      ["Butter — filling", 200, "g", "fat"],
-      ["Egg yolks — filling", 6, "pc", "egg"],
-      ["Sugar — filling", 250, "g", "sugar"],
-      ["Twaróg curd cheese", 1000, "g", "dairy"],
-      ["Vanilla extract — filling", 10, "ml", "liquid"],
-      ["Orange zest", 1, "pc", "fruit"],
-      ["Egg whites — filling", 7, "pc", "egg"],
-      ["Vanilla custard powder", 40, "g", "other"]
+      [
+        "Plain flour — pastry",
+        250,
+        "g",
+        "flour"
+      ],
+      [
+        "Cocoa powder — pastry",
+        25,
+        "g",
+        "cocoa"
+      ],
+      [
+        "Sugar — pastry",
+        100,
+        "g",
+        "sugar"
+      ],
+      [
+        "Baking powder — pastry",
+        4,
+        "g",
+        "leavener"
+      ],
+      [
+        "Salt — pastry",
+        1,
+        "g",
+        "salt"
+      ],
+      [
+        "Cold butter — pastry",
+        150,
+        "g",
+        "fat"
+      ],
+      [
+        "Egg yolk — pastry",
+        1,
+        "pc",
+        "egg"
+      ],
+      [
+        "Sour cream — pastry",
+        50,
+        "g",
+        "dairy"
+      ],
+      [
+        "Vanilla extract — pastry",
+        5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Butter — filling",
+        200,
+        "g",
+        "fat"
+      ],
+      [
+        "Egg yolks — filling",
+        6,
+        "pc",
+        "egg"
+      ],
+      [
+        "Sugar — filling",
+        250,
+        "g",
+        "sugar"
+      ],
+      [
+        "Twaróg curd cheese",
+        1000,
+        "g",
+        "dairy"
+      ],
+      [
+        "Vanilla extract — filling",
+        10,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Orange zest",
+        1,
+        "pc",
+        "fruit"
+      ],
+      [
+        "Egg whites — filling",
+        7,
+        "pc",
+        "egg"
+      ],
+      [
+        "Vanilla custard powder",
+        40,
+        "g",
+        "other"
+      ]
     ],
     "steps": [
       "Make pastry: rub butter into flour, cocoa, sugar, baking powder and salt. Mix in egg yolk, sour cream and vanilla to form a dough. Divide 2/3 into the fridge, 1/3 into the freezer. Bake the 2/3 portion blind in a lined springform for 15 min at 180°C.",
@@ -1198,21 +3307,71 @@
   {
     "id": "gotteri-baron-ostakaka",
     "category": "Cheesecake",
-    "title": "Barón Ostakaka",
-    "desc": "No-bake vanilla cheesecake in glasses with a Síríus dark and caramel chocolate ganache.",
+    "title": "Dark & Caramel Ganache Cheesecake Cups",
+    "desc": "Vanilla cheesecake glasses on a cinnamon base, finished with a rich dark and caramel chocolate ganache.",
     "yield": "8–10 glasses",
     "prep": "20 min",
     "ingredients": [
-      ["Cinnamon biscuits", 200, "g", "other"],
-      ["Butter — base", 30, "g", "fat"],
-      ["Cream cheese", 400, "g", "dairy"],
-      ["Sugar", 180, "g", "sugar"],
-      ["Vanilla sugar", 10, "g", "sugar"],
-      ["Double cream", 400, "ml", "liquid"],
-      ["Dark chocolate (56%)", 50, "g", "chocolate"],
-      ["Caramel chocolate drops", 50, "g", "chocolate"],
-      ["Double cream — ganache", 100, "ml", "liquid"],
-      ["Maple syrup", 15, "ml", "liquid"]
+      [
+        "Cinnamon biscuits",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        30,
+        "g",
+        "fat"
+      ],
+      [
+        "Cream cheese",
+        400,
+        "g",
+        "dairy"
+      ],
+      [
+        "Sugar",
+        180,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla sugar",
+        10,
+        "g",
+        "sugar"
+      ],
+      [
+        "Double cream",
+        400,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Dark chocolate (56%)",
+        50,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Caramel chocolate drops",
+        50,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Double cream — ganache",
+        100,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Maple syrup",
+        15,
+        "ml",
+        "liquid"
+      ]
     ],
     "steps": [
       "Mix crushed cinnamon biscuits with melted butter and press into glasses.",
@@ -1223,20 +3382,65 @@
   {
     "id": "gotteri-hindberja-skyrkaka-sukkuladiskal",
     "category": "Skyr Cake",
-    "title": "Hindberja Skyrkaka í Súkkulaðiskál",
-    "desc": "Raspberry skyr mousse served in hand-made chocolate bowls on an oat biscuit base.",
+    "title": "Raspberry Skyr Mousse in Chocolate Bowls",
+    "desc": "Whipped vanilla skyr and raspberry mousse served in hand-made chocolate bowls on a biscuit base.",
     "yield": "8–10 chocolate bowls",
     "prep": "40 min",
     "ingredients": [
-      ["Chocolate coating", 500, "g", "chocolate"],
-      ["Small balloons", 10, "pc", "other"],
-      ["Double cream", 500, "ml", "liquid"],
-      ["Vanilla skyr", 500, "g", "dairy"],
-      ["Vanilla pod seeds", 1, "pc", "other"],
-      ["Fresh raspberries — puréed", 250, "g", "fruit"],
-      ["Lu Bastogne biscuits — crushed", 125, "g", "other"],
-      ["Butter — base", 40, "g", "fat"],
-      ["Fresh raspberries — garnish", 125, "g", "fruit"]
+      [
+        "Chocolate coating",
+        500,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Small balloons",
+        10,
+        "pc",
+        "other"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Vanilla skyr",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Vanilla pod seeds",
+        1,
+        "pc",
+        "other"
+      ],
+      [
+        "Fresh raspberries — puréed",
+        250,
+        "g",
+        "fruit"
+      ],
+      [
+        "Lu Bastogne biscuits — crushed",
+        125,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        40,
+        "g",
+        "fat"
+      ],
+      [
+        "Fresh raspberries — garnish",
+        125,
+        "g",
+        "fruit"
+      ]
     ],
     "steps": [
       "Inflate balloons, dip the bottom into melted chocolate coating, set on baking paper and refrigerate. Once firm, pop and remove balloons to reveal chocolate bowls.",
@@ -1248,21 +3452,71 @@
   {
     "id": "gotteri-jardaberja-ostakaka-sukkuladiskal",
     "category": "Cheesecake",
-    "title": "Jarðaberja Ostakaka í Súkkulaðiskál",
-    "desc": "Strawberry cheesecake mousse served in hand-made chocolate bowls.",
+    "title": "Strawberry Cheesecake in Chocolate Bowls",
+    "desc": "Strawberry cheesecake mousse served in hand-made dark chocolate bowls — show-stopping party dessert.",
     "yield": "8–10 chocolate bowls",
     "prep": "40 min",
     "ingredients": [
-      ["Chocolate coating", 500, "g", "chocolate"],
-      ["Small balloons", 10, "pc", "other"],
-      ["Philadelphia cream cheese", 300, "g", "dairy"],
-      ["Icing sugar", 80, "g", "sugar"],
-      ["Vanilla sugar", 10, "g", "sugar"],
-      ["Double cream", 500, "ml", "liquid"],
-      ["Fresh strawberries — puréed", 400, "g", "fruit"],
-      ["Lu Digestive biscuits — crushed", 200, "g", "other"],
-      ["Butter — base", 40, "g", "fat"],
-      ["Fresh strawberries — garnish", 200, "g", "fruit"]
+      [
+        "Chocolate coating",
+        500,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Small balloons",
+        10,
+        "pc",
+        "other"
+      ],
+      [
+        "Philadelphia cream cheese",
+        300,
+        "g",
+        "dairy"
+      ],
+      [
+        "Icing sugar",
+        80,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla sugar",
+        10,
+        "g",
+        "sugar"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Fresh strawberries — puréed",
+        400,
+        "g",
+        "fruit"
+      ],
+      [
+        "Lu Digestive biscuits — crushed",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        40,
+        "g",
+        "fat"
+      ],
+      [
+        "Fresh strawberries — garnish",
+        200,
+        "g",
+        "fruit"
+      ]
     ],
     "steps": [
       "Make chocolate bowls: inflate balloons, dip bases into melted chocolate, chill until firm, then pop balloons.",
@@ -1274,22 +3528,77 @@
   {
     "id": "gotteri-jardaberja-skyrkaka-kokteill",
     "category": "Skyr Cake",
-    "title": "Jarðaberja Skyrköku Kokteill",
-    "desc": "Strawberry skyr cheesecake cocktail in glasses with a cooked strawberry glaze.",
+    "title": "Strawberry Skyr Cocktail Cups",
+    "desc": "Layered strawberry skyr cheesecake in glasses with a cooked strawberry glaze and fresh berries.",
     "yield": "8–10 glasses",
     "prep": "30 min",
     "ingredients": [
-      ["Lu Digestive biscuits — crushed", 200, "g", "other"],
-      ["Butter — base", 40, "g", "fat"],
-      ["Double cream", 500, "ml", "liquid"],
-      ["Cream cheese", 300, "g", "dairy"],
-      ["Icing sugar", 150, "g", "sugar"],
-      ["Vanilla sugar", 10, "g", "sugar"],
-      ["Strawberries — puréed", 250, "ml", "liquid"],
-      ["Sugar — glaze", 250, "g", "sugar"],
-      ["Cornflour", 30, "g", "other"],
-      ["Water", 200, "ml", "liquid"],
-      ["Fresh strawberries — garnish", 200, "g", "fruit"]
+      [
+        "Lu Digestive biscuits — crushed",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        40,
+        "g",
+        "fat"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Cream cheese",
+        300,
+        "g",
+        "dairy"
+      ],
+      [
+        "Icing sugar",
+        150,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla sugar",
+        10,
+        "g",
+        "sugar"
+      ],
+      [
+        "Strawberries — puréed",
+        250,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Sugar — glaze",
+        250,
+        "g",
+        "sugar"
+      ],
+      [
+        "Cornflour",
+        30,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        200,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Fresh strawberries — garnish",
+        200,
+        "g",
+        "fruit"
+      ]
     ],
     "steps": [
       "Cook glaze: heat puréed strawberries, sugar, cornflour and water 5–8 min until thick. Add red food colouring if desired. Cool.",
@@ -1300,21 +3609,71 @@
   {
     "id": "gotteri-mini-blaberja-skyrkokur",
     "category": "Skyr Cake",
-    "title": "Mini Bláberjaskyrkökur",
-    "desc": "Individual skyr and blueberry cups with a cooked blueberry sauce on a digestive base.",
+    "title": "Mini Blueberry Skyr Cups",
+    "desc": "Individual skyr mousse cups with a cooked blueberry sauce and fresh blueberries on a digestive base.",
     "yield": "6–8 glasses",
     "prep": "20 min",
     "ingredients": [
-      ["Digestive biscuits", 300, "g", "other"],
-      ["Butter — base", 50, "g", "fat"],
-      ["KEA vanilla skyr", 500, "g", "dairy"],
-      ["Double cream", 500, "ml", "liquid"],
-      ["Blueberries — sauce", 250, "g", "fruit"],
-      ["Water", 50, "ml", "liquid"],
-      ["Sugar — sauce", 40, "g", "sugar"],
-      ["Lemon juice", 5, "ml", "liquid"],
-      ["Vanilla extract", 5, "ml", "liquid"],
-      ["Fresh blueberries — topping", 125, "g", "fruit"]
+      [
+        "Digestive biscuits",
+        300,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        50,
+        "g",
+        "fat"
+      ],
+      [
+        "KEA vanilla skyr",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Blueberries — sauce",
+        250,
+        "g",
+        "fruit"
+      ],
+      [
+        "Water",
+        50,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Sugar — sauce",
+        40,
+        "g",
+        "sugar"
+      ],
+      [
+        "Lemon juice",
+        5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Vanilla extract",
+        5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Fresh blueberries — topping",
+        125,
+        "g",
+        "fruit"
+      ]
     ],
     "steps": [
       "Mix crushed biscuits with melted butter and divide between glasses.",
@@ -1326,15 +3685,35 @@
   {
     "id": "gotteri-vanillu-skyrkaka-musli",
     "category": "Skyr Cake",
-    "title": "Vanillu Skyrkaka með Múslí og Hindberjum",
-    "desc": "Simple and fresh skyr mousse cup with chocolate granola and raspberries.",
+    "title": "Vanilla Skyr with Chocolate Granola & Raspberries",
+    "desc": "Simple and fresh vanilla skyr mousse cups layered over chocolate granola and topped with raspberries.",
     "yield": "6 glasses",
     "prep": "15 min",
     "ingredients": [
-      ["Chocolate muesli granola", 120, "g", "other"],
-      ["Double cream", 300, "ml", "liquid"],
-      ["KEA vanilla skyr", 300, "g", "dairy"],
-      ["Fresh raspberries", 200, "g", "fruit"]
+      [
+        "Chocolate muesli granola",
+        120,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        300,
+        "ml",
+        "liquid"
+      ],
+      [
+        "KEA vanilla skyr",
+        300,
+        "g",
+        "dairy"
+      ],
+      [
+        "Fresh raspberries",
+        200,
+        "g",
+        "fruit"
+      ]
     ],
     "steps": [
       "Put 2 tbsp of muesli in the base of each glass.",
@@ -1345,18 +3724,53 @@
   {
     "id": "gotteri-skyrkaka-heidu",
     "category": "Skyr Cake",
-    "title": "Skyrkaka Heiðu",
-    "desc": "Easy layered skyr cake in a bowl — berry skyr, cream, chopped chocolate and fresh berries.",
+    "title": "Berry Skyr Sheet Cake",
+    "desc": "Easy layered skyr cake in a serving dish — berry skyr, whipped cream, chopped chocolate and fresh berries.",
     "yield": "1 large serving dish",
     "prep": "15 min",
     "ingredients": [
-      ["Lu Bastogne biscuits", 200, "g", "other"],
-      ["Butter — base", 50, "g", "fat"],
-      ["KEA blueberry and strawberry skyr", 500, "g", "dairy"],
-      ["Double cream", 500, "ml", "liquid"],
-      ["Dark chocolate — chopped", 70, "g", "chocolate"],
-      ["Fresh blueberries", 125, "g", "fruit"],
-      ["Fresh strawberries", 125, "g", "fruit"]
+      [
+        "Lu Bastogne biscuits",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        50,
+        "g",
+        "fat"
+      ],
+      [
+        "KEA blueberry and strawberry skyr",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Dark chocolate — chopped",
+        70,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Fresh blueberries",
+        125,
+        "g",
+        "fruit"
+      ],
+      [
+        "Fresh strawberries",
+        125,
+        "g",
+        "fruit"
+      ]
     ],
     "steps": [
       "Crush biscuits, mix with melted butter and press into the base of a serving dish. Chill.",
@@ -1367,18 +3781,53 @@
   {
     "id": "gotteri-sukkuladi-skyrkokur",
     "category": "Skyr Cake",
-    "title": "Súkkulaðiskyrkökur",
-    "desc": "Quick chocolate skyr mousse cups with granola and raspberry garnish.",
+    "title": "Chocolate Skyr Mousse Cups",
+    "desc": "Quick chocolate skyr mousse cups with granola, piped cream and a raspberry garnish.",
     "yield": "6–8 glasses",
     "prep": "15 min",
     "ingredients": [
-      ["Ísey chocolate vanilla skyr", 500, "g", "dairy"],
-      ["Double cream", 400, "ml", "liquid"],
-      ["Double cream — topping", 200, "ml", "liquid"],
-      ["Chocolate muesli", 80, "g", "other"],
-      ["Fresh raspberries", 125, "g", "fruit"],
-      ["Chocolate shavings", 30, "g", "chocolate"],
-      ["Cocoa powder — garnish", 10, "g", "cocoa"]
+      [
+        "Ísey chocolate vanilla skyr",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Double cream",
+        400,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Double cream — topping",
+        200,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Chocolate muesli",
+        80,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh raspberries",
+        125,
+        "g",
+        "fruit"
+      ],
+      [
+        "Chocolate shavings",
+        30,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Cocoa powder — garnish",
+        10,
+        "g",
+        "cocoa"
+      ]
     ],
     "steps": [
       "Whip 400 ml cream and fold skyr gently through. Divide between glasses.",
@@ -1389,19 +3838,59 @@
   {
     "id": "gotteri-skyrkaka-hriskokuskal",
     "category": "Skyr Cake",
-    "title": "Skyrkaka í Hrískökuskál",
-    "desc": "Strawberry skyr mousse set inside a crispy chocolate Rice Krispie bowl.",
+    "title": "Strawberry Skyr in a Chocolate Rice Krispie Shell",
+    "desc": "Strawberry skyr mousse set inside a crispy chocolate and golden syrup Rice Krispie shell.",
     "yield": "1 × 22 cm",
     "prep": "30 min",
     "ingredients": [
-      ["Butter — bowl", 30, "g", "fat"],
-      ["Dark chocolate — bowl", 150, "g", "chocolate"],
-      ["Golden syrup — bowl", 180, "g", "other"],
-      ["Rice Krispies", 100, "g", "other"],
-      ["Ísey strawberry & white chocolate skyr", 510, "g", "dairy"],
-      ["Double cream", 500, "ml", "liquid"],
-      ["White chocolate — garnish", 100, "g", "chocolate"],
-      ["Fresh strawberries — garnish", 250, "g", "fruit"]
+      [
+        "Butter — bowl",
+        30,
+        "g",
+        "fat"
+      ],
+      [
+        "Dark chocolate — bowl",
+        150,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Golden syrup — bowl",
+        180,
+        "g",
+        "other"
+      ],
+      [
+        "Rice Krispies",
+        100,
+        "g",
+        "other"
+      ],
+      [
+        "Ísey strawberry & white chocolate skyr",
+        510,
+        "g",
+        "dairy"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "White chocolate — garnish",
+        100,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Fresh strawberries — garnish",
+        250,
+        "g",
+        "fruit"
+      ]
     ],
     "steps": [
       "Melt butter, dark chocolate and golden syrup in a saucepan, bring to a simmer for 1 min. Stir in Rice Krispies and press into the base and sides of a 22 cm springform. Chill.",
@@ -1412,16 +3901,41 @@
   {
     "id": "gotteri-thjodhatidardesert",
     "category": "Skyr Cake",
-    "title": "Þjóðhátíðardesertinn",
-    "desc": "Icelandic national holiday dessert — vanilla skyr mousse on a Prince Polo base, decorated as the Icelandic flag with berries.",
+    "title": "Icelandic Flag Skyr Dessert",
+    "desc": "Vanilla skyr mousse on a Prince Polo wafer base, decorated as the Icelandic flag with raspberries and blueberries.",
     "yield": "1 × 25×35 cm tray",
     "prep": "20 min",
     "ingredients": [
-      ["Prince Polo chocolate wafers", 350, "g", "other"],
-      ["Vanilla skyr", 700, "g", "dairy"],
-      ["Double cream", 800, "ml", "liquid"],
-      ["Fresh blueberries", 750, "g", "fruit"],
-      ["Fresh raspberries", 375, "g", "fruit"]
+      [
+        "Prince Polo chocolate wafers",
+        350,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla skyr",
+        700,
+        "g",
+        "dairy"
+      ],
+      [
+        "Double cream",
+        800,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Fresh blueberries",
+        750,
+        "g",
+        "fruit"
+      ],
+      [
+        "Fresh raspberries",
+        375,
+        "g",
+        "fruit"
+      ]
     ],
     "steps": [
       "Crush Prince Polo wafers and spread over the base of a large serving tray.",
@@ -1432,22 +3946,77 @@
   {
     "id": "gotteri-skyrkaka-mondlu-sitronum",
     "category": "Skyr Cake",
-    "title": "Skyrkaka með Möndlu- og Sítrónukeim",
-    "desc": "Set vanilla skyr cake with lemon and almond notes on a lemon almond biscuit base.",
+    "title": "Lemon & Almond Skyr Cake",
+    "desc": "Set vanilla skyr cake with lemon and almond notes on a lemon-almond biscuit base.",
     "yield": "1 × 20–22 cm",
     "prep": "25 min",
     "ingredients": [
-      ["Almond and lemon biscuits", 300, "g", "other"],
-      ["Ghee butter — base", 100, "g", "fat"],
-      ["Double cream", 500, "ml", "liquid"],
-      ["Icing sugar", 25, "g", "sugar"],
-      ["Vanilla sugar", 10, "g", "sugar"],
-      ["Lemon extract", 3, "ml", "liquid"],
-      ["Vanilla skyr", 650, "g", "dairy"],
-      ["Gelatin leaves", 6, "pc", "other"],
-      ["Water — gelatin", 50, "ml", "liquid"],
-      ["Flaked almonds — garnish", 30, "g", "other"],
-      ["Lemon slices — garnish", 3, "pc", "fruit"]
+      [
+        "Almond and lemon biscuits",
+        300,
+        "g",
+        "other"
+      ],
+      [
+        "Ghee butter — base",
+        100,
+        "g",
+        "fat"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Icing sugar",
+        25,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla sugar",
+        10,
+        "g",
+        "sugar"
+      ],
+      [
+        "Lemon extract",
+        3,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Vanilla skyr",
+        650,
+        "g",
+        "dairy"
+      ],
+      [
+        "Gelatin leaves",
+        6,
+        "pc",
+        "other"
+      ],
+      [
+        "Water — gelatin",
+        50,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Flaked almonds — garnish",
+        30,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon slices — garnish",
+        3,
+        "pc",
+        "fruit"
+      ]
     ],
     "steps": [
       "Press crushed biscuits and melted ghee into a 20–22 cm springform and freeze while making the filling.",
@@ -1459,21 +4028,71 @@
   {
     "id": "gotteri-sumarleg-skyrkaka",
     "category": "Skyr Cake",
-    "title": "Sumarleg Skyrkaka",
-    "desc": "Set summer skyr cake with strawberry and blueberry skyr on an oat biscuit base.",
+    "title": "Summer Berry Skyr Cake",
+    "desc": "Gelatin-set skyr cake with strawberry and blueberry skyr on an oat biscuit base.",
     "yield": "1 × 20–22 cm",
     "prep": "25 min",
     "ingredients": [
-      ["Oat biscuits", 260, "g", "other"],
-      ["Butter — base", 100, "g", "fat"],
-      ["Double cream", 350, "ml", "liquid"],
-      ["Icing sugar", 25, "g", "sugar"],
-      ["Vanilla sugar", 10, "g", "sugar"],
-      ["KEA berry skyr", 500, "g", "dairy"],
-      ["Gelatin leaves", 5, "pc", "other"],
-      ["Milk — gelatin", 50, "ml", "liquid"],
-      ["Fresh berries — garnish", 200, "g", "fruit"],
-      ["Dark chocolate — garnish", 30, "g", "chocolate"]
+      [
+        "Oat biscuits",
+        260,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        100,
+        "g",
+        "fat"
+      ],
+      [
+        "Double cream",
+        350,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Icing sugar",
+        25,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla sugar",
+        10,
+        "g",
+        "sugar"
+      ],
+      [
+        "KEA berry skyr",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Gelatin leaves",
+        5,
+        "pc",
+        "other"
+      ],
+      [
+        "Milk — gelatin",
+        50,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Fresh berries — garnish",
+        200,
+        "g",
+        "fruit"
+      ],
+      [
+        "Dark chocolate — garnish",
+        30,
+        "g",
+        "chocolate"
+      ]
     ],
     "steps": [
       "Press crushed oat biscuits and melted butter into a 20–22 cm springform and freeze.",
@@ -1485,18 +4104,53 @@
   {
     "id": "gotteri-berjaskyrkaka",
     "category": "Skyr Cake",
-    "title": "Berjaskyrkaka",
-    "desc": "Simple layered berry skyr cake in a serving dish — skyr mousse, fresh berries and chocolate.",
+    "title": "Berry Bliss Skyr Cake",
+    "desc": "Simple layered berry skyr cake in a serving dish with fresh berries and dark chocolate.",
     "yield": "1 serving dish",
     "prep": "15 min",
     "ingredients": [
-      ["Lu Bastogne biscuits", 200, "g", "other"],
-      ["Butter — base", 60, "g", "fat"],
-      ["Ísey blueberry and raspberry skyr", 500, "g", "dairy"],
-      ["Double cream", 500, "ml", "liquid"],
-      ["Fresh blueberries", 125, "g", "fruit"],
-      ["Fresh raspberries", 125, "g", "fruit"],
-      ["Dark chocolate — chopped", 30, "g", "chocolate"]
+      [
+        "Lu Bastogne biscuits",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        60,
+        "g",
+        "fat"
+      ],
+      [
+        "Ísey blueberry and raspberry skyr",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Fresh blueberries",
+        125,
+        "g",
+        "fruit"
+      ],
+      [
+        "Fresh raspberries",
+        125,
+        "g",
+        "fruit"
+      ],
+      [
+        "Dark chocolate — chopped",
+        30,
+        "g",
+        "chocolate"
+      ]
     ],
     "steps": [
       "Mix crushed Bastogne biscuits with melted butter and press into the base of a serving dish. Chill.",
@@ -1507,17 +4161,47 @@
   {
     "id": "gotteri-skyrkokur-noakroppi",
     "category": "Skyr Cake",
-    "title": "Skyrkökur með Nóakroppi",
-    "desc": "Berry skyr mousse cups with a cinnamon biscuit and Nóakropp chocolate pebble base.",
+    "title": "Berry Skyr Cups with Chocolate Pebbles",
+    "desc": "Berry skyr mousse cups on a cinnamon biscuit and chocolate pebble base, topped with more chocolate pebbles.",
     "yield": "8–10 glasses",
     "prep": "15 min",
     "ingredients": [
-      ["Cinnamon biscuits", 150, "g", "other"],
-      ["Nóakropp chocolate pebbles — base", 100, "g", "chocolate"],
-      ["Butter — base", 40, "g", "fat"],
-      ["Blueberry and strawberry skyr", 650, "g", "dairy"],
-      ["Double cream", 600, "ml", "liquid"],
-      ["Nóakropp chocolate pebbles — topping", 100, "g", "chocolate"]
+      [
+        "Cinnamon biscuits",
+        150,
+        "g",
+        "other"
+      ],
+      [
+        "Nóakropp chocolate pebbles — base",
+        100,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Butter — base",
+        40,
+        "g",
+        "fat"
+      ],
+      [
+        "Blueberry and strawberry skyr",
+        650,
+        "g",
+        "dairy"
+      ],
+      [
+        "Double cream",
+        600,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Nóakropp chocolate pebbles — topping",
+        100,
+        "g",
+        "chocolate"
+      ]
     ],
     "steps": [
       "Blitz biscuits and Nóakropp together, mix with melted butter and divide between glasses.",
@@ -1528,15 +4212,35 @@
   {
     "id": "gotteri-vanillu-skyrkaka-lakkris",
     "category": "Skyr Cake",
-    "title": "Vanillu Skyrkaka með Lakkrískeim",
-    "desc": "Vanilla skyr mousse in glasses with a liquorice caramel and Oreo base — a fun salty-sweet combo.",
+    "title": "Vanilla Skyr with Salted Liquorice Caramel",
+    "desc": "Vanilla skyr mousse cups with a salty-sweet liquorice caramel and crushed Oreo base.",
     "yield": "8–10 glasses",
     "prep": "15 min",
     "ingredients": [
-      ["Panda liquorice caramel balls — chopped", 100, "g", "other"],
-      ["Oreo biscuits — crushed", 100, "g", "other"],
-      ["Vanilla skyr", 500, "g", "dairy"],
-      ["Double cream", 500, "ml", "liquid"]
+      [
+        "Panda liquorice caramel balls — chopped",
+        100,
+        "g",
+        "other"
+      ],
+      [
+        "Oreo biscuits — crushed",
+        100,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla skyr",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ]
     ],
     "steps": [
       "Chop liquorice caramel balls. Mix half with crushed Oreos and put 1 tbsp in the base of each glass.",
