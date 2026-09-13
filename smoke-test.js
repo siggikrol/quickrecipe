@@ -21,6 +21,8 @@ const dom = new JSDOM(html, {
       }
       return Promise.reject(new Error(`fetch not mocked for: ${url}`));
     };
+    /* Mock matchMedia (not available in jsdom) */
+    window.matchMedia = () => ({ matches: false, addEventListener: () => {} });
     /* Suppress CSS parse warnings */
     window.console.error = () => {};
   },

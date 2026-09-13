@@ -7,18 +7,50 @@ const LS = {
   unit:      'quickrecipe.unit.v1',
   hydration: 'quickrecipe.hydration.v1',
   ui:        'quickrecipe.ui.v1',
+  theme:     'quickrecipe.theme',
 };
-let favs = new Set();
-let unit = 'metric';
-let selectedId = null;
-let scale = 1;
-let view = 'amounts';
-let category = 'All';
-let onlyFavs = false;
-let editingId = null;
+let favs           = new Set();
+let unit           = 'metric';
+let selectedId     = null;
+let scale          = 1;
+let view           = 'amounts';
+let category       = 'All';
+let onlyFavs       = false;
+let editingId      = null;
 let hydrationState = {};
-let wakeLock = null;
+let wakeLock       = null;
 let wakeLockRecipeId = null;
+
+/* Focus mode — which ingredient section header is currently active */
+let focusedSection = null;
+
+/* ─── Theme ─── */
+function getEffectiveTheme() {
+  const stored = localStorage.getItem(LS.theme);
+  if (stored === 'light' || stored === 'dark') return stored;
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  const btn = document.getElementById('themeBtn');
+  if (btn) {
+    btn.textContent = theme === 'dark' ? '☀' : '🌙';
+    btn.title       = theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode';
+    btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+  }
+}
+function toggleTheme() {
+  const next = getEffectiveTheme() === 'dark' ? 'light' : 'dark';
+  localStorage.setItem(LS.theme, next);
+  applyTheme(next);
+}
+function initTheme() {
+  applyTheme(getEffectiveTheme());
+  /* Keep in sync if OS preference changes while app is open */
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+    if (!localStorage.getItem(LS.theme)) applyTheme(getEffectiveTheme());
+  });
+}
 
 /* ─── Helpers ─── */
 function cloneValue(value) {
@@ -43,7 +75,7 @@ function saveAll() {
 
 /* ─── Seed merge ─── */
 function mergeSeedRecipes(existing) {
-  const byId = new Map(seedRecipes.map(r => [r.id, r]));
+  const byId   = new Map(seedRecipes.map(r => [r.id, r]));
   const merged = existing.map(r => {
     const seed = byId.get(r.id);
     return seed ? { ...r, ...seed } : r;
@@ -52,14 +84,11 @@ function mergeSeedRecipes(existing) {
   seedRecipes.forEach(r => { if (!ids.has(r.id)) merged.push(cloneValue(r)); });
   return merged;
 }
-
 function restoreUiState() {
   const saved = load(LS.ui, { selectedId: null, category: 'All', onlyFavs: false });
-  if (saved.selectedId && recipes.some(r => r.id === saved.selectedId)) {
-    selectedId = saved.selectedId;
-  }
-  category  = saved.category  || 'All';
-  onlyFavs  = Boolean(saved.onlyFavs);
+  if (saved.selectedId && recipes.some(r => r.id === saved.selectedId)) selectedId = saved.selectedId;
+  category = saved.category  || 'All';
+  onlyFavs = Boolean(saved.onlyFavs);
   if (!selectedId && recipes[0]) selectedId = recipes[0].id;
 }
 
@@ -68,9 +97,9 @@ const fmt = n => {
   const r = Math.round(n * 100) / 100;
   return Number.isInteger(r) ? String(r) : r.toFixed(r < 10 ? 2 : 1).replace(/0+$/, '').replace(/\.$/, '');
 };
-const cToF      = c  => Math.round(c * 9 / 5 + 32);
-const gToOz     = g  => g * 0.0352739619;
-const mlToFloz  = ml => ml * 0.0338140227;
+const cToF     = c  => Math.round(c * 9 / 5 + 32);
+const gToOz    = g  => g * 0.0352739619;
+const mlToFloz = ml => ml * 0.0338140227;
 
 function amountText(v, u) {
   v *= scale;
@@ -100,7 +129,7 @@ function bakers(r, ing) {
   return flour ? `${fmt(adjustedIngredientValue(r, ing) / flour * 100)}%` : '—';
 }
 
-/* ─── Ingredient sections ─── */
+/* ─── Section plans for ingredients ─── */
 const sectionPlans = {
   'drommekage':             [[0, 'Cake'], [7, 'Coconut topping']],
   'bounty-cake':            [[0, 'Coconut cake'], [3, 'Chocolate cream'], [7, 'Finish']],
@@ -113,27 +142,47 @@ const sectionPlans = {
   'lemon-meringue-cheesecake': [[0, 'Crust'], [3, 'Filling'], [11, 'Lemon curd'], [16, 'Meringue']],
 };
 
+/* ─── Section plans for steps (Focus mode) ─── */
+const stepSectionPlans = {
+  'drommekage':             [[0, 'Cake'],          [3, 'Coconut topping']],
+  'bounty-cake':            [[0, 'Coconut cake'],  [2, 'Chocolate cream'], [4, 'Finish']],
+  'carrot-cake':            [[0, 'Cake'],          [3, 'Frosting']],
+  'cinnabon-rolls':         [[0, 'Dough'],         [2, 'Filling'],         [5, 'Frosting']],
+  'pavlova-lemon-curd':     [[0, 'Pavlova'],       [3, 'Lemon curd']],
+  'apple-crumb-cake':       [[0, 'Cake'],          [3, 'Crumb topping']],
+  'choc-orange-cheesecake': [[0, 'Base'],          [1, 'Filling'],         [4, 'Topping']],
+  'date-cake-caramel':      [[0, 'Cake'],          [4, 'Caramel sauce']],
+  'lemon-meringue-cheesecake': [[0, 'Crust'], [1, 'Filling'], [3, 'Lemon curd'], [4, 'Meringue']],
+};
+
 function sectionFor(r, idx, name) {
   const plan = sectionPlans[r.id];
   if (plan) {
     let sec = '';
-    for (const [start, label] of plan) {
-      if (idx >= start) sec = label; else break;
-    }
+    for (const [start, label] of plan) { if (idx >= start) sec = label; else break; }
     return sec;
   }
   const m = String(name).match(/\s+—\s+(.+)$/);
   return m ? m[1].replace(/\b\w/g, c => c.toUpperCase()) : '';
 }
+
+function stepSectionFor(r, stepIdx) {
+  const plan = stepSectionPlans[r.id];
+  if (!plan) return null;
+  let sec = null;
+  for (const [start, label] of plan) { if (stepIdx >= start) sec = label; else break; }
+  return sec;
+}
+
 function cleanIngredientName(name) {
   return String(name).replace(/\s+—\s+.+$/, '');
 }
 
 /* ─── HTML escaping ─── */
 function esc(s) {
-  return String(s ?? '').replace(/[&<>'"]/g, c => ({
-    '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;',
-  }[c]));
+  return String(s ?? '').replace(/[&<>'"]/g, c => (
+    { '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[c]
+  ));
 }
 
 /* ─── Wake Lock ─── */
@@ -147,22 +196,16 @@ async function requestWakeLock() {
     if (wakeLock) await releaseWakeLock();
     wakeLock = await navigator.wakeLock.request('screen');
     wakeLockRecipeId = selectedId;
-    wakeLock.addEventListener('release', () => {
-      if (wakeLockRecipeId === selectedId) wakeLockRecipeId = null;
-    });
-  } catch (e) {
-    wakeLock = null;
-    wakeLockRecipeId = null;
-  }
+    wakeLock.addEventListener('release', () => { if (wakeLockRecipeId === selectedId) wakeLockRecipeId = null; });
+  } catch { wakeLock = null; wakeLockRecipeId = null; }
 }
 async function releaseWakeLock() {
   if (!wakeLock) return;
-  try { await wakeLock.release(); } catch (e) {}
-  wakeLock = null;
-  wakeLockRecipeId = null;
+  try { await wakeLock.release(); } catch {}
+  wakeLock = null; wakeLockRecipeId = null;
 }
 
-/* ─── Render chips ─── */
+/* ─── Chips ─── */
 function categories() {
   return ['All', ...new Set(recipes.map(r => r.category || 'Other'))];
 }
@@ -175,22 +218,16 @@ function renderChips() {
   });
 }
 
-/* ─── Search matching ─── */
+/* ─── List ─── */
 function matches(r, q) {
   q = q.toLowerCase();
-  return !q
-    || r.title.toLowerCase().includes(q)
-    || (r.desc || '').toLowerCase().includes(q)
+  return !q || r.title.toLowerCase().includes(q) || (r.desc || '').toLowerCase().includes(q)
     || r.ingredients.some(i => i[0].toLowerCase().includes(q));
 }
-
-/* ─── Render list ─── */
 function renderList() {
-  const q = document.getElementById('search').value.trim();
+  const q     = document.getElementById('search').value.trim();
   const shown = recipes.filter(r =>
-    (category === 'All' || r.category === category)
-    && (!onlyFavs || favs.has(r.id))
-    && matches(r, q)
+    (category === 'All' || r.category === category) && (!onlyFavs || favs.has(r.id)) && matches(r, q)
   );
   if (!shown.some(r => r.id === selectedId) && shown[0]) selectedId = shown[0].id;
 
@@ -215,9 +252,8 @@ function renderList() {
     b.onclick = e => {
       if (e.target.closest('[data-fav]')) return;
       selectedId = b.dataset.id;
-      saveAll();
-      scale = 1;
-      view = 'amounts';
+      focusedSection = null; /* clear focus when switching recipe */
+      saveAll(); scale = 1; view = 'amounts';
       render();
     };
   });
@@ -226,23 +262,35 @@ function renderList() {
   });
 }
 
-/* ─── Render ingredients ─── */
+/* ─── Render ingredients with Focus support ─── */
 function renderIngredients(r) {
+  const hasSections = Boolean(sectionPlans[r.id]);
   let last = '';
   return r.ingredients.map((i, idx) => {
     const sec  = sectionFor(r, idx, i[0]);
-    const head = sec && sec !== last
-      ? `<div class="ingredient-section">${esc(sec)}</div>` : '';
+    /* Determine focus dimming */
+    const ingDimmed = focusedSection && sec !== focusedSection;
+    let html = '';
+    if (sec && sec !== last) {
+      const secFocused = focusedSection === sec;
+      const secDimmed  = focusedSection && !secFocused;
+      html += `<button
+        class="ingredient-section${secFocused ? ' focused' : ''}${secDimmed ? ' dimmed' : ''}"
+        data-section="${esc(sec)}"
+        aria-pressed="${secFocused}"
+        title="${secFocused ? 'Click to clear focus' : 'Click to focus this section'}"
+      >${esc(sec)}</button>`;
+    }
     last = sec || last;
-    return `${head}
-      <div class="ingredient">
-        <span>${esc(cleanIngredientName(i[0]))}</span>
-        <span class="amount">${view === 'bakers' ? bakers(r, i) : amountText(adjustedIngredientValue(r, i), i[2])}</span>
-      </div>`;
+    html += `<div class="ingredient${ingDimmed ? ' dimmed' : ''}">
+      <span>${esc(cleanIngredientName(i[0]))}</span>
+      <span class="amount">${view === 'bakers' ? bakers(r, i) : amountText(adjustedIngredientValue(r, i), i[2])}</span>
+    </div>`;
+    return html;
   }).join('');
 }
 
-/* ─── Render detail panel ─── */
+/* ─── Detail panel ─── */
 function renderDetail() {
   const r  = recipes.find(x => x.id === selectedId);
   const el = document.getElementById('detail');
@@ -257,9 +305,10 @@ function renderDetail() {
   if (wakeLockRecipeId && wakeLockRecipeId !== selectedId) releaseWakeLock();
   requestWakeLock();
 
-  const temp   = unit === 'metric' ? `${r.tempC || 0}°C` : `${cToF(r.tempC || 0)}°F`;
-  const hyd    = currentHydration(r);
-  const hasFlour = r.ingredients.some(i => i[3] === 'flour');
+  const temp      = unit === 'metric' ? `${r.tempC || 0}°C` : `${cToF(r.tempC || 0)}°F`;
+  const hyd       = currentHydration(r);
+  const hasFlour  = r.ingredients.some(i => i[3] === 'flour');
+  const hasSecs   = Boolean(sectionPlans[r.id]);
 
   const hydrationControl = r.adjustableHydration ? `
     <div class="hydration-box">
@@ -273,6 +322,13 @@ function renderDetail() {
       </div>
       <div class="hydration-help">Adjusts the liquid automatically. Recipe range: ${fmt(r.hydrationMin)}–${fmt(r.hydrationMax)}%.</div>
     </div>` : '';
+
+  /* Render steps: dim those outside the focused section */
+  const stepsHtml = r.steps.map((s, idx) => {
+    const stepSec = stepSectionFor(r, idx);
+    const dimmed  = focusedSection && stepSec && stepSec !== focusedSection;
+    return `<li class="${dimmed ? 'dimmed' : ''}">${esc(s)}</li>`;
+  }).join('');
 
   el.innerHTML = `
     <div class="detail-head">
@@ -299,16 +355,19 @@ function renderDetail() {
       </div>
       ${hydrationControl}
     </div>
+
     <div class="detail-body">
       <section class="pane">
         <h2>Ingredients</h2>
+        ${hasSecs ? `<div class="focus-hint">Tap a section to focus it</div>` : ''}
         ${renderIngredients(r)}
       </section>
       <section class="pane">
-        <h2>Method</h2>
-        <ol class="steps">${r.steps.map(s => `<li>${esc(s)}</li>`).join('')}</ol>
+        <h2>Method${focusedSection ? ` · <span style="color:var(--accent)">${esc(focusedSection)}</span>` : ''}</h2>
+        <ol class="steps">${stepsHtml}</ol>
       </section>
     </div>
+
     <div class="meta">
       ${r.prep   ? `<span class="stat">Prep ${esc(r.prep)}</span>`   : ''}
       ${r.ferment? `<span class="stat">Rest ${esc(r.ferment)}</span>`: ''}
@@ -317,11 +376,11 @@ function renderDetail() {
       ${r.yield  ? `<span class="stat">${esc(r.yield)}</span>`       : ''}
     </div>`;
 
-  /* Scale buttons */
+  /* Scale */
   document.querySelectorAll('[data-scale]').forEach(b => {
     b.onclick = () => { scale = Number(b.dataset.scale); renderDetail(); };
   });
-  /* View buttons */
+  /* View */
   document.querySelectorAll('[data-view]').forEach(b => {
     b.onclick = () => { view = b.dataset.view; renderDetail(); };
   });
@@ -336,8 +395,18 @@ function renderDetail() {
     document.getElementById('hydPlus').onclick   = () => setHyd(hyd + 1);
     document.getElementById('hydReset').onclick  = () => { delete hydrationState[r.id]; renderDetail(); };
   }
+  /* Fav / edit */
   document.getElementById('detailFav').onclick = () => toggleFav(r.id);
   document.getElementById('editBtn').onclick   = () => openModal(r);
+
+  /* ── Focus mode: ingredient section click handlers ── */
+  document.querySelectorAll('.ingredient-section[data-section]').forEach(btn => {
+    btn.onclick = () => {
+      const sec = btn.dataset.section;
+      focusedSection = focusedSection === sec ? null : sec;
+      renderDetail();
+    };
+  });
 }
 
 /* ─── Favourites ─── */
@@ -392,7 +461,6 @@ function saveRecipe() {
   const title       = document.getElementById('fTitle').value.trim();
   const ingredients = parseIngredients(document.getElementById('fIngredients').value);
   const steps       = document.getElementById('fSteps').value.split('\n').map(x => x.trim()).filter(Boolean);
-
   if (!title || !ingredients.length || ingredients.some(i => !i[0] || !Number.isFinite(i[1])) || !steps.length) {
     toast('Add a name, valid ingredients and method steps');
     return;
@@ -400,7 +468,7 @@ function saveRecipe() {
   const data = {
     id:        editingId || `r_${Date.now()}`,
     title,
-    category:  document.getElementById('fCategory').value.trim()  || 'Other',
+    category:  document.getElementById('fCategory').value.trim() || 'Other',
     desc:      document.getElementById('fDesc').value.trim(),
     yield:     document.getElementById('fYield').value.trim(),
     tempC:     Number(document.getElementById('fTemp').value) || 0,
@@ -411,11 +479,8 @@ function saveRecipe() {
     ingredients,
     steps,
   };
-  if (editingId) {
-    recipes = recipes.map(r => r.id === editingId ? data : r);
-  } else {
-    recipes.unshift(data);
-  }
+  if (editingId) { recipes = recipes.map(r => r.id === editingId ? data : r); }
+  else recipes.unshift(data);
   selectedId = data.id;
   category   = 'All';
   saveAll();
@@ -445,20 +510,23 @@ function toast(msg) {
 
 /* ─── Bootstrap ─── */
 async function init() {
-  /* Show loading spinner */
+  /* Apply theme immediately before anything renders */
+  initTheme();
+
+  /* Loading state */
   document.getElementById('list').innerHTML   = '<div class="loading"><div class="spinner"></div>Loading recipes…</div>';
   document.getElementById('detail').innerHTML = '<div class="loading"><div class="spinner"></div></div>';
 
-  /* Load seed recipes from JSON */
+  /* Fetch seed recipes */
   try {
     const res = await fetch('./recipes.json');
     seedRecipes = await res.json();
   } catch (e) {
-    console.warn('Could not load recipes.json, using empty seed list.', e);
+    console.warn('Could not load recipes.json', e);
     seedRecipes = [];
   }
 
-  /* Merge with user's stored recipes */
+  /* Restore state */
   favs           = new Set(load(LS.favs, []));
   unit           = localStorage.getItem(LS.unit) || 'metric';
   hydrationState = load(LS.hydration, {});
@@ -466,7 +534,8 @@ async function init() {
   selectedId     = recipes.find(r => r.id === 'ciabatta')?.id || recipes[0]?.id || null;
   restoreUiState();
 
-  /* Wire up static event listeners */
+  /* Static event listeners */
+  document.getElementById('themeBtn').onclick       = toggleTheme;
   document.getElementById('search').oninput         = render;
   document.getElementById('metricBtn').onclick      = () => { unit = 'metric';   saveAll(); render(); };
   document.getElementById('imperialBtn').onclick    = () => { unit = 'imperial'; saveAll(); render(); };
@@ -482,10 +551,7 @@ async function init() {
   });
   window.addEventListener('pagehide', releaseWakeLock);
 
-  /* Register service worker */
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js').catch(() => {});
-  }
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(() => {});
 
   render();
 }
