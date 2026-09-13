@@ -621,6 +621,145 @@
     ]
   },
   {
+    "id": "sourdough-spelt-crumb-brioche",
+    "category": "Bread",
+    "title": "Sourdough Spelt Brioche with Crumble Topping",
+    "desc": "Rich, pillowy spelt sourdough brioche cold-fermented overnight and baked under a golden buttery crumble.",
+    "yield": "1 loaf / tin",
+    "prep": "30 min",
+    "ferment": "14–16 hr",
+    "bake": "40 min",
+    "tempC": 200,
+    "ingredients": [
+      [
+        "Rye sourdough starter",
+        130,
+        "g",
+        "starter"
+      ],
+      [
+        "Spelt flour (type 650)",
+        500,
+        "g",
+        "flour"
+      ],
+      [
+        "Plain natural yogurt",
+        150,
+        "g",
+        "dairy"
+      ],
+      [
+        "Soft butter — dough",
+        180,
+        "g",
+        "fat"
+      ],
+      [
+        "Sugar — dough",
+        100,
+        "g",
+        "sugar"
+      ],
+      [
+        "Eggs",
+        2,
+        "pc",
+        "egg"
+      ],
+      [
+        "Vanilla extract",
+        30,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Salt",
+        3,
+        "g",
+        "salt"
+      ],
+      [
+        "Plain flour — crumble",
+        100,
+        "g",
+        "flour"
+      ],
+      [
+        "Butter — crumble",
+        50,
+        "g",
+        "fat"
+      ],
+      [
+        "Sugar — crumble",
+        50,
+        "g",
+        "sugar"
+      ]
+    ],
+    "steps": [
+      "Mix all dough ingredients together and knead until smooth, uniform, soft, and elastic (this will take a little time). Do not add extra flour while kneading; if sticky, lightly oil your hands with rapeseed or canola oil.",
+      "Cover the bowl with plastic wrap and let the dough rest for 1–2 hours at room temperature.",
+      "Cover tightly and place in a cool place or refrigerator for long fermentation (approximately 14 hours, or overnight).",
+      "Rub together 100 g flour, 50 g butter, and 50 g sugar with your fingertips in a bowl until crumbly.",
+      "Transfer the risen dough to a greased baking tin, sprinkle generously with the crumble topping, and leave to rise again until doubled in volume.",
+      "Preheat the oven to 200°C.",
+      "Bake for 10 minutes at 200°C, then reduce temperature to 180°C and bake for another 30 minutes until golden."
+    ]
+  },
+  {
+    "id": "monicas-bread",
+    "category": "Bread",
+    "title": "Monica's Bread",
+    "hydration": 70,
+    "desc": "Rustic spelt and wholegrain rye sourdough loaf with a beautifully browned, crackly crust, baked with steam.",
+    "yield": "1 loaf",
+    "prep": "15 min",
+    "ferment": "3–6 hr (or overnight)",
+    "bake": "50 min",
+    "tempC": 200,
+    "ingredients": [
+      [
+        "Active sourdough starter",
+        300,
+        "g",
+        "starter"
+      ],
+      [
+        "Spelt flour (type 650)",
+        370,
+        "g",
+        "flour"
+      ],
+      [
+        "Wholegrain rye flour (type 2000)",
+        200,
+        "g",
+        "flour"
+      ],
+      [
+        "Water",
+        400,
+        "ml",
+        "water"
+      ],
+      [
+        "Salt",
+        8,
+        "g",
+        "salt"
+      ]
+    ],
+    "steps": [
+      "Mix all ingredients together thoroughly in a bowl. You can optionally fold in sunflower seeds, flaxseed, or a splash of olive oil if desired.",
+      "Leave to rise for approximately 3–6 hours depending on room temperature until roughly doubled in size (alternatively, prepare in the evening and cold-ferment covered in the refrigerator overnight or up to 2 days, then bring out to rise before baking).",
+      "Transfer the dough into a greased loaf tin.",
+      "Preheat the oven to 200°C and place an ovenproof dish filled with water on the oven floor to create steam for a nicely browned, crisp crust.",
+      "Bake at 200°C for 50 minutes until deeply golden and sounding hollow when tapped on the bottom."
+    ]
+  },
+  {
     "id": "drommekage",
     "category": "Cake",
     "title": "Drømmekage / Sjónvarpskaka",
@@ -4255,13 +4394,11 @@
     "desc": "Four-layer rich chocolate sponge layered with dark chocolate buttercream and crowned with piped vanilla buttercream roses.",
     "yield": "1 × 26-30cm",
     "prep": "25 min",
-    "bake": "35 min",
-    "tempC": 170,
     "ingredients": [
       [
         "Light brown sugar",
-        600,
-        "g",
+        720,
+        "ml",
         "sugar"
       ],
       [
@@ -4279,42 +4416,42 @@
       [
         "Vanilla extract",
         10,
-        "ml",
+        "g",
         "spice"
       ],
       [
         "Plain flour",
-        333.3,
-        "g",
+        240,
+        "ml",
         "flour"
       ],
       [
         "Unsweetened cocoa powder",
-        63.8,
-        "g",
+        180,
+        "ml",
         "cocoa"
       ],
       [
         "Baking soda",
         1,
-        "g",
+        "pc",
         "leavener"
       ],
       [
         "Fine sea salt",
-        2.5,
+        2,
         "g",
         "salt"
       ],
       [
         "Double cream",
-        320,
+        240,
         "ml",
         "dairy"
       ],
       [
         "Boiling water",
-        320,
+        240,
         "ml",
         "liquid"
       ],
@@ -4333,7 +4470,7 @@
       [
         "Vanilla extract",
         10,
-        "ml",
+        "g",
         "spice"
       ],
       [
@@ -4344,7 +4481,7 @@
       ],
       [
         "Unsweetened cocoa powder",
-        40,
+        60,
         "g",
         "cocoa"
       ],
@@ -4363,7 +4500,7 @@
       [
         "Vanilla extract",
         10,
-        "ml",
+        "g",
         "spice"
       ],
       [
@@ -4374,19 +4511,21 @@
       ]
     ],
     "steps": [
-      "Beat brown sugar and butter together until light, pale, and fluffy.",
-      "Add eggs one at a time, beating well and scraping down the bowl after each addition.",
-      "Whisk this mixture on high speed until airy and light and add then the vanilla extract into.",
-      "Whisk the dry ingredients together in a separate bowl (flour, cocoa, baking soda and salt) and mix together alternating við sour the cream.",
-      "Stir gently until well combined and add then the boiling water together.",
-      "Divide down in cake pan (2 x um 26-30cm form, or 3 x 20cm and then is hvor botn tekinn in 2 with tvinna/kökuskera).",
+      "Cream together granulated sugar and butter until light and fluffy.",
+      "Add the eggs one at a time, scraping down the sides.",
+      "Beat this mixture on high speed until airy, then add the vanilla drops.",
+      "Mix together the dry ingredients (flour, cocoa, baking soda, and salt) and alternate adding them with the sour cream.",
+      "Gently stir until well combined, then add the boiling water.",
+      "Pour into cake pans (two 26-30cm pans, or three 20cm pans, then each layer can be split into two using a thread/cake cutter).",
       "Bake for about 35 minutes at 170°C.",
-      "Place all frosting ingredients except icing sugar and cocoa powder into the mixer bowl and beat well.",
-      "Mix icing sugar and cocoa powder together and gradually add to frosting, beating until silky smooth.",
-      "Place all ingredients except icing sugar into the mixer bowl and beat well.",
-      "Gradually add icing sugar, scraping down the bowl, and beat until silky smooth.",
-      "Color with þeim matarlit which þið óskið eftir. if þið viljið tvílitar roses is possible to strjúka a little matarlit/dekkra kremi upp eina or fleiri hliðar on the piping bag. fill next with ljósari color and pipe in roses with piping tip 2D or 1M frá Wilton (ég kýs frekar 2D)."
-    ]
+      "Place all ingredients except powdered sugar and cocoa into a mixer bowl and mix well.",
+      "Mix the powdered sugar and cocoa together and gently add to the mixture, scraping down the sides, and beat until the frosting is smooth and creamy.",
+      "Place all ingredients except powdered sugar into a mixer bowl and mix well.",
+      "Gently add the powdered sugar to the mixture, scraping down the sides, and beat until the frosting is smooth and creamy.",
+      "Tint with your desired food coloring. If you want two-toned roses, you can smear a little food coloring/darker frosting onto one or more sides of the piping bag. Then, fill with the lighter color and pipe roses using a 2D or 1M Wilton piping tip (I prefer 2D)."
+    ],
+    "bake": "35 min",
+    "tempC": 170
   },
   {
     "id": "gotteri-sukkuladiterta",
@@ -4395,8 +4534,6 @@
     "desc": "Deep and moist chocolate sponge layers filled and frosted with a glossy chocolate fudge buttercream.",
     "yield": "1 × 20 cm",
     "prep": "25 min",
-    "bake": "15-20 min",
-    "tempC": 175,
     "ingredients": [
       [
         "Strong brewed coffee",
@@ -4424,14 +4561,14 @@
       ],
       [
         "Baking powder",
-        1,
-        "pc",
+        2,
+        "g",
         "leavener"
       ],
       [
         "Fine sea salt",
-        1,
-        "pc",
+        2,
+        "g",
         "salt"
       ],
       [
@@ -4461,7 +4598,7 @@
       [
         "Vanilla extract",
         10,
-        "ml",
+        "g",
         "spice"
       ],
       [
@@ -4496,78 +4633,32 @@
       ],
       [
         "Fine sea salt",
-        1,
-        "pc",
+        2,
+        "g",
         "salt"
       ],
       [
         "Vanilla extract",
         15,
-        "ml",
+        "g",
         "spice"
-      ],
-      [
-        "Unsalted butter",
-        1,
-        "pc",
-        "fat"
-      ],
-      [
-        "Áramótakakan",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Regnbogakaka",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Dumle toffee caramels",
-        1,
-        "pc",
-        "chocolate"
-      ],
-      [
-        "Crunchy Daim pieces",
-        1,
-        "pc",
-        "chocolate"
-      ],
-      [
-        "Jarðaberjaterta og grænmetismarkaður",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Betty bjargar páskunum!",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Lukkukaka",
-        1,
-        "pc",
-        "other"
       ]
     ],
     "steps": [
-      "Pour hot coffee over the cocoa powder, stir well together and allow to cool on the counter in 15-20 minutes while preparing the other ingredients.",
-      "Mix flour, baking soda, baking powder and salt together in a bowl and place aside.",
-      "Preheat the oven to 175°C and grease 3 x 20 cm form thoroughly.",
-      "Whisk together eggs, sugar and brown sugar until létt and ljóst.",
-      "Add then the mayonnaise and the vanilla extract together.",
-      "Add next the coffee mixture and the flour mixture alternating together until slétt and fínt.",
-      "Divide down in the pans and Bake for about 30-35 minutes, cool in forminu in um 15 minutes and then again on wire rack until completely cool.",
-      "Heat chocolate, golden syrup and cream together in the microwave until melted (stir on um 20 sek fresti).",
-      "Whisk butter, salt, vanilla extract and half of the icing sugar together.",
-      "Pour then the chocolate mixture together and finally the remaining the icing sugar.",
-      "Það gæti þurft að bæta a little cream við til að the frosting verði létt and gott."
-    ]
+      "Pour the hot coffee over the cocoa powder, stir well, and let it cool on the counter for 15–20 minutes while you prepare the other ingredients.",
+      "Mix the flour, baking soda, baking powder, and salt together in a bowl and set aside.",
+      "Preheat the oven to 175°C and grease three 20 cm cake pans thoroughly.",
+      "Whisk together the eggs, granulated sugar, and brown sugar until light and fluffy.",
+      "Add the mayonnaise and vanilla extract and beat until smooth.",
+      "Alternately add the coffee mixture and the flour mixture, beating until smooth and combined.",
+      "Divide evenly between the pans and bake for 30–35 minutes. Cool in the pans for 15 minutes, then transfer to a wire rack to cool completely.",
+      "Heat the dark chocolate, golden syrup, and double cream together in the microwave until melted, stirring every 20 seconds.",
+      "Beat the butter, salt, vanilla extract, and half of the icing sugar together until smooth.",
+      "Pour in the melted chocolate mixture and beat, then add the remaining icing sugar.",
+      "Add a small splash of extra cream if needed until the frosting is light, glossy, and spreadable."
+    ],
+    "bake": "15-20 min",
+    "tempC": 175
   },
   {
     "id": "gotteri-paskabomba",
@@ -4576,13 +4667,12 @@
     "desc": "Rich chocolate cake layered with silky vanilla buttercream and crowned with a dark chocolate ganache drip.",
     "yield": "1 × 20cm",
     "prep": "25 min",
-    "bake": "5 min",
     "ingredients": [
       [
-        "White cake mix",
+        "x Betty Crocker kökumix",
         2,
-        "g",
-        "flour"
+        "pc",
+        "other"
       ],
       [
         "Dark baking chocolate",
@@ -4591,33 +4681,33 @@
         "chocolate"
       ],
       [
-        "Instant pudding powder",
-        150,
-        "g",
+        "Royal súkkulaðbúðingur",
+        1,
+        "pack",
         "other"
       ],
       [
         "x Betty Crocker Coffee icing",
         2,
-        "g",
+        "pc",
         "other"
       ],
       [
         "Unsweetened cocoa powder",
-        40,
+        60,
         "g",
         "cocoa"
       ],
       [
         "Icing sugar",
-        50,
-        "g",
+        0.3333333333333333,
+        "pack",
         "sugar"
       ],
       [
-        "Water",
-        60,
-        "ml",
+        "Boiling water",
+        4,
+        "pc",
         "liquid"
       ],
       [
@@ -4641,7 +4731,7 @@
       [
         "Vanilla extract",
         10,
-        "ml",
+        "g",
         "spice"
       ],
       [
@@ -4651,9 +4741,9 @@
         "other"
       ],
       [
-        "Water",
-        60,
-        "ml",
+        "Boiling water",
+        4,
+        "pc",
         "liquid"
       ],
       [
@@ -4675,7 +4765,7 @@
         "sugar"
       ],
       [
-        "Chocolate glaze coating",
+        "Chocolate glaze",
         100,
         "g",
         "chocolate"
@@ -4691,73 +4781,26 @@
         2,
         "pc",
         "egg"
-      ],
-      [
-        "Falleg er hún",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Páskatertan 2017",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Páskatertan 2018",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Páskaleg kaka",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Betty bjargar páskunum!",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Páska mini bollakökur",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Rice Krispies cereal",
-        1,
-        "pc",
-        "flour"
-      ],
-      [
-        "Fine sea salt",
-        1,
-        "pc",
-        "salt"
-      ],
-      [
-        "Dumle toffee caramels",
-        1,
-        "pc",
-        "chocolate"
       ]
     ],
     "steps": [
-      "Stir kökumixið samkvæmt leiðbeiningum on pakka and add melted suðusúkkulaðinu ásamt búðingsduftinu út in rétt in lokin and mix gently together. bake samkvæmt leiðbeiningum. bake in 4 20cm formum. Reyndar nota ég aðeins 3 botna in þessa köku then þið getið gert 1 ½ uppskrift or leyft fjölskyldumeðlimum að stelast in aukabotninn meanwhile hann is volgur. Þegar botnarnir are kaldir is hver um sig tekinn in tvennt with kökuskera then þið endið with 6 x þynnri botna.",
-      "Stir öllu together in hrærivélarskálinni and spread on milli laga (ekki on efsta the cake layer samt, on hann fer gult smjörkrem).",
-      "Place all ingredients except icing sugar into the mixer bowl and beat well. mix icing sugar together and add gently út in the mixture, scraping down the bowl and stir until the frosting is slétt and fellt.",
-      "Spread first örþunnu lagi af kremi on alla kökuna til að grunna and binda alla kökumylsnu and allow að “storkna”.",
-      "Spread next þykkara lagi af yellow kremi over grunnlagið and smooth eftir fremsta megni. Gott is að bleyta kökuspaðann in heitu water on milli þess which þið smooth the frosting, with því móti verður það sléttara en ella.",
-      "Cool and prepare meanwhile Ganache and súkkulaðiskraut.",
-      "Chop the dark chocolate. heat the cream að suðu and pour over the chocolate, allow að standa in um 5 minutes. stir together the mixture and add sýrópinu together. Gott is að taka with skeið/setja on brúsa hluta af the chocolate mixture and hella fram af brúnunum til að leki down. spread then góðu lagi over toppinn and smooth út.",
-      "Melt súkkulaðihjúpinn, pour on parchment paper on bakka. spread úr with kökuspaða, sprinkle a little kökuskreytingardufti over before storkar and cool (ég notaði gult, bleikt and a little hvítt). Brjótið then in hæfilega large bita þegar storknað and stingið in kökuna, bæði on toppinn and hliðina (þegar búið is að hella Ganache on).",
-      "A little af súkkulaðinu setti ég on kökudiskinn til að festa the eggs which þar liggja en annars megið þið setja eggs in hrúgu on miðjuna on kökunni and niðri við annan kantinn."
-    ]
+      "Mix the cake mix according to the package instructions and, just at the end, add the melted dark chocolate along with the pudding powder and gently fold in. Bake according to instructions. Bake in four 20cm pans. Actually, I only use 3 layers for this cake, so you can make 1.5 recipes or let family members steal the extra layer while it is still warm. Once the layers are cold, split each one in half with a cake cutter so you end with 6 thin layers.",
+      "Mix everything together in a mixer bowl and spread between the layers (not on the top layer, though; that gets the yellow buttercream).",
+      "Place all ingredients except powdered sugar in a mixer bowl and mix well. Mix the powdered sugar together and gently add to the mixture, scraping down the sides, and beat until the frosting is smooth and creamy.",
+      "First, spread an ultra-thin layer of frosting over the entire cake to create a crumb coat and bind all the crumbs, then let it “set.”",
+      "Next, spread a thicker layer of yellow buttercream over the base layer and smooth it as much as possible. It is helpful to dip your offset spatula in hot water between smoothing the frosting; this will make it smoother than otherwise.",
+      "Chill, and prepare the ganache and chocolate decorations in the meantime.",
+      "Mix everything together in a mixer bowl and spread between the layers (not on the top layer, though; that gets the yellow buttercream).",
+      "Place all ingredients except powdered sugar in a mixer bowl and mix well. Mix the powdered sugar together and gently add to the mixture, scraping down the sides, and beat until the frosting is smooth and creamy.",
+      "First, spread an ultra-thin layer of frosting over the entire cake to create a crumb coat and bind all the crumbs, then let it “set.”",
+      "Next, spread a thicker layer of yellow buttercream over the base layer and smooth it as much as possible. It is helpful to dip your offset spatula in hot water between smoothing the frosting; this will make it smoother than otherwise.",
+      "Chill, and prepare the ganache and chocolate decorations in the meantime.",
+      "Chop the dark chocolate. Bring the cream to a boil and pour it over the chocolate; let it sit for about 5 minutes. Stir the mixture together and add the syrup. It is good to use a spoon or a squeeze bottle to take some of the chocolate mixture and drizzle it over the edges so it drips down. Then, spread a generous layer over the top and smooth it out.",
+      "Melt the chocolate coating and pour it onto parchment paper on a tray. Spread it out with an offset spatula, sprinkle with a little cake decorating dust before it sets and cools (I used yellow, pink, and a little white). Once set, break it into appropriately sized pieces and stick them into the cake, both on the top and the sides (after the ganache has been poured).",
+      "I put a little chocolate on the cake plate to secure the eggs that lie there, but otherwise, you can place the eggs in a pile in the center of the cake and down by one edge.",
+      "It is beautiful."
+    ],
+    "bake": "5 min"
   },
   {
     "id": "gotteri-haustkaka",
@@ -4766,31 +4809,29 @@
     "desc": "Warmly spiced carrot and walnut cake filled with tangy cream cheese frosting and autumn decorations.",
     "yield": "1 × 20-22cm",
     "prep": "25 min",
-    "bake": "30 min",
-    "tempC": 175,
     "ingredients": [
       [
-        "Neutral vegetable oil",
-        150,
-        "g",
+        "Vegetable oil",
+        240,
+        "ml",
         "fat"
       ],
       [
         "Vanilla extract",
         15,
-        "ml",
+        "g",
         "spice"
       ],
       [
         "Granulated sugar",
-        200,
-        "g",
+        240,
+        "ml",
         "sugar"
       ],
       [
         "Light brown sugar",
-        200,
-        "g",
+        240,
+        "ml",
         "sugar"
       ],
       [
@@ -4802,31 +4843,31 @@
       [
         "Ripe bananas",
         2,
-        "g",
+        "pc",
         "fruit"
       ],
       [
-        "½ bolli rifnar gulrætur",
-        1,
-        "g",
+        "rifnar gulrætur",
+        240,
+        "ml",
         "other"
       ],
       [
-        "½ bolli saxaðar pecan hnetur",
-        1,
-        "pc",
-        "other"
+        "Peanuts",
+        120,
+        "ml",
+        "nut"
       ],
       [
-        "Toasted flaked almonds",
-        1,
-        "pc",
+        "Flaked almonds",
+        120,
+        "ml",
         "nut"
       ],
       [
         "Plain flour",
-        375,
-        "g",
+        720,
+        "ml",
         "flour"
       ],
       [
@@ -4843,14 +4884,14 @@
       ],
       [
         "Ground cinnamon",
-        2,
+        5,
         "g",
         "spice"
       ],
       [
         "Fine sea salt",
-        1,
-        "pc",
+        2,
+        "g",
         "salt"
       ],
       [
@@ -4868,13 +4909,13 @@
       [
         "Vanilla extract",
         15,
-        "ml",
+        "g",
         "spice"
       ],
       [
         "Vanilla sugar",
         10,
-        "ml",
+        "g",
         "sugar"
       ],
       [
@@ -4884,19 +4925,19 @@
         "sugar"
       ],
       [
-        "x heill ferskur ananas fer eftir fjölda blóma sem þið viljið",
-        1,
-        "g",
-        "other"
-      ],
-      [
-        "Smyrjið vel af rjómaostakremi á milli allra laga á kökunni x3.",
+        "-2 x heill ferskur ananas (fer eftir fjölda blóma sem þið viljið)",
         1,
         "pc",
         "other"
       ],
       [
-        "Smyrjið því næst þunnu lagi allan hringinn, bæði á hliðar og topp til að festa kökumylsnu vel fyrir lokaumferð og leyfið að standa í um 15 mínútur áður en haldið er áfram til að fá smá stökkan hjúp á kremið.",
+        "Smyrjið vel af rjómaostakremi á milli allra laga á kökunni (x3).",
+        1,
+        "pc",
+        "other"
+      ],
+      [
+        "Smyrjið því næst þunnu lagi allan hringinn, bæði á hliðar og topp til að festa kökumylsnu vel fyrir lokaumferð og leyfið að standa í um 15 mínútur áður en haldið er áfram (til að fá smá stökkan hjúp á kremið).",
         1,
         "pc",
         "other"
@@ -4915,23 +4956,31 @@
       ]
     ],
     "steps": [
-      "Mix together matarolíu, vanilla extract, sugar and brown sugar in a mixer bowl and stir together until well combined. add the eggs together one at a time and stir well in on milli then the mixture verði gulleit and örlítið airy and light.",
-      "Mix stöppuðum banönum together.",
-      "Place þurrefnin together in a bowl and stir gently together eggjablönduna, a little in einu.",
-      "Finally fara gulrætur, hnetur and möndlur út in.",
-      "Spray 2x 20-22cm form well with matarolíuspreyi and divide the mixture jafnt on milli.",
-      "Bake at 175°C for about 30 minutes or until prjónn kemur hreinn út.",
-      "Cool the cake layers well after þeir are komnir úr forminu and slice then hvorn um sig in tvennt with kökuskera/hníf and fáið þannig fjóra þynnri botna.",
-      "Stir the butter until það is létt and ljóst.",
-      "Add cream cheese, vanilla extract and vanillusykri together and mix well together.",
-      "Place icing sugar together the mixture in smáum skömmtum until allt is well combined and slétt.",
-      "Afhýðið ananasinn in heilu lagi eftir honum endilöngum.",
-      "Slice „nibbur“ úr allan hringinn with því að nota flysjara/hníf. with þessu móti myndast litlar holur allan hringinn which munu gera blómin fallegri. Reynið next að skera það þunnar sneiðar að þið sjáið hnífinn in gegn þegar skorið is.",
-      "Þerrið hverja sneið and raðið þeim on parchment paper on bökunarplötu.",
-      "Bake at 110°C for about 30 minutes, snúið sneiðunum then við and heat áfram in um 30 minutes or until ananasinn fer að þorna. Varist að hann brenni ekki and fylgist well with after honum hefur verið snúið. Engu að síður is mikilvægt að baka hann nægilega lengi and if enn is einhver safi in honum or ykkur finnst hann ekki nægilega þurr then is um að gera að snúa again and baka in nokkrar minutes til viðbótar on hvorri hlið.",
-      "Place hverja ananassneið in muffinsform/eggjabakka or annað slíkt which gefur kúpt form þegar sneiðin hefur þornað.",
-      "Gott is að útbúa ananasblómin deginum before setja on kökuna together and leyfa þeim að þorna in the pans over nótt."
-    ]
+      "Mix the vegetable oil, vanilla drops, sugar, and granulated sugar in a mixer bowl and stir until well combined. Add the eggs one at a time, beating well in between so the mixture becomes yellowish and slightly airy.",
+      "Mix in the mashed bananas.",
+      "Combine the dry ingredients in a bowl and gently fold them into the egg mixture, a little at a time.",
+      "Finally, add the carrots, walnuts, and almonds.",
+      "Spray two 20-22cm pans well with cooking oil spray and divide the batter equally between them.",
+      "Bake at 175°C for about 30 minutes or until a skewer comes out clean.",
+      "Let the layers cool well after removing them from the pans, then cut each one in half with a cake cutter/knife to obtain four thin layers.",
+      "Beat the butter until light and fluffy.",
+      "Add the cream cheese, vanilla drops, and vanilla sugar and mix well.",
+      "Add the powdered sugar to the mixture in small amounts until everything is well combined and smooth.",
+      "Peel the pineapple whole, following its length.",
+      "Cut “nicks” around the entire circumference using a zester/knife. This creates small holes around the ring, which will make the flowers more beautiful. Next, try to cut thin enough slices that you can see the knife through them.",
+      "Thread each slice and arrange them on parchment paper on a baking sheet.",
+      "Bake at 110°C for about 30 minutes, then flip the slices and continue heating for about 30 minutes or until the pineapple begins to dry. Be careful not to burn it and watch closely after flipping. Nevertheless, it is important to bake it long enough; if there is still any juice or if it doesn't feel dry enough, you must flip it back and bake for a few additional minutes on each side.",
+      "Place each pineapple slice in a muffin tin, an egg carton, or something similar that provides a convex shape once the slice has dried.",
+      "It is good to prepare the pineapple flowers the day before, assemble them on the cake, and allow them to dry in their molds overnight.",
+      "Peel the pineapple whole, following its length.",
+      "Cut “nicks” around the entire circumference using a zester/knife. This creates small holes around the ring, which will make the flowers more beautiful. Next, try to cut thin enough slices that you can see the knife through them.",
+      "Thread each slice and arrange them on parchment paper on a baking sheet.",
+      "Bake at 110°C for about 30 minutes, then flip the slices and continue heating for about 30 minutes or until the pineapple begins to dry. Be careful not to burn it and watch closely after flipping. Nevertheless, it is important to bake it long enough; if there is still any juice or if it doesn't feel dry enough, you must flip it back and bake for a few additional minutes on each side.",
+      "Place each pineapple slice in a muffin tin, an egg carton, or something similar that provides a convex shape once the slice has dried.",
+      "It is good to prepare the pineapple flowers the day before, assemble them on the cake, and allow them to dry in their molds overnight."
+    ],
+    "bake": "30 min",
+    "tempC": 175
   },
   {
     "id": "gotteri-fotboltakaka",
@@ -4952,30 +5001,12 @@
         500,
         "g",
         "sugar"
-      ],
-      [
-        "Eggs",
-        1,
-        "pc",
-        "egg"
-      ],
-      [
-        "Vanilla extract",
-        10,
-        "ml",
-        "spice"
-      ],
-      [
-        "Golden syrup",
-        45,
-        "g",
-        "sugar"
       ]
     ],
     "steps": [
-      "Preheat the oven to 175°C and prepare cake pan.",
-      "Mix all cake ingredients together until smooth and pour into the prepared pan.",
-      "Bake for 30–35 minutes until golden and set, then cool completely before decorating."
+      "1 egg",
+      "2 tsp vanilla drops",
+      "3 tbsp syrup"
     ]
   },
   {
@@ -4987,33 +5018,33 @@
     "prep": "25 min",
     "ingredients": [
       [
-        "White cake mix",
+        "x hvítt kökumix eða 2 x þessi uppskrift",
         2,
-        "g",
-        "flour"
+        "pc",
+        "other"
       ],
       [
         "Unsalted butter",
         5,
-        "g",
+        "pc",
         "fat"
       ],
       [
-        "Matarlitir gulur, appelsínugulur, rauður, grænn, fjólublár og blár",
+        "Matarlitir (gulur, appelsínugulur, rauður, grænn, fjólublár og blár)",
         1,
         "pc",
         "other"
       ],
       [
-        "2D eða 1M stjörnustútur frá Wilton",
-        1,
+        "D eða 1M stjörnustútur frá Wilton",
+        2,
         "pc",
         "other"
       ],
       [
-        "22cm kökuform",
+        "-22cm kökuform",
         20,
-        "g",
+        "pc",
         "other"
       ],
       [
@@ -5037,7 +5068,7 @@
       [
         "Vanilla extract",
         10,
-        "ml",
+        "g",
         "spice"
       ],
       [
@@ -5048,17 +5079,18 @@
       ]
     ],
     "steps": [
-      "Prepare tvöfalt vanilludeig in the mixer.",
-      "Divide því jafnt down in 6 bowls and color with matarlit (place well af lit því hann dofnar við baksturinn).",
-      "Bake the cake layers and cool well (athugið að bökunartíminn is styttri en venjulega því þetta are þunnir botnar).",
-      "Smooth the cake layers with kökuskera/tvinna/hníf then allir verði jafn háir.",
-      "Prepare the frosting and divide einnig down in 6 bowls and color with sömu litum. Gerið aðeins meira af bleiku því gott is að þekja kökuna with þeim lit því hann is efstur.",
-      "Byrjið að raða kökunni together, fjólublár kemur first, then blár, grænn, gulur, appelsínugulur, rauður (bleikur) and alltaf krem af sama lit ofaná hvern botn.",
-      "Þekjið kökuna then with þunnu lagi af bleiku kremi before stjörnurnar are sprautaðar on.",
-      "Pipe óreglulega with einum lit in einu and if þið eruð aðeins with einn piping tip is þannig possible to skola hann on milli lita.",
-      "Munið að sprauta stjörnurnar þétt and with nokkuð flatan botn til að þær festist well on hliðunum.",
-      "Ég hvet ykkur einnig til að kíkja on regnboga bollakökurnar hér on síðunni if þið viljið frekari hugmyndir fyrir helgina and then skelli ég eflaust inn fleiri litríkum færslum fyrir helgi 🙂.",
-      "Góða skemmtun!"
+      "Prepare a double batch of vanilla batter in a stand mixer.",
+      "Divide the batter equally into 6 bowls and color with food coloring (use plenty of coloring as it will fade during baking).",
+      "Bake the layers and let them cool completely (note that the baking time is shorter than usual as these are thin layers).",
+      "Level the layers with a cake leveler, thread, or knife so they are all the same height.",
+      "Prepare the frosting and also divide it into 6 bowls, coloring them with the same colors. Make a little extra pink, as it is good to cover the cake with that color since it will be the top layer.",
+      "Begin assembling the cake: purple first, then blue, green, yellow, orange, and red (pink), always adding a layer of frosting of the same color on top of each layer.",
+      "Then, cover the cake with a thin layer of pink frosting before piping the stars on.",
+      "Pipe irregularly, one color at a time; if you only have one piping tip, you can rinse it between colors.",
+      "Remember to pipe the stars closely together with a somewhat flat base so they adhere well to the sides.",
+      "I also encourage you to check out the rainbow cupcakes here on the site if you want more ideas for the weekend, and I will surely post more colorful entries for the weekend. 🙂",
+      "All ingredients for these recipes can be found at Nettó.",
+      "Enjoy!"
     ]
   },
   {
@@ -5072,7 +5104,7 @@
       [
         "x Betty Crocker Devils Food cake mix, bakað í 2 x 20cm formum",
         1,
-        "g",
+        "pc",
         "other"
       ],
       [
@@ -5096,7 +5128,7 @@
       [
         "Vanilla extract",
         10,
-        "ml",
+        "g",
         "spice"
       ],
       [
@@ -5107,7 +5139,7 @@
       ],
       [
         "Unsweetened cocoa powder",
-        40,
+        60,
         "g",
         "cocoa"
       ],
@@ -5132,7 +5164,7 @@
       [
         "Vanilla extract",
         10,
-        "ml",
+        "g",
         "spice"
       ],
       [
@@ -5140,63 +5172,15 @@
         30,
         "g",
         "sugar"
-      ],
-      [
-        "Bleik bomba",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Shopkins afmælisþema",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Skautaterta",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Eggs",
-        1,
-        "pc",
-        "egg"
-      ],
-      [
-        "Bleik og fjólublá rósakaka",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Blómamarengs",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Mína mús",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Liquorice",
-        1,
-        "pc",
-        "other"
       ]
     ],
     "steps": [
-      "Place all frosting ingredients except icing sugar and cocoa powder into the mixer bowl and beat well.",
-      "Mix icing sugar and cocoa powder together and gradually add to frosting, beating until silky smooth.",
-      "Place all ingredients except icing sugar into the mixer bowl and beat well.",
-      "Gradually add icing sugar, scraping down the bowl, and beat until silky smooth.",
-      "Color with þeim matarlit which þið óskið eftir and byrjið on því að hjúpa alla kökuna with þunnu lagi af kremi.",
-      "Pipe „dots“ lóðrétt eftir hlið kökunnar and dragið úr hverjum lit with spatula, endurtakið with a little fjarlægð on milli until þið eruð komin hringinn."
+      "Place all ingredients except powdered sugar and cocoa into a stand mixer bowl and mix well.",
+      "Sift the powdered sugar and cocoa together and gently add to the mixture, scraping down the sides, and mix until the frosting is smooth and creamy.",
+      "Place all ingredients except powdered sugar into a stand mixer bowl and mix well.",
+      "Gently add the powdered sugar to the mixture, scraping down the sides, and mix until the frosting is smooth and creamy.",
+      "Color with your desired food coloring and begin by coating the entire cake with a thin layer of frosting.",
+      "Pipe \"dots\" vertically down the side of the cake and pull each color out with a spatula; repeat with small intervals until you have completed the circle."
     ]
   },
   {
@@ -5206,8 +5190,6 @@
     "desc": "Multi-layer vanilla sponge filled with homemade salted caramel sauce and caramel buttercream.",
     "yield": "1 × 15 cm",
     "prep": "25 min",
-    "bake": "50-60 min",
-    "tempC": 185,
     "ingredients": [
       [
         "Unsalted butter",
@@ -5253,8 +5235,8 @@
       ],
       [
         "Fine sea salt",
-        1,
-        "pc",
+        5,
+        "g",
         "salt"
       ],
       [
@@ -5270,117 +5252,21 @@
         "spice"
       ],
       [
-        "eplamauk barnamauk",
+        "eplamauk (barnamauk)",
         800,
         "ml",
         "other"
       ],
       [
-        "Dugar í kremið,",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Diced apples",
-        1,
-        "pc",
-        "fruit"
-      ],
-      [
-        "Granulated sugar",
-        400,
-        "g",
-        "sugar"
-      ],
-      [
-        "Unsalted butter",
-        200,
-        "g",
-        "fat"
-      ],
-      [
-        "Double cream",
-        270,
-        "ml",
-        "dairy"
-      ],
-      [
-        "Fine sea salt",
-        1,
-        "pc",
-        "salt"
-      ],
-      [
-        "Til þess að setja",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Unsalted butter",
-        230,
-        "g",
-        "fat"
-      ],
-      [
-        "Icing sugar",
-        480,
-        "g",
-        "sugar"
-      ],
-      [
-        "Vanilla extract",
-        10,
-        "ml",
-        "spice"
-      ],
-      [
-        "Caramel sauce",
-        120,
-        "ml",
-        "sugar"
-      ],
-      [
-        "Til þess að hjúpa",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "kökuna með í lokin",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "2 x\nBetty Crocker Vanilla frosting",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Icing sugar",
-        200,
-        "g",
-        "sugar"
-      ],
-      [
-        "Hrærið\nvel saman í hrærivélarskálinni og smyrjið t 1 cm þykku lagi um alla kökuna til\nað hjúpa hana.",
-        1,
-        "pc",
-        "other"
-      ],
-      [
         "Roasted hazelnuts",
         2,
-        "g",
+        "pc",
         "nut"
       ],
       [
-        "Diced apples",
+        "Apples",
         1,
-        "g",
+        "pc",
         "fruit"
       ],
       [
@@ -5388,64 +5274,50 @@
         1,
         "pc",
         "salt"
-      ],
-      [
-        "Namm!",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Eplakaka með kryddkeim og karamellu",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Fine sea salt",
-        1,
-        "pc",
-        "salt"
-      ],
-      [
-        "Fresh blueberries",
-        1,
-        "pc",
-        "fruit"
-      ],
-      [
-        "Páskabomba",
-        1,
-        "pc",
-        "other"
       ]
     ],
     "steps": [
-      "Heat\nthe oven 185°C.",
-      "Spray\n3 x 15 cm cake pan with matarolíuspreyi and Line the base of the pan with baking parchment.",
-      "Whisk\ntogether butter and báðar tegundir af sugar until létt and ljóst.",
-      "Add\nthe eggs together one at a time and skafið well down on milli.",
-      "Place\nöll þurrefnin in a bowl and mix together and place út in the bowl alternating við\neplamaukið and scrape down eftir þörfum.",
-      "Divide\njafnt in the pans þrjú and smooth well, athugið að the batter is mjög þykkt.",
-      "Bake\nin 50-60 minutes or until prjónn kemur hreinn út.",
-      "Cool\nthen completely and smooth toppinn with hníf/kökuskera. take then hvern botn in tvennt\nthen úr verða sex þynnri botnar.",
-      "Hafið\nöll hráefnin tilbúin in upphafi þar which hræra þarf stanslaust in the mixture.",
-      "Place\nsykurinn in a saucepan and heat on meðalháum hita until hann is bráðinn and stir\nstanslaust in with sleif meanwhile (þetta tekur um 6-8 minutes).",
-      "Place\nthe butter together sykurinn (það mun bubbla aðeins and það is allt in lagi) and\nstir well until combined.",
-      "Mix\nthe cream then út in pottinn and stir well until combined. Hér bubblar again and\nþað you can hækka hitann in 1-2 minutes on því stigi and then taka af hellunni and\nsetja saltið together.",
-      "Gott\nis að hella karamellunni in aðra a bowl (ég setti strax 120 ml in mæliglas fyrir the frosting\nand restina in stærri a bowl).",
-      "Karamellan\nþarf að ná room temperature and then you can nota hana in the frosting, drippið and fyrir\nkaramellueplin.",
-      "If\nhún verður of þykk before þið gerið drippið then you can setja hana 10-15 sek on\nmeðalhita in örbylgjuofinn and hræra upp again (hún you can samt vera frekar þykk þar\nwhich hún lekur merkilega well down þó hún sé þannig).",
-      "Milli laga and grunnhjúpa kökuna.",
-      "Whisk\nthe butter until létt and ljóst.",
-      "Add\nthe icing sugar together in several additions.",
-      "Place\nvanilludropana and karamellusósuna together and mix well.",
-      "Spread\njöfnu magni on milli laganna and grunnhjúpið kökuna with þunnu lagi.",
-      "Take fulla lúku af hökkuðum heslihnetum and place lófann upp að neðsta hluta kökunnar and þrýstið létt að. Gott is að hafa ofnskúffu undir til að grípa hneturnar which detta down and nota þær then again. Endurtakið until þið hafið náð „hnetuhringnum“ neðst on kökunni eins and þið viljið hafa hann.",
-      "Pour karamellu in nokkrum litlum skömmtum over toppinn and allow henni að leka aðeins down hliðarnar, varist að setja of mikið fram af brúninni því karamellann mun leka well down.",
-      "Dýfið finally eplinu in karamellubráðina then það hjúpist completely and komið fyrir on miðri kökunni.",
-      "Sprinkle then heslihnetum upp on eplið and þar in kring."
-    ]
+      "Preheat oven to 185°C.",
+      "Spray three 15 cm cake pans with cooking spray and line the bottoms with parchment paper.",
+      "Cream together the butter and both types of sugar until light and fluffy.",
+      "Add the eggs one at a time, scraping down the sides well.",
+      "Combine all dry ingredients in a bowl, then add to the mixture alternately with the applesauce, scraping down as needed.",
+      "Divide the batter equally into the three pans and smooth the tops; note that the batter is very thick.",
+      "Bake for 5<0xA0>50-60 minutes or until a skewer comes out clean.",
+      "Let cool completely and level the tops with a knife or cake leveler. Then, slice each layer in half to create six thinner layers.",
+      "Sufficient for the frosting, drizzle, and coating several apples.",
+      "400 g sugar",
+      "200 g butter at room temperature",
+      "270 ml heavy cream",
+      "1 ½ tsp salt",
+      "Have all ingredients ready at the start, as the mixture requires constant stirring.",
+      "Place the sugar in a pot and heat over medium heat until melted, stirring constantly with a spoon (this takes about 6-8 minutes).",
+      "Add the butter to the sugar (it will bubble slightly, which is normal) and stir well until combined.",
+      "Pour the cream into the pot and stir well until combined. It will bubble again; you may increase the heat for 1-2 minutes at this stage before removing from heat and adding the salt.",
+      "It is a good idea to pour the caramel into another bowl (I immediately set aside 120 ml in a measuring cup for the frosting and the rest in a larger bowl).",
+      "The caramel must reach room temperature before it can be used in the frosting, drizzle, or for the caramel apples.",
+      "If it becomes too thick before making the drizzle, you can microwave it on medium heat for 10-15 seconds and stir again (it can still be quite thick, as it flows remarkably well even then).",
+      "For layering and the base coating of the cake.",
+      "230 g butter at room temperature",
+      "480 g powdered sugar",
+      "2 tsp vanilla drops",
+      "120 ml caramel sauce (see recipe above)",
+      "Cream the butter until light and fluffy.",
+      "Gradually add the powdered sugar in several portions.",
+      "Add the vanilla drops and the caramel sauce and mix well.",
+      "Spread an even amount between the layers and coat the cake with a thin base layer.",
+      "For the final coating of the cake.",
+      "2 x Betty Crocker Vanilla frosting",
+      "200 g powdered sugar",
+      "Mix well in a stand mixer bowl and spread a 1 cm thick layer over the entire cake to cover it.",
+      "Take a generous amount of chopped hazelnuts and press them lightly against the bottom edge of the cake with your palm. It is helpful to place an oven tray underneath to catch any falling nuts to reuse them. Repeat until you have achieved the desired \"hazelnut ring\" at the base of the cake.",
+      "Pour the caramel in several small portions over the top and allow it to drip slightly down the sides; be careful not to pour too much at the edge, as the caramel will flow down significantly.",
+      "Finally, dip the apple into the caramel sauce so it is fully coated, then place it in the center of the cake.",
+      "Sprinkle hazelnuts on the apple and around it.",
+      "Delicious!"
+    ],
+    "bake": "50-60 min",
+    "tempC": 185
   },
   {
     "id": "gotteri-aramotakakan",
@@ -5456,32 +5328,32 @@
     "prep": "25 min",
     "ingredients": [
       [
-        "White cake mix",
+        "Betty Crocker Red Velvet kökumix",
         1,
         "pc",
-        "flour"
+        "other"
       ],
       [
-        "dósir Betty Crocker vanilla frosting",
+        "ir Betty Crocker vanilla frosting",
         3.5,
-        "g",
+        "can",
         "other"
       ],
       [
         "Icing sugar",
-        360,
-        "g",
+        3,
+        "pc",
         "sugar"
       ]
     ],
     "steps": [
-      "Bake samkvæmt leiðbeiningum on pakka nema einu aukaeggi is bætt við and svolitlu að rauðum matarlit if þið viljið sterkari rauðan lit (you can sleppa).",
-      "Bakað in 2x 20cm kökuformum and then hvor botn tekinn in tvenn then þið fáið 4 þynnri botna.",
-      "Mix together the frosting úr dósunum and icing sugar then það verði stiff and fínt.",
-      "Spread on milli laga (x 3).",
-      "Hyljið kökuna with þunnu lagi allan hringinn til að „binda“ kökumylsnuna and undirbúa fyrir smjörkremsskreytinguna.",
-      "Use piping tip no 125 frá Wilton or annan sambærilegan rósalaufastút and pipe in óreglulegar blúndur, munið að mjórri endinn vísar út frá kökunni.",
-      "Mér fannst kakan ótrúlega flott before ég skreytti hana endanlega en gullkúlurnar and stjörnurnar gera hana þó áramótalegri. before ég setti skrautið on fannst mér hún mjög brúðarleg and væri ekki óvitlaust að skreyta brúðartertu with þessum hætti."
+      "Bake according to the package instructions, with the exception that one extra egg is added and a little red food coloring is added if you want a stronger red color (this is optional).",
+      "Bake in two 20 cm cake pans, then slice each layer in half to obtain 4 thinner layers.",
+      "Mix the canned frosting with powdered sugar until it is stiff and smooth.",
+      "Spread between the layers (3 layers).",
+      "Cover the entire cake with a thin layer to \"bind\" the crumbs and prepare for the buttercream decoration.",
+      "Use Wilton piping tip no. 125 or another similar petal tip and pipe irregular lace patterns; remember to keep the narrow end facing away from the cake.",
+      "I thought the cake looked incredibly beautiful before the final decoration, though the gold balls and stars make it look more festive for New Year's. Before I added the decorations, I thought it looked very bridal and would not be a bad idea to decorate a wedding cake this way."
     ]
   },
   {
@@ -5495,7 +5367,7 @@
       [
         "Dumle toffee caramels",
         2,
-        "g",
+        "pc",
         "chocolate"
       ],
       [
@@ -5506,20 +5378,20 @@
       ],
       [
         "Unsweetened cocoa powder",
-        20,
+        30,
         "g",
         "cocoa"
       ],
       [
         "Vanilla extract",
         5,
-        "ml",
+        "g",
         "spice"
       ],
       [
         "Icing sugar",
-        360,
-        "g",
+        720,
+        "ml",
         "sugar"
       ],
       [
@@ -5549,7 +5421,7 @@
       [
         "Vanilla extract",
         10,
-        "ml",
+        "g",
         "spice"
       ],
       [
@@ -5566,14 +5438,14 @@
       ]
     ],
     "steps": [
-      "Melt karamellur and butter together miðlungshita until well combined together. if blandann skilur sig or þykknar of mikið you can setja a little cream together and hræra well.",
-      "Place karamelluna in the stand mixer bowl and stir cocoa and vanilla extract gently together, next the icing sugar, einum bolla in einu and stir well on milli.",
-      "Divide next in 3 hluta and spread on milli the cake layers.",
-      "Place all ingredients except icing sugar into the mixer bowl and beat well.",
-      "Gradually add icing sugar, scraping down the bowl, and beat until silky smooth.",
-      "Stundum þarf að bæta örlítið meira af icing sugar if þið viljið hafa the frosting stífara.",
-      "Place gulan matarlit into finally.",
-      "Að þessu sinni notaðist ég við piping tip nr 125 frá Wilton til að fá þetta „blúndumynstur“. first þarf að hylja alla kökuna with þunnu lagi að yellow kremi and then sprauta mynstrinu on. Haldið breiðari endanum on stútnum þétt upp að hliðinni, byrjið neðst and zik-zakkið upp and endið on að mjókka línuna in átt að miðjunni. Það is allt in lagi að slíta stútinn frá if þið verðið þreytt and hefja leikinn að nýju."
+      "Melt caramels and butter together over medium heat until well combined. If the mixture separates or thickens too much, you can add a little cream and stir well.",
+      "Place the caramel in a stand mixer bowl and gently stir in the cocoa and vanilla drops, followed by the powdered sugar, one cup at a time, mixing well between additions.",
+      "Divide into 3 portions and spread between the cake layers.",
+      "Place all ingredients except the powdered sugar in a stand mixer bowl and mix well.",
+      "Gently add the powdered sugar to the mixture, scraping down the sides, and beat until the frosting is smooth and velvety.",
+      "Sometimes you may need to add a little more powdered sugar if you want the frosting to be stiffer.",
+      "Add yellow food coloring at the end.",
+      "This time, I used Wilton piping tip no. 125 to achieve this \"lace pattern.\" First, cover the entire cake with a thin layer of yellow frosting, then pipe the pattern on. Hold the wider end of the tip close to the side, start at the bottom, zigzag upwards, and finish by tapering the line toward the center. It is perfectly fine to lift the tip away if you get tired and start again."
     ]
   },
   {
@@ -5583,8 +5455,6 @@
     "desc": "Spectacular six-tier chocolate cake layered with cocoa buttercream and delicate white vanilla pearls.",
     "yield": "1 × 20cm",
     "prep": "25 min",
-    "bake": "35 min",
-    "tempC": 170,
     "ingredients": [
       [
         "Unsalted butter",
@@ -5600,8 +5470,8 @@
       ],
       [
         "Light brown sugar",
-        600,
-        "g",
+        720,
+        "ml",
         "sugar"
       ],
       [
@@ -5619,42 +5489,42 @@
       [
         "Vanilla extract",
         10,
-        "ml",
+        "g",
         "spice"
       ],
       [
         "Plain flour",
-        333.3,
-        "g",
+        240,
+        "ml",
         "flour"
       ],
       [
         "Unsweetened cocoa powder",
-        63.8,
-        "g",
+        180,
+        "ml",
         "cocoa"
       ],
       [
         "Baking soda",
         1,
-        "g",
+        "pc",
         "leavener"
       ],
       [
         "Fine sea salt",
-        2.5,
+        2,
         "g",
         "salt"
       ],
       [
         "Double cream",
-        320,
+        240,
         "ml",
         "dairy"
       ],
       [
         "Boiling water",
-        320,
+        240,
         "ml",
         "liquid"
       ],
@@ -5679,7 +5549,7 @@
       [
         "Vanilla extract",
         10,
-        "ml",
+        "g",
         "spice"
       ],
       [
@@ -5690,63 +5560,75 @@
       ],
       [
         "Unsweetened cocoa powder",
-        40,
+        60,
         "g",
         "cocoa"
-      ],
-      [
-        "Unsalted butter",
-        1,
-        "pc",
-        "fat"
-      ],
-      [
-        "Unsalted butter",
-        125,
-        "g",
-        "fat"
-      ],
-      [
-        "Icing sugar",
-        500,
-        "g",
-        "sugar"
-      ],
-      [
-        "Eggs",
-        1,
-        "pc",
-        "egg"
-      ],
-      [
-        "Vanilla extract",
-        10,
-        "ml",
-        "spice"
-      ],
-      [
-        "Golden syrup",
-        30,
-        "g",
-        "sugar"
       ]
     ],
     "steps": [
-      "Beat brown sugar and butter together until light, pale, and fluffy.",
-      "Add eggs one at a time, beating well and scraping down the bowl after each addition.",
-      "Whisk this mixture on high speed until airy and light and add then the vanilla extract into.",
-      "Whisk the dry ingredients together in a separate bowl (flour, cocoa, baking soda and salt) and mix together alternating við sour the cream.",
-      "Stir gently until well combined and add then the boiling water together.",
-      "Divide down in cake pan (3 x um 20cm form and then is hvor botn tekinn in 2 with tvinna/kökuskera).",
+      "Cream together granulated sugar and butter until light and fluffy.",
+      "Add the eggs one at a time, scraping down the sides.",
+      "Beat this mixture on high speed until airy, then add the vanilla drops.",
+      "Mix together the dry ingredients (flour, cocoa, baking soda, and salt) and alternate adding them to the sour cream.",
+      "Mix gently until well combined, then add the boiling water.",
+      "Divide into cake tins (3 x approx. 20cm tins, then each layer is split into 2 using a skewer/cake cutter).",
       "Bake for about 35 minutes at 170°C.",
-      "Place all frosting ingredients except icing sugar and cocoa powder into the mixer bowl and beat well.",
-      "Mix icing sugar and cocoa powder together and gradually add to frosting, beating until silky smooth.",
-      "If the frosting is of stiff til að spread on milli the cake layers you can bæta a little water together.",
-      "Place all ingredients except icing sugar into the mixer bowl and beat well.",
-      "Gradually add icing sugar, scraping down the bowl, and beat until silky smooth.",
-      "Divide in 3 bowls and color with white, red and blue.",
-      "Use round piping tips which are on bilinu 1-1,5cm in diameter and then small spatula til að draga úr each dot."
-    ]
+      "Place all ingredients except the powdered sugar and cocoa in a stand mixer bowl and mix well.",
+      "Mix the powdered sugar and cocoa together and gently add to the mixture, scraping down the and beat until the frosting is smooth and velvety.",
+      "If the frosting is too stiff to spread between the layers, you can add a little water.",
+      "Vanilla buttercream – for decorating the cake (1.5-2 recipes of this)",
+      "• 125g butter (soft)",
+      "• 500g powdered sugar",
+      "• 1 egg",
+      "• 2 tsp vanilla drops",
+      "• 2 tbsp syrup",
+      "Place all ingredients except the powdered sugar in a stand mixer bowl and mix well.",
+      "Gently add the powdered sugar to the mixture, scraping down the sides, and beat until the frosting is smooth and velvety.",
+      "Divide into 3 bowls and color with white, red, and blue.",
+      "Use round piping tips between 1-1.5cm in diameter, then use a small spoon to pull each dollop.",
+      "Cream together granulated sugar and butter until light and fluffy.",
+      "Add the eggs one at a time, scraping down the sides.",
+      "Beat this mixture on high speed until airy, then add the vanilla drops.",
+      "Mix together the dry ingredients (flour, cocoa, baking soda, and salt) and alternate adding them to the sour cream.",
+      "Mix gently until well combined, then add the boiling water.",
+      "Divide into cake tins (3 x approx. 20cm tins, then each layer is split into 2 using a skewer/cake cutter).",
+      "Bake for about 35 minutes at 170°C.",
+      "Place all ingredients except the powdered sugar and cocoa in a stand mixer bowl and mix well.",
+      "Mix the powdered sugar and cocoa together and gently add to the mixture, scraping down the and beat until the frosting is smooth and velvety.",
+      "If the frosting is too stiff to spread between the layers, you can add a little water.",
+      "Vanilla buttercream – for decorating the cake (1.5-2 recipes of this)",
+      "• 125g butter (soft)",
+      "• 500g powdered sugar",
+      "• 1 egg",
+      "• 2 tsp vanilla drops",
+      "• 2 tbsp syrup",
+      "Place all ingredients except the powdered sugar in a stand mixer bowl and mix well.",
+      "Gently add the powdered sugar to the mixture, scraping down the sides, and beat until the frosting is smooth and velvety.",
+      "Divide into 3 bowls and color with white, red, and blue.",
+      "Use round piping tips between 1-1.5cm in diameter, then use a small spoon to pull each dollop.",
+      "Cream together granulated sugar and butter until light and fluffy.",
+      "Add the eggs one at a time, scraping down the sides.",
+      "Beat this mixture on high speed until airy, then add the vanilla drops.",
+      "Mix together the dry ingredients (flour, cocoa, baking soda, and salt) and alternate adding them to the sour cream.",
+      "Mix gently until well combined, then add the boiling water.",
+      "Divide into cake tins (3 x approx. 20cm tins, then each layer is split into 2 using a skewer/cake cutter).",
+      "Bake for about 35 minutes at 170°C.",
+      "Place all ingredients except the powdered sugar and cocoa in a stand mixer bowl and mix well.",
+      "Mix the powdered sugar and cocoa together and gently add to the mixture, scraping down the and beat until the frosting is smooth and velvety.",
+      "If the frosting is too stiff to spread between the layers, you can add a little water.",
+      "Vanilla buttercream – for decorating the cake (1.5-2 recipes of this)",
+      "• 125g butter (soft)",
+      "• 500g powdered sugar",
+      "• 1 egg",
+      "• 2 tsp vanilla drops",
+      "• 2 tbsp syrup",
+      "Place all ingredients except the powdered sugar in a stand mixer bowl and mix well.",
+      "Gently add the powdered sugar to the mixture, scraping down the sides, and beat until the frosting is smooth and velvety.",
+      "Divide into 3 bowls and color with white, red, and blue.",
+      "Use round piping tips between 1-1.5cm in diameter, then use a small spoon to pull each dollop."
+    ],
+    "bake": "35 min",
+    "tempC": 170
   },
   {
     "id": "gotteri-kryddkaka-i-jolabuningi",
@@ -5755,14 +5637,12 @@
     "desc": "Richly spiced Nordic holiday cake infused with cinnamon, cloves and ginger, topped with sweet glaze.",
     "yield": "1 × 20 cm",
     "prep": "25 min",
-    "bake": "30 min",
-    "tempC": 170,
     "ingredients": [
       [
-        "White cake mix",
+        "x Toro kryddkökumix",
         3,
-        "g",
-        "flour"
+        "pc",
+        "other"
       ],
       [
         "Eggs",
@@ -5771,7 +5651,7 @@
         "egg"
       ],
       [
-        "Water",
+        "Boiling water",
         600,
         "ml",
         "liquid"
@@ -5783,9 +5663,9 @@
         "fat"
       ],
       [
-        "Instant pudding powder",
-        150,
-        "g",
+        "Royal vanillubúðingur",
+        1,
+        "pack",
         "other"
       ],
       [
@@ -5827,17 +5707,17 @@
       [
         "Vanilla extract",
         10,
-        "ml",
+        "g",
         "spice"
       ],
       [
         "Fine sea salt",
         1,
-        "pc",
+        "g",
         "salt"
       ],
       [
-        "Water",
+        "Boiling water",
         120,
         "ml",
         "liquid"
@@ -5855,45 +5735,37 @@
         "other"
       ],
       [
-        "fersk trönuber",
+        "-70 g fersk trönuber",
         50,
-        "g",
-        "other"
-      ],
-      [
-        "Ef þessi kaka kemur ykkur ekki í jólaskap þá veit ég ekki hvað!",
-        1,
-        "pc",
-        "other"
-      ],
-      [
-        "Megið endilega fylgja Gotterí á INSTAGRAM",
-        1,
         "pc",
         "other"
       ]
     ],
     "steps": [
-      "Preheat the oven to 170°C.",
-      "Stir together eggjum, water and melted smjöri.",
-      "Add kökuduftinu together ásamt cinnamon and\nscraping down the bowl until the mixture is slétt and fín.",
-      "Finally fer Royal búðingsduftið together and\nagain is combined well.",
-      "Spray 3 x 20 cm form with matarolíuspreyi and\ndivide the batter down on milli the pans.",
-      "Bake for about 30 minutes or until prjónn kemur hreinn\nút.",
-      "Cool the cake layers well and slice then ofan af þeim with\nkökuskera til að hafa then alla jafna and slétta.",
-      "Whisk together butter, cream cheese and Mascarpone ost\nuntil létt and ljóst.",
-      "Place flórsykurinn together in several additions\násamt milk, vanilla extract and salt.",
-      "Stir until slétt and fallegt krem hefur\nmyndast.",
-      "Spread um 1 cm þykku lagi on milli the cake layers and on\ntoppinn and rétt þekjið hliðarnar with kremi then það sjáist well in the cake layers in gegn.",
-      "Decorate and cool until spread on kökuna fram.",
-      "Heat together 100 g sugar and water að suðu and stir until sykurinn is uppleystur, take then af hellunni.",
-      "Dýfið rósmaríngreinum in sykurlöginn, hristið hann aðeins af and place þær on parchment paper in um 15 minutes.",
-      "Next you can setja trönuberin in pottinn and setja lok/viskastykki over and allow þeim að liggja in pottinum in um 15 minutes.",
-      "Take then trönuberin upp úr, hristið eins mikið af sykurleginum af þeim and þið getið and place on parchment paper in um 30 minutes.",
-      "Meanwhile trönuberin hvíla you can setja 200 g af sugar in grunna and víða a bowl and rúlla rósmaríngreinunum upp úr the sugar and setja on nýjan hreinan parchment paper til þess að leyfa þeim að þorna.",
-      "Þegar trönuberin hafa fengið að þorna in um 30 minutes you can einnig velta þeim upp úr the sugar and færa over on nýjan parchment paper til að þorna.",
-      "Það ætti að duga að leyfa þessu að liggja in um 15-30 minutes and then nota til þess að skreyta kökuna eftir hentugleika."
-    ]
+      "Preheat oven to 170°C.",
+      "Whisk together eggs, water, and melted butter.",
+      "Add the cake mix along with cinnamon, scraping down the sides, until the batter is smooth and fine.",
+      "Finally, add the Royal pudding powder and mix well again.",
+      "Spray three 20cm tins with cooking oil spray and divide the batter among the tins.",
+      "Bake for about 30 minutes or until a skewer comes out clean.",
+      "Let the cake layers cool well, then trim the tops with a cake leveler to ensure they are even and smooth.",
+      "Whip together butter, cream cheese, and Mascarpone until light and fluffy.",
+      "Add the powdered sugar in several batches, along with milk, vanilla drops, and salt.",
+      "Beat until a smooth and beautiful frosting has formed.",
+      "Spread a layer about 1 cm thick between the layers and on the top, and lightly coat the sides with frosting so the layers are still visible through it.",
+      "Decorate and refrigerate until ready to serve.",
+      "Bring 100g sugar and water to a boil, stirring until the sugar is dissolved, then remove from heat.",
+      "Dip rosemary sprigs into the sugar syrup, shake off the excess, and place them on parchment paper for about 15 minutes.",
+      "Next, place the cranberries in a pot, cover with a lid or kitchen towel, and let them sit in the pot for about 15 minutes.",
+      "Remove the cranberries, shake off as much sugar syrup as possible, and place them on parchment paper for about 30 minutes.",
+      "While the cranberries rest, place 200g of sugar in a shallow, wide bowl and roll the rosemary sprigs in the sugar, then place them on a new piece of clean parchment paper to dry.",
+      "Once the cranberries have dried for about 30 minutes, they can also be rolled in sugar and moved to a new piece of parchment paper to dry.",
+      "Letting this sit for about 15-30 minutes should be sufficient, then use as desired to decorate the cake.",
+      "If this cake doesn't get you in the Christmas spirit, I don't know what will!",
+      "Be sure to follow Gotterí on INSTAGRAM"
+    ],
+    "bake": "30 min",
+    "tempC": 170
   },
   {
     "id": "gotteri-piparkokukaka",
@@ -5902,8 +5774,6 @@
     "desc": "Aromatic gingerbread cake packed with crushed gingerbread cookies and cream cheese frosting.",
     "yield": "1 × 15 cm",
     "prep": "25 min",
-    "bake": "15 min",
-    "tempC": 170,
     "ingredients": [
       [
         "Plain flour",
@@ -5949,8 +5819,8 @@
       ],
       [
         "Fine sea salt",
-        1,
-        "pc",
+        2,
+        "g",
         "salt"
       ],
       [
@@ -5978,9 +5848,9 @@
         "other"
       ],
       [
-        "Fresh orange juice",
+        "Orange juice and zest",
         15,
-        "ml",
+        "g",
         "fruit"
       ],
       [
@@ -5992,7 +5862,7 @@
       [
         "Vanilla extract",
         5,
-        "ml",
+        "g",
         "spice"
       ],
       [
@@ -6028,7 +5898,7 @@
       [
         "Fine sea salt",
         1,
-        "pc",
+        "g",
         "salt"
       ],
       [
@@ -6048,30 +5918,27 @@
         1,
         "pc",
         "other"
-      ],
-      [
-        "Megið endilega fylgja Gotterí líka á INSTAGRAM",
-        1,
-        "pc",
-        "other"
       ]
     ],
     "steps": [
-      "Preheat the oven to 170°C.",
-      "Spread 3 x 15 cm bökunarform with smjöri/spray with matarolíuspreyi and Line the base of the pan with baking parchment.",
-      "Mix þurrefnunum together in a mixer bowl.",
-      "Place smjörteningana (c.a 1×1 cm) together (mega vera beint úr the refrigerator) and stir until the butter hefur blandast þannig að the mixture minnir on sand/brauðrasp hvað áferð varðar.",
-      "Whisk the eggs in a bowl and add þeim together in several additions.",
-      "Next you can setja sýrópið, appelsínubörkinn, appelsínusafann, nýmjólkina and vanilludropana together, hræra on low speed and skafa nokkrum sinnum down on milli.",
-      "Chop sykraða engiferið mjög smátt down and vefjið together the batter in lokin.",
-      "Divide the batter on milli the pans, ég vigtaði um 430 g in hvert form.",
-      "Bake until a tester comes out with a few moist crumbs en ekki blautu deigi, cool in the pans in um 15 minutes and færið then over on cooling rack until þeir kólna completely. the cake layers you can then snyrta til and jafna before kakan is sett together.",
-      "Whisk together butter and cream cheese with K-inu until létt and ljóst and skafið nokkrum sinnum down on milli.",
-      "Add salt and fræjum úr vanillustöng together.",
-      "Place flórsykurinn next út in the mixture in several additions, scraping down the bowl and stir until slétt and fallegt krem hefur myndast.",
-      "Spread um 1 cm þykku lagi on milli the cake layers and on toppinn and rétt þekjið hliðarnar with kremi then það sjáist well in the cake layers in gegn.",
-      "Við fundum þessi hreindýrapiparkökumót in Byggt and búið in Kringlunni."
-    ]
+      "Preheat oven to 170°C.",
+      "Grease three 15cm baking tins with butter or cooking oil spray and line the bottoms with parchment paper.",
+      "Mix the dry ingredients together in a stand mixer bowl.",
+      "Add the butter cubes (approx. 1x1 cm, can be straight from the fridge) and mix until the butter is incorporated so that the texture resembles sand or breadcrumbs.",
+      "Whisk the eggs in a bowl and add them to the mixture in several batches.",
+      "Next, add the syrup, orange zest, orange juice, milk, and vanilla drops; mix on low speed and scrape down the sides a few times.",
+      "Finely chop the candied ginger and fold it into the batter at the end.",
+      "Divide the batter between the tins; I weighed about 430g into each tin.",
+      "Bake until a skewer comes out with a few crumbs but not wet batter, then let them cool in the tins for about 15 minutes before transferring to a wire rack to cool completely. The layers can then be trimmed and leveled before assembling the cake.",
+      "Whip together butter and cream cheese with the mixer until light and fluffy, scraping down the sides a few times.",
+      "Add salt and vanilla bean seeds.",
+      "Next, add the powdered sugar to the mixture in several batches, scraping down the sides, and beat until a smooth and beautiful frosting has formed.",
+      "Spread a layer about 1 cm thick between the layers and on the top, and lightly coat the sides with frosting so the layers are clearly visible through it.",
+      "We found these reindeer gingerbread molds at Byggt og búið in Kringlan.",
+      "Be sure to follow Gotterí on INSTAGRAM as well."
+    ],
+    "bake": "15 min",
+    "tempC": 170
   },
   {
     "id": "gotteri-gamaldags-sukkuladiterta",
