@@ -340,7 +340,6 @@ function renderDetail() {
         </div>
         <div style="display:flex;gap:7px;flex-shrink:0;flex-wrap:wrap;justify-content:flex-end">
           <button class="btn" id="detailFav">${favs.has(r.id) ? '♥ Saved' : '♡ Save'}</button>
-          <button class="btn" id="editBtn">Edit</button>
         </div>
       </div>
       <div class="detail-actions" style="justify-content:flex-start">
@@ -397,7 +396,6 @@ function renderDetail() {
   }
   /* Fav / edit */
   document.getElementById('detailFav').onclick = () => toggleFav(r.id);
-  document.getElementById('editBtn').onclick   = () => openModal(r);
 
   /* ── Focus mode: ingredient section click handlers ── */
   document.querySelectorAll('.ingredient-section[data-section]').forEach(btn => {
