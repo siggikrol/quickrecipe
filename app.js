@@ -141,16 +141,46 @@ const sectionPlans = {
   'choc-orange-cheesecake': [[0, 'Base'], [2, 'Filling'], [10, 'Topping']],
   'date-cake-caramel':      [[0, 'Cake'], [10, 'Caramel sauce']],
   'lemon-meringue-cheesecake': [[0, 'Crust'], [3, 'Filling'], [11, 'Lemon curd'], [16, 'Meringue']],
-  // ── Gotteri recipes ──
+
+  // ── Gotteri Cheesecakes ──
   'gotteri-blaberja-ostakaka':          [[0, 'Base'], [3, 'Filling'], [8, 'Jelly topping']],
   'gotteri-vanillu-ostakaka-berjasosu': [[0, 'Base'], [3, 'Filling'], [8, 'Berry sauce']],
   'gotteri-berjabomba':                 [[0, 'Base'], [4, 'Filling'], [11, 'Topping']],
+  'gotteri-oreo-ostakaka-brownies':     [[0, 'Brownie batter'], [8, 'Cheesecake swirl'], [11, 'Topping']],
   'gotteri-gudddomleg-oreo-ostakaka':   [[0, 'Base'], [4, 'Filling'], [8, 'Topping']],
+  'gotteri-toblerone-ostakaka':         [[0, 'Base'], [2, 'Cheesecake filling'], [10, 'Raspberry swirl']],
+  'gotteri-daim-ostakaka':              [[0, 'Base'], [2, 'White chocolate Daim filling']],
+  'gotteri-biscoff-ostakaka':           [[0, 'Base'], [2, 'Biscoff filling'], [7, 'Topping']],
+  'gotteri-jardarberja-ostakaka':       [[0, 'Base'], [2, 'Strawberry filling'], [10, 'Topping']],
+  'gotteri-lemon-curd-ostakaka':        [[0, 'Base'], [2, 'Cheesecake filling'], [7, 'Topping']],
+  'gotteri-espresso-martini-ostakaka':  [[0, 'Base'], [2, 'Espresso cheesecake'], [9, 'Garnish']],
   'gotteri-pekanhnetu-ostakaka':        [[0, 'Caramel pecans'], [3, 'Base'], [5, 'Filling']],
   'gotteri-flamberud-ostakaka':         [[0, 'Base'], [2, 'Filling'], [10, 'Meringue']],
+  'gotteri-ostakaka-appelsinu':         [[0, 'Base'], [2, 'Orange & white chocolate filling']],
+  'gotteri-hatidleg-ostakaka':          [[0, 'Base'], [2, 'White chocolate Daim filling']],
   'gotteri-ostakokubomba':              [[0, 'Brownie base'], [6, 'Cheesecake'], [14, 'Meringue']],
+  'gotteri-rolo-ostakaka':              [[0, 'Base'], [2, 'Caramel filling']],
+  'gotteri-hatidarostakaka-glос':        [[0, 'Base'], [2, 'Cheesecake filling'], [6, 'Dumle caramel & garnish']],
+  'gotteri-ostakaka-karamella-kanilkex':[[0, 'Base'], [1, 'Cheesecake filling'], [5, 'Caramel topping']],
+  'gotteri-hatidleg-hindberja-ostakaka':[[0, 'Base'], [2, 'White chocolate & raspberry filling'], [11, 'Topping']],
   'gotteri-sernik':                     [[0, 'Pastry'], [9, 'Filling']],
-  'gotteri-mini-blaberja-skyrkokur':    [[0, 'Base'], [2, 'Skyr mousse'], [4, 'Blueberry sauce']],
+  'gotteri-baron-ostakaka':             [[0, 'Base'], [2, 'Cheesecake filling'], [6, 'Chocolate ganache']],
+  'gotteri-jardaberja-ostakaka-sukkuladiskal': [[0, 'Chocolate bowls'], [2, 'Base'], [4, 'Strawberry cheesecake filling'], [9, 'Garnish']],
+
+  // ── Gotteri Skyr Cakes ──
+  'gotteri-hindberja-skyrkaka-sukkuladiskal': [[0, 'Chocolate bowls'], [2, 'Base'], [4, 'Vanilla skyr mousse'], [7, 'Raspberry topping']],
+  'gotteri-jardaberja-skyrkaka-kokteill':     [[0, 'Base'], [2, 'Cream cheese filling'], [6, 'Strawberry glaze'], [10, 'Garnish']],
+  'gotteri-mini-blaberja-skyrkokur':          [[0, 'Base'], [2, 'Skyr mousse'], [4, 'Blueberry sauce']],
+  'gotteri-vanillu-skyrkaka-musli':           [[0, 'Base'], [1, 'Vanilla skyr mousse'], [3, 'Topping']],
+  'gotteri-skyrkaka-heidu':                   [[0, 'Base'], [2, 'Skyr mousse'], [4, 'Topping']],
+  'gotteri-sukkuladi-skyrkokur':              [[0, 'Chocolate skyr mousse'], [2, 'Whipped cream topping'], [3, 'Garnish']],
+  'gotteri-skyrkaka-hriskokuskal':            [[0, 'Rice Krispie shell'], [4, 'Strawberry skyr mousse'], [6, 'Garnish']],
+  'gotteri-thjodhatidardesert':               [[0, 'Base'], [1, 'Skyr mousse'], [3, 'Flag decoration']],
+  'gotteri-skyrkaka-mondlu-sitronum':         [[0, 'Base'], [2, 'Lemon skyr filling'], [9, 'Garnish']],
+  'gotteri-sumarleg-skyrkaka':                [[0, 'Base'], [2, 'Berry skyr filling'], [8, 'Garnish']],
+  'gotteri-berjaskyrkaka':                    [[0, 'Base'], [2, 'Skyr mousse'], [4, 'Topping']],
+  'gotteri-skyrkokur-noakroppi':              [[0, 'Base'], [3, 'Skyr mousse'], [5, 'Topping']],
+  'gotteri-vanillu-skyrkaka-lakkris':         [[0, 'Base'], [2, 'Vanilla skyr mousse']]
 };
 
 /* ─── Section plans for steps (Focus mode) ─── */
@@ -165,16 +195,46 @@ const stepSectionPlans = {
   'choc-orange-cheesecake': [[0, 'Base'],          [1, 'Filling'],         [4, 'Topping']],
   'date-cake-caramel':      [[0, 'Cake'],          [4, 'Caramel sauce']],
   'lemon-meringue-cheesecake': [[0, 'Crust'], [1, 'Filling'], [3, 'Lemon curd'], [4, 'Meringue']],
-  // ── Gotteri recipes ──
+
+  // ── Gotteri Cheesecakes ──
   'gotteri-blaberja-ostakaka':          [[0, 'Base'], [1, 'Filling'], [3, 'Jelly topping']],
   'gotteri-vanillu-ostakaka-berjasosu': [[0, 'Base'], [1, 'Filling'], [3, 'Berry sauce']],
   'gotteri-berjabomba':                 [[0, 'Base'], [1, 'Filling'], [3, 'Topping']],
+  'gotteri-oreo-ostakaka-brownies':     [[0, 'Brownie batter'], [1, 'Cheesecake swirl'], [2, 'Brownie batter'], [3, 'Assembly & bake']],
   'gotteri-gudddomleg-oreo-ostakaka':   [[0, 'Base'], [1, 'Filling'], [3, 'Topping']],
+  'gotteri-toblerone-ostakaka':         [[0, 'Base'], [1, 'Cheesecake filling'], [3, 'Raspberry swirl']],
+  'gotteri-daim-ostakaka':              [[0, 'Base'], [1, 'White chocolate Daim filling']],
+  'gotteri-biscoff-ostakaka':           [[0, 'Base'], [1, 'Biscoff filling'], [3, 'Topping']],
+  'gotteri-jardarberja-ostakaka':       [[0, 'Base'], [1, 'Strawberry filling'], [3, 'Topping']],
+  'gotteri-lemon-curd-ostakaka':        [[0, 'Base'], [1, 'Cheesecake filling'], [2, 'Assembly & topping']],
+  'gotteri-espresso-martini-ostakaka':  [[0, 'Base'], [1, 'Espresso cheesecake'], [2, 'Assembly & garnish']],
   'gotteri-pekanhnetu-ostakaka':        [[0, 'Caramel pecans'], [1, 'Base'], [2, 'Filling']],
   'gotteri-flamberud-ostakaka':         [[0, 'Base'], [1, 'Filling'], [2, 'Meringue']],
+  'gotteri-ostakaka-appelsinu':         [[0, 'Base'], [1, 'Orange & white chocolate filling']],
+  'gotteri-hatidleg-ostakaka':          [[0, 'Base'], [1, 'White chocolate Daim filling']],
   'gotteri-ostakokubomba':              [[0, 'Brownie base'], [1, 'Cheesecake'], [2, 'Meringue']],
+  'gotteri-rolo-ostakaka':              [[0, 'Base'], [1, 'Caramel filling']],
+  'gotteri-hatidarostakaka-glос':        [[0, 'Base'], [1, 'Cheesecake filling'], [2, 'Dumle caramel & garnish']],
+  'gotteri-ostakaka-karamella-kanilkex':[[0, 'Base'], [1, 'Cheesecake filling'], [2, 'Caramel topping']],
+  'gotteri-hatidleg-hindberja-ostakaka':[[0, 'Base'], [1, 'White chocolate & raspberry filling'], [2, 'Assembly & topping']],
   'gotteri-sernik':                     [[0, 'Pastry'], [1, 'Filling']],
-  'gotteri-mini-blaberja-skyrkokur':    [[0, 'Base'], [1, 'Blueberry sauce'], [2, 'Skyr mousse']],
+  'gotteri-baron-ostakaka':             [[0, 'Base'], [1, 'Cheesecake filling'], [2, 'Chocolate ganache']],
+  'gotteri-jardaberja-ostakaka-sukkuladiskal': [[0, 'Chocolate bowls'], [1, 'Strawberry cheesecake filling'], [2, 'Base'], [3, 'Garnish']],
+
+  // ── Gotteri Skyr Cakes ──
+  'gotteri-hindberja-skyrkaka-sukkuladiskal': [[0, 'Chocolate bowls'], [1, 'Vanilla skyr mousse'], [2, 'Base'], [3, 'Raspberry topping']],
+  'gotteri-jardaberja-skyrkaka-kokteill':     [[0, 'Strawberry glaze'], [1, 'Cream cheese filling'], [2, 'Assembly & garnish']],
+  'gotteri-mini-blaberja-skyrkokur':          [[0, 'Base'], [1, 'Blueberry sauce'], [2, 'Skyr mousse']],
+  'gotteri-vanillu-skyrkaka-musli':           [[0, 'Base'], [1, 'Vanilla skyr mousse'], [2, 'Assembly & topping']],
+  'gotteri-skyrkaka-heidu':                   [[0, 'Base'], [1, 'Skyr mousse'], [2, 'Topping']],
+  'gotteri-sukkuladi-skyrkokur':              [[0, 'Chocolate skyr mousse'], [1, 'Muesli layer'], [2, 'Whipped cream topping']],
+  'gotteri-skyrkaka-hriskokuskal':            [[0, 'Rice Krispie shell'], [1, 'Strawberry skyr mousse'], [2, 'Garnish']],
+  'gotteri-thjodhatidardesert':               [[0, 'Base'], [1, 'Skyr mousse'], [2, 'Flag decoration']],
+  'gotteri-skyrkaka-mondlu-sitronum':         [[0, 'Base'], [1, 'Lemon skyr filling'], [3, 'Garnish & chill']],
+  'gotteri-sumarleg-skyrkaka':                [[0, 'Base'], [1, 'Berry skyr filling'], [3, 'Garnish & chill']],
+  'gotteri-berjaskyrkaka':                    [[0, 'Base'], [1, 'Skyr mousse'], [2, 'Topping']],
+  'gotteri-skyrkokur-noakroppi':              [[0, 'Base'], [1, 'Skyr mousse'], [2, 'Topping']],
+  'gotteri-vanillu-skyrkaka-lakkris':         [[0, 'Base'], [1, 'Vanilla skyr mousse'], [2, 'Topping']]
 };
 
 function sectionFor(r, idx, name) {

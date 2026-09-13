@@ -1829,24 +1829,6 @@
         "egg"
       ],
       [
-        "Philadelphia cream cheese",
-        200,
-        "g",
-        "dairy"
-      ],
-      [
-        "Icing sugar",
-        90,
-        "g",
-        "sugar"
-      ],
-      [
-        "Vanilla extract",
-        10,
-        "ml",
-        "liquid"
-      ],
-      [
         "Plain flour",
         110,
         "g",
@@ -1875,6 +1857,24 @@
         12,
         "pc",
         "other"
+      ],
+      [
+        "Philadelphia cream cheese",
+        200,
+        "g",
+        "dairy"
+      ],
+      [
+        "Icing sugar",
+        90,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla extract",
+        10,
+        "ml",
+        "liquid"
       ],
       [
         "Oreo biscuits — topping",
@@ -3400,6 +3400,18 @@
         "other"
       ],
       [
+        "Lu Bastogne biscuits — crushed",
+        125,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        40,
+        "g",
+        "fat"
+      ],
+      [
         "Double cream",
         500,
         "ml",
@@ -3422,18 +3434,6 @@
         250,
         "g",
         "fruit"
-      ],
-      [
-        "Lu Bastogne biscuits — crushed",
-        125,
-        "g",
-        "other"
-      ],
-      [
-        "Butter — base",
-        40,
-        "g",
-        "fat"
       ],
       [
         "Fresh raspberries — garnish",
@@ -3470,6 +3470,18 @@
         "other"
       ],
       [
+        "Lu Digestive biscuits — crushed",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        40,
+        "g",
+        "fat"
+      ],
+      [
         "Philadelphia cream cheese",
         300,
         "g",
@@ -3498,18 +3510,6 @@
         400,
         "g",
         "fruit"
-      ],
-      [
-        "Lu Digestive biscuits — crushed",
-        200,
-        "g",
-        "other"
-      ],
-      [
-        "Butter — base",
-        40,
-        "g",
-        "fat"
       ],
       [
         "Fresh strawberries — garnish",
