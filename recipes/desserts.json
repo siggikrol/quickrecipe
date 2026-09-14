@@ -1,0 +1,115 @@
+[
+  {
+    "id": "pavlova-lemon-curd",
+    "category": "Dessert",
+    "title": "Pavlova with Lemon Curd",
+    "desc": "Crisp meringue shell, soft centre and sharp lemon curd.",
+    "yield": "1 × 22–24 cm",
+    "prep": "25 min",
+    "bake": "75–90 min",
+    "tempC": 120,
+    "ingredients": [
+      [
+        "Egg whites",
+        4,
+        "pc",
+        "egg"
+      ],
+      [
+        "Caster sugar",
+        250,
+        "g",
+        "sugar"
+      ],
+      [
+        "Cornstarch",
+        6,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice or white vinegar",
+        5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Vanilla extract",
+        5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Egg yolks — curd",
+        4,
+        "pc",
+        "egg"
+      ],
+      [
+        "Caster sugar — curd",
+        100,
+        "g",
+        "sugar"
+      ],
+      [
+        "Lemon zest",
+        2,
+        "pc",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        100,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Butter",
+        85,
+        "g",
+        "fat"
+      ]
+    ],
+    "steps": [
+      "Whip egg whites to soft peaks. Add sugar gradually until glossy and dissolved.",
+      "Fold in cornstarch, acid and vanilla. Shape on baking paper.",
+      "Heat oven to 150°C, put pavlova in, immediately reduce to 120°C and bake 75–90 min. Cool in switched-off oven.",
+      "For curd, whisk yolks, sugar, zest and juice over low heat until thick.",
+      "Remove from heat and whisk in butter. Chill, then spoon onto pavlova."
+    ]
+  },
+  {
+    "id": "strawberry-foam",
+    "category": "Dessert",
+    "title": "Espumilla de Frutilla",
+    "desc": "Light strawberry foam dessert.",
+    "yield": "4 servings",
+    "prep": "20 min",
+    "ingredients": [
+      [
+        "Strawberries, puréed",
+        400,
+        "g",
+        "fruit"
+      ],
+      [
+        "White sugar",
+        400,
+        "g",
+        "sugar"
+      ],
+      [
+        "Egg white",
+        1,
+        "pc",
+        "egg"
+      ]
+    ],
+    "steps": [
+      "Put egg white and about 2 tbsp sugar in a heatproof bowl over a bain-marie.",
+      "Whisk about 10 min, heating mixture to at least 72°C.",
+      "Add remaining sugar and strawberry purée.",
+      "Beat 10–15 min until thick, fluffy and pale pink."
+    ]
+  }
+]

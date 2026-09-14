@@ -1,6 +1,7 @@
 /* ─── State ─── */
 let recipes = [];
 let seedRecipes = [];
+const RECIPE_VERSION = '26';
 const LS = {
   recipes:   'quickrecipe.recipes.v1',
   favs:      'quickrecipe.favs.v1',
@@ -19,7 +20,7 @@ let recipeSection = 'All';
 let listScrollTop = 0;
 const recipeSections = [
   { id: 'baking', label: 'Bread & baking', categories: ['Bread', 'Loaves', 'Rolls', 'Flatbreads', 'Pastries'] },
-  { id: 'desserts', label: 'Cakes & desserts', categories: ['Cake', 'Cakes', 'Cheesecake', 'Cheesecakes', 'Skyr Cake', 'Cookies', 'Dessert', 'Desserts'] },
+  { id: 'desserts', label: 'Cakes & desserts', categories: ['Cake', 'Cakes', 'Cheesecake', 'Cheesecakes', 'Skyr Cake', 'Meringue', 'Brownies', 'Cookies', 'Dessert', 'Desserts'] },
   { id: 'meals', label: 'Meals', categories: ['Breakfast', 'Soups', 'Salads', 'Mains', 'Sides'] },
   { id: 'sauces', label: 'Dressings & sauces', categories: ['Dressings', 'Sauce', 'Sauces', 'Dips'] },
 ];
@@ -86,6 +87,25 @@ function saveAll() {
 }
 
 /* ─── Seed merge ─── */
+async function loadSeedRecipes() {
+  const read = async path => {
+    const response = await fetch(`${path}?v=${RECIPE_VERSION}`);
+    if (!response.ok) throw new Error(`Could not load ${path}: ${response.status}`);
+    return response.json();
+  };
+  const index = await read('./recipes/index.json');
+  if (!Array.isArray(index.files) || !index.files.length ||
+      index.files.some(file => typeof file !== 'string' || !/^[a-z0-9-]+\.json$/.test(file))) {
+    throw new Error('Invalid recipe index');
+  }
+  const groups = await Promise.all(index.files.map(file => read(`./recipes/${file}`)));
+  if (groups.some(group => !Array.isArray(group))) throw new Error('Invalid recipe file');
+  const loaded = groups.flat();
+  if (loaded.some(r => !r || typeof r.id !== 'string' || !r.id || !r.title || !Array.isArray(r.ingredients) || !Array.isArray(r.steps)) ||
+      new Set(loaded.map(r => r.id)).size !== loaded.length) throw new Error('Invalid or duplicate recipe');
+  return loaded;
+}
+
 function mergeSeedRecipes(existing) {
   const seedIds = new Set(seedRecipes.map(r => r.id));
   const cleanExisting = (existing || []).filter(r => seedIds.has(r.id) || !r.id.startsWith('gotteri-'));
@@ -126,6 +146,13 @@ function amountText(v, u) {
   return `${fmt(v)} ${u}`;
 }
 
+function ingredientAmountText(r, ing) {
+  if (ing[1] === null) return view === 'bakers' ? '—' : 'As needed';
+  if (view === 'bakers') return bakers(r, ing);
+  const amount = amountText(adjustedIngredientValue(r, ing), ing[2]);
+  return Number.isFinite(ing[4]) ? `${amount} – ${amountText(ing[4], ing[2])}` : amount;
+}
+
 function yieldText(value, multiplier = scale) {
   if (multiplier === 1) return value;
   // Keep pan dimensions intact; only batch quantities should change.
@@ -135,9 +162,9 @@ function yieldText(value, multiplier = scale) {
     dimensions.push(match);
     return '\uFFF0';
   });
-  const plurals = { loaf: 'loaves', tray: 'trays', cake: 'cakes', tin: 'tins', bun: 'buns', roll: 'rolls', baguette: 'baguettes', serving: 'servings', slice: 'slices', glass: 'glasses', bowl: 'bowls', dish: 'dishes' };
+  const plurals = { loaf: 'loaves', tray: 'trays', cake: 'cakes', tin: 'tins', bun: 'buns', roll: 'rolls', baguette: 'baguettes', serving: 'servings', slice: 'slices', glass: 'glasses', bowl: 'bowls', dish: 'dishes', nest: 'nests', batch: 'batches', wreath: 'wreaths', sandwich: 'sandwiches' };
   let changed = false;
-  const scaled = protectedValue.replace(/(\d+(?:\.\d+)?)(?:([–-])(\d+(?:\.\d+)?))?(\s+(?:(?:large|small|chocolate|serving)\s+)?(?:loaves|loaf|trays?|cakes?|tins?|buns?|rolls?|baguettes?|servings?|slices?|glasses|glass|bowls?|dishes|dish)\b)?/g,
+  const scaled = protectedValue.replace(/(\d+(?:\.\d+)?)(?:([–-])(\d+(?:\.\d+)?))?(\s+(?:(?:large|small|chocolate|serving)\s+)?(?:loaves|loaf|trays?|cakes?|tins?|buns?|rolls?|baguettes?|servings?|slices?|glasses|glass|bowls?|dishes|dish|nests?|batches|batch|wreaths?|sandwiches|sandwich)\b)?/g,
     (_, low, dash, high, label = '') => {
       changed = true;
       const quantity = Number(low) * multiplier;
@@ -284,7 +311,7 @@ const stepSectionPlans = {
 };
 
 function sectionFor(r, idx, name) {
-  const plan = sectionPlans[r.id];
+  const plan = r.ingredientSections || sectionPlans[r.id];
   if (!plan) return '';   /* no plan → no sections, no Focus mode for this recipe */
   let sec = '';
   for (const [start, label] of plan) { if (idx >= start) sec = label; else break; }
@@ -292,7 +319,7 @@ function sectionFor(r, idx, name) {
 }
 
 function stepSectionFor(r, stepIdx) {
-  const plan = stepSectionPlans[r.id];
+  const plan = r.stepSections || stepSectionPlans[r.id];
   if (!plan) return null;
   let sec = null;
   for (const [start, label] of plan) { if (stepIdx >= start) sec = label; else break; }
@@ -376,6 +403,14 @@ function renderChips() {
 }
 
 /* ─── List ─── */
+function recipeTimingHtml(r) {
+  const timings = [['Prep', r.prep], ['Bake', r.bake], ['Rest', r.ferment]]
+    .filter(([, value]) => value && String(value).trim());
+  return timings.length
+    ? timings.map(([label, value]) => `<span class="stat timing-stat">${label} ${esc(value)}</span>`).join('')
+    : '<span class="stat timing-stat">Time not specified</span>';
+}
+
 function matches(r, q) {
   q = q.toLowerCase();
   return !q || r.title.toLowerCase().includes(q) || (r.desc || '').toLowerCase().includes(q)
@@ -413,7 +448,7 @@ function renderList() {
       <div class="desc">${esc(r.desc || '')}</div>
       <div class="stats">
         ${r.hydration ? `<span class="stat">${fmt(r.hydration)}% hydration</span>` : ''}
-        ${r.bake      ? `<span class="stat">${esc(r.bake)}</span>` : ''}
+        ${recipeTimingHtml(r)}
       </div>
     </button>
   `).join('') || `<div class="empty"><div class="empty-icon">🔍</div>${q || onlyFavs || category !== 'All' ? 'No recipes found. Try another search or filter.' : 'No recipes here yet. Add a recipe to get started.'}</div>`;
@@ -436,12 +471,14 @@ function renderList() {
 
 /* ─── Compact list/detail navigation ─── */
 const compactLayout = window.matchMedia('(max-width: 860px)');
+let recipeHistory = [];
 function syncNavigation() {
   const open = document.querySelector('.app').classList.contains('reading-recipe');
   document.getElementById('list').inert = compactLayout.matches && open;
   document.getElementById('detail').inert = compactLayout.matches && !open;
 }
 function openDetailPanel() {
+  recipeHistory = [];
   listScrollTop = document.getElementById('list').scrollTop;
   document.querySelector('.app').classList.add('reading-recipe');
   syncNavigation();
@@ -449,6 +486,7 @@ function openDetailPanel() {
   if (compactLayout.matches) document.getElementById('backBtn').focus();
 }
 function closeDetailPanel() {
+  recipeHistory = [];
   document.querySelector('.app').classList.remove('reading-recipe');
   syncNavigation();
   document.getElementById('list').scrollTop = listScrollTop;
@@ -463,6 +501,7 @@ function openNextRecipe() {
     toast('You’re at the last recipe');
     return;
   }
+  recipeHistory.push({ selectedId, scale, view, focusedSection, scrollTop: document.getElementById('detail').scrollTop });
   selectedId = shown[index + 1].id;
   scale = 1;
   view = 'amounts';
@@ -470,6 +509,19 @@ function openNextRecipe() {
   render();
   // Keep the original list position for Back; only reset the recipe scroll.
   document.getElementById('detail').scrollTop = 0;
+}
+
+function openPreviousRecipe() {
+  const available = new Set(filteredRecipes().map(r => r.id));
+  let previous;
+  while (recipeHistory.length) {
+    const entry = recipeHistory.pop();
+    if (available.has(entry.selectedId)) { previous = entry; break; }
+  }
+  if (!previous) { closeDetailPanel(); return; }
+  ({ selectedId, scale, view, focusedSection } = previous);
+  render();
+  document.getElementById('detail').scrollTop = previous.scrollTop;
 }
 
 function initRecipeGestures() {
@@ -508,7 +560,7 @@ function initRecipeGestures() {
     if (!touch) return;
     const dx = touch.clientX - gesture.x;
     const dy = Math.abs(touch.clientY - gesture.y);
-    if (dx >= 80 && dx > dy * 2) closeDetailPanel();
+    if (dx >= 80 && dx > dy * 2) openPreviousRecipe();
     else if (dx <= -80 && -dx > dy * 2) openNextRecipe();
   }, { passive: true });
   detail.addEventListener('touchcancel', () => { swipe = null; }, { passive: true });
@@ -516,7 +568,7 @@ function initRecipeGestures() {
 
 /* ─── Render ingredients with Focus support ─── */
 function renderIngredients(r) {
-  const hasSections = Boolean(sectionPlans[r.id]);
+  const hasSections = Boolean(r.ingredientSections || sectionPlans[r.id]);
   let last = '';
   return r.ingredients.map((i, idx) => {
     const sec  = sectionFor(r, idx, i[0]);
@@ -536,7 +588,7 @@ function renderIngredients(r) {
     last = sec || last;
     html += `<div class="ingredient${ingDimmed ? ' dimmed' : ''}" data-section="${esc(sec)}">
       <span>${esc(cleanIngredientName(i[0]))}</span>
-      <span class="amount">${view === 'bakers' ? bakers(r, i) : amountText(adjustedIngredientValue(r, i), i[2])}</span>
+      <span class="amount">${esc(ingredientAmountText(r, i))}</span>
     </div>`;
     return html;
   }).join('');
@@ -560,7 +612,7 @@ function renderDetail() {
   const temp      = unit === 'metric' ? `${r.tempC || 0}°C` : `${cToF(r.tempC || 0)}°F`;
   const hyd       = currentHydration(r);
   const hasFlour  = r.ingredients.some(i => i[3] === 'flour');
-  const hasSecs   = Boolean(sectionPlans[r.id]);
+  const hasSecs   = Boolean(r.ingredientSections || sectionPlans[r.id]);
 
   const hydrationControl = r.adjustableHydration ? `
     <div class="hydration-box">
@@ -620,9 +672,7 @@ function renderDetail() {
     </div>
 
     <div class="meta">
-      ${r.prep   ? `<span class="stat">Prep ${esc(r.prep)}</span>`   : ''}
-      ${r.ferment? `<span class="stat">Rest ${esc(r.ferment)}</span>`: ''}
-      ${r.bake   ? `<span class="stat">Bake ${esc(r.bake)}</span>`   : ''}
+      ${recipeTimingHtml(r)}
       ${r.tempC  ? `<span class="stat">${temp}</span>`               : ''}
       ${r.yield  ? `<span class="stat" id="recipeYield">${esc(yieldText(r.yield))}</span>` : ''}
     </div>`;
@@ -812,19 +862,22 @@ async function init() {
   document.getElementById('detail').innerHTML = '<div class="loading"><div class="spinner"></div></div>';
 
   /* Fetch seed recipes */
+  let seedLoadFailed = false;
   try {
-    const res = await fetch('./recipes.json?v=19');
-    seedRecipes = await res.json();
+    seedRecipes = await loadSeedRecipes();
   } catch (e) {
-    console.warn('Could not load recipes.json', e);
+    console.warn('Could not load the recipe collection', e);
     seedRecipes = [];
+    seedLoadFailed = true;
   }
 
   /* Restore state */
   favs           = new Set(load(LS.favs, []));
   unit           = localStorage.getItem(LS.unit) || 'metric';
   hydrationState = load(LS.hydration, {});
-  recipes        = mergeSeedRecipes(load(LS.recipes, seedRecipes));
+  const storedRecipes = load(LS.recipes, seedRecipes);
+  // A missing category file must never remove recipes from the saved collection.
+  recipes        = seedLoadFailed ? storedRecipes : mergeSeedRecipes(storedRecipes);
   selectedId     = recipes.find(r => r.id === 'ciabatta')?.id || recipes[0]?.id || null;
   restoreUiState();
 
@@ -851,6 +904,10 @@ async function init() {
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(() => {});
 
   render();
+  if (seedLoadFailed) {
+    if (recipes.length) toast('Could not refresh recipes. Showing your saved collection.');
+    else document.getElementById('list').innerHTML = '<div class="empty">Recipes could not be loaded. Check your connection and reload.</div>';
+  }
 }
 
 init();

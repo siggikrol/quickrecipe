@@ -1,0 +1,192 @@
+{
+  "sourceIndex": "https://www.gotteri.is/uppskriftir/kokur/",
+  "retrievedAt": "2026-09-14",
+  "category": "Meringue",
+  "section": "desserts",
+  "linkedRecipes": 33,
+  "importedRecipes": 32,
+  "unavailable": [
+    {
+      "url": "https://www.gotteri.is/?p=10666",
+      "status": 404,
+      "reason": "Private recipe link is unavailable."
+    }
+  ],
+  "editorialNotes": [
+    "English titles and concise methods are independently rewritten; ingredient quantities, baking times and temperatures are based on the linked sources.",
+    "Local brand names are replaced with English product descriptions; substitutions may affect flavour and texture.",
+    "Unspecified amounts remain null and display as needed. Unspecified package sizes remain explicitly labelled. Numeric ranges use ingredient tuple position five as an upper quantity.",
+    "Decilitres are converted to millilitres without estimating ingredient density. Source cup measures remain cups.",
+    "Optional floral decorations are restricted to edible flowers. Uncooked yolk fillings specify pasteurized yolks.",
+    "The two source bowl diameters written as 23–35 cm are retained without silently correcting them.",
+    "No source photographs or article introductions are copied."
+  ],
+  "recipes": [
+    {
+      "id": "meringue-berry-blossom-celebration-meringue",
+      "title": "Berry Blossom Celebration Meringue",
+      "sourceUrl": "https://www.gotteri.is/2018/07/15/blomamarengs/"
+    },
+    {
+      "id": "meringue-salted-almond-chocolate-cloud-tower",
+      "title": "Salted Almond Chocolate Cloud Tower",
+      "sourceUrl": "https://www.gotteri.is/2018/03/24/paskatertan-2018/"
+    },
+    {
+      "id": "meringue-chocolate-fleck-brown-sugar-stack",
+      "title": "Chocolate Fleck Brown Sugar Stack",
+      "sourceUrl": "https://www.gotteri.is/2015/06/16/pudursykurmarengsinn-hans-pabba/"
+    },
+    {
+      "id": "meringue-chocolate-mousse-meringue-layer-cake",
+      "title": "Chocolate Mousse Meringue Layer Cake",
+      "sourceUrl": "https://www.gotteri.is/2016/05/14/saelgaetisterta/"
+    },
+    {
+      "id": "meringue-hazelnut-crunch-cream-crown",
+      "title": "Hazelnut Crunch Cream Crown",
+      "sourceUrl": "https://www.gotteri.is/2018/11/06/marengsdraumur/"
+    },
+    {
+      "id": "meringue-buttercrunch-brownie-meringue-torte",
+      "title": "Buttercrunch Brownie Meringue Torte",
+      "sourceUrl": "https://www.gotteri.is/2014/08/15/daim-bomba/"
+    },
+    {
+      "id": "meringue-four-layer-midnight-meringue",
+      "title": "Four-Layer Midnight Meringue",
+      "sourceUrl": "https://www.gotteri.is/2019/09/13/marengsbomba-i-morgum-logum/"
+    },
+    {
+      "id": "meringue-strawberry-caramel-meringue-garland",
+      "title": "Strawberry Caramel Meringue Garland",
+      "sourceUrl": "https://www.gotteri.is/2019/12/29/marengshringur-med-jardaberjarjoma-og-marssosu/"
+    },
+    {
+      "id": "meringue-peanut-caramel-cloud-cups",
+      "title": "Peanut Caramel Cloud Cups",
+      "sourceUrl": "https://www.gotteri.is/2018/03/31/pudusykurs-pavloa/"
+    },
+    {
+      "id": "meringue-blueberry-toffee-snow-nests",
+      "title": "Blueberry Toffee Snow Nests",
+      "sourceUrl": "https://www.gotteri.is/2018/12/15/jolagjofin-i-ar-2/"
+    },
+    {
+      "id": "meringue-tiny-caramel-nut-nests",
+      "title": "Tiny Caramel Nut Nests",
+      "sourceUrl": "https://www.gotteri.is/2018/06/19/litlar-karamellu-pavlour/"
+    },
+    {
+      "id": "meringue-cherry-coconut-cloud-bites",
+      "title": "Cherry Coconut Cloud Bites",
+      "sourceUrl": "https://www.gotteri.is/2018/08/12/litlar-kokos-pavlour/"
+    },
+    {
+      "id": "meringue-raspberry-liquorice-cloud-cups",
+      "title": "Raspberry Liquorice Cloud Cups",
+      "sourceUrl": "https://www.gotteri.is/2018/01/14/mini-pavlour-med-lakkriskeim/"
+    },
+    {
+      "id": "meringue-brown-sugar-rosette-sandwiches",
+      "title": "Brown Sugar Rosette Sandwiches",
+      "sourceUrl": "https://www.gotteri.is/2019/01/27/pudursykursrosir/"
+    },
+    {
+      "id": "meringue-almond-praline-meringue-torte",
+      "title": "Almond Praline Meringue Torte",
+      "sourceUrl": "https://www.gotteri.is/2020/02/14/marsipan-og-marengs/"
+    },
+    {
+      "id": "meringue-peppermint-berry-caramel-stack",
+      "title": "Peppermint Berry Caramel Stack",
+      "sourceUrl": "https://www.gotteri.is/2020/04/08/piparmyntumarengs-med-karamellu-og-berjum/"
+    },
+    {
+      "id": "meringue-berry-marshmallow-meringue-party-cake",
+      "title": "Berry Marshmallow Meringue Party Cake",
+      "sourceUrl": "https://www.gotteri.is/2021/01/16/einfold-marengsbomba/"
+    },
+    {
+      "id": "meringue-caramel-ribbon-meringue-cups",
+      "title": "Caramel Ribbon Meringue Cups",
+      "sourceUrl": "https://www.gotteri.is/2021/03/11/karamelludraumur/"
+    },
+    {
+      "id": "meringue-mango-sunshine-meringue-bowl",
+      "title": "Mango Sunshine Meringue Bowl",
+      "sourceUrl": "https://www.gotteri.is/2021/04/21/passion-fruit-pavlova/"
+    },
+    {
+      "id": "meringue-strawberry-fudge-meringue-bowl",
+      "title": "Strawberry Fudge Meringue Bowl",
+      "sourceUrl": "https://www.gotteri.is/2021/05/10/pavlova-med-filakaramellusosu/"
+    },
+    {
+      "id": "meringue-coffeehouse-cocoa-meringue-bowl",
+      "title": "Coffeehouse Cocoa Meringue Bowl",
+      "sourceUrl": "https://www.gotteri.is/2021/09/10/kaffimarengs/"
+    },
+    {
+      "id": "meringue-strawberry-nougat-meringue-trio",
+      "title": "Strawberry Nougat Meringue Trio",
+      "sourceUrl": "https://www.gotteri.is/2021/10/28/marengsterta/"
+    },
+    {
+      "id": "meringue-mocha-hazelnut-meringue-cups",
+      "title": "Mocha Hazelnut Meringue Cups",
+      "sourceUrl": "https://www.gotteri.is/2021/12/16/mokkamarengs/"
+    },
+    {
+      "id": "meringue-raspberry-liquorice-meringue-wreath",
+      "title": "Raspberry Liquorice Meringue Wreath",
+      "sourceUrl": "https://www.gotteri.is/2021/12/20/marengskrans/"
+    },
+    {
+      "id": "meringue-alpine-chocolate-meringue-torte",
+      "title": "Alpine Chocolate Meringue Torte",
+      "sourceUrl": "https://www.gotteri.is/2021/12/28/hnallthora-aramotanna/"
+    },
+    {
+      "id": "meringue-blueberry-toffee-cloud-bowls",
+      "title": "Blueberry Toffee Cloud Bowls",
+      "sourceUrl": "https://www.gotteri.is/2022/05/10/blaberja-pavlovur-med-filakaramellukremi/"
+    },
+    {
+      "id": "meringue-salted-peanut-fudge-meringue-stack",
+      "title": "Salted Peanut Fudge Meringue Stack",
+      "sourceUrl": "https://www.gotteri.is/2022/09/22/snickersterta/"
+    },
+    {
+      "id": "meringue-berry-marshmallow-snow-sandwiches",
+      "title": "Berry Marshmallow Snow Sandwiches",
+      "sourceUrl": "https://www.gotteri.is/2022/11/01/hatidarmarengs/"
+    },
+    {
+      "id": "meringue-hazelnut-swirl-meringue-gateau",
+      "title": "Hazelnut Swirl Meringue Gateau",
+      "sourceUrl": "https://www.gotteri.is/2022/12/22/heslihnetumarengs/"
+    },
+    {
+      "id": "meringue-summer-orchard-mascarpone-nests",
+      "title": "Summer Orchard Mascarpone Nests",
+      "sourceUrl": "https://www.gotteri.is/2023/08/18/pavlovur-med-mascarpone-rjomafyllingu/"
+    },
+    {
+      "id": "meringue-chocolate-crunch-meringue-crown",
+      "title": "Chocolate Crunch Meringue Crown",
+      "sourceUrl": "https://www.gotteri.is/2025/02/19/noakropps-bomba/"
+    },
+    {
+      "id": "meringue-salted-caramel-berry-crunch-stack",
+      "title": "Salted Caramel Berry Crunch Stack",
+      "sourceUrl": "https://www.gotteri.is/2025/05/08/rice-krispies-marengsterta-med-noakroppi/"
+    }
+  ],
+  "ingredientReferences": [
+    {
+      "description": "Sugar-coated chocolate balls with a liquorice centre",
+      "url": "https://www.sambo.eu.com/product-page/snjoboltar-snow-balls-pearls"
+    }
+  ]
+}

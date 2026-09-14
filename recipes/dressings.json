@@ -1,0 +1,77 @@
+[
+  {
+    "id": "caesar-dressing",
+    "category": "Dressings",
+    "title": "Caesar Salad Dressing",
+    "desc": "Classic creamy Caesar dressing with anchovy and Parmesan.",
+    "yield": "About 150 ml",
+    "prep": "10 min",
+    "ingredients": [
+      [
+        "Egg yolk or mayonnaise",
+        1,
+        "pc",
+        "egg"
+      ],
+      [
+        "Anchovy fillets",
+        2,
+        "pc",
+        "other"
+      ],
+      [
+        "Garlic clove",
+        1,
+        "pc",
+        "other"
+      ],
+      [
+        "Dijon mustard",
+        5,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        15,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Worcestershire sauce",
+        2.5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Olive oil",
+        60,
+        "ml",
+        "fat"
+      ],
+      [
+        "Parmesan",
+        30,
+        "g",
+        "dairy"
+      ],
+      [
+        "Black pepper",
+        1,
+        "g",
+        "spice"
+      ],
+      [
+        "Salt",
+        1,
+        "g",
+        "salt"
+      ]
+    ],
+    "steps": [
+      "Whisk yolk, anchovy, garlic, Dijon, lemon juice and Worcestershire together.",
+      "Slowly drizzle in olive oil while whisking until emulsified.",
+      "Stir in Parmesan. Season with pepper and salt if needed."
+    ]
+  }
+]

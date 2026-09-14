@@ -1,0 +1,762 @@
+[
+  {
+    "id": "white",
+    "category": "Bread",
+    "title": "Classic White Bread",
+    "hydration": 65,
+    "hydrationMin": 60,
+    "hydrationMax": 72,
+    "adjustableHydration": true,
+    "desc": "Simple everyday loaf with a soft crumb and crisp top.",
+    "yield": "1 loaf",
+    "prep": "15 min",
+    "ferment": "2½–3 hr",
+    "bake": "30–35 min",
+    "tempC": 220,
+    "ingredients": [
+      [
+        "Bread flour",
+        500,
+        "g",
+        "flour"
+      ],
+      [
+        "Water",
+        325,
+        "ml",
+        "water"
+      ],
+      [
+        "Instant yeast",
+        6,
+        "g",
+        "yeast"
+      ],
+      [
+        "Salt",
+        10,
+        "g",
+        "salt"
+      ],
+      [
+        "Butter",
+        20,
+        "g",
+        "fat"
+      ]
+    ],
+    "steps": [
+      "Mix flour, water and yeast. Rest 15 min.",
+      "Add salt and butter. Knead until smooth and elastic.",
+      "Bulk ferment 60–90 min, until doubled.",
+      "Shape, place in loaf tin, proof 45–60 min.",
+      "Bake until deep golden and fully set."
+    ]
+  },
+  {
+    "id": "ciabatta",
+    "category": "Bread",
+    "title": "Ciabatta",
+    "hydration": 72,
+    "hydrationMin": 68,
+    "hydrationMax": 80,
+    "adjustableHydration": true,
+    "desc": "Overnight ciabatta with open crumb and crisp crust.",
+    "yield": "2 large or 4 small",
+    "prep": "20 min",
+    "ferment": "14–20 hr",
+    "bake": "22–28 min",
+    "tempC": 250,
+    "ingredients": [
+      [
+        "Bread flour",
+        500,
+        "g",
+        "flour"
+      ],
+      [
+        "Water",
+        360,
+        "ml",
+        "water"
+      ],
+      [
+        "Instant yeast",
+        2,
+        "g",
+        "yeast"
+      ],
+      [
+        "Salt",
+        10,
+        "g",
+        "salt"
+      ],
+      [
+        "Olive oil",
+        10,
+        "ml",
+        "fat"
+      ],
+      [
+        "Flour or semolina for dusting",
+        20,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mix flour, yeast and most of the water. Rest 20–30 min.",
+      "Mix in salt with remaining water; add oil if using.",
+      "Do 3–4 stretch-and-folds, 30 min apart.",
+      "Cover and refrigerate 12–18 hr.",
+      "Warm 60–90 min, tip onto a floured surface and divide gently.",
+      "Proof 30–45 min. Bake 10 min with steam at 250°C, then 12–18 min at 220°C."
+    ]
+  },
+  {
+    "id": "focaccia",
+    "category": "Bread",
+    "title": "Focaccia",
+    "hydration": 75,
+    "hydrationMin": 68,
+    "hydrationMax": 85,
+    "adjustableHydration": true,
+    "desc": "Airy interior, olive-oil crust, easy tray bake.",
+    "yield": "1 tray",
+    "prep": "15 min",
+    "ferment": "3–4 hr",
+    "bake": "22–28 min",
+    "tempC": 230,
+    "ingredients": [
+      [
+        "Bread flour",
+        500,
+        "g",
+        "flour"
+      ],
+      [
+        "Water",
+        375,
+        "ml",
+        "water"
+      ],
+      [
+        "Instant yeast",
+        4,
+        "g",
+        "yeast"
+      ],
+      [
+        "Salt",
+        10,
+        "g",
+        "salt"
+      ],
+      [
+        "Olive oil",
+        35,
+        "ml",
+        "fat"
+      ]
+    ],
+    "steps": [
+      "Mix flour, water and yeast. Rest 20 min.",
+      "Add salt and half the oil. Fold until cohesive.",
+      "Bulk ferment 2 hr with 2–3 folds.",
+      "Transfer to oiled tray. Proof 60–90 min.",
+      "Dimple, add remaining oil and salt. Bake until deeply golden."
+    ]
+  },
+  {
+    "id": "baguette",
+    "category": "Bread",
+    "title": "French Baguette",
+    "hydration": 70,
+    "hydrationMin": 65,
+    "hydrationMax": 78,
+    "adjustableHydration": true,
+    "desc": "Lean dough, crisp shell, creamy open crumb.",
+    "yield": "3 baguettes",
+    "prep": "20 min",
+    "ferment": "4–12 hr",
+    "bake": "20–24 min",
+    "tempC": 250,
+    "ingredients": [
+      [
+        "Bread flour",
+        500,
+        "g",
+        "flour"
+      ],
+      [
+        "Water",
+        350,
+        "ml",
+        "water"
+      ],
+      [
+        "Instant yeast",
+        2,
+        "g",
+        "yeast"
+      ],
+      [
+        "Salt",
+        10,
+        "g",
+        "salt"
+      ]
+    ],
+    "steps": [
+      "Mix flour, water and yeast. Rest 20 min.",
+      "Add salt and knead briefly.",
+      "Bulk ferment 2–3 hr, or refrigerate overnight after 60 min.",
+      "Divide, pre-shape, rest 20 min, then shape baguettes.",
+      "Proof 40–50 min, score, and bake with steam."
+    ]
+  },
+  {
+    "id": "sandwich",
+    "category": "Bread",
+    "title": "Soft Sandwich Bread",
+    "hydration": 63,
+    "hydrationMin": 58,
+    "hydrationMax": 68,
+    "adjustableHydration": true,
+    "desc": "Tender enriched loaf for toast and sandwiches.",
+    "yield": "1 large loaf",
+    "prep": "20 min",
+    "ferment": "2½–3 hr",
+    "bake": "30–35 min",
+    "tempC": 200,
+    "ingredients": [
+      [
+        "Bread flour",
+        500,
+        "g",
+        "flour"
+      ],
+      [
+        "Milk",
+        315,
+        "ml",
+        "water"
+      ],
+      [
+        "Instant yeast",
+        6,
+        "g",
+        "yeast"
+      ],
+      [
+        "Salt",
+        9,
+        "g",
+        "salt"
+      ],
+      [
+        "Sugar",
+        30,
+        "g",
+        "sugar"
+      ],
+      [
+        "Butter",
+        40,
+        "g",
+        "fat"
+      ]
+    ],
+    "steps": [
+      "Mix flour, milk and yeast. Rest 10 min.",
+      "Add salt, sugar and butter. Knead until smooth.",
+      "Bulk ferment 60–90 min.",
+      "Shape tightly and proof in loaf tin 45–60 min.",
+      "Bake until golden; cool before slicing."
+    ]
+  },
+  {
+    "id": "overnight",
+    "category": "Bread",
+    "title": "Rustic Overnight Bread",
+    "hydration": 72,
+    "hydrationMin": 68,
+    "hydrationMax": 80,
+    "adjustableHydration": true,
+    "desc": "Mix at night, bake the next day. Crisp crust and open crumb.",
+    "yield": "1 large loaf",
+    "prep": "10 min",
+    "ferment": "12–18 hr",
+    "bake": "35–40 min",
+    "tempC": 240,
+    "ingredients": [
+      [
+        "Bread flour",
+        500,
+        "g",
+        "flour"
+      ],
+      [
+        "Water",
+        360,
+        "ml",
+        "water"
+      ],
+      [
+        "Instant yeast",
+        1,
+        "g",
+        "yeast"
+      ],
+      [
+        "Salt",
+        10,
+        "g",
+        "salt"
+      ]
+    ],
+    "steps": [
+      "Mix everything until no dry flour remains.",
+      "Cover and ferment 12–18 hr at cool room temperature.",
+      "Shape gently and rest 45–60 min.",
+      "Score and bake with steam or in a preheated Dutch oven."
+    ]
+  },
+  {
+    "id": "burger-buns",
+    "category": "Bread",
+    "title": "Soft Burger Buns",
+    "hydration": 62,
+    "hydrationMin": 58,
+    "hydrationMax": 66,
+    "adjustableHydration": true,
+    "desc": "Soft, rich buns that stay light but hold a burger well.",
+    "yield": "8 buns",
+    "prep": "25 min",
+    "ferment": "2½ hr",
+    "bake": "15–18 min",
+    "tempC": 200,
+    "ingredients": [
+      [
+        "Bread flour",
+        500,
+        "g",
+        "flour"
+      ],
+      [
+        "Milk",
+        310,
+        "ml",
+        "water"
+      ],
+      [
+        "Instant yeast",
+        7,
+        "g",
+        "yeast"
+      ],
+      [
+        "Salt",
+        9,
+        "g",
+        "salt"
+      ],
+      [
+        "Sugar",
+        35,
+        "g",
+        "sugar"
+      ],
+      [
+        "Butter",
+        45,
+        "g",
+        "fat"
+      ],
+      [
+        "Egg",
+        1,
+        "pc",
+        "egg"
+      ]
+    ],
+    "steps": [
+      "Mix flour, milk and yeast. Rest 10 min.",
+      "Add salt, sugar, egg and butter. Knead smooth.",
+      "Bulk ferment 60–75 min.",
+      "Divide into 8, shape tight balls and proof 45–60 min.",
+      "Brush with egg or milk and bake until golden."
+    ]
+  },
+  {
+    "id": "dinner-rolls",
+    "category": "Bread",
+    "title": "Dinner Rolls",
+    "hydration": 64,
+    "hydrationMin": 60,
+    "hydrationMax": 68,
+    "adjustableHydration": true,
+    "desc": "Soft pull-apart rolls for dinner or sandwiches.",
+    "yield": "12 rolls",
+    "prep": "20 min",
+    "ferment": "2½ hr",
+    "bake": "18–22 min",
+    "tempC": 195,
+    "ingredients": [
+      [
+        "Bread flour",
+        500,
+        "g",
+        "flour"
+      ],
+      [
+        "Milk",
+        320,
+        "ml",
+        "water"
+      ],
+      [
+        "Instant yeast",
+        6,
+        "g",
+        "yeast"
+      ],
+      [
+        "Salt",
+        9,
+        "g",
+        "salt"
+      ],
+      [
+        "Sugar",
+        25,
+        "g",
+        "sugar"
+      ],
+      [
+        "Butter",
+        40,
+        "g",
+        "fat"
+      ]
+    ],
+    "steps": [
+      "Mix flour, milk and yeast. Rest 10 min.",
+      "Add salt, sugar and butter. Knead until elastic.",
+      "Bulk ferment 60–75 min.",
+      "Divide into 12, shape and place close together in a tray.",
+      "Proof 45–60 min and bake until golden."
+    ]
+  },
+  {
+    "id": "simple-sourdough",
+    "category": "Bread",
+    "title": "Simple Sourdough",
+    "hydration": 72,
+    "hydrationMin": 68,
+    "hydrationMax": 82,
+    "adjustableHydration": true,
+    "desc": "Straightforward sourdough with a flexible hydration range.",
+    "yield": "1 loaf",
+    "prep": "25 min",
+    "ferment": "8–16 hr",
+    "bake": "40–45 min",
+    "tempC": 240,
+    "ingredients": [
+      [
+        "Bread flour",
+        450,
+        "g",
+        "flour"
+      ],
+      [
+        "Whole wheat flour",
+        50,
+        "g",
+        "flour"
+      ],
+      [
+        "Water",
+        360,
+        "ml",
+        "water"
+      ],
+      [
+        "Active starter",
+        100,
+        "g",
+        "starter"
+      ],
+      [
+        "Salt",
+        10,
+        "g",
+        "salt"
+      ]
+    ],
+    "steps": [
+      "Mix flours and most of the water. Rest 30 min.",
+      "Add starter and salt; mix thoroughly.",
+      "Bulk ferment 4–6 hr with folds during the first 2 hr.",
+      "Shape and cold proof 8–12 hr.",
+      "Score and bake in a hot Dutch oven or with steam."
+    ]
+  },
+  {
+    "id": "cinnabon-rolls",
+    "category": "Bread",
+    "title": "Cinnabon-Style Cinnamon Rolls",
+    "desc": "Soft cinnamon rolls with cream-cheese frosting.",
+    "yield": "20–24 rolls",
+    "prep": "35 min",
+    "ferment": "2–2½ hr",
+    "bake": "22–28 min",
+    "tempC": 180,
+    "ingredients": [
+      [
+        "Bread flour",
+        1000,
+        "g",
+        "flour"
+      ],
+      [
+        "Whole milk",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Instant dry yeast",
+        14,
+        "g",
+        "yeast"
+      ],
+      [
+        "Sugar",
+        140,
+        "g",
+        "sugar"
+      ],
+      [
+        "Eggs",
+        2,
+        "pc",
+        "egg"
+      ],
+      [
+        "Egg yolks",
+        2,
+        "pc",
+        "egg"
+      ],
+      [
+        "Butter — dough",
+        150,
+        "g",
+        "fat"
+      ],
+      [
+        "Salt",
+        16,
+        "g",
+        "salt"
+      ],
+      [
+        "Butter — filling",
+        200,
+        "g",
+        "fat"
+      ],
+      [
+        "Dark brown sugar",
+        320,
+        "g",
+        "sugar"
+      ],
+      [
+        "Ground cinnamon",
+        30,
+        "g",
+        "spice"
+      ],
+      [
+        "Cream cheese",
+        240,
+        "g",
+        "dairy"
+      ],
+      [
+        "Butter — frosting",
+        100,
+        "g",
+        "fat"
+      ],
+      [
+        "Icing sugar",
+        200,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla extract",
+        10,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Milk — frosting",
+        45,
+        "ml",
+        "liquid"
+      ]
+    ],
+    "steps": [
+      "Mix flour, yeast, sugar, milk, eggs and yolks. Knead 5 min.",
+      "Work in butter and salt; knead 8–10 min until elastic. Rise 1–1½ hr.",
+      "Divide dough in 2 and roll each to about 40 × 30 cm.",
+      "Spread butter; add brown sugar, cinnamon and salt. Roll up and cut 10–12 pieces per log.",
+      "Proof 40–60 min. Bake at 180°C conventional / 170°C fan for 22–28 min.",
+      "Beat frosting ingredients smooth and spread over warm rolls."
+    ]
+  },
+  {
+    "id": "sourdough-spelt-crumb-brioche",
+    "category": "Bread",
+    "title": "Sourdough Spelt Brioche with Crumble Topping",
+    "desc": "Rich, pillowy spelt sourdough brioche cold-fermented overnight and baked under a golden buttery crumble.",
+    "yield": "1 loaf / tin",
+    "prep": "30 min",
+    "ferment": "14–16 hr",
+    "bake": "40 min",
+    "tempC": 200,
+    "ingredients": [
+      [
+        "Rye sourdough starter",
+        130,
+        "g",
+        "starter"
+      ],
+      [
+        "Spelt flour (type 650)",
+        500,
+        "g",
+        "flour"
+      ],
+      [
+        "Plain natural yogurt",
+        150,
+        "g",
+        "dairy"
+      ],
+      [
+        "Soft butter — dough",
+        180,
+        "g",
+        "fat"
+      ],
+      [
+        "Sugar — dough",
+        100,
+        "g",
+        "sugar"
+      ],
+      [
+        "Eggs",
+        2,
+        "pc",
+        "egg"
+      ],
+      [
+        "Vanilla extract",
+        30,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Salt",
+        3,
+        "g",
+        "salt"
+      ],
+      [
+        "Plain flour — crumble",
+        100,
+        "g",
+        "flour"
+      ],
+      [
+        "Butter — crumble",
+        50,
+        "g",
+        "fat"
+      ],
+      [
+        "Sugar — crumble",
+        50,
+        "g",
+        "sugar"
+      ]
+    ],
+    "steps": [
+      "Mix all dough ingredients together and knead until smooth, uniform, soft, and elastic (this will take a little time). Do not add extra flour while kneading; if sticky, lightly oil your hands with rapeseed or canola oil.",
+      "Cover the bowl with plastic wrap and let the dough rest for 1–2 hours at room temperature.",
+      "Cover tightly and place in a cool place or refrigerator for long fermentation (approximately 14 hours, or overnight).",
+      "Rub together 100 g flour, 50 g butter, and 50 g sugar with your fingertips in a bowl until crumbly.",
+      "Transfer the risen dough to a greased baking tin, sprinkle generously with the crumble topping, and leave to rise again until doubled in volume.",
+      "Preheat the oven to 200°C.",
+      "Bake for 10 minutes at 200°C, then reduce temperature to 180°C and bake for another 30 minutes until golden."
+    ]
+  },
+  {
+    "id": "monicas-bread",
+    "category": "Bread",
+    "title": "Monica's Bread",
+    "hydration": 70,
+    "desc": "Rustic spelt and wholegrain rye sourdough loaf with a beautifully browned, crackly crust, baked with steam.",
+    "yield": "1 loaf",
+    "prep": "15 min",
+    "ferment": "3–6 hr (or overnight)",
+    "bake": "50 min",
+    "tempC": 200,
+    "ingredients": [
+      [
+        "Active sourdough starter",
+        300,
+        "g",
+        "starter"
+      ],
+      [
+        "Spelt flour (type 650)",
+        370,
+        "g",
+        "flour"
+      ],
+      [
+        "Wholegrain rye flour (type 2000)",
+        200,
+        "g",
+        "flour"
+      ],
+      [
+        "Water",
+        400,
+        "ml",
+        "water"
+      ],
+      [
+        "Salt",
+        8,
+        "g",
+        "salt"
+      ]
+    ],
+    "steps": [
+      "Mix all ingredients together thoroughly in a bowl. You can optionally fold in sunflower seeds, flaxseed, or a splash of olive oil if desired.",
+      "Leave to rise for approximately 3–6 hours depending on room temperature until roughly doubled in size (alternatively, prepare in the evening and cold-ferment covered in the refrigerator overnight or up to 2 days, then bring out to rise before baking).",
+      "Transfer the dough into a greased loaf tin.",
+      "Preheat the oven to 200°C and place an ovenproof dish filled with water on the oven floor to create steam for a nicely browned, crisp crust.",
+      "Bake at 200°C for 50 minutes until deeply golden and sounding hollow when tapped on the bottom."
+    ]
+  }
+]

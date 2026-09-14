@@ -1,0 +1,504 @@
+[
+  {
+    "id": "drommekage",
+    "category": "Cake",
+    "title": "Drømmekage / Sjónvarpskaka",
+    "desc": "Soft vanilla cake with warm brown-sugar coconut topping.",
+    "yield": "1 × 30 × 40 cm tray",
+    "prep": "20 min",
+    "bake": "40–45 min",
+    "tempC": 175,
+    "ingredients": [
+      [
+        "Eggs",
+        4,
+        "pc",
+        "egg"
+      ],
+      [
+        "Sugar",
+        300,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla extract",
+        10,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Flour",
+        250,
+        "g",
+        "flour"
+      ],
+      [
+        "Baking powder",
+        12,
+        "g",
+        "leavener"
+      ],
+      [
+        "Butter",
+        50,
+        "g",
+        "fat"
+      ],
+      [
+        "Milk",
+        200,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Butter — topping",
+        100,
+        "g",
+        "fat"
+      ],
+      [
+        "Brown sugar — topping",
+        200,
+        "g",
+        "sugar"
+      ],
+      [
+        "Milk — topping",
+        70,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Desiccated coconut",
+        150,
+        "g",
+        "coconut"
+      ]
+    ],
+    "steps": [
+      "Beat eggs, sugar and vanilla until pale and fluffy.",
+      "Fold in flour and baking powder. Mix in melted butter and milk.",
+      "Pour into lined 30 × 40 cm tray. Bake 30–35 min.",
+      "Melt topping butter, brown sugar and milk; stir in coconut.",
+      "Spread over cake and bake about 10 min more until golden."
+    ]
+  },
+  {
+    "id": "bounty-cake",
+    "category": "Cake",
+    "title": "Bounty Cake",
+    "desc": "Gotterí Bounty kaka — coconut cake with chocolate cream.",
+    "yield": "1 cake",
+    "prep": "20 min",
+    "bake": "40 min",
+    "tempC": 150,
+    "ingredients": [
+      [
+        "Egg whites",
+        4,
+        "pc",
+        "egg"
+      ],
+      [
+        "Icing sugar — cake",
+        140,
+        "g",
+        "sugar"
+      ],
+      [
+        "Desiccated coconut",
+        140,
+        "g",
+        "coconut"
+      ],
+      [
+        "Butter — cream",
+        100,
+        "g",
+        "fat"
+      ],
+      [
+        "Dark baking chocolate",
+        100,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Icing sugar — cream",
+        60,
+        "g",
+        "sugar"
+      ],
+      [
+        "Egg yolks",
+        4,
+        "pc",
+        "egg"
+      ],
+      [
+        "Desiccated coconut — finish",
+        10,
+        "g",
+        "coconut"
+      ]
+    ],
+    "steps": [
+      "Beat egg whites with 140 g icing sugar until thick and fluffy.",
+      "Fold in 140 g coconut. Bake at 150°C for about 40 min. Cool.",
+      "Melt butter and chocolate together over a water bath. Set aside briefly.",
+      "Beat egg yolks with 60 g icing sugar until pale and light.",
+      "Fold in the chocolate mixture. Spread over the cooled cake and sprinkle with coconut."
+    ]
+  },
+  {
+    "id": "carrot-cake",
+    "category": "Cake",
+    "title": "Carrot Cake",
+    "desc": "Moist spiced carrot cake with simple cream-cheese frosting.",
+    "yield": "1 × 23 cm cake",
+    "prep": "25 min",
+    "bake": "40–45 min",
+    "tempC": 175,
+    "ingredients": [
+      [
+        "Flour",
+        250,
+        "g",
+        "flour"
+      ],
+      [
+        "Brown sugar",
+        180,
+        "g",
+        "sugar"
+      ],
+      [
+        "Baking powder",
+        8,
+        "g",
+        "leavener"
+      ],
+      [
+        "Cinnamon",
+        5,
+        "g",
+        "spice"
+      ],
+      [
+        "Eggs",
+        3,
+        "pc",
+        "egg"
+      ],
+      [
+        "Neutral oil",
+        180,
+        "ml",
+        "fat"
+      ],
+      [
+        "Grated carrot",
+        300,
+        "g",
+        "vegetable"
+      ],
+      [
+        "Cream cheese",
+        250,
+        "g",
+        "dairy"
+      ],
+      [
+        "Butter — frosting",
+        60,
+        "g",
+        "fat"
+      ],
+      [
+        "Icing sugar",
+        100,
+        "g",
+        "sugar"
+      ]
+    ],
+    "steps": [
+      "Mix flour, sugar, baking powder and cinnamon.",
+      "Whisk eggs and oil; fold into dry ingredients, then add carrot.",
+      "Bake until set and a skewer comes out clean. Cool fully.",
+      "Beat cream cheese, butter and icing sugar. Spread over cake."
+    ]
+  },
+  {
+    "id": "chocolate-cake",
+    "category": "Cake",
+    "title": "Simple Chocolate Cake",
+    "desc": "Deep chocolate flavour, soft crumb, straightforward method.",
+    "yield": "1 × 23 cm cake",
+    "prep": "20 min",
+    "bake": "30–35 min",
+    "tempC": 180,
+    "ingredients": [
+      [
+        "Flour",
+        220,
+        "g",
+        "flour"
+      ],
+      [
+        "Cocoa powder",
+        60,
+        "g",
+        "cocoa"
+      ],
+      [
+        "Sugar",
+        220,
+        "g",
+        "sugar"
+      ],
+      [
+        "Baking powder",
+        8,
+        "g",
+        "leavener"
+      ],
+      [
+        "Eggs",
+        2,
+        "pc",
+        "egg"
+      ],
+      [
+        "Milk",
+        200,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Neutral oil",
+        100,
+        "ml",
+        "fat"
+      ],
+      [
+        "Hot coffee",
+        150,
+        "ml",
+        "liquid"
+      ]
+    ],
+    "steps": [
+      "Mix flour, cocoa, sugar and baking powder.",
+      "Whisk in eggs, milk and oil. Stir in hot coffee last.",
+      "Pour into tin and bake until just set.",
+      "Cool before slicing or frosting."
+    ]
+  },
+  {
+    "id": "apple-crumb-cake",
+    "category": "Cake",
+    "title": "Apple Crumb Cake",
+    "desc": "Moist apple cake with cinnamon crumb topping.",
+    "yield": "1 × 23 cm cake",
+    "prep": "20 min",
+    "bake": "35–40 min",
+    "tempC": 175,
+    "ingredients": [
+      [
+        "Flour",
+        250,
+        "g",
+        "flour"
+      ],
+      [
+        "Sugar",
+        150,
+        "g",
+        "sugar"
+      ],
+      [
+        "Baking powder",
+        8,
+        "g",
+        "leavener"
+      ],
+      [
+        "Baking soda",
+        2.5,
+        "g",
+        "leavener"
+      ],
+      [
+        "Salt",
+        2,
+        "g",
+        "salt"
+      ],
+      [
+        "Cinnamon",
+        5,
+        "g",
+        "spice"
+      ],
+      [
+        "Eggs",
+        2,
+        "pc",
+        "egg"
+      ],
+      [
+        "Neutral oil",
+        120,
+        "ml",
+        "fat"
+      ],
+      [
+        "Buttermilk",
+        240,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Vanilla extract",
+        5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Apples, chopped",
+        325,
+        "g",
+        "fruit"
+      ],
+      [
+        "Flour — crumb",
+        95,
+        "g",
+        "flour"
+      ],
+      [
+        "Brown sugar — crumb",
+        100,
+        "g",
+        "sugar"
+      ],
+      [
+        "Cinnamon — crumb",
+        5,
+        "g",
+        "spice"
+      ],
+      [
+        "Butter — crumb",
+        55,
+        "g",
+        "fat"
+      ]
+    ],
+    "steps": [
+      "Heat oven to 175°C. Grease and line a 23 cm pan.",
+      "Mix dry cake ingredients. Whisk eggs, oil, buttermilk and vanilla separately.",
+      "Combine wet and dry just until mixed; fold in apples.",
+      "Mix crumb flour, brown sugar and cinnamon; stir in melted butter. Scatter over batter.",
+      "Bake 35–40 min until a skewer comes out clean."
+    ]
+  },
+  {
+    "id": "date-cake-caramel",
+    "category": "Cake",
+    "title": "Date Cake with Caramel Sauce",
+    "desc": "Soft date cake served with warm caramel sauce.",
+    "yield": "1 cake",
+    "prep": "25 min",
+    "bake": "35–40 min",
+    "tempC": 180,
+    "ingredients": [
+      [
+        "Sugar",
+        60,
+        "g",
+        "sugar"
+      ],
+      [
+        "Butter",
+        120,
+        "g",
+        "fat"
+      ],
+      [
+        "Eggs",
+        2,
+        "pc",
+        "egg"
+      ],
+      [
+        "Flour",
+        100,
+        "g",
+        "flour"
+      ],
+      [
+        "Dates",
+        210,
+        "g",
+        "fruit"
+      ],
+      [
+        "Baking soda",
+        5,
+        "g",
+        "leavener"
+      ],
+      [
+        "Cinnamon",
+        2.5,
+        "g",
+        "spice"
+      ],
+      [
+        "Salt",
+        2.5,
+        "g",
+        "salt"
+      ],
+      [
+        "Vanilla extract",
+        2.5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Baking powder",
+        6,
+        "g",
+        "leavener"
+      ],
+      [
+        "Butter — sauce",
+        120,
+        "g",
+        "fat"
+      ],
+      [
+        "Cream — sauce",
+        150,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Brown sugar — sauce",
+        120,
+        "g",
+        "sugar"
+      ]
+    ],
+    "steps": [
+      "Heat oven to 180°C. Cover dates with water, boil, remove from heat 3–4 min and mash lightly. Stir in baking soda.",
+      "Beat butter and sugar fluffy; add eggs one at a time.",
+      "Mix in flour, cinnamon, salt, baking powder and vanilla, then fold in date mixture.",
+      "Bake 35–40 min.",
+      "For sauce, boil butter, cream and brown sugar together until slightly thickened but still pourable."
+    ]
+  }
+]

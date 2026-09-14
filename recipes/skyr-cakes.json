@@ -1,0 +1,795 @@
+[
+  {
+    "id": "gotteri-hindberja-skyrkaka-sukkuladiskal",
+    "category": "Skyr Cake",
+    "title": "Raspberry Skyr Mousse in Chocolate Bowls",
+    "desc": "Whipped vanilla skyr and raspberry mousse served in hand-made chocolate bowls on a biscuit base.",
+    "yield": "8–10 chocolate bowls",
+    "prep": "40 min",
+    "ingredients": [
+      [
+        "Chocolate coating",
+        500,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Small balloons",
+        10,
+        "pc",
+        "other"
+      ],
+      [
+        "Lu Bastogne biscuits — crushed",
+        125,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        40,
+        "g",
+        "fat"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Vanilla skyr",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Vanilla pod seeds",
+        1,
+        "pc",
+        "other"
+      ],
+      [
+        "Fresh raspberries — puréed",
+        250,
+        "g",
+        "fruit"
+      ],
+      [
+        "Fresh raspberries — garnish",
+        125,
+        "g",
+        "fruit"
+      ]
+    ],
+    "steps": [
+      "Inflate balloons, dip the bottom into melted chocolate coating, set on baking paper and refrigerate. Once firm, pop and remove balloons to reveal chocolate bowls.",
+      "Whip cream, then fold vanilla skyr and vanilla seeds in gently.",
+      "Mix crushed biscuits with melted butter. Press 1 tbsp into the base of each chocolate bowl.",
+      "Divide skyr mixture over the biscuit bases, top with raspberry purée and fresh raspberries."
+    ]
+  },
+  {
+    "id": "gotteri-jardaberja-skyrkaka-kokteill",
+    "category": "Skyr Cake",
+    "title": "Strawberry Skyr Cocktail Cups",
+    "desc": "Layered strawberry skyr cheesecake in glasses with a cooked strawberry glaze and fresh berries.",
+    "yield": "8–10 glasses",
+    "prep": "30 min",
+    "ingredients": [
+      [
+        "Lu Digestive biscuits — crushed",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        40,
+        "g",
+        "fat"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Cream cheese",
+        300,
+        "g",
+        "dairy"
+      ],
+      [
+        "Icing sugar",
+        150,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla sugar",
+        10,
+        "g",
+        "sugar"
+      ],
+      [
+        "Strawberries — puréed",
+        250,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Sugar — glaze",
+        250,
+        "g",
+        "sugar"
+      ],
+      [
+        "Cornflour",
+        30,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        200,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Fresh strawberries — garnish",
+        200,
+        "g",
+        "fruit"
+      ]
+    ],
+    "steps": [
+      "Cook glaze: heat puréed strawberries, sugar, cornflour and water 5–8 min until thick. Add red food colouring if desired. Cool.",
+      "Whip cream. Beat cream cheese, icing sugar and vanilla sugar, fold in whipped cream.",
+      "Layer in glasses: crushed biscuit → cream cheese mixture → sliced fresh strawberries → strawberry glaze."
+    ]
+  },
+  {
+    "id": "gotteri-mini-blaberja-skyrkokur",
+    "category": "Skyr Cake",
+    "title": "Mini Blueberry Skyr Cups",
+    "desc": "Individual skyr mousse cups with a cooked blueberry sauce and fresh blueberries on a digestive base.",
+    "yield": "6–8 glasses",
+    "prep": "20 min",
+    "ingredients": [
+      [
+        "Digestive biscuits",
+        300,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        50,
+        "g",
+        "fat"
+      ],
+      [
+        "KEA vanilla skyr",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Blueberries — sauce",
+        250,
+        "g",
+        "fruit"
+      ],
+      [
+        "Water",
+        50,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Sugar — sauce",
+        40,
+        "g",
+        "sugar"
+      ],
+      [
+        "Lemon juice",
+        5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Vanilla extract",
+        5,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Fresh blueberries — topping",
+        125,
+        "g",
+        "fruit"
+      ]
+    ],
+    "steps": [
+      "Mix crushed biscuits with melted butter and divide between glasses.",
+      "Simmer blueberries, water, sugar, lemon juice and vanilla extract for 10 min until saucy. Cool.",
+      "Whip cream and fold vanilla skyr in gently.",
+      "Layer glasses: biscuit base → skyr mixture → blueberry sauce → fresh blueberries."
+    ]
+  },
+  {
+    "id": "gotteri-vanillu-skyrkaka-musli",
+    "category": "Skyr Cake",
+    "title": "Vanilla Skyr with Chocolate Granola & Raspberries",
+    "desc": "Simple and fresh vanilla skyr mousse cups layered over chocolate granola and topped with raspberries.",
+    "yield": "6 glasses",
+    "prep": "15 min",
+    "ingredients": [
+      [
+        "Chocolate muesli granola",
+        120,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        300,
+        "ml",
+        "liquid"
+      ],
+      [
+        "KEA vanilla skyr",
+        300,
+        "g",
+        "dairy"
+      ],
+      [
+        "Fresh raspberries",
+        200,
+        "g",
+        "fruit"
+      ]
+    ],
+    "steps": [
+      "Put 2 tbsp of muesli in the base of each glass.",
+      "Whip cream and fold vanilla skyr in gently.",
+      "Divide skyr mixture between glasses and top with fresh raspberries. Chill 1 hour before serving."
+    ]
+  },
+  {
+    "id": "gotteri-skyrkaka-heidu",
+    "category": "Skyr Cake",
+    "title": "Berry Skyr Sheet Cake",
+    "desc": "Easy layered skyr cake in a serving dish — berry skyr, whipped cream, chopped chocolate and fresh berries.",
+    "yield": "1 large serving dish",
+    "prep": "15 min",
+    "ingredients": [
+      [
+        "Lu Bastogne biscuits",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        50,
+        "g",
+        "fat"
+      ],
+      [
+        "KEA blueberry and strawberry skyr",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Dark chocolate — chopped",
+        70,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Fresh blueberries",
+        125,
+        "g",
+        "fruit"
+      ],
+      [
+        "Fresh strawberries",
+        125,
+        "g",
+        "fruit"
+      ]
+    ],
+    "steps": [
+      "Crush biscuits, mix with melted butter and press into the base of a serving dish. Chill.",
+      "Whip cream and fold skyr in gently with a spatula.",
+      "Spread skyr mixture over the base, scatter chopped chocolate and fresh berries on top. Chill 1–2 hours."
+    ]
+  },
+  {
+    "id": "gotteri-sukkuladi-skyrkokur",
+    "category": "Skyr Cake",
+    "title": "Chocolate Skyr Mousse Cups",
+    "desc": "Quick chocolate skyr mousse cups with granola, piped cream and a raspberry garnish.",
+    "yield": "6–8 glasses",
+    "prep": "15 min",
+    "ingredients": [
+      [
+        "Ísey chocolate vanilla skyr",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Double cream",
+        400,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Double cream — topping",
+        200,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Chocolate muesli",
+        80,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh raspberries",
+        125,
+        "g",
+        "fruit"
+      ],
+      [
+        "Chocolate shavings",
+        30,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Cocoa powder — garnish",
+        10,
+        "g",
+        "cocoa"
+      ]
+    ],
+    "steps": [
+      "Whip 400 ml cream and fold skyr gently through. Divide between glasses.",
+      "Scatter chocolate muesli over each.",
+      "Whip 200 ml cream, pipe on top, dust with cocoa and garnish with raspberries and chocolate shavings."
+    ]
+  },
+  {
+    "id": "gotteri-skyrkaka-hriskokuskal",
+    "category": "Skyr Cake",
+    "title": "Strawberry Skyr in a Chocolate Rice Krispie Shell",
+    "desc": "Strawberry skyr mousse set inside a crispy chocolate and golden syrup Rice Krispie shell.",
+    "yield": "1 × 22 cm",
+    "prep": "30 min",
+    "ingredients": [
+      [
+        "Butter — bowl",
+        30,
+        "g",
+        "fat"
+      ],
+      [
+        "Dark chocolate — bowl",
+        150,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Golden syrup — bowl",
+        180,
+        "g",
+        "other"
+      ],
+      [
+        "Rice Krispies",
+        100,
+        "g",
+        "other"
+      ],
+      [
+        "Ísey strawberry & white chocolate skyr",
+        510,
+        "g",
+        "dairy"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "White chocolate — garnish",
+        100,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Fresh strawberries — garnish",
+        250,
+        "g",
+        "fruit"
+      ]
+    ],
+    "steps": [
+      "Melt butter, dark chocolate and golden syrup in a saucepan, bring to a simmer for 1 min. Stir in Rice Krispies and press into the base and sides of a 22 cm springform. Chill.",
+      "Whip cream to stiff peaks and fold skyr in carefully.",
+      "Pour skyr mousse into the Rice Krispie shell. Top with grated white chocolate and fresh strawberries."
+    ]
+  },
+  {
+    "id": "gotteri-thjodhatidardesert",
+    "category": "Skyr Cake",
+    "title": "Icelandic Flag Skyr Dessert",
+    "desc": "Vanilla skyr mousse on a Prince Polo wafer base, decorated as the Icelandic flag with raspberries and blueberries.",
+    "yield": "1 × 25×35 cm tray",
+    "prep": "20 min",
+    "ingredients": [
+      [
+        "Prince Polo chocolate wafers",
+        350,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla skyr",
+        700,
+        "g",
+        "dairy"
+      ],
+      [
+        "Double cream",
+        800,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Fresh blueberries",
+        750,
+        "g",
+        "fruit"
+      ],
+      [
+        "Fresh raspberries",
+        375,
+        "g",
+        "fruit"
+      ]
+    ],
+    "steps": [
+      "Crush Prince Polo wafers and spread over the base of a large serving tray.",
+      "Whip cream; set a little aside in a piping bag. Fold vanilla skyr into the rest and spread over the base.",
+      "Decorate to resemble the Icelandic flag: a cross of raspberries down the centre, piped cream dots on the border, and blueberries in the four corners."
+    ]
+  },
+  {
+    "id": "gotteri-skyrkaka-mondlu-sitronum",
+    "category": "Skyr Cake",
+    "title": "Lemon & Almond Skyr Cake",
+    "desc": "Set vanilla skyr cake with lemon and almond notes on a lemon-almond biscuit base.",
+    "yield": "1 × 20–22 cm",
+    "prep": "25 min",
+    "ingredients": [
+      [
+        "Almond and lemon biscuits",
+        300,
+        "g",
+        "other"
+      ],
+      [
+        "Ghee butter — base",
+        100,
+        "g",
+        "fat"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Icing sugar",
+        25,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla sugar",
+        10,
+        "g",
+        "sugar"
+      ],
+      [
+        "Lemon extract",
+        3,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Vanilla skyr",
+        650,
+        "g",
+        "dairy"
+      ],
+      [
+        "Gelatin leaves",
+        6,
+        "pc",
+        "other"
+      ],
+      [
+        "Water — gelatin",
+        50,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Flaked almonds — garnish",
+        30,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon slices — garnish",
+        3,
+        "pc",
+        "fruit"
+      ]
+    ],
+    "steps": [
+      "Press crushed biscuits and melted ghee into a 20–22 cm springform and freeze while making the filling.",
+      "Dissolve soaked gelatin in 50 ml hot water and cool.",
+      "Whip cream with icing sugar, vanilla sugar and lemon extract. Fold vanilla skyr through, then add gelatin in a thin stream.",
+      "Pour into tin and chill overnight. Garnish with flaked almonds and lemon slices."
+    ]
+  },
+  {
+    "id": "gotteri-sumarleg-skyrkaka",
+    "category": "Skyr Cake",
+    "title": "Summer Berry Skyr Cake",
+    "desc": "Gelatin-set skyr cake with strawberry and blueberry skyr on an oat biscuit base.",
+    "yield": "1 × 20–22 cm",
+    "prep": "25 min",
+    "ingredients": [
+      [
+        "Oat biscuits",
+        260,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        100,
+        "g",
+        "fat"
+      ],
+      [
+        "Double cream",
+        350,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Icing sugar",
+        25,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla sugar",
+        10,
+        "g",
+        "sugar"
+      ],
+      [
+        "KEA berry skyr",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Gelatin leaves",
+        5,
+        "pc",
+        "other"
+      ],
+      [
+        "Milk — gelatin",
+        50,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Fresh berries — garnish",
+        200,
+        "g",
+        "fruit"
+      ],
+      [
+        "Dark chocolate — garnish",
+        30,
+        "g",
+        "chocolate"
+      ]
+    ],
+    "steps": [
+      "Press crushed oat biscuits and melted butter into a 20–22 cm springform and freeze.",
+      "Heat milk and dissolve soaked gelatin in it. Cool.",
+      "Whip cream with icing sugar and vanilla sugar. Fold berry skyr through, then add gelatin in a thin stream.",
+      "Pour into tin and chill at least 5 hours. Top with fresh berries and chopped dark chocolate."
+    ]
+  },
+  {
+    "id": "gotteri-berjaskyrkaka",
+    "category": "Skyr Cake",
+    "title": "Berry Bliss Skyr Cake",
+    "desc": "Simple layered berry skyr cake in a serving dish with fresh berries and dark chocolate.",
+    "yield": "1 serving dish",
+    "prep": "15 min",
+    "ingredients": [
+      [
+        "Lu Bastogne biscuits",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        60,
+        "g",
+        "fat"
+      ],
+      [
+        "Ísey blueberry and raspberry skyr",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Fresh blueberries",
+        125,
+        "g",
+        "fruit"
+      ],
+      [
+        "Fresh raspberries",
+        125,
+        "g",
+        "fruit"
+      ],
+      [
+        "Dark chocolate — chopped",
+        30,
+        "g",
+        "chocolate"
+      ]
+    ],
+    "steps": [
+      "Mix crushed Bastogne biscuits with melted butter and press into the base of a serving dish. Chill.",
+      "Whip cream and fold skyr through gently.",
+      "Spread over the biscuit base and decorate with fresh berries and chopped dark chocolate."
+    ]
+  },
+  {
+    "id": "gotteri-skyrkokur-noakroppi",
+    "category": "Skyr Cake",
+    "title": "Berry Skyr Cups with Chocolate Pebbles",
+    "desc": "Berry skyr mousse cups on a cinnamon biscuit and chocolate pebble base, topped with more chocolate pebbles.",
+    "yield": "8–10 glasses",
+    "prep": "15 min",
+    "ingredients": [
+      [
+        "Cinnamon biscuits",
+        150,
+        "g",
+        "other"
+      ],
+      [
+        "Nóakropp chocolate pebbles — base",
+        100,
+        "g",
+        "chocolate"
+      ],
+      [
+        "Butter — base",
+        40,
+        "g",
+        "fat"
+      ],
+      [
+        "Blueberry and strawberry skyr",
+        650,
+        "g",
+        "dairy"
+      ],
+      [
+        "Double cream",
+        600,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Nóakropp chocolate pebbles — topping",
+        100,
+        "g",
+        "chocolate"
+      ]
+    ],
+    "steps": [
+      "Blitz biscuits and Nóakropp together, mix with melted butter and divide between glasses.",
+      "Whip cream to stiff peaks and fold skyr through gently.",
+      "Pipe into glasses and top generously with Nóakropp. Chill 1 hour."
+    ]
+  },
+  {
+    "id": "gotteri-vanillu-skyrkaka-lakkris",
+    "category": "Skyr Cake",
+    "title": "Vanilla Skyr with Salted Liquorice Caramel",
+    "desc": "Vanilla skyr mousse cups with a salty-sweet liquorice caramel and crushed Oreo base.",
+    "yield": "8–10 glasses",
+    "prep": "15 min",
+    "ingredients": [
+      [
+        "Panda liquorice caramel balls — chopped",
+        100,
+        "g",
+        "other"
+      ],
+      [
+        "Oreo biscuits — crushed",
+        100,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla skyr",
+        500,
+        "g",
+        "dairy"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ]
+    ],
+    "steps": [
+      "Chop liquorice caramel balls. Mix half with crushed Oreos and put 1 tbsp in the base of each glass.",
+      "Whip cream and fold vanilla skyr through gently.",
+      "Pipe into glasses and top with the remaining chopped liquorice caramel balls."
+    ]
+  }
+]

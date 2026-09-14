@@ -1,19 +1,33 @@
-const CACHE = 'quickrecipe-v22';
+const VERSION = '26';
+const CACHE = `quickrecipe-v${VERSION}`;
 const ASSETS = [
   './',
   './index.html',
   './style.css',
-  './style.css?v=20',
+  `./style.css?v=${VERSION}`,
   './app.js',
-  './app.js?v=22',
-  './recipes.json',
-  './recipes.json?v=19',
+  `./app.js?v=${VERSION}`,
   './manifest.webmanifest',
 ];
 
 self.addEventListener('install', e => {
-  self.skipWaiting();
-  e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS)));
+  e.waitUntil((async () => {
+    const indexUrl = `./recipes/index.json?v=${VERSION}`;
+    const response = await fetch(indexUrl);
+    if (!response.ok) throw new Error('Could not cache the recipe index');
+    const index = await response.clone().json();
+    if (!Array.isArray(index.files) || !index.files.length ||
+        index.files.some(file => typeof file !== 'string' || !/^[a-z0-9-]+\.json$/.test(file))) {
+      throw new Error('Invalid recipe index');
+    }
+    const cache = await caches.open(CACHE);
+    await cache.addAll([...ASSETS, ...index.files.flatMap(file =>
+      [`./recipes/${file}`, `./recipes/${file}?v=${VERSION}`]
+    )]);
+    await cache.put('./recipes/index.json', response.clone());
+    await cache.put(indexUrl, response);
+    await self.skipWaiting();
+  })());
 });
 
 self.addEventListener('activate', e => {
