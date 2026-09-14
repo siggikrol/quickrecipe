@@ -17,6 +17,7 @@ The collection lives in `recipes/`, split by category:
 - `skyr-cakes.json`
 - `meringue.json`
 - `brownies.json`
+- `polish-soups.json`
 
 `recipes/index.json` lists the files to load. Each file contains an array of recipe objects. Add recipes to the appropriate file; add new filenames to the index when introducing another file. IDs must be unique across the entire collection and should remain stable to preserve favourites and saved selections.
 
@@ -24,7 +25,7 @@ The app loads the indexed files together so search, favourites and swipe navigat
 
 ## Timing
 
-Use `prep`, `bake`, and `ferment` for preparation, baking, and resting/chilling respectively. Cards and recipe details share the same labelled timing display. Missing bake time does not hide prep or rest time. If all three fields are absent, the UI says “Time not specified”. Do not invent a total or infer that a missing baking time means no-bake.
+Use `prep`, `cook`, `bake`, and `ferment` for preparation, stovetop cooking, baking, and resting/chilling respectively. Cards and recipe details share the same labelled timing display. Missing bake time does not hide prep or rest time. If all four fields are absent, the UI says “Time not specified”. Do not invent a total or infer that a missing baking time means no-bake.
 
 ## Publishing data changes
 

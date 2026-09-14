@@ -1,0 +1,73 @@
+{
+  "importedOn": "2026-09-14",
+  "category": "Polish Soups",
+  "section": "meals",
+  "selection": "Ten widely recognised classics, curated from Polish cultural and food references; not a measured national ranking.",
+  "selectionSources": [
+    "https://www.poland.travel/en/flavours-of-polish-cuisine/",
+    "https://culture.pl/en/article/the-comforts-of-polish-comfort-foods",
+    "https://polishfoodies.com/popular-polish-soups-recipes/"
+  ],
+  "notes": [
+    "All ten cooking sources are Polish Feast. Titles, descriptions and methods are independently written in English. No images or blog prose imported.",
+    "Metric equivalents printed by the source take precedence. Otherwise pounds convert to grams rounded to the nearest gram; cups and spoons remain source measures without guessed densities. Unspecified quantities remain null and numeric ranges are retained.",
+    "Timing uses source recipe-card metadata except pickle soup (30–32 min from the method) and barley soup (2 hr from its sequential method; card says 1 hr 40 min).",
+    "Beet soup prep includes stock preparation and parallel beet boiling; cook includes the final five-minute simmer. Its required six-hour refrigerated rest is explicit.",
+    "Tomato and white soup cards give longer cook times than their methods; retain those allowances and require fully cooked meat. Raw-meat washing instructions are omitted.",
+    "Rye and white soup use prepared fermented soup starters; white soup uses the source bottled-base option. Starter fermentation is not included in cooking time.",
+    "Water omitted from split pea and white soup ingredient lists is included from their methods. Optional serving ingredients are explicit; an unspecified piece of celery root is not assigned an invented weight.",
+    "Mushroom recipe uses fresh mushrooms as the main option; the dried alternative is expressed as a scalable one-tenth weight."
+  ],
+  "recipes": [
+    {
+      "id": "polish-soup-sunday-golden-chicken-broth",
+      "title": "Sunday Golden Chicken Broth",
+      "sourceUrl": "https://polishfeast.com/rosol-polish-chicken-soup/"
+    },
+    {
+      "id": "polish-soup-homestyle-tomato-and-chicken-soup",
+      "title": "Homestyle Tomato and Chicken Soup",
+      "sourceUrl": "https://polishfeast.com/polish-tomato-soup/"
+    },
+    {
+      "id": "polish-soup-smoky-sausage-and-sour-rye-soup",
+      "title": "Smoky Sausage and Sour Rye Soup",
+      "sourceUrl": "https://polishfeast.com/polish-sour-rye-soup/"
+    },
+    {
+      "id": "polish-soup-ruby-beet-broth-with-marjoram",
+      "title": "Ruby Beet Broth with Marjoram",
+      "sourceUrl": "https://polishfeast.com/borscht-polish-beet-soup/"
+    },
+    {
+      "id": "polish-soup-tangy-pickle-and-potato-soup",
+      "title": "Tangy Pickle and Potato Soup",
+      "sourceUrl": "https://polishfeast.com/polish-dill-pickle-soup/"
+    },
+    {
+      "id": "polish-soup-woodland-mushroom-and-dill-soup",
+      "title": "Woodland Mushroom and Dill Soup",
+      "sourceUrl": "https://polishfeast.com/polish-mushroom-soup/"
+    },
+    {
+      "id": "polish-soup-country-barley-and-rib-soup",
+      "title": "Country Barley and Rib Soup",
+      "sourceUrl": "https://polishfeast.com/polish-barley-soup/"
+    },
+    {
+      "id": "polish-soup-rustic-sauerkraut-and-bacon-soup",
+      "title": "Rustic Sauerkraut and Bacon Soup",
+      "sourceUrl": "https://polishfeast.com/polish-sauerkraut-soup/"
+    },
+    {
+      "id": "polish-soup-smoky-split-pea-and-potato-pot",
+      "title": "Smoky Split Pea and Potato Pot",
+      "sourceUrl": "https://polishfeast.com/split-pea-soup/"
+    },
+    {
+      "id": "polish-soup-creamy-white-sausage-and-potato-soup",
+      "title": "Creamy White Sausage and Potato Soup",
+      "sourceUrl": "https://polishfeast.com/polish-white-borscht/"
+    }
+  ]
+}

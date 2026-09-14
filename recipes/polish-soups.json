@@ -1,0 +1,1200 @@
+[
+  {
+    "id": "polish-soup-sunday-golden-chicken-broth",
+    "category": "Polish Soups",
+    "section": "meals",
+    "title": "Sunday Golden Chicken Broth",
+    "desc": "Clear, slow-simmered chicken broth with root vegetables and egg noodles.",
+    "prep": "10 min",
+    "cook": "3 hr",
+    "ingredients": [
+      [
+        "Bone-in chicken",
+        1814,
+        "g",
+        ""
+      ],
+      [
+        "Beef, optional",
+        227,
+        "g",
+        ""
+      ],
+      [
+        "Water, plus extra as needed",
+        10,
+        "cup",
+        "",
+        12
+      ],
+      [
+        "Large carrots",
+        3,
+        "pc",
+        ""
+      ],
+      [
+        "Parsley root",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Large celery root",
+        0.25,
+        "pc",
+        ""
+      ],
+      [
+        "Leek",
+        0.5,
+        "pc",
+        ""
+      ],
+      [
+        "Garlic cloves",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Fresh parsley",
+        1,
+        "bunch",
+        ""
+      ],
+      [
+        "Bay leaves",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Allspice berries",
+        3,
+        "pc",
+        ""
+      ],
+      [
+        "Black peppercorns",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Salt",
+        2,
+        "tsp",
+        ""
+      ],
+      [
+        "Egg noodles",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Parsley and black pepper, to serve",
+        null,
+        "",
+        ""
+      ]
+    ],
+    "steps": [
+      "Cover the chicken and optional beef with cold water in a large pot. Add salt, heat gently and skim off the foam.",
+      "Keep at a gentle simmer for 90 minutes. Add the peeled carrots, parsley root, celery root, leek, garlic, parsley and whole spices.",
+      "Simmer for another 60–90 minutes, topping up water when needed. Strain the broth and adjust seasoning.",
+      "Remove bones from the cooked meat and slice the carrots. Cook noodles separately according to their packet, then divide between bowls with meat, carrots and broth. Finish with parsley and pepper."
+    ],
+    "sourceUrl": "https://polishfeast.com/rosol-polish-chicken-soup/",
+    "yield": "6 servings"
+  },
+  {
+    "id": "polish-soup-homestyle-tomato-and-chicken-soup",
+    "category": "Polish Soups",
+    "section": "meals",
+    "title": "Homestyle Tomato and Chicken Soup",
+    "desc": "A gentle tomato soup made with chicken broth and sour cream, served with noodles or rice.",
+    "prep": "20 min",
+    "cook": "2 hr",
+    "ingredients": [
+      [
+        "Whole chicken or bone-in pieces",
+        1500,
+        "g",
+        ""
+      ],
+      [
+        "Carrots",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Parsnips",
+        1,
+        "pc",
+        "",
+        2
+      ],
+      [
+        "Celeriac",
+        0.5,
+        "pc",
+        ""
+      ],
+      [
+        "Onion",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Leek, white part, optional",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Peppercorns",
+        5,
+        "pc",
+        "",
+        6
+      ],
+      [
+        "Bay leaves",
+        1,
+        "pc",
+        "",
+        2
+      ],
+      [
+        "Water",
+        2000,
+        "ml",
+        ""
+      ],
+      [
+        "Tomato paste",
+        2,
+        "tbsp",
+        ""
+      ],
+      [
+        "Sour cream",
+        0.3333333333333333,
+        "cup",
+        ""
+      ],
+      [
+        "Cooked egg noodles or rice",
+        1,
+        "cup",
+        ""
+      ],
+      [
+        "Salt and pepper",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Fresh parsley, to garnish",
+        null,
+        "",
+        ""
+      ]
+    ],
+    "steps": [
+      "Place chicken in a pot with cold water and a little salt. Bring to a gentle simmer and skim the foam. Add peppercorns and bay leaves; simmer for 30 minutes.",
+      "Add the peeled vegetables and halved onion. Simmer at least 20 minutes more, until the chicken is fully cooked and vegetables are tender; allow longer for a whole bird.",
+      "Remove the chicken and whole aromatics. Stir tomato paste into the broth and bring briefly to a simmer.",
+      "Take off the heat. Mix sour cream with a little water, then gradually whisk in hot broth before returning it to the pot.",
+      "Season and warm without boiling. Serve over cooked noodles or rice with parsley."
+    ],
+    "sourceUrl": "https://polishfeast.com/polish-tomato-soup/",
+    "yield": "6 servings"
+  },
+  {
+    "id": "polish-soup-smoky-sausage-and-sour-rye-soup",
+    "category": "Polish Soups",
+    "section": "meals",
+    "title": "Smoky Sausage and Sour Rye Soup",
+    "desc": "Tangy rye soup with smoked meat, potatoes and hard-boiled eggs.",
+    "prep": "10 min",
+    "cook": "1 hr",
+    "ingredients": [
+      [
+        "Chicken or beef broth",
+        7,
+        "cup",
+        ""
+      ],
+      [
+        "Prepared fermented rye soup starter",
+        2,
+        "cup",
+        ""
+      ],
+      [
+        "Smoked bacon or smoked pork ribs",
+        450,
+        "g",
+        ""
+      ],
+      [
+        "Potatoes",
+        151,
+        "g",
+        ""
+      ],
+      [
+        "Carrots",
+        113,
+        "g",
+        ""
+      ],
+      [
+        "Parsnip",
+        113,
+        "g",
+        ""
+      ],
+      [
+        "Medium onion",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Raw white sausage",
+        450,
+        "g",
+        ""
+      ],
+      [
+        "Smoked sausage",
+        151,
+        "g",
+        ""
+      ],
+      [
+        "Dried marjoram",
+        2,
+        "tsp",
+        ""
+      ],
+      [
+        "Garlic cloves",
+        2,
+        "pc",
+        "",
+        3
+      ],
+      [
+        "Salt and pepper",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Bay leaves",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Allspice berries",
+        4,
+        "pc",
+        "",
+        5
+      ],
+      [
+        "Heavy cream",
+        0.3333333333333333,
+        "cup",
+        ""
+      ],
+      [
+        "Hard-boiled eggs",
+        4,
+        "pc",
+        ""
+      ],
+      [
+        "Sourdough bread, to serve",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Fresh herbs and horseradish, optional",
+        null,
+        "",
+        ""
+      ]
+    ],
+    "steps": [
+      "Peel and chop the vegetables. Simmer them with broth, smoked bacon or ribs, bay leaves and allspice for 20–30 minutes.",
+      "Add both sausages and simmer for about 20 minutes, until the raw sausage is cooked through.",
+      "Stir the prepared rye soup starter well before pouring it in. Use liquid fermented soup starter, rather than bread dough starter. Add crushed garlic and marjoram, then simmer for 10 minutes.",
+      "Take off the heat. Mix a little hot broth into the cream, then stir it back into the pot. Season and slice the cooked meat.",
+      "Serve with halved eggs and bread; add fresh herbs or horseradish if desired."
+    ],
+    "sourceUrl": "https://polishfeast.com/polish-sour-rye-soup/",
+    "yield": "4 servings"
+  },
+  {
+    "id": "polish-soup-ruby-beet-broth-with-marjoram",
+    "category": "Polish Soups",
+    "section": "meals",
+    "title": "Ruby Beet Broth with Marjoram",
+    "desc": "A clear beet broth with chicken stock, dried mushrooms and a sweet-sour finish.",
+    "prep": "2 hr (includes stock)",
+    "cook": "1 hr 5 min",
+    "ingredients": [
+      [
+        "Bone-in chicken",
+        907,
+        "g",
+        ""
+      ],
+      [
+        "Large carrots",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Celery stalks",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Large white onion, for stock",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Garlic cloves, for stock",
+        3,
+        "pc",
+        ""
+      ],
+      [
+        "Bay leaf, for stock",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Parsley sprigs",
+        4,
+        "pc",
+        "",
+        5
+      ],
+      [
+        "Salt, for stock",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Peppercorns, for stock",
+        0.5,
+        "tsp",
+        ""
+      ],
+      [
+        "Water, for stock",
+        10,
+        "cup",
+        ""
+      ],
+      [
+        "Beets",
+        907,
+        "g",
+        ""
+      ],
+      [
+        "Medium onion, chopped",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Butter",
+        1,
+        "tbsp",
+        ""
+      ],
+      [
+        "Bay leaf, for soup",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Allspice berries",
+        3,
+        "pc",
+        ""
+      ],
+      [
+        "Peppercorns, for soup",
+        3,
+        "pc",
+        ""
+      ],
+      [
+        "White vinegar",
+        1,
+        "tbsp",
+        ""
+      ],
+      [
+        "Garlic cloves, minced",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Dried mushrooms",
+        3,
+        "pc",
+        ""
+      ],
+      [
+        "Dried marjoram",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Sugar",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Salt and pepper",
+        null,
+        "",
+        ""
+      ]
+    ],
+    "steps": [
+      "Simmer the chicken, stock vegetables, stock garlic, parsley, stock spices and water for 90–120 minutes, skimming as needed. Strain; top up to the original water measure.",
+      "Meanwhile, boil the unpeeled beets separately for 45–60 minutes until tender. Cool enough to handle, peel and slice.",
+      "Add the beets to the strained stock and simmer gently for 1 hour. Soften the chopped onion in butter in a separate pan.",
+      "Add that onion, remaining bay leaf, allspice, peppercorns, garlic, mushrooms and marjoram to the broth. Simmer 5 minutes, then remove from heat and add vinegar, sugar and seasoning.",
+      "Cool promptly and refrigerate for at least 6 hours or overnight. Reheat gently without boiling; strain for a clear broth if preferred."
+    ],
+    "sourceUrl": "https://polishfeast.com/borscht-polish-beet-soup/",
+    "yield": "10 cups",
+    "ferment": "6 hr or overnight in fridge"
+  },
+  {
+    "id": "polish-soup-tangy-pickle-and-potato-soup",
+    "category": "Polish Soups",
+    "section": "meals",
+    "title": "Tangy Pickle and Potato Soup",
+    "desc": "Fermented cucumbers bring a bright finish to this creamy potato and vegetable soup.",
+    "prep": "10 min",
+    "cook": "30–32 min",
+    "ingredients": [
+      [
+        "Butter",
+        1,
+        "tbsp",
+        ""
+      ],
+      [
+        "Olive oil",
+        1,
+        "tbsp",
+        ""
+      ],
+      [
+        "Medium onion",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Medium carrots",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Parsnip, optional",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Celery stalk",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Broth",
+        1700,
+        "ml",
+        ""
+      ],
+      [
+        "Potatoes",
+        600,
+        "g",
+        ""
+      ],
+      [
+        "Medium fermented dill pickles",
+        4,
+        "pc",
+        "",
+        5
+      ],
+      [
+        "Pickle brine, plus extra to taste",
+        120,
+        "ml",
+        ""
+      ],
+      [
+        "Garlic cloves",
+        3,
+        "pc",
+        ""
+      ],
+      [
+        "Dried marjoram",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Sour cream",
+        120,
+        "g",
+        ""
+      ],
+      [
+        "Fresh dill",
+        2,
+        "tbsp",
+        ""
+      ],
+      [
+        "Salt and black pepper",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Rye bread, to serve",
+        null,
+        "",
+        ""
+      ]
+    ],
+    "steps": [
+      "Chop the onion, parsnip and celery; grate the carrots and pickles separately. Dice the potatoes.",
+      "Heat butter and oil. Soften onion, carrots, parsnip and celery for 5–7 minutes. Add broth and potatoes and simmer for about 15 minutes, until tender.",
+      "Add the grated fermented pickles, brine, crushed garlic and marjoram only after the potatoes soften. Simmer another 10 minutes.",
+      "Take off the heat. Whisk a little hot broth into sour cream, then stir it into the soup. Add dill and season; sharpen with extra brine if wanted. Serve with rye bread."
+    ],
+    "sourceUrl": "https://polishfeast.com/polish-dill-pickle-soup/",
+    "yield": "6 servings"
+  },
+  {
+    "id": "polish-soup-woodland-mushroom-and-dill-soup",
+    "category": "Polish Soups",
+    "section": "meals",
+    "title": "Woodland Mushroom and Dill Soup",
+    "desc": "Mushrooms and potatoes in a creamy broth finished with fresh dill.",
+    "prep": "20 min",
+    "cook": "30 min",
+    "ingredients": [
+      [
+        "Fresh chanterelles or porcini",
+        450,
+        "g",
+        ""
+      ],
+      [
+        "Onion",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Vegetable oil",
+        2,
+        "tbsp",
+        ""
+      ],
+      [
+        "Butter",
+        1,
+        "tbsp",
+        ""
+      ],
+      [
+        "Carrots",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Potatoes",
+        5,
+        "pc",
+        ""
+      ],
+      [
+        "Broth",
+        2000,
+        "ml",
+        ""
+      ],
+      [
+        "Fresh dill",
+        2,
+        "tbsp",
+        ""
+      ],
+      [
+        "Sour cream",
+        200,
+        "ml",
+        ""
+      ],
+      [
+        "Salt and pepper",
+        null,
+        "",
+        ""
+      ]
+    ],
+    "steps": [
+      "Clean and chop the mushrooms. Alternatively, use dried mushrooms at one-tenth the fresh weight; soak overnight in the fridge before cooking.",
+      "Chop the onion and soften it in oil. Add diced carrots and potatoes and cook for a few minutes.",
+      "Stir in mushrooms and butter and cook for 5 minutes. Add broth and simmer for about 15 minutes, until the potatoes are tender.",
+      "Remove from heat. Loosen the sour cream with a little hot broth, then stir it into the soup with chopped dill. Season and warm gently without boiling."
+    ],
+    "sourceUrl": "https://polishfeast.com/polish-mushroom-soup/",
+    "yield": "4 servings"
+  },
+  {
+    "id": "polish-soup-country-barley-and-rib-soup",
+    "category": "Polish Soups",
+    "section": "meals",
+    "title": "Country Barley and Rib Soup",
+    "desc": "Pearl barley, pork and root vegetables make a substantial bowl.",
+    "prep": "30 min",
+    "cook": "2 hr",
+    "ingredients": [
+      [
+        "Pork ribs or chicken pieces",
+        454,
+        "g",
+        ""
+      ],
+      [
+        "Smoked bacon",
+        100,
+        "g",
+        ""
+      ],
+      [
+        "Large carrot",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Parsnip",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Celery root, piece",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Leek",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Water",
+        2000,
+        "ml",
+        ""
+      ],
+      [
+        "Pearl barley",
+        1,
+        "cup",
+        ""
+      ],
+      [
+        "Medium potatoes",
+        5,
+        "pc",
+        ""
+      ],
+      [
+        "Onion",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Bay leaves",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Allspice berries",
+        3,
+        "pc",
+        ""
+      ],
+      [
+        "Dried marjoram",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Salt and pepper",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Fresh parsley",
+        2,
+        "tbsp",
+        ""
+      ]
+    ],
+    "steps": [
+      "Simmer the ribs or chicken with bacon, water, whole onion, bay leaves and allspice for 1 hour.",
+      "Lift out the meat and strain the broth. Add diced carrot, parsnip and celery root with sliced leek; simmer 20 minutes.",
+      "Rinse barley and add it with diced potatoes. Cook for about 30 minutes, until both are tender.",
+      "Debone and shred the meat, then return it to the soup. Add marjoram and seasoning and simmer 10 minutes more. Finish with chopped parsley."
+    ],
+    "sourceUrl": "https://polishfeast.com/polish-barley-soup/",
+    "yield": "8 servings"
+  },
+  {
+    "id": "polish-soup-rustic-sauerkraut-and-bacon-soup",
+    "category": "Polish Soups",
+    "section": "meals",
+    "title": "Rustic Sauerkraut and Bacon Soup",
+    "desc": "A warming pork-rib broth with potatoes, fermented cabbage and crisp bacon.",
+    "prep": "30 min",
+    "cook": "1 hr 40 min",
+    "ingredients": [
+      [
+        "Pork ribs",
+        500,
+        "g",
+        ""
+      ],
+      [
+        "Smoked bacon",
+        100,
+        "g",
+        ""
+      ],
+      [
+        "Sauerkraut",
+        400,
+        "g",
+        ""
+      ],
+      [
+        "Russet potatoes",
+        600,
+        "g",
+        ""
+      ],
+      [
+        "Water",
+        2000,
+        "ml",
+        ""
+      ],
+      [
+        "White onion",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Large carrot",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Parsley root",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Celery root, piece",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Parsley sprigs",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Salt",
+        1.5,
+        "tsp",
+        ""
+      ],
+      [
+        "Black pepper",
+        0.3333333333333333,
+        "tsp",
+        ""
+      ],
+      [
+        "Bay leaf",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Allspice berry",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Caraway seeds",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Dried marjoram",
+        1,
+        "tbsp",
+        ""
+      ],
+      [
+        "Clarified butter",
+        1,
+        "tbsp",
+        ""
+      ],
+      [
+        "Plain flour, optional",
+        1,
+        "tbsp",
+        ""
+      ],
+      [
+        "Sour cream, optional",
+        null,
+        "",
+        ""
+      ]
+    ],
+    "steps": [
+      "Cover ribs with cold water and salt. Simmer 40 minutes, skimming the surface.",
+      "Add cleaned onion, peeled carrot, parsley root, celery root, parsley sprigs, bay leaf and allspice. Simmer 30 minutes.",
+      "Add diced potatoes and cook for about 10 minutes, until tender. Rinse and chop sauerkraut, then add with caraway and marjoram; simmer 20 minutes.",
+      "Meanwhile, dice bacon and fry in clarified butter. Add the bacon to the soup. For a thicker broth, brown flour in the remaining fat, loosen with hot broth and stir into the soup.",
+      "Remove whole aromatics. Grate the cooked carrot and return it; debone the ribs. Season with pepper and salt as needed. Serve with optional sour cream."
+    ],
+    "sourceUrl": "https://polishfeast.com/polish-sauerkraut-soup/",
+    "yield": "6 servings"
+  },
+  {
+    "id": "polish-soup-smoky-split-pea-and-potato-pot",
+    "category": "Polish Soups",
+    "section": "meals",
+    "title": "Smoky Split Pea and Potato Pot",
+    "desc": "Split peas thicken a smoky sausage broth with potatoes and marjoram.",
+    "prep": "1 hr (includes soaking)",
+    "cook": "1 hr 15 min",
+    "ingredients": [
+      [
+        "Split peas",
+        2,
+        "cup",
+        ""
+      ],
+      [
+        "Smoked bacon",
+        227,
+        "g",
+        ""
+      ],
+      [
+        "Smoked sausage",
+        113,
+        "g",
+        ""
+      ],
+      [
+        "Large carrots",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Parsley root",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Celery root, piece",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Small leek",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Onion",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Oil",
+        2,
+        "tbsp",
+        ""
+      ],
+      [
+        "Garlic cloves",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Dried marjoram",
+        1,
+        "tbsp",
+        "",
+        2
+      ],
+      [
+        "Bay leaves",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Allspice berries",
+        5,
+        "pc",
+        ""
+      ],
+      [
+        "Black peppercorns",
+        5,
+        "pc",
+        ""
+      ],
+      [
+        "Russet potatoes",
+        454,
+        "g",
+        ""
+      ],
+      [
+        "Salt and pepper",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Plain flour, optional",
+        1,
+        "tbsp",
+        ""
+      ],
+      [
+        "Fresh parsley",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Water, for broth",
+        2000,
+        "ml",
+        ""
+      ],
+      [
+        "Extra water, for soaking and cooking peas",
+        null,
+        "",
+        ""
+      ]
+    ],
+    "steps": [
+      "Rinse peas, cover with cold water and soak for 1 hour. Drain and simmer in fresh water for 45–60 minutes until soft, salting near the end.",
+      "While peas cook, simmer bacon, sliced sausage, root vegetables, leek and whole spices in the measured broth water for 30 minutes.",
+      "Add diced potatoes and cook 15 minutes. Lift out the large root vegetables, leek and bacon, leaving potatoes in the broth.",
+      "Blend the cooked peas, keeping some whole if preferred, and stir into the broth. Chop bacon and return it.",
+      "Fry chopped onion in oil. Optionally stir in flour for 1 minute, then loosen with broth. Add to the soup with minced garlic and marjoram.",
+      "Simmer a few minutes, season and scatter with parsley."
+    ],
+    "sourceUrl": "https://polishfeast.com/split-pea-soup/",
+    "yield": "6 servings"
+  },
+  {
+    "id": "polish-soup-creamy-white-sausage-and-potato-soup",
+    "category": "Polish Soups",
+    "section": "meals",
+    "title": "Creamy White Sausage and Potato Soup",
+    "desc": "A mild, tangy white soup with sausage, potatoes and fresh herbs.",
+    "prep": "20 min",
+    "cook": "1 hr",
+    "ingredients": [
+      [
+        "Large potatoes",
+        4,
+        "pc",
+        "",
+        5
+      ],
+      [
+        "White sausage",
+        907,
+        "g",
+        ""
+      ],
+      [
+        "Large carrot",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Celery stalk, optional",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Bottled fermented white borscht soup base",
+        2,
+        "cup",
+        ""
+      ],
+      [
+        "Heavy cream",
+        0.3333333333333333,
+        "cup",
+        ""
+      ],
+      [
+        "Dried marjoram",
+        1,
+        "tbsp",
+        ""
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        ""
+      ],
+      [
+        "Black pepper",
+        0.5,
+        "tsp",
+        ""
+      ],
+      [
+        "Smoked bacon pieces, optional",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Garlic, optional",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Fresh parsley or dill",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Water, for sausage",
+        500,
+        "ml",
+        ""
+      ],
+      [
+        "Water, to cover potatoes",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Horseradish, optional",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Hard-boiled eggs and bread, to serve",
+        null,
+        "",
+        ""
+      ]
+    ],
+    "steps": [
+      "Peel and dice potatoes, cover with lightly salted water and simmer 10–15 minutes until nearly tender. Keep their cooking water.",
+      "In another pot, simmer the sausage in the measured water for 5 minutes. Lift out, remove casings if desired, slice and return to the pot.",
+      "Add grated carrot, optional sliced celery, potatoes and their water. Stir in bottled fermented white soup base and marjoram; simmer at least 5 minutes, until vegetables are tender and sausage is fully cooked.",
+      "Remove from heat and stir in cream. Taste before adding salt and pepper. Add garlic or horseradish if desired.",
+      "Serve with herbs, hard-boiled eggs and bread. If using optional bacon, fry it until cooked and crisp before adding as a topping."
+    ],
+    "sourceUrl": "https://polishfeast.com/polish-white-borscht/",
+    "yield": "5 servings"
+  }
+]

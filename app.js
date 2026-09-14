@@ -1,7 +1,7 @@
 /* ─── State ─── */
 let recipes = [];
 let seedRecipes = [];
-const RECIPE_VERSION = '26';
+const RECIPE_VERSION = '27';
 const LS = {
   recipes:   'quickrecipe.recipes.v1',
   favs:      'quickrecipe.favs.v1',
@@ -21,7 +21,7 @@ let listScrollTop = 0;
 const recipeSections = [
   { id: 'baking', label: 'Bread & baking', categories: ['Bread', 'Loaves', 'Rolls', 'Flatbreads', 'Pastries'] },
   { id: 'desserts', label: 'Cakes & desserts', categories: ['Cake', 'Cakes', 'Cheesecake', 'Cheesecakes', 'Skyr Cake', 'Meringue', 'Brownies', 'Cookies', 'Dessert', 'Desserts'] },
-  { id: 'meals', label: 'Meals', categories: ['Breakfast', 'Soups', 'Salads', 'Mains', 'Sides'] },
+  { id: 'meals', label: 'Meals', categories: ['Breakfast', 'Polish Soups', 'Soups', 'Salads', 'Mains', 'Sides'] },
   { id: 'sauces', label: 'Dressings & sauces', categories: ['Dressings', 'Sauce', 'Sauces', 'Dips'] },
 ];
 function sectionForRecipe(r) {
@@ -404,7 +404,7 @@ function renderChips() {
 
 /* ─── List ─── */
 function recipeTimingHtml(r) {
-  const timings = [['Prep', r.prep], ['Bake', r.bake], ['Rest', r.ferment]]
+  const timings = [['Prep', r.prep], ['Cook', r.cook], ['Bake', r.bake], ['Rest', r.ferment]]
     .filter(([, value]) => value && String(value).trim());
   return timings.length
     ? timings.map(([label, value]) => `<span class="stat timing-stat">${label} ${esc(value)}</span>`).join('')
@@ -781,6 +781,7 @@ function openModal(r = null) {
   set('fPrep',        r?.prep);
   set('fFerment',     r?.ferment);
   set('fBake',        r?.bake);
+  set('fCook',        r?.cook);
   set('fHydration',   r?.hydration);
   set('fIngredients', r?.ingredients?.map(i => i.join(' | ')).join('\n'));
   set('fSteps',       r?.steps?.join('\n'));
@@ -815,6 +816,7 @@ function saveRecipe() {
     prep:      document.getElementById('fPrep').value.trim(),
     ferment:   document.getElementById('fFerment').value.trim(),
     bake:      document.getElementById('fBake').value.trim(),
+    cook:      document.getElementById('fCook').value.trim(),
     hydration: Number(document.getElementById('fHydration').value) || 0,
     ingredients,
     steps,

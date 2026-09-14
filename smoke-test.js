@@ -76,7 +76,9 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   globalSearch.dispatchEvent(new dom.window.Event('input'));
   assert.equal(document.querySelector('[data-cat="Skyr Cake"]').getAttribute('aria-pressed'), 'true');
   document.querySelector('[data-browse="meals"]').click();
-  assert.equal(document.querySelectorAll('.card').length, 0);
+  assert.equal(document.querySelectorAll('.card').length, 10);
+  document.querySelector('[data-cat="Polish Soups"]').click();
+  assert.equal(document.querySelectorAll('.card').length, 10);
   document.querySelector('[data-browse="sauces"]').click();
   document.querySelector('[data-fav]').click();
   document.getElementById('favFilter').click();
@@ -89,7 +91,7 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   for (const card of document.querySelectorAll('.card')) {
     const recipe = JSON.parse(recipes).find(r => r.id === card.dataset.id);
     const chips = [...card.querySelectorAll('.timing-stat')].map(el => el.textContent);
-    const expected = [['Prep', recipe.prep], ['Bake', recipe.bake], ['Rest', recipe.ferment]]
+    const expected = [['Prep', recipe.prep], ['Cook', recipe.cook], ['Bake', recipe.bake], ['Rest', recipe.ferment]]
       .filter(([, value]) => value && String(value).trim()).map(([label, value]) => `${label} ${value}`);
     assert.deepEqual(chips, expected.length ? expected : ['Time not specified']);
   }
@@ -313,6 +315,38 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   const staged = brownies.find(r => r.id === 'brownie-golden-pecan-caramel-brownie-squares');
   assert.ok(staged.steps.some(step => step.includes('20 minutes')));
   assert.ok(staged.steps.some(step => step.includes('10–12 minutes')));
+
+  const soups = JSON.parse(recipes).filter(r => r.category === 'Polish Soups');
+  assert.equal(soups.length, 10);
+  assert.equal(new Set(soups.map(r => r.sourceUrl)).size, 10);
+  assert.equal(new Set(soups.map(r => r.title)).size, 10);
+  document.querySelector('[data-browse="meals"]').click();
+  document.querySelector('[data-cat="Polish Soups"]').click();
+  for (const recipe of soups) {
+    assert.equal(recipe.section, 'meals');
+    assert.ok(recipe.cook && recipe.prep);
+    const card = document.querySelector(`[data-id="${recipe.id}"]`);
+    assert.ok(card.textContent.includes(`Cook ${recipe.cook}`));
+    card.click();
+    assert.equal(document.querySelectorAll('.ingredient').length, recipe.ingredients.length);
+    assert.equal(document.querySelectorAll('.steps li').length, recipe.steps.length);
+    assert.ok(document.querySelector('.meta').textContent.includes(`Cook ${recipe.cook}`));
+    assert.ok(!/NaN|undefined/.test(document.getElementById('detail').textContent));
+    document.querySelector('[data-scale="2"]').click();
+    assert.equal(document.querySelector('.ingredient .amount').textContent,
+      dom.window.ingredientAmountText(recipe, recipe.ingredients[0]));
+  }
+  const soup = soups[0];
+  dom.window.openModal(soup);
+  assert.equal(document.getElementById('fCook').value, soup.cook);
+  // Save a separate minimal recipe to verify the new editor field round-trips.
+  dom.window.openModal();
+  document.getElementById('fTitle').value = 'Cooking time test';
+  document.getElementById('fIngredients').value = 'Water | 500 | ml';
+  document.getElementById('fSteps').value = 'Bring to a simmer.';
+  document.getElementById('fCook').value = '12 min';
+  dom.window.saveRecipe();
+  assert.ok(document.querySelector('.meta').textContent.includes('Cook 12 min'));
 
   // Failed category refreshes keep the complete previously saved collection.
   const stored = [JSON.parse(recipes).find(r => r.id.startsWith('gotteri-')), { ...JSON.parse(recipes)[0], id: 'my-custom-recipe', title: 'My custom recipe' }];
