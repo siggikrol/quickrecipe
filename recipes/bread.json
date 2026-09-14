@@ -760,36 +760,36 @@
     ]
   },
   {
-    "id": "rugbraud-amma-magga",
+    "id": "icelandic-rye-bread",
     "category": "Bread",
     "title": "Icelandic Rye Bread",
-    "desc": "Sweet rye bread. Original cup = 200 ml; flour and sugar measured by volume.",
+    "desc": "Traditional Icelandic sweet rye bread, slowly baked for 12 hours.",
     "yield": "1 large loaf",
     "bake": "12 hr",
     "tempC": 100,
     "ingredients": [
       [
         "Rye flour",
-        30,
-        "dl",
+        1500,
+        "g",
         "other"
       ],
       [
         "Plain flour",
-        6,
-        "dl",
+        300,
+        "g",
         "other"
       ],
       [
         "Sugar",
-        4,
-        "dl",
+        340,
+        "g",
         "sugar"
       ],
       [
         "Syrup",
-        2,
-        "dl",
+        200,
+        "ml",
         "sugar"
       ],
       [
@@ -817,6 +817,7 @@
       "Grease a large ovenproof dish with a lid. Add the dough and cover.",
       "Bake covered for 12 hours at 100°C.",
       "Serve with butter; freeze spare portions."
-    ]
+    ],
+    "compactMetricUnits": true
   }
 ]

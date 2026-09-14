@@ -236,7 +236,7 @@
     ]
   },
   {
-    "id": "gotteri-blaberja-ostakaka",
+    "id": "wild-blueberry-glazed-cheesecake",
     "category": "Cheesecake",
     "title": "Wild Blueberry Glazed Cheesecake",
     "desc": "Baked cheesecake with a digestive base, blueberry filling and set blueberry jelly topping.",
@@ -320,7 +320,7 @@
     ]
   },
   {
-    "id": "gotteri-vanillu-ostakaka-berjasosu",
+    "id": "vanilla-dream-with-warm-berry-sauce",
     "category": "Cheesecake",
     "title": "Vanilla Dream with Warm Berry Sauce",
     "desc": "No-bake vanilla cheesecake finished with a glossy warm mixed berry sauce.",
@@ -402,7 +402,7 @@
     ]
   },
   {
-    "id": "gotteri-berjabomba",
+    "id": "berry-explosion-cheesecake",
     "category": "Cheesecake",
     "title": "Berry Explosion Cheesecake",
     "desc": "No-bake vanilla cheesecake piled sky-high with fresh strawberries, raspberries, blueberries and redcurrants.",
@@ -490,7 +490,7 @@
     ]
   },
   {
-    "id": "gotteri-oreo-ostakaka-brownies",
+    "id": "oreo-cream-cheese-swirl-brownies",
     "category": "Cheesecake",
     "title": "Oreo Cream Cheese Swirl Brownies",
     "desc": "Fudgy dark chocolate brownies swirled with vanilla cream cheese and crushed Oreos.",
@@ -580,7 +580,7 @@
     ]
   },
   {
-    "id": "gotteri-gudddomleg-oreo-ostakaka",
+    "id": "triple-layer-oreo-cloud-cups",
     "category": "Cheesecake",
     "title": "Triple-Layer Oreo Cloud Cups",
     "desc": "Three-layer no-bake cheesecake in glasses — pure vanilla, dark chocolate and crushed Oreo.",
@@ -656,7 +656,7 @@
     ]
   },
   {
-    "id": "gotteri-toblerone-ostakaka",
+    "id": "toblerone-raspberry-swirl-cheesecake",
     "category": "Cheesecake",
     "title": "Toblerone & Raspberry Swirl Cheesecake",
     "desc": "No-bake Toblerone cheesecake with a vivid raspberry swirl on an Oreo base.",
@@ -738,7 +738,7 @@
     ]
   },
   {
-    "id": "gotteri-daim-ostakaka",
+    "id": "white-chocolate-daim-crunch-cheesecake",
     "category": "Cheesecake",
     "title": "White Chocolate & Daim Crunch Cheesecake",
     "desc": "No-bake white Toblerone cheesecake loaded with crushed Daim on a spiced Bastogne base.",
@@ -820,7 +820,7 @@
     ]
   },
   {
-    "id": "gotteri-biscoff-ostakaka",
+    "id": "lotus-biscoff-velvet-cheesecake",
     "category": "Cheesecake",
     "title": "Lotus Biscoff Velvet Cheesecake",
     "desc": "No-bake Biscoff cheesecake on a cinnamon biscuit base with a warm Biscoff drizzle.",
@@ -884,7 +884,7 @@
     ]
   },
   {
-    "id": "gotteri-jardarberja-ostakaka",
+    "id": "strawberry-dark-chocolate-cheesecake",
     "category": "Cheesecake",
     "title": "Strawberry & Dark Chocolate Cheesecake",
     "desc": "No-bake strawberry cheesecake on an Oreo base, crowned with whole berries and a dark chocolate drizzle.",
@@ -972,7 +972,7 @@
     ]
   },
   {
-    "id": "gotteri-lemon-curd-ostakaka",
+    "id": "lemon-curd-cheesecake-cups",
     "category": "Cheesecake",
     "title": "Lemon Curd Cheesecake Cups",
     "desc": "Light no-bake lemon curd cheesecake served in individual glasses on an oat biscuit crumb.",
@@ -1035,7 +1035,7 @@
     ]
   },
   {
-    "id": "gotteri-espresso-martini-ostakaka",
+    "id": "espresso-martini-cheesecake-glasses",
     "category": "Cheesecake",
     "title": "Espresso Martini Cheesecake Glasses",
     "desc": "No-bake espresso and dark chocolate cheesecake in glasses, finished with coffee beans.",
@@ -1110,7 +1110,7 @@
     ]
   },
   {
-    "id": "gotteri-pekanhnetu-ostakaka",
+    "id": "caramel-pecan-coffee-cheesecake",
     "category": "Cheesecake",
     "title": "Caramel Pecan & Coffee Cheesecake",
     "desc": "No-bake cheesecake set with coffee gelatin, topped with hand-caramelised pecans.",
@@ -1198,7 +1198,7 @@
     ]
   },
   {
-    "id": "gotteri-flamberud-ostakaka",
+    "id": "torched-meringue-dark-chocolate-cheesecake",
     "category": "Cheesecake",
     "title": "Torched Meringue Dark Chocolate Cheesecake",
     "desc": "Dark chocolate and liquorice cheesecake crowned with a blowtorch-toasted Italian meringue.",
@@ -1303,7 +1303,7 @@
     ]
   },
   {
-    "id": "gotteri-ostakaka-appelsinu",
+    "id": "white-chocolate-orange-cheesecake",
     "category": "Cheesecake",
     "title": "White Chocolate & Orange Cheesecake",
     "desc": "No-bake white Toblerone cheesecake with a fresh orange and vanilla gelatin set.",
@@ -1373,7 +1373,7 @@
     ]
   },
   {
-    "id": "gotteri-hatidleg-ostakaka",
+    "id": "celebration-white-chocolate-daim-cheesecake",
     "category": "Cheesecake",
     "title": "Celebration White Chocolate Daim Cheesecake",
     "desc": "Festive no-bake white Toblerone cheesecake studded with Daim bites — party perfect.",
@@ -1454,7 +1454,7 @@
     ]
   },
   {
-    "id": "gotteri-ostakokubomba",
+    "id": "brownie-black-cherry-meringue-bomb",
     "category": "Cheesecake",
     "title": "Brownie, Black Cherry & Meringue Bomb",
     "desc": "Fudgy brownie base topped with cherry-swirled cheesecake and a torched meringue crown.",
@@ -1579,7 +1579,7 @@
     ]
   },
   {
-    "id": "gotteri-rolo-ostakaka",
+    "id": "caramel-rolo-cheesecake",
     "category": "Cheesecake",
     "title": "Caramel Rolo Cheesecake",
     "desc": "No-bake vanilla cheesecake generously studded with halved Rolo caramel chocolates.",
@@ -1655,7 +1655,7 @@
     ]
   },
   {
-    "id": "gotteri-hatidarostakaka-glос",
+    "id": "dumle-caramel-cheesecake-glasses",
     "category": "Cheesecake",
     "title": "Dumle Caramel Cheesecake Glasses",
     "desc": "Light vanilla cheesecake cups with a silky Dumle caramel sauce and fresh berry garnish.",
@@ -1724,7 +1724,7 @@
     ]
   },
   {
-    "id": "gotteri-ostakaka-karamella-kanilkex",
+    "id": "cinnamon-brown-sugar-caramel-cheesecake-cups",
     "category": "Cheesecake",
     "title": "Cinnamon & Brown Sugar Caramel Cheesecake Cups",
     "desc": "Vanilla cheesecake glasses on a spiced biscuit crumb with a poured brown-sugar caramel.",
@@ -1787,7 +1787,7 @@
     ]
   },
   {
-    "id": "gotteri-hatidleg-hindberja-ostakaka",
+    "id": "white-chocolate-fresh-raspberry-cheesecake",
     "category": "Cheesecake",
     "title": "White Chocolate & Fresh Raspberry Cheesecake",
     "desc": "Elegant no-bake white Toblerone cheesecake with mashed and fresh raspberries throughout.",
@@ -1874,7 +1874,7 @@
     ]
   },
   {
-    "id": "gotteri-sernik",
+    "id": "polish-baked-curd-cheesecake",
     "category": "Cheesecake",
     "title": "Polish Baked Curd Cheesecake",
     "desc": "Traditional Sernik — baked with Twaróg curd cheese and finished with a grated cocoa-pastry crumble.",
@@ -1994,7 +1994,7 @@
     ]
   },
   {
-    "id": "gotteri-baron-ostakaka",
+    "id": "dark-caramel-ganache-cheesecake-cups",
     "category": "Cheesecake",
     "title": "Dark & Caramel Ganache Cheesecake Cups",
     "desc": "Vanilla cheesecake glasses on a cinnamon base, finished with a rich dark and caramel chocolate ganache.",
@@ -2069,7 +2069,7 @@
     ]
   },
   {
-    "id": "gotteri-jardaberja-ostakaka-sukkuladiskal",
+    "id": "strawberry-cheesecake-in-chocolate-bowls",
     "category": "Cheesecake",
     "title": "Strawberry Cheesecake in Chocolate Bowls",
     "desc": "Strawberry cheesecake mousse served in hand-made dark chocolate bowls — show-stopping party dessert.",

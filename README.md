@@ -12,7 +12,6 @@ The collection lives in `recipes/`, split by category:
 - `bread.json`
 - `cakes.json`
 - `cookies.json`
-- `gottimatinn-cookies.json`
 - `desserts.json`
 - `cheesecakes.json`
 - `dressings.json`
@@ -34,7 +33,7 @@ Use `prep`, `cook`, `bake`, and `ferment` for preparation, stovetop cooking, bak
 
 Keep the version in `app.js` (`RECIPE_VERSION`), `sw.js` (`VERSION`), and the stylesheet/script query versions (including `i18n.js`) in `index.html` aligned when releasing changes. The service worker reads the recipe index and caches every listed file; a failed download prevents the new offline cache from activating.
 
-Source mappings and import notes are kept in `imports/`. Source metadata is not displayed in the recipe text.
+Recipe data contains cooking content and app settings only. Do not add source URLs or provenance metadata to recipe objects.
 
 ## Languages
 

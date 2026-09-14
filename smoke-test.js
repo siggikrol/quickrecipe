@@ -58,24 +58,39 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
     throw new Error('Recipe detail pane missing');
   }
 
+  document.querySelector('[data-browse="baking"]').click();
+  document.querySelector('[data-cat="Bread"]').click();
+  document.querySelector('[data-id="icelandic-rye-bread"]').click();
+  assert.equal(document.querySelector('#detail .desc').textContent,
+    'Traditional Icelandic sweet rye bread, slowly baked for 12 hours.');
+  assert.deepEqual([...document.querySelectorAll('[data-scale]')].map(el => el.dataset.scale), ['0.5', '1', '2', '3']);
+  const ryeAmounts = [
+    ['0.5', ['750 g', '150 g', '170 g', '100 ml', '10 tsp', '0.5 tsp', '1 L']],
+    ['1', ['1.5 kg', '300 g', '340 g', '200 ml', '20 tsp', '1 tsp', '2 L']],
+    ['2', ['3 kg', '600 g', '680 g', '400 ml', '40 tsp', '2 tsp', '4 L']],
+    ['3', ['4.5 kg', '900 g', '1.02 kg', '600 ml', '60 tsp', '3 tsp', '6 L']],
+  ];
+  for (const [multiplier, amounts] of ryeAmounts) {
+    document.querySelector(`[data-scale="${multiplier}"]`).click();
+    assert.deepEqual([...document.querySelectorAll('.ingredient .amount')].map(el => el.textContent), amounts);
+  }
+  document.querySelector('[data-scale="1"]').click();
+  assert.equal(dom.window.amountText(1500, 'g'), '1500 g');
+  assert.equal(dom.window.amountText(2000, 'ml'), '2000 ml');
   document.querySelector('[data-browse="desserts"]').click();
   assert.deepEqual([...document.querySelectorAll('[data-cat]')].map(b => b.dataset.cat).sort(), ['All', 'Cake', 'Cheesecake', 'Dessert', 'Skyr Cake', 'Meringue', 'Brownies', 'Cookies'].sort());
   document.querySelector('[data-cat="Cookies"]').click();
   const cookieRecipes = JSON.parse(recipes).filter(r => r.category === 'Cookies');
   assert.equal(cookieRecipes.length, 88);
   assert.equal(document.querySelectorAll('.card').length, cookieRecipes.length);
-  const gottCookies = cookieRecipes.filter(r => r.id.startsWith('gottimatinn-'));
-  assert.equal(gottCookies.length, 49);
-  const gottById = new Map(gottCookies.map(r => [r.id, r]));
-  assert.equal(gottById.get('gottimatinn-29142').ingredients[0][1], 130);
-  assert.equal(gottById.get('gottimatinn-28193').ingredients[0][1], 130);
-  assert.equal(gottById.get('gottimatinn-23894').ingredients[0][1], 4);
-  assert.ok(gottCookies.every(r => r.ingredients.every(i => i[1] === null || (i[1] > 0 && i[1] < 10000))));
-  assert.ok(!gottById.has('gottimatinn-25603')); // Already imported from Gotteri.
-  assert.ok(!gottById.has('gottimatinn-328')); // Duplicate source with negative quantities.
-  assert.ok(gottById.has('gottimatinn-320-coffee') && gottById.has('gottimatinn-320-raspberry'));
+  const cookiesById = new Map(cookieRecipes.map(r => [r.id, r]));
+  assert.equal(cookiesById.get('chocolate-pistachio-biscotti').ingredients[0][1], 130);
+  assert.equal(cookiesById.get('spiced-white-chocolate-cookies').ingredients[0][1], 130);
+  assert.equal(cookiesById.get('classic-sarah-bernhardt-cookies').ingredients[0][1], 4);
+  assert.ok(cookieRecipes.every(r => r.ingredients.every(i => i[1] === null || (i[1] > 0 && i[1] < 10000))));
+  assert.ok(cookiesById.has('coffee-sarah-bernhardt-cookies') && cookiesById.has('raspberry-sarah-bernhardt-cookies'));
 
-  assert.ok(cookieRecipes.every(r => r.section === 'desserts' && r.sourceUrl));
+  assert.ok(cookieRecipes.every(r => r.section === 'desserts'));
   assert.ok(!cookieRecipes.some(r => /hreindyra|smakokur-a-nulleinni|oreo-jolahugmyndir|piparkokur-med-glassur/.test(r.id)));
   for (const recipe of cookieRecipes) {
     document.querySelector(`[data-id="${recipe.id}"]`).click();
@@ -278,7 +293,6 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   const imported = JSON.parse(recipes).filter(r => r.category === 'Meringue');
   assert.equal(imported.length, 32);
   assert.equal(new Set(imported.map(r => r.title)).size, 32);
-  assert.equal(new Set(imported.map(r => r.sourceUrl)).size, 32);
   document.querySelector('[data-browse="desserts"]').click();
   document.querySelector('[data-cat="Meringue"]').click();
   assert.equal(document.querySelectorAll('.card').length, 32);
@@ -297,7 +311,7 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
     assert.equal(document.querySelectorAll('.steps li').length, recipe.steps.length);
     const text = document.getElementById('detail').textContent;
     assert.ok(!/[ðþæöáéíóúýÐÞÆÖÁÉÍÓÚÝ]/.test(text), recipe.title);
-    assert.ok(!/NaN|undefined|gotteri|nóa|þrist/i.test(text));
+    assert.ok(!/NaN|undefined|nóa|þrist/i.test(text));
     document.querySelector('.ingredient-section').click();
     assert.equal(document.querySelector('.ingredient-section').getAttribute('aria-pressed'), 'true');
     assert.ok(document.querySelector('.steps li.dimmed'));
@@ -312,7 +326,6 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   const brownies = JSON.parse(recipes).filter(r => r.category === 'Brownies');
   assert.equal(brownies.length, 24);
   assert.equal(new Set(brownies.map(r => r.title)).size, 24);
-  assert.equal(new Set(brownies.map(r => r.sourceUrl)).size, 24);
   document.querySelector('[data-browse="desserts"]').click();
   document.querySelector('[data-cat="Brownies"]').click();
   assert.equal(document.querySelectorAll('.card').length, 24);
@@ -326,7 +339,7 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
     assert.equal(document.querySelectorAll('.ingredient').length, recipe.ingredients.length);
     assert.equal(document.querySelectorAll('.steps li').length, recipe.steps.length);
     const text = document.getElementById('detail').textContent;
-    assert.ok(!/[ðþæöáéíóúýÐÞÆÖÁÉÍÓÚÝ]|NaN|undefined|gotteri/i.test(text), recipe.title);
+    assert.ok(!/[ðþæöáéíóúýÐÞÆÖÁÉÍÓÚÝ]|NaN|undefined/i.test(text), recipe.title);
     document.querySelector('[data-scale="2"]').click();
     const numeric = recipe.ingredients.findIndex(i => Number.isFinite(i[1]));
     const doubled = document.querySelectorAll('.ingredient .amount')[numeric].textContent;
@@ -347,7 +360,6 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
 
   const soups = JSON.parse(recipes).filter(r => r.category === 'Polish Soups');
   assert.equal(soups.length, 10);
-  assert.equal(new Set(soups.map(r => r.sourceUrl)).size, 10);
   assert.equal(new Set(soups.map(r => r.title)).size, 10);
   document.querySelector('[data-browse="meals"]').click();
   document.querySelector('[data-cat="Polish Soups"]').click();
@@ -379,7 +391,6 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
 
   const polishBreads = JSON.parse(recipes).filter(r => r.category === 'Polish Breads');
   assert.equal(polishBreads.length, 11);
-  assert.equal(new Set(polishBreads.map(r => r.sourceUrl)).size, 11);
   document.querySelector('[data-browse="baking"]').click();
   document.querySelector('[data-cat="Polish Breads"]').click();
   assert.equal(document.querySelectorAll('.card').length, 11);
@@ -467,8 +478,38 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   assert.equal(document.querySelector('.pane h2').textContent, 'Ingredients');
   assert.equal(document.getElementById('languageNote').hidden, true);
 
+  // Renamed recipe IDs preserve favorites, selection and saved adjustments.
+  const currentRecipe = JSON.parse(recipes).find(r => r.category === 'Cheesecake');
+  const legacyRecipe = { ...currentRecipe, id: 'legacy-recipe-id', obsoleteMetadata: 'old value' };
+  const customRecipe = { ...currentRecipe, id: 'personal-recipe', title: 'My personal recipe' };
+  const migrated = new JSDOM(html, {
+    runScripts: 'dangerously', url: 'http://localhost/',
+    beforeParse(w) {
+      w.fetch = recipeResponse;
+      w.matchMedia = () => ({ matches: false, addEventListener() {} });
+      w.localStorage.setItem('quickrecipe.recipes.v1', JSON.stringify([legacyRecipe, currentRecipe, customRecipe]));
+      w.localStorage.setItem('quickrecipe.favs.v1', JSON.stringify([legacyRecipe.id]));
+      w.localStorage.setItem('quickrecipe.hydration.v1', JSON.stringify({ [legacyRecipe.id]: 75 }));
+      w.localStorage.setItem('quickrecipe.ui.v1', JSON.stringify({ selectedId: legacyRecipe.id, category: 'All' }));
+    },
+  });
+  const migrationScript = migrated.window.document.createElement('script');
+  migrationScript.textContent = appJs;
+  migrated.window.document.body.appendChild(migrationScript);
+  await wait();
+  const migratedStorage = migrated.window.localStorage;
+  const migratedRecipes = JSON.parse(migratedStorage.getItem('quickrecipe.recipes.v1'));
+  assert.equal(migratedRecipes.length, JSON.parse(recipes).length + 1);
+  assert.equal(migratedRecipes.filter(r => r.id === currentRecipe.id).length, 1);
+  assert.ok(!migratedRecipes.some(r => r.id === legacyRecipe.id || r.obsoleteMetadata));
+  assert.ok(migratedRecipes.some(r => r.id === customRecipe.id));
+  assert.deepEqual(JSON.parse(migratedStorage.getItem('quickrecipe.favs.v1')), [currentRecipe.id]);
+  assert.equal(JSON.parse(migratedStorage.getItem('quickrecipe.ui.v1')).selectedId, currentRecipe.id);
+  assert.deepEqual(JSON.parse(migratedStorage.getItem('quickrecipe.hydration.v1')), { [currentRecipe.id]: 75 });
+  migrated.window.close();
+
   // Failed category refreshes keep the complete previously saved collection.
-  const stored = [JSON.parse(recipes).find(r => r.id.startsWith('gotteri-')), { ...JSON.parse(recipes)[0], id: 'my-custom-recipe', title: 'My custom recipe' }];
+  const stored = [JSON.parse(recipes).find(r => r.category === 'Cheesecake'), { ...JSON.parse(recipes)[0], id: 'my-custom-recipe', title: 'My custom recipe' }];
   const failed = new JSDOM(html, {
     runScripts: 'dangerously', url: 'http://localhost/',
     beforeParse(w) {
