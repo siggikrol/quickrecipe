@@ -11,6 +11,8 @@ The collection lives in `recipes/`, split by category:
 
 - `bread.json`
 - `cakes.json`
+- `cookies.json`
+- `gottimatinn-cookies.json`
 - `desserts.json`
 - `cheesecakes.json`
 - `dressings.json`

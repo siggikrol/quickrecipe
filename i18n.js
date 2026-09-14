@@ -277,8 +277,8 @@ function translatedYield(value) {
 function unitLabel(unitName, amount) {
   if (language === 'en') return unitName;
   const units = {
-    pl: {pc:'szt.', tsp:'łyżeczki', tbsp:'łyżki', cup:'szkl.', sachet:'saszetki', handful:'garść', bunch:'pęczek', pinch:'szczypta', 'as needed':'według potrzeb'},
-    is: {pc:'stk.', tsp:'tsk.', tbsp:'msk.', cup:amount === 1 ? 'bolli' : 'bollar', sachet:'bréf', handful:'handfylli', bunch:'búnt', pinch:'klípa', 'as needed':'eftir þörfum'}
+    pl: {capful:amount === 1 ? 'nakrętka' : 'nakrętki', drops:'krople', pc:'szt.', tsp:'łyżeczki', tbsp:'łyżki', cup:'szkl.', sachet:'saszetki', handful:'garść', bunch:'pęczek', pinch:'szczypta', 'as needed':'według potrzeb'},
+    is: {capful:amount === 1 ? 'tappi' : 'tappar', drops:'dropar', pc:'stk.', tsp:'tsk.', tbsp:'msk.', cup:amount === 1 ? 'bolli' : 'bollar', sachet:'bréf', handful:'handfylli', bunch:'búnt', pinch:'klípa', 'as needed':'eftir þörfum'}
   };
   if (units[language][unitName]) return units[language][unitName];
   const pack = unitName.match(/^(.*?) \(size unspecified\)$/);

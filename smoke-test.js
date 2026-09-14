@@ -59,7 +59,34 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   }
 
   document.querySelector('[data-browse="desserts"]').click();
-  assert.deepEqual([...document.querySelectorAll('[data-cat]')].map(b => b.dataset.cat).sort(), ['All', 'Cake', 'Cheesecake', 'Dessert', 'Skyr Cake', 'Meringue', 'Brownies'].sort());
+  assert.deepEqual([...document.querySelectorAll('[data-cat]')].map(b => b.dataset.cat).sort(), ['All', 'Cake', 'Cheesecake', 'Dessert', 'Skyr Cake', 'Meringue', 'Brownies', 'Cookies'].sort());
+  document.querySelector('[data-cat="Cookies"]').click();
+  const cookieRecipes = JSON.parse(recipes).filter(r => r.category === 'Cookies');
+  assert.equal(cookieRecipes.length, 88);
+  assert.equal(document.querySelectorAll('.card').length, cookieRecipes.length);
+  const gottCookies = cookieRecipes.filter(r => r.id.startsWith('gottimatinn-'));
+  assert.equal(gottCookies.length, 49);
+  const gottById = new Map(gottCookies.map(r => [r.id, r]));
+  assert.equal(gottById.get('gottimatinn-29142').ingredients[0][1], 130);
+  assert.equal(gottById.get('gottimatinn-28193').ingredients[0][1], 130);
+  assert.equal(gottById.get('gottimatinn-23894').ingredients[0][1], 4);
+  assert.ok(gottCookies.every(r => r.ingredients.every(i => i[1] === null || (i[1] > 0 && i[1] < 10000))));
+  assert.ok(!gottById.has('gottimatinn-25603')); // Already imported from Gotteri.
+  assert.ok(!gottById.has('gottimatinn-328')); // Duplicate source with negative quantities.
+  assert.ok(gottById.has('gottimatinn-320-coffee') && gottById.has('gottimatinn-320-raspberry'));
+
+  assert.ok(cookieRecipes.every(r => r.section === 'desserts' && r.sourceUrl));
+  assert.ok(!cookieRecipes.some(r => /hreindyra|smakokur-a-nulleinni|oreo-jolahugmyndir|piparkokur-med-glassur/.test(r.id)));
+  for (const recipe of cookieRecipes) {
+    document.querySelector(`[data-id="${recipe.id}"]`).click();
+    assert.equal(document.querySelector('#detail h1').textContent, recipe.title);
+    assert.equal(document.querySelectorAll('.ingredient').length, recipe.ingredients.length);
+    assert.equal(document.querySelectorAll('.steps li').length, recipe.steps.length);
+    document.querySelector('[data-scale="2"]').click();
+    const firstAmount = document.querySelector('.ingredient .amount').textContent;
+    assert.equal(firstAmount, dom.window.amountText(recipe.ingredients[0][1], recipe.ingredients[0][2]));
+    document.querySelector('[data-scale="1"]').click();
+  }
   document.querySelector('[data-cat="Skyr Cake"]').click();
   assert.ok([...document.querySelectorAll('.card .tag')].every(el => el.textContent === 'Skyr Cake'));
   const list = document.getElementById('list');

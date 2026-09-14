@@ -758,5 +758,65 @@
       "Preheat the oven to 200°C and place an ovenproof dish filled with water on the oven floor to create steam for a nicely browned, crisp crust.",
       "Bake at 200°C for 50 minutes until deeply golden and sounding hollow when tapped on the bottom."
     ]
+  },
+  {
+    "id": "rugbraud-amma-magga",
+    "category": "Bread",
+    "title": "Icelandic Rye Bread",
+    "desc": "Sweet rye bread. Original cup = 200 ml; flour and sugar measured by volume.",
+    "yield": "1 large loaf",
+    "bake": "12 hr",
+    "tempC": 100,
+    "ingredients": [
+      [
+        "Rye flour",
+        30,
+        "dl",
+        "other"
+      ],
+      [
+        "Plain flour",
+        6,
+        "dl",
+        "other"
+      ],
+      [
+        "Sugar",
+        4,
+        "dl",
+        "sugar"
+      ],
+      [
+        "Syrup",
+        2,
+        "dl",
+        "sugar"
+      ],
+      [
+        "Baking powder",
+        20,
+        "tsp",
+        "leavener"
+      ],
+      [
+        "Salt",
+        1,
+        "tsp",
+        "salt"
+      ],
+      [
+        "Whole milk",
+        2000,
+        "ml",
+        "liquid"
+      ]
+    ],
+    "steps": [
+      "Preheat to 100°C fan.",
+      "Mix all ingredients thoroughly in a large bowl.",
+      "Grease a large ovenproof dish with a lid. Add the dough and cover.",
+      "Bake covered for 12 hours at 100°C.",
+      "Serve with butter; freeze spare portions."
+    ]
   }
 ]
