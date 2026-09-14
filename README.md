@@ -18,6 +18,7 @@ The collection lives in `recipes/`, split by category:
 - `meringue.json`
 - `brownies.json`
 - `polish-soups.json`
+- `polish-breads.json`
 
 `recipes/index.json` lists the files to load. Each file contains an array of recipe objects. Add recipes to the appropriate file; add new filenames to the index when introducing another file. IDs must be unique across the entire collection and should remain stable to preserve favourites and saved selections.
 

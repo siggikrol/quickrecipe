@@ -1,0 +1,930 @@
+[
+  {
+    "id": "polish-bread-golden-cheese-doughnut-rings",
+    "category": "Polish Breads",
+    "section": "baking",
+    "title": "Golden Cheese Doughnut Rings",
+    "desc": "Soft cheese doughnuts with a light sugar coating.",
+    "ingredients": [
+      [
+        "Farmer cheese or well-drained ricotta",
+        250,
+        "g",
+        ""
+      ],
+      [
+        "Granulated sugar",
+        70,
+        "g",
+        ""
+      ],
+      [
+        "Vanilla sugar",
+        1,
+        "tbsp",
+        ""
+      ],
+      [
+        "Large egg yolks",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Baking soda",
+        1.5,
+        "tsp",
+        ""
+      ],
+      [
+        "Sour cream",
+        80,
+        "g",
+        ""
+      ],
+      [
+        "Plain flour, plus extra for dusting",
+        250,
+        "g",
+        ""
+      ],
+      [
+        "Vodka, optional",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Vegetable oil, for frying",
+        500,
+        "ml",
+        ""
+      ],
+      [
+        "Icing sugar, for dusting",
+        null,
+        "",
+        ""
+      ]
+    ],
+    "steps": [
+      "Press cheese through a sieve. Beat with sugar, vanilla sugar and yolks. Mix baking soda into sour cream, then stir into the cheese with optional vodka.",
+      "Work in flour to make a soft dough. Knead gently for about a minute on a floured surface. Roll to 1.5 cm thick; cut 6–8 cm circles and remove their centres.",
+      "Heat frying oil to 180°C. Fry in small batches for about 1 minute per side until golden and cooked through. Drain on paper towels and dust with icing sugar."
+    ],
+    "sourceUrl": "https://polishfeast.com/polish-cheese-donuts-oponki/",
+    "prep": "30 min",
+    "yield": "24 rings",
+    "cook": "10 min (in batches)"
+  },
+  {
+    "id": "polish-bread-overnight-vanilla-braided-loaves",
+    "category": "Polish Breads",
+    "section": "baking",
+    "title": "Overnight Vanilla Braided Loaves",
+    "desc": "Butter-rich braided bread with a tender crumb and optional seeds.",
+    "ingredients": [
+      [
+        "Warm water",
+        1,
+        "cup",
+        ""
+      ],
+      [
+        "Active dry yeast",
+        2.25,
+        "tsp",
+        ""
+      ],
+      [
+        "Medium egg yolks",
+        5,
+        "pc",
+        ""
+      ],
+      [
+        "Melted butter",
+        0.3333333333333333,
+        "cup",
+        ""
+      ],
+      [
+        "White sugar",
+        5,
+        "tbsp",
+        ""
+      ],
+      [
+        "Vanilla sugar",
+        2,
+        "tsp",
+        ""
+      ],
+      [
+        "Plain flour",
+        3.75,
+        "cup",
+        ""
+      ],
+      [
+        "Salt",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Egg, for glaze",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Water, for glaze",
+        1,
+        "tbsp",
+        ""
+      ],
+      [
+        "Sesame or poppy seeds, optional",
+        null,
+        "",
+        ""
+      ]
+    ],
+    "steps": [
+      "Dissolve yeast in warm water. Whisk in yolks and both sugars, then mix in flour, butter and salt for 2 minutes. Rest 5 minutes and mix 4 minutes more.",
+      "Knead on a floured surface for 1–2 minutes until soft. Place in a lightly greased bowl, cover and refrigerate overnight.",
+      "Divide into loaf portions, then split each into five ropes about 25 cm long. Pinch their tops together. Numbering strands left to right each time, cross strand 1 over 3, then 2 over 3, then 5 over 2; repeat and seal the ends.",
+      "Place on a lined tray. Beat egg with glaze water and brush over loaves. Proof 1 hour, brush again and add optional seeds. Proof another 30–60 minutes.",
+      "Bake at 175°C for 30–40 minutes until browned and hollow-sounding underneath. Cool on a rack."
+    ],
+    "sourceUrl": "https://polishfeast.com/polish-braided-bread-chalka/",
+    "prep": "1 hr",
+    "yield": "2 loaves",
+    "bake": "30–40 min",
+    "ferment": "Overnight + 1½–2 hr proofing",
+    "tempC": 175
+  },
+  {
+    "id": "polish-bread-caraway-hearth-rye-loaf",
+    "category": "Polish Breads",
+    "section": "baking",
+    "title": "Caraway Hearth Rye Loaf",
+    "desc": "A crusty rye and wheat loaf made with an established active starter.",
+    "ingredients": [
+      [
+        "Active rye sourdough starter",
+        200,
+        "g",
+        ""
+      ],
+      [
+        "Lukewarm water",
+        380,
+        "ml",
+        ""
+      ],
+      [
+        "Bread flour",
+        450,
+        "g",
+        ""
+      ],
+      [
+        "Whole rye flour",
+        150,
+        "g",
+        ""
+      ],
+      [
+        "Salt",
+        12,
+        "g",
+        ""
+      ],
+      [
+        "Caraway seeds, optional",
+        1,
+        "tsp",
+        "",
+        1.5
+      ]
+    ],
+    "steps": [
+      "Mix active starter with water and both flours until fully moistened. Cover and rest for 1 hour. This recipe starts with an established, bubbly rye starter.",
+      "Add salt and optional caraway. Stretch and fold gently for 10–15 minutes. Cover and ferment for 3–5 hours, until airy and roughly one-third to one-half larger.",
+      "Shape into a loaf and place seam-up in a floured proofing basket. Proof at room temperature for 1–2 hours, or refrigerate 6–10 hours and then stand out for 30–60 minutes.",
+      "Heat the oven and a lidded Dutch oven to 240°C. Turn the dough onto parchment, score and transfer carefully to the hot pot. Bake covered for 30 minutes and uncovered for 20 minutes.",
+      "The loaf should be deeply browned, with an internal temperature of 96–98°C. Cool on a rack for at least 2 hours before slicing."
+    ],
+    "sourceUrl": "https://polishfeast.com/polish-sourdough-rye-bread/",
+    "prep": "15 min",
+    "yield": "1 loaf",
+    "bake": "50 min",
+    "ferment": "5–8 hr; overnight option + 2 hr cooling",
+    "tempC": 240
+  },
+  {
+    "id": "polish-bread-onion-and-poppy-seed-flatbreads",
+    "category": "Polish Breads",
+    "section": "baking",
+    "title": "Onion and Poppy Seed Flatbreads",
+    "desc": "Soft flatbreads topped with golden onions and poppy seeds.",
+    "ingredients": [
+      [
+        "Plain flour",
+        3,
+        "cup",
+        ""
+      ],
+      [
+        "Active dry yeast",
+        7,
+        "g",
+        ""
+      ],
+      [
+        "Sugar",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Salt",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Lukewarm water",
+        1,
+        "cup",
+        ""
+      ],
+      [
+        "Vegetable oil, for dough",
+        2,
+        "tbsp",
+        ""
+      ],
+      [
+        "Large onions",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Poppy seeds",
+        2,
+        "tbsp",
+        ""
+      ],
+      [
+        "Salt and pepper, for topping",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Vegetable oil, for onions",
+        2,
+        "tbsp",
+        ""
+      ]
+    ],
+    "steps": [
+      "Combine flour, yeast, sugar and salt. Add water and dough oil, mix and knead for about 10 minutes until elastic. Cover in a greased bowl and rise for about 1 hour, until doubled.",
+      "Meanwhile, finely chop onions and cook slowly in the topping oil for 15–20 minutes until golden. Season.",
+      "Divide dough into flatbread portions and flatten to about 6 mm thick on a lined tray. Spread with onions and scatter with poppy seeds.",
+      "Bake at 200°C for 15–20 minutes until the edges are golden and the centres cooked. Cool briefly before serving."
+    ],
+    "sourceUrl": "https://polishfeast.com/cebularz-onion-flatbread/",
+    "prep": "20 min",
+    "yield": "8 flatbreads",
+    "bake": "15–20 min",
+    "cook": "15–20 min (during rise)",
+    "ferment": "1 hr",
+    "tempC": 200
+  },
+  {
+    "id": "polish-bread-soft-mash-potato-loaf",
+    "category": "Polish Breads",
+    "section": "baking",
+    "title": "Soft Mash Potato Loaf",
+    "desc": "Mashed potato keeps this everyday loaf moist and tender.",
+    "ingredients": [
+      [
+        "Russet potatoes, peeled",
+        454,
+        "g",
+        ""
+      ],
+      [
+        "Warm water",
+        1,
+        "cup",
+        ""
+      ],
+      [
+        "Active dry yeast",
+        2,
+        "tsp",
+        ""
+      ],
+      [
+        "Sugar",
+        1,
+        "tbsp",
+        ""
+      ],
+      [
+        "Plain flour",
+        4,
+        "cup",
+        ""
+      ],
+      [
+        "Salt",
+        1.5,
+        "tsp",
+        ""
+      ],
+      [
+        "Olive oil",
+        2,
+        "tbsp",
+        ""
+      ],
+      [
+        "Water and salt, for boiling potatoes",
+        null,
+        "",
+        ""
+      ]
+    ],
+    "steps": [
+      "Cube potatoes and boil in salted water until tender. Drain, mash smoothly and cool until lukewarm.",
+      "Combine warm water, yeast and sugar; leave 5–10 minutes until foamy. Mix with mash, flour, salt and oil. Knead about 10 minutes until elastic.",
+      "Cover in a greased bowl and rise for 1–1½ hours until doubled. Deflate, shape into a loaf and place in a greased loaf tin. Proof another 30–45 minutes.",
+      "Bake at 190°C for 35–40 minutes until golden and hollow-sounding underneath. Cool on a rack."
+    ],
+    "sourceUrl": "https://polishfeast.com/polish-potato-bread/",
+    "prep": "20 min",
+    "yield": "1 loaf",
+    "bake": "35–40 min",
+    "ferment": "1½–2¼ hr + cooling",
+    "tempC": 190
+  },
+  {
+    "id": "polish-bread-quick-buttermilk-griddle-rounds",
+    "category": "Polish Breads",
+    "section": "baking",
+    "title": "Quick Buttermilk Griddle Rounds",
+    "desc": "Small soda breads cooked in a pan, with no yeast or proofing.",
+    "ingredients": [
+      [
+        "Plain flour",
+        2,
+        "cup",
+        ""
+      ],
+      [
+        "Buttermilk or kefir",
+        1,
+        "cup",
+        ""
+      ],
+      [
+        "Baking soda",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        ""
+      ],
+      [
+        "Butter or oil, for pan",
+        null,
+        "",
+        ""
+      ]
+    ],
+    "steps": [
+      "Mix flour, soda and salt. Gradually stir in buttermilk to form a soft dough. Knead gently on a floured surface for 1–2 minutes.",
+      "Roll to about 1.3 cm thick and cut into rounds. Lightly grease a pan and heat over medium heat.",
+      "Cook rounds for 2–3 minutes per side until golden and cooked in the centre. Serve warm. Alternatively bake at 190°C for 10–12 minutes."
+    ],
+    "sourceUrl": "https://polishfeast.com/polish-proziaki/",
+    "prep": "5 min",
+    "yield": "8 servings",
+    "cook": "4–6 min per batch"
+  },
+  {
+    "id": "polish-bread-cabbage-and-mushroom-pastry-bites",
+    "category": "Polish Breads",
+    "section": "baking",
+    "title": "Cabbage and Mushroom Pastry Bites",
+    "desc": "Small yeast pastries filled with sauerkraut and mushrooms.",
+    "ingredients": [
+      [
+        "Sauerkraut, rinsed and drained",
+        3,
+        "cup",
+        ""
+      ],
+      [
+        "Mushrooms, rehydrated and chopped",
+        1.5,
+        "cup",
+        ""
+      ],
+      [
+        "Large onion",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Oil",
+        2,
+        "tbsp",
+        ""
+      ],
+      [
+        "Bay leaves",
+        3,
+        "pc",
+        ""
+      ],
+      [
+        "Allspice berries",
+        3,
+        "pc",
+        ""
+      ],
+      [
+        "Sugar, for filling",
+        0.5,
+        "tsp",
+        ""
+      ],
+      [
+        "Salt and pepper",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Plain flour, including yeast mixture",
+        4.5,
+        "cup",
+        ""
+      ],
+      [
+        "Warm milk, including yeast mixture",
+        1.5,
+        "cup",
+        ""
+      ],
+      [
+        "Eggs",
+        3,
+        "pc",
+        ""
+      ],
+      [
+        "Butter",
+        0.25,
+        "cup",
+        ""
+      ],
+      [
+        "Fresh yeast",
+        25,
+        "g",
+        ""
+      ],
+      [
+        "Sugar, for yeast",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Salt, for dough",
+        0.5,
+        "tsp",
+        ""
+      ],
+      [
+        "Egg yolk, for glaze",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Milk, for glaze",
+        2,
+        "tbsp",
+        ""
+      ],
+      [
+        "Sesame seeds, optional",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Mushroom soaking liquid, strained",
+        1,
+        "cup",
+        ""
+      ]
+    ],
+    "steps": [
+      "If starting with dried mushrooms, soak overnight in the fridge, drain and chop; measure after soaking. Reserve the strained soaking liquid.",
+      "Use one-third of the dough milk and a little of the measured flour to activate yeast with its sugar for 15 minutes. Add remaining dough ingredients and knead 10 minutes. Cover and rise 1 hour.",
+      "Simmer sauerkraut with measured mushroom liquid, bay, allspice and filling sugar for 1 hour; drain and discard whole spices. Fry chopped onion in oil until golden, add mushrooms for 5 minutes, then cabbage for 15–20 minutes until fairly dry. Season and cool.",
+      "Roll dough into a rectangle about 30 × 48 cm for the base batch and cut into four strips. Put filling along each centre, seal into logs and cut into bite-sized rolls.",
+      "Place seam-down on a lined tray. Proof 20 minutes. Brush with yolk mixed with glaze milk, add optional sesame and bake at 180°C for 25–30 minutes."
+    ],
+    "sourceUrl": "https://polishfeast.com/sauerkraut-and-mushroom-pies/",
+    "prep": "30 min",
+    "yield": "40 rolls",
+    "bake": "25–30 min",
+    "cook": "1 hr 20–25 min + onions",
+    "ferment": "1 hr 35 min; overnight mushroom soak if needed",
+    "tempC": 180
+  },
+  {
+    "id": "polish-bread-pillowy-milk-steamed-buns",
+    "category": "Polish Breads",
+    "section": "baking",
+    "title": "Pillowy Milk Steamed Buns",
+    "desc": "Soft enriched buns steamed until light and fluffy.",
+    "ingredients": [
+      [
+        "Fresh yeast",
+        35,
+        "g",
+        ""
+      ],
+      [
+        "White sugar",
+        2,
+        "tbsp",
+        ""
+      ],
+      [
+        "Plain flour, for yeast mixture",
+        2,
+        "tbsp",
+        ""
+      ],
+      [
+        "Warm milk, for yeast mixture",
+        0.5,
+        "cup",
+        ""
+      ],
+      [
+        "Plain flour, for dough",
+        4,
+        "cup",
+        ""
+      ],
+      [
+        "Eggs",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Melted butter",
+        3,
+        "tbsp",
+        ""
+      ],
+      [
+        "Warm milk, for dough",
+        0.5,
+        "cup",
+        ""
+      ],
+      [
+        "Salt",
+        1,
+        "pinch",
+        ""
+      ],
+      [
+        "Water, for steamer",
+        null,
+        "",
+        ""
+      ]
+    ],
+    "steps": [
+      "Stir yeast, sugar, yeast-mixture flour and its milk together. Cover and leave 15–20 minutes until bubbly.",
+      "Add the remaining flour, milk, eggs, butter and salt. Knead for 5–7 minutes until smooth and elastic. Cover in a greased bowl and rise about 1 hour until doubled.",
+      "Divide into bun portions and shape into balls. Cover on a floured surface and proof for 15 minutes.",
+      "Bring steamer water to a boil. Arrange buns with room to expand above the water, cover and steam for about 15 minutes until cooked through. Work in batches as needed."
+    ],
+    "sourceUrl": "https://polishfeast.com/pampuchy-polish-steamed-buns/",
+    "prep": "15 min",
+    "yield": "14 buns",
+    "cook": "15 min per batch",
+    "ferment": "1½ hr"
+  },
+  {
+    "id": "polish-bread-orange-orchard-fruit-loaf",
+    "category": "Polish Breads",
+    "section": "baking",
+    "title": "Orange Orchard Fruit Loaf",
+    "desc": "A butter cake with dried fruit, almonds and a citrus glaze.",
+    "ingredients": [
+      [
+        "Unsalted butter",
+        200,
+        "g",
+        ""
+      ],
+      [
+        "Icing sugar, for cake",
+        120,
+        "g",
+        ""
+      ],
+      [
+        "Large eggs, separated",
+        4,
+        "pc",
+        ""
+      ],
+      [
+        "Salt",
+        1,
+        "pinch",
+        ""
+      ],
+      [
+        "Plain flour",
+        300,
+        "g",
+        ""
+      ],
+      [
+        "Vanilla sugar",
+        3,
+        "tbsp",
+        ""
+      ],
+      [
+        "Baking powder",
+        2,
+        "tsp",
+        ""
+      ],
+      [
+        "Raisins",
+        0.25,
+        "cup",
+        ""
+      ],
+      [
+        "Dried cranberries or figs",
+        0.25,
+        "cup",
+        ""
+      ],
+      [
+        "Dried apricots",
+        0.25,
+        "cup",
+        ""
+      ],
+      [
+        "Dates",
+        0.25,
+        "cup",
+        ""
+      ],
+      [
+        "Blanched almonds",
+        0.25,
+        "cup",
+        ""
+      ],
+      [
+        "Candied orange peel",
+        0.25,
+        "cup",
+        ""
+      ],
+      [
+        "Orange, zest only",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Milk",
+        5,
+        "tbsp",
+        ""
+      ],
+      [
+        "Orange or lemon juice",
+        2,
+        "tbsp",
+        ""
+      ],
+      [
+        "Icing sugar, for glaze",
+        0.6666666666666666,
+        "cup",
+        ""
+      ]
+    ],
+    "steps": [
+      "Heat oven to 190°C and line an 11 × 25 cm loaf tin. Finely chop dried fruit and almonds.",
+      "Beat butter and cake icing sugar until fluffy, about 7 minutes. Beat in yolks one at a time until pale. Separately whisk whites and salt to stiff peaks.",
+      "Combine flour, vanilla sugar, baking powder, fruit, nuts and zest. Fold into the butter mixture alternately with milk, then gently fold in whites in three additions.",
+      "Fill the tin and bake 40–45 minutes, until a skewer comes out clean. Cool slightly.",
+      "Warm the citrus juice, remove from heat and whisk in glaze sugar. Drizzle over the loaf."
+    ],
+    "sourceUrl": "https://polishfeast.com/polish-christmas-fruit-cake/",
+    "prep": "30 min",
+    "yield": "10 servings",
+    "bake": "40–45 min",
+    "ferment": "Cool before glazing",
+    "tempC": 190
+  },
+  {
+    "id": "polish-bread-seeded-twisted-bread-rings",
+    "category": "Polish Breads",
+    "section": "baking",
+    "title": "Seeded Twisted Bread Rings",
+    "desc": "Chewy bread rings briefly boiled before baking with a seed topping.",
+    "ingredients": [
+      [
+        "Warm water",
+        0.5,
+        "cup",
+        ""
+      ],
+      [
+        "Whole milk",
+        0.5,
+        "cup",
+        ""
+      ],
+      [
+        "Active dry yeast",
+        2.25,
+        "tsp",
+        ""
+      ],
+      [
+        "White sugar",
+        1,
+        "pinch",
+        ""
+      ],
+      [
+        "Bread flour",
+        4,
+        "cup",
+        ""
+      ],
+      [
+        "Salt, for dough",
+        2,
+        "tsp",
+        ""
+      ],
+      [
+        "Soft unsalted butter",
+        0.5,
+        "cup",
+        ""
+      ],
+      [
+        "Sesame and poppy seeds",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Large egg",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Salt, for boiling water",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Water, for boiling",
+        null,
+        "",
+        ""
+      ]
+    ],
+    "steps": [
+      "Mix warm water, milk, sugar and yeast. Leave about 20 minutes until frothy. Add flour, dough salt and butter; knead until smooth.",
+      "Cover and rest 15–25 minutes. Divide into ring portions. Roll each into a rope about 20 cm long, twist and firmly join the ends.",
+      "Bring a wide pot of water to a boil with the boiling salt. Simmer rings in batches for 1 minute, then lift onto lined trays.",
+      "Brush with beaten egg and scatter with seeds. Bake at 200°C for about 20 minutes until risen and golden."
+    ],
+    "sourceUrl": "https://polishfeast.com/polish-bagel-obwarzanek/",
+    "prep": "1 hr",
+    "yield": "16 rings",
+    "bake": "20 min",
+    "cook": "1 min per batch",
+    "ferment": "35–45 min",
+    "tempC": 200
+  },
+  {
+    "id": "polish-bread-golden-mushroom-baguette-melts",
+    "category": "Polish Breads",
+    "section": "baking",
+    "title": "Golden Mushroom Baguette Melts",
+    "desc": "Toasted baguette loaded with mushrooms, melted cheese and herbs.",
+    "ingredients": [
+      [
+        "Long baguette",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Mushrooms",
+        397,
+        "g",
+        ""
+      ],
+      [
+        "Large onion",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Butter",
+        4,
+        "tbsp",
+        ""
+      ],
+      [
+        "Gouda cheese",
+        227,
+        "g",
+        ""
+      ],
+      [
+        "Salt and pepper",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Ketchup",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Fresh parsley or chives",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Crispy fried onions, optional",
+        null,
+        "",
+        ""
+      ]
+    ],
+    "steps": [
+      "Heat oven to 200°C. Cut the baguette crosswise, then split each piece lengthwise to make open-faced portions.",
+      "Finely chop onion and mushrooms. Soften onion in half the butter for about 5 minutes. Add mushrooms and more butter as needed; cook about 5 minutes until their moisture evaporates. Season.",
+      "Top bread with the mushroom mixture and grated cheese. Bake for 7–10 minutes until bubbling and lightly browned.",
+      "Finish with ketchup, chopped herbs and optional crispy onions. Serve hot."
+    ],
+    "sourceUrl": "https://polishfeast.com/zapiekanka-open-faced-sandwich/",
+    "prep": "10 min",
+    "yield": "4 servings",
+    "bake": "7–10 min",
+    "cook": "10 min",
+    "tempC": 200
+  }
+]

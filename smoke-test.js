@@ -348,6 +348,29 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   dom.window.saveRecipe();
   assert.ok(document.querySelector('.meta').textContent.includes('Cook 12 min'));
 
+  const polishBreads = JSON.parse(recipes).filter(r => r.category === 'Polish Breads');
+  assert.equal(polishBreads.length, 11);
+  assert.equal(new Set(polishBreads.map(r => r.sourceUrl)).size, 11);
+  document.querySelector('[data-browse="baking"]').click();
+  document.querySelector('[data-cat="Polish Breads"]').click();
+  assert.equal(document.querySelectorAll('.card').length, 11);
+  for (const recipe of polishBreads) {
+    assert.equal(recipe.section, 'baking');
+    assert.ok(recipe.prep && (recipe.bake || recipe.cook));
+    document.querySelector(`[data-id="${recipe.id}"]`).click();
+    assert.equal(document.querySelectorAll('.ingredient').length, recipe.ingredients.length);
+    assert.equal(document.querySelectorAll('.steps li').length, recipe.steps.length);
+    assert.ok(!/NaN|undefined/.test(document.getElementById('detail').textContent));
+    document.querySelector('[data-scale="2"]').click();
+    assert.equal(document.querySelector('.ingredient .amount').textContent,
+      dom.window.ingredientAmountText(recipe, recipe.ingredients[0]));
+  }
+  const rye = polishBreads.find(r => r.title === 'Caraway Hearth Rye Loaf');
+  assert.equal(rye.ingredients.filter(i => i[0] === 'Active rye sourdough starter').length, 1);
+  assert.ok(rye.ferment.includes('5–8 hr'));
+  assert.equal(polishBreads.find(r => r.title === 'Seeded Twisted Bread Rings').yield, '16 rings');
+  assert.equal(polishBreads.find(r => r.title === 'Cabbage and Mushroom Pastry Bites').yield, '40 rolls');
+
   // Failed category refreshes keep the complete previously saved collection.
   const stored = [JSON.parse(recipes).find(r => r.id.startsWith('gotteri-')), { ...JSON.parse(recipes)[0], id: 'my-custom-recipe', title: 'My custom recipe' }];
   const failed = new JSDOM(html, {

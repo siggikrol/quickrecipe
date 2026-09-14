@@ -1,7 +1,7 @@
 /* ─── State ─── */
 let recipes = [];
 let seedRecipes = [];
-const RECIPE_VERSION = '27';
+const RECIPE_VERSION = '28';
 const LS = {
   recipes:   'quickrecipe.recipes.v1',
   favs:      'quickrecipe.favs.v1',
@@ -19,7 +19,7 @@ let category       = 'All';
 let recipeSection = 'All';
 let listScrollTop = 0;
 const recipeSections = [
-  { id: 'baking', label: 'Bread & baking', categories: ['Bread', 'Loaves', 'Rolls', 'Flatbreads', 'Pastries'] },
+  { id: 'baking', label: 'Bread & baking', categories: ['Bread', 'Polish Breads', 'Loaves', 'Rolls', 'Flatbreads', 'Pastries'] },
   { id: 'desserts', label: 'Cakes & desserts', categories: ['Cake', 'Cakes', 'Cheesecake', 'Cheesecakes', 'Skyr Cake', 'Meringue', 'Brownies', 'Cookies', 'Dessert', 'Desserts'] },
   { id: 'meals', label: 'Meals', categories: ['Breakfast', 'Polish Soups', 'Soups', 'Salads', 'Mains', 'Sides'] },
   { id: 'sauces', label: 'Dressings & sauces', categories: ['Dressings', 'Sauce', 'Sauces', 'Dips'] },
