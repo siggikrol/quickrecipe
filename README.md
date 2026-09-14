@@ -43,3 +43,9 @@ The header offers compact EN / PL / IS buttons for English (default), Polish and
 When adding or editing recipe text, add the new English strings to both dictionaries. Missing entries fall back to the original text and the list shows a brief notice. Editing still uses the original stored recipe, so changing language never rewrites your recipes or favourites. No translation service is contacted by the app.
 
 Run `node translation-test.js` to check full collection coverage, unchanged numbers and unique translated titles. These checks supplement culinary-language review; they do not assess every aspect of translation quality.
+
+## Shopping lists
+
+Use Create shopping list beside the portion controls, select ingredients, then View list. Lists contain ingredient names and optional shopping amounts (such as “2 bags”), independently of recipe scaling. Identical ingredient names appear once. Shopping lists in the header reopens saved lists; each list keeps its recipe title, shopping amounts and purchased checkmarks on this device in `quickrecipe.shopping.v1`. Editing selection uses a draft until View list is pressed.
+
+Copy exports a plain-text checklist. Share opens the device share menu when supported; otherwise selectable text is provided for copying. Cancelling the device share menu leaves the list intact. Lists and controls use the selected language; shopping amounts remain exactly as entered. `shopping.js` is included in the offline cache.

@@ -761,3 +761,25 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 @media (max-width: 860px) { .top-actions { flex-wrap: wrap; } }
 
 @media (max-width: 860px) { .reading-recipe .language-note { display: none; } }
+
+/* Shopping lists */
+.shopping-start { margin-left:auto; }
+.shopping-dialog { color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);padding:24px;width:min(640px,calc(100% - 32px));max-height:90dvh;overflow:auto; }
+.shopping-dialog::backdrop {background:rgba(0,0,0,.55);}
+.shopping-heading {display:flex;align-items:center;justify-content:space-between;gap:12px;}
+.shopping-heading h2 {margin:0;font-family:'Lora',serif;}
+.shopping-content h3 {margin:20px 0;overflow-wrap:anywhere;}
+.shopping-row {display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:14px 0;border-bottom:1px solid var(--line);}
+.shopping-item-name,.shopping-select-name {display:flex;align-items:center;gap:12px;min-height:44px;flex:1;cursor:pointer;}
+.shopping-item-name {flex:1 1 180px;}
+.shopping-amount {display:grid;gap:6px;flex:0 1 210px;min-width:0;font-size:12px;}
+.shopping-amount input,.shopping-export {width:100%;min-width:0;box-sizing:border-box;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:10px;font:inherit;font-size:16px;}
+.shopping-amount input {min-height:44px;}
+.shopping-export {min-height:180px;}
+.shopping-row input[type=checkbox],.shopping-select-name input {width:20px;height:20px;flex-shrink:0;accent-color:var(--accent);}
+.shopping-footer {display:flex;gap:8px;flex-wrap:wrap;margin-top:24px;}
+.shopping-list-link {display:block;width:100%;text-align:left;margin-top:12px;white-space:normal;}
+.shopping-selection {padding:12px 0;}
+.shopping-selection p {margin:0 0 12px;}
+.shopping-item-name .bought {text-decoration:line-through;color:var(--muted);}
+@media(max-width:860px) { .shopping-dialog {width:100%;max-width:100%;height:100dvh;max-height:100dvh;margin:0;border:0;border-radius:0;padding:20px;padding-bottom:max(20px,env(safe-area-inset-bottom));} }

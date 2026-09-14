@@ -1,7 +1,7 @@
 /* ─── State ─── */
 let recipes = [];
 let seedRecipes = [];
-const RECIPE_VERSION = '31';
+const RECIPE_VERSION = '33';
 const LS = {
   recipes:   'quickrecipe.recipes.v1',
   favs:      'quickrecipe.favs.v1',
@@ -533,7 +533,7 @@ function initRecipeGestures() {
   detail.addEventListener('touchstart', e => {
     swipe = null;
     if (!isReading() || e.touches.length !== 1 ||
-        e.target.closest('button, input, select, textarea, a, [contenteditable]') ||
+        e.target.closest('button, input, label, select, textarea, a, [contenteditable]') ||
         window.getSelection()?.toString()) return;
     const touch = e.touches[0];
     swipe = { id: touch.identifier, x: touch.clientX, y: touch.clientY, started: performance.now(), horizontal: false };
@@ -679,6 +679,8 @@ function renderDetail() {
       ${r.tempC  ? `<span class="stat">${temp}</span>`               : ''}
       ${r.yield  ? `<span class="stat" id="recipeYield">${esc(translatedYield(r.yield))}</span>` : ''}
     </div>`;
+
+  shopping.decorate(r);
 
   /* Scale */
   document.querySelectorAll('[data-scale]').forEach(b => {
@@ -901,6 +903,7 @@ async function init() {
   document.getElementById('deleteBtn').onclick      = deleteRecipe;
   document.getElementById('backBtn')?.addEventListener('click', closeDetailPanel);
   initRecipeGestures();
+  document.getElementById('shoppingListsBtn').onclick = shopping.all;
   document.getElementById('modalBackdrop').onclick  = e => { if (e.target.id === 'modalBackdrop') closeModal(); };
   document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
   document.addEventListener('visibilitychange', () => {
