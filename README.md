@@ -3,7 +3,7 @@
 Personal recipe browser with search, category filters, scaling and offline support.
 
 Run locally with `python3 -m http.server 8766`, then open http://localhost:8766.
-Run the checks with `npm test`.
+Install test dependencies with `npm ci`, then run the checks with `npm test`.
 
 ## Recipe files
 
@@ -30,6 +30,16 @@ Use `prep`, `cook`, `bake`, and `ferment` for preparation, stovetop cooking, bak
 
 ## Publishing data changes
 
-Keep the version in `app.js` (`RECIPE_VERSION`), `sw.js` (`VERSION`), and the stylesheet/script query versions in `index.html` aligned when releasing changes. The service worker reads the recipe index and caches every listed file; a failed download prevents the new offline cache from activating.
+Keep the version in `app.js` (`RECIPE_VERSION`), `sw.js` (`VERSION`), and the stylesheet/script query versions (including `i18n.js`) in `index.html` aligned when releasing changes. The service worker reads the recipe index and caches every listed file; a failed download prevents the new offline cache from activating.
 
 Source mappings and import notes are kept in `imports/`. Source metadata is not displayed in the recipe text.
+
+## Languages
+
+The header offers compact EN / PL / IS buttons for English (default), Polish and Icelandic. The choice is stored in `quickrecipe.language` and works offline. `i18n.js` contains interface translations, unit labels and plural handling. Canonical recipe IDs, categories, ingredient quantities, temperatures and baker's roles remain unchanged.
+
+`translations/pl.json` and `translations/is.json` contain recipe translations reviewed for cooking terminology and numeric fidelity. Each exact English source string is a key, allowing shared ingredient names and instructions to reuse a translation. The files cover titles, descriptions, ingredients, instructions, timing, yields and section headings. Search checks all three languages so switching languages preserves search results. Scaling runs on the English source data before translated labels are applied; pan dimensions stay fixed.
+
+When adding or editing recipe text, add the new English strings to both dictionaries. Missing entries fall back to the original text and the list shows a brief notice. Editing still uses the original stored recipe, so changing language never rewrites your recipes or favourites. No translation service is contacted by the app.
+
+Run `node translation-test.js` to check full collection coverage, unchanged numbers and unique translated titles. These checks supplement culinary-language review; they do not assess every aspect of translation quality.

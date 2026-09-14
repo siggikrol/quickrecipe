@@ -4,15 +4,17 @@ const path = require('path');
 const { JSDOM } = require('jsdom');
 
 const html    = fs.readFileSync('./index.html',   'utf8');
-const appJs   = fs.readFileSync('./app.js',       'utf8');
+const appJs   = fs.readFileSync('./i18n.js', 'utf8') + '\n' + fs.readFileSync('./app.js', 'utf8');
 const recipeIndex = JSON.parse(fs.readFileSync('./recipes/index.json', 'utf8'));
 const recipeFiles = Object.fromEntries(recipeIndex.files.map(file => [file, JSON.parse(fs.readFileSync(path.join('recipes', file), 'utf8'))]));
 const recipes = JSON.stringify(Object.values(recipeFiles).flat());
+const translationFiles = Object.fromEntries(['pl', 'is'].map(lang => [lang, JSON.parse(fs.readFileSync(`./translations/${lang}.json`, 'utf8'))]));
 const fetchedFiles = [];
 function recipeResponse(url) {
   const pathname = new URL(url, 'http://localhost/').pathname;
   fetchedFiles.push(pathname);
-  const data = pathname === '/recipes/index.json' ? recipeIndex : recipeFiles[pathname.replace('/recipes/', '')];
+  const translationMatch = pathname.match(/^\/translations\/(pl|is)\.json$/);
+  const data = translationMatch ? translationFiles[translationMatch[1]] : pathname === '/recipes/index.json' ? recipeIndex : recipeFiles[pathname.replace('/recipes/', '')];
   return Promise.resolve({ ok: data !== undefined, status: data === undefined ? 404 : 200, json: () => Promise.resolve(structuredClone(data)) });
 }
 
@@ -370,6 +372,73 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   assert.ok(rye.ferment.includes('5–8 hr'));
   assert.equal(polishBreads.find(r => r.title === 'Seeded Twisted Bread Rings').yield, '16 rings');
   assert.equal(polishBreads.find(r => r.title === 'Cabbage and Mushroom Pastry Bites').yield, '40 rolls');
+
+  // Language changes translate recipe text without changing shared recipe data.
+  document.querySelector('[data-browse="baking"]').click();
+  document.querySelector('[data-cat="Bread"]').click();
+  const whiteBread = JSON.parse(recipes).find(r => r.title === 'Classic White Bread');
+  document.querySelector(`[data-id="${whiteBread.id}"]`).click();
+  dom.window.scrollTo = () => {};
+  const beforeLanguage = document.querySelector('.card.active').dataset.id;
+  const beforeTitle = document.querySelector('#detail h1').textContent;
+  const beforeAmount = document.querySelector('.ingredient .amount').textContent;
+  dom.window.changeLanguage('pl');
+  await wait(10);
+  assert.equal(document.documentElement.lang, 'pl');
+  assert.equal(document.getElementById('metricBtn').textContent, 'Metryczne');
+  assert.equal(document.querySelector('[data-cat="Bread"]').textContent, 'Chleb');
+  assert.equal(document.querySelector('#detail h1').textContent, translationFiles.pl[beforeTitle]);
+  assert.equal(document.querySelector('.steps li').textContent, translationFiles.pl[whiteBread.steps[0]]);
+  assert.equal(document.querySelector('.ingredient > span').textContent, 'Mąka chlebowa');
+  assert.equal(document.querySelector('[data-language=pl]').getAttribute('aria-pressed'), 'true');
+  assert.equal(document.querySelector('.ingredient .amount').textContent, beforeAmount);
+  assert.equal(document.querySelector('.card.active').dataset.id, beforeLanguage);
+  assert.equal(document.getElementById('languageNote').hidden, true);
+  assert.equal(dom.window.recipeCount(22), '22 przepisy');
+  assert.equal(dom.window.recipeCount(12), '12 przepisów');
+  dom.window.changeLanguage('is');
+  await wait(10);
+  assert.equal(document.getElementById('backBtn').textContent, '← Til baka í uppskriftir');
+  assert.equal(document.querySelector('.pane h2').textContent, 'Hráefni');
+  assert.equal(document.querySelector('#detail h1').textContent, translationFiles.is[beforeTitle]);
+  assert.equal(document.querySelector('.steps li').textContent, translationFiles.is[whiteBread.steps[0]]);
+  assert.equal(document.querySelector('.ingredient > span').textContent, 'Brauðhveiti');
+  assert.equal(dom.window.recipeText('My untranslated note'), 'My untranslated note');
+  assert.equal(dom.window.unitLabel('tbsp', 2), 'msk.');
+  document.querySelector('[data-scale="2"]').click();
+  assert.equal(document.getElementById('recipeYield').textContent, '2 brauðhleifar');
+  assert.equal(document.querySelector('.ingredient .amount').textContent, '1000 g');
+  dom.window.changeLanguage('pl');
+  await wait(10);
+  assert.equal(document.getElementById('recipeYield').textContent, '2 bochenki');
+  const polishSearch = document.getElementById('search');
+  polishSearch.value = 'Mąka chlebowa';
+  polishSearch.dispatchEvent(new dom.window.Event('input'));
+  const polishResults = [...document.querySelectorAll('.card')].map(c => c.dataset.id);
+  assert.ok(polishResults.length > 0);
+  dom.window.changeLanguage('is');
+  await wait(10);
+  assert.deepEqual([...document.querySelectorAll('.card')].map(c => c.dataset.id), polishResults);
+  polishSearch.value = '';
+  polishSearch.dispatchEvent(new dom.window.Event('input'));
+  const originalStored = JSON.parse(dom.window.localStorage.getItem('quickrecipe.recipes.v1')).find(r => r.id === whiteBread.id);
+  assert.equal(originalStored.title, whiteBread.title);
+  assert.deepEqual(originalStored.ingredients, whiteBread.ingredients);
+  dom.window.openNextRecipe();
+  dom.window.openNextRecipe();
+  dom.window.openPreviousRecipe();
+  assert.equal(document.querySelector('#detail h1').textContent, translationFiles.is.Ciabatta);
+  assert.equal(dom.window.missingRecipeTranslation({...whiteBread, title:'A new personal recipe'}), true);
+
+  assert.equal(dom.window.localStorage.getItem('quickrecipe.language'), 'is');
+  assert.equal(dom.window.t('A custom category'), 'A custom category');
+  dom.window.changeLanguage('invalid');
+  assert.equal(document.documentElement.lang, 'is');
+  dom.window.changeLanguage('en');
+  await wait(10);
+  assert.equal(document.getElementById('backBtn').textContent, '← Back to recipes');
+  assert.equal(document.querySelector('.pane h2').textContent, 'Ingredients');
+  assert.equal(document.getElementById('languageNote').hidden, true);
 
   // Failed category refreshes keep the complete previously saved collection.
   const stored = [JSON.parse(recipes).find(r => r.id.startsWith('gotteri-')), { ...JSON.parse(recipes)[0], id: 'my-custom-recipe', title: 'My custom recipe' }];

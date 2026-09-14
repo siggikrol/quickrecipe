@@ -9,7 +9,7 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="style.css?v=28" />
+  <link rel="stylesheet" href="style.css?v=31" />
   <title>QuickRecipe</title>
 </head>
 <body>
@@ -22,6 +22,11 @@
         <div class="brand">QuickRecipe</div>
       </div>
       <div class="top-actions">
+        <div class="language-switch" role="group" aria-label="Language">
+          <button type="button" data-language="en" lang="en" aria-label="English" title="English" aria-pressed="true">EN</button>
+          <button type="button" data-language="pl" lang="pl" aria-label="Polski" title="Polski" aria-pressed="false">PL</button>
+          <button type="button" data-language="is" lang="is" aria-label="Íslenska" title="Íslenska" aria-pressed="false">IS</button>
+        </div>
         <button class="btn btn-icon" id="themeBtn" title="Toggle theme" aria-label="Toggle colour theme">🌙</button>
         <button class="btn" id="favFilter" aria-pressed="false">♡ <span>Favourites</span></button>
         <button class="btn primary" id="addBtn" aria-label="Add recipe">＋ <span>Add recipe</span></button>
@@ -47,6 +52,7 @@
     <!-- Category chips -->
     <div id="chips" class="chips" role="group" aria-label="Recipe categories"></div>
 
+    <p id="languageNote" class="language-note" hidden>Some recipe text is shown in English.</p>
     <div id="resultSummary" class="result-summary" role="status"></div>
 
     <!-- Main layout -->
@@ -142,6 +148,7 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
-  <script src="app.js?v=28"></script>
+  <script src="i18n.js?v=31"></script>
+  <script src="app.js?v=31"></script>
 </body>
 </html>

@@ -1,12 +1,18 @@
-const VERSION = '28';
+const VERSION = '31';
 const CACHE = `quickrecipe-v${VERSION}`;
 const ASSETS = [
   './',
   './index.html',
   './style.css',
   `./style.css?v=${VERSION}`,
+  './i18n.js',
+  `./i18n.js?v=${VERSION}`,
   './app.js',
   `./app.js?v=${VERSION}`,
+  './translations/pl.json',
+  `./translations/pl.json?v=${VERSION}`,
+  './translations/is.json',
+  `./translations/is.json?v=${VERSION}`,
   './manifest.webmanifest',
 ];
 

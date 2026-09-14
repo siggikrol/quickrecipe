@@ -1,7 +1,7 @@
 /* ─── State ─── */
 let recipes = [];
 let seedRecipes = [];
-const RECIPE_VERSION = '28';
+const RECIPE_VERSION = '31';
 const LS = {
   recipes:   'quickrecipe.recipes.v1',
   favs:      'quickrecipe.favs.v1',
@@ -140,14 +140,14 @@ const mlToFloz = ml => ml * 0.0338140227;
 
 function amountText(v, u) {
   v *= scale;
-  if (unit === 'metric') return `${fmt(v)} ${u}`;
+  if (unit === 'metric') return `${fmt(v)} ${unitLabel(u, v)}`;
   if (u === 'g')  return `${fmt(gToOz(v))} oz`;
   if (u === 'ml') return `${fmt(mlToFloz(v))} fl oz`;
-  return `${fmt(v)} ${u}`;
+  return `${fmt(v)} ${unitLabel(u, v)}`;
 }
 
 function ingredientAmountText(r, ing) {
-  if (ing[1] === null) return view === 'bakers' ? '—' : 'As needed';
+  if (ing[1] === null) return view === 'bakers' ? '—' : t('As needed');
   if (view === 'bakers') return bakers(r, ing);
   const amount = amountText(adjustedIngredientValue(r, ing), ing[2]);
   return Number.isFinite(ing[4]) ? `${amount} – ${amountText(ing[4], ing[2])}` : amount;
@@ -375,9 +375,9 @@ function renderChips() {
   const sections = [{ id: 'All', label: 'All recipes' }, ...recipeSections];
   const nav = document.getElementById('sections');
   if (!nav.children.length) {
-    nav.innerHTML = sections.map(section => `<button class="section-link" data-browse="${section.id}">${esc(section.label)} <span class="section-count"></span></button>`).join('');
+    nav.innerHTML = sections.map(section => `<button class="section-link" data-browse="${section.id}">${esc(t(section.label))} <span class="section-count"></span></button>`).join('');
     nav.querySelectorAll('[data-browse]').forEach(b => b.onclick = () => browseSection(b.dataset.browse));
-    document.getElementById('sectionSelect').innerHTML = sections.map(section => `<option value="${section.id}">${esc(section.label)}</option>`).join('');
+    document.getElementById('sectionSelect').innerHTML = sections.map(section => `<option value="${section.id}">${esc(t(section.label))}</option>`).join('');
   }
   nav.querySelectorAll('[data-browse]').forEach(b => {
     const active = !searching && !onlyFavs && b.dataset.browse === recipeSection;
@@ -407,14 +407,15 @@ function recipeTimingHtml(r) {
   const timings = [['Prep', r.prep], ['Cook', r.cook], ['Bake', r.bake], ['Rest', r.ferment]]
     .filter(([, value]) => value && String(value).trim());
   return timings.length
-    ? timings.map(([label, value]) => `<span class="stat timing-stat">${label} ${esc(value)}</span>`).join('')
+    ? timings.map(([label, value]) => `<span class="stat timing-stat">${label} ${esc(recipeText(value))}</span>`).join('')
     : '<span class="stat timing-stat">Time not specified</span>';
 }
 
 function matches(r, q) {
-  q = q.toLowerCase();
-  return !q || r.title.toLowerCase().includes(q) || (r.desc || '').toLowerCase().includes(q)
-    || r.ingredients.some(i => i[0].toLowerCase().includes(q));
+  const normal = value => String(value || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  q = normal(q);
+  const text = [r.title, r.desc, r.category, t(r.category || ''), ...r.ingredients.map(i => i[0])];
+  return !q || text.some(value => [value, recipeTranslations.pl[value], recipeTranslations.is[value]].some(candidate => normal(candidate).includes(q)));
 }
 function filteredRecipes() {
   const q = document.getElementById('search').value.trim();
@@ -426,14 +427,15 @@ function filteredRecipes() {
 function renderList() {
   const q = document.getElementById('search').value.trim();
   const shown = filteredRecipes();
+  hasRecipeTranslationFallback = shown.some(missingRecipeTranslation);
   if (!shown.some(r => r.id === selectedId)) {
     selectedId = shown[0]?.id || null;
     scale = 1; view = 'amounts'; focusedSection = null;
   }
 
-  const scope = q ? `Search ${onlyFavs ? 'favourites' : 'all recipes'}: “${q}”` : onlyFavs ? 'Favourites' :
-    [recipeSections.find(section => section.id === recipeSection)?.label || 'All recipes', category === 'All' ? '' : category].filter(Boolean).join(' / ');
-  document.getElementById('resultSummary').textContent = `${scope} · ${shown.length} ${shown.length === 1 ? 'recipe' : 'recipes'}`;
+  const scope = q ? `${({en:'Search',pl:'Szukaj',is:'Leit'})[language]} ${t(onlyFavs ? 'Favourites' : 'All recipes')}: “${q}”` : onlyFavs ? t('Favourites') :
+    [recipeSections.find(section => section.id === recipeSection)?.label || 'All recipes', category === 'All' ? '' : category].filter(Boolean).map(t).join(' / ');
+  document.getElementById('resultSummary').textContent = `${scope} · ${recipeCount(shown.length)}`;
   const list = document.getElementById('list');
   const previousScroll = list.scrollTop;
   list.innerHTML = shown.map(r => `
@@ -441,11 +443,11 @@ function renderList() {
       <div class="card-top">
         <div>
           <div class="tag">${esc(r.category || 'Recipe')}</div>
-          <h3>${esc(r.title)}</h3>
+          <h3>${esc(recipeText(r.title))}</h3>
         </div>
         <span class="heart ${favs.has(r.id) ? 'on' : ''}" data-fav="${r.id}">${favs.has(r.id) ? '♥' : '♡'}</span>
       </div>
-      <div class="desc">${esc(r.desc || '')}</div>
+      <div class="desc">${esc(recipeText(r.desc || ''))}</div>
       <div class="stats">
         ${r.hydration ? `<span class="stat">${fmt(r.hydration)}% hydration</span>` : ''}
         ${recipeTimingHtml(r)}
@@ -583,11 +585,11 @@ function renderIngredients(r) {
         data-section="${esc(sec)}"
         aria-pressed="${secFocused}"
         title="${secFocused ? 'Click to clear focus' : 'Click to focus this section'}"
-      >${esc(sec)}</button>`;
+      >${esc(recipeText(sec))}</button>`;
     }
     last = sec || last;
     html += `<div class="ingredient${ingDimmed ? ' dimmed' : ''}" data-section="${esc(sec)}">
-      <span>${esc(cleanIngredientName(i[0]))}</span>
+      <span>${esc(recipeText(cleanIngredientName(i[0])))}</span>
       <span class="amount">${esc(ingredientAmountText(r, i))}</span>
     </div>`;
     return html;
@@ -598,6 +600,7 @@ function renderIngredients(r) {
 function renderDetail() {
   const r  = recipes.find(x => x.id === selectedId);
   const el = document.getElementById('detail');
+  if (document.querySelector('.app').classList.contains('reading-recipe')) hasRecipeTranslationFallback = missingRecipeTranslation(r);
 
   if (!r) {
     releaseWakeLock();
@@ -631,7 +634,7 @@ function renderDetail() {
   const stepsHtml = r.steps.map((s, idx) => {
     const stepSec = stepSectionFor(r, idx);
     const dimmed  = focusedSection && stepSec && stepSec !== focusedSection;
-    return `<li class="${dimmed ? 'dimmed' : ''}" data-section="${esc(stepSec || '')}">${esc(s)}</li>`;
+    return `<li class="${dimmed ? 'dimmed' : ''}" data-section="${esc(stepSec || '')}">${esc(recipeText(s))}</li>`;
   }).join('');
 
   el.innerHTML = `
@@ -639,8 +642,8 @@ function renderDetail() {
       <div class="detail-title-row">
         <div>
           <div class="tag">${esc(r.category || 'Recipe')}${r.hydration ? ` · ${fmt(hyd)}% hydration` : ''}</div>
-          <h1>${esc(r.title)}</h1>
-          <div class="desc">${esc(r.desc || '')}</div>
+          <h1>${esc(recipeText(r.title))}</h1>
+          <div class="desc">${esc(recipeText(r.desc || ''))}</div>
         </div>
         <div style="display:flex;gap:7px;flex-shrink:0;flex-wrap:wrap;justify-content:flex-end">
           <button class="btn" id="detailFav">${favs.has(r.id) ? '♥ Saved' : '♡ Save'}</button>
@@ -666,7 +669,7 @@ function renderDetail() {
         ${renderIngredients(r)}
       </section>
       <section class="pane">
-        <h2>Method${focusedSection ? ` · <span style="color:var(--accent)">${esc(focusedSection)}</span>` : ''}</h2>
+        <h2>Method${focusedSection ? ` · <span style="color:var(--accent)">${esc(recipeText(focusedSection))}</span>` : ''}</h2>
         <ol class="steps">${stepsHtml}</ol>
       </section>
     </div>
@@ -674,7 +677,7 @@ function renderDetail() {
     <div class="meta">
       ${recipeTimingHtml(r)}
       ${r.tempC  ? `<span class="stat">${temp}</span>`               : ''}
-      ${r.yield  ? `<span class="stat" id="recipeYield">${esc(yieldText(r.yield))}</span>` : ''}
+      ${r.yield  ? `<span class="stat" id="recipeYield">${esc(translatedYield(r.yield))}</span>` : ''}
     </div>`;
 
   /* Scale */
@@ -738,7 +741,7 @@ function applyFocusClasses() {
   const methodH2 = document.querySelector('.pane:last-child > h2');
   if (methodH2) {
     methodH2.innerHTML = focusedSection
-      ? `Method · <span style="color:var(--accent)">${esc(focusedSection)}</span>`
+      ? `Method · <span style="color:var(--accent)">${esc(recipeText(focusedSection))}</span>`
       : 'Method';
   }
 }
@@ -773,7 +776,7 @@ function openModal(r = null) {
   const set = (id, v = '') => document.getElementById(id).value = v;
   set('fTitle',       r?.title);
   set('fCategory',    r?.category || (recipeSections.find(section => section.id === recipeSection)?.categories[0] || 'Bread'));
-  document.getElementById('fSection').innerHTML = recipeSections.map(section => `<option value="${section.id}">${esc(section.label)}</option>`).join('');
+  document.getElementById('fSection').innerHTML = recipeSections.map(section => `<option value="${section.id}">${esc(t(section.label))}</option>`).join('');
   set('fSection', r ? sectionForRecipe(r) : recipeSection === 'All' ? 'baking' : recipeSection);
   set('fDesc',        r?.desc);
   set('fYield',       r?.yield);
@@ -872,6 +875,8 @@ async function init() {
     seedRecipes = [];
     seedLoadFailed = true;
   }
+
+  await loadRecipeTranslations(RECIPE_VERSION);
 
   /* Restore state */
   favs           = new Set(load(LS.favs, []));
