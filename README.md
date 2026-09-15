@@ -69,3 +69,17 @@ Use **Categories & foundations** in the recipe editor to assign additional categ
 Steps 6–10 add 209 recipes, bringing the collection to 461. The [expansion status](docs/content-expansion-status.md) records the completed batches and review limits. `content-test.js` checks every new recipe at ½×, 1×, 2× and 3×, plus published recipe-family shopping calculations.
 
 Steps 11–14 add 58 more recipes for **519 total**, connect finished bakes to their foundations, and complete the release review. See the [release report](docs/release-review.md) for the additions and checks, and the [saved roadmap](docs/implementation-roadmap.md) for the approved scope.
+
+## Dough folding timer
+
+Ciabatta, Focaccia and Simple Sourdough have a timer beside their folding step.
+Start after folding; Ciabatta defaults to its stated 30 minutes. For the other
+two recipes, choose the interval yourself. The active timer stays visible while
+browsing, survives reloads, and shows an overdue reminder when you return.
+Tap **Folded — start next timer** after each fold, or **Finish timer** when done.
+One folding timer runs at a time.
+
+Keep the app open, the phone unlocked and the volume audible for alerts. The
+app requests a screen wake lock where supported. Use **Test / enable sound**
+after reloading to reactivate audio. A suspended or closed web app cannot
+reliably ring on time; also set a phone alarm if you need a locked-screen reminder.

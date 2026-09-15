@@ -2,7 +2,7 @@
 let recipes = [];
 let seedRecipes = [];
 let recipeCatalogChanges = { retiredIds: [], renamedIds: {} };
-const RECIPE_VERSION = '51';
+const RECIPE_VERSION = '52';
 const LS = {
   recipes:   'quickrecipe.recipes.v1',
   favs:      'quickrecipe.favs.v1',
@@ -818,7 +818,7 @@ function renderDetail() {
   const stepsHtml = r.steps.map((s, idx) => {
     const stepSec = stepSectionFor(r, idx);
     const dimmed  = focusedSection && stepSec && stepSec !== focusedSection;
-    return `<li class="${dimmed ? 'dimmed' : ''}" data-section="${esc(stepSec || '')}">${esc(recipeText(s))}</li>`;
+    return `<li class="${dimmed ? 'dimmed' : ''}" data-section="${esc(stepSec || '')}">${esc(recipeText(s))}${foldTimerControls(r, idx)}</li>`;
   }).join('');
 
   el.innerHTML = `
@@ -871,6 +871,7 @@ function renderDetail() {
       ${r.batchYield || r.yield ? `<span class="stat" id="recipeYield">${esc(r.batchYield ? familyAmount(r.batchYield.amount * scale, r.batchYield.unit) : translatedYield(r.yield))}</span>` : ''}
     </div>`;
 
+  bindFoldTimers();
   bindFamilyNavigation();
   shopping.decorate(r);
   document.getElementById('ingredientOrderBtn').onclick = () => {
@@ -1115,6 +1116,134 @@ function toast(msg) {
   window.__toast = setTimeout(() => t.classList.remove('show'), 1900);
 }
 
+/* ─── Dough folding timer ─── */
+const FOLD_TIMER_KEY = 'quickrecipe.foldTimer.v1';
+// Only ciabatta specifies an interval. Other doughs ask the cook to choose.
+const foldTimerSteps = { ciabatta: { step: 2, minutes: 30 }, focaccia: { step: 2 }, 'simple-sourdough': { step: 2 } };
+let foldTimer = null;
+let foldAudio = null;
+let foldLastSound = 0;
+let foldPanelKey = '';
+let foldTicker = null;
+function foldTimerControls(recipe, step) {
+  const plan = foldTimerSteps[recipe.id];
+  if (!plan || plan.step !== step) return '';
+  return `<form class="fold-timer-controls" data-fold-recipe="${esc(recipe.id)}">
+    <label>${esc(t('Minutes until next fold'))} <input name="minutes" type="number" inputmode="numeric" min="1" max="240" required value="${plan.minutes || ''}" aria-label="${esc(t('Minutes until next fold'))}"></label>
+    <button class="btn" type="submit" ${foldTimer ? 'disabled' : ''}>${esc(t('Start folding timer'))}</button>
+    <small>${esc(t(plan.minutes ? 'Start after a fold to time the next one.' : 'Choose your interval; this recipe does not specify minutes between folds.'))}</small>
+    <small>${esc(t('Keep the app open and your phone unlocked for alerts. For locked-screen reminders, also set a phone alarm.'))}</small>
+  </form>`;
+}
+function saveFoldTimer() {
+  try {
+    if (foldTimer) localStorage.setItem(FOLD_TIMER_KEY, JSON.stringify(foldTimer));
+    else localStorage.removeItem(FOLD_TIMER_KEY);
+  } catch { toast('Timer could not be saved. Keep this page open.'); }
+}
+function enableFoldSound() {
+  try {
+    const Audio = window.AudioContext || window.webkitAudioContext;
+    if (!Audio) { toast('Sound is unavailable in this browser.'); return; }
+    if (!foldAudio) foldAudio = new Audio();
+    foldAudio.resume().then(() => {
+      soundFoldTimer();
+      toast('If you heard the test, sound is ready. Keep your phone volume up.');
+    }).catch(() => toast('Sound is unavailable in this browser.'));
+  } catch { toast('Sound is unavailable in this browser.'); }
+}
+function soundFoldTimer() {
+  if (!foldAudio || foldAudio.state !== 'running') return;
+  try {
+    for (let i = 0; i < 3; i++) {
+      const oscillator = foldAudio.createOscillator();
+      const gain = foldAudio.createGain();
+      const start = foldAudio.currentTime + i * 0.3;
+      oscillator.frequency.value = 880;
+      gain.gain.setValueAtTime(0, start);
+      gain.gain.linearRampToValueAtTime(0.2, start + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.001, start + 0.22);
+      oscillator.connect(gain); gain.connect(foldAudio.destination);
+      oscillator.start(start); oscillator.stop(start + 0.25);
+      oscillator.onended = () => { oscillator.disconnect(); gain.disconnect(); };
+    }
+  } catch {}
+}
+function bindFoldTimers() {
+  document.querySelectorAll('[data-fold-recipe]').forEach(form => {
+    form.onsubmit = event => {
+      event.preventDefault();
+      const minutes = Number(form.elements.minutes.value);
+      if (foldTimer || !Number.isInteger(minutes) || minutes < 1 || minutes > 240) return;
+      foldTimer = { recipeId: form.dataset.foldRecipe, minutes, dueAt: Date.now() + minutes * 60000 };
+      saveFoldTimer();
+      enableFoldSound();
+      requestWakeLock();
+      tickFoldTimer();
+    };
+  });
+}
+function tickFoldTimer() {
+  let panel = document.getElementById('foldTimerPanel');
+  if (!panel) {
+    panel = document.createElement('section');
+    panel.id = 'foldTimerPanel';
+    panel.className = 'fold-timer-panel';
+    panel.setAttribute('aria-label', t('Folding timer'));
+    document.querySelector('.app').appendChild(panel);
+  }
+  panel.hidden = !foldTimer;
+  document.querySelectorAll('[data-fold-recipe] button').forEach(button => { button.disabled = Boolean(foldTimer); });
+  if (!foldTimer) {
+    foldPanelKey = '';
+    clearInterval(foldTicker); foldTicker = null;
+    return;
+  }
+  if (!foldTicker) foldTicker = setInterval(tickFoldTimer, 1000);
+  const due = Date.now() >= foldTimer.dueAt;
+  const key = JSON.stringify([foldTimer, due, language]);
+  if (key !== foldPanelKey) {
+    foldPanelKey = key;
+    const recipe = recipes.find(r => r.id === foldTimer.recipeId);
+    panel.classList.toggle('is-due', due);
+    panel.innerHTML = `<div class="fold-timer-heading"><strong>${esc(recipeText(recipe?.title || 'Bread'))}</strong>
+      <span role="status">${esc(t(due ? 'Time to fold the dough!' : 'Next fold'))}</span>
+      <span class="fold-countdown" role="timer"></span></div>
+      <div class="fold-timer-actions">
+      ${due ? `<button class="btn primary" data-fold-next>${esc(t('Folded — start next timer'))}</button>` : ''}
+      <button class="btn" data-fold-sound>${esc(t('Test / enable sound'))}</button>
+      <button class="btn" data-fold-stop>${esc(t('Finish timer'))}</button></div>`;
+    panel.querySelector('[data-fold-next]')?.addEventListener('click', () => {
+      foldTimer.dueAt = Date.now() + foldTimer.minutes * 60000;
+      foldLastSound = 0;
+      saveFoldTimer(); enableFoldSound(); tickFoldTimer();
+    });
+    panel.querySelector('[data-fold-stop]').onclick = () => {
+      foldTimer = null; foldLastSound = 0; saveFoldTimer(); tickFoldTimer();
+    };
+    panel.querySelector('[data-fold-sound]').onclick = enableFoldSound;
+  }
+  const seconds = Math.max(0, Math.ceil((foldTimer.dueAt - Date.now()) / 1000));
+  const countdown = `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`;
+  const display = panel.querySelector('.fold-countdown');
+  if (display.textContent !== countdown) display.textContent = countdown;
+  if (due && document.visibilityState === 'visible' && Date.now() - foldLastSound >= 10000) {
+    foldLastSound = Date.now(); soundFoldTimer();
+    try { navigator.vibrate?.([200, 100, 200]); } catch {}
+  }
+}
+function initFoldTimer() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(FOLD_TIMER_KEY));
+    if (saved && recipes.some(r => r.id === saved.recipeId) &&
+        Number.isInteger(saved.minutes) && saved.minutes >= 1 && saved.minutes <= 240 &&
+        Number.isFinite(saved.dueAt) && saved.dueAt > 0) foldTimer = saved;
+  } catch {}
+  tickFoldTimer();
+  document.addEventListener('visibilitychange', tickFoldTimer);
+  window.addEventListener('pageshow', tickFoldTimer);
+}
+
 /* ─── Bootstrap ─── */
 async function init() {
   /* Apply theme immediately before anything renders */
@@ -1170,6 +1299,7 @@ async function init() {
 
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(() => {});
 
+  initFoldTimer();
   render();
   if (seedLoadFailed) {
     if (recipes.length) toast('Could not refresh recipes. Showing your saved collection.');

@@ -826,3 +826,20 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 }
 .ingredient.quantities-first .amount { font-variant-numeric: tabular-nums; }
 .ingredient-name { min-width: 0; overflow-wrap: anywhere; }
+
+/* Folding controls stay beside the dough instructions; the active timer stays visible. */
+.fold-timer-controls { display:flex; flex-wrap:wrap; align-items:center; gap:10px; margin-top:12px; padding:14px; border:1px solid var(--line); border-radius:var(--radius-sm); background:var(--bg2); }
+.fold-timer-controls label { display:flex; align-items:center; flex-wrap:wrap; gap:8px; font-size:13px; }
+.fold-timer-controls input { width:76px; min-height:44px; border:1px solid var(--line); border-radius:8px; padding:8px; background:var(--card); color:var(--ink); }
+.fold-timer-controls small { flex-basis:100%; color:var(--muted); font-size:12px; line-height:1.5; }
+.fold-timer-controls button:disabled { opacity:.5; cursor:default; }
+.fold-timer-panel { flex-shrink:0; padding:12px 0 max(12px, env(safe-area-inset-bottom)); border-top:2px solid var(--accent); background:var(--bg); }
+.fold-timer-panel[hidden] { display:none; }
+.fold-timer-heading, .fold-timer-actions { display:flex; flex-wrap:wrap; gap:8px 14px; align-items:center; }
+.fold-timer-heading { margin-bottom:8px; }
+.fold-timer-heading strong { overflow-wrap:anywhere; }
+.fold-countdown { margin-left:auto; font-size:24px; font-weight:700; font-variant-numeric:tabular-nums; }
+.fold-timer-panel.is-due { border-color:var(--danger); }
+.fold-timer-panel.is-due [role=status] { color:var(--danger); font-weight:700; }
+.fold-timer-actions .btn, .fold-timer-controls .btn { min-height:44px; }
+@media print { .fold-timer-controls, .fold-timer-panel { display:none; } }
