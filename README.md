@@ -48,6 +48,14 @@ Run `node translation-test.js` to check full collection coverage, unchanged numb
 
 ## Shopping lists
 
+Recipes with foundations additionally offer **Make from ingredients** or **Already prepared** for each base. Their shopping preview combines the required scaled ingredients through nested foundations and preserves manually entered purchase amounts. See [recipe families](docs/recipe-families.md) for the data contract and behaviour.
+
 Use Create shopping list beside the portion controls, select ingredients, then View list. Lists contain ingredient names and optional shopping amounts (such as “2 bags”), independently of recipe scaling. Identical ingredient names appear once. Shopping lists in the header reopens saved lists; each list keeps its recipe title, shopping amounts and purchased checkmarks on this device in `quickrecipe.shopping.v1`. Editing selection uses a draft until View list is pressed.
 
 Copy exports a plain-text checklist. Share opens the device share menu when supported; otherwise selectable text is provided for copying. Cancelling the device share menu leaves the list intact. Lists and controls use the selected language; shopping amounts remain exactly as entered. `shopping.js` is included in the offline cache.
+
+## Collection planning and recipe families
+
+The [collection map](docs/recipe-collection-map.md) compares the content blueprint with the current recipes and records duplicates, related recipes and gaps. There is no collection size limit.
+
+Use **Categories & foundations** in the recipe editor to assign additional categories, set a measured prepared yield, and choose required foundations. Browse categories appear when populated and sort by their translated names. [Recipe family documentation](docs/recipe-families.md) describes validation, navigation, scaling and shopping-list rules. `family-test.js` uses unpublished arithmetic fixtures to exercise these features without adding unverified recipes to the collection.

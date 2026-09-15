@@ -2,7 +2,7 @@
 let recipes = [];
 let seedRecipes = [];
 let recipeCatalogChanges = { retiredIds: [], renamedIds: {} };
-const RECIPE_VERSION = '45';
+const RECIPE_VERSION = '46';
 const LS = {
   recipes:   'quickrecipe.recipes.v1',
   favs:      'quickrecipe.favs.v1',
@@ -22,10 +22,10 @@ let category       = 'All';
 let recipeSection = 'All';
 let listScrollTop = 0;
 const recipeSections = [
-  { id: 'baking', label: 'Bread & baking', categories: ['Bread', 'Polish Breads', 'Loaves', 'Rolls', 'Flatbreads', 'Pastries'] },
-  { id: 'desserts', label: 'Cakes & desserts', categories: ['Cake', 'Cakes', 'Cheesecake', 'Cheesecakes', 'Skyr Cake', 'Meringue', 'Brownies', 'Cookies', 'Truffles', 'Dessert', 'Desserts'] },
-  { id: 'meals', label: 'Meals', categories: ['Breakfast', 'Polish Soups', 'Soups', 'Salads', 'Mains', 'Sides'] },
-  { id: 'sauces', label: 'Dressings & sauces', categories: ['Dressings', 'Sauce', 'Sauces', 'Dips'] },
+  { id: 'baking', label: 'Bread & baking', categories: ['Bread', 'Polish Breads', 'Loaves', 'Rolls', 'Flatbreads', 'Pastries', 'Pizza & savoury dough', 'Baking components'] },
+  { id: 'desserts', label: 'Cakes & desserts', categories: ['Cake', 'Cakes', 'Cheesecake', 'Cheesecakes', 'Skyr Cake', 'Meringue', 'Brownies', 'Cookies', 'Truffles', 'Dessert', 'Desserts', 'Muffins & scones', 'Pies & tarts', 'Classic desserts'] },
+  { id: 'meals', label: 'Meals', categories: ['Breakfast', 'Polish Soups', 'Soups', 'Salads', 'Mains', 'Sides', 'Breakfast & brunch', 'Pasta & noodles', 'Rice & grains', 'Chicken', 'Beef, pork & sausage', 'Fish & seafood', 'Vegetarian', 'Quick dinners', 'Casseroles & one-pot'] },
+  { id: 'sauces', label: 'Dressings & sauces', categories: ['Dressings', 'Sauce', 'Sauces', 'Dips', 'Stocks', 'Brown sauces', 'Béchamel', 'Velouté', 'Hollandaise', 'Tomato sauces', 'Mayonnaise', 'Butter & pan sauces', 'Sweet sauces'] },
 ];
 function sectionForRecipe(r) {
   if (recipeSections.some(section => section.id === r.section)) return r.section;
@@ -106,6 +106,7 @@ async function loadSeedRecipes() {
   const loaded = groups.flat();
   if (loaded.some(r => !r || typeof r.id !== 'string' || !r.id || !r.title || !Array.isArray(r.ingredients) || !Array.isArray(r.steps)) ||
       new Set(loaded.map(r => r.id)).size !== loaded.length) throw new Error('Invalid or duplicate recipe');
+  validateRecipeFamilies(loaded);
   const retiredIds = index.retiredIds || [];
   const renamedIds = index.renamedIds || {};
   if (!Array.isArray(retiredIds) || retiredIds.some(id => typeof id !== 'string') ||
@@ -402,13 +403,144 @@ async function releaseWakeLock() {
   wakeLock = null; wakeLockRecipeId = null;
 }
 
+/* ─── Recipe categories and foundations ─── */
+let familyHistory = [];
+function recipeMemberships(r) {
+  const primary = { section: sectionForRecipe(r), category: r.category || 'Other' };
+  return [...new Map([primary, ...(r.categoryMemberships || [])].map(m => [`${m.section}:${m.category}`, m])).values()];
+}
+function recipeInSection(r, section) { return recipeMemberships(r).some(m => m.section === section); }
+function familyMeasure(amount, unitName) {
+  const units = { g: ['mass', 1, 'g'], kg: ['mass', 1000, 'g'], ml: ['volume', 1, 'ml'], L: ['volume', 1000, 'ml'], pc: ['count', 1, 'pc'] };
+  const spec = units[unitName];
+  if (!spec || !Number.isFinite(amount) || amount <= 0) throw new Error('Invalid foundation measure');
+  return { dimension: spec[0], amount: amount * spec[1], unit: spec[2] };
+}
+function foundationMultiplier(f, collection = recipes) {
+  const parent = collection.find(r => r.id === f.recipeId);
+  if (!parent?.batchYield) throw new Error('Missing foundation yield');
+  const required = familyMeasure(f.amount, f.unit), output = familyMeasure(parent.batchYield.amount, parent.batchYield.unit);
+  if (required.dimension !== output.dimension) throw new Error('Incompatible foundation units');
+  return required.amount / output.amount;
+}
+function validateRecipeFamilies(collection) {
+  const byId = new Map(collection.map(r => [r.id, r]));
+  const visited = new Set(), visiting = new Set();
+  function visit(r) {
+    if (visiting.has(r.id)) throw new Error('Circular recipe family');
+    if (visited.has(r.id)) return;
+    visiting.add(r.id);
+    if (r.batchYield) familyMeasure(r.batchYield.amount, r.batchYield.unit);
+    if (r.categoryMemberships !== undefined && (!Array.isArray(r.categoryMemberships) || r.categoryMemberships.some(m =>
+      !m || !recipeSections.some(s => s.id === m.section) || typeof m.category !== 'string' || !m.category.trim()))) throw new Error('Invalid recipe categories');
+    if (r.foundations !== undefined && !Array.isArray(r.foundations)) throw new Error('Invalid foundations');
+    const ids = new Set();
+    for (const f of r.foundations || []) {
+      if (!f || ids.has(f.recipeId)) throw new Error('Duplicate foundation');
+      ids.add(f.recipeId);
+      foundationMultiplier(f, collection);
+      visit(byId.get(f.recipeId));
+    }
+    visiting.delete(r.id); visited.add(r.id);
+  }
+  collection.forEach(visit);
+}
+function familyAmount(amount, unitName) {
+  if (amount === null) return t('As needed');
+  if (unitName === 'kg') { amount *= 1000; unitName = 'g'; }
+  if (unitName === 'L') { amount *= 1000; unitName = 'ml'; }
+  if (unit === 'imperial' && ['g', 'ml'].includes(unitName)) {
+    return `${fmt(unitName === 'g' ? gToOz(amount) : mlToFloz(amount))} ${unitName === 'g' ? 'oz' : 'fl oz'}`;
+  }
+  if (amount >= 1000 && ['g', 'ml'].includes(unitName)) { amount /= 1000; unitName = unitName === 'g' ? 'kg' : 'L'; }
+  return `${fmt(amount)} ${unitLabel(unitName, amount)}`;
+}
+function foundationIngredientsHtml(r) {
+  if (!r.foundations?.length) return '';
+  return `<div class="foundation-ingredients"><h3>${esc(t('Requires'))}</h3>${r.foundations.map(f => {
+    const parent = recipes.find(p => p.id === f.recipeId);
+    return `<div class="foundation-row"><button class="family-link" data-foundation="${esc(f.recipeId)}">${esc(recipeText(parent?.title || f.recipeId))}</button><strong>${esc(familyAmount(f.amount * scale, f.unit))}</strong></div>`;
+  }).join('')}</div>`;
+}
+function familyNavigationHtml(r) {
+  const children = recipes.filter(child => child.foundations?.some(f => f.recipeId === r.id))
+    .sort((a, b) => recipeText(a.title).localeCompare(recipeText(b.title), language));
+  return `${familyHistory.length ? `<button class="btn family-back" data-family-back>← ${esc(t('Back to previous recipe'))}</button>` : ''}
+    ${children.length ? `<nav class="recipe-family" aria-label="${esc(t('Make from this'))}"><h3>${esc(t('Make from this'))}</h3><div>${children.map(child => `<button class="btn" data-derivative="${esc(child.id)}">${esc(recipeText(child.title))} →</button>`).join('')}</div></nav>` : ''}`;
+}
+function openFamilyRecipe(id, multiplier = 1) {
+  if (!recipes.some(r => r.id === id)) return;
+  familyHistory.push({ selectedId, scale, view, focusedSection, recipeSection, category, onlyFavs,
+    search: document.getElementById('search').value, listScroll: document.getElementById('list').scrollTop,
+    detailScroll: document.getElementById('detail').scrollTop, listScrollTop, recipeHistory: [...recipeHistory] });
+  selectedId = id; scale = multiplier; view = 'amounts'; focusedSection = null;
+  recipeSection = 'All'; category = 'All'; onlyFavs = false;
+  document.getElementById('search').value = '';
+  document.querySelector('.app').classList.add('reading-recipe');
+  render(); document.getElementById('detail').scrollTop = 0;
+  document.querySelector('[data-family-back]')?.focus({ preventScroll: true });
+}
+function returnFromFamily() {
+  const previous = familyHistory.pop();
+  if (!previous) return;
+  ({ selectedId, scale, view, focusedSection, recipeSection, category, onlyFavs, listScrollTop, recipeHistory } = previous);
+  document.getElementById('search').value = previous.search;
+  render();
+  document.getElementById('list').scrollTop = previous.listScroll;
+  document.getElementById('detail').scrollTop = previous.detailScroll;
+}
+function bindFamilyNavigation() {
+  const r = recipes.find(r => r.id === selectedId);
+  document.querySelectorAll('[data-foundation]').forEach(b => b.onclick = () => {
+    const f = r.foundations.find(f => f.recipeId === b.dataset.foundation);
+    openFamilyRecipe(f.recipeId, scale * foundationMultiplier(f));
+  });
+  document.querySelectorAll('[data-derivative]').forEach(b => b.onclick = () => openFamilyRecipe(b.dataset.derivative));
+  document.querySelector('[data-family-back]')?.addEventListener('click', returnFromFamily);
+}
+function familyShoppingPlan(r, multiplier, prepared = {}, collection = recipes) {
+  validateRecipeFamilies(collection);
+  if (!Number.isFinite(multiplier) || multiplier <= 0) throw new Error('Invalid recipe scale');
+  const ingredients = new Map(), bases = new Map();
+  function expand(recipe, factor) {
+    for (const f of recipe.foundations || []) {
+      const parent = collection.find(p => p.id === f.recipeId);
+      const measured = familyMeasure(f.amount * factor, f.unit);
+      const entry = bases.get(parent.id) || { id: parent.id, title: parent.title, amount: 0, unit: measured.unit };
+      entry.amount += measured.amount; bases.set(parent.id, entry);
+      if (!prepared[parent.id]) expand(parent, factor * foundationMultiplier(f, collection));
+    }
+    for (const ing of recipe.ingredients) {
+      const name = cleanIngredientName(ing[0]);
+      const conversion = { kg: [1000, 'g'], L: [1000, 'ml'] }[ing[2]] || [1, ing[2]];
+      const key = JSON.stringify([name.toLocaleLowerCase('en').trim(), conversion[1]]);
+      const item = ingredients.get(key) || { key, name, amount: 0, maximum: 0, asNeeded: false, unit: conversion[1] };
+      if (ing[1] === null) item.asNeeded = true;
+      else {
+        const amount = adjustedIngredientValue(recipe, ing) * factor * conversion[0];
+        item.amount += amount;
+        item.maximum += Number.isFinite(ing[4]) ? ing[4] * factor * conversion[0] : amount;
+      }
+      ingredients.set(key, item);
+    }
+  }
+  expand(r, multiplier);
+  return { bases: [...bases.values()], ingredients: [...ingredients.values()] };
+}
+function familyShoppingAmount(item) {
+  const measured = familyAmount(item.amount, item.unit);
+  const range = item.maximum !== item.amount ? `${measured} – ${familyAmount(item.maximum, item.unit)}` : measured;
+  return item.asNeeded ? (item.amount ? `${range} + ${t('As needed')}` : t('As needed')) : range;
+}
+
 /* ─── Chips ─── */
 function categories() {
-  const names = [...new Set(recipes.filter(r => sectionForRecipe(r) === recipeSection).map(r => r.category || 'Other'))];
+  const names = [...new Set(recipes.flatMap(r => recipeMemberships(r).filter(m => m.section === recipeSection).map(m => m.category)))];
   names.sort((a, b) => t(a).localeCompare(t(b), language, { sensitivity: 'base' }));
   return ['All', ...names];
 }
 function browseSection(id) {
+  familyHistory = [];
   recipeSection = id;
   category = 'All';
   onlyFavs = false;
@@ -430,7 +562,7 @@ function renderChips() {
     const active = !searching && !onlyFavs && b.dataset.browse === recipeSection;
     b.classList.toggle('active', active);
     b.setAttribute('aria-pressed', active);
-    b.querySelector('.section-count').textContent = recipes.filter(r => b.dataset.browse === 'All' || sectionForRecipe(r) === b.dataset.browse).length;
+    b.querySelector('.section-count').textContent = recipes.filter(r => b.dataset.browse === 'All' || recipeInSection(r, b.dataset.browse)).length;
   });
   document.getElementById('sectionSelect').value = searching ? 'All' : recipeSection;
   const container = document.getElementById('chips');
@@ -461,13 +593,13 @@ function recipeTimingHtml(r) {
 function matches(r, q) {
   const normal = value => String(value || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   q = normal(q);
-  const text = [r.title, r.desc, r.category, t(r.category || ''), ...r.ingredients.map(i => i[0])];
+  const text = [r.title, r.desc, ...recipeMemberships(r).flatMap(m => [m.category, t(m.category)]), ...r.ingredients.map(i => i[0])];
   return !q || text.some(value => [value, recipeTranslations.pl[value], recipeTranslations.is[value]].some(candidate => normal(candidate).includes(q)));
 }
 function filteredRecipes() {
   const q = document.getElementById('search').value.trim();
   return recipes.filter(r =>
-    (q || ((recipeSection === 'All' || sectionForRecipe(r) === recipeSection) && (category === 'All' || (r.category || 'Other') === category))) &&
+    (q || (recipeMemberships(r).some(m => (recipeSection === 'All' || m.section === recipeSection) && (category === 'All' || m.category === category)))) &&
     (!onlyFavs || favs.has(r.id)) && matches(r, q)
   );
 }
@@ -527,6 +659,7 @@ function syncNavigation() {
   document.getElementById('detail').inert = compactLayout.matches && !open;
 }
 function openDetailPanel() {
+  familyHistory = [];
   recipeHistory = [];
   listScrollTop = document.getElementById('list').scrollTop;
   document.querySelector('.app').classList.add('reading-recipe');
@@ -535,6 +668,7 @@ function openDetailPanel() {
   if (compactLayout.matches) document.getElementById('backBtn').focus();
 }
 function closeDetailPanel() {
+  if (familyHistory.length) { returnFromFamily(); return; }
   recipeHistory = [];
   document.querySelector('.app').classList.remove('reading-recipe');
   syncNavigation();
@@ -561,6 +695,7 @@ function openNextRecipe() {
 }
 
 function openPreviousRecipe() {
+  if (familyHistory.length) { returnFromFamily(); return; }
   const available = new Set(filteredRecipes().map(r => r.id));
   let previous;
   while (recipeHistory.length) {
@@ -699,7 +834,7 @@ function renderDetail() {
       </div>
       <div class="detail-actions" style="justify-content:flex-start">
         <div class="seg">
-          ${[0.5, 1, 2, 3].map(s => `<button data-scale="${s}" class="${scale === s ? 'active' : ''}">${s === 0.5 ? '½' : s}×</button>`).join('')}
+          ${[...new Set([0.5, 1, 2, 3, scale])].sort((a, b) => a - b).map(s => `<button data-scale="${s}" class="${scale === s ? 'active' : ''}">${s === 0.5 ? '½' : fmt(s)}×</button>`).join('')}
         </div>
         ${hasFlour ? `
         <div class="seg">
@@ -708,6 +843,7 @@ function renderDetail() {
         </div>` : ''}
       </div>
       ${hydrationControl}
+      ${familyNavigationHtml(r)}
     </div>
 
     <div class="detail-body">
@@ -719,6 +855,7 @@ function renderDetail() {
           </button>
         </div>
         ${hasSecs ? `<div class="focus-hint">Tap a section to focus it</div>` : ''}
+        ${foundationIngredientsHtml(r)}
         ${renderIngredients(r)}
       </section>
       <section class="pane">
@@ -730,9 +867,10 @@ function renderDetail() {
     <div class="meta">
       ${recipeTimingHtml(r)}
       ${r.tempC  ? `<span class="stat">${temp}</span>`               : ''}
-      ${r.yield  ? `<span class="stat" id="recipeYield">${esc(translatedYield(r.yield))}</span>` : ''}
+      ${r.batchYield || r.yield ? `<span class="stat" id="recipeYield">${esc(r.batchYield ? familyAmount(r.batchYield.amount * scale, r.batchYield.unit) : translatedYield(r.yield))}</span>` : ''}
     </div>`;
 
+  bindFamilyNavigation();
   shopping.decorate(r);
   document.getElementById('ingredientOrderBtn').onclick = () => {
     quantitiesFirst = !quantitiesFirst;
@@ -830,6 +968,54 @@ function render() {
 }
 
 /* ─── Modal ─── */
+function populateRecipeOrganization(r) {
+  const suggestions = () => {
+    const section = document.getElementById('fSection').value;
+    const names = [...new Set([...(recipeSections.find(s => s.id === section)?.categories || []),
+      ...recipes.flatMap(recipe => recipeMemberships(recipe).filter(m => m.section === section).map(m => m.category))])];
+    document.getElementById('categorySuggestions').innerHTML = names.sort((a, b) => t(a).localeCompare(t(b), language))
+      .map(name => `<option value="${esc(name)}">${esc(t(name))}</option>`).join('');
+  };
+  suggestions(); document.getElementById('fSection').onchange = suggestions;
+  const memberships = r?.categoryMemberships || [];
+  document.getElementById('fMemberships').innerHTML = recipeSections.map(section => {
+    const names = [...new Set([...section.categories, ...recipes.flatMap(recipe => recipeMemberships(recipe).filter(m => m.section === section.id).map(m => m.category))])]
+      .sort((a, b) => t(a).localeCompare(t(b), language));
+    return `<details><summary>${esc(t(section.label))}</summary>${names.map(name => `<label class="membership-option"><input type="checkbox" data-membership-section="${section.id}" data-membership-category="${esc(name)}" ${memberships.some(m => m.section === section.id && m.category === name) ? 'checked' : ''}>${esc(t(name))}</label>`).join('')}</details>`;
+  }).join('');
+  document.getElementById('fBatchAmount').value = r?.batchYield?.amount ?? '';
+  document.getElementById('fBatchUnit').value = r?.batchYield?.unit || 'ml';
+  document.getElementById('fFoundations').innerHTML = '';
+  (r?.foundations || []).forEach(addFoundationField);
+  document.getElementById('addFoundation').onclick = () => addFoundationField();
+}
+function addFoundationField(f = {}) {
+  const row = document.createElement('div'); row.className = 'foundation-editor-row';
+  const available = recipes.filter(r => r.id !== editingId && r.batchYield).sort((a, b) => recipeText(a.title).localeCompare(recipeText(b.title), language));
+  row.innerHTML = `<select data-base aria-label="${esc(t('Foundation'))}"><option value="">${esc(t('Choose foundation'))}</option>${available.map(r => `<option value="${esc(r.id)}">${esc(recipeText(r.title))}</option>`).join('')}</select>
+    <input data-base-amount type="number" min="0.001" step="any" aria-label="${esc(t('Foundation amount'))}">
+    <select data-base-unit aria-label="${esc(t('Foundation unit'))}">${['ml', 'L', 'g', 'kg', 'pc'].map(u => `<option>${u}</option>`).join('')}</select>
+    <button type="button" class="btn" data-remove-base>${esc(t('Remove'))}</button>`;
+  row.querySelector('[data-base]').value = f.recipeId || '';
+  row.querySelector('[data-base-amount]').value = f.amount ?? '';
+  row.querySelector('[data-base-unit]').value = f.unit || 'ml';
+  row.querySelector('[data-base]').onchange = e => {
+    const base = recipes.find(r => r.id === e.target.value);
+    if (base) row.querySelector('[data-base-unit]').value = base.batchYield.unit;
+  };
+  row.querySelector('[data-remove-base]').onclick = () => row.remove();
+  document.getElementById('fFoundations').append(row);
+}
+function readRecipeOrganization() {
+  const amount = document.getElementById('fBatchAmount').value;
+  return {
+    categoryMemberships: [...document.querySelectorAll('[data-membership-section]:checked')].map(el => ({ section: el.dataset.membershipSection, category: el.dataset.membershipCategory })),
+    batchYield: amount === '' ? undefined : { amount: Number(amount), unit: document.getElementById('fBatchUnit').value },
+    foundations: [...document.querySelectorAll('#fFoundations .foundation-editor-row')].map(row => ({
+      recipeId: row.querySelector('[data-base]').value, amount: Number(row.querySelector('[data-base-amount]').value), unit: row.querySelector('[data-base-unit]').value,
+    })),
+  };
+}
 function openModal(r = null) {
   editingId = r?.id || null;
   document.getElementById('modalTitle').textContent = r ? 'Edit recipe' : 'Add recipe';
@@ -839,6 +1025,7 @@ function openModal(r = null) {
   set('fCategory',    r?.category || (recipeSections.find(section => section.id === recipeSection)?.categories[0] || 'Bread'));
   document.getElementById('fSection').innerHTML = recipeSections.map(section => `<option value="${section.id}">${esc(t(section.label))}</option>`).join('');
   set('fSection', r ? sectionForRecipe(r) : recipeSection === 'All' ? 'baking' : recipeSection);
+  populateRecipeOrganization(r);
   set('fDesc',        r?.desc);
   set('fYield',       r?.yield);
   set('fTemp',        r?.tempC);
@@ -857,19 +1044,22 @@ function closeModal() {
 }
 function parseIngredients(txt) {
   return txt.split('\n').map(x => x.trim()).filter(Boolean).map(line => {
-    let [name, amount, unitName, role = ''] = line.split('|').map(x => x.trim());
-    return [name, Number(amount), unitName || '', role];
+    let [name, amount, unitName, role = '', maximum] = line.split('|').map(x => x.trim());
+    return [name, amount === '' ? null : Number(amount), unitName || '', role,
+      ...(maximum === undefined || maximum === '' ? [] : [Number(maximum)])];
   });
 }
 function saveRecipe() {
   const title       = document.getElementById('fTitle').value.trim();
   const ingredients = parseIngredients(document.getElementById('fIngredients').value);
   const steps       = document.getElementById('fSteps').value.split('\n').map(x => x.trim()).filter(Boolean);
-  if (!title || !ingredients.length || ingredients.some(i => !i[0] || !Number.isFinite(i[1])) || !steps.length) {
+  if (!title || !ingredients.length || ingredients.some(i => !i[0] || (i[1] !== null && !Number.isFinite(i[1])) ||
+      (i.length > 4 && (!Number.isFinite(i[4]) || i[1] === null || i[4] < i[1]))) || !steps.length) {
     toast('Add a name, valid ingredients and method steps');
     return;
   }
   const data = {
+    ...cloneValue(recipes.find(r => r.id === editingId) || {}),
     id:        editingId || `r_${Date.now()}`,
     title,
     category:  document.getElementById('fCategory').value.trim() || 'Other',
@@ -885,6 +1075,9 @@ function saveRecipe() {
     ingredients,
     steps,
   };
+  Object.assign(data, readRecipeOrganization());
+  try { validateRecipeFamilies([...recipes.filter(r => r.id !== data.id), data]); }
+  catch { toast(t('Check foundation quantities, yields and links. A recipe cannot depend on itself.')); return; }
   if (editingId) { recipes = recipes.map(r => r.id === editingId ? data : r); }
   else recipes.unshift(data);
   selectedId = data.id;
@@ -900,6 +1093,9 @@ function saveRecipe() {
 }
 function deleteRecipe() {
   if (!editingId) return;
+  if (recipes.some(r => (r.foundations || []).some(f => f.recipeId === editingId))) {
+    toast(t('This foundation is used by another recipe. Remove that link before deleting it.')); return;
+  }
   recipes    = recipes.filter(r => r.id !== editingId);
   favs.delete(editingId);
   selectedId = recipes[0]?.id || null;

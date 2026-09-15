@@ -16,13 +16,15 @@ for (const [key, values] of Object.entries(shoppingShareMessages)) {
 }
 const shopping = (() => {
   const key = 'quickrecipe.shopping.v1';
-  let lists = {}, editing = null, draft = new Map(), opener = null;
+  let lists = {}, editing = null, draft = new Map(), opener = null, preparedBases = {};
   try {
     const stored = JSON.parse(localStorage.getItem(key));
     if (stored && typeof stored === 'object' && !Array.isArray(stored)) {
       for (const [id,list] of Object.entries(stored)) {
         if (typeof list?.title === 'string' && Array.isArray(list.items)) lists[id] = {
-          title:list.title, items:list.items.filter(i => typeof i?.name === 'string').map(i => ({name:i.name, amount:typeof i.amount === 'string' ? i.amount : '', bought:i.bought === true}))
+          title:list.title, items:list.items.filter(i => typeof i?.name === 'string').map(i => ({name:i.name, amount:typeof i.amount === 'string' ? i.amount : '', bought:i.bought === true,
+            ...(typeof i.key === 'string' ? {key:i.key, computed:typeof i.computed === 'string' ? i.computed : ''} : {})})),
+          ...(list.family && Number.isFinite(list.family.scale) && list.family.scale > 0 ? {family:{scale:list.family.scale, prepared:Object.fromEntries(Object.entries(list.family.prepared || {}).filter(([,v])=>v === true))}} : {})
         };
       }
     }
@@ -86,7 +88,12 @@ const shopping = (() => {
     const edit=body.querySelector('[data-edit]'); edit.disabled=!recipes.some(r=>r.id===id);
     edit.onclick=()=>{close();recipeSection='All';category='All';onlyFavs=false;document.getElementById('search').value='';selectedId=id;render();openDetailPanel();start(recipes.find(r=>r.id===id));};
   }
-  function start(r) { editing=r.id;draft=new Map((lists[r.id]?.items||[]).map(i=>[i.name,{...i}])); focusedSection=null;renderDetail(); }
+  function start(r) {
+    editing=r.id;draft=new Map((lists[r.id]?.items||[]).map(i=>[i.key || i.name,{...i}]));
+    preparedBases={...(lists[r.id]?.family?.prepared || {})};
+    if(r.foundations?.length && lists[r.id]?.family) scale=lists[r.id].family.scale;
+    focusedSection=null;renderDetail();
+  }
   function decorate(r) {
     if(editing && editing!==r.id) {editing=null;draft.clear();}
     const actions=document.querySelector('.detail-actions');
@@ -95,6 +102,7 @@ const shopping = (() => {
     button.onclick=()=>lists[r.id]?.items.length?open(r.id):start(r);actions.append(button);
     if(editing!==r.id)return;
     button.hidden=true;
+    if(r.foundations?.length) { decorateFamily(r); return; }
     document.querySelectorAll('.ingredient-section').forEach(b=>b.disabled=true);
     const pane=document.querySelector('.detail-body .pane');
     const controls=document.createElement('div');controls.className='shopping-selection';
@@ -110,6 +118,49 @@ const shopping = (() => {
       check.onchange=()=>{ if(check.checked)draft.set(name,{name,amount:'',bought:false});else draft.delete(name);pane.querySelectorAll('[data-shopping-name]').forEach(c=>c.checked=draft.has(c.dataset.shoppingName));update(); };
       const label=document.createElement('label');label.className='shopping-select-name';const text=row.firstElementChild;label.append(check,text);row.prepend(label);
     });update();
+  }
+  function decorateFamily(r) {
+    const pane=document.querySelector('.detail-body .pane');
+    pane.querySelectorAll('.ingredient, .ingredient-section, .foundation-ingredients, .focus-hint').forEach(el=>el.hidden=true);
+    const controls=document.createElement('div');controls.className='shopping-selection family-shopping';
+    pane.append(controls);
+    const plan=familyShoppingPlan(r,scale,preparedBases);
+    const available=new Map(plan.ingredients.map(i=>[i.key,i]));
+    for(const [key,item] of draft) {
+      if(!available.has(key)) {draft.delete(key);continue;}
+      const computed=familyShoppingAmount(available.get(key));
+      if(item.amount===item.computed) item.amount=computed;
+      item.computed=computed;
+    }
+    controls.innerHTML=`<p>${esc(t('Choose which foundations you already have, then select ingredients to buy.'))}</p>
+      ${plan.bases.map(base=>`<label class="family-shopping-base"><span>${esc(recipeText(base.title))} · ${esc(familyAmount(base.amount,base.unit))}</span>
+        <select data-prepared-base="${esc(base.id)}"><option value="make" ${!preparedBases[base.id]?'selected':''}>${esc(t('Make from ingredients'))}</option><option value="prepared" ${preparedBases[base.id]?'selected':''}>${esc(t('Already prepared'))}</option></select></label>`).join('')}
+      <p>${esc(t('Prepared foundations are excluded from your shopping list.'))}</p>
+      <button class="btn" data-family-select-all>${esc(t('Select all'))}</button>
+      <div>${plan.ingredients.map(i=>`<div class="family-shopping-item"><label><input type="checkbox" data-family-shopping-key="${esc(i.key)}" ${draft.has(i.key)?'checked':''}>${esc(recipeText(i.name))}</label><strong>${esc(familyShoppingAmount(i))}</strong></div>`).join('')}</div>
+      <div class="shopping-footer"><button class="btn" data-cancel>${esc(t('Cancel'))}</button><button class="btn primary" data-view-list></button></div>`;
+    const viewButton=controls.querySelector('[data-view-list]');
+    function update(){viewButton.textContent=`${t('View list')} (${draft.size})`;viewButton.disabled=!draft.size;}
+    function select(key) {
+      const item=available.get(key),computed=familyShoppingAmount(item);
+      if(!draft.has(key)) draft.set(key,{key,name:item.name,amount:computed,computed,bought:false});
+    }
+    controls.querySelectorAll('[data-family-shopping-key]').forEach(check=>check.onchange=()=>{
+      const key=check.dataset.familyShoppingKey;
+      if(check.checked)select(key);else draft.delete(key);update();
+    });
+    controls.querySelectorAll('[data-prepared-base]').forEach(select=>select.onchange=()=>{
+      preparedBases[select.dataset.preparedBase]=select.value==='prepared';renderDetail();
+    });
+    controls.querySelector('[data-family-select-all]').onclick=()=>{
+      available.forEach((_,key)=>select(key));controls.querySelectorAll('[data-family-shopping-key]').forEach(el=>el.checked=true);update();
+    };
+    controls.querySelector('[data-cancel]').onclick=()=>{editing=null;draft.clear();renderDetail();};
+    viewButton.onclick=()=>{
+      lists[r.id]={title:r.title,items:[...draft.values()],family:{scale,prepared:preparedBases}};
+      save();editing=null;renderDetail();open(r.id);
+    };
+    update();
   }
   function migrateRecipeIds(renamed, collection) {
     let changed = false;

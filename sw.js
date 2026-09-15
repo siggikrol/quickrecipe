@@ -1,4 +1,4 @@
-const VERSION = '45';
+const VERSION = '46';
 const CACHE = `quickrecipe-v${VERSION}`;
 const ASSETS = [
   './',

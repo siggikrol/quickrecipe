@@ -211,6 +211,196 @@ const UI_MESSAGES = {
     "Mix ingredients.\nBulk ferment 2 hours.\nShape and proof.\nBake.": "Blandið hráefnum saman.\nLátið hefast í 2 klukkustundir.\nMótið og látið hefast.\nBakið."
   }
 };
+const familyMessages = {
+  "Categories & foundations": [
+    "Kategorie i przepisy bazowe",
+    "Flokkar og grunnuppskriftir"
+  ],
+  "Also show in": [
+    "Pokaż także w",
+    "Sýna einnig í"
+  ],
+  "Prepared yield at 1×": [
+    "Ilość gotowej bazy przy 1×",
+    "Magn tilbúinnar grunnuppskriftar við 1×"
+  ],
+  "Set a measured yield so other recipes can use this as a foundation.": [
+    "Podaj ilość gotowego produktu, aby inne przepisy mogły używać go jako bazy.",
+    "Tilgreindu magn tilbúinnar uppskriftar svo aðrar uppskriftir geti notað hana sem grunn."
+  ],
+  "Prepared yield amount": [
+    "Ilość gotowego produktu",
+    "Magn tilbúinnar uppskriftar"
+  ],
+  "Prepared yield unit": [
+    "Jednostka gotowego produktu",
+    "Eining tilbúinnar uppskriftar"
+  ],
+  "Requires": [
+    "Wymaga",
+    "Þarf"
+  ],
+  "Choose a prepared foundation and the amount needed at 1×. List only additional ingredients below.": [
+    "Wybierz gotową bazę i ilość potrzebną przy 1×. Poniżej wpisz tylko dodatkowe składniki.",
+    "Veldu tilbúna grunnuppskrift og magnið sem þarf við 1×. Skráðu aðeins viðbótarhráefni hér að neðan."
+  ],
+  "Add foundation": [
+    "Dodaj przepis bazowy",
+    "Bæta við grunnuppskrift"
+  ],
+  "Foundation": [
+    "Przepis bazowy",
+    "Grunnuppskrift"
+  ],
+  "Choose foundation": [
+    "Wybierz przepis bazowy",
+    "Veldu grunnuppskrift"
+  ],
+  "Foundation amount": [
+    "Ilość bazy",
+    "Magn grunnuppskriftar"
+  ],
+  "Foundation unit": [
+    "Jednostka bazy",
+    "Eining grunnuppskriftar"
+  ],
+  "Remove": [
+    "Usuń",
+    "Fjarlægja"
+  ],
+  "Make from this": [
+    "Przygotuj na tej bazie",
+    "Búðu til úr þessu"
+  ],
+  "Back to previous recipe": [
+    "Wróć do poprzedniego przepisu",
+    "Til baka í fyrri uppskrift"
+  ],
+  "Choose which foundations you already have, then select ingredients to buy.": [
+    "Wybierz bazy, które masz już gotowe, a następnie składniki do kupienia.",
+    "Veldu hvaða grunnuppskriftir þú átt tilbúnar og síðan hráefnin sem þú þarft að kaupa."
+  ],
+  "Make from ingredients": [
+    "Przygotuj ze składników",
+    "Búa til úr hráefnum"
+  ],
+  "Already prepared": [
+    "Już gotowe",
+    "Þegar tilbúið"
+  ],
+  "Prepared foundations are excluded from your shopping list.": [
+    "Gotowe bazy nie są dodawane do listy zakupów.",
+    "Tilbúnar grunnuppskriftir eru ekki settar á innkaupalistann."
+  ],
+  "Select all": [
+    "Zaznacz wszystkie",
+    "Velja allt"
+  ],
+  "Check foundation quantities, yields and links. A recipe cannot depend on itself.": [
+    "Sprawdź ilości, wydajność i powiązania baz. Przepis nie może zależeć od siebie.",
+    "Athugaðu magn, afrakstur og tengingar grunnuppskrifta. Uppskrift má ekki byggja á sjálfri sér."
+  ],
+  "This foundation is used by another recipe. Remove that link before deleting it.": [
+    "Inny przepis korzysta z tej bazy. Usuń powiązanie przed jej usunięciem.",
+    "Önnur uppskrift notar þennan grunn. Fjarlægðu tenginguna áður en þú eyðir honum."
+  ],
+  "Pizza & savoury dough": [
+    "Pizza i ciasta wytrawne",
+    "Pítsur og ósætt deig"
+  ],
+  "Baking components": [
+    "Bazy do wypieków",
+    "Grunnuppskriftir í bakstur"
+  ],
+  "Muffins & scones": [
+    "Muffiny i scones",
+    "Múffur og skonsur"
+  ],
+  "Pies & tarts": [
+    "Placki i tarty",
+    "Bökur og tertur"
+  ],
+  "Classic desserts": [
+    "Klasyczne desery",
+    "Klassískir eftirréttir"
+  ],
+  "Breakfast & brunch": [
+    "Śniadania i brunch",
+    "Morgunmatur og bröns"
+  ],
+  "Pasta & noodles": [
+    "Makarony i kluski",
+    "Pasta og núðlur"
+  ],
+  "Rice & grains": [
+    "Ryż i kasze",
+    "Hrísgrjón og korn"
+  ],
+  "Chicken": [
+    "Kurczak",
+    "Kjúklingur"
+  ],
+  "Beef, pork & sausage": [
+    "Wołowina, wieprzowina i kiełbasa",
+    "Nautakjöt, svínakjöt og pylsur"
+  ],
+  "Fish & seafood": [
+    "Ryby i owoce morza",
+    "Fiskur og sjávarfang"
+  ],
+  "Vegetarian": [
+    "Dania wegetariańskie",
+    "Grænmetisréttir"
+  ],
+  "Quick dinners": [
+    "Szybkie obiady",
+    "Fljótlegir kvöldverðir"
+  ],
+  "Casseroles & one-pot": [
+    "Zapiekanki i dania jednogarnkowe",
+    "Ofnréttir og pottréttir"
+  ],
+  "Stocks": [
+    "Wywary",
+    "Soð"
+  ],
+  "Brown sauces": [
+    "Sosy brązowe",
+    "Brúnar sósur"
+  ],
+  "Béchamel": [
+    "Beszamel",
+    "Béchamelsósa"
+  ],
+  "Velouté": [
+    "Sosy velouté",
+    "Veloutésósur"
+  ],
+  "Hollandaise": [
+    "Sosy holenderskie",
+    "Hollandaisesósur"
+  ],
+  "Tomato sauces": [
+    "Sosy pomidorowe",
+    "Tómatsósur"
+  ],
+  "Mayonnaise": [
+    "Majonez",
+    "Majónes"
+  ],
+  "Butter & pan sauces": [
+    "Sosy maślane i z patelni",
+    "Smjörsósur og pönnusósur"
+  ],
+  "Sweet sauces": [
+    "Słodkie sosy",
+    "Sætar sósur"
+  ]
+};
+for (const [key, values] of Object.entries(familyMessages)) {
+  UI_MESSAGES.pl[key] = values[0]; UI_MESSAGES.is[key] = values[1];
+}
+
 const LANGUAGE_KEY = 'quickrecipe.language';
 let language = 'en';
 try { const saved = localStorage.getItem(LANGUAGE_KEY); if (['en', 'pl', 'is'].includes(saved)) language = saved; } catch {}
