@@ -11,7 +11,22 @@
     "meringue.json",
     "brownies.json",
     "polish-soups.json",
-    "polish-breads.json"
+    "polish-breads.json",
+    "foundation-sauces.json",
+    "stocks.json",
+    "dips.json",
+    "breakfast.json",
+    "pasta.json",
+    "chicken.json",
+    "quick-dinners.json",
+    "meat.json",
+    "seafood.json",
+    "rice.json",
+    "vegetarian.json",
+    "sides.json",
+    "salads.json",
+    "soups.json",
+    "casseroles.json"
   ],
   "retiredIds": [
     "cookie-smakokur-med-karamellu",

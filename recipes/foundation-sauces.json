@@ -1,0 +1,3080 @@
+[
+  {
+    "id": "bechamel",
+    "title": "Béchamel",
+    "category": "Béchamel",
+    "section": "sauces",
+    "desc": "A smooth milk sauce for gratins, lasagne and cheese sauces.",
+    "ingredients": [
+      [
+        "Butter",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        1000.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground white pepper",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground nutmeg",
+        0.125,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Melt the butter in a heavy saucepan over medium-low heat.",
+      "Stir in the flour and cook for 2 minutes without browning.",
+      "Whisk in the milk gradually until smooth. Bring to a gentle simmer, stirring constantly.",
+      "Simmer for 10 minutes, stirring often. Add salt, white pepper and nutmeg.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 1000,
+      "unit": "ml"
+    },
+    "cook": "15 min"
+  },
+  {
+    "id": "mornay",
+    "title": "Mornay",
+    "category": "Béchamel",
+    "section": "sauces",
+    "desc": "Béchamel enriched with Gruyère and Parmesan.",
+    "ingredients": [
+      [
+        "Gruyère, grated",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Parmesan, grated",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Warm the prepared béchamel gently in a saucepan, stirring.",
+      "Remove from the heat and stir in Gruyère and Parmesan until melted.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield.",
+      "Serve warm; avoid boiling after adding the cheese."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 600,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "bechamel",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "5 min"
+  },
+  {
+    "id": "mustard-bechamel",
+    "title": "Mustard Béchamel",
+    "category": "Béchamel",
+    "section": "sauces",
+    "desc": "A mild mustard sauce built on béchamel.",
+    "ingredients": [
+      [
+        "Dijon mustard",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Warm the prepared béchamel gently in a saucepan, stirring.",
+      "Whisk in the Dijon mustard until evenly mixed.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield.",
+      "Warm through gently and serve with vegetables or cooked meat."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 550,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "bechamel",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "5 min"
+  },
+  {
+    "id": "parsley-sauce",
+    "title": "Parsley Sauce",
+    "category": "Béchamel",
+    "section": "sauces",
+    "desc": "Creamy parsley sauce with a little lemon.",
+    "ingredients": [
+      [
+        "Fresh parsley, chopped",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Warm the prepared béchamel gently in a saucepan, stirring.",
+      "Stir in the parsley and lemon juice off the heat.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield.",
+      "Serve straight away with fish, potatoes or vegetables."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 550,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "bechamel",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "5 min"
+  },
+  {
+    "id": "soubise",
+    "title": "Soubise",
+    "category": "Béchamel",
+    "section": "sauces",
+    "desc": "Soft onions blended into a smooth béchamel sauce.",
+    "ingredients": [
+      [
+        "Butter",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Melt butter in a covered saucepan over low heat.",
+      "Add onion, cover and cook gently for 25 minutes until very soft, stirring often and avoiding colour.",
+      "Stir in prepared béchamel and warm through. Blend until smooth.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 750,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "bechamel",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "30 min"
+  },
+  {
+    "id": "cheddar-sauce",
+    "title": "Cheddar Sauce",
+    "category": "Béchamel",
+    "section": "sauces",
+    "desc": "A smooth cheese sauce for vegetables, pasta and baked potatoes.",
+    "ingredients": [
+      [
+        "Cheddar, grated",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Warm the prepared béchamel gently in a saucepan, stirring.",
+      "Take off the heat and stir in Cheddar until melted and smooth.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield.",
+      "Serve warm; avoid boiling after adding the cheese."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 650,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "bechamel",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "5 min"
+  },
+  {
+    "id": "cream-sauce",
+    "title": "Cream Sauce",
+    "category": "Béchamel",
+    "section": "sauces",
+    "desc": "Béchamel finished with cream.",
+    "ingredients": [
+      [
+        "Double cream",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Warm the prepared béchamel gently in a saucepan, stirring.",
+      "Whisk in the cream and simmer gently for 3 minutes.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield.",
+      "Serve warm, stirring before pouring."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 600,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "bechamel",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "5 min"
+  },
+  {
+    "id": "espagnole",
+    "title": "Espagnole",
+    "category": "Brown sauces",
+    "section": "sauces",
+    "desc": "Brown stock thickened with a brown roux and aromatic vegetables.",
+    "ingredients": [
+      [
+        "Butter",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        75.0,
+        "g",
+        "other"
+      ],
+      [
+        "Celery, diced",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Tomato paste",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Bay leaf",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Fresh thyme",
+        3.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Melt butter in a heavy saucepan. Brown onion, carrot and celery over medium heat for 10 minutes.",
+      "Add flour and stir until nut-brown, about 5 minutes. Stir in tomato paste for 1 minute.",
+      "Whisk in the prepared brown beef stock gradually. Add bay and thyme.",
+      "Simmer gently for 45 minutes, stirring and skimming. Strain through a fine sieve.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 1000,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "brown-beef-stock",
+        "amount": 1250.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "60 min"
+  },
+  {
+    "id": "demi-glace",
+    "title": "Demi-glace",
+    "category": "Brown sauces",
+    "section": "sauces",
+    "desc": "Espagnole and brown stock reduced to a concentrated sauce.",
+    "ingredients": [
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Combine the prepared Espagnole and brown beef stock in a wide saucepan.",
+      "Bring to a gentle simmer and skim the surface.",
+      "Reduce uncovered by about half, stirring occasionally; allow 45–60 minutes.",
+      "Strain, then check the displayed yield; reduce further or loosen with water as needed."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 500,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "espagnole",
+        "amount": 500.0,
+        "unit": "ml"
+      },
+      {
+        "recipeId": "brown-beef-stock",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "45–60 min"
+  },
+  {
+    "id": "bordelaise",
+    "title": "Bordelaise",
+    "category": "Brown sauces",
+    "section": "sauces",
+    "desc": "A rich brown sauce with red wine.",
+    "ingredients": [
+      [
+        "Dry red wine",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Shallot, finely chopped",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh thyme",
+        3.0,
+        "g",
+        "other"
+      ],
+      [
+        "Bay leaf",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Beef bone marrow, diced",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Simmer red wine, shallot, thyme and bay in a small pan until reduced by two-thirds, about 10 minutes.",
+      "Stir in prepared demi-glace and simmer for 5 minutes, then strain.",
+      "Add marrow and simmer gently for 5 minutes until cooked through and tender.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 350,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "demi-glace",
+        "amount": 250.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "20 min"
+  },
+  {
+    "id": "marchand-de-vin",
+    "title": "Marchand de Vin",
+    "category": "Brown sauces",
+    "section": "sauces",
+    "desc": "Red wine and shallots enrich demi-glace.",
+    "ingredients": [
+      [
+        "Dry red wine",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Shallot, finely chopped",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Simmer red wine and shallot until reduced by two-thirds, about 10 minutes.",
+      "Add prepared demi-glace and simmer for 5 minutes.",
+      "Strain, take off the heat and whisk in cold butter.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 350,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "demi-glace",
+        "amount": 250.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "15 min"
+  },
+  {
+    "id": "madeira-sauce",
+    "title": "Madeira Sauce",
+    "category": "Brown sauces",
+    "section": "sauces",
+    "desc": "Demi-glace with the mellow flavour of Madeira.",
+    "ingredients": [
+      [
+        "Madeira wine",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Simmer Madeira in a saucepan until reduced by half, about 5 minutes.",
+      "Add prepared demi-glace and simmer gently for 5 minutes.",
+      "Remove from the heat and whisk in the butter.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 350,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "demi-glace",
+        "amount": 250.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "10 min"
+  },
+  {
+    "id": "chasseur",
+    "title": "Chasseur",
+    "category": "Brown sauces",
+    "section": "sauces",
+    "desc": "A brown sauce with mushrooms and herbs.",
+    "ingredients": [
+      [
+        "Butter",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mushrooms, sliced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Shallot, finely chopped",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dry white wine",
+        75.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Tomato paste",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh tarragon, chopped",
+        5.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat butter and fry the mushrooms for 6 minutes until browned.",
+      "Add shallot and cook for 2 minutes. Add wine and reduce by half.",
+      "Stir in tomato paste and prepared demi-glace; simmer for 5 minutes. Add tarragon.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 500,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "demi-glace",
+        "amount": 250.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "20 min"
+  },
+  {
+    "id": "brown-mushroom-sauce",
+    "title": "Brown Mushroom Sauce",
+    "category": "Brown sauces",
+    "section": "sauces",
+    "desc": "Mushrooms in a rich brown sauce.",
+    "ingredients": [
+      [
+        "Butter",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mushrooms, sliced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Shallot, finely chopped",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        5.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Fry mushrooms in butter over medium-high heat for 8 minutes until browned.",
+      "Add shallot and cook for 2 minutes.",
+      "Stir in prepared demi-glace and simmer for 5 minutes. Finish with parsley.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 500,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "demi-glace",
+        "amount": 250.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "15 min"
+  },
+  {
+    "id": "peppercorn-sauce",
+    "title": "Peppercorn Sauce",
+    "category": "Brown sauces",
+    "section": "sauces",
+    "desc": "Creamy green peppercorn sauce with brandy.",
+    "ingredients": [
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Shallot, finely chopped",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Brandy",
+        40.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Green peppercorns in brine, drained",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften shallot in butter for 3 minutes.",
+      "Take the pan away from the flame before adding brandy. Return to low heat and simmer for 2 minutes; do not ignite.",
+      "Add peppercorns, prepared demi-glace and cream. Simmer gently for 5 minutes.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 400,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "demi-glace",
+        "amount": 250.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "10 min"
+  },
+  {
+    "id": "robert-sauce",
+    "title": "Robert Sauce",
+    "category": "Brown sauces",
+    "section": "sauces",
+    "desc": "An onion and mustard brown sauce.",
+    "ingredients": [
+      [
+        "Butter",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dry white wine",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dijon mustard",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Cook onion in butter over low heat for 10 minutes until soft and lightly golden.",
+      "Add wine and simmer until reduced by half.",
+      "Stir in prepared demi-glace and simmer for 5 minutes. Remove from heat and stir in mustard.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 400,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "demi-glace",
+        "amount": 250.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "20 min"
+  },
+  {
+    "id": "chicken-veloute",
+    "title": "Chicken Velouté",
+    "category": "Velouté",
+    "section": "sauces",
+    "desc": "A smooth sauce made with white chicken stock.",
+    "ingredients": [
+      [
+        "Butter",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground white pepper",
+        0.125,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Melt the butter in a saucepan over medium-low heat.",
+      "Stir in flour and cook for 2 minutes until pale gold.",
+      "Gradually whisk in the required prepared stock until smooth.",
+      "Simmer gently for 20 minutes, stirring often; add salt and white pepper.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 1000,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "white-chicken-stock",
+        "amount": 1100.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "25 min"
+  },
+  {
+    "id": "veal-veloute",
+    "title": "Veal Velouté",
+    "category": "Velouté",
+    "section": "sauces",
+    "desc": "A delicate sauce made with white veal stock.",
+    "ingredients": [
+      [
+        "Butter",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground white pepper",
+        0.125,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Melt the butter in a saucepan over medium-low heat.",
+      "Stir in flour and cook for 2 minutes until pale gold.",
+      "Gradually whisk in the required prepared stock until smooth.",
+      "Simmer gently for 20 minutes, stirring often; add salt and white pepper.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 1000,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "veal-stock",
+        "amount": 1100.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "25 min"
+  },
+  {
+    "id": "fish-veloute",
+    "title": "Fish Velouté",
+    "category": "Velouté",
+    "section": "sauces",
+    "desc": "A light roux sauce made with fish fumet.",
+    "ingredients": [
+      [
+        "Butter",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground white pepper",
+        0.125,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Melt the butter in a saucepan over medium-low heat.",
+      "Stir in flour and cook for 2 minutes until pale gold.",
+      "Gradually whisk in the required prepared stock until smooth.",
+      "Simmer gently for 20 minutes, stirring often; add salt and white pepper.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 1000,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "fish-fumet",
+        "amount": 1100.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "25 min"
+  },
+  {
+    "id": "supreme-sauce",
+    "title": "Suprême Sauce",
+    "category": "Velouté",
+    "section": "sauces",
+    "desc": "Chicken velouté enriched with cream.",
+    "ingredients": [
+      [
+        "Double cream",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Warm the prepared chicken velouté in a saucepan.",
+      "Add cream and simmer gently for 5 minutes.",
+      "Take off the heat and stir in butter and lemon juice.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 600,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "chicken-veloute",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "10 min"
+  },
+  {
+    "id": "allemande",
+    "title": "Allemande",
+    "category": "Velouté",
+    "section": "sauces",
+    "desc": "Veal velouté enriched with egg yolks.",
+    "ingredients": [
+      [
+        "Pasteurised egg yolks",
+        2.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Double cream",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Warm the prepared veal velouté until steaming, then lower the heat.",
+      "Whisk yolks and cream in a bowl. Gradually whisk in a ladle of hot sauce, then stir the mixture back into the pan.",
+      "Stir over low heat until slightly thickened, about 2 minutes; do not boil. Add lemon juice.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 650,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "veal-veloute",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "10 min"
+  },
+  {
+    "id": "normandy-sauce",
+    "title": "Normandy Sauce",
+    "category": "Velouté",
+    "section": "sauces",
+    "desc": "Creamy fish velouté with mushrooms.",
+    "ingredients": [
+      [
+        "Mushrooms, sliced",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Pasteurised egg yolks",
+        2.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Double cream",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften mushrooms in butter for 5 minutes without browning.",
+      "Add prepared fish velouté and fish fumet. Simmer for 10 minutes, then strain.",
+      "Whisk yolks and cream in a bowl. Gradually whisk in a ladle of hot sauce, then stir the mixture back into the pan.",
+      "Stir over low heat until slightly thickened, about 2 minutes; do not boil. Add lemon juice.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 700,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "fish-veloute",
+        "amount": 500.0,
+        "unit": "ml"
+      },
+      {
+        "recipeId": "fish-fumet",
+        "amount": 100.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "20 min"
+  },
+  {
+    "id": "white-wine-sauce",
+    "title": "White Wine Sauce",
+    "category": "Velouté",
+    "section": "sauces",
+    "desc": "A creamy white wine sauce for fish.",
+    "ingredients": [
+      [
+        "Dry white wine",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Shallot, finely chopped",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Simmer white wine and shallot until reduced by two-thirds, about 8 minutes.",
+      "Stir in prepared fish velouté and simmer for 5 minutes.",
+      "Add cream, warm gently and strain.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 650,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "fish-veloute",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "15 min"
+  },
+  {
+    "id": "mushroom-veloute",
+    "title": "Mushroom Velouté",
+    "category": "Velouté",
+    "section": "sauces",
+    "desc": "Chicken velouté with sautéed mushrooms.",
+    "ingredients": [
+      [
+        "Butter",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mushrooms, sliced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        50.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Fry mushrooms in butter for 8 minutes until tender and lightly browned.",
+      "Stir in prepared chicken velouté and simmer for 5 minutes.",
+      "Add cream and blend until smooth.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 750,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "chicken-veloute",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "15 min"
+  },
+  {
+    "id": "hollandaise",
+    "title": "Hollandaise",
+    "category": "Hollandaise",
+    "section": "sauces",
+    "desc": "A warm butter emulsion made with pasteurised yolks and lemon.",
+    "ingredients": [
+      [
+        "Butter",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Pasteurised egg yolks",
+        3.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Cayenne pepper",
+        0.125,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Melt the butter gently and keep it warm, not sizzling.",
+      "Whisk pasteurised yolks, lemon juice and measured water in a heatproof bowl over barely simmering water; the bowl must not touch the water.",
+      "Whisk for 3–5 minutes until thick enough to leave a trail, then remove from the heat.",
+      "Whisk in the warm butter very slowly, a little at a time, until glossy. Add salt and cayenne.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield.",
+      "Serve immediately; keep the sauce warm, never hot, and do not boil."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 300,
+      "unit": "ml"
+    },
+    "cook": "10 min"
+  },
+  {
+    "id": "bearnaise",
+    "title": "Béarnaise",
+    "category": "Hollandaise",
+    "section": "sauces",
+    "desc": "A practical hollandaise-based béarnaise with shallot and tarragon reduction.",
+    "ingredients": [
+      [
+        "Dry white wine",
+        60.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White wine vinegar",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Shallot, finely chopped",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh tarragon, chopped",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.125,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Simmer wine, vinegar and shallot with half the tarragon and the pepper until almost dry, about 8 minutes.",
+      "Cool the reduction until lukewarm; finely chop any remaining large pieces.",
+      "Fold the reduction and remaining tarragon into the prepared hollandaise.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield.",
+      "Serve immediately; keep the sauce warm, never hot, and do not boil."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 350,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "hollandaise",
+        "amount": 300.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "10 min"
+  },
+  {
+    "id": "choron",
+    "title": "Choron",
+    "category": "Hollandaise",
+    "section": "sauces",
+    "desc": "Béarnaise with a touch of tomato.",
+    "ingredients": [
+      [
+        "Tomato paste",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Cook tomato paste in butter over low heat for 2 minutes, stirring.",
+      "Let the tomato mixture cool until lukewarm.",
+      "Fold into the prepared béarnaise until evenly coloured.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield.",
+      "Serve immediately; keep the sauce warm, never hot, and do not boil."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 350,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "bearnaise",
+        "amount": 300.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "5 min"
+  },
+  {
+    "id": "foyot",
+    "title": "Foyot",
+    "category": "Hollandaise",
+    "section": "sauces",
+    "desc": "Béarnaise enriched with meat glaze.",
+    "ingredients": [
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Warm the prepared meat glaze gently until fluid.",
+      "Let it cool until lukewarm so it will not split the béarnaise.",
+      "Fold the glaze into the prepared béarnaise a little at a time.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield.",
+      "Serve immediately; keep the sauce warm, never hot, and do not boil."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 350,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "bearnaise",
+        "amount": 300.0,
+        "unit": "ml"
+      },
+      {
+        "recipeId": "meat-glaze",
+        "amount": 30.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "5 min"
+  },
+  {
+    "id": "mousseline",
+    "title": "Mousseline",
+    "category": "Hollandaise",
+    "section": "sauces",
+    "desc": "Hollandaise lightened with softly whipped cream.",
+    "ingredients": [
+      [
+        "Double cream",
+        100.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Whip the cold cream to soft peaks.",
+      "Let the prepared hollandaise become lukewarm rather than hot.",
+      "Fold the whipped cream into the hollandaise gently, keeping as much air as possible.",
+      "Serve immediately over cooked vegetables or fish; do not reheat."
+    ],
+    "compactMetricUnits": true,
+    "yield": "6 servings",
+    "foundations": [
+      {
+        "recipeId": "hollandaise",
+        "amount": 300.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "5 min"
+  },
+  {
+    "id": "maltaise",
+    "title": "Maltaise",
+    "category": "Hollandaise",
+    "section": "sauces",
+    "desc": "Hollandaise with orange juice and zest.",
+    "ingredients": [
+      [
+        "Blood orange juice",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Blood orange zest, finely grated",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Simmer blood orange juice until reduced by half, about 5 minutes.",
+      "Stir in the zest and cool until lukewarm.",
+      "Whisk into the prepared hollandaise a little at a time.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield.",
+      "Serve immediately; keep the sauce warm, never hot, and do not boil."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 350,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "hollandaise",
+        "amount": 300.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "5 min"
+  },
+  {
+    "id": "dijon-hollandaise",
+    "title": "Dijon Hollandaise",
+    "category": "Hollandaise",
+    "section": "sauces",
+    "desc": "Hollandaise sharpened with Dijon mustard.",
+    "ingredients": [
+      [
+        "Dijon mustard",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Place prepared hollandaise in a warm bowl, away from direct heat.",
+      "Whisk in Dijon mustard until smooth.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield.",
+      "Serve immediately; keep the sauce warm, never hot, and do not boil."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 350,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "hollandaise",
+        "amount": 300.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "5 min"
+  },
+  {
+    "id": "mayonnaise",
+    "title": "Mayonnaise",
+    "category": "Mayonnaise",
+    "section": "sauces",
+    "desc": "A cold oil emulsion made with pasteurised yolks.",
+    "ingredients": [
+      [
+        "Pasteurised egg yolks",
+        2.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Dijon mustard",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        15.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White wine vinegar",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        400.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Whisk pasteurised yolks, mustard, lemon juice, vinegar and salt in a bowl.",
+      "Add oil drop by drop while whisking until the mixture starts to thicken.",
+      "Continue adding oil in a thin stream, whisking constantly until thick and glossy.",
+      "Measure and whisk in cold water to reach the displayed yield. Cover and refrigerate; use within 2 days."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 500,
+      "unit": "ml"
+    },
+    "prep": "10 min"
+  },
+  {
+    "id": "aioli",
+    "title": "Garlic Aioli",
+    "category": "Mayonnaise",
+    "section": "sauces",
+    "desc": "A quick garlic mayonnaise.",
+    "ingredients": [
+      [
+        "Garlic, minced",
+        8.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mash garlic with the lemon juice until fine.",
+      "Stir the garlic mixture into prepared mayonnaise.",
+      "Measure the sauce and stir in cold water as needed to reach the displayed yield.",
+      "Cover and refrigerate for 20 minutes before serving; use within 2 days."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 300,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "mayonnaise",
+        "amount": 250.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "5 min",
+    "ferment": "20 min"
+  },
+  {
+    "id": "tartare-sauce",
+    "title": "Tartare Sauce",
+    "category": "Mayonnaise",
+    "section": "sauces",
+    "desc": "A tangy mayonnaise sauce for fish.",
+    "ingredients": [
+      [
+        "Gherkins, finely chopped",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Capers, drained and chopped",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Drain the gherkins and capers well; chop the parsley finely.",
+      "Fold gherkins, capers, parsley and lemon juice into prepared mayonnaise.",
+      "Measure the sauce and stir in cold water as needed to reach the displayed yield.",
+      "Cover and refrigerate for 20 minutes before serving; use within 2 days."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 350,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "mayonnaise",
+        "amount": 250.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "5 min",
+    "ferment": "20 min"
+  },
+  {
+    "id": "remoulade",
+    "title": "Remoulade",
+    "category": "Mayonnaise",
+    "section": "sauces",
+    "desc": "Mustard and herbs enrich this cold sauce.",
+    "ingredients": [
+      [
+        "Gherkins, finely chopped",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Capers, drained and chopped",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dijon mustard",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh tarragon, chopped",
+        5.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        5.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Drain the gherkins and capers; finely chop the herbs.",
+      "Stir gherkins, capers, mustard, tarragon and parsley into prepared mayonnaise.",
+      "Measure the sauce and stir in cold water as needed to reach the displayed yield.",
+      "Cover and refrigerate for 20 minutes before serving; use within 2 days."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 350,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "mayonnaise",
+        "amount": 250.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "5 min",
+    "ferment": "20 min"
+  },
+  {
+    "id": "marie-rose-sauce",
+    "title": "Marie Rose Sauce",
+    "category": "Mayonnaise",
+    "section": "sauces",
+    "desc": "A creamy cocktail sauce for seafood.",
+    "ingredients": [
+      [
+        "Tomato ketchup",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Worcestershire sauce",
+        5.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Cayenne pepper",
+        0.125,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mix ketchup, lemon juice, Worcestershire sauce and cayenne in a bowl.",
+      "Fold the ketchup mixture into prepared mayonnaise until pale pink.",
+      "Measure the sauce and stir in cold water as needed to reach the displayed yield.",
+      "Cover and refrigerate for 20 minutes before serving; use within 2 days."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 350,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "mayonnaise",
+        "amount": 250.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "5 min",
+    "ferment": "20 min"
+  },
+  {
+    "id": "thousand-island-dressing",
+    "title": "Thousand Island Dressing",
+    "category": "Mayonnaise",
+    "section": "sauces",
+    "desc": "A creamy dressing with chopped pickles.",
+    "ingredients": [
+      [
+        "Tomato ketchup",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Gherkins, finely chopped",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mix ketchup, drained gherkins, onion and lemon juice.",
+      "Stir the mixture into prepared mayonnaise.",
+      "Measure the sauce and stir in cold water as needed to reach the displayed yield.",
+      "Cover and refrigerate for 20 minutes before serving; use within 2 days."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 350,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "mayonnaise",
+        "amount": 250.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "5 min",
+    "ferment": "20 min"
+  },
+  {
+    "id": "herb-mayonnaise",
+    "title": "Herb Mayonnaise",
+    "category": "Mayonnaise",
+    "section": "sauces",
+    "desc": "Fresh herbs folded into mayonnaise.",
+    "ingredients": [
+      [
+        "Fresh parsley, chopped",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh chives, chopped",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh dill, chopped",
+        5.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Chop parsley, chives and dill finely.",
+      "Fold the herbs and lemon juice into prepared mayonnaise.",
+      "Measure the sauce and stir in cold water as needed to reach the displayed yield.",
+      "Cover and refrigerate for 20 minutes before serving; use within 2 days."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 300,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "mayonnaise",
+        "amount": 250.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "5 min",
+    "ferment": "20 min"
+  },
+  {
+    "id": "sriracha-mayonnaise",
+    "title": "Sriracha Mayonnaise",
+    "category": "Mayonnaise",
+    "section": "sauces",
+    "desc": "A creamy chilli sauce for dipping.",
+    "ingredients": [
+      [
+        "Sriracha",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mix sriracha and lemon juice in a bowl.",
+      "Stir in prepared mayonnaise until evenly coloured.",
+      "Measure the sauce and stir in cold water as needed to reach the displayed yield.",
+      "Cover and refrigerate for 20 minutes before serving; use within 2 days."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 300,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "mayonnaise",
+        "amount": 250.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "5 min",
+    "ferment": "20 min"
+  },
+  {
+    "id": "tomato-sauce",
+    "title": "Foundation Tomato Sauce",
+    "category": "Tomato sauces",
+    "section": "sauces",
+    "desc": "A simple tomato base for pasta sauces, braises and bakes.",
+    "ingredients": [
+      [
+        "Olive oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Tomato paste",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        1000.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion in olive oil over medium-low heat for 8 minutes.",
+      "Add garlic and tomato paste; cook for 2 minutes, stirring.",
+      "Add tomatoes, salt and pepper. Simmer uncovered for 30 minutes, stirring occasionally.",
+      "Blend until smooth, taking care with the hot liquid.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 1000,
+      "unit": "ml"
+    },
+    "cook": "40 min"
+  },
+  {
+    "id": "marinara",
+    "title": "Marinara",
+    "category": "Tomato sauces",
+    "section": "sauces",
+    "desc": "A simple garlic and herb tomato sauce.",
+    "ingredients": [
+      [
+        "Olive oil",
+        15.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dried oregano",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Fresh basil leaves",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Warm garlic in olive oil over low heat for 1 minute without browning.",
+      "Add prepared tomato sauce and oregano; simmer for 10 minutes.",
+      "Tear the basil leaves and stir into the sauce off the heat.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 550,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "tomato-sauce",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "15 min"
+  },
+  {
+    "id": "arrabbiata",
+    "title": "Arrabbiata",
+    "category": "Tomato sauces",
+    "section": "sauces",
+    "desc": "A fiery tomato sauce with garlic and chilli.",
+    "ingredients": [
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Chilli flakes",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Warm oil in a saucepan over low heat.",
+      "Add garlic and chilli flakes; stir for 1 minute without browning.",
+      "Stir in prepared tomato sauce and simmer for 10 minutes. Add parsley.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 550,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "tomato-sauce",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "15 min"
+  },
+  {
+    "id": "puttanesca",
+    "title": "Puttanesca",
+    "category": "Tomato sauces",
+    "section": "sauces",
+    "desc": "Tomato sauce with olives, capers and anchovies.",
+    "ingredients": [
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Anchovy fillets, chopped",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Chilli flakes",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Pitted black olives, sliced",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Capers, drained and chopped",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Warm oil and garlic in a saucepan for 1 minute.",
+      "Add anchovies and chilli; stir until the anchovies break down.",
+      "Add olives, capers and prepared tomato sauce. Simmer for 10 minutes.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 650,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "tomato-sauce",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "15 min"
+  },
+  {
+    "id": "tomato-basil-sauce",
+    "title": "Tomato Basil Sauce",
+    "category": "Tomato sauces",
+    "section": "sauces",
+    "desc": "Tomato sauce finished with fresh basil.",
+    "ingredients": [
+      [
+        "Fresh basil leaves",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        15.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Warm prepared tomato sauce gently for 5 minutes.",
+      "Tear or chop the basil leaves just before using.",
+      "Take the sauce off the heat and stir in basil and olive oil.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 550,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "tomato-sauce",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "5 min"
+  },
+  {
+    "id": "vodka-tomato-cream-sauce",
+    "title": "Vodka Tomato Cream Sauce",
+    "category": "Tomato sauces",
+    "section": "sauces",
+    "desc": "A smooth tomato cream sauce with vodka.",
+    "ingredients": [
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Shallot, finely chopped",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vodka",
+        50.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Double cream",
+        120.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften shallot in butter for 3 minutes.",
+      "Remove the pan from the flame, add vodka, then return to low heat and simmer for 2 minutes without igniting.",
+      "Add prepared tomato sauce and cream. Simmer gently for 5 minutes.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 700,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "tomato-sauce",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "15 min"
+  },
+  {
+    "id": "provencale-tomato-sauce",
+    "title": "Provençale Tomato Sauce",
+    "category": "Tomato sauces",
+    "section": "sauces",
+    "desc": "Tomato sauce with vegetables and olives.",
+    "ingredients": [
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Red pepper, diced",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dried oregano",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Pitted black olives, sliced",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften the red pepper in olive oil for 8 minutes.",
+      "Add garlic and oregano; stir for 1 minute.",
+      "Add olives and prepared tomato sauce; simmer for 10 minutes.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 700,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "tomato-sauce",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "20 min"
+  },
+  {
+    "id": "beurre-blanc",
+    "title": "Beurre Blanc",
+    "category": "Butter & pan sauces",
+    "section": "sauces",
+    "desc": "A warm white-wine and butter emulsion for fish and vegetables.",
+    "ingredients": [
+      [
+        "Dry white wine",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White wine vinegar",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Shallot, finely chopped",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Simmer wine, vinegar and shallot until only a little syrupy liquid remains, about 10 minutes.",
+      "Cut the cold butter into cubes. Lower the heat to its minimum.",
+      "Whisk butter into the reduction a few cubes at a time, lifting the pan off the heat if needed; never boil.",
+      "Add salt, strain and whisk in warm water to the displayed yield. Serve immediately."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 300,
+      "unit": "ml"
+    },
+    "cook": "15 min"
+  },
+  {
+    "id": "herb-beurre-blanc",
+    "title": "Herb Beurre Blanc",
+    "category": "Butter & pan sauces",
+    "section": "sauces",
+    "desc": "White wine butter sauce with fresh herbs.",
+    "ingredients": [
+      [
+        "Fresh chives, chopped",
+        5.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        5.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Put prepared beurre blanc in a warm bowl away from direct heat.",
+      "Fold the chives and parsley into the warm sauce.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield.",
+      "Serve immediately; reheating or boiling can split the sauce."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 350,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "beurre-blanc",
+        "amount": 300.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "5 min"
+  },
+  {
+    "id": "citrus-beurre-blanc",
+    "title": "Citrus Beurre Blanc",
+    "category": "Butter & pan sauces",
+    "section": "sauces",
+    "desc": "A bright citrus variation of beurre blanc.",
+    "ingredients": [
+      [
+        "Lemon juice",
+        15.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Blood orange juice",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Put prepared beurre blanc in a warm bowl away from direct heat.",
+      "Whisk in lemon and blood orange juices a little at a time.",
+      "Measure the sauce; loosen with hot water to reach the displayed yield.",
+      "Serve immediately; reheating or boiling can split the sauce."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 350,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "beurre-blanc",
+        "amount": 300.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "5 min"
+  },
+  {
+    "id": "brown-butter",
+    "title": "Brown Butter",
+    "category": "Butter & pan sauces",
+    "section": "sauces",
+    "desc": "Nutty browned butter; the finished weight varies with water loss.",
+    "ingredients": [
+      [
+        "Butter",
+        250.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Cut the butter into even pieces and place in a light-coloured saucepan.",
+      "Melt over medium heat, swirling the pan as the butter foams.",
+      "Cook for 5–8 minutes until the milk solids turn golden brown and smell nutty; watch closely near the end.",
+      "Immediately pour into a heatproof bowl, including the brown specks. Weigh out the displayed yield and reserve any extra."
+    ],
+    "compactMetricUnits": true,
+    "yield": "10 servings",
+    "cook": "10 min",
+    "batchYield": {
+      "amount": 200,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "garlic-butter",
+    "title": "Garlic Butter",
+    "category": "Butter & pan sauces",
+    "section": "sauces",
+    "desc": "Soft butter mixed with garlic, parsley and salt.",
+    "ingredients": [
+      [
+        "Butter",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        2,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Let the butter soften until spreadable, without melting.",
+      "Mash in the garlic, parsley and salt evenly.",
+      "Spoon into a covered container or roll in baking paper.",
+      "Refrigerate until firm; use within 3 days or freeze in portions."
+    ],
+    "compactMetricUnits": true,
+    "yield": "10 servings",
+    "prep": "10 min",
+    "batchYield": {
+      "amount": 222,
+      "unit": "g"
+    }
+  },
+  {
+    "id": "cafe-de-paris-butter",
+    "title": "Café de Paris-Style Butter",
+    "category": "Butter & pan sauces",
+    "section": "sauces",
+    "desc": "A savoury herb butter for grilled meat.",
+    "ingredients": [
+      [
+        "Butter",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Shallot, finely chopped",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        5.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dijon mustard",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Anchovy fillets, chopped",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        5.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh tarragon, chopped",
+        5.0,
+        "g",
+        "other"
+      ],
+      [
+        "Curry powder",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Worcestershire sauce",
+        5.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften butter at room temperature until spreadable.",
+      "Mash shallot, garlic, mustard, lemon juice and anchovies into a fine paste.",
+      "Mix the paste into the butter with parsley, tarragon, curry powder and Worcestershire sauce.",
+      "Roll in baking paper and chill until firm. Use within 3 days or freeze in slices."
+    ],
+    "compactMetricUnits": true,
+    "yield": "10 servings",
+    "prep": "10 min"
+  },
+  {
+    "id": "basic-pan-sauce",
+    "title": "Basic Pan Sauce",
+    "category": "Butter & pan sauces",
+    "section": "sauces",
+    "desc": "A sauce made in the pan used to cook meat, using its browned juices.",
+    "ingredients": [
+      [
+        "Roasting juices, defatted (optional)",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Shallot, finely chopped",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dry white wine",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Use a clean saucepan, or a pan with browned cooking juices if available. Add any optional defatted roasting juices; discard burnt residue.",
+      "Add butter and shallot; soften for 2 minutes.",
+      "Pour in wine and scrape up browned juices. Simmer until reduced by half.",
+      "Add prepared brown chicken stock and simmer for 8 minutes.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 300,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "brown-chicken-stock",
+        "amount": 400.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "15 min"
+  },
+  {
+    "id": "red-wine-pan-sauce",
+    "title": "Red-Wine Pan Sauce",
+    "category": "Butter & pan sauces",
+    "section": "sauces",
+    "desc": "A glossy pan sauce with red wine.",
+    "ingredients": [
+      [
+        "Dry red wine",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Reduce red wine by half in a small saucepan, about 5 minutes.",
+      "Stir in prepared pan sauce and simmer for 3 minutes; take off the heat and whisk in butter.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield.",
+      "Serve warm, stirring before pouring."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 400,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "basic-pan-sauce",
+        "amount": 300.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "15 min"
+  },
+  {
+    "id": "brandy-cream-sauce",
+    "title": "Brandy Cream Sauce",
+    "category": "Butter & pan sauces",
+    "section": "sauces",
+    "desc": "A creamy pan sauce with brandy.",
+    "ingredients": [
+      [
+        "Brandy",
+        40.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Double cream",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Add brandy to a small pan away from the flame, then simmer gently for 2 minutes without igniting.",
+      "Add prepared pan sauce and cream; simmer gently for 5 minutes.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield.",
+      "Serve warm, stirring before pouring."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 450,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "basic-pan-sauce",
+        "amount": 300.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "15 min"
+  },
+  {
+    "id": "mustard-cream-sauce",
+    "title": "Mustard Cream Sauce",
+    "category": "Butter & pan sauces",
+    "section": "sauces",
+    "desc": "A creamy mustard sauce for meat.",
+    "ingredients": [
+      [
+        "Double cream",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dijon mustard",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Warm prepared pan sauce with cream for 5 minutes.",
+      "Remove from the heat and whisk in Dijon mustard.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield.",
+      "Serve warm, stirring before pouring."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 450,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "basic-pan-sauce",
+        "amount": 300.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "15 min"
+  },
+  {
+    "id": "mushroom-pan-sauce",
+    "title": "Mushroom Pan Sauce",
+    "category": "Butter & pan sauces",
+    "section": "sauces",
+    "desc": "A quick pan sauce with sautéed mushrooms.",
+    "ingredients": [
+      [
+        "Butter",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mushrooms, sliced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        50.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Fry mushrooms in butter for 8 minutes until browned.",
+      "Add prepared pan sauce and cream; simmer gently for 5 minutes.",
+      "Measure the sauce; simmer to reduce or stir in hot water to reach the displayed yield.",
+      "Serve warm, stirring before pouring."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 550,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "basic-pan-sauce",
+        "amount": 300.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "15 min"
+  }
+]

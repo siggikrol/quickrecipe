@@ -1,0 +1,1015 @@
+[
+  {
+    "id": "classic-beef-burgers",
+    "title": "Classic Beef Burgers",
+    "category": "Beef, pork & sausage",
+    "section": "meals",
+    "desc": "Simple beef patties in toasted buns with crisp salad.",
+    "ingredients": [
+      [
+        "Beef mince",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        15.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Burger buns",
+        4.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Lettuce, shredded",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh tomato, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Tomato ketchup",
+        60.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Divide beef into equal patties without overworking. Make a shallow dent in each centre.",
+      "Season both sides with salt and pepper just before cooking.",
+      "Heat oil in a heavy pan and cook for 4–5 minutes per side until the centre reaches 71°C.",
+      "Toast the buns and fill with burgers, lettuce, tomato and ketchup."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "meatballs-in-tomato-sauce",
+    "title": "Meatballs in Tomato Sauce",
+    "category": "Beef, pork & sausage",
+    "section": "meals",
+    "desc": "Juicy meatballs simmered in tomato sauce.",
+    "ingredients": [
+      [
+        "Breadcrumbs",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Beef mince",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soak breadcrumbs in milk for 5 minutes.",
+      "Mix with beef, egg, onion, garlic, salt and pepper. Shape into small, equal meatballs.",
+      "Brown meatballs in oil in batches for 6–8 minutes, turning carefully.",
+      "Add prepared tomato sauce, cover and simmer gently for 15 minutes until meatballs reach 71°C inside."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "tomato-sauce",
+        "amount": 700.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "20 min",
+    "cook": "25 min"
+  },
+  {
+    "id": "chilli-con-carne",
+    "title": "Chilli con Carne",
+    "category": "Beef, pork & sausage",
+    "section": "meals",
+    "desc": "A warming beef, bean and tomato chilli.",
+    "ingredients": [
+      [
+        "Olive oil",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red pepper, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Beef mince",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Chilli flakes",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Tomato paste",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        800.0,
+        "g",
+        "other"
+      ],
+      [
+        "Canned kidney beans, drained",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion and pepper in oil for 8 minutes; add garlic for 1 minute.",
+      "Add beef and fry for 8 minutes, breaking it up until browned.",
+      "Stir in cumin, paprika, chilli and tomato paste for 1 minute.",
+      "Add tomatoes, prepared beef stock, kidney beans, salt and pepper. Simmer partially covered for 40 minutes until thick and beef is fully cooked."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "brown-beef-stock",
+        "amount": 250.0,
+        "unit": "ml"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Casseroles & one-pot"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "60 min"
+  },
+  {
+    "id": "beef-stroganoff",
+    "title": "Beef Stroganoff",
+    "category": "Beef, pork & sausage",
+    "section": "meals",
+    "desc": "Beef strips in a creamy mushroom sauce.",
+    "ingredients": [
+      [
+        "Beef steak, thinly sliced",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mushrooms, sliced",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Dijon mustard",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sour cream",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Season beef with salt and pepper. Sear in hot oil in small batches for 2–3 minutes and set aside.",
+      "Add butter and onion; soften for 5 minutes. Add mushrooms and cook for 8 minutes until browned.",
+      "Stir in paprika, mustard and prepared beef stock; simmer for 3 minutes.",
+      "Lower the heat and stir in sour cream, beef and its juices. Warm gently until beef is cooked through without boiling; add parsley."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "brown-beef-stock",
+        "amount": 150.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "25 min"
+  },
+  {
+    "id": "beef-stew",
+    "title": "Beef Stew",
+    "category": "Beef, pork & sausage",
+    "section": "meals",
+    "desc": "Slow-cooked beef with tender vegetables.",
+    "ingredients": [
+      [
+        "Beef chuck, diced",
+        800.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Plain flour",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Celery, diced",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Tomato paste",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dry red wine",
+        200.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Bay leaf",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Fresh thyme",
+        5.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Toss beef with salt, pepper and flour. Brown in oil in batches in a heavy casserole.",
+      "Add onion, carrot and celery; cook for 8 minutes. Stir in tomato paste.",
+      "Add wine, prepared beef stock, bay and thyme. Scrape the base and bring to a simmer.",
+      "Cover and simmer very gently for 2–3 hours until the beef breaks apart easily with a fork; remove bay and thyme stems."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "brown-beef-stock",
+        "amount": 700.0,
+        "unit": "ml"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Casseroles & one-pot"
+      }
+    ],
+    "prep": "20 min",
+    "cook": "2–3 hr"
+  },
+  {
+    "id": "cottage-pie",
+    "title": "Cottage Pie",
+    "category": "Beef, pork & sausage",
+    "section": "meals",
+    "desc": "Beef filling under golden mashed potatoes.",
+    "ingredients": [
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Beef mince",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Tomato paste",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Worcestershire sauce",
+        15.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Potatoes, diced",
+        900.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        100.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion and carrot in oil for 8 minutes. Add beef and brown for 8 minutes, breaking it up.",
+      "Stir in tomato paste and flour. Add prepared beef stock, Worcestershire sauce, half the salt and pepper; simmer for 20 minutes.",
+      "Meanwhile boil potatoes in water for 15–20 minutes until tender; drain and mash with butter, milk and remaining salt.",
+      "Preheat to 190°C fan. Spread beef in a deep 20 × 30 cm dish for the base batch and cover with mashed potato.",
+      "Bake for 25–30 minutes until golden and the centre reaches 74°C."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "brown-beef-stock",
+        "amount": 400.0,
+        "unit": "ml"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Casseroles & one-pot"
+      }
+    ],
+    "tempC": 190,
+    "prep": "20 min",
+    "cook": "40 min",
+    "bake": "25–30 min"
+  },
+  {
+    "id": "pulled-pork",
+    "title": "Pulled Pork",
+    "category": "Beef, pork & sausage",
+    "section": "meals",
+    "desc": "Slow-roasted pork shoulder, pulled into shreds.",
+    "ingredients": [
+      [
+        "Pork shoulder, boneless",
+        1500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Paprika",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Salt",
+        1.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Brown sugar",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        200.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Red wine vinegar",
+        40.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 140°C fan. Rub pork with paprika, cumin, salt, pepper and brown sugar.",
+      "Put onion in a deep casserole, add water and vinegar, and place pork on top.",
+      "Cover tightly and roast for 4–5 hours until the meat pulls apart easily, usually around 93°C internally. Check the liquid occasionally and use extra covered dishes when scaling.",
+      "Rest covered for 20 minutes. Remove excess fat, shred the meat and mix with the cooking juices."
+    ],
+    "compactMetricUnits": true,
+    "yield": "6 servings",
+    "tempC": 140,
+    "prep": "15 min",
+    "bake": "4–5 hr",
+    "ferment": "20 min"
+  },
+  {
+    "id": "pork-schnitzel",
+    "title": "Pork Schnitzel",
+    "category": "Beef, pork & sausage",
+    "section": "meals",
+    "desc": "Thin pork cutlets with a crisp crumb coating.",
+    "ingredients": [
+      [
+        "Pork loin cutlets",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Plain flour",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs",
+        2.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Breadcrumbs",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        30.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Flatten pork to an even 5 mm thickness and season with salt and pepper.",
+      "Coat in flour, then beaten eggs, then breadcrumbs.",
+      "Heat oil over medium heat and fry in batches for 2–3 minutes per side until golden and at least 63°C inside.",
+      "Drain and rest for 3 minutes before serving with lemon juice."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "15 min",
+    "cook": "15 min",
+    "ferment": "3 min"
+  },
+  {
+    "id": "pork-tenderloin-with-mustard-sauce",
+    "title": "Pork Tenderloin with Mustard Sauce",
+    "category": "Beef, pork & sausage",
+    "section": "meals",
+    "desc": "Pork tenderloin with creamy mustard sauce.",
+    "ingredients": [
+      [
+        "Pork tenderloin",
+        700.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Trim the silverskin from the pork and season with salt and pepper.",
+      "Sear in oil in an ovenproof pan for 5 minutes, turning to brown all sides.",
+      "Roast for 15–20 minutes until the centre reaches 63°C; rest for at least 3 minutes.",
+      "Warm the prepared mustard cream sauce gently. Slice the pork and spoon over the sauce."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "mustard-cream-sauce",
+        "amount": 300.0,
+        "unit": "ml"
+      }
+    ],
+    "tempC": 180,
+    "prep": "10 min",
+    "cook": "5 min",
+    "bake": "15–20 min",
+    "ferment": "3 min"
+  },
+  {
+    "id": "sausage-casserole",
+    "title": "Sausage Casserole",
+    "category": "Beef, pork & sausage",
+    "section": "meals",
+    "desc": "A comforting sausage and vegetable casserole.",
+    "ingredients": [
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Raw pork sausages",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Bay leaf",
+        1.0,
+        "pc",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Brown sausages in oil in a heavy pan for 8 minutes, turning; set aside.",
+      "Soften onion and carrot in the pan for 8 minutes; add garlic for 1 minute.",
+      "Return sausages with tomatoes, prepared chicken stock, paprika and bay.",
+      "Cover and simmer gently for 25–30 minutes until the sausages reach 71°C; remove bay before serving."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "white-chicken-stock",
+        "amount": 400.0,
+        "unit": "ml"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Casseroles & one-pot"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "45 min"
+  },
+  {
+    "id": "sausage-ragu",
+    "title": "Sausage Ragu",
+    "category": "Beef, pork & sausage",
+    "section": "meals",
+    "desc": "Slow-simmered sausage and tomato sauce for pasta.",
+    "ingredients": [
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Raw pork sausages",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dry red wine",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        800.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dried oregano",
+        1.0,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion in oil for 8 minutes; add garlic for 1 minute.",
+      "Remove sausage casings and crumble the meat into the pan. Fry for 8 minutes until browned.",
+      "Add wine and simmer for 3 minutes, scraping the base.",
+      "Add tomatoes and oregano; simmer partially covered for 30 minutes until thick and the meat is fully cooked."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Pasta & noodles"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "50 min"
+  },
+  {
+    "id": "swedish-style-meatballs",
+    "title": "Swedish-Style Meatballs",
+    "category": "Beef, pork & sausage",
+    "section": "meals",
+    "desc": "Small meatballs in a creamy brown sauce.",
+    "ingredients": [
+      [
+        "Breadcrumbs",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Beef mince",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Pork mince",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground allspice",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Butter",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dijon mustard",
+        15.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soak breadcrumbs in milk for 5 minutes. Mix with beef, pork, egg, onion, salt, allspice and pepper.",
+      "Shape small meatballs. Brown in half the butter in batches for 8 minutes; set aside.",
+      "Melt remaining butter, stir in flour for 2 minutes, then gradually whisk in prepared beef stock.",
+      "Add cream and mustard, return meatballs and simmer gently for 12–15 minutes until the centres reach 71°C."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "brown-beef-stock",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "20 min",
+    "cook": "30 min"
+  }
+]

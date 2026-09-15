@@ -1,0 +1,763 @@
+[
+  {
+    "id": "vegetable-stock",
+    "title": "Vegetable Stock",
+    "category": "Stocks",
+    "section": "sauces",
+    "desc": "Unsalted vegetable stock for soups, grains and sauces.",
+    "ingredients": [
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Celery, diced",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Leek, sliced and washed",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Bay leaf",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Fresh thyme",
+        3.0,
+        "g",
+        "other"
+      ],
+      [
+        "Black peppercorns",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water",
+        2500.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat the oil in a large stockpot over medium heat.",
+      "Add onion, carrot, celery, leek, bay, thyme and peppercorns.",
+      "Sweat for 8 minutes without browning, then pour in the water.",
+      "Simmer gently, uncovered, for 45 minutes. Strain without pressing the vegetables.",
+      "Measure the strained stock; reduce gently or add water to reach the displayed yield.",
+      "Use immediately or divide into shallow containers, cool promptly and refrigerate within 2 hours."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 2000,
+      "unit": "ml"
+    },
+    "cook": "55 min"
+  },
+  {
+    "id": "white-chicken-stock",
+    "title": "White Chicken Stock",
+    "category": "Stocks",
+    "section": "sauces",
+    "desc": "A light, unsalted stock made from unroasted chicken bones.",
+    "ingredients": [
+      [
+        "Chicken bones and wings",
+        1500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        3500.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Celery, diced",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Leek, sliced and washed",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Bay leaf",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Fresh thyme",
+        3.0,
+        "g",
+        "other"
+      ],
+      [
+        "Black peppercorns",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Place chicken bones and wings in a large stockpot. Cover with the cold water.",
+      "Bring slowly to a simmer and skim off foam; do not let it boil hard.",
+      "Add onion, carrot, celery, leek, bay, thyme and peppercorns.",
+      "Simmer uncovered for 3 hours, keeping the bones submerged with water. Strain and skim off fat.",
+      "Measure the strained stock; reduce gently or add water to reach the displayed yield.",
+      "Use immediately or divide into shallow containers, cool promptly and refrigerate within 2 hours."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 2500,
+      "unit": "ml"
+    },
+    "cook": "3 hr"
+  },
+  {
+    "id": "brown-chicken-stock",
+    "title": "Brown Chicken Stock",
+    "category": "Stocks",
+    "section": "sauces",
+    "desc": "Roasted bones and vegetables make a rich, unsalted stock.",
+    "ingredients": [
+      [
+        "Chicken bones and wings",
+        2000.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Celery, diced",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Leek, sliced and washed",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Tomato paste",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        4000.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Bay leaf",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Fresh thyme",
+        3.0,
+        "g",
+        "other"
+      ],
+      [
+        "Black peppercorns",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 200°C fan. Spread the bones in a roasting tray and roast for 40 minutes, turning once.",
+      "Add onion, carrot, celery and leek. Coat with tomato paste and roast for 15 minutes more.",
+      "Transfer to a stockpot. Rinse the browned tray with some of the measured water and add this with the remaining water, bay, thyme and peppercorns.",
+      "Simmer gently for 3 hours, skimming foam and topping up water to keep the bones covered. Strain and skim off fat.",
+      "Measure the strained stock; reduce gently or add water to reach the displayed yield.",
+      "Use immediately or divide into shallow containers, cool promptly and refrigerate within 2 hours."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 2500,
+      "unit": "ml"
+    },
+    "tempC": 200,
+    "bake": "55 min",
+    "cook": "3 hr"
+  },
+  {
+    "id": "brown-beef-stock",
+    "title": "Brown Beef Stock",
+    "category": "Stocks",
+    "section": "sauces",
+    "desc": "Roasted bones and vegetables make a rich, unsalted stock.",
+    "ingredients": [
+      [
+        "Beef bones, chopped",
+        2000.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Celery, diced",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Leek, sliced and washed",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Tomato paste",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        4000.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Bay leaf",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Fresh thyme",
+        3.0,
+        "g",
+        "other"
+      ],
+      [
+        "Black peppercorns",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 200°C fan. Spread the bones in a roasting tray and roast for 40 minutes, turning once.",
+      "Add onion, carrot, celery and leek. Coat with tomato paste and roast for 15 minutes more.",
+      "Transfer to a stockpot. Rinse the browned tray with some of the measured water and add this with the remaining water, bay, thyme and peppercorns.",
+      "Simmer gently for 6 hours, skimming foam and topping up water to keep the bones covered. Strain and skim off fat.",
+      "Measure the strained stock; reduce gently or add water to reach the displayed yield.",
+      "Use immediately or divide into shallow containers, cool promptly and refrigerate within 2 hours."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 2500,
+      "unit": "ml"
+    },
+    "tempC": 200,
+    "bake": "55 min",
+    "cook": "6 hr"
+  },
+  {
+    "id": "brown-veal-stock",
+    "title": "Brown Veal Stock",
+    "category": "Stocks",
+    "section": "sauces",
+    "desc": "Roasted bones and vegetables make a rich, unsalted stock.",
+    "ingredients": [
+      [
+        "Veal bones, chopped",
+        2000.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Celery, diced",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Leek, sliced and washed",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Tomato paste",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        4000.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Bay leaf",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Fresh thyme",
+        3.0,
+        "g",
+        "other"
+      ],
+      [
+        "Black peppercorns",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 200°C fan. Spread the bones in a roasting tray and roast for 40 minutes, turning once.",
+      "Add onion, carrot, celery and leek. Coat with tomato paste and roast for 15 minutes more.",
+      "Transfer to a stockpot. Rinse the browned tray with some of the measured water and add this with the remaining water, bay, thyme and peppercorns.",
+      "Simmer gently for 6 hours, skimming foam and topping up water to keep the bones covered. Strain and skim off fat.",
+      "Measure the strained stock; reduce gently or add water to reach the displayed yield.",
+      "Use immediately or divide into shallow containers, cool promptly and refrigerate within 2 hours."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 2500,
+      "unit": "ml"
+    },
+    "tempC": 200,
+    "bake": "55 min",
+    "cook": "6 hr"
+  },
+  {
+    "id": "fish-fumet",
+    "title": "Fish Fumet",
+    "category": "Stocks",
+    "section": "sauces",
+    "desc": "A delicate, unsalted white-fish stock for sauces and soups.",
+    "ingredients": [
+      [
+        "Butter",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Leek, sliced and washed",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "White fish bones, rinsed",
+        1000.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dry white wine",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water",
+        1800.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Bay leaf",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        5.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Melt the butter in a stockpot. Soften the onion and leek for 5 minutes without colouring.",
+      "Add the fish bones and stir gently for 2 minutes. Pour in the wine and simmer for 2 minutes.",
+      "Add water, bay and parsley. Simmer very gently for 20 minutes, skimming foam; strain through a fine sieve.",
+      "Measure the strained stock; reduce gently or add water to reach the displayed yield.",
+      "Use immediately or divide into shallow containers, cool promptly and refrigerate within 2 hours."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 1500,
+      "unit": "ml"
+    },
+    "cook": "30 min"
+  },
+  {
+    "id": "court-bouillon",
+    "title": "Court Bouillon",
+    "category": "Stocks",
+    "section": "sauces",
+    "desc": "An aromatic poaching liquid for fish.",
+    "ingredients": [
+      [
+        "Water",
+        2000.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dry white wine",
+        200.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White wine vinegar",
+        50.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Celery, diced",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Bay leaf",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Black peppercorns",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Put water, wine and vinegar into a wide saucepan.",
+      "Add onion, carrot, celery, bay, peppercorns and salt.",
+      "Simmer for 25 minutes, then strain.",
+      "Measure the strained stock; reduce gently or add water to reach the displayed yield.",
+      "Use as a poaching liquid; bring back to a gentle simmer before adding fish."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 2000,
+      "unit": "ml"
+    },
+    "cook": "30 min"
+  },
+  {
+    "id": "veal-stock",
+    "title": "White Veal Stock",
+    "category": "Stocks",
+    "section": "sauces",
+    "desc": "Unroasted veal bones make a light, unsalted stock for white sauces.",
+    "ingredients": [
+      [
+        "Veal bones, chopped",
+        2000.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        3500.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Celery, diced",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Leek, sliced and washed",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Bay leaf",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Fresh thyme",
+        3.0,
+        "g",
+        "other"
+      ],
+      [
+        "Black peppercorns",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Put veal bones in a large stockpot and cover with the cold water.",
+      "Bring slowly to a simmer and skim off foam; do not let it boil hard.",
+      "Add onion, carrot, celery, leek, bay, thyme and peppercorns.",
+      "Simmer for 5 hours, adding water to keep the bones covered. Strain and skim off fat.",
+      "Measure the strained stock; reduce gently or add water to reach the displayed yield.",
+      "Use immediately or divide into shallow containers, cool promptly and refrigerate within 2 hours."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 2500,
+      "unit": "ml"
+    },
+    "cook": "5 hr"
+  },
+  {
+    "id": "roasting-jus",
+    "title": "Roasting Jus",
+    "category": "Stocks",
+    "section": "sauces",
+    "desc": "A light roasting jus without flour.",
+    "ingredients": [
+      [
+        "Roasting juices, defatted",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dry red wine",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Pour the defatted roasting juices into a small saucepan.",
+      "Add red wine and simmer for 5 minutes.",
+      "Stir in the prepared brown beef stock and simmer until concentrated, about 15 minutes.",
+      "Measure the strained stock; reduce gently or add water to reach the displayed yield."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 300,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "brown-beef-stock",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "20 min"
+  },
+  {
+    "id": "meat-glaze",
+    "title": "Meat Glaze",
+    "category": "Brown sauces",
+    "section": "sauces",
+    "desc": "Unsalted brown stock reduced to a concentrated glaze.",
+    "ingredients": [
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Pour the prepared brown beef stock into a wide saucepan.",
+      "Simmer uncovered, skimming any foam, until thick and syrupy; allow 60–90 minutes.",
+      "Lower the heat as it thickens and stir frequently to prevent scorching.",
+      "Measure the strained stock; reduce gently or add water to reach the displayed yield.",
+      "Use immediately or divide into shallow containers, cool promptly and refrigerate within 2 hours."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 100,
+      "unit": "ml"
+    },
+    "foundations": [
+      {
+        "recipeId": "brown-beef-stock",
+        "amount": 1000.0,
+        "unit": "ml"
+      }
+    ],
+    "cook": "60–90 min"
+  }
+]

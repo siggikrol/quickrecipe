@@ -1,0 +1,749 @@
+[
+  {
+    "id": "fluffy-pancakes",
+    "title": "Fluffy Pancakes",
+    "category": "Breakfast & brunch",
+    "section": "meals",
+    "desc": "Soft, thick pancakes with a lightly golden crust.",
+    "ingredients": [
+      [
+        "Plain flour",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Baking powder",
+        3.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Eggs",
+        2.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Whole milk",
+        300.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter, melted",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        15.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mix flour, sugar, baking powder and salt in a bowl.",
+      "Whisk eggs, milk and melted butter separately; fold into the dry ingredients just until combined.",
+      "Heat a non-stick pan over medium heat and brush with a little of the oil.",
+      "Cook small ladlefuls for 2–3 minutes until bubbles appear; flip and cook for 1–2 minutes until the centres are set. Repeat with remaining batter and oil."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min",
+    "cook": "20 min"
+  },
+  {
+    "id": "belgian-waffles",
+    "title": "Belgian Waffles",
+    "category": "Breakfast & brunch",
+    "section": "meals",
+    "desc": "Crisp waffles with an airy centre, made in a waffle iron.",
+    "ingredients": [
+      [
+        "Plain flour",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Baking powder",
+        3.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Eggs",
+        2.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Whole milk",
+        350.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter, melted",
+        75.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        5.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        10.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat the waffle iron. Mix flour, sugar, baking powder and salt.",
+      "Separate the eggs. Whisk yolks with milk, melted butter and vanilla, then stir into the flour mixture.",
+      "Whisk the whites to soft peaks and fold gently into the batter.",
+      "Brush the iron with oil and cook portions according to its instructions, usually 4–6 minutes, until golden and cooked through."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "15 min",
+    "cook": "20 min"
+  },
+  {
+    "id": "french-toast",
+    "title": "French Toast",
+    "category": "Breakfast & brunch",
+    "section": "meals",
+    "desc": "Egg-soaked bread fried gently until golden.",
+    "ingredients": [
+      [
+        "Eggs",
+        3.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Whole milk",
+        200.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Sugar",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        5.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Ground cinnamon",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Bread, thickly sliced",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        30.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Whisk eggs, milk, sugar, vanilla and cinnamon in a shallow dish.",
+      "Dip bread into the mixture briefly on both sides; let it absorb without falling apart.",
+      "Melt some butter in a frying pan over medium-low heat.",
+      "Fry in batches for 3–4 minutes per side until golden and the egg mixture is fully set; use remaining butter as needed."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "crepes",
+    "title": "Crêpes",
+    "category": "Breakfast & brunch",
+    "section": "meals",
+    "desc": "Thin, flexible pancakes for sweet or savoury fillings.",
+    "ingredients": [
+      [
+        "Plain flour",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Eggs",
+        3.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Whole milk",
+        500.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter, melted",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        15.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Whisk flour, salt, eggs and half the milk into a smooth batter.",
+      "Whisk in the remaining milk and melted butter. Rest for 20 minutes.",
+      "Heat a shallow non-stick pan over medium heat and brush lightly with oil.",
+      "Swirl a thin layer of batter across the pan. Cook for 1 minute, turn and cook for 30 seconds; repeat with remaining batter and oil."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min",
+    "ferment": "20 min",
+    "cook": "20 min"
+  },
+  {
+    "id": "shakshuka",
+    "title": "Shakshuka",
+    "category": "Breakfast & brunch",
+    "section": "meals",
+    "desc": "Eggs gently cooked in a spiced tomato and pepper sauce.",
+    "ingredients": [
+      [
+        "Olive oil",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red pepper, diced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Chilli flakes",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        800.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Eggs",
+        4.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion and pepper in olive oil in a wide lidded frying pan for 10 minutes.",
+      "Add garlic, cumin, paprika and chilli; stir for 1 minute.",
+      "Add tomatoes and salt; simmer uncovered for 15 minutes until thick.",
+      "Make wells in the sauce and crack in the eggs. Cover and cook gently for 6–10 minutes until whites and yolks are set; scatter with parsley."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min",
+    "cook": "35 min"
+  },
+  {
+    "id": "scrambled-eggs",
+    "title": "Scrambled Eggs",
+    "category": "Breakfast & brunch",
+    "section": "meals",
+    "desc": "Soft scrambled eggs cooked slowly in butter.",
+    "ingredients": [
+      [
+        "Eggs",
+        8.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Whole milk",
+        60.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Butter",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh chives, chopped",
+        5.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Whisk eggs, milk and salt until evenly mixed.",
+      "Melt butter in a non-stick pan over low heat.",
+      "Add eggs and stir slowly with a spatula, scraping the base, for 5–7 minutes.",
+      "Remove when the curds are set with no liquid egg remaining. Add chives and serve immediately."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "5 min",
+    "cook": "7 min"
+  },
+  {
+    "id": "poached-eggs",
+    "title": "Poached Eggs",
+    "category": "Breakfast & brunch",
+    "section": "meals",
+    "desc": "Gently poached pasteurised eggs with tender whites.",
+    "ingredients": [
+      [
+        "Water",
+        1500.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White wine vinegar",
+        15.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Pasteurised eggs in shell",
+        4.0,
+        "pc",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Bring water and vinegar to a very gentle simmer in a wide saucepan.",
+      "Crack each pasteurised egg into a small cup.",
+      "Slide eggs into the water, leaving space between them. Poach for 3–4 minutes until the whites are set; cook longer for firm yolks.",
+      "Lift out with a slotted spoon, drain well and serve straight away."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "5 min",
+    "cook": "5 min"
+  },
+  {
+    "id": "eggs-benedict",
+    "title": "Eggs Benedict",
+    "category": "Breakfast & brunch",
+    "section": "meals",
+    "desc": "Toasted muffins, ham and poached eggs with hollandaise.",
+    "ingredients": [
+      [
+        "English muffins",
+        4.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Cooked ham, sliced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        1500.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White wine vinegar",
+        15.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Pasteurised eggs in shell",
+        8.0,
+        "pc",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Split and toast the muffins. Warm the ham in a dry frying pan.",
+      "Bring water and vinegar to a gentle simmer. Crack each pasteurised egg into a cup and slide into the water in batches.",
+      "Poach for 3–4 minutes until whites are set, longer for firm yolks; drain with a slotted spoon.",
+      "Top each muffin half with ham and an egg. Spoon over warm prepared hollandaise and serve immediately."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "hollandaise",
+        "amount": 300.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "10 min",
+    "cook": "10 min"
+  },
+  {
+    "id": "overnight-oats",
+    "title": "Overnight Oats",
+    "category": "Breakfast & brunch",
+    "section": "meals",
+    "desc": "Oats and chia softened overnight with milk and yoghurt.",
+    "ingredients": [
+      [
+        "Rolled oats",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        500.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Greek yoghurt",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Chia seeds",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Honey",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mixed berries",
+        200.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mix oats, milk, yoghurt, chia seeds and honey in a bowl.",
+      "Divide between covered jars or containers.",
+      "Refrigerate for at least 6 hours so the oats and seeds soften.",
+      "Stir before serving and top with berries; eat within 2 days."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min",
+    "ferment": "6 hr or overnight in fridge"
+  },
+  {
+    "id": "granola",
+    "title": "Granola",
+    "category": "Breakfast & brunch",
+    "section": "meals",
+    "desc": "Toasted oats, nuts and seeds with maple syrup.",
+    "ingredients": [
+      [
+        "Rolled oats",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mixed nuts, chopped",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Pumpkin seeds",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ground cinnamon",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Salt",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Maple syrup",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        60.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dried cranberries",
+        80.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 150°C fan and line a large baking tray.",
+      "Mix oats, nuts, seeds, cinnamon and salt. Stir in maple syrup and oil.",
+      "Spread in a thin layer and bake for 25–30 minutes, stirring halfway, until golden.",
+      "Cool completely on the tray, then stir in cranberries and store airtight."
+    ],
+    "compactMetricUnits": true,
+    "yield": "10 servings",
+    "tempC": 150,
+    "prep": "10 min",
+    "bake": "25–30 min"
+  },
+  {
+    "id": "breakfast-burrito",
+    "title": "Breakfast Burrito",
+    "category": "Breakfast & brunch",
+    "section": "meals",
+    "desc": "Egg, bean and cheese wraps for a filling breakfast.",
+    "ingredients": [
+      [
+        "Olive oil",
+        15.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Red pepper, diced",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cooked black beans, drained",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs",
+        6.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Flour tortillas",
+        4.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Cheddar, grated",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh tomato, diced",
+        100.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften pepper in oil for 5 minutes. Add black beans and heat until steaming.",
+      "Whisk eggs with salt, add to the pan and stir gently until fully set.",
+      "Warm tortillas in a dry pan. Divide the filling between them and add Cheddar and tomato.",
+      "Fold in the sides and roll tightly; toast seam-side down for 1 minute and serve."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "potato-egg-hash",
+    "title": "Potato & Egg Hash",
+    "category": "Breakfast & brunch",
+    "section": "meals",
+    "desc": "Golden potatoes, peppers and eggs cooked in one pan after parboiling.",
+    "ingredients": [
+      [
+        "Potatoes, diced",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Olive oil",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red pepper, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Eggs",
+        4.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Cover potatoes with water, bring to a boil and simmer for 8 minutes until nearly tender; drain and let steam dry.",
+      "Heat oil in a wide frying pan and brown potatoes for 10 minutes, turning occasionally.",
+      "Add onion, pepper, paprika and salt; cook for 8 minutes until softened.",
+      "Make wells, crack in eggs, cover and cook gently for 6–10 minutes until whites and yolks are set. Finish with parsley."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min",
+    "cook": "35 min"
+  }
+]

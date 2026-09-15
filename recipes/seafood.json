@@ -1,0 +1,687 @@
+[
+  {
+    "id": "pan-fried-salmon",
+    "title": "Pan-Fried Salmon",
+    "category": "Fish & seafood",
+    "section": "meals",
+    "desc": "Salmon with a crisp surface and lemon butter.",
+    "ingredients": [
+      [
+        "Salmon fillets",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        30.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Pat salmon dry and season with salt and pepper.",
+      "Heat oil in a non-stick pan over medium-high heat. Put salmon skin-side down, if it has skin.",
+      "Cook for 4–5 minutes, turn and add butter. Cook for 2–4 minutes more until the thickest part reaches 63°C.",
+      "Spoon the pan butter over the salmon and finish with lemon juice."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "5 min",
+    "cook": "10 min"
+  },
+  {
+    "id": "oven-baked-salmon",
+    "title": "Oven-Baked Salmon",
+    "category": "Fish & seafood",
+    "section": "meals",
+    "desc": "Simply seasoned salmon baked until tender.",
+    "ingredients": [
+      [
+        "Salmon fillets",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh dill, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan and line a baking tray.",
+      "Place salmon on the tray and rub with oil, salt and pepper.",
+      "Spoon over lemon juice and scatter with dill.",
+      "Bake for 12–18 minutes, depending on thickness, until the centre reaches 63°C and flakes easily."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "tempC": 180,
+    "prep": "5 min",
+    "bake": "12–18 min"
+  },
+  {
+    "id": "cod-with-lemon-butter",
+    "title": "Cod with Lemon Butter",
+    "category": "Fish & seafood",
+    "section": "meals",
+    "desc": "Tender cod with a lemon butter finish.",
+    "ingredients": [
+      [
+        "Cod fillets",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Pat cod dry and season with salt and pepper.",
+      "Heat oil in a frying pan over medium heat. Fry cod for 4 minutes without moving.",
+      "Turn carefully and add butter. Cook for 3–5 minutes until the thickest part reaches 63°C.",
+      "Take off the heat, add lemon juice and parsley, and spoon the butter over the fish."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "5 min",
+    "cook": "10 min"
+  },
+  {
+    "id": "fish-chips",
+    "title": "Fish & Chips",
+    "category": "Fish & seafood",
+    "section": "meals",
+    "desc": "Beer-battered white fish with twice-fried chips.",
+    "ingredients": [
+      [
+        "Potatoes, peeled",
+        800.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        1500.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Plain flour for dusting",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour for batter",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Baking powder",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Beer, chilled",
+        250.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White fish fillets",
+        600.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Cut potatoes into thick chips, rinse in water and dry thoroughly.",
+      "Heat oil to 140°C in a deep heavy pan no more than half full. Fry chips in batches for 8 minutes until pale and tender; drain.",
+      "Keep the smaller flour portion for dusting. Whisk the larger flour portion with baking powder, half the salt and cold beer to make batter.",
+      "Heat oil to 170°C. Pat fish dry, dust with flour and dip in batter; fry in batches for 5–7 minutes until golden and 63°C inside.",
+      "Drain fish on a rack. Raise oil to 180°C and fry chips again for 2–3 minutes until crisp; season with remaining salt.",
+      "Serve immediately with the prepared tartare sauce."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "tartare-sauce",
+        "amount": 200.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "20 min",
+    "cook": "30 min"
+  },
+  {
+    "id": "fish-tacos",
+    "title": "Fish Tacos",
+    "category": "Fish & seafood",
+    "section": "meals",
+    "desc": "Fish tucked into tortillas with fresh toppings.",
+    "ingredients": [
+      [
+        "White fish fillets",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Flour tortillas",
+        8.0,
+        "pc",
+        "other"
+      ],
+      [
+        "White cabbage, finely shredded",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lime juice",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh coriander, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Cut fish into bite-sized pieces and toss with oil, paprika, cumin and salt.",
+      "Fry in a hot non-stick pan for 5–7 minutes, turning, until the fish reaches 63°C.",
+      "Warm tortillas in a dry pan. Toss cabbage with lime juice.",
+      "Fill tortillas with cabbage and fish, spoon over prepared garlic aioli and scatter with coriander."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "aioli",
+        "amount": 150.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "10 min"
+  },
+  {
+    "id": "fish-pie",
+    "title": "Fish Pie",
+    "category": "Fish & seafood",
+    "section": "meals",
+    "desc": "Fish in parsley sauce under mashed potatoes.",
+    "ingredients": [
+      [
+        "Potatoes, diced",
+        900.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "White fish fillets",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salmon fillets",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Frozen peas",
+        150.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Boil potatoes in water for 15–20 minutes until tender; drain.",
+      "Mash potatoes with butter, milk and salt.",
+      "Remove fish skin and bones and cut into chunks. Mix with peas and prepared parsley sauce in a deep 20 × 30 cm dish for the base batch.",
+      "Cover with mashed potatoes and bake for 35–40 minutes until golden and the centre reaches 74°C."
+    ],
+    "compactMetricUnits": true,
+    "yield": "6 servings",
+    "foundations": [
+      {
+        "recipeId": "parsley-sauce",
+        "amount": 600.0,
+        "unit": "ml"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Casseroles & one-pot"
+      }
+    ],
+    "tempC": 180,
+    "prep": "20 min",
+    "cook": "20 min",
+    "bake": "35–40 min"
+  },
+  {
+    "id": "garlic-butter-prawns",
+    "title": "Garlic Butter Prawns",
+    "category": "Fish & seafood",
+    "section": "meals",
+    "desc": "Prawns quickly cooked in garlic butter.",
+    "ingredients": [
+      [
+        "Butter",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Raw prawns, peeled and deveined",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dry white wine",
+        60.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Melt butter over medium heat and stir in garlic for 30 seconds.",
+      "Add prawns and cook for 2 minutes, turning once.",
+      "Add wine and simmer for 2–3 minutes until prawns are opaque and cooked through.",
+      "Remove from the heat and add lemon juice and parsley; serve immediately."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min",
+    "cook": "10 min"
+  },
+  {
+    "id": "creamy-garlic-prawns",
+    "title": "Creamy Garlic Prawns",
+    "category": "Fish & seafood",
+    "section": "meals",
+    "desc": "Prawns in a creamy garlic sauce.",
+    "ingredients": [
+      [
+        "Butter",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Raw prawns, peeled and deveined",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dry white wine",
+        60.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Double cream",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Melt butter over medium heat and stir in garlic for 30 seconds.",
+      "Add prawns and cook for 2 minutes, turning once.",
+      "Add wine and cream and simmer for 3–4 minutes until prawns are opaque and cooked through.",
+      "Remove from the heat and add lemon juice and parsley; serve immediately."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min",
+    "cook": "10 min"
+  },
+  {
+    "id": "tuna-pasta-bake",
+    "title": "Tuna Pasta Bake",
+    "category": "Fish & seafood",
+    "section": "meals",
+    "desc": "Tuna and pasta baked in cheddar sauce.",
+    "ingredients": [
+      [
+        "Water",
+        3000.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Penne",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Canned tuna, drained",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sweetcorn, drained",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cheddar, grated",
+        80.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Bring water and salt to a boil; cook penne for 2 minutes less than the packet time, then drain.",
+      "Mix pasta with tuna, sweetcorn and prepared Cheddar sauce.",
+      "Transfer to a deep 20 × 30 cm baking dish for the base batch and scatter with grated Cheddar.",
+      "Bake for 25 minutes until bubbling and the centre reaches 74°C."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "cheddar-sauce",
+        "amount": 650.0,
+        "unit": "ml"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Pasta & noodles"
+      },
+      {
+        "section": "meals",
+        "category": "Casseroles & one-pot"
+      }
+    ],
+    "tempC": 180,
+    "prep": "10 min",
+    "cook": "10 min",
+    "bake": "25 min"
+  },
+  {
+    "id": "salmon-fishcakes",
+    "title": "Salmon Fishcakes",
+    "category": "Fish & seafood",
+    "section": "meals",
+    "desc": "Salmon and potato cakes with a crisp crust.",
+    "ingredients": [
+      [
+        "Potatoes, diced",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Salmon fillets",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh dill, chopped",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Eggs",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Breadcrumbs",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        40.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Boil potatoes in water for 15–20 minutes until tender; drain and mash without milk.",
+      "Poach salmon in gently simmering water for 8–10 minutes until 63°C; drain, remove skin and bones and flake. Cool both potato and fish briefly.",
+      "Mix potato, fish, dill, lemon juice, salt and pepper. Shape into equal patties and coat with beaten egg and breadcrumbs.",
+      "Fry in oil over medium heat for 4–5 minutes per side until golden and piping hot throughout, at least 74°C."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "20 min",
+    "cook": "30 min"
+  }
+]

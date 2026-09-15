@@ -2,52 +2,71 @@
 
 ## Scope
 
-Snapshot: 252 recipes. No collection size limit. This maps every recipe or family entry in the blueprint against the current catalogue. “Related” means content comparison is needed; it does not claim recipes are interchangeable or cooking-tested. No recipes are removed by this map.
+Current catalogue: **461 recipes**, including **209 additions in steps 6–10**. The original 252 recipes retain their IDs, quantities and methods. There is no collection size limit.
+
+The blueprint tables below identify the canonical recipe IDs. “Covered” means content is present and passed the application checks; it does not mean independently kitchen-tested. “Related” entries still require comparison in the later baking and dessert phases.
 
 ## Current collection
 
+Recipes can appear in more than one category without being duplicated. The following counts use each recipe's primary category.
+
 | Category | Recipes |
 |---|---:|
+| Beef, pork & sausage | 12 |
 | Bread | 13 |
+| Breakfast & brunch | 12 |
+| Brown sauces | 10 |
 | Brownies | 18 |
+| Butter & pan sauces | 11 |
+| Béchamel | 7 |
 | Cake | 6 |
+| Casseroles & one-pot | 9 |
 | Cheesecake | 25 |
+| Chicken | 12 |
 | Cookies | 81 |
 | Dessert | 2 |
+| Dips | 7 |
 | Dressings | 1 |
+| Fish & seafood | 10 |
+| Hollandaise | 7 |
+| Mayonnaise | 8 |
 | Meringue | 29 |
+| Pasta & noodles | 14 |
 | Polish Breads | 11 |
 | Polish Soups | 10 |
+| Quick dinners | 11 |
+| Rice & grains | 10 |
+| Salads | 9 |
+| Sides | 12 |
 | Skyr Cake | 12 |
+| Soups | 9 |
+| Stocks | 9 |
+| Sweet sauces | 3 |
+| Tomato sauces | 7 |
 | Truffles | 44 |
+| Vegetarian | 12 |
+| Velouté | 8 |
 
-## Findings
+## Completed expansion
 
-- Missing: 247 blueprint entries.
-- Review related recipe: 14 blueprint entries.
-- Reuse planned entry: 9 blueprint entries.
-- Covered: 16 blueprint entries.
-- All 16 requested truffle flavours are covered by the 44-truffle collection.
-- No current recipe has a measured foundation yield or an explicit foundation relationship. These require content work in step 6 and later.
-- Baking, cookies and desserts dominate; most proposed everyday meals are missing.
-- Existing soups now appear under both Polish Soups and Soups, using the same IDs.
+- Steps 6–8: 77 stock, sauce and dip recipes, including the Béchamel pilot and complete linked sauce families.
+- Step 9: 49 breakfast, pasta, chicken and quick-dinner recipes.
+- Step 10: 83 meat, seafood, grains, vegetarian, side, salad, soup and casserole recipes.
+- Every entry scoped to these steps is covered below. Pizza, baking, pastry and remaining classic desserts belong to the later phases.
+- All 16 requested truffle flavours remain covered by the existing 44-truffle collection.
+- See [content-expansion-status.md](content-expansion-status.md) for batch counts and validation details.
 
 ## Duplicate and overlap decisions
 
-- Use one entry for repeated chicken noodle soup, cottage pie, couscous salad and egg fried rice; attach multiple categories.
-- Consolidate panna cotta / vanilla panna cotta, rice pudding / simple rice pudding, and sweet tart pastry / pâte sucrée unless later formulas justify a variant.
-- Keep named variations distinct until compared: chicken curry / butter chicken / tikka masala; quick chickpea curry / chickpea curry; tuna casserole / tuna pasta bake; macaroni bake / mac and cheese.
-- Use one canonical shortcrust pastry entry across finished-pastry and baking-component categories.
-- Brown stock and veal stock are distinct formulas; the family heading describes alternative foundations, not a reason to merge them.
-- Velouté variants need explicit chicken, veal or fish bases; do not silently treat them as interchangeable.
-- Shared sauce and pastry components require measured finished yields before linking existing recipes. Do not derive yields by adding raw ingredient quantities.
-
-## Work needed before new content
-
-- Write missing formulas with ingredient order, yield, relevant equipment, timing and temperatures.
-- Review embedded components before extracting them; keep existing dish quantities and methods intact.
-- Check EN, PL and IS alignment for every new or changed recipe.
-- Use stable IDs and explicit foundation amounts. Verify shopping and scaling through every dependency.
+- Chicken noodle soup, cottage pie, couscous salad and egg fried rice each have one new entry with multiple category memberships.
+- The weekday chicken noodle soup uses prepared stock and remains distinct from the existing slow-cooked Polish chicken broth. Plain tomato soup and cream of mushroom soup also differ from the existing Polish versions.
+- Rice pudding is shared between grains and desserts. Vanilla custard is shared between sweet sauces and the classic-dessert blueprint entry.
+- Chicken curry, butter chicken and tikka masala have different formulas. The quick chickpea curry remains distinct from the longer chickpea curry.
+- Tuna casserole uses potatoes; tuna pasta bake uses pasta. Macaroni bake has a baked crumb topping; mac and cheese is finished on the hob.
+- White veal stock and brown veal stock are separate formulas. Chicken, veal and fish velouté each reference the corresponding stock.
+- Caesar salad uses the existing dressing. Numeric yield metadata follows its existing “About 150 ml” yield; its cooking content is unchanged. This remains an approximate declared yield.
+- Sauce outputs that depend on evaporation specify a final measurement and reduction or top-up. No mass-to-volume density conversion is assumed.
+- Future pastry overlap decisions remain: consolidate panna cotta variants and use one canonical shortcrust pastry and one sweet tart pastry unless a different formula justifies a separate entry.
 
 ## Blueprint coverage
 
@@ -55,284 +74,284 @@ Snapshot: 252 recipes. No collection size limit. This maps every recipe or famil
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Fluffy pancakes | Missing | Add a complete, checked recipe. |
-| Belgian waffles | Missing | Add a complete, checked recipe. |
-| French toast | Missing | Add a complete, checked recipe. |
-| Crêpes | Missing | Add a complete, checked recipe. |
-| Shakshuka | Missing | Add a complete, checked recipe. |
-| Scrambled eggs | Missing | Add a complete, checked recipe. |
-| Poached eggs | Missing | Add a complete, checked recipe. |
-| Eggs Benedict | Missing | Add a complete, checked recipe. |
-| Overnight oats | Missing | Add a complete, checked recipe. |
-| Granola | Missing | Add a complete, checked recipe. |
-| Breakfast burrito | Missing | Add a complete, checked recipe. |
-| Potato & egg hash | Missing | Add a complete, checked recipe. |
+| Fluffy pancakes | Covered | `fluffy-pancakes` — Fluffy Pancakes |
+| Belgian waffles | Covered | `belgian-waffles` — Belgian Waffles |
+| French toast | Covered | `french-toast` — French Toast |
+| Crêpes | Covered | `crepes` — Crêpes |
+| Shakshuka | Covered | `shakshuka` — Shakshuka |
+| Scrambled eggs | Covered | `scrambled-eggs` — Scrambled Eggs |
+| Poached eggs | Covered | `poached-eggs` — Poached Eggs |
+| Eggs Benedict | Covered | `eggs-benedict` — Eggs Benedict |
+| Overnight oats | Covered | `overnight-oats` — Overnight Oats |
+| Granola | Covered | `granola` — Granola |
+| Breakfast burrito | Covered | `breakfast-burrito` — Breakfast Burrito |
+| Potato & egg hash | Covered | `potato-egg-hash` — Potato & Egg Hash |
 
 ### Pasta & Noodles
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Spaghetti carbonara | Missing | Add a complete, checked recipe. |
-| Cacio e pepe | Missing | Add a complete, checked recipe. |
-| Spaghetti aglio e olio | Missing | Add a complete, checked recipe. |
-| Bolognese | Missing | Add a complete, checked recipe. |
-| Lasagne | Missing | Add a complete, checked recipe. |
-| Penne arrabbiata | Missing | Add a complete, checked recipe. |
-| Fettuccine Alfredo | Missing | Add a complete, checked recipe. |
-| Pesto pasta | Missing | Add a complete, checked recipe. |
-| Mac and cheese | Missing | Add a complete, checked recipe. |
-| Creamy mushroom pasta | Missing | Add a complete, checked recipe. |
-| Chicken pasta bake | Missing | Add a complete, checked recipe. |
-| Pad Thai | Missing | Add a complete, checked recipe. |
-| Beef stir-fry noodles | Missing | Add a complete, checked recipe. |
-| Garlic sesame noodles | Missing | Add a complete, checked recipe. |
+| Spaghetti carbonara | Covered | `spaghetti-carbonara` — Spaghetti Carbonara |
+| Cacio e pepe | Covered | `cacio-e-pepe` — Cacio e Pepe |
+| Spaghetti aglio e olio | Covered | `spaghetti-aglio-e-olio` — Spaghetti Aglio e Olio |
+| Bolognese | Covered | `bolognese` — Bolognese |
+| Lasagne | Covered | `lasagne` — Lasagne |
+| Penne arrabbiata | Covered | `penne-arrabbiata` — Penne Arrabbiata |
+| Fettuccine Alfredo | Covered | `fettuccine-alfredo` — Fettuccine Alfredo |
+| Pesto pasta | Covered | `pesto-pasta` — Pesto Pasta |
+| Mac and cheese | Covered | `mac-and-cheese` — Mac and Cheese |
+| Creamy mushroom pasta | Covered | `creamy-mushroom-pasta` — Creamy Mushroom Pasta |
+| Chicken pasta bake | Covered | `chicken-pasta-bake` — Chicken Pasta Bake |
+| Pad Thai | Covered | `pad-thai` — Pad Thai |
+| Beef stir-fry noodles | Covered | `beef-stir-fry-noodles` — Beef Stir-Fry Noodles |
+| Garlic sesame noodles | Covered | `garlic-sesame-noodles` — Garlic Sesame Noodles |
 
 ### Rice & Grains
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Classic risotto | Missing | Add a complete, checked recipe. |
-| Mushroom risotto | Missing | Add a complete, checked recipe. |
-| Chicken fried rice | Missing | Add a complete, checked recipe. |
-| Egg fried rice | Missing | Add a complete, checked recipe. |
-| Paella-style chicken & chorizo rice | Missing | Add a complete, checked recipe. |
-| Pilaf rice | Missing | Add a complete, checked recipe. |
-| Coconut rice | Missing | Add a complete, checked recipe. |
-| Burrito bowl | Missing | Add a complete, checked recipe. |
-| Couscous salad | Missing | Add a complete, checked recipe. |
-| Simple rice pudding | Missing | Add a complete, checked recipe. |
+| Classic risotto | Covered | `classic-risotto` — Classic Risotto |
+| Mushroom risotto | Covered | `mushroom-risotto` — Mushroom Risotto |
+| Chicken fried rice | Covered | `chicken-fried-rice` — Chicken Fried Rice |
+| Egg fried rice | Covered | `egg-fried-rice` — Egg Fried Rice |
+| Paella-style chicken & chorizo rice | Covered | `chicken-chorizo-rice` — Chicken & Chorizo Rice |
+| Pilaf rice | Covered | `pilaf-rice` — Pilaf Rice |
+| Coconut rice | Covered | `coconut-rice` — Coconut Rice |
+| Burrito bowl | Covered | `burrito-bowl` — Burrito Bowl |
+| Couscous salad | Covered | `couscous-salad` — Couscous Salad |
+| Simple rice pudding | Covered | `rice-pudding` — Rice Pudding |
 
 ### Chicken
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Roast chicken | Missing | Add a complete, checked recipe. |
-| Crispy chicken thighs | Missing | Add a complete, checked recipe. |
-| Chicken schnitzel | Missing | Add a complete, checked recipe. |
-| Chicken parmesan | Missing | Add a complete, checked recipe. |
-| Chicken fajitas | Missing | Add a complete, checked recipe. |
-| Chicken tikka masala | Missing | Add a complete, checked recipe. |
-| Butter chicken | Missing | Add a complete, checked recipe. |
-| Chicken curry | Missing | Add a complete, checked recipe. |
-| Honey garlic chicken | Missing | Add a complete, checked recipe. |
-| Lemon garlic chicken | Missing | Add a complete, checked recipe. |
-| Chicken noodle soup | Review related recipe | `polish-soup-sunday-golden-chicken-broth` — Existing broth includes egg noodles; review whether a separate style adds value. |
-| Chicken traybake | Missing | Add a complete, checked recipe. |
+| Roast chicken | Covered | `roast-chicken` — Roast Chicken |
+| Crispy chicken thighs | Covered | `crispy-chicken-thighs` — Crispy Chicken Thighs |
+| Chicken schnitzel | Covered | `chicken-schnitzel` — Chicken Schnitzel |
+| Chicken parmesan | Covered | `chicken-parmesan` — Chicken Parmesan |
+| Chicken fajitas | Covered | `chicken-fajitas` — Chicken Fajitas |
+| Chicken tikka masala | Covered | `chicken-tikka-masala` — Chicken Tikka Masala |
+| Butter chicken | Covered | `butter-chicken` — Butter Chicken |
+| Chicken curry | Covered | `chicken-curry` — Chicken Curry |
+| Honey garlic chicken | Covered | `honey-garlic-chicken` — Honey Garlic Chicken |
+| Lemon garlic chicken | Covered | `lemon-garlic-chicken` — Lemon Garlic Chicken |
+| Chicken noodle soup | Covered | `chicken-noodle-soup` — Chicken Noodle Soup |
+| Chicken traybake | Covered | `chicken-traybake` — Chicken Traybake |
 
 ### Beef, Pork & Sausage
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Classic beef burgers | Missing | Add a complete, checked recipe. |
-| Meatballs in tomato sauce | Missing | Add a complete, checked recipe. |
-| Chilli con carne | Missing | Add a complete, checked recipe. |
-| Beef stroganoff | Missing | Add a complete, checked recipe. |
-| Beef stew | Missing | Add a complete, checked recipe. |
-| Cottage pie | Missing | Add a complete, checked recipe. |
-| Pulled pork | Missing | Add a complete, checked recipe. |
-| Pork schnitzel | Missing | Add a complete, checked recipe. |
-| Pork tenderloin with mustard sauce | Missing | Add a complete, checked recipe. |
-| Sausage casserole | Missing | Add a complete, checked recipe. |
-| Sausage ragu | Missing | Add a complete, checked recipe. |
-| Swedish-style meatballs | Missing | Add a complete, checked recipe. |
+| Classic beef burgers | Covered | `classic-beef-burgers` — Classic Beef Burgers |
+| Meatballs in tomato sauce | Covered | `meatballs-in-tomato-sauce` — Meatballs in Tomato Sauce |
+| Chilli con carne | Covered | `chilli-con-carne` — Chilli con Carne |
+| Beef stroganoff | Covered | `beef-stroganoff` — Beef Stroganoff |
+| Beef stew | Covered | `beef-stew` — Beef Stew |
+| Cottage pie | Covered | `cottage-pie` — Cottage Pie |
+| Pulled pork | Covered | `pulled-pork` — Pulled Pork |
+| Pork schnitzel | Covered | `pork-schnitzel` — Pork Schnitzel |
+| Pork tenderloin with mustard sauce | Covered | `pork-tenderloin-with-mustard-sauce` — Pork Tenderloin with Mustard Sauce |
+| Sausage casserole | Covered | `sausage-casserole` — Sausage Casserole |
+| Sausage ragu | Covered | `sausage-ragu` — Sausage Ragu |
+| Swedish-style meatballs | Covered | `swedish-style-meatballs` — Swedish-Style Meatballs |
 
 ### Fish & Seafood
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Pan-fried salmon | Missing | Add a complete, checked recipe. |
-| Oven-baked salmon | Missing | Add a complete, checked recipe. |
-| Cod with lemon butter | Missing | Add a complete, checked recipe. |
-| Fish & chips | Missing | Add a complete, checked recipe. |
-| Fish tacos | Missing | Add a complete, checked recipe. |
-| Fish pie | Missing | Add a complete, checked recipe. |
-| Garlic butter prawns | Missing | Add a complete, checked recipe. |
-| Creamy garlic prawns | Missing | Add a complete, checked recipe. |
-| Tuna pasta bake | Missing | Add a complete, checked recipe. |
-| Salmon fishcakes | Missing | Add a complete, checked recipe. |
+| Pan-fried salmon | Covered | `pan-fried-salmon` — Pan-Fried Salmon |
+| Oven-baked salmon | Covered | `oven-baked-salmon` — Oven-Baked Salmon |
+| Cod with lemon butter | Covered | `cod-with-lemon-butter` — Cod with Lemon Butter |
+| Fish & chips | Covered | `fish-chips` — Fish & Chips |
+| Fish tacos | Covered | `fish-tacos` — Fish Tacos |
+| Fish pie | Covered | `fish-pie` — Fish Pie |
+| Garlic butter prawns | Covered | `garlic-butter-prawns` — Garlic Butter Prawns |
+| Creamy garlic prawns | Covered | `creamy-garlic-prawns` — Creamy Garlic Prawns |
+| Tuna pasta bake | Covered | `tuna-pasta-bake` — Tuna Pasta Bake |
+| Salmon fishcakes | Covered | `salmon-fishcakes` — Salmon Fishcakes |
 
 ### Vegetarian & Plant-Based
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Chickpea curry | Missing | Add a complete, checked recipe. |
-| Lentil dal | Missing | Add a complete, checked recipe. |
-| Vegetarian chilli | Missing | Add a complete, checked recipe. |
-| Falafel | Missing | Add a complete, checked recipe. |
-| Hummus bowl | Missing | Add a complete, checked recipe. |
-| Mushroom stroganoff | Missing | Add a complete, checked recipe. |
-| Eggplant parmesan | Missing | Add a complete, checked recipe. |
-| Vegetable lasagne | Missing | Add a complete, checked recipe. |
-| Stuffed peppers | Missing | Add a complete, checked recipe. |
-| Cauliflower curry | Missing | Add a complete, checked recipe. |
-| Black bean burgers | Missing | Add a complete, checked recipe. |
-| Sweet potato & peanut curry | Missing | Add a complete, checked recipe. |
+| Chickpea curry | Covered | `chickpea-curry` — Chickpea Curry |
+| Lentil dal | Covered | `lentil-dal` — Lentil Dal |
+| Vegetarian chilli | Covered | `vegetarian-chilli` — Vegetarian Chilli |
+| Falafel | Covered | `falafel` — Falafel |
+| Hummus bowl | Covered | `hummus-bowl` — Hummus Bowl |
+| Mushroom stroganoff | Covered | `mushroom-stroganoff` — Mushroom Stroganoff |
+| Eggplant parmesan | Covered | `eggplant-parmesan` — Eggplant Parmesan |
+| Vegetable lasagne | Covered | `vegetable-lasagne` — Vegetable Lasagne |
+| Stuffed peppers | Covered | `stuffed-peppers` — Stuffed Peppers |
+| Cauliflower curry | Covered | `cauliflower-curry` — Cauliflower Curry |
+| Black bean burgers | Covered | `black-bean-burgers` — Black Bean Burgers |
+| Sweet potato & peanut curry | Covered | `sweet-potato-peanut-curry` — Sweet Potato & Peanut Curry |
 
 ### Soups Beyond The Polish Collection
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Tomato soup | Review related recipe | `polish-soup-homestyle-tomato-and-chicken-soup` — Related chicken-based version; retain a separate plain tomato soup. |
-| Chicken noodle soup | Reuse planned entry | Same entry as CHICKEN. |
-| Minestrone | Missing | Add a complete, checked recipe. |
-| French onion soup | Missing | Add a complete, checked recipe. |
-| Cream of mushroom soup | Review related recipe | `polish-soup-woodland-mushroom-and-dill-soup` — Related mushroom soup; compare style before adding. |
-| Pumpkin soup | Missing | Add a complete, checked recipe. |
-| Broccoli cheddar soup | Missing | Add a complete, checked recipe. |
-| Potato leek soup | Missing | Add a complete, checked recipe. |
-| Lentil soup | Missing | Add a complete, checked recipe. |
-| Thai coconut soup | Missing | Add a complete, checked recipe. |
+| Tomato soup | Covered | `tomato-soup` — Tomato Soup |
+| Chicken noodle soup | Covered | `chicken-noodle-soup` — Chicken Noodle Soup |
+| Minestrone | Covered | `minestrone` — Minestrone |
+| French onion soup | Covered | `french-onion-soup` — French Onion Soup |
+| Cream of mushroom soup | Covered | `cream-of-mushroom-soup` — Cream of Mushroom Soup |
+| Pumpkin soup | Covered | `pumpkin-soup` — Pumpkin Soup |
+| Broccoli cheddar soup | Covered | `broccoli-cheddar-soup` — Broccoli Cheddar Soup |
+| Potato leek soup | Covered | `potato-leek-soup` — Potato Leek Soup |
+| Lentil soup | Covered | `lentil-soup` — Lentil Soup |
+| Thai coconut soup | Covered | `thai-coconut-soup` — Thai Coconut Soup |
 
 ### Salads
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Caesar salad | Review related recipe | `caesar-dressing` — Dressing only; complete salad still missing. |
-| Greek salad | Missing | Add a complete, checked recipe. |
-| Caprese salad | Missing | Add a complete, checked recipe. |
-| Cobb salad | Missing | Add a complete, checked recipe. |
-| Chicken avocado salad | Missing | Add a complete, checked recipe. |
-| Potato salad | Missing | Add a complete, checked recipe. |
-| Coleslaw | Missing | Add a complete, checked recipe. |
-| Pasta salad | Missing | Add a complete, checked recipe. |
-| Couscous salad | Reuse planned entry | Same entry as RICE & GRAINS. |
-| Beetroot & feta salad | Missing | Add a complete, checked recipe. |
+| Caesar salad | Covered | `caesar-salad` — Caesar Salad |
+| Greek salad | Covered | `greek-salad` — Greek Salad |
+| Caprese salad | Covered | `caprese-salad` — Caprese Salad |
+| Cobb salad | Covered | `cobb-salad` — Cobb Salad |
+| Chicken avocado salad | Covered | `chicken-avocado-salad` — Chicken Avocado Salad |
+| Potato salad | Covered | `potato-salad` — Potato Salad |
+| Coleslaw | Covered | `coleslaw` — Coleslaw |
+| Pasta salad | Covered | `pasta-salad` — Pasta Salad |
+| Couscous salad | Covered | `couscous-salad` — Couscous Salad |
+| Beetroot & feta salad | Covered | `beetroot-feta-salad` — Beetroot & Feta Salad |
 
 ### Stocks & Foundations
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Vegetable stock | Missing | Add a complete, checked recipe. |
-| White chicken stock | Missing | Add a complete, checked recipe. |
-| Brown chicken stock | Missing | Add a complete, checked recipe. |
-| Beef / brown stock | Missing | Add a complete, checked recipe. |
-| Veal stock | Missing | Add a complete, checked recipe. |
-| Fish fumet | Missing | Add a complete, checked recipe. |
-| Court bouillon | Missing | Add a complete, checked recipe. |
-| Jus / roasting jus | Missing | Add a complete, checked recipe. |
+| Vegetable stock | Covered | `vegetable-stock` — Vegetable Stock |
+| White chicken stock | Covered | `white-chicken-stock` — White Chicken Stock |
+| Brown chicken stock | Covered | `brown-chicken-stock` — Brown Chicken Stock |
+| Beef / brown stock | Covered | `brown-beef-stock` — Brown Beef Stock |
+| Veal stock | Covered | `veal-stock` — White Veal Stock |
+| Fish fumet | Covered | `fish-fumet` — Fish Fumet |
+| Court bouillon | Covered | `court-bouillon` — Court Bouillon |
+| Jus / roasting jus | Covered | `roasting-jus` — Roasting Jus |
 
 ### Brown Stock Family
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Brown stock / veal stock | Missing | Add a complete, checked recipe. |
-| Espagnole / brown sauce | Missing | Add a complete, checked recipe. |
-| Demi-glace | Missing | Add a complete, checked recipe. |
-| Bordelaise | Missing | Add a complete, checked recipe. |
-| Marchand de vin / red-wine sauce | Missing | Add a complete, checked recipe. |
-| Madeira sauce | Missing | Add a complete, checked recipe. |
-| Chasseur / hunter’s sauce | Missing | Add a complete, checked recipe. |
-| Mushroom sauce | Missing | Add a complete, checked recipe. |
-| Peppercorn sauce | Missing | Add a complete, checked recipe. |
-| Robert sauce | Missing | Add a complete, checked recipe. |
+| Brown stock / veal stock | Covered | `brown-beef-stock` — Brown Beef Stock; `brown-veal-stock` — Brown Veal Stock |
+| Espagnole / brown sauce | Covered | `espagnole` — Espagnole |
+| Demi-glace | Covered | `demi-glace` — Demi-glace |
+| Bordelaise | Covered | `bordelaise` — Bordelaise |
+| Marchand de vin / red-wine sauce | Covered | `marchand-de-vin` — Marchand de Vin |
+| Madeira sauce | Covered | `madeira-sauce` — Madeira Sauce |
+| Chasseur / hunter’s sauce | Covered | `chasseur` — Chasseur |
+| Mushroom sauce | Covered | `brown-mushroom-sauce` — Brown Mushroom Sauce |
+| Peppercorn sauce | Covered | `peppercorn-sauce` — Peppercorn Sauce |
+| Robert sauce | Covered | `robert-sauce` — Robert Sauce |
 
 ### Béchamel Family
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Béchamel | Missing | Add a complete, checked recipe. |
-| Mornay | Missing | Add a complete, checked recipe. |
-| Soubise | Missing | Add a complete, checked recipe. |
-| Mustard béchamel | Missing | Add a complete, checked recipe. |
-| Cheddar / cheese sauce | Missing | Add a complete, checked recipe. |
-| Parsley sauce | Missing | Add a complete, checked recipe. |
-| Cream sauce | Missing | Add a complete, checked recipe. |
+| Béchamel | Covered | `bechamel` — Béchamel |
+| Mornay | Covered | `mornay` — Mornay |
+| Soubise | Covered | `soubise` — Soubise |
+| Mustard béchamel | Covered | `mustard-bechamel` — Mustard Béchamel |
+| Cheddar / cheese sauce | Covered | `cheddar-sauce` — Cheddar Sauce |
+| Parsley sauce | Covered | `parsley-sauce` — Parsley Sauce |
+| Cream sauce | Covered | `cream-sauce` — Cream Sauce |
 
 ### Velouté Family
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Chicken, veal or fish velouté | Missing | Add a complete, checked recipe. |
-| Suprême | Missing | Add a complete, checked recipe. |
-| Allemande | Missing | Add a complete, checked recipe. |
-| Normandy | Missing | Add a complete, checked recipe. |
-| White wine sauce | Missing | Add a complete, checked recipe. |
-| Mushroom velouté | Missing | Add a complete, checked recipe. |
+| Chicken, veal or fish velouté | Covered | `chicken-veloute` — Chicken Velouté; `veal-veloute` — Veal Velouté; `fish-veloute` — Fish Velouté |
+| Suprême | Covered | `supreme-sauce` — Suprême Sauce |
+| Allemande | Covered | `allemande` — Allemande |
+| Normandy | Covered | `normandy-sauce` — Normandy Sauce |
+| White wine sauce | Covered | `white-wine-sauce` — White Wine Sauce |
+| Mushroom velouté | Covered | `mushroom-veloute` — Mushroom Velouté |
 
 ### Hollandaise Family
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Hollandaise | Missing | Add a complete, checked recipe. |
-| Béarnaise | Missing | Add a complete, checked recipe. |
-| Choron | Missing | Add a complete, checked recipe. |
-| Foyot / Valois | Missing | Add a complete, checked recipe. |
-| Mousseline | Missing | Add a complete, checked recipe. |
-| Maltaise | Missing | Add a complete, checked recipe. |
-| Dijon / mustard Hollandaise | Missing | Add a complete, checked recipe. |
+| Hollandaise | Covered | `hollandaise` — Hollandaise |
+| Béarnaise | Covered | `bearnaise` — Béarnaise |
+| Choron | Covered | `choron` — Choron |
+| Foyot / Valois | Covered | `foyot` — Foyot |
+| Mousseline | Covered | `mousseline` — Mousseline |
+| Maltaise | Covered | `maltaise` — Maltaise |
+| Dijon / mustard Hollandaise | Covered | `dijon-hollandaise` — Dijon Hollandaise |
 
 ### Tomato Family
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Foundation tomato sauce | Missing | Add a complete, checked recipe. |
-| Marinara | Missing | Add a complete, checked recipe. |
-| Arrabbiata | Missing | Add a complete, checked recipe. |
-| Puttanesca | Missing | Add a complete, checked recipe. |
-| Tomato basil sauce | Missing | Add a complete, checked recipe. |
-| Vodka-style tomato cream sauce | Missing | Add a complete, checked recipe. |
-| Provençale-style tomato sauce | Missing | Add a complete, checked recipe. |
+| Foundation tomato sauce | Covered | `tomato-sauce` — Foundation Tomato Sauce |
+| Marinara | Covered | `marinara` — Marinara |
+| Arrabbiata | Covered | `arrabbiata` — Arrabbiata |
+| Puttanesca | Covered | `puttanesca` — Puttanesca |
+| Tomato basil sauce | Covered | `tomato-basil-sauce` — Tomato Basil Sauce |
+| Vodka-style tomato cream sauce | Covered | `vodka-tomato-cream-sauce` — Vodka Tomato Cream Sauce |
+| Provençale-style tomato sauce | Covered | `provencale-tomato-sauce` — Provençale Tomato Sauce |
 
 ### Mayonnaise & Cold Emulsion Family
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Mayonnaise | Missing | Add a complete, checked recipe. |
-| Aioli | Missing | Add a complete, checked recipe. |
-| Tartare sauce | Missing | Add a complete, checked recipe. |
-| Remoulade | Missing | Add a complete, checked recipe. |
-| Cocktail / Marie Rose sauce | Missing | Add a complete, checked recipe. |
-| Thousand Island-style dressing | Missing | Add a complete, checked recipe. |
-| Herb mayonnaise | Missing | Add a complete, checked recipe. |
-| Sriracha / chilli mayonnaise | Missing | Add a complete, checked recipe. |
+| Mayonnaise | Covered | `mayonnaise` — Mayonnaise |
+| Aioli | Covered | `aioli` — Garlic Aioli |
+| Tartare sauce | Covered | `tartare-sauce` — Tartare Sauce |
+| Remoulade | Covered | `remoulade` — Remoulade |
+| Cocktail / Marie Rose sauce | Covered | `marie-rose-sauce` — Marie Rose Sauce |
+| Thousand Island-style dressing | Covered | `thousand-island-dressing` — Thousand Island Dressing |
+| Herb mayonnaise | Covered | `herb-mayonnaise` — Herb Mayonnaise |
+| Sriracha / chilli mayonnaise | Covered | `sriracha-mayonnaise` — Sriracha Mayonnaise |
 
 ### Butter & Pan-Sauce Foundations
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Beurre blanc | Missing | Add a complete, checked recipe. |
-| Herb beurre blanc | Missing | Add a complete, checked recipe. |
-| Citrus beurre blanc | Missing | Add a complete, checked recipe. |
-| Beurre noisette / brown butter | Missing | Add a complete, checked recipe. |
-| Compound garlic butter | Missing | Add a complete, checked recipe. |
-| Café de Paris-style butter | Missing | Add a complete, checked recipe. |
-| Basic pan sauce / fond reduction | Missing | Add a complete, checked recipe. |
-| Red-wine pan sauce | Missing | Add a complete, checked recipe. |
-| Cognac / brandy cream sauce | Missing | Add a complete, checked recipe. |
-| Mustard cream sauce | Missing | Add a complete, checked recipe. |
-| Mushroom pan sauce | Missing | Add a complete, checked recipe. |
+| Beurre blanc | Covered | `beurre-blanc` — Beurre Blanc |
+| Herb beurre blanc | Covered | `herb-beurre-blanc` — Herb Beurre Blanc |
+| Citrus beurre blanc | Covered | `citrus-beurre-blanc` — Citrus Beurre Blanc |
+| Beurre noisette / brown butter | Covered | `brown-butter` — Brown Butter |
+| Compound garlic butter | Covered | `garlic-butter` — Garlic Butter |
+| Café de Paris-style butter | Covered | `cafe-de-paris-butter` — Café de Paris-Style Butter |
+| Basic pan sauce / fond reduction | Covered | `basic-pan-sauce` — Basic Pan Sauce |
+| Red-wine pan sauce | Covered | `red-wine-pan-sauce` — Red-Wine Pan Sauce |
+| Cognac / brandy cream sauce | Covered | `brandy-cream-sauce` — Brandy Cream Sauce |
+| Mustard cream sauce | Covered | `mustard-cream-sauce` — Mustard Cream Sauce |
+| Mushroom pan sauce | Covered | `mushroom-pan-sauce` — Mushroom Pan Sauce |
 
 ### Other Essential Sauces & Dips
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Pesto | Missing | Add a complete, checked recipe. |
-| Chimichurri | Missing | Add a complete, checked recipe. |
-| Salsa verde | Missing | Add a complete, checked recipe. |
-| Tzatziki | Missing | Add a complete, checked recipe. |
-| Hummus | Missing | Add a complete, checked recipe. |
-| Guacamole | Missing | Add a complete, checked recipe. |
-| Salsa roja | Missing | Add a complete, checked recipe. |
-| Caramel sauce | Review related recipe | `date-cake-caramel` — Embedded component; standalone recipe and measured yield needed. |
-| Vanilla custard / crème anglaise | Missing | Add a complete, checked recipe. |
-| Chocolate ganache | Review related recipe | `dark-caramel-ganache-cheesecake-cups` — Embedded component; standalone recipe and measured yield needed. |
+| Pesto | Covered | `pesto` — Basil Pesto |
+| Chimichurri | Covered | `chimichurri` — Chimichurri |
+| Salsa verde | Covered | `salsa-verde` — Salsa Verde |
+| Tzatziki | Covered | `tzatziki` — Tzatziki |
+| Hummus | Covered | `hummus` — Hummus |
+| Guacamole | Covered | `guacamole` — Guacamole |
+| Salsa roja | Covered | `salsa-roja` — Salsa Roja |
+| Caramel sauce | Covered | `caramel-sauce` — Caramel Sauce |
+| Vanilla custard / crème anglaise | Covered | `vanilla-custard` — Vanilla Custard |
+| Chocolate ganache | Covered | `chocolate-ganache` — Chocolate Ganache |
 
 ### Sides
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Crispy roast potatoes | Missing | Add a complete, checked recipe. |
-| Mashed potatoes | Missing | Add a complete, checked recipe. |
-| Potato gratin | Missing | Add a complete, checked recipe. |
-| French fries | Missing | Add a complete, checked recipe. |
-| Garlic bread | Review related recipe | `polish-bread-golden-mushroom-baguette-melts` — Mushroom baguette is a different finished dish. |
-| Roasted vegetables | Missing | Add a complete, checked recipe. |
-| Glazed carrots | Missing | Add a complete, checked recipe. |
-| Creamed spinach | Missing | Add a complete, checked recipe. |
-| Green beans with garlic | Missing | Add a complete, checked recipe. |
-| Corn on the cob | Missing | Add a complete, checked recipe. |
-| Onion rings | Missing | Add a complete, checked recipe. |
-| Simple couscous | Missing | Add a complete, checked recipe. |
+| Crispy roast potatoes | Covered | `crispy-roast-potatoes` — Crispy Roast Potatoes |
+| Mashed potatoes | Covered | `mashed-potatoes` — Mashed Potatoes |
+| Potato gratin | Covered | `potato-gratin` — Potato Gratin |
+| French fries | Covered | `french-fries` — French Fries |
+| Garlic bread | Covered | `garlic-bread` — Garlic Bread |
+| Roasted vegetables | Covered | `roasted-vegetables` — Roasted Vegetables |
+| Glazed carrots | Covered | `glazed-carrots` — Glazed Carrots |
+| Creamed spinach | Covered | `creamed-spinach` — Creamed Spinach |
+| Green beans with garlic | Covered | `green-beans-with-garlic` — Green Beans with Garlic |
+| Corn on the cob | Covered | `corn-on-the-cob` — Corn on the Cob |
+| Onion rings | Covered | `onion-rings` — Onion Rings |
+| Simple couscous | Covered | `simple-couscous` — Simple Couscous |
 
 ### Pizza, Flatbreads & Savoury Dough
 
@@ -351,33 +370,33 @@ Snapshot: 252 recipes. No collection size limit. This maps every recipe or famil
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Shepherd’s pie | Missing | Add a complete, checked recipe. |
-| Cottage pie | Reuse planned entry | Same entry as BEEF, PORK & SAUSAGE. |
-| Chicken pot pie | Missing | Add a complete, checked recipe. |
-| Beef bourguignon-style stew | Missing | Add a complete, checked recipe. |
-| Chicken casserole | Missing | Add a complete, checked recipe. |
-| Macaroni bake | Missing | Add a complete, checked recipe. |
-| Tuna casserole | Missing | Add a complete, checked recipe. |
-| Baked ziti | Missing | Add a complete, checked recipe. |
-| Sausage & bean one-pot | Missing | Add a complete, checked recipe. |
-| One-pot chicken and rice | Missing | Add a complete, checked recipe. |
+| Shepherd’s pie | Covered | `shepherd-s-pie` — Shepherd's Pie |
+| Cottage pie | Covered | `cottage-pie` — Cottage Pie |
+| Chicken pot pie | Covered | `chicken-pot-pie` — Chicken Pot Pie |
+| Beef bourguignon-style stew | Covered | `beef-bourguignon-style-stew` — Beef Bourguignon-Style Stew |
+| Chicken casserole | Covered | `chicken-casserole` — Chicken Casserole |
+| Macaroni bake | Covered | `macaroni-bake` — Macaroni Bake |
+| Tuna casserole | Covered | `tuna-casserole` — Tuna Casserole |
+| Baked ziti | Covered | `baked-ziti` — Baked Ziti |
+| Sausage & bean one-pot | Covered | `sausage-bean-one-pot` — Sausage & Bean One-Pot |
+| One-pot chicken and rice | Covered | `one-pot-chicken-and-rice` — One-Pot Chicken and Rice |
 
 ### Quick 20–30 Minute Dinners
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Chicken stir-fry | Missing | Add a complete, checked recipe. |
-| Beef stir-fry | Missing | Add a complete, checked recipe. |
-| Garlic butter shrimp pasta | Missing | Add a complete, checked recipe. |
-| Creamy tomato gnocchi | Missing | Add a complete, checked recipe. |
-| Quesadillas | Missing | Add a complete, checked recipe. |
-| Chicken wraps | Missing | Add a complete, checked recipe. |
-| Teriyaki chicken | Missing | Add a complete, checked recipe. |
-| One-pan sausage & vegetables | Missing | Add a complete, checked recipe. |
-| Tuna tomato pasta | Missing | Add a complete, checked recipe. |
-| Quick chickpea curry | Missing | Add a complete, checked recipe. |
-| Egg fried rice | Reuse planned entry | Same entry as RICE & GRAINS. |
-| Fajita bowls | Missing | Add a complete, checked recipe. |
+| Chicken stir-fry | Covered | `chicken-stir-fry` — Chicken Stir-Fry |
+| Beef stir-fry | Covered | `beef-stir-fry` — Beef Stir-Fry |
+| Garlic butter shrimp pasta | Covered | `garlic-butter-prawn-pasta` — Garlic Butter Prawn Pasta |
+| Creamy tomato gnocchi | Covered | `creamy-tomato-gnocchi` — Creamy Tomato Gnocchi |
+| Quesadillas | Covered | `quesadillas` — Quesadillas |
+| Chicken wraps | Covered | `chicken-wraps` — Chicken Wraps |
+| Teriyaki chicken | Covered | `teriyaki-chicken` — Teriyaki Chicken |
+| One-pan sausage & vegetables | Covered | `one-pan-sausage-vegetables` — One-Pan Sausage & Vegetables |
+| Tuna tomato pasta | Covered | `tuna-tomato-pasta` — Tuna Tomato Pasta |
+| Quick chickpea curry | Covered | `quick-chickpea-curry` — Quick Chickpea Curry |
+| Egg fried rice | Covered | `egg-fried-rice` — Egg Fried Rice |
+| Fajita bowls | Covered | `fajita-bowls` — Fajita Bowls |
 
 ### Muffins, Scones & Small Bakes
 
@@ -421,11 +440,11 @@ Snapshot: 252 recipes. No collection size limit. This maps every recipe or famil
 | Sticky toffee pudding | Review related recipe | `date-cake-caramel` — Related date cake; compare method before adding a separate pudding. |
 | Apple crumble | Review related recipe | `apple-crumb-cake` — Cake is distinct from fruit crumble; still missing. |
 | Bread pudding | Missing | Add a complete, checked recipe. |
-| Rice pudding | Reuse planned entry | Same entry as RICE & GRAINS. |
+| Rice pudding | Covered | `rice-pudding` — Rice Pudding |
 | Lemon posset | Missing | Add a complete, checked recipe. |
 | Profiteroles | Missing | Add a complete, checked recipe. |
 | Chocolate lava cake | Missing | Add a complete, checked recipe. |
-| Vanilla custard | Reuse planned entry | Same entry as OTHER ESSENTIAL SAUCES & DIPS. |
+| Vanilla custard | Covered | `vanilla-custard` — Vanilla Custard |
 | Vanilla ice cream | Missing | Add a complete, checked recipe. |
 
 ### Truffles & Confections

@@ -7,7 +7,7 @@ const wait = () => new Promise(resolve => setTimeout(resolve, 80));
 // Arithmetic fixtures only; these formulas are not published recipes.
 const base = { id: 'base-sauce', title: 'Base sauce', category: 'Sauces', section: 'sauces', batchYield: { amount: 1, unit: 'L' },
   ingredients: [['Milk', 800, 'ml', 'other'], ['Butter', 50, 'g', 'other'], ['Plain flour', 50, 'g', 'other']], steps: ['Mix.'] };
-const cheese = { id: 'cheese-sauce', title: 'Cheese sauce', category: 'Sauces', section: 'sauces', batchYield: { amount: 500, unit: 'ml' },
+const cheese = { id: 'cheese-sauce', title: 'Arithmetic cheese sauce', category: 'Sauces', section: 'sauces', batchYield: { amount: 500, unit: 'ml' },
   foundations: [{ recipeId: base.id, amount: 500, unit: 'ml' }], ingredients: [['Cheese', 100, 'g', 'other']], steps: ['Add cheese.'] };
 const butter = { id: 'butter-sauce', title: 'Butter sauce', category: 'Sauces', section: 'sauces', batchYield: { amount: 500, unit: 'ml' },
   foundations: [{ recipeId: base.id, amount: 0.25, unit: 'L' }], ingredients: [['Butter', 10, 'g', 'other']], steps: ['Add butter.'] };
@@ -37,6 +37,20 @@ function setup(saved) {
   const dom = setup(); await wait(); const w = dom.window, d = w.document;
   const json = value => JSON.parse(JSON.stringify(value));
   w.eval(`recipes.push(...${JSON.stringify(fixtures)}); render();`);
+  // Related sauce links preserve the category, list, and scroll position.
+  d.querySelector('[data-browse="sauces"]').click();
+  d.querySelector('[data-cat="Béchamel"]').click();
+  d.querySelector('[data-id="bechamel"]').click();
+  const sauceCards = [...d.querySelectorAll('.card')].map(el => el.dataset.id);
+  d.getElementById('list').scrollTop = 120;
+  d.querySelector('[data-derivative="parsley-sauce"]').click();
+  assert.equal(d.querySelector('#detail h1').textContent, 'Parsley Sauce');
+  assert.equal(d.querySelector('[data-cat="Béchamel"]').getAttribute('aria-pressed'), 'true');
+  assert.deepEqual([...d.querySelectorAll('.card')].map(el => el.dataset.id), sauceCards);
+  assert.equal(d.getElementById('list').scrollTop, 120);
+  d.querySelector('[data-family-back]').click();
+  assert.equal(d.querySelector('#detail h1').textContent, 'Béchamel');
+  d.querySelector('[data-browse="All"]').click();
   w.validateRecipeFamilies(fixtures);
   assert.equal(w.foundationMultiplier(cheese.foundations[0], fixtures), 0.5);
   const invalid = [
@@ -72,12 +86,16 @@ function setup(saved) {
 
   d.querySelector('[data-browse="meals"]').click();
   d.querySelector('[data-cat="Quick dinners"]').click();
-  assert.equal(d.querySelectorAll('.card').length, 1);
+  assert.equal(d.querySelectorAll(`[data-id="${meal.id}"]`).length, 1);
   d.querySelector(`[data-id="${meal.id}"]`).click();
   d.querySelector('[data-scale="2"]').click();
   d.getElementById('list').scrollTop = 123; d.getElementById('detail').scrollTop = 234;
   d.querySelector(`[data-foundation="${cheese.id}"]`).click();
   assert.equal(d.querySelector('#detail h1').textContent, cheese.title);
+  assert.equal(d.querySelector('[data-cat="Quick dinners"]').getAttribute('aria-pressed'), 'true');
+  assert.equal(d.getElementById('list').scrollTop, 123);
+  assert.equal(d.querySelector(`[data-id="${cheese.id}"]`), null, 'An out-of-category base opens without replacing the list');
+
   assert.equal(d.getElementById('recipeYield').textContent, '1 L');
   d.querySelector(`[data-foundation="${base.id}"]`).click();
   assert.equal(d.getElementById('recipeYield').textContent, '1 L');
@@ -127,7 +145,7 @@ function setup(saved) {
   assert(w.eval('recipes.some(r => r.id === "base-sauce")'));
   assert(d.getElementById('toast').textContent.includes('used by another recipe'));
   w.closeModal();
-  const search = d.getElementById('search'); search.value = 'Cheese sauce'; search.dispatchEvent(new w.Event('input'));
+  const search = d.getElementById('search'); search.value = 'Arithmetic cheese sauce'; search.dispatchEvent(new w.Event('input'));
   assert.equal(d.querySelectorAll('.card').length, 1);
   assert.equal(d.querySelector('.card').dataset.id, cheese.id);
   dom.window.close();

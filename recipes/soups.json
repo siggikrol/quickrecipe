@@ -1,0 +1,734 @@
+[
+  {
+    "id": "tomato-soup",
+    "title": "Tomato Soup",
+    "category": "Soups",
+    "section": "meals",
+    "desc": "A smooth tomato soup with fresh basil.",
+    "ingredients": [
+      [
+        "Olive oil",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Tomato paste",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        800.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Fresh basil leaves",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion in olive oil over medium heat for 8 minutes.",
+      "Add garlic and tomato paste and cook for 1 minute.",
+      "Add tomatoes and the prepared vegetable stock. Simmer gently for 20 minutes.",
+      "Blend carefully with a stick blender, keeping the blade submerged. Stir in salt, pepper and torn basil and serve hot."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "vegetable-stock",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "10 min",
+    "cook": "30 min"
+  },
+  {
+    "id": "minestrone",
+    "title": "Minestrone",
+    "category": "Soups",
+    "section": "meals",
+    "desc": "A hearty vegetable soup with beans and pasta.",
+    "ingredients": [
+      [
+        "Olive oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Celery, diced",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dried oregano",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Courgette, diced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dried short pasta",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cooked white beans, drained",
+        240.0,
+        "g",
+        "other"
+      ],
+      [
+        "Baby spinach",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion, carrot and celery in oil for 10 minutes.",
+      "Add garlic, tomatoes, oregano and prepared vegetable stock. Simmer for 15 minutes.",
+      "Add courgette and pasta; simmer for 10–12 minutes until pasta is tender, stirring often.",
+      "Stir in beans, spinach, salt and pepper and simmer for 3 minutes until hot."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "vegetable-stock",
+        "amount": 1000.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "20 min",
+    "cook": "40 min"
+  },
+  {
+    "id": "french-onion-soup",
+    "title": "French Onion Soup",
+    "category": "Soups",
+    "section": "meals",
+    "desc": "Slowly browned onions with cheese toasts.",
+    "ingredients": [
+      [
+        "Butter",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onions, thinly sliced",
+        800.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Plain flour",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dry white wine",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh thyme",
+        5.0,
+        "g",
+        "other"
+      ],
+      [
+        "Bay leaf",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Baguette, sliced",
+        160.0,
+        "g",
+        "other"
+      ],
+      [
+        "Gruyère, grated",
+        120.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Melt butter in a heavy pan. Add onions and salt and cook over medium-low heat for 45–60 minutes, stirring often, until deeply golden without burning.",
+      "Stir in flour for 1 minute. Add wine and scrape up the browned juices.",
+      "Add prepared brown beef stock, thyme, bay and pepper. Simmer for 20 minutes; remove bay and thyme stalks.",
+      "Toast baguette slices under a hot grill, top with Gruyère and grill until melted. Float the cheese toasts on the soup and serve."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "brown-beef-stock",
+        "amount": 1000.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "1 hr 20 min"
+  },
+  {
+    "id": "cream-of-mushroom-soup",
+    "title": "Cream of Mushroom Soup",
+    "category": "Soups",
+    "section": "meals",
+    "desc": "A creamy soup with plenty of mushrooms.",
+    "ingredients": [
+      [
+        "Butter",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mushrooms, sliced",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion in butter for 5 minutes. Add mushrooms and cook for 10 minutes until their liquid evaporates.",
+      "Add garlic and flour and stir for 1 minute.",
+      "Gradually stir in prepared vegetable stock. Simmer for 15 minutes.",
+      "Blend half the soup with a stick blender for a chunky texture. Stir in cream, salt, pepper and parsley; heat gently without boiling."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "vegetable-stock",
+        "amount": 800.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "35 min"
+  },
+  {
+    "id": "pumpkin-soup",
+    "title": "Pumpkin Soup",
+    "category": "Soups",
+    "section": "meals",
+    "desc": "Smooth pumpkin soup with a touch of cumin.",
+    "ingredients": [
+      [
+        "Olive oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Pumpkin, peeled and diced",
+        800.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Double cream",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion in oil for 7 minutes.",
+      "Add garlic, pumpkin and cumin and stir for 2 minutes.",
+      "Pour in prepared vegetable stock and simmer for 20–25 minutes until pumpkin is very tender.",
+      "Blend carefully with a stick blender. Stir in cream, salt and pepper and heat through gently."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "vegetable-stock",
+        "amount": 800.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "20 min",
+    "cook": "35 min"
+  },
+  {
+    "id": "broccoli-cheddar-soup",
+    "title": "Broccoli Cheddar Soup",
+    "category": "Soups",
+    "section": "meals",
+    "desc": "Broccoli in a creamy cheddar soup.",
+    "ingredients": [
+      [
+        "Butter",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour",
+        35.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        400.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Broccoli florets, chopped",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cheddar, grated",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion in butter for 5 minutes.",
+      "Stir in flour for 1 minute. Gradually whisk in milk and the prepared vegetable stock.",
+      "Add broccoli and simmer gently for 10–12 minutes until tender, stirring to prevent sticking.",
+      "Take off the heat and stir in cheddar until melted. Add salt and pepper; do not boil after adding cheese."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "vegetable-stock",
+        "amount": 600.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "20 min"
+  },
+  {
+    "id": "potato-leek-soup",
+    "title": "Potato Leek Soup",
+    "category": "Soups",
+    "section": "meals",
+    "desc": "A comforting, chunky potato and leek soup.",
+    "ingredients": [
+      [
+        "Butter",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Leek, sliced and washed",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Potatoes, diced",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground white pepper",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Fresh chives, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Melt butter and soften leeks for 8 minutes without browning.",
+      "Add potatoes and prepared vegetable stock and bring to a simmer.",
+      "Cook for 20 minutes until potatoes are tender. Mash lightly for a chunky soup.",
+      "Stir in cream, salt and pepper and heat gently. Scatter with chives to serve."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "vegetable-stock",
+        "amount": 1000.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "30 min"
+  },
+  {
+    "id": "lentil-soup",
+    "title": "Lentil Soup",
+    "category": "Soups",
+    "section": "meals",
+    "desc": "Green lentils simmered with vegetables and tomato.",
+    "ingredients": [
+      [
+        "Olive oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Celery, diced",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Green lentils, rinsed",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        20.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion, carrot and celery in oil for 8 minutes.",
+      "Add garlic and cumin and stir for 1 minute.",
+      "Add lentils, tomatoes and prepared vegetable stock. Simmer partly covered for 35–45 minutes until lentils are tender, stirring occasionally.",
+      "Stir in salt, pepper and lemon juice and serve hot."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "vegetable-stock",
+        "amount": 1200.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "55 min"
+  },
+  {
+    "id": "thai-coconut-soup",
+    "title": "Thai Coconut Soup",
+    "category": "Soups",
+    "section": "meals",
+    "desc": "Chicken and mushrooms in fragrant coconut broth.",
+    "ingredients": [
+      [
+        "Coconut milk",
+        400.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lemongrass stalks, bruised",
+        2.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Fresh ginger, grated",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red chilli, sliced",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Boneless chicken breast, thinly sliced",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mushrooms, sliced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fish sauce",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lime juice",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh coriander, chopped",
+        15.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Combine coconut milk and prepared white chicken stock with lemongrass, ginger and chilli. Simmer gently for 10 minutes.",
+      "Add chicken and mushrooms and simmer for 8–10 minutes, until chicken reaches 74°C in the thickest pieces.",
+      "Remove the lemongrass stalks. Stir in fish sauce and take off the heat.",
+      "Add lime juice and coriander and serve hot."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "white-chicken-stock",
+        "amount": 600.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "20 min"
+  }
+]

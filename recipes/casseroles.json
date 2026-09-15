@@ -1,0 +1,885 @@
+[
+  {
+    "id": "shepherd-s-pie",
+    "title": "Shepherd's Pie",
+    "category": "Casseroles & one-pot",
+    "section": "meals",
+    "desc": "Lamb filling under golden mashed potatoes.",
+    "ingredients": [
+      [
+        "Potatoes, diced",
+        1000.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lamb mince",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Tomato paste",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Worcestershire sauce",
+        15.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Frozen peas",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Cover potatoes with water and simmer for 15–20 minutes until tender; drain well.",
+      "Heat oil in a wide pan and brown lamb for 8 minutes, breaking it up. Add onion and carrot and cook for 8 minutes.",
+      "Stir in tomato paste and flour for 1 minute. Add prepared brown beef stock and Worcestershire sauce; simmer for 15 minutes, then stir in peas.",
+      "Mash potatoes with warm milk and butter. Divide salt and pepper between the mash and lamb filling.",
+      "Put filling in a deep 20 × 30 cm dish for the base batch and spread mash over it. Bake for 25–30 minutes until browned and the centre reaches 74°C."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "brown-beef-stock",
+        "amount": 400.0,
+        "unit": "ml"
+      }
+    ],
+    "tempC": 180,
+    "prep": "20 min",
+    "cook": "35 min",
+    "bake": "25–30 min",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Beef, pork & sausage"
+      }
+    ]
+  },
+  {
+    "id": "chicken-pot-pie",
+    "title": "Chicken Pot Pie",
+    "category": "Casseroles & one-pot",
+    "section": "meals",
+    "desc": "Creamy chicken under a puff pastry lid.",
+    "ingredients": [
+      [
+        "Butter",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Boneless chicken thighs, diced",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour",
+        35.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Frozen peas",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Puff pastry, thawed",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Egg, beaten",
+        1.0,
+        "pc",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Soften onion and carrot in butter for 8 minutes.",
+      "Add chicken and cook for 5 minutes. Stir in flour for 1 minute, then gradually add prepared white chicken stock.",
+      "Simmer for 10 minutes. Stir in cream, peas, salt and pepper and transfer to a deep 20 × 25 cm pie dish for the base batch. Let steam escape for 10 minutes.",
+      "Unroll pastry over the filling, trim and seal the edges. Brush with beaten egg and cut a steam vent.",
+      "Bake for 30–35 minutes until pastry is golden and cooked underneath and the filling reaches 74°C."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "white-chicken-stock",
+        "amount": 350.0,
+        "unit": "ml"
+      }
+    ],
+    "tempC": 180,
+    "prep": "20 min",
+    "cook": "25 min",
+    "bake": "30–35 min",
+    "ferment": "10 min",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Chicken"
+      }
+    ]
+  },
+  {
+    "id": "beef-bourguignon-style-stew",
+    "title": "Beef Bourguignon-Style Stew",
+    "category": "Casseroles & one-pot",
+    "section": "meals",
+    "desc": "Beef slowly braised with red wine and mushrooms.",
+    "ingredients": [
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Bacon, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Beef chuck, cubed",
+        800.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Tomato paste",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dry red wine",
+        500.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh thyme",
+        5.0,
+        "g",
+        "other"
+      ],
+      [
+        "Bay leaf",
+        2.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Butter",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Small shallots, peeled",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Button mushrooms, halved",
+        250.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 140°C fan. Fry bacon in oil in a heavy ovenproof casserole until golden; lift out. Brown beef in batches in the same pan and lift out.",
+      "Soften onion and carrot for 8 minutes. Add garlic, flour and tomato paste and stir for 1 minute.",
+      "Gradually add wine and prepared brown beef stock, scraping the base. Return beef and bacon; add thyme, bay, salt and pepper.",
+      "Bring to a simmer, cover and cook in the oven for 2 hours.",
+      "Brown shallots and mushrooms in butter in a frying pan for 8 minutes. Stir into the casserole and cook covered for 30–45 minutes more until beef is fork-tender. Remove bay and thyme stalks before serving."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "brown-beef-stock",
+        "amount": 400.0,
+        "unit": "ml"
+      }
+    ],
+    "tempC": 140,
+    "prep": "25 min",
+    "cook": "30 min",
+    "bake": "2½–2¾ hr",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Beef, pork & sausage"
+      }
+    ]
+  },
+  {
+    "id": "chicken-casserole",
+    "title": "Chicken Casserole",
+    "category": "Casseroles & one-pot",
+    "section": "meals",
+    "desc": "Chicken and vegetables in a creamy broth.",
+    "ingredients": [
+      [
+        "Olive oil",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Boneless chicken thighs, diced",
+        700.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Leek, sliced and washed",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dry white wine",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh thyme",
+        5.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Frozen peas",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        100.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Brown chicken in oil in a heavy casserole in batches; transfer to a plate.",
+      "Soften onion, carrot and leek in the same pan for 8 minutes. Stir in flour for 1 minute.",
+      "Add wine and prepared white chicken stock gradually. Return chicken with its juices and add thyme, salt and pepper.",
+      "Cover and simmer gently for 30 minutes, stirring occasionally, until chicken is tender and reaches 74°C.",
+      "Remove thyme stalks. Add peas and cream and simmer for 3 minutes before serving."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "white-chicken-stock",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "20 min",
+    "cook": "55 min",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Chicken"
+      }
+    ]
+  },
+  {
+    "id": "macaroni-bake",
+    "title": "Macaroni Bake",
+    "category": "Casseroles & one-pot",
+    "section": "meals",
+    "desc": "Cheesy macaroni with a crisp breadcrumb topping.",
+    "ingredients": [
+      [
+        "Dried macaroni",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Whole milk",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Cheddar, grated",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Breadcrumbs",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        20.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Cook macaroni in boiling water with salt for 2 minutes less than the packet time; drain.",
+      "Warm prepared cheddar sauce gently with milk, then stir in the pasta.",
+      "Transfer to a deep 20 × 25 cm dish for the base batch. Scatter with cheddar and breadcrumbs and dot with butter.",
+      "Bake for 20–25 minutes until golden and bubbling throughout."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "cheddar-sauce",
+        "amount": 650.0,
+        "unit": "ml"
+      }
+    ],
+    "tempC": 180,
+    "prep": "10 min",
+    "cook": "10 min",
+    "bake": "20–25 min",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Pasta & noodles"
+      }
+    ]
+  },
+  {
+    "id": "tuna-casserole",
+    "title": "Tuna Casserole",
+    "category": "Casseroles & one-pot",
+    "section": "meals",
+    "desc": "Tuna and potatoes baked under a cheese crust.",
+    "ingredients": [
+      [
+        "Potatoes, peeled",
+        800.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Tinned tuna, drained",
+        350.0,
+        "g",
+        "other"
+      ],
+      [
+        "Frozen peas",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Cheddar, grated",
+        80.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Slice potatoes 5 mm thick and simmer in water with salt for 8–10 minutes until nearly tender; drain carefully.",
+      "Layer potatoes, flaked tuna and peas in a deep 20 × 30 cm dish for the base batch.",
+      "Warm prepared béchamel with milk and pepper. Pour evenly over the dish and scatter with cheddar.",
+      "Bake for 30–35 minutes until potatoes are tender and the centre reaches 74°C."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "bechamel",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "tempC": 180,
+    "prep": "15 min",
+    "cook": "10 min",
+    "bake": "30–35 min",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Fish & seafood"
+      }
+    ]
+  },
+  {
+    "id": "baked-ziti",
+    "title": "Baked Ziti",
+    "category": "Casseroles & one-pot",
+    "section": "meals",
+    "desc": "Pasta baked with tomato, ricotta and mozzarella.",
+    "ingredients": [
+      [
+        "Dried short pasta",
+        350.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ricotta",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mozzarella, grated",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Parmesan, grated",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh basil leaves",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Cook pasta in boiling water with salt for 2 minutes less than the packet time; drain.",
+      "Toss pasta with the prepared tomato sauce and half the ricotta.",
+      "Put half in a deep 20 × 30 cm dish for the base batch. Dot with remaining ricotta and half the mozzarella; add remaining pasta, mozzarella and Parmesan.",
+      "Bake for 25–30 minutes until bubbling and golden. Scatter with torn basil before serving."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "tomato-sauce",
+        "amount": 800.0,
+        "unit": "ml"
+      }
+    ],
+    "tempC": 180,
+    "prep": "15 min",
+    "cook": "10 min",
+    "bake": "25–30 min",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Pasta & noodles"
+      }
+    ]
+  },
+  {
+    "id": "sausage-bean-one-pot",
+    "title": "Sausage & Bean One-Pot",
+    "category": "Casseroles & one-pot",
+    "section": "meals",
+    "desc": "Sausages and beans simmered in tomato sauce.",
+    "ingredients": [
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Pork sausages",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cooked white beans, drained",
+        480.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Brown sausages in oil in a wide pan for 8 minutes, turning; lift out.",
+      "Soften onion and carrot in the same pan for 8 minutes. Add garlic and paprika and stir for 1 minute.",
+      "Add tomatoes, prepared vegetable stock, beans, salt and pepper. Return sausages and simmer partly covered for 25 minutes.",
+      "Check sausages reach 71°C in the centre and vegetables are tender. Scatter with parsley and serve."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "vegetable-stock",
+        "amount": 300.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "45 min",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Beef, pork & sausage"
+      }
+    ]
+  },
+  {
+    "id": "one-pot-chicken-and-rice",
+    "title": "One-Pot Chicken and Rice",
+    "category": "Casseroles & one-pot",
+    "section": "meals",
+    "desc": "Chicken, rice and peas cooked in one pot.",
+    "ingredients": [
+      [
+        "Olive oil",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Boneless chicken thighs, diced",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Long-grain rice, rinsed",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Frozen peas",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        20.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Brown chicken in oil in a heavy pan for 6–8 minutes; lift out.",
+      "Soften onion in the same pan for 5 minutes. Add garlic, paprika and drained rice and stir for 1 minute.",
+      "Add prepared white chicken stock, salt and pepper and return chicken. Bring to a simmer, cover tightly and cook over low heat for 18 minutes.",
+      "Stir in peas, cover and cook for 3–5 minutes until rice is tender and chicken reaches 74°C.",
+      "Take off the heat, rest covered for 5 minutes, then fluff gently and stir in lemon juice."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "white-chicken-stock",
+        "amount": 650.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "35 min",
+    "ferment": "5 min",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Chicken"
+      }
+    ]
+  }
+]

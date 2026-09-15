@@ -1,0 +1,1046 @@
+[
+  {
+    "id": "chickpea-curry",
+    "title": "Chickpea Curry",
+    "category": "Vegetarian",
+    "section": "meals",
+    "desc": "A tomato-based chickpea curry with individual ground spices.",
+    "ingredients": [
+      [
+        "Sunflower oil",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh ginger, grated",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground coriander",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Garam masala",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground turmeric",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        800.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cooked chickpeas, drained",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh coriander, chopped",
+        15.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion in oil for 10 minutes until golden.",
+      "Add garlic, ginger, cumin, ground coriander, garam masala and turmeric; cook for 1 minute.",
+      "Add tomatoes, chickpeas and salt. Simmer gently for 25 minutes until thick.",
+      "Mash a small portion of chickpeas into the sauce to thicken, then add lemon juice and fresh coriander."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "15 min",
+    "cook": "40 min"
+  },
+  {
+    "id": "lentil-dal",
+    "title": "Lentil Dal",
+    "category": "Vegetarian",
+    "section": "meals",
+    "desc": "Soft lentils simmered with warming spices.",
+    "ingredients": [
+      [
+        "Red lentils, rinsed",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        800.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Ground turmeric",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh ginger, grated",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground coriander",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        20.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Simmer lentils in water with turmeric for 20 minutes until soft, skimming any foam.",
+      "Meanwhile soften onion in oil for 8 minutes. Add garlic, ginger, cumin and coriander for 1 minute.",
+      "Add tomatoes and cook for 5 minutes, then stir into the lentils.",
+      "Add salt and simmer for 5 minutes until creamy. Finish with lemon juice."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min",
+    "cook": "30 min"
+  },
+  {
+    "id": "vegetarian-chilli",
+    "title": "Vegetarian Chilli",
+    "category": "Vegetarian",
+    "section": "meals",
+    "desc": "A hearty bean and vegetable chilli.",
+    "ingredients": [
+      [
+        "Olive oil",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red pepper, diced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Chilli flakes",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        800.0,
+        "g",
+        "other"
+      ],
+      [
+        "Canned kidney beans, drained",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cooked black beans, drained",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion, pepper and carrot in oil for 10 minutes.",
+      "Add garlic, cumin, paprika and chilli for 1 minute.",
+      "Add tomatoes, both beans, prepared vegetable stock and salt.",
+      "Simmer partially covered for 30 minutes until thick and the vegetables are tender, stirring occasionally."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "vegetable-stock",
+        "amount": 200.0,
+        "unit": "ml"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Casseroles & one-pot"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "40 min"
+  },
+  {
+    "id": "falafel",
+    "title": "Falafel",
+    "category": "Vegetarian",
+    "section": "meals",
+    "desc": "Crisp herb-filled falafel made from soaked dried chickpeas.",
+    "ingredients": [
+      [
+        "Dried chickpeas",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh coriander, chopped",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground coriander",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Baking soda",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        1500.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soak dried chickpeas in plenty of cold water in the fridge for 18–24 hours. Drain and dry well; do not boil or substitute canned chickpeas.",
+      "Pulse chickpeas, onion, garlic, parsley, fresh coriander, cumin, ground coriander and salt to a fine crumb that holds when pressed.",
+      "Cover and chill for 30 minutes. Mix in baking soda and shape small flattened balls about 3 cm across.",
+      "Heat oil to 175°C in a heavy pan no more than half full. Fry in small batches for 4–5 minutes until deeply golden and cooked through; drain and serve."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "20 min",
+    "ferment": "18–24 hr soaking + 30 min chilling",
+    "cook": "20 min"
+  },
+  {
+    "id": "hummus-bowl",
+    "title": "Hummus Bowl",
+    "category": "Vegetarian",
+    "section": "meals",
+    "desc": "Hummus topped with vegetables and chickpeas.",
+    "ingredients": [
+      [
+        "Cooked chickpeas, drained",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Cucumber, diced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh tomato, diced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        15.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Pat chickpeas dry and toss with oil and paprika.",
+      "Fry in a non-stick pan for 8 minutes, stirring, until hot and lightly crisp.",
+      "Divide prepared hummus between bowls and add cucumber, tomato and warm chickpeas.",
+      "Finish with lemon juice and parsley and serve."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "hummus",
+        "amount": 600.0,
+        "unit": "g"
+      }
+    ],
+    "prep": "10 min",
+    "cook": "10 min"
+  },
+  {
+    "id": "mushroom-stroganoff",
+    "title": "Mushroom Stroganoff",
+    "category": "Vegetarian",
+    "section": "meals",
+    "desc": "Mushrooms in a tangy, creamy sauce.",
+    "ingredients": [
+      [
+        "Butter",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mushrooms, sliced",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Plain flour",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dijon mustard",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sour cream",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion in butter for 5 minutes. Add mushrooms and fry for 10 minutes until browned.",
+      "Add garlic, paprika and flour; cook for 1 minute.",
+      "Gradually stir in prepared vegetable stock and mustard. Simmer for 5 minutes.",
+      "Lower the heat and add sour cream, salt and pepper. Warm without boiling and finish with parsley."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "vegetable-stock",
+        "amount": 300.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "25 min"
+  },
+  {
+    "id": "eggplant-parmesan",
+    "title": "Eggplant Parmesan",
+    "category": "Vegetarian",
+    "section": "meals",
+    "desc": "Aubergine baked with tomato and cheese.",
+    "ingredients": [
+      [
+        "Aubergine, sliced",
+        800.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        50.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Vegetarian mozzarella, grated",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vegetarian hard cheese, grated",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh basil leaves",
+        15.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 200°C fan. Brush aubergine slices with oil, season with salt and spread on lined trays.",
+      "Roast for 25 minutes, turning halfway, until tender and golden.",
+      "Layer aubergine, prepared tomato sauce, mozzarella, hard cheese and torn basil in a deep 20 × 30 cm dish for the base batch.",
+      "Reduce oven to 180°C fan and bake for 25 minutes until bubbling; rest for 10 minutes before serving."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "tomato-sauce",
+        "amount": 700.0,
+        "unit": "ml"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Casseroles & one-pot"
+      }
+    ],
+    "tempC": 200,
+    "prep": "15 min",
+    "bake": "50 min",
+    "ferment": "10 min"
+  },
+  {
+    "id": "vegetable-lasagne",
+    "title": "Vegetable Lasagne",
+    "category": "Vegetarian",
+    "section": "meals",
+    "desc": "Layers of pasta, vegetables and béchamel.",
+    "ingredients": [
+      [
+        "Olive oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Courgette, diced",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mushrooms, sliced",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Dried lasagne sheets",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vegetarian hard cheese, grated",
+        100.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Soften onion and carrot in oil for 8 minutes.",
+      "Add courgette, mushrooms and salt; cook for 10 minutes until tender and excess liquid evaporates. Stir in prepared tomato sauce.",
+      "Layer vegetable sauce, lasagne sheets and prepared béchamel in a deep 20 × 30 cm dish for the base batch. Finish with béchamel and hard cheese.",
+      "Cover and bake for 30 minutes; uncover and bake for 15–20 minutes until pasta is tender and the centre reaches 74°C. Rest for 10 minutes."
+    ],
+    "compactMetricUnits": true,
+    "yield": "6 servings",
+    "foundations": [
+      {
+        "recipeId": "tomato-sauce",
+        "amount": 700.0,
+        "unit": "ml"
+      },
+      {
+        "recipeId": "bechamel",
+        "amount": 750.0,
+        "unit": "ml"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Pasta & noodles"
+      },
+      {
+        "section": "meals",
+        "category": "Casseroles & one-pot"
+      }
+    ],
+    "tempC": 180,
+    "prep": "20 min",
+    "cook": "20 min",
+    "bake": "45–50 min",
+    "ferment": "10 min"
+  },
+  {
+    "id": "stuffed-peppers",
+    "title": "Stuffed Peppers",
+    "category": "Vegetarian",
+    "section": "meals",
+    "desc": "Peppers baked with a savoury filling.",
+    "ingredients": [
+      [
+        "Red peppers, halved and deseeded",
+        4.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Long-grain rice, rinsed",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        350.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Cooked black beans, drained",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sweetcorn, drained",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Vegetarian mozzarella, grated",
+        100.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Place pepper halves in a baking dish and bake for 15 minutes to soften.",
+      "Cook rice with water and salt, covered on low heat for 15 minutes; rest for 5 minutes.",
+      "Mix rice with beans, sweetcorn, cumin and prepared tomato sauce.",
+      "Fill pepper halves, top with mozzarella and bake for 25 minutes until tender and piping hot throughout."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "tomato-sauce",
+        "amount": 300.0,
+        "unit": "ml"
+      }
+    ],
+    "tempC": 180,
+    "prep": "15 min",
+    "cook": "20 min",
+    "bake": "40 min"
+  },
+  {
+    "id": "cauliflower-curry",
+    "title": "Cauliflower Curry",
+    "category": "Vegetarian",
+    "section": "meals",
+    "desc": "Cauliflower simmered in a spiced sauce.",
+    "ingredients": [
+      [
+        "Sunflower oil",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh ginger, grated",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Curry powder",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Cauliflower, florets",
+        700.0,
+        "g",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Coconut milk",
+        400.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Fresh coriander, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion in oil for 8 minutes.",
+      "Add garlic, ginger, curry powder and cumin for 1 minute.",
+      "Add cauliflower, tomatoes, coconut milk and salt. Cover and simmer for 15 minutes.",
+      "Uncover and simmer for 5 minutes until cauliflower is tender; finish with coriander."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "15 min",
+    "cook": "30 min"
+  },
+  {
+    "id": "black-bean-burgers",
+    "title": "Black Bean Burgers",
+    "category": "Vegetarian",
+    "section": "meals",
+    "desc": "Hearty bean patties with a crisp exterior.",
+    "ingredients": [
+      [
+        "Cooked black beans, drained",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Breadcrumbs",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Burger buns",
+        4.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Lettuce, shredded",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh tomato, diced",
+        150.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Pat beans dry and mash roughly, leaving some texture.",
+      "Soften onion in half the oil for 5 minutes; add garlic, cumin and paprika for 1 minute, then cool slightly.",
+      "Mix beans, onion mixture, breadcrumbs, egg and salt. Shape equal patties and chill for 20 minutes.",
+      "Fry in remaining oil for 4–5 minutes per side until firm and piping hot, at least 74°C. Serve in toasted buns with lettuce and tomato."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "20 min",
+    "ferment": "20 min",
+    "cook": "20 min"
+  },
+  {
+    "id": "sweet-potato-peanut-curry",
+    "title": "Sweet Potato & Peanut Curry",
+    "category": "Vegetarian",
+    "section": "meals",
+    "desc": "Sweet potato in a creamy peanut sauce.",
+    "ingredients": [
+      [
+        "Sunflower oil",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh ginger, grated",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Curry powder",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Sweet potato, diced",
+        700.0,
+        "g",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Coconut milk",
+        400.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Peanut butter",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Baby spinach",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lime juice",
+        30.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion in oil for 8 minutes. Add garlic, ginger and curry powder for 1 minute.",
+      "Add sweet potato, tomatoes, coconut milk, peanut butter and salt; stir until smooth.",
+      "Cover and simmer gently for 20–25 minutes until sweet potato is tender, stirring often.",
+      "Stir in spinach until wilted and finish with lime juice."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "15 min",
+    "cook": "35 min"
+  }
+]

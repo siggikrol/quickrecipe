@@ -1,0 +1,933 @@
+[
+  {
+    "id": "roast-chicken",
+    "title": "Roast Chicken",
+    "category": "Chicken",
+    "section": "meals",
+    "desc": "A whole chicken roasted with lemon, garlic and thyme.",
+    "ingredients": [
+      [
+        "Whole chicken",
+        1600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        1.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Lemon, halved",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Garlic cloves, peeled",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh thyme",
+        5.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Pat the chicken dry with kitchen paper and place in a roasting tin.",
+      "Rub with oil, salt and pepper. Put lemon, garlic and thyme loosely in the cavity.",
+      "Roast for about 80–90 minutes, until the thickest breast and inner thigh reach 74°C without the thermometer touching bone.",
+      "Rest for 15 minutes before carving. When scaling, use additional similar-sized birds rather than changing the cooking temperature."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "tempC": 180,
+    "prep": "10 min",
+    "bake": "80–90 min",
+    "ferment": "15 min"
+  },
+  {
+    "id": "crispy-chicken-thighs",
+    "title": "Crispy Chicken Thighs",
+    "category": "Chicken",
+    "section": "meals",
+    "desc": "Crisp-skinned chicken thighs with paprika and pepper.",
+    "ingredients": [
+      [
+        "Chicken thighs, bone-in and skin-on",
+        1000.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 200°C fan and pat the chicken skin dry.",
+      "Coat thighs with oil, salt, paprika and pepper.",
+      "Arrange skin-side up on a tray with space between pieces.",
+      "Roast for 35–45 minutes until the skin is crisp and the thickest meat reaches 74°C. Rest for 5 minutes."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "tempC": 200,
+    "prep": "10 min",
+    "bake": "35–45 min",
+    "ferment": "5 min"
+  },
+  {
+    "id": "chicken-schnitzel",
+    "title": "Chicken Schnitzel",
+    "category": "Chicken",
+    "section": "meals",
+    "desc": "Thin chicken cutlets in a crisp breadcrumb coating.",
+    "ingredients": [
+      [
+        "Chicken breast fillets",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Plain flour",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs",
+        2.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Breadcrumbs",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        30.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Slice chicken horizontally and flatten to an even 1 cm thickness. Season with salt and pepper.",
+      "Put flour, beaten eggs and breadcrumbs in separate shallow dishes.",
+      "Coat chicken in flour, then egg, then crumbs; press lightly.",
+      "Heat oil over medium heat and fry in batches for 3–4 minutes per side until golden and 74°C inside. Drain and serve with lemon juice."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "15 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "chicken-parmesan",
+    "title": "Chicken Parmesan",
+    "category": "Chicken",
+    "section": "meals",
+    "desc": "Breaded chicken baked with tomato sauce and melted cheese.",
+    "ingredients": [
+      [
+        "Chicken breast fillets",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Plain flour",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs",
+        2.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Breadcrumbs",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Parmesan, grated",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        60.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Mozzarella, grated",
+        150.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 190°C fan. Flatten chicken to 1 cm thickness and season with salt.",
+      "Coat in flour, beaten eggs, then breadcrumbs mixed with Parmesan.",
+      "Fry in oil for 3 minutes per side until golden. Transfer to a baking dish.",
+      "Top with prepared tomato sauce and mozzarella. Bake for 15 minutes until bubbling and chicken reaches 74°C."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "tomato-sauce",
+        "amount": 400.0,
+        "unit": "ml"
+      }
+    ],
+    "tempC": 190,
+    "prep": "15 min",
+    "cook": "10 min",
+    "bake": "15 min"
+  },
+  {
+    "id": "chicken-fajitas",
+    "title": "Chicken Fajitas",
+    "category": "Chicken",
+    "section": "meals",
+    "desc": "Spiced chicken and peppers served in warm tortillas.",
+    "ingredients": [
+      [
+        "Chicken breast fillets",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red pepper, diced",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Paprika",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Chilli flakes",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Flour tortillas",
+        8.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Lime juice",
+        30.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Cut chicken into thin strips and cut the pepper and onion into bite-sized pieces.",
+      "Toss with oil, paprika, cumin, chilli and salt.",
+      "Stir-fry in a hot wide pan in batches for 8–10 minutes until vegetables are tender and chicken reaches 74°C.",
+      "Warm tortillas in a dry pan. Add lime juice to the filling and serve for wrapping."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Quick dinners"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "chicken-tikka-masala",
+    "title": "Chicken Tikka Masala",
+    "category": "Chicken",
+    "section": "meals",
+    "desc": "Yoghurt-marinated chicken in a spiced tomato cream sauce.",
+    "ingredients": [
+      [
+        "Chicken thigh fillets, diced",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Greek yoghurt",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh ginger, grated",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garam masala",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        150.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mix chicken with yoghurt, half the ginger, half the garlic, half the garam masala, paprika and salt. Cover and refrigerate for 1 hour.",
+      "Heat the oven to 220°C fan. Spread chicken and marinade on a lined tray; roast for 15 minutes.",
+      "Meanwhile soften onion in oil for 8 minutes. Add remaining ginger, garlic and garam masala; cook for 1 minute.",
+      "Add tomatoes and simmer for 10 minutes. Stir in cream, roasted chicken and all tray juices; simmer for 5–10 minutes until chicken reaches 74°C."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "15 min",
+    "ferment": "1 hr",
+    "cook": "30 min",
+    "bake": "15 min",
+    "tempC": 220
+  },
+  {
+    "id": "butter-chicken",
+    "title": "Butter Chicken",
+    "category": "Chicken",
+    "section": "meals",
+    "desc": "Tender chicken in a mild, buttery tomato sauce.",
+    "ingredients": [
+      [
+        "Butter",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh ginger, grated",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garam masala",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground turmeric",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Chicken thigh fillets, diced",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Double cream",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Honey",
+        15.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion in half the butter for 8 minutes.",
+      "Add garlic, ginger, garam masala, paprika and turmeric; stir for 1 minute.",
+      "Add tomatoes and simmer for 10 minutes. Blend the sauce until smooth, then return to the pan.",
+      "Add chicken and salt; simmer for 15–20 minutes until chicken reaches 74°C. Stir in cream, honey and remaining butter; warm gently."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "15 min",
+    "cook": "40 min"
+  },
+  {
+    "id": "chicken-curry",
+    "title": "Chicken Curry",
+    "category": "Chicken",
+    "section": "meals",
+    "desc": "A coconut and tomato chicken curry with warming spices.",
+    "ingredients": [
+      [
+        "Sunflower oil",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh ginger, grated",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Curry powder",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Chicken thigh fillets, diced",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Coconut milk",
+        400.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Fresh coriander, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion in oil for 8 minutes.",
+      "Add garlic, ginger, curry powder and cumin; cook for 1 minute.",
+      "Add chicken and stir for 3 minutes to coat in the spices.",
+      "Add tomatoes, coconut milk and salt. Simmer for 20 minutes until chicken reaches 74°C; finish with coriander."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "15 min",
+    "cook": "35 min"
+  },
+  {
+    "id": "honey-garlic-chicken",
+    "title": "Honey Garlic Chicken",
+    "category": "Chicken",
+    "section": "meals",
+    "desc": "Golden chicken pieces in a sticky honey and garlic glaze.",
+    "ingredients": [
+      [
+        "Chicken breast, diced",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cornflour",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Honey",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Soy sauce",
+        45.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water",
+        80.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Pat chicken dry and toss with cornflour.",
+      "Heat oil and fry chicken for 8–10 minutes until golden and at least 74°C inside.",
+      "Lower the heat, add garlic and stir for 30 seconds.",
+      "Add honey, soy sauce, lemon juice and water. Simmer for 3–4 minutes until glossy and lightly thickened."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Quick dinners"
+      }
+    ],
+    "prep": "10 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "lemon-garlic-chicken",
+    "title": "Lemon Garlic Chicken",
+    "category": "Chicken",
+    "section": "meals",
+    "desc": "Chicken cutlets with a bright lemon and garlic pan sauce.",
+    "ingredients": [
+      [
+        "Chicken breast fillets",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        40.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        5.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Slice chicken horizontally into thin cutlets and season with salt and pepper.",
+      "Heat oil and fry chicken for 4 minutes per side until golden; transfer to a plate.",
+      "Add butter and garlic to the pan for 30 seconds. Stir in lemon juice and prepared white chicken stock.",
+      "Return chicken and any juices; simmer for 5 minutes until the centre reaches 74°C. Finish with parsley."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "white-chicken-stock",
+        "amount": 200.0,
+        "unit": "ml"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Quick dinners"
+      }
+    ],
+    "prep": "10 min",
+    "cook": "20 min"
+  },
+  {
+    "id": "chicken-noodle-soup",
+    "title": "Chicken Noodle Soup",
+    "category": "Chicken",
+    "section": "meals",
+    "desc": "A weekday chicken soup using prepared stock and quick-cooking noodles.",
+    "ingredients": [
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Celery, diced",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Chicken breast, diced",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Egg noodles",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        15.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion, carrot and celery in oil for 8 minutes.",
+      "Add prepared white chicken stock and bring to a simmer.",
+      "Add chicken and simmer for 8 minutes. Add noodles and cook for the packet time until tender and chicken reaches 74°C.",
+      "Add salt, pepper and parsley; serve immediately so the noodles do not over-soften."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "white-chicken-stock",
+        "amount": 1500.0,
+        "unit": "ml"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Soups"
+      }
+    ],
+    "prep": "10 min",
+    "cook": "25 min"
+  },
+  {
+    "id": "chicken-traybake",
+    "title": "Chicken Traybake",
+    "category": "Chicken",
+    "section": "meals",
+    "desc": "Chicken thighs and vegetables roasted together on one tray.",
+    "ingredients": [
+      [
+        "Chicken thighs, bone-in and skin-on",
+        1000.0,
+        "g",
+        "other"
+      ],
+      [
+        "Baby potatoes, halved",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red pepper, diced",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Courgette, diced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dried oregano",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        30.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 190°C fan. Place chicken, potatoes, pepper and courgette on a large roasting tray.",
+      "Toss with oil, garlic, oregano, salt, pepper and lemon juice.",
+      "Arrange chicken skin-side up and spread vegetables in a single layer; use extra trays when scaling.",
+      "Roast for 45–55 minutes, turning the vegetables halfway, until potatoes are tender and chicken reaches 74°C."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Casseroles & one-pot"
+      }
+    ],
+    "tempC": 190,
+    "prep": "15 min",
+    "bake": "45–55 min"
+  }
+]

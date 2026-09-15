@@ -1,0 +1,883 @@
+[
+  {
+    "id": "chicken-stir-fry",
+    "title": "Chicken Stir-Fry",
+    "category": "Quick dinners",
+    "section": "meals",
+    "desc": "Quick chicken and vegetables from the wok.",
+    "ingredients": [
+      [
+        "Soy sauce",
+        45.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Rice vinegar",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Honey",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cornflour",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Chicken breast, diced",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh ginger, grated",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Broccoli, small florets",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red pepper, diced",
+        200.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mix soy sauce, vinegar, honey, cornflour and water until smooth.",
+      "Cook chicken in half the oil in a hot wok for 8–10 minutes until it reaches 74°C; transfer to a plate.",
+      "Add remaining oil, garlic and ginger for 30 seconds. Add broccoli and pepper and stir-fry for 4 minutes.",
+      "Return the meat and stir in the sauce. Simmer for 2 minutes until thickened and piping hot."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Chicken"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "beef-stir-fry",
+    "title": "Beef Stir-Fry",
+    "category": "Quick dinners",
+    "section": "meals",
+    "desc": "Tender beef strips with crisp vegetables.",
+    "ingredients": [
+      [
+        "Soy sauce",
+        45.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Rice vinegar",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Honey",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cornflour",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Beef steak, thinly sliced",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh ginger, grated",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Broccoli, small florets",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red pepper, diced",
+        200.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mix soy sauce, vinegar, honey, cornflour and water until smooth.",
+      "Sear beef in half the oil in a hot wok in small batches for 3–4 minutes until browned and cooked through; transfer to a plate.",
+      "Add remaining oil, garlic and ginger for 30 seconds. Add broccoli and pepper and stir-fry for 4 minutes.",
+      "Return the meat and stir in the sauce. Simmer for 2 minutes until thickened and piping hot."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Beef, pork & sausage"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "garlic-butter-prawn-pasta",
+    "title": "Garlic Butter Prawn Pasta",
+    "category": "Quick dinners",
+    "section": "meals",
+    "desc": "Pasta with prawns and garlic butter.",
+    "ingredients": [
+      [
+        "Water",
+        4000.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Spaghetti",
+        350.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Raw prawns, peeled and deveined",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        15.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Bring water and salt to a boil. Cook spaghetti according to the packet, reserving a mug of water before draining.",
+      "Melt butter in a wide pan; add garlic and cook for 30 seconds.",
+      "Add prawns and cook for 3–4 minutes, turning, until opaque and cooked through.",
+      "Toss in spaghetti, lemon juice and parsley. Loosen with reserved pasta water and serve immediately."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Fish & seafood"
+      },
+      {
+        "section": "meals",
+        "category": "Pasta & noodles"
+      }
+    ],
+    "prep": "10 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "creamy-tomato-gnocchi",
+    "title": "Creamy Tomato Gnocchi",
+    "category": "Quick dinners",
+    "section": "meals",
+    "desc": "Soft gnocchi in a tomato cream sauce.",
+    "ingredients": [
+      [
+        "Double cream",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Baby spinach",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Potato gnocchi",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        2000.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Parmesan, grated",
+        50.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Warm prepared tomato sauce with cream in a wide pan for 5 minutes.",
+      "Stir in spinach and let it wilt.",
+      "Cook gnocchi in boiling salted water according to the packet, then lift out with a slotted spoon.",
+      "Fold gnocchi into the sauce, heat for 1 minute and finish with Parmesan."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "tomato-sauce",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Pasta & noodles"
+      }
+    ],
+    "prep": "5 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "quesadillas",
+    "title": "Quesadillas",
+    "category": "Quick dinners",
+    "section": "meals",
+    "desc": "Crisp tortillas filled with beans, peppers and melted cheese.",
+    "ingredients": [
+      [
+        "Flour tortillas",
+        8.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Vegetarian cheddar, grated",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cooked black beans, drained",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red pepper, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        15.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Lay half the tortillas on a board and scatter with half the cheese.",
+      "Mix drained beans, pepper and cumin. Divide over the cheese, add remaining cheese and cover with the remaining tortillas.",
+      "Brush a frying pan with oil and heat over medium-low heat.",
+      "Cook each quesadilla for 3–4 minutes per side until crisp, the cheese melts and the filling is hot; cut into wedges."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Vegetarian"
+      }
+    ],
+    "prep": "10 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "chicken-wraps",
+    "title": "Chicken Wraps",
+    "category": "Quick dinners",
+    "section": "meals",
+    "desc": "Warm chicken tucked into soft wraps.",
+    "ingredients": [
+      [
+        "Chicken breast fillets",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Flour tortillas",
+        4.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Greek yoghurt",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        15.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lettuce, shredded",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh tomato, diced",
+        200.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Slice chicken into thin strips and toss with oil, paprika, salt and pepper.",
+      "Fry in a hot pan for 8–10 minutes until browned and at least 74°C inside.",
+      "Warm tortillas in a dry pan. Mix yoghurt with lemon juice.",
+      "Spread yoghurt sauce on tortillas, add chicken, lettuce and tomato, then fold in the sides and roll."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Chicken"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "10 min"
+  },
+  {
+    "id": "teriyaki-chicken",
+    "title": "Teriyaki Chicken",
+    "category": "Quick dinners",
+    "section": "meals",
+    "desc": "Chicken in a glossy soy glaze.",
+    "ingredients": [
+      [
+        "Soy sauce",
+        60.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Mirin",
+        60.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Brown sugar",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        40.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh ginger, grated",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Chicken thigh fillets, diced",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sesame seeds",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Spring onions, sliced",
+        30.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mix soy sauce, mirin, brown sugar, water and ginger.",
+      "Heat oil and fry chicken over medium-high heat for 8–10 minutes until browned.",
+      "Add the sauce and simmer for 5–7 minutes until glossy and chicken reaches 74°C.",
+      "Turn chicken in the glaze and scatter with sesame seeds and spring onions."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Chicken"
+      }
+    ],
+    "prep": "10 min",
+    "cook": "20 min"
+  },
+  {
+    "id": "one-pan-sausage-vegetables",
+    "title": "One-Pan Sausage & Vegetables",
+    "category": "Quick dinners",
+    "section": "meals",
+    "desc": "Sausages and vegetables roasted together.",
+    "ingredients": [
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Cooked sausages, sliced",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red pepper, diced",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Courgette, diced",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water",
+        150.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat oil in a wide pan and brown sliced cooked sausages for 5 minutes.",
+      "Add onion and pepper; cook for 5 minutes.",
+      "Add courgette, garlic, paprika and water. Cover and simmer for 8 minutes.",
+      "Uncover and cook for 2 minutes until vegetables are tender and sausages are piping hot throughout."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Beef, pork & sausage"
+      },
+      {
+        "section": "meals",
+        "category": "Casseroles & one-pot"
+      }
+    ],
+    "prep": "10 min",
+    "cook": "20 min"
+  },
+  {
+    "id": "tuna-tomato-pasta",
+    "title": "Tuna Tomato Pasta",
+    "category": "Quick dinners",
+    "section": "meals",
+    "desc": "A quick pasta with tuna and tomato.",
+    "ingredients": [
+      [
+        "Water",
+        4000.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Penne",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Canned tuna, drained",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Capers, drained and chopped",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        15.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Bring water and salt to a boil. Cook pasta according to the packet, reserving a mug of water before draining.",
+      "Warm prepared tomato sauce in a wide pan for 5 minutes.",
+      "Fold in tuna and capers and heat gently until piping hot.",
+      "Toss with pasta and parsley; loosen with reserved water if needed."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "tomato-sauce",
+        "amount": 600.0,
+        "unit": "ml"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Fish & seafood"
+      },
+      {
+        "section": "meals",
+        "category": "Pasta & noodles"
+      }
+    ],
+    "prep": "5 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "quick-chickpea-curry",
+    "title": "Quick Chickpea Curry",
+    "category": "Quick dinners",
+    "section": "meals",
+    "desc": "A quick pantry curry using cooked chickpeas and curry powder.",
+    "ingredients": [
+      [
+        "Sunflower oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Curry powder",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Cooked chickpeas, drained",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Coconut milk",
+        200.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Baby spinach",
+        100.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion in oil for 5 minutes.",
+      "Add garlic and curry powder; stir for 1 minute.",
+      "Add chickpeas, tomatoes, coconut milk and salt. Simmer for 12 minutes.",
+      "Stir in spinach until wilted and serve hot."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Vegetarian"
+      }
+    ],
+    "prep": "10 min",
+    "cook": "20 min"
+  },
+  {
+    "id": "fajita-bowls",
+    "title": "Fajita Bowls",
+    "category": "Quick dinners",
+    "section": "meals",
+    "desc": "Spiced chicken and peppers served over rice.",
+    "ingredients": [
+      [
+        "Olive oil",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Chicken breast, diced",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red pepper, diced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Cooked rice, promptly chilled and refrigerated",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cooked black beans, drained",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lime juice",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh coriander, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat oil and stir-fry chicken, pepper and onion with paprika, cumin and salt for 10 minutes until chicken reaches 74°C.",
+      "Add chilled cooked rice, beans and water. Cover and heat gently for 5 minutes.",
+      "Stir and continue heating until the rice is steaming hot throughout. Use rice chilled within 1 hour of cooking and kept refrigerated for no more than 24 hours.",
+      "Divide into bowls and finish with lime juice and coriander; serve immediately and do not reheat again."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Chicken"
+      },
+      {
+        "section": "meals",
+        "category": "Rice & grains"
+      }
+    ],
+    "prep": "10 min",
+    "cook": "20 min"
+  }
+]

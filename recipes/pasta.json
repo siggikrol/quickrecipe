@@ -1,0 +1,987 @@
+[
+  {
+    "id": "spaghetti-carbonara",
+    "title": "Spaghetti Carbonara",
+    "category": "Pasta & noodles",
+    "section": "meals",
+    "desc": "Spaghetti with guanciale, Pecorino and a glossy egg sauce.",
+    "ingredients": [
+      [
+        "Water",
+        4000.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Spaghetti",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Guanciale, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Pasteurised eggs in shell",
+        2.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Pasteurised egg yolks",
+        2.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Pecorino Romano, grated",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        1.0,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Bring water and salt to a boil in a large pot.",
+      "Cook spaghetti until just tender. Meanwhile fry guanciale in a large dry pan for 8 minutes until golden; take off the heat.",
+      "Whisk pasteurised eggs and yolks with Pecorino and pepper in a bowl.",
+      "Reserve a mug of pasta water. Drain spaghetti and toss with the guanciale; let the pan cool for 1 minute.",
+      "Off the heat, stir in the egg mixture quickly. Add reserved water a little at a time until glossy; serve immediately without boiling."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "cacio-e-pepe",
+    "title": "Cacio e Pepe",
+    "category": "Pasta & noodles",
+    "section": "meals",
+    "desc": "Pecorino and black pepper emulsified with starchy pasta water.",
+    "ingredients": [
+      [
+        "Water",
+        2500.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Spaghetti",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Pecorino Romano, grated",
+        160.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Bring water and salt to a boil in a large pot.",
+      "Cook spaghetti until just tender. Toast pepper in a dry wide pan for 30 seconds, then add a little pasta water.",
+      "Mix finely grated Pecorino with a little warm, not boiling, pasta water to make a thick paste.",
+      "Reserve more cooking water, drain spaghetti and toss in the pepper pan. Remove from the heat for 1 minute.",
+      "Toss in the cheese paste, adding warm cooking water gradually until creamy; serve immediately."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "spaghetti-aglio-e-olio",
+    "title": "Spaghetti Aglio e Olio",
+    "category": "Pasta & noodles",
+    "section": "meals",
+    "desc": "A simple garlic, olive oil and chilli pasta.",
+    "ingredients": [
+      [
+        "Water",
+        4000.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Spaghetti",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Chilli flakes",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        20.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Bring water and salt to a boil in a large pot.",
+      "Cook the pasta until just tender according to the packet. Reserve a mug of cooking water before draining.",
+      "Warm olive oil, garlic and chilli in a wide pan over low heat for 2–3 minutes until fragrant; do not let the garlic brown.",
+      "Add spaghetti and parsley. Toss vigorously with a little reserved water until the oil forms a light coating; serve immediately."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "bolognese",
+    "title": "Bolognese",
+    "category": "Pasta & noodles",
+    "section": "meals",
+    "desc": "A slow-simmered beef ragù for pasta and lasagne.",
+    "ingredients": [
+      [
+        "Olive oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Celery, diced",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Beef mince",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Tomato paste",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dry red wine",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Canned chopped tomatoes",
+        800.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water for adjusting yield",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soften onion, carrot and celery in olive oil for 10 minutes.",
+      "Add beef and fry for 8 minutes, breaking it up until browned throughout.",
+      "Stir in tomato paste, then wine; simmer for 3 minutes.",
+      "Add tomatoes, prepared brown beef stock, milk, salt and pepper. Simmer partially covered for 90 minutes, stirring occasionally.",
+      "Weigh the sauce; reduce gently or add water to reach the displayed yield. The beef must be fully cooked, at least 71°C."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "batchYield": {
+      "amount": 1500,
+      "unit": "g"
+    },
+    "foundations": [
+      {
+        "recipeId": "brown-beef-stock",
+        "amount": 300.0,
+        "unit": "ml"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "sauces",
+        "category": "Tomato sauces"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "2 hr"
+  },
+  {
+    "id": "lasagne",
+    "title": "Lasagne",
+    "category": "Pasta & noodles",
+    "section": "meals",
+    "desc": "Layers of pasta, beef ragù and béchamel baked until golden.",
+    "ingredients": [
+      [
+        "Olive oil",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dried lasagne sheets",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Parmesan, grated",
+        100.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Oil a deep 20 × 30 cm baking dish for the base batch.",
+      "Spread a little prepared Bolognese in the dish. Layer lasagne sheets, Bolognese and prepared béchamel, repeating until used.",
+      "Finish with béchamel and Parmesan. Cover with foil and bake for 30 minutes.",
+      "Uncover and bake for 15–20 minutes until the pasta is tender and the centre reaches 74°C. Rest for 10 minutes before slicing."
+    ],
+    "compactMetricUnits": true,
+    "yield": "6 servings",
+    "foundations": [
+      {
+        "recipeId": "bolognese",
+        "amount": 1200.0,
+        "unit": "g"
+      },
+      {
+        "recipeId": "bechamel",
+        "amount": 750.0,
+        "unit": "ml"
+      }
+    ],
+    "tempC": 180,
+    "prep": "15 min",
+    "bake": "45–50 min",
+    "ferment": "10 min"
+  },
+  {
+    "id": "penne-arrabbiata",
+    "title": "Penne Arrabbiata",
+    "category": "Pasta & noodles",
+    "section": "meals",
+    "desc": "Penne tossed in a spicy tomato sauce.",
+    "ingredients": [
+      [
+        "Water",
+        4000.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Penne",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Bring water and salt to a boil in a large pot.",
+      "Cook the pasta until just tender according to the packet. Reserve a mug of cooking water before draining.",
+      "Warm the prepared sauce gently in a saucepan; loosen with a little reserved cooking water.",
+      "Toss the hot pasta with the sauce and parsley. Add reserved cooking water as needed to coat evenly and serve immediately."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "arrabbiata",
+        "amount": 550.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "5 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "pesto-pasta",
+    "title": "Pesto Pasta",
+    "category": "Pasta & noodles",
+    "section": "meals",
+    "desc": "Pasta coated in basil pesto and Parmesan.",
+    "ingredients": [
+      [
+        "Water",
+        4000.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Penne",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Parmesan, grated",
+        40.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Bring water and salt to a boil in a large pot.",
+      "Cook the pasta until just tender according to the packet. Reserve a mug of cooking water before draining.",
+      "Place the prepared sauce in a large bowl; loosen with a little reserved cooking water.",
+      "Toss the hot pasta with the sauce and Parmesan. Add reserved cooking water as needed to coat evenly and serve immediately."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "pesto",
+        "amount": 160.0,
+        "unit": "g"
+      }
+    ],
+    "prep": "5 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "mac-and-cheese",
+    "title": "Mac and Cheese",
+    "category": "Pasta & noodles",
+    "section": "meals",
+    "desc": "Creamy macaroni finished on the hob.",
+    "ingredients": [
+      [
+        "Water",
+        4000.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Macaroni",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cheddar, grated",
+        40.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Bring water and salt to a boil in a large pot.",
+      "Cook the pasta until just tender according to the packet. Reserve a mug of cooking water before draining.",
+      "Warm the prepared sauce gently in a saucepan; loosen with a little reserved cooking water.",
+      "Toss the hot pasta with the sauce and cheddar. Add reserved cooking water as needed to coat evenly and serve immediately."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "cheddar-sauce",
+        "amount": 650.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "5 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "fettuccine-alfredo",
+    "title": "Fettuccine Alfredo",
+    "category": "Pasta & noodles",
+    "section": "meals",
+    "desc": "Fettuccine coated with butter, Parmesan and pasta water.",
+    "ingredients": [
+      [
+        "Water",
+        4000.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fettuccine",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Parmesan, grated",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Bring water and salt to a boil in a large pot.",
+      "Cook the pasta until just tender according to the packet. Reserve a mug of cooking water before draining.",
+      "Melt butter gently in a wide pan with a little reserved pasta water, then remove from the heat.",
+      "Add hot fettuccine and gradually toss in Parmesan and pepper. Add reserved water a little at a time until creamy; serve immediately."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "5 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "creamy-mushroom-pasta",
+    "title": "Creamy Mushroom Pasta",
+    "category": "Pasta & noodles",
+    "section": "meals",
+    "desc": "Browned mushrooms and pasta in a Parmesan cream sauce.",
+    "ingredients": [
+      [
+        "Water",
+        4000.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Penne",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mushrooms, sliced",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        200.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Parmesan, grated",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Bring water and salt to a boil in a large pot.",
+      "Cook the pasta until just tender according to the packet. Reserve a mug of cooking water before draining.",
+      "Fry mushrooms in butter over medium-high heat for 8–10 minutes until browned. Add garlic and cook for 1 minute.",
+      "Add cream and simmer for 3 minutes. Off the heat, stir in pasta, Parmesan, pepper and parsley; loosen with reserved water."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min",
+    "cook": "20 min"
+  },
+  {
+    "id": "chicken-pasta-bake",
+    "title": "Chicken Pasta Bake",
+    "category": "Pasta & noodles",
+    "section": "meals",
+    "desc": "Chicken and pasta baked with tomato sauce and mozzarella.",
+    "ingredients": [
+      [
+        "Water",
+        3000.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Penne",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Chicken breast, diced",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mozzarella, grated",
+        150.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Bring water and salt to a boil; cook penne for 2 minutes less than the packet time, then drain.",
+      "Heat oil in a frying pan and cook chicken for 8–10 minutes until browned and at least 74°C in the centre.",
+      "Mix pasta, chicken and prepared tomato sauce in a deep 20 × 30 cm baking dish for the base batch.",
+      "Top with mozzarella and bake for 20 minutes until bubbling and the centre reaches 74°C."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "tomato-sauce",
+        "amount": 700.0,
+        "unit": "ml"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Chicken"
+      },
+      {
+        "section": "meals",
+        "category": "Casseroles & one-pot"
+      }
+    ],
+    "tempC": 180,
+    "prep": "10 min",
+    "cook": "15 min",
+    "bake": "20 min"
+  },
+  {
+    "id": "pad-thai",
+    "title": "Pad Thai",
+    "category": "Pasta & noodles",
+    "section": "meals",
+    "desc": "Tamarind noodles with prawns, egg and crunchy peanuts.",
+    "ingredients": [
+      [
+        "Rice noodles",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Tamarind paste",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fish sauce",
+        45.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Brown sugar",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Raw prawns, peeled and deveined",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs",
+        2.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Beansprouts",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Spring onions, sliced",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Roasted peanuts, chopped",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lime juice",
+        30.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soak rice noodles in warm water according to the packet until flexible but still firm; drain.",
+      "Mix tamarind paste, fish sauce and brown sugar.",
+      "Heat oil in a wok. Fry prawns for 2–3 minutes until opaque; add garlic for 30 seconds.",
+      "Push aside, crack in eggs and scramble until set. Add noodles and tamarind sauce; toss for 2–3 minutes until noodles are tender, adding a splash of soaking water if needed.",
+      "Fold in beansprouts and spring onions for 1 minute. Serve with peanuts and lime juice."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "20 min",
+    "cook": "10 min"
+  },
+  {
+    "id": "beef-stir-fry-noodles",
+    "title": "Beef Stir-Fry Noodles",
+    "category": "Pasta & noodles",
+    "section": "meals",
+    "desc": "Beef, vegetables and noodles from the wok.",
+    "ingredients": [
+      [
+        "Egg noodles",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Beef steak, thinly sliced",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh ginger, grated",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Broccoli, small florets",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red pepper, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Soy sauce",
+        60.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lime juice",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Honey",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sesame oil",
+        10.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Cook noodles in water according to the packet; drain, reserving a little cooking water.",
+      "Heat half the sunflower oil in a wok. Sear beef in small batches for 2–3 minutes, then set aside.",
+      "Add remaining sunflower oil, garlic and ginger for 30 seconds. Add broccoli and pepper; stir-fry for 4 minutes with a splash of reserved water.",
+      "Return beef and noodles. Add soy sauce, lime juice, honey and sesame oil; toss until hot and the beef is cooked through."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Beef, pork & sausage"
+      },
+      {
+        "section": "meals",
+        "category": "Quick dinners"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "garlic-sesame-noodles",
+    "title": "Garlic Sesame Noodles",
+    "category": "Pasta & noodles",
+    "section": "meals",
+    "desc": "Quick noodles with garlic and sesame.",
+    "ingredients": [
+      [
+        "Egg noodles",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Soy sauce",
+        50.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Sesame oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lime juice",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Honey",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Spring onions, sliced",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sesame seeds",
+        15.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Cook noodles according to the packet; reserve a little cooking water and drain.",
+      "Warm sunflower oil and garlic in a frying pan for 1 minute over low heat.",
+      "Mix soy sauce, sesame oil, lime juice and honey; add to the pan with the noodles.",
+      "Toss until evenly coated, adding reserved water if needed. Finish with spring onions and sesame seeds."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Quick dinners"
+      },
+      {
+        "section": "meals",
+        "category": "Vegetarian"
+      }
+    ],
+    "prep": "10 min",
+    "cook": "10 min"
+  }
+]

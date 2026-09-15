@@ -21,6 +21,10 @@ The collection lives in `recipes/`, split by category:
 - `brownies.json`
 - `polish-soups.json`
 - `polish-breads.json`
+- `stocks.json`, `foundation-sauces.json`, `dips.json`
+- `breakfast.json`, `pasta.json`, `chicken.json`, `quick-dinners.json`
+- `meat.json`, `seafood.json`, `rice.json`, `vegetarian.json`
+- `sides.json`, `salads.json`, `soups.json`, `casseroles.json`
 
 `recipes/index.json` lists the files to load. Each file contains an array of recipe objects. Add recipes to the appropriate file; add new filenames to the index when introducing another file. IDs must be unique across the entire collection and should remain stable to preserve favourites and saved selections.
 
@@ -59,3 +63,5 @@ Copy exports a plain-text checklist. Share opens the device share menu when supp
 The [collection map](docs/recipe-collection-map.md) compares the content blueprint with the current recipes and records duplicates, related recipes and gaps. There is no collection size limit.
 
 Use **Categories & foundations** in the recipe editor to assign additional categories, set a measured prepared yield, and choose required foundations. Browse categories appear when populated and sort by their translated names. [Recipe family documentation](docs/recipe-families.md) describes validation, navigation, scaling and shopping-list rules. `family-test.js` uses unpublished arithmetic fixtures to exercise these features without adding unverified recipes to the collection.
+
+Steps 6–10 add 209 recipes, bringing the collection to 461. The [expansion status](docs/content-expansion-status.md) records the completed batches and review limits. `content-test.js` checks every new recipe at ½×, 1×, 2× and 3×, plus published recipe-family shopping calculations.

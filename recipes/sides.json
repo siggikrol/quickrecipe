@@ -1,0 +1,666 @@
+[
+  {
+    "id": "crispy-roast-potatoes",
+    "title": "Crispy Roast Potatoes",
+    "category": "Sides",
+    "section": "meals",
+    "desc": "Fluffy potatoes with crisp, golden edges.",
+    "ingredients": [
+      [
+        "Potatoes, peeled",
+        1000.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        60.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 200°C fan. Cut potatoes into equal large chunks.",
+      "Cover with water, bring to a boil and simmer for 8 minutes. Drain well and shake to roughen the edges.",
+      "Heat oil in a roasting tray for 5 minutes. Carefully add potatoes and turn to coat; season with salt and pepper.",
+      "Roast in a single layer for 45–55 minutes, turning twice, until deeply golden and crisp."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "tempC": 200,
+    "prep": "15 min",
+    "cook": "10 min",
+    "bake": "45–55 min"
+  },
+  {
+    "id": "mashed-potatoes",
+    "title": "Mashed Potatoes",
+    "category": "Sides",
+    "section": "meals",
+    "desc": "Smooth potatoes with warm milk and butter.",
+    "ingredients": [
+      [
+        "Potatoes, diced",
+        1000.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Whole milk",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground white pepper",
+        0.25,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Cover potatoes with cold water in a saucepan and bring to a boil.",
+      "Simmer for 15–20 minutes until very tender; drain and let steam dry for 2 minutes.",
+      "Warm milk with butter until the butter melts.",
+      "Mash the potatoes by hand and fold in warm milk, butter, salt and pepper; do not blend in a food processor."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "15 min",
+    "cook": "25 min"
+  },
+  {
+    "id": "potato-gratin",
+    "title": "Potato Gratin",
+    "category": "Sides",
+    "section": "meals",
+    "desc": "Thin potato slices baked in cream and cheese.",
+    "ingredients": [
+      [
+        "Potatoes, peeled",
+        1000.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        400.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Whole milk",
+        200.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground nutmeg",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Butter",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Gruyère, grated",
+        100.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 170°C fan. Slice potatoes evenly about 3 mm thick.",
+      "Simmer cream, milk, garlic, salt and nutmeg in a large pan. Add potatoes and cook gently for 5 minutes, stirring carefully.",
+      "Butter a deep 20 × 30 cm dish for the base batch. Transfer potatoes and all the cream mixture; scatter with Gruyère.",
+      "Bake for 50–60 minutes until a knife passes easily through the potatoes. Rest for 10 minutes."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "tempC": 170,
+    "prep": "20 min",
+    "cook": "10 min",
+    "bake": "50–60 min",
+    "ferment": "10 min"
+  },
+  {
+    "id": "french-fries",
+    "title": "French Fries",
+    "category": "Sides",
+    "section": "meals",
+    "desc": "Twice-fried potatoes with a crisp finish.",
+    "ingredients": [
+      [
+        "Potatoes, peeled",
+        1000.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        1500.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Cut potatoes into even chips, rinse in cold water and dry thoroughly.",
+      "Heat oil to 140°C in a heavy pan no more than half full.",
+      "Fry in batches for 6–8 minutes until soft but pale; drain and cool for 10 minutes.",
+      "Raise oil to 180°C and fry again for 2–3 minutes until golden and crisp. Drain, season with salt and serve immediately."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "15 min",
+    "cook": "25 min",
+    "ferment": "10 min"
+  },
+  {
+    "id": "garlic-bread",
+    "title": "Garlic Bread",
+    "category": "Sides",
+    "section": "meals",
+    "desc": "Warm bread filled with garlic butter.",
+    "ingredients": [
+      [
+        "Loaf of bread",
+        400.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan.",
+      "Cut thick slices into the loaf without cutting through the bottom crust.",
+      "Spread the prepared garlic butter between the slices and wrap the loaf in foil.",
+      "Bake for 15 minutes, then open the foil and bake for 5 minutes more until crisp and hot."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "garlic-butter",
+        "amount": 120.0,
+        "unit": "g"
+      }
+    ],
+    "tempC": 180,
+    "prep": "5 min",
+    "bake": "20 min"
+  },
+  {
+    "id": "roasted-vegetables",
+    "title": "Roasted Vegetables",
+    "category": "Sides",
+    "section": "meals",
+    "desc": "Colourful vegetables roasted with thyme.",
+    "ingredients": [
+      [
+        "Carrots, sliced",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red pepper, diced",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Courgette, diced",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onions, thickly sliced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        50.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Fresh thyme",
+        5.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 200°C fan and prepare large roasting trays.",
+      "Cut vegetables into similar bite-sized pieces.",
+      "Toss with oil, salt, pepper and thyme. Spread in one layer with space between pieces.",
+      "Roast for 30–40 minutes, turning halfway, until tender with browned edges."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "tempC": 200,
+    "prep": "15 min",
+    "bake": "30–40 min"
+  },
+  {
+    "id": "glazed-carrots",
+    "title": "Glazed Carrots",
+    "category": "Sides",
+    "section": "meals",
+    "desc": "Tender carrots in a butter and honey glaze.",
+    "ingredients": [
+      [
+        "Carrots, sliced",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Honey",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Put carrots, water, butter, honey and salt in a wide saucepan.",
+      "Bring to a simmer, cover and cook for 10 minutes.",
+      "Uncover and cook for 5–8 minutes until carrots are tender and the liquid forms a glaze.",
+      "Toss to coat, scatter with parsley and serve."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min",
+    "cook": "20 min"
+  },
+  {
+    "id": "creamed-spinach",
+    "title": "Creamed Spinach",
+    "category": "Sides",
+    "section": "meals",
+    "desc": "Chopped spinach in a rich cream sauce.",
+    "ingredients": [
+      [
+        "Baby spinach",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground nutmeg",
+        0.125,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Blanch spinach in boiling water for 1 minute. Drain, squeeze very dry and chop.",
+      "Soften onion in butter for 5 minutes.",
+      "Stir in flour for 1 minute, then add cream and simmer gently for 3 minutes.",
+      "Fold in spinach, salt and nutmeg and heat through for 2 minutes."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min",
+    "cook": "15 min"
+  },
+  {
+    "id": "green-beans-with-garlic",
+    "title": "Green Beans with Garlic",
+    "category": "Sides",
+    "section": "meals",
+    "desc": "Tender green beans tossed with garlic butter.",
+    "ingredients": [
+      [
+        "Green beans, trimmed",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        20.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Boil green beans in water for 4–6 minutes until just tender.",
+      "Drain thoroughly.",
+      "Melt butter in a frying pan and cook garlic for 30 seconds without browning.",
+      "Add beans, salt and lemon juice; toss for 1 minute and serve."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min",
+    "cook": "10 min"
+  },
+  {
+    "id": "corn-on-the-cob",
+    "title": "Corn on the Cob",
+    "category": "Sides",
+    "section": "meals",
+    "desc": "Simply boiled corn with butter and salt.",
+    "ingredients": [
+      [
+        "Sweetcorn cobs, husked",
+        4.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Remove any remaining silk from the corn.",
+      "Bring enough water to cover the cobs to a boil in a large pan.",
+      "Add corn and simmer for 6–8 minutes until tender.",
+      "Drain, spread with butter and season with salt."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "5 min",
+    "cook": "10 min"
+  },
+  {
+    "id": "onion-rings",
+    "title": "Onion Rings",
+    "category": "Sides",
+    "section": "meals",
+    "desc": "Onion rings in a crisp, light batter.",
+    "ingredients": [
+      [
+        "Onions, thickly sliced",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour for dusting",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour for batter",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Baking powder",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Eggs",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Whole milk",
+        200.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        1500.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Separate onion slices into rings and pat dry.",
+      "Dust with the flour for coating. Whisk batter flour, baking powder, salt, egg and milk into a smooth batter.",
+      "Heat oil to 175°C in a heavy pan no more than half full.",
+      "Dip rings in batter and fry in small batches for 2–3 minutes, turning, until golden and cooked through. Drain on a rack and serve."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "15 min",
+    "cook": "20 min"
+  },
+  {
+    "id": "simple-couscous",
+    "title": "Simple Couscous",
+    "category": "Sides",
+    "section": "meals",
+    "desc": "Fluffy couscous with lemon and parsley.",
+    "ingredients": [
+      [
+        "Couscous",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        15.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Put couscous, olive oil and salt in a heatproof bowl.",
+      "Bring the prepared vegetable stock to a boil and pour over the couscous.",
+      "Cover tightly and leave for 5 minutes until the liquid is absorbed.",
+      "Fluff with a fork and stir in lemon juice and parsley."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "vegetable-stock",
+        "amount": 350.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "5 min",
+    "ferment": "5 min"
+  }
+]

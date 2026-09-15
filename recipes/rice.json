@@ -1,0 +1,787 @@
+[
+  {
+    "id": "classic-risotto",
+    "title": "Classic Risotto",
+    "category": "Rice & grains",
+    "section": "meals",
+    "desc": "Creamy rice made by gradually adding stock.",
+    "ingredients": [
+      [
+        "Butter",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Arborio rice",
+        320.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dry white wine",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Parmesan, grated",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Warm the prepared vegetable stock in a saucepan and keep at a gentle simmer.",
+      "Melt half the butter in a wide pan and soften onion for 5 minutes without browning.",
+      "Stir in rice for 2 minutes. Add wine and stir until absorbed.",
+      "Add hot stock a ladle at a time, stirring often and letting each addition absorb, for 18–22 minutes until rice is tender with a slight bite.",
+      "Off the heat, stir in remaining butter, Parmesan, salt and pepper. Rest for 2 minutes and serve loose and creamy."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "vegetable-stock",
+        "amount": 1200.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "10 min",
+    "cook": "30 min",
+    "ferment": "2 min"
+  },
+  {
+    "id": "mushroom-risotto",
+    "title": "Mushroom Risotto",
+    "category": "Rice & grains",
+    "section": "meals",
+    "desc": "Creamy risotto with sautéed mushrooms.",
+    "ingredients": [
+      [
+        "Butter",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mushrooms, sliced",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Arborio rice",
+        320.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dry white wine",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Parmesan, grated",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.5,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Warm the prepared vegetable stock in a saucepan and keep at a gentle simmer.",
+      "Melt half the butter in a wide pan. Soften onion for 5 minutes, then add mushrooms and cook for 8 minutes.",
+      "Stir in rice for 2 minutes. Add wine and stir until absorbed.",
+      "Add hot stock a ladle at a time, stirring often and letting each addition absorb, for 18–22 minutes until rice is tender with a slight bite.",
+      "Off the heat, stir in remaining butter, Parmesan, salt and pepper. Rest for 2 minutes and serve loose and creamy."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "vegetable-stock",
+        "amount": 1200.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "10 min",
+    "cook": "35 min",
+    "ferment": "2 min"
+  },
+  {
+    "id": "chicken-fried-rice",
+    "title": "Chicken Fried Rice",
+    "category": "Rice & grains",
+    "section": "meals",
+    "desc": "A quick wok meal with chicken, rice and eggs.",
+    "ingredients": [
+      [
+        "Cooked rice, promptly chilled and refrigerated",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Chicken breast, diced",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs",
+        2.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Frozen peas",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Soy sauce",
+        45.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Sesame oil",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Spring onions, sliced",
+        50.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Use cooked rice cooled within 1 hour and refrigerated for no more than 24 hours. Break up clumps before starting.",
+      "Heat half the sunflower oil in a wok. Fry chicken for 8 minutes until at least 74°C; transfer to a plate.",
+      "Add remaining sunflower oil and carrot; stir-fry for 3 minutes. Add garlic, then push aside and scramble the eggs until set.",
+      "Return chicken with rice and peas. Stir-fry for 5 minutes until everything is steaming hot throughout.",
+      "Add soy sauce, sesame oil and spring onions. Toss and serve immediately; do not reheat again."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Quick dinners"
+      },
+      {
+        "section": "meals",
+        "category": "Chicken"
+      }
+    ],
+    "prep": "10 min",
+    "cook": "20 min"
+  },
+  {
+    "id": "egg-fried-rice",
+    "title": "Egg Fried Rice",
+    "category": "Rice & grains",
+    "section": "meals",
+    "desc": "Fried rice with eggs and vegetables.",
+    "ingredients": [
+      [
+        "Cooked rice, promptly chilled and refrigerated",
+        600.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Carrot, diced",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs",
+        4.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Frozen peas",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Soy sauce",
+        45.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Sesame oil",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Spring onions, sliced",
+        50.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Use cooked rice cooled within 1 hour and refrigerated for no more than 24 hours. Break up clumps before starting.",
+      "Heat half the sunflower oil in a wok over medium-high heat.",
+      "Add remaining sunflower oil and carrot; stir-fry for 3 minutes. Add garlic, then push aside and scramble the eggs until set.",
+      "Add rice and peas. Stir-fry for 5 minutes until the rice is steaming hot throughout.",
+      "Add soy sauce, sesame oil and spring onions. Toss and serve immediately; do not reheat again."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Quick dinners"
+      },
+      {
+        "section": "meals",
+        "category": "Vegetarian"
+      }
+    ],
+    "prep": "10 min",
+    "cook": "20 min"
+  },
+  {
+    "id": "chicken-chorizo-rice",
+    "title": "Chicken & Chorizo Rice",
+    "category": "Rice & grains",
+    "section": "meals",
+    "desc": "A paella-style rice pan with chicken, chorizo and saffron.",
+    "ingredients": [
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Chicken thigh fillets, diced",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Chorizo, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red pepper, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Paprika",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Saffron threads",
+        0.125,
+        "tsp",
+        "other"
+      ],
+      [
+        "Short-grain rice",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Frozen peas",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        30.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Brown chicken in oil in a wide lidded pan for 5 minutes. Add chorizo and cook for 2 minutes.",
+      "Add onion and pepper; soften for 5 minutes. Stir in garlic, paprika, saffron and rice for 1 minute.",
+      "Pour in hot prepared chicken stock. Simmer covered for 18–22 minutes without stirring, until rice is tender and chicken reaches 74°C.",
+      "Scatter peas over the top, cover and leave on low heat for 3 minutes. Finish with lemon juice."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "white-chicken-stock",
+        "amount": 900.0,
+        "unit": "ml"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Chicken"
+      },
+      {
+        "section": "meals",
+        "category": "Casseroles & one-pot"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "40 min"
+  },
+  {
+    "id": "pilaf-rice",
+    "title": "Pilaf Rice",
+    "category": "Rice & grains",
+    "section": "meals",
+    "desc": "Fluffy rice cooked in vegetable stock.",
+    "ingredients": [
+      [
+        "Butter",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Basmati rice, rinsed",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Bay leaf",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Melt butter in a lidded saucepan and soften onion for 5 minutes.",
+      "Stir in rinsed, well-drained rice for 1 minute.",
+      "Add prepared vegetable stock, bay and salt. Bring to a boil, cover and cook on the lowest heat for 12 minutes.",
+      "Turn off the heat and leave covered for 10 minutes. Remove bay and fluff with a fork."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "vegetable-stock",
+        "amount": 500.0,
+        "unit": "ml"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Sides"
+      },
+      {
+        "section": "meals",
+        "category": "Vegetarian"
+      }
+    ],
+    "prep": "10 min",
+    "cook": "20 min",
+    "ferment": "10 min"
+  },
+  {
+    "id": "coconut-rice",
+    "title": "Coconut Rice",
+    "category": "Rice & grains",
+    "section": "meals",
+    "desc": "Fragrant rice cooked with coconut milk.",
+    "ingredients": [
+      [
+        "Long-grain rice, rinsed",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Coconut milk",
+        400.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Water",
+        200.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Rinse rice until the water runs nearly clear, then drain well.",
+      "Combine rice, coconut milk, water and salt in a lidded saucepan.",
+      "Bring to a gentle boil, stir once, cover and cook on the lowest heat for 15 minutes.",
+      "Turn off the heat, rest covered for 10 minutes, then fluff with a fork."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Sides"
+      },
+      {
+        "section": "meals",
+        "category": "Vegetarian"
+      }
+    ],
+    "prep": "5 min",
+    "cook": "20 min",
+    "ferment": "10 min"
+  },
+  {
+    "id": "burrito-bowl",
+    "title": "Burrito Bowl",
+    "category": "Rice & grains",
+    "section": "meals",
+    "desc": "Rice bowls with beans and fresh toppings.",
+    "ingredients": [
+      [
+        "Long-grain rice, rinsed",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        450.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Cooked black beans, drained",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sweetcorn, drained",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Fresh tomato, diced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ripe avocado flesh",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Greek yoghurt",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lime juice",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh coriander, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Bring rice, water and salt to a boil, cover and cook on low heat for 15 minutes; rest off the heat for 10 minutes.",
+      "Warm beans and sweetcorn with cumin in a covered pan over low heat, stirring until steaming hot.",
+      "Divide rice between bowls and add beans, sweetcorn, tomato and sliced avocado.",
+      "Mix yoghurt with lime juice and spoon over the bowls; finish with coriander."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Vegetarian"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "25 min"
+  },
+  {
+    "id": "couscous-salad",
+    "title": "Couscous Salad",
+    "category": "Rice & grains",
+    "section": "meals",
+    "desc": "Couscous with vegetables and crumbled feta.",
+    "ingredients": [
+      [
+        "Couscous",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Cucumber, diced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh tomato, diced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red onion, finely chopped",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vegetarian feta, crumbled",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh parsley, chopped",
+        20.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Put couscous in a heatproof bowl. Pour over boiling prepared vegetable stock, cover and leave for 5 minutes.",
+      "Fluff with a fork and spread out to cool slightly.",
+      "Whisk oil, lemon juice and salt, then mix into the couscous.",
+      "Fold in cucumber, tomato, onion, feta and parsley. Serve or cover and refrigerate promptly."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "vegetable-stock",
+        "amount": 350.0,
+        "unit": "ml"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Salads"
+      },
+      {
+        "section": "meals",
+        "category": "Vegetarian"
+      }
+    ],
+    "prep": "15 min",
+    "ferment": "5 min"
+  },
+  {
+    "id": "rice-pudding",
+    "title": "Rice Pudding",
+    "category": "Rice & grains",
+    "section": "meals",
+    "desc": "Creamy stovetop rice pudding with vanilla and cinnamon.",
+    "ingredients": [
+      [
+        "Short-grain rice",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        1000.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.125,
+        "tsp",
+        "other"
+      ],
+      [
+        "Sugar",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        5.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Ground cinnamon",
+        0.5,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Put rice, milk and salt in a heavy saucepan.",
+      "Bring slowly to a gentle simmer, stirring to prevent sticking.",
+      "Cook on low heat for 35–45 minutes, stirring often, until the rice is very tender and creamy.",
+      "Stir in sugar and vanilla for 2 minutes. Serve warm with cinnamon."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "categoryMemberships": [
+      {
+        "section": "desserts",
+        "category": "Dessert"
+      }
+    ],
+    "prep": "5 min",
+    "cook": "45 min"
+  }
+]

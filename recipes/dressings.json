@@ -72,6 +72,10 @@
       "Whisk yolk, anchovy, garlic, Dijon, lemon juice and Worcestershire together.",
       "Slowly drizzle in olive oil while whisking until emulsified.",
       "Stir in Parmesan. Season with pepper and salt if needed."
-    ]
+    ],
+    "batchYield": {
+      "amount": 150,
+      "unit": "ml"
+    }
   }
 ]

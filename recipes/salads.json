@@ -1,0 +1,633 @@
+[
+  {
+    "id": "caesar-salad",
+    "title": "Caesar Salad",
+    "category": "Salads",
+    "section": "meals",
+    "desc": "Crisp lettuce with Caesar dressing and croutons.",
+    "ingredients": [
+      [
+        "Romaine lettuce, washed and dried",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Croutons",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Parmesan, grated",
+        40.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Tear the lettuce into bite-sized pieces and put in a large bowl.",
+      "Add the prepared Caesar dressing and toss lightly to coat the leaves.",
+      "Fold in the croutons and half the Parmesan.",
+      "Scatter with the remaining Parmesan and serve immediately so the croutons stay crisp."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "caesar-dressing",
+        "amount": 150.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "10 min"
+  },
+  {
+    "id": "greek-salad",
+    "title": "Greek Salad",
+    "category": "Salads",
+    "section": "meals",
+    "desc": "Tomato, cucumber, olives and feta.",
+    "ingredients": [
+      [
+        "Tomatoes, chopped",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cucumber, diced",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red onion, thinly sliced",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Pitted black olives, sliced",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        40.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Red wine vinegar",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dried oregano",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Salt",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Feta, crumbled",
+        200.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Put tomatoes, cucumber, onion and olives in a bowl.",
+      "Whisk oil, vinegar, oregano and salt together.",
+      "Pour the dressing over the vegetables and toss gently.",
+      "Scatter with feta and serve at once."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "15 min"
+  },
+  {
+    "id": "caprese-salad",
+    "title": "Caprese Salad",
+    "category": "Salads",
+    "section": "meals",
+    "desc": "Fresh tomato, mozzarella and basil.",
+    "ingredients": [
+      [
+        "Tomatoes, chopped",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh mozzarella, sliced",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh basil leaves",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Drain any excess juice from the tomatoes.",
+      "Arrange tomatoes and drained mozzarella on a platter.",
+      "Tear basil leaves over the top and drizzle with olive oil.",
+      "Season with salt and pepper just before serving."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "10 min"
+  },
+  {
+    "id": "cobb-salad",
+    "title": "Cobb Salad",
+    "category": "Salads",
+    "section": "meals",
+    "desc": "A hearty salad with chicken, eggs and bacon.",
+    "ingredients": [
+      [
+        "Romaine lettuce, washed and dried",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cooked chicken, chilled and sliced",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cooked bacon, crumbled",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Hard-boiled eggs, peeled",
+        4.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Tomatoes, chopped",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Avocado flesh, diced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Blue cheese, crumbled",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        40.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Red wine vinegar",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dijon mustard",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Tear lettuce onto a large platter.",
+      "Arrange chicken, bacon, quartered eggs, tomatoes, avocado and blue cheese in rows over the leaves.",
+      "Whisk oil, vinegar, mustard and pepper into a dressing.",
+      "Drizzle the dressing over the salad just before serving. Keep chilled if preparing ahead."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "20 min"
+  },
+  {
+    "id": "chicken-avocado-salad",
+    "title": "Chicken Avocado Salad",
+    "category": "Salads",
+    "section": "meals",
+    "desc": "Chicken and avocado with a lemon dressing.",
+    "ingredients": [
+      [
+        "Mixed salad leaves, washed",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cooked chicken, chilled and sliced",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Avocado flesh, diced",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Tomatoes, chopped",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cucumber, diced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dijon mustard",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Dry the salad leaves and put in a serving bowl.",
+      "Add chicken, avocado, tomatoes and cucumber.",
+      "Whisk oil, lemon juice, mustard, salt and pepper together.",
+      "Toss gently with the dressing and serve immediately."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "15 min"
+  },
+  {
+    "id": "potato-salad",
+    "title": "Potato Salad",
+    "category": "Salads",
+    "section": "meals",
+    "desc": "Chilled potatoes in a mustard mayonnaise.",
+    "ingredients": [
+      [
+        "Potatoes, diced",
+        800.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Dijon mustard",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Apple cider vinegar",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Red onion, thinly sliced",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh chives, chopped",
+        15.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Cover potatoes with water and simmer for 12–15 minutes until just tender. Drain thoroughly.",
+      "Spread on a tray to cool, then refrigerate promptly until cold.",
+      "Mix prepared mayonnaise with mustard, vinegar, salt and pepper.",
+      "Fold in potatoes, onion and chives. Keep refrigerated until serving."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "mayonnaise",
+        "amount": 200.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "15 min",
+    "cook": "15 min",
+    "ferment": "1 hr chilling"
+  },
+  {
+    "id": "coleslaw",
+    "title": "Coleslaw",
+    "category": "Salads",
+    "section": "meals",
+    "desc": "Crunchy cabbage and carrot in a creamy dressing.",
+    "ingredients": [
+      [
+        "White cabbage, finely shredded",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Carrot, grated",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red onion, thinly sliced",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Apple cider vinegar",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dijon mustard",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Put cabbage, carrot and onion in a large bowl.",
+      "Mix the prepared mayonnaise with vinegar, mustard, sugar, salt and pepper.",
+      "Pour over the vegetables and toss thoroughly.",
+      "Cover and refrigerate for 30 minutes before serving; stir again before portioning."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "mayonnaise",
+        "amount": 200.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "15 min",
+    "ferment": "30 min chilling"
+  },
+  {
+    "id": "pasta-salad",
+    "title": "Pasta Salad",
+    "category": "Salads",
+    "section": "meals",
+    "desc": "Cold pasta with vegetables, olives and feta.",
+    "ingredients": [
+      [
+        "Dried short pasta",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Olive oil",
+        40.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Red wine vinegar",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dijon mustard",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dried oregano",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Tomatoes, chopped",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cucumber, diced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Pitted black olives, sliced",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Feta, crumbled",
+        150.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Cook pasta in boiling water with salt for the packet time until just tender.",
+      "Drain, rinse briefly in cold water and drain very well.",
+      "Whisk oil, vinegar, mustard and oregano in a large bowl.",
+      "Add pasta, tomatoes, cucumber, olives and feta. Toss and refrigerate until serving."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "15 min",
+    "cook": "12 min"
+  },
+  {
+    "id": "beetroot-feta-salad",
+    "title": "Beetroot & Feta Salad",
+    "category": "Salads",
+    "section": "meals",
+    "desc": "Beetroot, feta and walnuts on salad leaves.",
+    "ingredients": [
+      [
+        "Mixed salad leaves, washed",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cooked beetroot, diced",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Feta, crumbled",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Walnuts, roughly chopped",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Balsamic vinegar",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Honey",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.25,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Dry salad leaves and arrange on a platter.",
+      "Top with beetroot, feta and walnuts.",
+      "Whisk oil, vinegar, honey and salt until blended.",
+      "Drizzle over the salad just before serving."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "15 min"
+  }
+]

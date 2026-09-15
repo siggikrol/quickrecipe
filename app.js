@@ -2,7 +2,7 @@
 let recipes = [];
 let seedRecipes = [];
 let recipeCatalogChanges = { retiredIds: [], renamedIds: {} };
-const RECIPE_VERSION = '46';
+const RECIPE_VERSION = '49';
 const LS = {
   recipes:   'quickrecipe.recipes.v1',
   favs:      'quickrecipe.favs.v1',
@@ -474,8 +474,6 @@ function openFamilyRecipe(id, multiplier = 1) {
     search: document.getElementById('search').value, listScroll: document.getElementById('list').scrollTop,
     detailScroll: document.getElementById('detail').scrollTop, listScrollTop, recipeHistory: [...recipeHistory] });
   selectedId = id; scale = multiplier; view = 'amounts'; focusedSection = null;
-  recipeSection = 'All'; category = 'All'; onlyFavs = false;
-  document.getElementById('search').value = '';
   document.querySelector('.app').classList.add('reading-recipe');
   render(); document.getElementById('detail').scrollTop = 0;
   document.querySelector('[data-family-back]')?.focus({ preventScroll: true });
@@ -572,7 +570,7 @@ function renderChips() {
   if (JSON.stringify(current) !== JSON.stringify(cats)) {
     container.innerHTML = cats.map(c => `<button class="chip" data-cat="${esc(c)}">${esc(c)}</button>`).join('');
     container.querySelectorAll('[data-cat]').forEach(b => {
-      b.onclick = () => { category = b.dataset.cat; render(); document.getElementById('list').scrollTop = 0; };
+      b.onclick = () => { familyHistory = []; category = b.dataset.cat; render(); document.getElementById('list').scrollTop = 0; };
     });
   }
   container.querySelectorAll('[data-cat]').forEach(b => {
@@ -607,7 +605,9 @@ function renderList() {
   const q = document.getElementById('search').value.trim();
   const shown = filteredRecipes();
   hasRecipeTranslationFallback = shown.some(missingRecipeTranslation);
-  if (!shown.some(r => r.id === selectedId)) {
+  // Related recipes can be opened without changing the current browsing filters.
+  const viewingRelatedRecipe = familyHistory.length > 0 && recipes.some(r => r.id === selectedId);
+  if (!viewingRelatedRecipe && !shown.some(r => r.id === selectedId)) {
     selectedId = shown[0]?.id || null;
     scale = 1; view = 'amounts'; focusedSection = null;
   }
@@ -638,6 +638,7 @@ function renderList() {
   document.querySelectorAll('.card[data-id]').forEach(b => {
     b.onclick = e => {
       if (e.target.closest('[data-fav]')) return;
+      familyHistory = [];
       selectedId = b.dataset.id;
       focusedSection = null; /* clear focus when switching recipe */
       saveAll(); scale = 1; view = 'amounts';
@@ -1148,11 +1149,11 @@ async function init() {
 
   /* Static event listeners */
   document.getElementById('themeBtn').onclick       = toggleTheme;
-  document.getElementById('search').oninput = () => { render(); document.getElementById('list').scrollTop = 0; };
+  document.getElementById('search').oninput = () => { familyHistory = []; render(); document.getElementById('list').scrollTop = 0; };
   document.getElementById('sectionSelect').onchange = e => browseSection(e.target.value);
   document.getElementById('metricBtn').onclick      = () => { unit = 'metric';   saveAll(); render(); };
   document.getElementById('imperialBtn').onclick    = () => { unit = 'imperial'; saveAll(); render(); };
-  document.getElementById('favFilter').onclick      = () => { onlyFavs = !onlyFavs; recipeSection = 'All'; category = 'All'; document.getElementById('search').value = ''; document.querySelector('.app').classList.remove('reading-recipe'); render(); document.getElementById('list').scrollTop = 0; };
+  document.getElementById('favFilter').onclick      = () => { familyHistory = []; onlyFavs = !onlyFavs; recipeSection = 'All'; category = 'All'; document.getElementById('search').value = ''; document.querySelector('.app').classList.remove('reading-recipe'); render(); document.getElementById('list').scrollTop = 0; };
   document.getElementById('addBtn').onclick         = () => openModal();
   document.getElementById('cancelBtn').onclick      = closeModal;
   document.getElementById('saveBtn').onclick        = saveRecipe;

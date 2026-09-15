@@ -1,0 +1,570 @@
+[
+  {
+    "id": "pesto",
+    "title": "Basil Pesto",
+    "category": "Dips",
+    "section": "sauces",
+    "desc": "Basil, pine nuts and Parmesan blended with olive oil.",
+    "ingredients": [
+      [
+        "Pine nuts",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh basil leaves",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        5.0,
+        "g",
+        "other"
+      ],
+      [
+        "Parmesan, grated",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.25,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Toast pine nuts in a dry pan for 3 minutes, shaking often; cool.",
+      "Pulse basil, garlic and cooled nuts in a food processor until finely chopped.",
+      "Stir in Parmesan, olive oil and salt; avoid overheating the basil.",
+      "Weigh out the displayed yield and reserve any extra. Refrigerate in a covered container and use within 3 days."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 200,
+      "unit": "g"
+    },
+    "prep": "10 min"
+  },
+  {
+    "id": "chimichurri",
+    "title": "Chimichurri",
+    "category": "Dips",
+    "section": "sauces",
+    "desc": "A sharp herb sauce for grilled food.",
+    "ingredients": [
+      [
+        "Fresh parsley, chopped",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dried oregano",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Chilli flakes",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Red wine vinegar",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Olive oil",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Chop parsley and garlic finely; do not blend to a purée.",
+      "Mix with oregano, chilli flakes, vinegar and salt.",
+      "Stir in olive oil until evenly mixed.",
+      "Let stand for 15 minutes before serving; stir again so the herbs and oil are distributed."
+    ],
+    "compactMetricUnits": true,
+    "yield": "6 servings",
+    "prep": "10 min",
+    "ferment": "15 min"
+  },
+  {
+    "id": "salsa-verde",
+    "title": "Salsa Verde",
+    "category": "Dips",
+    "section": "sauces",
+    "desc": "A green herb sauce with capers and anchovies.",
+    "ingredients": [
+      [
+        "Fresh parsley, chopped",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh basil leaves",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Capers, drained and chopped",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Anchovy fillets, chopped",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        5.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dijon mustard",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red wine vinegar",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Olive oil",
+        80.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Finely chop parsley, basil, capers, anchovies and garlic.",
+      "Mix in mustard and red wine vinegar.",
+      "Stir in olive oil to make a loose herb sauce.",
+      "Let stand for 10 minutes, then stir and serve with cooked fish or vegetables."
+    ],
+    "compactMetricUnits": true,
+    "yield": "6 servings",
+    "prep": "10 min",
+    "ferment": "10 min"
+  },
+  {
+    "id": "tzatziki",
+    "title": "Tzatziki",
+    "category": "Dips",
+    "section": "sauces",
+    "desc": "Cool yoghurt sauce with cucumber and garlic.",
+    "ingredients": [
+      [
+        "Cucumber, grated",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Greek yoghurt",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        5.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        15.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Olive oil",
+        15.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh dill, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mix grated cucumber with salt and leave in a sieve for 10 minutes.",
+      "Squeeze the cucumber firmly to remove excess water.",
+      "Mix cucumber with yoghurt, garlic, lemon juice, olive oil and dill.",
+      "Cover and chill for 20 minutes before serving."
+    ],
+    "compactMetricUnits": true,
+    "yield": "6 servings",
+    "prep": "10 min",
+    "ferment": "30 min"
+  },
+  {
+    "id": "hummus",
+    "title": "Hummus",
+    "category": "Dips",
+    "section": "sauces",
+    "desc": "Smooth chickpeas with tahini, lemon and garlic.",
+    "ingredients": [
+      [
+        "Cooked chickpeas, drained",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Tahini",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        50.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        8.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.75,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground cumin",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Water",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Put drained chickpeas, tahini, lemon juice, garlic, salt and cumin in a food processor.",
+      "Blend for 2 minutes, scraping down the bowl.",
+      "Add the cold water gradually and blend until smooth and creamy; stir in olive oil.",
+      "Weigh out the displayed yield and reserve any extra. Cover and refrigerate until needed."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 600,
+      "unit": "g"
+    },
+    "prep": "10 min"
+  },
+  {
+    "id": "guacamole",
+    "title": "Guacamole",
+    "category": "Dips",
+    "section": "sauces",
+    "desc": "Chunky avocado dip with lime and coriander.",
+    "ingredients": [
+      [
+        "Ripe avocado flesh",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lime juice",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Fresh tomato, diced",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Red onion, finely chopped",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Jalapeño, finely chopped",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh coriander, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mash avocado with lime juice and salt, leaving some texture.",
+      "Drain excess juice from the diced tomato.",
+      "Fold in onion, tomato, jalapeño and coriander.",
+      "Serve straight away, or cover the surface directly and refrigerate for up to 1 day."
+    ],
+    "compactMetricUnits": true,
+    "yield": "6 servings",
+    "prep": "10 min"
+  },
+  {
+    "id": "salsa-roja",
+    "title": "Salsa Roja",
+    "category": "Dips",
+    "section": "sauces",
+    "desc": "A cooked tomato salsa with chilli.",
+    "ingredients": [
+      [
+        "Fresh tomato, diced",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Jalapeño, finely chopped",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        15.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Lime juice",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh coriander, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat a frying pan and add tomatoes, onion, jalapeño and garlic with olive oil.",
+      "Cook over medium-high heat for 10 minutes, stirring, until softened and lightly charred.",
+      "Cool briefly, then pulse with salt and lime juice to a coarse salsa.",
+      "Stir in coriander and serve warm or chilled."
+    ],
+    "compactMetricUnits": true,
+    "yield": "6 servings",
+    "cook": "15 min"
+  },
+  {
+    "id": "caramel-sauce",
+    "title": "Caramel Sauce",
+    "category": "Sweet sauces",
+    "section": "sauces",
+    "desc": "Pourable caramel made with cream and butter.",
+    "ingredients": [
+      [
+        "Sugar",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        60.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Double cream",
+        180.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Put sugar and water in a deep saucepan. Heat gently until the sugar dissolves.",
+      "Boil without stirring until amber, about 8–12 minutes; swirl the pan carefully if needed.",
+      "Take off the heat. Slowly add cream in several additions, keeping back from the rising steam; whisk until smooth.",
+      "Stir in butter and salt. Cool until warm before serving; never taste boiling caramel."
+    ],
+    "compactMetricUnits": true,
+    "yield": "10 servings",
+    "cook": "15 min"
+  },
+  {
+    "id": "vanilla-custard",
+    "title": "Vanilla Custard",
+    "category": "Sweet sauces",
+    "section": "sauces",
+    "desc": "A pourable vanilla custard thickened with egg yolks.",
+    "ingredients": [
+      [
+        "Whole milk",
+        400.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Double cream",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        5.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Pasteurised egg yolks",
+        4.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Sugar",
+        60.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat milk, cream and vanilla until steaming, without boiling.",
+      "Whisk yolks and sugar in a bowl. Gradually whisk in the hot milk mixture.",
+      "Return to the pan and stir over low heat until it coats a spoon and reaches 82°C; do not boil.",
+      "Strain into a clean bowl. Serve warm, or cool promptly in an ice bath and refrigerate covered."
+    ],
+    "compactMetricUnits": true,
+    "yield": "6 servings",
+    "cook": "15 min"
+  },
+  {
+    "id": "chocolate-ganache",
+    "title": "Chocolate Ganache",
+    "category": "Sweet sauces",
+    "section": "sauces",
+    "desc": "Dark chocolate and cream for glazing, filling or spreading.",
+    "ingredients": [
+      [
+        "Dark chocolate, chopped",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        200.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Put finely chopped dark chocolate in a heatproof bowl.",
+      "Heat cream until steaming and just starting to bubble at the edges.",
+      "Pour cream over chocolate and leave for 2 minutes.",
+      "Stir from the centre until smooth. Use warm for pouring or cool until spreadable."
+    ],
+    "compactMetricUnits": true,
+    "yield": "8 servings",
+    "prep": "5 min",
+    "cook": "5 min"
+  }
+]

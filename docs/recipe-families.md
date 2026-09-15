@@ -2,7 +2,7 @@
 
 ## Content workflow
 
-The collection map is in [recipe-collection-map.md](recipe-collection-map.md). The current 252 recipes are retained. New formulas and the first Béchamel family belong to the next content phase; calculation fixtures in `family-test.js` are not published recipes.
+The collection map is in [recipe-collection-map.md](recipe-collection-map.md). The original 252 recipes are retained, with 209 additions completed in steps 6–10. Béchamel and its derivatives are published alongside stocks, other sauce families and everyday meals. See [content-expansion-status.md](content-expansion-status.md) for batch counts. Calculation fixtures in `family-test.js` are not published recipes.
 
 The recipe editor has a **Categories & foundations** panel. Choose additional categories, optionally set a measured prepared yield, and select required foundations with their amounts. A foundation must have a measured yield before it can be selected. Future categories appear in this panel; browsing shows only categories containing recipes.
 
@@ -32,7 +32,7 @@ A derivative lists required prepared recipes separately from its additional ingr
 ]
 ```
 
-These fragments describe the schema, not an existing Béchamel recipe. Every reference must resolve to a recipe with a positive measured yield. Multiple distinct foundations are supported. Repeated references to the same foundation within one recipe must be combined into a single amount.
+These fragments match the published Béchamel family. Every reference must resolve to a recipe with a positive declared finished yield. New bases specify a final measurement when needed. The existing Caesar dressing retains its approximate 150 ml yield and unchanged method. Multiple distinct foundations are supported. Repeated references to the same foundation within one recipe must be combined into a single amount.
 
 Supported yield and requirement units: `g`, `kg`, `ml`, `L`, `pc`. Mass converts only to mass; volume only to volume; pieces only to pieces. There are no assumed densities. Invalid numbers, missing recipes, incompatible units, duplicate references and dependency cycles are rejected when loading seed data or saving recipes. A referenced foundation cannot be deleted through the editor.
 
@@ -44,6 +44,7 @@ The displayed yield uses `batchYield` when present. Optional `yield` text can st
 - Derivatives show **Requires**, with the prepared quantity multiplied by the selected scale and a link to each base.
 - Opening a required base sets its scale to `required quantity × current scale ÷ base yield`, after compatible unit conversion. A custom scale button appears when that multiplier is outside ½×, 1×, 2× or 3×.
 - Opening a derivative from **Make from this** starts at its own 1×; it does not assume all of a parent batch must be used.
+- Opening either kind of related recipe preserves the current category, search, favourites filter and list position. A base outside those filters opens in the detail pane while the list stays in place. Choosing a new category, search or recipe starts a new browsing context.
 - Back restores recipe, scale, ingredient focus, filters, search and scroll position. Nested links can be followed back through the chain.
 - Search and favourites find derivatives independently of their parent.
 
@@ -61,4 +62,4 @@ Users select ingredients individually or choose **Select all**. Saved family lis
 
 ## Validation
 
-`npm test` includes the existing smoke, translation and shopping suites plus family validation, a shared-base dependency graph, all four scales, compatible conversions, prepared-base pruning, navigation restoration, category sorting, editor round trips and saved shopping-list behaviour. All application code remains in the existing offline-cached assets.
+`npm test` includes the existing smoke, translation and shopping suites plus family validation, a shared-base dependency graph, all four scales, compatible conversions, prepared-base pruning, navigation restoration, category sorting, editor round trips and saved shopping-list behaviour. `content-test.js` also renders every added recipe at all four scales and checks practical metric formatting, ingredient order, known categories, finished yields, the published Béchamel family and shared stock quantities through demi-glace. These checks validate data and application behaviour; culinary review is separate and does not establish kitchen-tested results. All recipe files are included in the indexed offline cache.
