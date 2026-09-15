@@ -77,7 +77,10 @@ Start after folding; Ciabatta defaults to its stated 30 minutes. For the other
 two recipes, choose the interval yourself. The active timer stays visible while
 browsing, survives reloads, and shows an overdue reminder when you return.
 Tap **Folded — start next timer** after each fold, or **Finish timer** when done.
-One folding timer runs at a time.
+Each bread can run its own folding timer at the same time. Each has its own
+countdown, reminder, and start count. The small “Started 1×” count increases each
+time you start the next interval and survives reloads. Finishing the timer resets
+that bread’s count for the next dough session. Other timers keep running.
 
 Keep the app open, the phone unlocked and the volume audible for alerts. The
 app requests a screen wake lock where supported. Use **Test / enable sound**

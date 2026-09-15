@@ -2,7 +2,7 @@
 let recipes = [];
 let seedRecipes = [];
 let recipeCatalogChanges = { retiredIds: [], renamedIds: {} };
-const RECIPE_VERSION = '53';
+const RECIPE_VERSION = '55';
 const LS = {
   recipes:   'quickrecipe.recipes.v1',
   favs:      'quickrecipe.favs.v1',
@@ -1120,7 +1120,7 @@ function toast(msg) {
 const FOLD_TIMER_KEY = 'quickrecipe.foldTimer.v1';
 // Only ciabatta specifies an interval. Other doughs ask the cook to choose.
 const foldTimerSteps = { ciabatta: { step: 2, minutes: 30 }, focaccia: { step: 2 }, 'simple-sourdough': { step: 2 } };
-let foldTimer = null;
+let foldTimers = [];
 let foldAudio = null;
 let foldLastSound = 0;
 let foldPanelKey = '';
@@ -1130,7 +1130,7 @@ function foldTimerControls(recipe, step) {
   if (!plan || plan.step !== step) return '';
   return `<form class="fold-timer-controls" data-fold-recipe="${esc(recipe.id)}">
     <div class="fold-timer-inline">
-      <button class="fold-link" type="submit" ${foldTimer ? 'disabled' : ''}>
+      <button class="fold-link" type="submit" ${foldTimers.some(timer => timer.recipeId === recipe.id) ? 'disabled' : ''}>
         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6M12 2v3"/></svg>
         ${esc(t('Start timer'))}
       </button>
@@ -1145,7 +1145,7 @@ function foldTimerControls(recipe, step) {
 }
 function saveFoldTimer() {
   try {
-    if (foldTimer) localStorage.setItem(FOLD_TIMER_KEY, JSON.stringify(foldTimer));
+    if (foldTimers.length) localStorage.setItem(FOLD_TIMER_KEY, JSON.stringify(foldTimers));
     else localStorage.removeItem(FOLD_TIMER_KEY);
   } catch { toast('Timer could not be saved. Keep this page open.'); }
 }
@@ -1182,8 +1182,8 @@ function bindFoldTimers() {
     form.onsubmit = event => {
       event.preventDefault();
       const minutes = Number(form.elements.minutes.value);
-      if (foldTimer || !Number.isInteger(minutes) || minutes < 1 || minutes > 240) return;
-      foldTimer = { recipeId: form.dataset.foldRecipe, minutes, dueAt: Date.now() + minutes * 60000 };
+      if (foldTimers.some(timer => timer.recipeId === form.dataset.foldRecipe) || !Number.isInteger(minutes) || minutes < 1 || minutes > 240) return;
+      foldTimers.push({ recipeId: form.dataset.foldRecipe, minutes, starts: 1, dueAt: Date.now() + minutes * 60000 });
       saveFoldTimer();
       enableFoldSound();
       requestWakeLock();
@@ -1200,23 +1200,28 @@ function tickFoldTimer() {
     panel.setAttribute('aria-label', t('Folding timer'));
     document.querySelector('.app').appendChild(panel);
   }
-  panel.hidden = !foldTimer;
-  document.querySelectorAll('[data-fold-recipe] button').forEach(button => { button.disabled = Boolean(foldTimer); });
-  if (!foldTimer) {
+  panel.hidden = !foldTimers.length;
+  document.querySelectorAll('[data-fold-recipe]').forEach(form => {
+    form.querySelector('button').disabled = foldTimers.some(timer => timer.recipeId === form.dataset.foldRecipe);
+  });
+  if (!foldTimers.length) {
+    foldLastSound = 0;
     foldPanelKey = '';
     clearInterval(foldTicker); foldTicker = null;
     return;
   }
   if (!foldTicker) foldTicker = setInterval(tickFoldTimer, 1000);
-  const due = Date.now() >= foldTimer.dueAt;
-  const key = JSON.stringify([foldTimer, due, language]);
+  const now = Date.now();
+  const key = JSON.stringify([foldTimers, foldTimers.map(timer => now >= timer.dueAt), language]);
   if (key !== foldPanelKey) {
     foldPanelKey = key;
-    const recipe = recipes.find(r => r.id === foldTimer.recipeId);
-    panel.classList.toggle('is-due', due);
-    panel.innerHTML = `<div class="fold-timer-heading"><strong>${esc(recipeText(recipe?.title || 'Bread'))}</strong>
+    panel.innerHTML = foldTimers.map(timer => {
+      const recipe = recipes.find(r => r.id === timer.recipeId);
+      const due = now >= timer.dueAt;
+      return `<section class="fold-timer-row${due ? ' is-due' : ''}" data-fold-timer="${esc(timer.recipeId)}" aria-label="${esc(recipeText(recipe?.title || 'Bread'))}"><div class="fold-timer-heading"><strong>${esc(recipeText(recipe?.title || 'Bread'))}</strong>
       <span role="status">${esc(t(due ? 'Time to fold the dough!' : 'Next fold'))}</span>
-      <span class="fold-countdown" role="timer"></span></div>
+      <span class="fold-countdown" role="timer"></span>
+      <span class="fold-start-count">${esc(t('Started'))} ${timer.starts}×</span></div>
       <div class="fold-timer-actions">
       ${due ? `<button class="fold-link" data-fold-next>${esc(t('Folded — start next timer'))}</button>` : ''}
       <button class="fold-icon" data-fold-sound aria-label="${esc(t('Test / enable sound'))}" title="${esc(t('Test / enable sound'))}">
@@ -1224,22 +1229,31 @@ function tickFoldTimer() {
       </button>
       <button class="fold-icon" data-fold-stop aria-label="${esc(t('Finish timer'))}" title="${esc(t('Finish timer'))}">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
-      </button></div>`;
-    panel.querySelector('[data-fold-next]')?.addEventListener('click', () => {
-      foldTimer.dueAt = Date.now() + foldTimer.minutes * 60000;
-      foldLastSound = 0;
-      saveFoldTimer(); enableFoldSound(); tickFoldTimer();
+      </button></div></section>`;
+    }).join('');
+    panel.querySelectorAll('[data-fold-timer]').forEach(row => {
+      const timer = foldTimers.find(timer => timer.recipeId === row.dataset.foldTimer);
+      row.querySelector('[data-fold-next]')?.addEventListener('click', () => {
+        if (!foldTimers.includes(timer) || Date.now() < timer.dueAt) return;
+        timer.starts += 1;
+        timer.dueAt = Date.now() + timer.minutes * 60000;
+        foldLastSound = 0;
+        saveFoldTimer(); enableFoldSound(); tickFoldTimer();
+      });
+      row.querySelector('[data-fold-stop]').onclick = () => {
+        foldTimers = foldTimers.filter(active => active !== timer); saveFoldTimer(); tickFoldTimer();
+      };
+      row.querySelector('[data-fold-sound]').onclick = enableFoldSound;
     });
-    panel.querySelector('[data-fold-stop]').onclick = () => {
-      foldTimer = null; foldLastSound = 0; saveFoldTimer(); tickFoldTimer();
-    };
-    panel.querySelector('[data-fold-sound]').onclick = enableFoldSound;
   }
-  const seconds = Math.max(0, Math.ceil((foldTimer.dueAt - Date.now()) / 1000));
-  const countdown = `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`;
-  const display = panel.querySelector('.fold-countdown');
-  if (display.textContent !== countdown) display.textContent = countdown;
-  if (due && document.visibilityState === 'visible' && Date.now() - foldLastSound >= 10000) {
+  panel.querySelectorAll('[data-fold-timer]').forEach(row => {
+    const timer = foldTimers.find(timer => timer.recipeId === row.dataset.foldTimer);
+    const seconds = Math.max(0, Math.ceil((timer.dueAt - now) / 1000));
+    const countdown = `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`;
+    const display = row.querySelector('.fold-countdown');
+    if (display.textContent !== countdown) display.textContent = countdown;
+  });
+  if (foldTimers.some(timer => now >= timer.dueAt) && document.visibilityState === 'visible' && Date.now() - foldLastSound >= 10000) {
     foldLastSound = Date.now(); soundFoldTimer();
     try { navigator.vibrate?.([200, 100, 200]); } catch {}
   }
@@ -1247,9 +1261,15 @@ function tickFoldTimer() {
 function initFoldTimer() {
   try {
     const saved = JSON.parse(localStorage.getItem(FOLD_TIMER_KEY));
-    if (saved && recipes.some(r => r.id === saved.recipeId) &&
-        Number.isInteger(saved.minutes) && saved.minutes >= 1 && saved.minutes <= 240 &&
-        Number.isFinite(saved.dueAt) && saved.dueAt > 0) foldTimer = saved;
+    // Restore older single timers as well as the current collection.
+    for (const timer of Array.isArray(saved) ? saved : [saved]) {
+      if (!timer || !recipes.some(r => r.id === timer.recipeId) ||
+          foldTimers.some(active => active.recipeId === timer.recipeId) ||
+          !Number.isInteger(timer.minutes) || timer.minutes < 1 || timer.minutes > 240 ||
+          !Number.isFinite(timer.dueAt) || timer.dueAt <= 0) continue;
+      foldTimers.push({ recipeId: timer.recipeId, minutes: timer.minutes, dueAt: timer.dueAt,
+        starts: Number.isSafeInteger(timer.starts) && timer.starts > 0 && timer.starts < Number.MAX_SAFE_INTEGER ? timer.starts : 1 });
+    }
   } catch {}
   tickFoldTimer();
   document.addEventListener('visibilitychange', tickFoldTimer);

@@ -1,6 +1,7 @@
 /* Interface translations; English keys are the fallback. Recipe data stays language-neutral. */
 const UI_MESSAGES = {
   "pl": {
+    "Started": "Uruchomiono",
     "Start timer": "Włącz minutnik",
     "min": "min",
     "Keep app open for alerts": "Pozostaw aplikację otwartą, aby otrzymywać alerty",
@@ -123,6 +124,7 @@ const UI_MESSAGES = {
     "Mix ingredients.\nBulk ferment 2 hours.\nShape and proof.\nBake.": "Wymieszaj składniki.\nOdstaw do wyrośnięcia na 2 godziny.\nUformuj i pozostaw do wyrośnięcia.\nUpiecz."
   },
   "is": {
+    "Started": "Ræst",
     "Start timer": "Ræsa tímamæli",
     "min": "mín",
     "Keep app open for alerts": "Hafðu appið opið til að fá viðvörun",
