@@ -14,24 +14,6 @@
         "chocolate"
       ],
       [
-        "Small balloons",
-        10,
-        "pc",
-        "other"
-      ],
-      [
-        "Lu Bastogne biscuits — crushed",
-        125,
-        "g",
-        "other"
-      ],
-      [
-        "Butter — base",
-        40,
-        "g",
-        "fat"
-      ],
-      [
         "Double cream",
         500,
         "ml",
@@ -48,6 +30,18 @@
         1,
         "pc",
         "other"
+      ],
+      [
+        "Lu Bastogne biscuits — crushed",
+        125,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        40,
+        "g",
+        "fat"
       ],
       [
         "Fresh raspberries — puréed",
@@ -70,87 +64,6 @@
     ]
   },
   {
-    "id": "strawberry-skyr-cocktail-cups",
-    "category": "Skyr Cake",
-    "title": "Strawberry Skyr Cocktail Cups",
-    "desc": "Layered strawberry skyr cheesecake in glasses with a cooked strawberry glaze and fresh berries.",
-    "yield": "8–10 glasses",
-    "prep": "30 min",
-    "ingredients": [
-      [
-        "Lu Digestive biscuits — crushed",
-        200,
-        "g",
-        "other"
-      ],
-      [
-        "Butter — base",
-        40,
-        "g",
-        "fat"
-      ],
-      [
-        "Double cream",
-        500,
-        "ml",
-        "liquid"
-      ],
-      [
-        "Cream cheese",
-        300,
-        "g",
-        "dairy"
-      ],
-      [
-        "Icing sugar",
-        150,
-        "g",
-        "sugar"
-      ],
-      [
-        "Vanilla sugar",
-        10,
-        "g",
-        "sugar"
-      ],
-      [
-        "Strawberries — puréed",
-        250,
-        "ml",
-        "liquid"
-      ],
-      [
-        "Sugar — glaze",
-        250,
-        "g",
-        "sugar"
-      ],
-      [
-        "Cornflour",
-        30,
-        "g",
-        "other"
-      ],
-      [
-        "Water",
-        200,
-        "ml",
-        "liquid"
-      ],
-      [
-        "Fresh strawberries — garnish",
-        200,
-        "g",
-        "fruit"
-      ]
-    ],
-    "steps": [
-      "Cook glaze: heat puréed strawberries, sugar, cornflour and water 5–8 min until thick. Add red food colouring if desired. Cool.",
-      "Whip cream. Beat cream cheese, icing sugar and vanilla sugar, fold in whipped cream.",
-      "Layer in glasses: crushed biscuit → cream cheese mixture → sliced fresh strawberries → strawberry glaze."
-    ]
-  },
-  {
     "id": "mini-blueberry-skyr-cups",
     "category": "Skyr Cake",
     "title": "Mini Blueberry Skyr Cups",
@@ -169,18 +82,6 @@
         50,
         "g",
         "fat"
-      ],
-      [
-        "KEA vanilla skyr",
-        500,
-        "g",
-        "dairy"
-      ],
-      [
-        "Double cream",
-        500,
-        "ml",
-        "liquid"
       ],
       [
         "Blueberries — sauce",
@@ -211,6 +112,18 @@
         5,
         "ml",
         "liquid"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "KEA vanilla skyr",
+        500,
+        "g",
+        "dairy"
       ],
       [
         "Fresh blueberries — topping",
@@ -286,16 +199,16 @@
         "fat"
       ],
       [
-        "KEA blueberry and strawberry skyr",
-        500,
-        "g",
-        "dairy"
-      ],
-      [
         "Double cream",
         500,
         "ml",
         "liquid"
+      ],
+      [
+        "KEA blueberry and strawberry skyr",
+        500,
+        "g",
+        "dairy"
       ],
       [
         "Dark chocolate — chopped",
@@ -331,16 +244,22 @@
     "prep": "15 min",
     "ingredients": [
       [
+        "Double cream",
+        400,
+        "ml",
+        "liquid"
+      ],
+      [
         "Ísey chocolate vanilla skyr",
         500,
         "g",
         "dairy"
       ],
       [
-        "Double cream",
-        400,
-        "ml",
-        "liquid"
+        "Chocolate muesli",
+        80,
+        "g",
+        "other"
       ],
       [
         "Double cream — topping",
@@ -349,10 +268,10 @@
         "liquid"
       ],
       [
-        "Chocolate muesli",
-        80,
+        "Cocoa powder — garnish",
+        10,
         "g",
-        "other"
+        "cocoa"
       ],
       [
         "Fresh raspberries",
@@ -365,12 +284,6 @@
         30,
         "g",
         "chocolate"
-      ],
-      [
-        "Cocoa powder — garnish",
-        10,
-        "g",
-        "cocoa"
       ]
     ],
     "steps": [
@@ -412,16 +325,16 @@
         "other"
       ],
       [
-        "Ísey strawberry & white chocolate skyr",
-        510,
-        "g",
-        "dairy"
-      ],
-      [
         "Double cream",
         500,
         "ml",
         "liquid"
+      ],
+      [
+        "Ísey strawberry & white chocolate skyr",
+        510,
+        "g",
+        "dairy"
       ],
       [
         "White chocolate — garnish",
@@ -457,26 +370,26 @@
         "other"
       ],
       [
-        "Vanilla skyr",
-        700,
-        "g",
-        "dairy"
-      ],
-      [
         "Double cream",
         800,
         "ml",
         "liquid"
       ],
       [
-        "Fresh blueberries",
-        750,
+        "Vanilla skyr",
+        700,
         "g",
-        "fruit"
+        "dairy"
       ],
       [
         "Fresh raspberries",
         375,
+        "g",
+        "fruit"
+      ],
+      [
+        "Fresh blueberries",
+        750,
         "g",
         "fruit"
       ]
@@ -508,6 +421,18 @@
         "fat"
       ],
       [
+        "Gelatin leaves",
+        6,
+        "pc",
+        "other"
+      ],
+      [
+        "Water — gelatin",
+        50,
+        "ml",
+        "liquid"
+      ],
+      [
         "Double cream",
         500,
         "ml",
@@ -536,18 +461,6 @@
         650,
         "g",
         "dairy"
-      ],
-      [
-        "Gelatin leaves",
-        6,
-        "pc",
-        "other"
-      ],
-      [
-        "Water — gelatin",
-        50,
-        "ml",
-        "liquid"
       ],
       [
         "Flaked almonds — garnish",
@@ -590,6 +503,18 @@
         "fat"
       ],
       [
+        "Milk — gelatin",
+        50,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Gelatin leaves",
+        5,
+        "pc",
+        "other"
+      ],
+      [
         "Double cream",
         350,
         "ml",
@@ -612,18 +537,6 @@
         500,
         "g",
         "dairy"
-      ],
-      [
-        "Gelatin leaves",
-        5,
-        "pc",
-        "other"
-      ],
-      [
-        "Milk — gelatin",
-        50,
-        "ml",
-        "liquid"
       ],
       [
         "Fresh berries — garnish",
@@ -666,16 +579,16 @@
         "fat"
       ],
       [
-        "Ísey blueberry and raspberry skyr",
-        500,
-        "g",
-        "dairy"
-      ],
-      [
         "Double cream",
         500,
         "ml",
         "liquid"
+      ],
+      [
+        "Ísey blueberry and raspberry skyr",
+        500,
+        "g",
+        "dairy"
       ],
       [
         "Fresh blueberries",
@@ -729,16 +642,16 @@
         "fat"
       ],
       [
-        "Blueberry and strawberry skyr",
-        650,
-        "g",
-        "dairy"
-      ],
-      [
         "Double cream",
         600,
         "ml",
         "liquid"
+      ],
+      [
+        "Blueberry and strawberry skyr",
+        650,
+        "g",
+        "dairy"
       ],
       [
         "Nóakropp chocolate pebbles — topping",
@@ -774,16 +687,16 @@
         "other"
       ],
       [
-        "Vanilla skyr",
-        500,
-        "g",
-        "dairy"
-      ],
-      [
         "Double cream",
         500,
         "ml",
         "liquid"
+      ],
+      [
+        "Vanilla skyr",
+        500,
+        "g",
+        "dairy"
       ]
     ],
     "steps": [

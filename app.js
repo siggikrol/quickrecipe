@@ -1,7 +1,8 @@
 /* ─── State ─── */
 let recipes = [];
 let seedRecipes = [];
-const RECIPE_VERSION = '42';
+let recipeCatalogChanges = { retiredIds: [], renamedIds: {} };
+const RECIPE_VERSION = '43';
 const LS = {
   recipes:   'quickrecipe.recipes.v1',
   favs:      'quickrecipe.favs.v1',
@@ -105,15 +106,26 @@ async function loadSeedRecipes() {
   const loaded = groups.flat();
   if (loaded.some(r => !r || typeof r.id !== 'string' || !r.id || !r.title || !Array.isArray(r.ingredients) || !Array.isArray(r.steps)) ||
       new Set(loaded.map(r => r.id)).size !== loaded.length) throw new Error('Invalid or duplicate recipe');
+  const retiredIds = index.retiredIds || [];
+  const renamedIds = index.renamedIds || {};
+  if (!Array.isArray(retiredIds) || retiredIds.some(id => typeof id !== 'string') ||
+      !renamedIds || typeof renamedIds !== 'object' || Array.isArray(renamedIds) ||
+      Object.entries(renamedIds).some(([oldId, newId]) => oldId === newId || !loaded.some(r => r.id === newId)) ||
+      retiredIds.some(id => loaded.some(r => r.id === id))) throw new Error('Invalid recipe catalog changes');
+  // Activate migrations only after every recipe file has loaded successfully.
+  recipeCatalogChanges = { retiredIds, renamedIds };
   return loaded;
 }
 
 function mergeSeedRecipes(existing) {
   const byId   = new Map(seedRecipes.map(r => [r.id, r]));
-  const identity = r => JSON.stringify([r.title, r.category, r.ingredients]);
+  const identity = r => JSON.stringify([r.title, r.category, r.ingredients.map(i => JSON.stringify(i)).sort()]);
+  const retired = new Set(recipeCatalogChanges.retiredIds);
   const renamed = new Map();
-  const merged = (existing || []).map(r => {
-    let seed = byId.get(r.id);
+  const merged = (existing || []).filter(r => !retired.has(r.id)).map(r => {
+    const replacementId = recipeCatalogChanges.renamedIds[r.id];
+    let seed = byId.get(replacementId || r.id);
+    if (seed && replacementId) renamed.set(r.id, seed.id);
     if (!seed && r.title === 'Icelandic Rye Bread' && r.category === 'Bread' &&
         r.ingredients.some(i => /flour/i.test(i[0]) && ['dl', 'ml', 'L', 'cup', 'cups'].includes(i[2]))) {
       seed = byId.get('icelandic-rye-bread');
@@ -128,8 +140,10 @@ function mergeSeedRecipes(existing) {
     }
     return seed ? cloneValue(seed) : r;
   });
+  for (const [oldId, newId] of Object.entries(recipeCatalogChanges.renamedIds)) renamed.set(oldId, newId);
+  favs = new Set([...favs].filter(id => !retired.has(id)).map(id => renamed.get(id) || id));
+  for (const id of retired) delete hydrationState[id];
   if (renamed.size) {
-    favs = new Set([...favs].map(id => renamed.get(id) || id));
     for (const [oldId, newId] of renamed) {
       if (Object.hasOwn(hydrationState, oldId)) {
         hydrationState[newId] ??= hydrationState[oldId];
@@ -141,6 +155,7 @@ function mergeSeedRecipes(existing) {
       saved.selectedId = renamed.get(saved.selectedId);
       localStorage.setItem(LS.ui, JSON.stringify(saved));
     }
+    shopping.migrateRecipeIds(renamed, seedRecipes);
   }
   const ids = new Set(merged.map(r => r.id));
   seedRecipes.forEach(r => { if (!ids.has(r.id)) merged.push(cloneValue(r)); });
@@ -235,111 +250,109 @@ function bakers(r, ing) {
 /* ─── Section plans for ingredients ─── */
 const sectionPlans = {
   // ── Original recipes ──
-  'drommekage':             [[0, 'Cake'], [7, 'Coconut topping']],
-  'bounty-cake':            [[0, 'Coconut cake'], [3, 'Chocolate cream'], [7, 'Finish']],
-  'carrot-cake':            [[0, 'Cake'], [7, 'Frosting']],
-  'cinnabon-rolls':         [[0, 'Dough'], [8, 'Filling'], [11, 'Frosting']],
-  'sourdough-spelt-crumb-brioche': [[0, 'Dough'], [8, 'Crumble Topping']],
-  'pavlova-lemon-curd':     [[0, 'Pavlova'], [5, 'Lemon curd']],
-  'apple-crumb-cake':       [[0, 'Cake'], [11, 'Crumb topping']],
-  'choc-orange-cheesecake': [[0, 'Base'], [2, 'Filling'], [10, 'Topping']],
-  'date-cake-caramel':      [[0, 'Cake'], [10, 'Caramel sauce']],
-  'lemon-meringue-cheesecake': [[0, 'Crust'], [3, 'Filling'], [11, 'Lemon curd'], [16, 'Meringue']],
+  'drommekage': [[0, "Cake"], [7, "Coconut topping"]],
+  'bounty-cake': [[0, "Coconut cake"], [3, "Chocolate cream"], [7, "Finish"]],
+  'carrot-cake': [[0, "Cake"], [7, "Frosting"]],
+  'cinnabon-rolls': [[0, "Dough"], [8, "Filling"], [12, "Frosting"]],
+  'sourdough-spelt-crumb-brioche': [[0, "Dough"], [9, "Crumble Topping"]],
+  'pavlova-lemon-curd': [[0, "Pavlova"], [5, "Lemon curd"]],
+  'apple-crumb-cake': [[0, "Cake"], [11, "Crumb topping"]],
+  'choc-orange-cheesecake': [[0, "Base"], [2, "Filling"], [10, "Topping"]],
+  'date-cake-caramel': [[0, "Cake"], [2, "Cake"], [11, "Caramel sauce"]],
+  'lemon-meringue-cheesecake': [[0, "Crust"], [3, "Filling"], [11, "Lemon curd"], [16, "Meringue"]],
 
   // ── Cheesecakes ──
-  'wild-blueberry-glazed-cheesecake':          [[0, 'Base'], [3, 'Filling'], [8, 'Jelly topping']],
-  'vanilla-dream-with-warm-berry-sauce': [[0, 'Base'], [3, 'Filling'], [8, 'Berry sauce']],
-  'berry-explosion-cheesecake':                 [[0, 'Base'], [4, 'Filling'], [11, 'Topping']],
-  'oreo-cream-cheese-swirl-brownies':     [[0, 'Brownie batter'], [8, 'Cheesecake swirl'], [11, 'Topping']],
-  'triple-layer-oreo-cloud-cups':   [[0, 'Base'], [4, 'Filling'], [8, 'Topping']],
-  'toblerone-raspberry-swirl-cheesecake':         [[0, 'Base'], [2, 'Cheesecake filling'], [10, 'Raspberry swirl']],
-  'white-chocolate-daim-crunch-cheesecake':              [[0, 'Base'], [2, 'White chocolate Daim filling']],
-  'lotus-biscoff-velvet-cheesecake':           [[0, 'Base'], [2, 'Biscoff filling'], [7, 'Topping']],
-  'strawberry-dark-chocolate-cheesecake':       [[0, 'Base'], [2, 'Strawberry filling'], [10, 'Topping']],
-  'lemon-curd-cheesecake-cups':        [[0, 'Base'], [2, 'Cheesecake filling'], [7, 'Topping']],
-  'espresso-martini-cheesecake-glasses':  [[0, 'Base'], [2, 'Espresso cheesecake'], [9, 'Garnish']],
-  'caramel-pecan-coffee-cheesecake':        [[0, 'Caramel pecans'], [3, 'Base'], [5, 'Filling']],
-  'torched-meringue-dark-chocolate-cheesecake':         [[0, 'Base'], [2, 'Filling'], [10, 'Meringue']],
-  'white-chocolate-orange-cheesecake':         [[0, 'Base'], [2, 'Orange & white chocolate filling']],
-  'celebration-white-chocolate-daim-cheesecake':          [[0, 'Base'], [2, 'White chocolate Daim filling']],
-  'brownie-black-cherry-meringue-bomb':              [[0, 'Brownie base'], [6, 'Cheesecake'], [14, 'Meringue']],
-  'caramel-rolo-cheesecake':              [[0, 'Base'], [2, 'Caramel filling']],
-  'dumle-caramel-cheesecake-glasses':        [[0, 'Base'], [2, 'Cheesecake filling'], [6, 'Dumle caramel & garnish']],
-  'cinnamon-brown-sugar-caramel-cheesecake-cups':[[0, 'Base'], [1, 'Cheesecake filling'], [5, 'Caramel topping']],
-  'white-chocolate-fresh-raspberry-cheesecake':[[0, 'Base'], [2, 'White chocolate & raspberry filling'], [11, 'Topping']],
-  'polish-baked-curd-cheesecake':                     [[0, 'Pastry'], [9, 'Filling']],
-  'dark-caramel-ganache-cheesecake-cups':             [[0, 'Base'], [2, 'Cheesecake filling'], [6, 'Chocolate ganache']],
-  'strawberry-cheesecake-in-chocolate-bowls': [[0, 'Chocolate bowls'], [2, 'Base'], [4, 'Strawberry cheesecake filling'], [9, 'Garnish']],
+  'vanilla-dream-with-warm-berry-sauce': [[0, "Base"], [3, "Filling"], [8, "Berry sauce"]],
+  'berry-explosion-cheesecake': [[0, "Base"], [4, "Filling"], [11, "Topping"]],
+  'oreo-cream-cheese-swirl-brownies': [[0, "Brownie batter"], [2, "Cheesecake swirl"], [5, "Brownie batter"], [11, "Topping"]],
+  'triple-layer-oreo-cloud-cups': [[0, "Base"], [4, "Filling"], [8, "Topping"]],
+  'toblerone-raspberry-swirl-cheesecake': [[0, "Base"], [2, "Cheesecake filling"], [10, "Raspberry swirl"]],
+  'white-chocolate-daim-crunch-cheesecake': [[0, "Base"], [2, "White chocolate Daim filling"]],
+  'lotus-biscoff-velvet-cheesecake': [[0, "Base"], [2, "Biscoff filling"], [7, "Topping"]],
+  'strawberry-dark-chocolate-cheesecake': [[0, "Base"], [2, "Strawberry filling"], [10, "Topping"]],
+  'lemon-curd-cheesecake-cups': [[0, "Base"], [2, "Cheesecake filling"], [7, "Topping"]],
+  'espresso-martini-cheesecake-glasses': [[0, "Base"], [2, "Espresso cheesecake"], [9, "Garnish"]],
+  'caramel-pecan-coffee-cheesecake': [[0, "Caramel pecans"], [3, "Base"], [5, "Filling"]],
+  'torched-meringue-dark-chocolate-cheesecake': [[0, "Base"], [2, "Filling"], [10, "Meringue"]],
+  'white-chocolate-orange-cheesecake': [[0, "Base"], [2, "Orange & white chocolate filling"]],
+  'celebration-white-chocolate-daim-cheesecake': [[0, "Base"], [2, "White chocolate Daim filling"]],
+  'brownie-black-cherry-meringue-bomb': [[0, "Brownie base"], [6, "Cheesecake"], [14, "Meringue"]],
+  'caramel-rolo-cheesecake': [[0, "Base"], [2, "Caramel filling"]],
+  'dumle-caramel-cheesecake-glasses': [[0, "Base"], [2, "Cheesecake filling"], [6, "Dumle caramel & garnish"]],
+  'cinnamon-brown-sugar-caramel-cheesecake-cups': [[0, "Base"], [1, "Cheesecake filling"], [5, "Caramel topping"]],
+  'white-chocolate-fresh-raspberry-cheesecake': [[0, "Base"], [2, "White chocolate & raspberry filling"], [11, "Topping"]],
+  'polish-baked-curd-cheesecake': [[0, "Pastry"], [9, "Filling"]],
+  'dark-caramel-ganache-cheesecake-cups': [[0, "Base"], [2, "Cheesecake filling"], [6, "Chocolate ganache"]],
+  'strawberry-cheesecake-in-chocolate-bowls': [[0, "Chocolate bowls"], [1, "Strawberry cheesecake filling"], [6, "Base"], [8, "Garnish"]],
 
   // ── Skyr Cakes ──
-  'raspberry-skyr-mousse-in-chocolate-bowls': [[0, 'Chocolate bowls'], [2, 'Base'], [4, 'Vanilla skyr mousse'], [7, 'Raspberry topping']],
-  'strawberry-skyr-cocktail-cups':     [[0, 'Base'], [2, 'Cream cheese filling'], [6, 'Strawberry glaze'], [10, 'Garnish']],
-  'mini-blueberry-skyr-cups':          [[0, 'Base'], [2, 'Skyr mousse'], [4, 'Blueberry sauce']],
-  'vanilla-skyr-with-chocolate-granola-raspberries':           [[0, 'Base'], [1, 'Vanilla skyr mousse'], [3, 'Topping']],
-  'berry-skyr-sheet-cake':                   [[0, 'Base'], [2, 'Skyr mousse'], [4, 'Topping']],
-  'chocolate-skyr-mousse-cups':              [[0, 'Chocolate skyr mousse'], [2, 'Whipped cream topping'], [3, 'Garnish']],
-  'strawberry-skyr-in-a-chocolate-rice-krispie-shell':            [[0, 'Rice Krispie shell'], [4, 'Strawberry skyr mousse'], [6, 'Garnish']],
-  'icelandic-flag-skyr-dessert':               [[0, 'Base'], [1, 'Skyr mousse'], [3, 'Flag decoration']],
-  'lemon-almond-skyr-cake':         [[0, 'Base'], [2, 'Lemon skyr filling'], [9, 'Garnish']],
-  'summer-berry-skyr-cake':                [[0, 'Base'], [2, 'Berry skyr filling'], [8, 'Garnish']],
-  'berry-bliss-skyr-cake':                    [[0, 'Base'], [2, 'Skyr mousse'], [4, 'Topping']],
-  'berry-skyr-cups-with-chocolate-pebbles':              [[0, 'Base'], [3, 'Skyr mousse'], [5, 'Topping']],
-  'vanilla-skyr-with-salted-liquorice-caramel':         [[0, 'Base'], [2, 'Vanilla skyr mousse']]
+  'raspberry-skyr-mousse-in-chocolate-bowls': [[0, "Chocolate bowls"], [1, "Vanilla skyr mousse"], [4, "Base"], [6, "Raspberry topping"]],
+  'strawberry-cream-cheese-cups': [[0, "Strawberry glaze"], [5, "Cream cheese filling"], [9, "Base"], [11, "Garnish"]],
+  'mini-blueberry-skyr-cups': [[0, "Base"], [2, "Blueberry sauce"], [7, "Skyr mousse"], [9, "Blueberry sauce"]],
+  'vanilla-skyr-with-chocolate-granola-raspberries': [[0, "Base"], [1, "Vanilla skyr mousse"], [3, "Topping"]],
+  'berry-skyr-sheet-cake': [[0, "Base"], [2, "Skyr mousse"], [4, "Topping"]],
+  'chocolate-skyr-mousse-cups': [[0, "Chocolate skyr mousse"], [2, "Garnish"], [3, "Whipped cream topping"], [4, "Garnish"]],
+  'strawberry-skyr-in-a-chocolate-rice-krispie-shell': [[0, "Rice Krispie shell"], [4, "Strawberry skyr mousse"], [6, "Garnish"]],
+  'icelandic-flag-skyr-dessert': [[0, "Base"], [1, "Skyr mousse"], [3, "Flag decoration"]],
+  'lemon-almond-skyr-cake': [[0, "Base"], [2, "Lemon skyr filling"], [9, "Garnish"]],
+  'summer-berry-skyr-cake': [[0, "Base"], [2, "Berry skyr filling"], [8, "Garnish"]],
+  'berry-bliss-skyr-cake': [[0, "Base"], [2, "Skyr mousse"], [4, "Topping"]],
+  'berry-skyr-cups-with-chocolate-pebbles': [[0, "Base"], [3, "Skyr mousse"], [5, "Topping"]],
+  'vanilla-skyr-with-salted-liquorice-caramel': [[0, "Base"], [2, "Vanilla skyr mousse"]]
 };
 
 /* ─── Section plans for steps (Focus mode) ─── */
 const stepSectionPlans = {
   // ── Original recipes ──
-  'drommekage':             [[0, 'Cake'],          [3, 'Coconut topping']],
-  'bounty-cake':            [[0, 'Coconut cake'],  [2, 'Chocolate cream'], [4, 'Finish']],
-  'carrot-cake':            [[0, 'Cake'],          [3, 'Frosting']],
-  'cinnabon-rolls':         [[0, 'Dough'],         [2, 'Filling'],         [5, 'Frosting']],
-  'sourdough-spelt-crumb-brioche': [[0, 'Dough & Ferment'], [3, 'Crumble & Bake']],
-  'pavlova-lemon-curd':     [[0, 'Pavlova'],       [3, 'Lemon curd']],
-  'apple-crumb-cake':       [[0, 'Cake'],          [3, 'Crumb topping']],
-  'choc-orange-cheesecake': [[0, 'Base'],          [1, 'Filling'],         [4, 'Topping']],
-  'date-cake-caramel':      [[0, 'Cake'],          [4, 'Caramel sauce']],
-  'lemon-meringue-cheesecake': [[0, 'Crust'], [1, 'Filling'], [3, 'Lemon curd'], [4, 'Meringue']],
+  'drommekage': [[0, "Cake"], [3, "Coconut topping"]],
+  'bounty-cake': [[0, "Coconut cake"], [2, "Chocolate cream"], [4, "Finish"]],
+  'carrot-cake': [[0, "Cake"], [3, "Frosting"]],
+  'cinnabon-rolls': [[0, "Dough"], [2, "Filling"], [5, "Frosting"]],
+  'sourdough-spelt-crumb-brioche': [[0, "Dough & Ferment"], [3, "Crumble & Bake"]],
+  'pavlova-lemon-curd': [[0, "Pavlova"], [3, "Lemon curd"]],
+  'apple-crumb-cake': [[0, "Cake"], [3, "Crumb topping"]],
+  'choc-orange-cheesecake': [[0, "Base"], [1, "Filling"], [4, "Topping"]],
+  'date-cake-caramel': [[0, "Cake"], [4, "Caramel sauce"]],
+  'lemon-meringue-cheesecake': [[0, "Crust"], [1, "Filling"], [3, "Lemon curd"], [4, "Meringue"]],
 
   // ── Cheesecakes ──
-  'wild-blueberry-glazed-cheesecake':          [[0, 'Base'], [1, 'Filling'], [3, 'Jelly topping']],
-  'vanilla-dream-with-warm-berry-sauce': [[0, 'Base'], [1, 'Filling'], [3, 'Berry sauce']],
-  'berry-explosion-cheesecake':                 [[0, 'Base'], [1, 'Filling'], [3, 'Topping']],
-  'oreo-cream-cheese-swirl-brownies':     [[0, 'Brownie batter'], [1, 'Cheesecake swirl'], [2, 'Brownie batter'], [3, 'Assembly & bake']],
-  'triple-layer-oreo-cloud-cups':   [[0, 'Base'], [1, 'Filling'], [3, 'Topping']],
-  'toblerone-raspberry-swirl-cheesecake':         [[0, 'Base'], [1, 'Cheesecake filling'], [3, 'Raspberry swirl']],
-  'white-chocolate-daim-crunch-cheesecake':              [[0, 'Base'], [1, 'White chocolate Daim filling']],
-  'lotus-biscoff-velvet-cheesecake':           [[0, 'Base'], [1, 'Biscoff filling'], [3, 'Topping']],
-  'strawberry-dark-chocolate-cheesecake':       [[0, 'Base'], [1, 'Strawberry filling'], [3, 'Topping']],
-  'lemon-curd-cheesecake-cups':        [[0, 'Base'], [1, 'Cheesecake filling'], [2, 'Assembly & topping']],
-  'espresso-martini-cheesecake-glasses':  [[0, 'Base'], [1, 'Espresso cheesecake'], [2, 'Assembly & garnish']],
-  'caramel-pecan-coffee-cheesecake':        [[0, 'Caramel pecans'], [1, 'Base'], [2, 'Filling']],
-  'torched-meringue-dark-chocolate-cheesecake':         [[0, 'Base'], [1, 'Filling'], [2, 'Meringue']],
-  'white-chocolate-orange-cheesecake':         [[0, 'Base'], [1, 'Orange & white chocolate filling']],
-  'celebration-white-chocolate-daim-cheesecake':          [[0, 'Base'], [1, 'White chocolate Daim filling']],
-  'brownie-black-cherry-meringue-bomb':              [[0, 'Brownie base'], [1, 'Cheesecake'], [2, 'Meringue']],
-  'caramel-rolo-cheesecake':              [[0, 'Base'], [1, 'Caramel filling']],
-  'dumle-caramel-cheesecake-glasses':        [[0, 'Base'], [1, 'Cheesecake filling'], [2, 'Dumle caramel & garnish']],
-  'cinnamon-brown-sugar-caramel-cheesecake-cups':[[0, 'Base'], [1, 'Cheesecake filling'], [2, 'Caramel topping']],
-  'white-chocolate-fresh-raspberry-cheesecake':[[0, 'Base'], [1, 'White chocolate & raspberry filling'], [2, 'Assembly & topping']],
-  'polish-baked-curd-cheesecake':                     [[0, 'Pastry'], [1, 'Filling']],
-  'dark-caramel-ganache-cheesecake-cups':             [[0, 'Base'], [1, 'Cheesecake filling'], [2, 'Chocolate ganache']],
-  'strawberry-cheesecake-in-chocolate-bowls': [[0, 'Chocolate bowls'], [1, 'Strawberry cheesecake filling'], [2, 'Base'], [3, 'Garnish']],
+  'vanilla-dream-with-warm-berry-sauce': [[0, "Base"], [1, "Filling"], [3, "Berry sauce"]],
+  'berry-explosion-cheesecake': [[0, "Base"], [1, "Filling"], [3, "Topping"]],
+  'oreo-cream-cheese-swirl-brownies': [[0, "Brownie batter"], [1, "Cheesecake swirl"], [2, "Brownie batter"], [3, "Assembly & bake"]],
+  'triple-layer-oreo-cloud-cups': [[0, "Base"], [1, "Filling"], [3, "Topping"]],
+  'toblerone-raspberry-swirl-cheesecake': [[0, "Base"], [1, "Cheesecake filling"], [3, "Raspberry swirl"]],
+  'white-chocolate-daim-crunch-cheesecake': [[0, "Base"], [1, "White chocolate Daim filling"]],
+  'lotus-biscoff-velvet-cheesecake': [[0, "Base"], [1, "Biscoff filling"], [3, "Topping"]],
+  'strawberry-dark-chocolate-cheesecake': [[0, "Base"], [1, "Strawberry filling"], [3, "Topping"]],
+  'lemon-curd-cheesecake-cups': [[0, "Base"], [1, "Cheesecake filling"], [2, "Assembly & topping"]],
+  'espresso-martini-cheesecake-glasses': [[0, "Base"], [1, "Espresso cheesecake"], [2, "Assembly & garnish"]],
+  'caramel-pecan-coffee-cheesecake': [[0, "Caramel pecans"], [1, "Base"], [2, "Filling"]],
+  'torched-meringue-dark-chocolate-cheesecake': [[0, "Base"], [1, "Filling"], [2, "Meringue"]],
+  'white-chocolate-orange-cheesecake': [[0, "Base"], [1, "Orange & white chocolate filling"]],
+  'celebration-white-chocolate-daim-cheesecake': [[0, "Base"], [1, "White chocolate Daim filling"]],
+  'brownie-black-cherry-meringue-bomb': [[0, "Brownie base"], [1, "Cheesecake"], [2, "Meringue"]],
+  'caramel-rolo-cheesecake': [[0, "Base"], [1, "Caramel filling"]],
+  'dumle-caramel-cheesecake-glasses': [[0, "Base"], [1, "Cheesecake filling"], [2, "Dumle caramel & garnish"]],
+  'cinnamon-brown-sugar-caramel-cheesecake-cups': [[0, "Base"], [1, "Cheesecake filling"], [2, "Caramel topping"]],
+  'white-chocolate-fresh-raspberry-cheesecake': [[0, "Base"], [1, "White chocolate & raspberry filling"], [2, "Assembly & topping"]],
+  'polish-baked-curd-cheesecake': [[0, "Pastry"], [1, "Filling"]],
+  'dark-caramel-ganache-cheesecake-cups': [[0, "Base"], [1, "Cheesecake filling"], [2, "Chocolate ganache"]],
+  'strawberry-cheesecake-in-chocolate-bowls': [[0, "Chocolate bowls"], [1, "Strawberry cheesecake filling"], [2, "Base"], [3, "Garnish"]],
 
   // ── Skyr Cakes ──
-  'raspberry-skyr-mousse-in-chocolate-bowls': [[0, 'Chocolate bowls'], [1, 'Vanilla skyr mousse'], [2, 'Base'], [3, 'Raspberry topping']],
-  'strawberry-skyr-cocktail-cups':     [[0, 'Strawberry glaze'], [1, 'Cream cheese filling'], [2, 'Assembly & garnish']],
-  'mini-blueberry-skyr-cups':          [[0, 'Base'], [1, 'Blueberry sauce'], [2, 'Skyr mousse']],
-  'vanilla-skyr-with-chocolate-granola-raspberries':           [[0, 'Base'], [1, 'Vanilla skyr mousse'], [2, 'Assembly & topping']],
-  'berry-skyr-sheet-cake':                   [[0, 'Base'], [1, 'Skyr mousse'], [2, 'Topping']],
-  'chocolate-skyr-mousse-cups':              [[0, 'Chocolate skyr mousse'], [1, 'Muesli layer'], [2, 'Whipped cream topping']],
-  'strawberry-skyr-in-a-chocolate-rice-krispie-shell':            [[0, 'Rice Krispie shell'], [1, 'Strawberry skyr mousse'], [2, 'Garnish']],
-  'icelandic-flag-skyr-dessert':               [[0, 'Base'], [1, 'Skyr mousse'], [2, 'Flag decoration']],
-  'lemon-almond-skyr-cake':         [[0, 'Base'], [1, 'Lemon skyr filling'], [3, 'Garnish & chill']],
-  'summer-berry-skyr-cake':                [[0, 'Base'], [1, 'Berry skyr filling'], [3, 'Garnish & chill']],
-  'berry-bliss-skyr-cake':                    [[0, 'Base'], [1, 'Skyr mousse'], [2, 'Topping']],
-  'berry-skyr-cups-with-chocolate-pebbles':              [[0, 'Base'], [1, 'Skyr mousse'], [2, 'Topping']],
-  'vanilla-skyr-with-salted-liquorice-caramel':         [[0, 'Base'], [1, 'Vanilla skyr mousse'], [2, 'Topping']]
+  'raspberry-skyr-mousse-in-chocolate-bowls': [[0, "Chocolate bowls"], [1, "Vanilla skyr mousse"], [2, "Base"], [3, "Raspberry topping"]],
+  'strawberry-cream-cheese-cups': [[0, "Strawberry glaze"], [1, "Cream cheese filling"], [2, "Assembly & garnish"]],
+  'mini-blueberry-skyr-cups': [[0, "Base"], [1, "Blueberry sauce"], [2, "Skyr mousse"]],
+  'vanilla-skyr-with-chocolate-granola-raspberries': [[0, "Base"], [1, "Vanilla skyr mousse"], [2, "Assembly & topping"]],
+  'berry-skyr-sheet-cake': [[0, "Base"], [1, "Skyr mousse"], [2, "Topping"]],
+  'chocolate-skyr-mousse-cups': [[0, "Chocolate skyr mousse"], [1, "Muesli layer"], [2, "Whipped cream topping"]],
+  'strawberry-skyr-in-a-chocolate-rice-krispie-shell': [[0, "Rice Krispie shell"], [1, "Strawberry skyr mousse"], [2, "Garnish"]],
+  'icelandic-flag-skyr-dessert': [[0, "Base"], [1, "Skyr mousse"], [2, "Flag decoration"]],
+  'lemon-almond-skyr-cake': [[0, "Base"], [1, "Lemon skyr filling"], [3, "Garnish & chill"]],
+  'summer-berry-skyr-cake': [[0, "Base"], [1, "Berry skyr filling"], [3, "Garnish & chill"]],
+  'berry-bliss-skyr-cake': [[0, "Base"], [1, "Skyr mousse"], [2, "Topping"]],
+  'berry-skyr-cups-with-chocolate-pebbles': [[0, "Base"], [1, "Skyr mousse"], [2, "Topping"]],
+  'vanilla-skyr-with-salted-liquorice-caramel': [[0, "Base"], [1, "Vanilla skyr mousse"], [2, "Topping"]]
 };
 
 function sectionFor(r, idx, name) {

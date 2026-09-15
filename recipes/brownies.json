@@ -242,21 +242,27 @@
         ""
       ],
       [
-        "Chocolate, melted",
-        200,
-        "g",
-        ""
-      ],
-      [
         "Sugar",
         250,
         "g",
         ""
       ],
       [
+        "Eggs",
+        3,
+        "pc",
+        ""
+      ],
+      [
         "Vanilla extract",
         2,
         "tsp",
+        ""
+      ],
+      [
+        "Chocolate, melted",
+        200,
+        "g",
         ""
       ],
       [
@@ -272,22 +278,16 @@
         ""
       ],
       [
-        "Eggs",
-        3,
-        "pc",
-        ""
+        "Plain flour",
+        100,
+        "g",
+        "flour"
       ],
       [
         "Warm water",
         3,
         "tbsp",
         ""
-      ],
-      [
-        "Plain flour",
-        100,
-        "g",
-        "flour"
       ],
       [
         "Chocolate sandwich cookies",
@@ -498,6 +498,12 @@
         ""
       ],
       [
+        "Dark chocolate, melted",
+        140,
+        "g",
+        ""
+      ],
+      [
         "Mayonnaise",
         110,
         "g",
@@ -506,12 +512,6 @@
       [
         "Dark chocolate chips",
         50,
-        "g",
-        ""
-      ],
-      [
-        "Dark chocolate, melted",
-        140,
         "g",
         ""
       ]
@@ -535,103 +535,6 @@
     "yield": "1 × 23×23 cm tray"
   },
   {
-    "id": "brownie-ganache-topped-caramel-treasure-bars",
-    "category": "Brownies",
-    "section": "desserts",
-    "title": "Ganache-Topped Caramel Treasure Bars",
-    "desc": "White chocolate and caramel pockets beneath a smooth ganache layer.",
-    "tempC": 150,
-    "bake": "35 min",
-    "ferment": "Cool completely; chill ganache until set",
-    "ingredients": [
-      [
-        "Butter",
-        300,
-        "g",
-        ""
-      ],
-      [
-        "Dark chocolate",
-        300,
-        "g",
-        ""
-      ],
-      [
-        "Eggs",
-        4,
-        "pc",
-        ""
-      ],
-      [
-        "Sugar",
-        200,
-        "g",
-        ""
-      ],
-      [
-        "Plain flour",
-        200,
-        "g",
-        "flour"
-      ],
-      [
-        "Caramel-filled milk chocolates",
-        4,
-        "rolls (size unspecified)",
-        ""
-      ],
-      [
-        "White chocolate chips",
-        150,
-        "g",
-        ""
-      ],
-      [
-        "Dark chocolate, chopped",
-        150,
-        "g",
-        ""
-      ],
-      [
-        "Whipping cream",
-        150,
-        "ml",
-        ""
-      ],
-      [
-        "Extra caramel-filled milk chocolates (optional)",
-        null,
-        "as needed",
-        ""
-      ]
-    ],
-    "steps": [
-      "Melt butter and dark chocolate gently. Whisk eggs and sugar until pale; fold in chocolate mixture, then flour. Spread in a lined 20×30 cm tin and scatter halved caramel chocolates and white chips over it. Bake at 150°C for about 35 minutes; cool completely.",
-      "Pour hot cream over chopped chocolate. Wait 5 minutes, then stir smooth. Cool about 30 minutes, stirring occasionally. Spread over the cold brownie, chill until set and cut; decorate with extra chocolates if desired."
-    ],
-    "ingredientSections": [
-      [
-        0,
-        "Brownie"
-      ],
-      [
-        7,
-        "Ganache"
-      ]
-    ],
-    "stepSections": [
-      [
-        0,
-        "Brownie"
-      ],
-      [
-        1,
-        "Ganache"
-      ]
-    ],
-    "yield": "1 × 20×30 cm tray"
-  },
-  {
     "id": "brownie-classic-deep-chocolate-brownie-bites",
     "category": "Brownies",
     "section": "desserts",
@@ -648,33 +551,9 @@
         ""
       ],
       [
-        "Dark chocolate, melted",
-        200,
-        "g",
-        ""
-      ],
-      [
         "Sugar",
         1,
         "cup",
-        ""
-      ],
-      [
-        "Vanilla extract",
-        2,
-        "tsp",
-        ""
-      ],
-      [
-        "Salt",
-        0.25,
-        "tsp",
-        ""
-      ],
-      [
-        "Cocoa powder",
-        1,
-        "tbsp",
         ""
       ],
       [
@@ -684,15 +563,39 @@
         ""
       ],
       [
-        "Warm water",
+        "Vanilla extract",
         2,
-        "tbsp",
+        "tsp",
+        ""
+      ],
+      [
+        "Dark chocolate, melted",
+        200,
+        "g",
         ""
       ],
       [
         "Plain flour",
         0.6666666666666666,
         "cup",
+        ""
+      ],
+      [
+        "Cocoa powder",
+        1,
+        "tbsp",
+        ""
+      ],
+      [
+        "Salt",
+        0.25,
+        "tsp",
+        ""
+      ],
+      [
+        "Warm water",
+        2,
+        "tbsp",
         ""
       ]
     ],
@@ -773,12 +676,6 @@
         ""
       ],
       [
-        "Dark chocolate chips",
-        1,
-        "cup",
-        ""
-      ],
-      [
         "White chocolate chips",
         1,
         "cup",
@@ -787,6 +684,12 @@
       [
         "Thick caramel sauce",
         0.75,
+        "cup",
+        ""
+      ],
+      [
+        "Dark chocolate chips",
+        1,
         "cup",
         ""
       ],
@@ -823,86 +726,6 @@
       ]
     ],
     "yield": "1 × 25×25 cm tray"
-  },
-  {
-    "id": "brownie-sweet-and-salty-cracker-brownies",
-    "category": "Brownies",
-    "section": "desserts",
-    "title": "Sweet-and-Salty Cracker Brownies",
-    "desc": "Salted cracker sandwiches give these shortcut brownies a savoury crunch.",
-    "tempC": 160,
-    "bake": "25 min",
-    "ferment": "Cool at least 1 hr",
-    "ingredients": [
-      [
-        "Mini salted crackers",
-        32,
-        "pc",
-        ""
-      ],
-      [
-        "Chocolate spread or peanut butter",
-        16,
-        "tsp",
-        ""
-      ],
-      [
-        "Brownie mix",
-        1,
-        "box (size unspecified)",
-        ""
-      ],
-      [
-        "Extra ingredients required by the brownie-mix package",
-        null,
-        "as needed",
-        ""
-      ],
-      [
-        "Neutral oil, additional to package directions",
-        0.5,
-        "cup",
-        ""
-      ],
-      [
-        "Pecans, finely chopped",
-        0.5,
-        "cup",
-        ""
-      ],
-      [
-        "Chocolate chips",
-        0.5,
-        "cup",
-        ""
-      ]
-    ],
-    "steps": [
-      "Sandwich the crackers in pairs with the spread, using 1 teaspoon per pair at the base scale.",
-      "Prepare the mix using its package ingredients, then add the extra oil. Spread half into a lined, greased 20×20 cm tin. Arrange cracker sandwiches in an even layer and scatter over nuts and chips; cover with remaining batter.",
-      "Bake at 160°C for 25 minutes. Cool in the tin for at least 1 hour before cutting."
-    ],
-    "ingredientSections": [
-      [
-        0,
-        "Cracker filling"
-      ],
-      [
-        2,
-        "Brownie"
-      ]
-    ],
-    "stepSections": [
-      [
-        0,
-        "Cracker filling"
-      ],
-      [
-        1,
-        "Brownie"
-      ]
-    ],
-    "yield": "1 × 20×20 cm tray"
   },
   {
     "id": "brownie-peppermint-truffle-frosted-brownies",
@@ -1200,6 +1023,24 @@
         ""
       ],
       [
+        "Eggs",
+        4,
+        "pc",
+        ""
+      ],
+      [
+        "Sugar",
+        180,
+        "g",
+        ""
+      ],
+      [
+        "Brown sugar",
+        100,
+        "g",
+        ""
+      ],
+      [
         "Plain flour",
         200,
         "g",
@@ -1221,24 +1062,6 @@
         "Salt",
         0.5,
         "tsp",
-        ""
-      ],
-      [
-        "Eggs",
-        4,
-        "pc",
-        ""
-      ],
-      [
-        "Sugar",
-        180,
-        "g",
-        ""
-      ],
-      [
-        "Brown sugar",
-        100,
-        "g",
         ""
       ],
       [
@@ -1298,155 +1121,6 @@
       ]
     ],
     "yield": "1 × 20×30 cm tray"
-  },
-  {
-    "id": "brownie-spring-bunny-brownie-celebration-cake",
-    "category": "Brownies",
-    "section": "desserts",
-    "title": "Spring Bunny Brownie Celebration Cake",
-    "desc": "A brownie bunny topped with chocolate cream-cheese frosting and candy eggs.",
-    "tempC": 180,
-    "bake": "30 min",
-    "ferment": "Cool completely",
-    "ingredients": [
-      [
-        "Butter",
-        350,
-        "g",
-        ""
-      ],
-      [
-        "Dark chocolate",
-        370,
-        "g",
-        ""
-      ],
-      [
-        "Sugar",
-        490,
-        "g",
-        ""
-      ],
-      [
-        "Eggs",
-        6,
-        "pc",
-        ""
-      ],
-      [
-        "Plain flour",
-        170,
-        "g",
-        "flour"
-      ],
-      [
-        "Cocoa powder",
-        75,
-        "g",
-        ""
-      ],
-      [
-        "Salt",
-        1,
-        "tsp",
-        ""
-      ],
-      [
-        "Mini candy-coated chocolate eggs, chopped",
-        2,
-        "bags (size unspecified)",
-        ""
-      ],
-      [
-        "Butter, softened",
-        100,
-        "g",
-        ""
-      ],
-      [
-        "Cream cheese, softened",
-        270,
-        "g",
-        ""
-      ],
-      [
-        "Vanilla extract",
-        2,
-        "tsp",
-        ""
-      ],
-      [
-        "Salt",
-        0.5,
-        "tsp",
-        ""
-      ],
-      [
-        "Cocoa powder",
-        100,
-        "g",
-        ""
-      ],
-      [
-        "Icing sugar",
-        600,
-        "g",
-        ""
-      ],
-      [
-        "Mini candy-coated chocolate eggs",
-        3,
-        "bags (size unspecified)",
-        ""
-      ],
-      [
-        "Chocolate-coated biscuit fingers",
-        1,
-        "pack (size unspecified)",
-        ""
-      ],
-      [
-        "Edible flowers (optional)",
-        null,
-        "as needed",
-        ""
-      ]
-    ],
-    "steps": [
-      "Melt butter and chocolate; cool slightly. Whisk eggs and sugar until pale, then slowly mix in chocolate. Fold in sifted flour, cocoa and salt, followed by chopped chocolate eggs.",
-      "Spread in a lined, greased deep oven tray. Bake at 180°C for about 30 minutes, until a tester has moist crumbs. Cool fully, then cut a bunny shape using a paper template. Tray and package sizes are unspecified.",
-      "Beat butter, cream cheese and vanilla. Gradually beat in cocoa, icing sugar and salt. Pipe over the cake.",
-      "Finish with biscuit fingers, chocolate eggs and optional edible flowers."
-    ],
-    "ingredientSections": [
-      [
-        0,
-        "Brownie"
-      ],
-      [
-        8,
-        "Chocolate cream-cheese frosting"
-      ],
-      [
-        14,
-        "Decoration"
-      ]
-    ],
-    "stepSections": [
-      [
-        0,
-        "Brownie"
-      ],
-      [
-        2,
-        "Chocolate cream-cheese frosting"
-      ],
-      [
-        3,
-        "Decoration"
-      ]
-    ],
-    "yield": "1 tray"
   },
   {
     "id": "brownie-toasted-marshmallow-caramel-brownies",
@@ -1632,103 +1306,6 @@
     "yield": "1 × 25×25 cm tray"
   },
   {
-    "id": "brownie-evergreen-frosted-brownie-cake",
-    "category": "Brownies",
-    "section": "desserts",
-    "title": "Evergreen Frosted Brownie Cake",
-    "desc": "A shortcut brownie cake decorated with green vanilla frosting.",
-    "tempC": 160,
-    "bake": "30–35 min",
-    "ferment": "Cool completely",
-    "ingredients": [
-      [
-        "Chocolate fudge brownie mix",
-        2,
-        "boxes (size unspecified)",
-        ""
-      ],
-      [
-        "Eggs",
-        3,
-        "pc",
-        ""
-      ],
-      [
-        "Neutral oil",
-        100,
-        "ml",
-        ""
-      ],
-      [
-        "Water",
-        150,
-        "ml",
-        ""
-      ],
-      [
-        "Cocoa powder",
-        3,
-        "tbsp",
-        ""
-      ],
-      [
-        "Ready-made chocolate fudge frosting",
-        1,
-        "tub (size unspecified)",
-        ""
-      ],
-      [
-        "Ready-made vanilla frosting",
-        2,
-        "tubs (size unspecified)",
-        ""
-      ],
-      [
-        "Icing sugar",
-        250,
-        "g",
-        ""
-      ],
-      [
-        "Green food colouring",
-        null,
-        "as needed",
-        ""
-      ],
-      [
-        "Sprinkles",
-        null,
-        "as needed",
-        ""
-      ]
-    ],
-    "steps": [
-      "Mix eggs, oil, water and cocoa, then stir in brownie mix. Spread in a greased tray or tree-shaped tin. Bake at 160°C for 30–35 minutes, until a tester has moist crumbs. Cool completely and cut into a tree if needed. Package and tray sizes are unspecified.",
-      "Cover the sides, trunk and a narrow upper border with chocolate frosting. Beat vanilla frosting with icing sugar and tint green. Pipe over the remaining surface and add sprinkles."
-    ],
-    "ingredientSections": [
-      [
-        0,
-        "Brownie"
-      ],
-      [
-        5,
-        "Frosting & decoration"
-      ]
-    ],
-    "stepSections": [
-      [
-        0,
-        "Brownie"
-      ],
-      [
-        1,
-        "Frosting & decoration"
-      ]
-    ],
-    "yield": "1 tray"
-  },
-  {
     "id": "brownie-blueberry-toffee-glazed-brownies",
     "category": "Brownies",
     "section": "desserts",
@@ -1845,109 +1422,6 @@
       ]
     ],
     "yield": "1 × 25×25 cm tray"
-  },
-  {
-    "id": "brownie-liquorice-fudge-brownies-with-vanilla-cream",
-    "category": "Brownies",
-    "section": "desserts",
-    "title": "Liquorice Fudge Brownies with Vanilla Cream",
-    "desc": "Easy chocolate-fudge squares with liquorice pieces and double-vanilla cream.",
-    "tempC": 160,
-    "bake": "22–25 min",
-    "ferment": "Cool completely",
-    "ingredients": [
-      [
-        "Chocolate fudge cake mix",
-        1,
-        "box (size unspecified)",
-        ""
-      ],
-      [
-        "Egg",
-        1,
-        "pc",
-        ""
-      ],
-      [
-        "Neutral oil",
-        50,
-        "ml",
-        ""
-      ],
-      [
-        "Water",
-        100,
-        "ml",
-        ""
-      ],
-      [
-        "Cocoa powder",
-        2,
-        "tbsp",
-        ""
-      ],
-      [
-        "Chocolate-covered liquorice fudge, chopped",
-        150,
-        "g",
-        ""
-      ],
-      [
-        "Whipping cream",
-        400,
-        "ml",
-        ""
-      ],
-      [
-        "Icing sugar",
-        3,
-        "tbsp",
-        ""
-      ],
-      [
-        "Vanilla pod, seeds",
-        1,
-        "pc",
-        ""
-      ],
-      [
-        "Vanilla extract",
-        2,
-        "tsp",
-        ""
-      ],
-      [
-        "Fresh berries",
-        null,
-        "as needed",
-        ""
-      ]
-    ],
-    "steps": [
-      "Mix egg, oil, water and cocoa. Stir in cake mix and fold in chopped liquorice fudge. Spread in a lined, greased 25×25 cm tin. Bake at 160°C for 22–25 minutes; cool before cutting into 16 pieces.",
-      "Whip cream, icing sugar, vanilla seeds and extract to firm peaks. Serve with the brownies and fresh berries."
-    ],
-    "ingredientSections": [
-      [
-        0,
-        "Brownie"
-      ],
-      [
-        6,
-        "Vanilla cream"
-      ]
-    ],
-    "stepSections": [
-      [
-        0,
-        "Brownie"
-      ],
-      [
-        1,
-        "Vanilla cream"
-      ]
-    ],
-    "yield": "16 pieces"
   },
   {
     "id": "brownie-triple-chocolate-wafer-surprise-bars",
@@ -2084,133 +1558,6 @@
     "yield": "1 × 20×20 cm tray"
   },
   {
-    "id": "brownie-berry-velvet-sherry-cream-brownie",
-    "category": "Brownies",
-    "section": "desserts",
-    "title": "Berry Velvet Sherry-Cream Brownie",
-    "desc": "A chocolate pudding brownie topped with sherry-scented cream and berries.",
-    "tempC": 180,
-    "bake": "22–25 min",
-    "ferment": "Cool completely",
-    "ingredients": [
-      [
-        "Instant chocolate pudding powder",
-        1,
-        "packet (size unspecified)",
-        ""
-      ],
-      [
-        "Plain flour",
-        70,
-        "g",
-        "flour"
-      ],
-      [
-        "Baking soda",
-        0.5,
-        "tsp",
-        ""
-      ],
-      [
-        "Salt",
-        0.5,
-        "tsp",
-        ""
-      ],
-      [
-        "Butter, melted",
-        120,
-        "g",
-        ""
-      ],
-      [
-        "Brown sugar",
-        130,
-        "g",
-        ""
-      ],
-      [
-        "Eggs",
-        2,
-        "pc",
-        ""
-      ],
-      [
-        "Vanilla extract",
-        1,
-        "tsp",
-        ""
-      ],
-      [
-        "Chocolate chips",
-        80,
-        "g",
-        ""
-      ],
-      [
-        "Whipping cream",
-        250,
-        "ml",
-        ""
-      ],
-      [
-        "Sherry",
-        1,
-        "tbsp",
-        ""
-      ],
-      [
-        "Icing sugar",
-        2,
-        "tbsp",
-        ""
-      ],
-      [
-        "Strawberries",
-        null,
-        "as needed",
-        ""
-      ],
-      [
-        "Raspberries",
-        null,
-        "as needed",
-        ""
-      ],
-      [
-        "Blackberries",
-        null,
-        "as needed",
-        ""
-      ]
-    ],
-    "steps": [
-      "Mix pudding powder, flour, baking soda and salt. Whisk melted butter, brown sugar, eggs and vanilla separately; gently combine with the dry ingredients and fold in chips. Bake in a lined, greased 20 cm tin at 180°C for 22–25 minutes. Cool completely. The pudding-packet weight is unspecified.",
-      "Whip cream with sherry and icing sugar until firm. Spread over the cold brownie and arrange berries on top."
-    ],
-    "ingredientSections": [
-      [
-        0,
-        "Brownie"
-      ],
-      [
-        9,
-        "Sherry cream & berries"
-      ]
-    ],
-    "stepSections": [
-      [
-        0,
-        "Brownie"
-      ],
-      [
-        1,
-        "Sherry cream & berries"
-      ]
-    ],
-    "yield": "1 × 20 cm cake"
-  },
-  {
     "id": "brownie-golden-pecan-caramel-brownie-squares",
     "category": "Brownies",
     "section": "desserts",
@@ -2233,15 +1580,21 @@
         ""
       ],
       [
+        "Eggs",
+        3,
+        "pc",
+        ""
+      ],
+      [
         "Sugar",
         270,
         "g",
         ""
       ],
       [
-        "Eggs",
-        3,
-        "pc",
+        "Vanilla extract",
+        2,
+        "tsp",
         ""
       ],
       [
@@ -2254,18 +1607,6 @@
         "Salt",
         0.5,
         "tsp",
-        ""
-      ],
-      [
-        "Vanilla extract",
-        2,
-        "tsp",
-        ""
-      ],
-      [
-        "Pecans, chopped",
-        100,
-        "g",
         ""
       ],
       [
@@ -2284,6 +1625,12 @@
         "Whipping cream",
         3,
         "tbsp",
+        ""
+      ],
+      [
+        "Pecans, chopped",
+        100,
+        "g",
         ""
       ],
       [
@@ -2581,18 +1928,6 @@
     "ferment": "Cool cake; cool glaze about 20 min; chill until set",
     "ingredients": [
       [
-        "Eggs",
-        4,
-        "pc",
-        ""
-      ],
-      [
-        "Sugar",
-        390,
-        "g",
-        ""
-      ],
-      [
         "Butter",
         200,
         "g",
@@ -2601,6 +1936,18 @@
       [
         "Dark chocolate",
         200,
+        "g",
+        ""
+      ],
+      [
+        "Eggs",
+        4,
+        "pc",
+        ""
+      ],
+      [
+        "Sugar",
+        390,
         "g",
         ""
       ],
@@ -2620,12 +1967,6 @@
         "Salt",
         0.5,
         "tsp",
-        ""
-      ],
-      [
-        "Dark chocolate, chopped",
-        120,
-        "g",
         ""
       ],
       [
@@ -2659,13 +2000,19 @@
         ""
       ],
       [
-        "Whipped cream",
+        "Dark chocolate, chopped",
+        120,
+        "g",
+        ""
+      ],
+      [
+        "Mixed berries",
         null,
         "as needed",
         ""
       ],
       [
-        "Mixed berries",
+        "Whipped cream",
         null,
         "as needed",
         ""

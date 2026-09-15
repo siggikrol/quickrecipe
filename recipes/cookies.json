@@ -95,95 +95,6 @@
     "yield": "About 12 cookies"
   },
   {
-    "id": "cookie-smakokur-med-karamellu",
-    "category": "Cookies",
-    "section": "desserts",
-    "title": "Caramel-Drizzled Chocolate Chip Cookies",
-    "ingredients": [
-      [
-        "Butter, softened",
-        150,
-        "g",
-        ""
-      ],
-      [
-        "Brown sugar",
-        200,
-        "g",
-        ""
-      ],
-      [
-        "Eggs",
-        1,
-        "pc",
-        ""
-      ],
-      [
-        "Vanilla extract",
-        2,
-        "tsp",
-        ""
-      ],
-      [
-        "Plain flour",
-        230,
-        "g",
-        ""
-      ],
-      [
-        "Baking soda",
-        1,
-        "tsp",
-        ""
-      ],
-      [
-        "Salt",
-        0.5,
-        "tsp",
-        ""
-      ],
-      [
-        "Dark chocolate chips",
-        150,
-        "g",
-        ""
-      ],
-      [
-        "Síríus caramel pieces",
-        100,
-        "g",
-        ""
-      ],
-      [
-        "Nóa Töggur caramels",
-        1,
-        "bag (size unspecified)",
-        ""
-      ],
-      [
-        "Cream",
-        1,
-        "tbsp",
-        ""
-      ],
-      [
-        "Dark chocolate",
-        80,
-        "g",
-        ""
-      ]
-    ],
-    "steps": [
-      "Beat butter and sugar until fluffy; beat in eggs and vanilla.",
-      "Mix in flour, baking soda and salt, then chocolate chips and caramel pieces.",
-      "Portion 1 tbsp of dough per cookie onto lined trays, leaving space. Bake at 175°C for 15 minutes.",
-      "Melt caramels with cream; melt dark chocolate separately. Drizzle both over baked cookies and cool until set."
-    ],
-    "tempC": 175,
-    "bake": "15 min",
-    "yield": "About 24 cookies"
-  },
-  {
     "id": "cookie-heslihnetudraumur-2",
     "category": "Cookies",
     "section": "desserts",
@@ -297,24 +208,6 @@
     "title": "Chocolate Turtle Cookies",
     "ingredients": [
       [
-        "Plain flour",
-        180,
-        "g",
-        ""
-      ],
-      [
-        "Cocoa powder",
-        30,
-        "g",
-        ""
-      ],
-      [
-        "Salt",
-        0.5,
-        "tsp",
-        ""
-      ],
-      [
         "Butter, softened",
         120,
         "g",
@@ -333,12 +226,6 @@
         ""
       ],
       [
-        "Egg whites",
-        2,
-        "pc",
-        ""
-      ],
-      [
         "Whole milk",
         2,
         "tbsp",
@@ -348,6 +235,30 @@
         "Vanilla extract",
         1,
         "tsp",
+        ""
+      ],
+      [
+        "Plain flour",
+        180,
+        "g",
+        ""
+      ],
+      [
+        "Cocoa powder",
+        30,
+        "g",
+        ""
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        ""
+      ],
+      [
+        "Egg whites",
+        2,
+        "pc",
         ""
       ],
       [
@@ -462,30 +373,6 @@
     "title": "Brown Butter Chocolate Chip Cookies",
     "ingredients": [
       [
-        "Plain flour",
-        280,
-        "g",
-        ""
-      ],
-      [
-        "Baking soda",
-        1,
-        "tsp",
-        ""
-      ],
-      [
-        "Potato starch",
-        1,
-        "tsp",
-        ""
-      ],
-      [
-        "Salt",
-        1,
-        "tsp",
-        ""
-      ],
-      [
         "Butter",
         170,
         "g",
@@ -522,6 +409,30 @@
         ""
       ],
       [
+        "Plain flour",
+        280,
+        "g",
+        ""
+      ],
+      [
+        "Baking soda",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Potato starch",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Salt",
+        1,
+        "tsp",
+        ""
+      ],
+      [
         "Dark chocolate chips",
         200,
         "g",
@@ -539,62 +450,6 @@
     "bake": "12–15 min",
     "yield": "About 22–24 cookies",
     "ferment": "At least 2 hr"
-  },
-  {
-    "id": "cookie-heit-sukkuladikaka-med-is",
-    "category": "Cookies",
-    "section": "desserts",
-    "title": "Chocolate Cookie Skillet with Ice Cream",
-    "ingredients": [
-      [
-        "Betty Crocker Chocolate Chip cookie mix",
-        2,
-        "pack (size unspecified)",
-        ""
-      ],
-      [
-        "Cocoa powder",
-        2,
-        "tbsp",
-        ""
-      ],
-      [
-        "Butter",
-        150,
-        "g",
-        ""
-      ],
-      [
-        "Water",
-        30,
-        "ml",
-        ""
-      ],
-      [
-        "Dark chocolate",
-        60,
-        "g",
-        ""
-      ],
-      [
-        "Vanilla ice cream",
-        null,
-        "g",
-        ""
-      ],
-      [
-        "Thick caramel sauce",
-        null,
-        "g",
-        ""
-      ]
-    ],
-    "steps": [
-      "Grease an ovenproof skillet. Mix cookie mix with cocoa, melted butter and water; fold in chopped chocolate.",
-      "Spread in the pan and bake at 160°C for 16–20 minutes. Cool briefly; serve warm with ice cream and caramel sauce."
-    ],
-    "tempC": 160,
-    "bake": "16–20 min"
   },
   {
     "id": "cookie-saelgaetistoppar",
@@ -658,96 +513,6 @@
     "tempC": 150,
     "bake": "18–20 min",
     "yield": "About 50 cookies"
-  },
-  {
-    "id": "cookie-smakokudeig-i-ponnu-peppermint",
-    "category": "Cookies",
-    "section": "desserts",
-    "title": "Peppermint Cookie Skillet",
-    "ingredients": [
-      [
-        "Katla Pipp cookie dough",
-        1,
-        "pack (size unspecified)",
-        ""
-      ],
-      [
-        "Vanilla ice cream",
-        null,
-        "g",
-        ""
-      ],
-      [
-        "Peppermint chocolate",
-        150,
-        "g",
-        ""
-      ],
-      [
-        "Cream",
-        150,
-        "ml",
-        ""
-      ],
-      [
-        "Butter",
-        null,
-        "g",
-        ""
-      ]
-    ],
-    "steps": [
-      "Soften dough for 30 minutes. Grease a 20–25 cm ovenproof skillet and press dough evenly into it.",
-      "Bake at 180°C for about 18 minutes. Melt chocolate with cream to make a sauce; serve the warm cookie with ice cream and sauce."
-    ],
-    "tempC": 180,
-    "bake": "18 min",
-    "yield": "8 servings"
-  },
-  {
-    "id": "cookie-smakokudeig-i-ponnu-licorice",
-    "category": "Cookies",
-    "section": "desserts",
-    "title": "Licorice Cookie Skillet",
-    "ingredients": [
-      [
-        "Katla Eitt Sett cookie dough",
-        1,
-        "pack (size unspecified)",
-        ""
-      ],
-      [
-        "Vanilla ice cream",
-        null,
-        "g",
-        ""
-      ],
-      [
-        "Licorice chocolate",
-        150,
-        "g",
-        ""
-      ],
-      [
-        "Cream",
-        150,
-        "ml",
-        ""
-      ],
-      [
-        "Butter",
-        null,
-        "g",
-        ""
-      ]
-    ],
-    "steps": [
-      "Soften dough for 30 minutes. Grease a 20 cm ovenproof skillet and press dough evenly into it.",
-      "Bake at 180°C for about 18 minutes. Melt chocolate with cream to make a sauce; serve the warm cookie with ice cream and sauce."
-    ],
-    "tempC": 180,
-    "bake": "18 min",
-    "yield": "8 servings"
   },
   {
     "id": "cookie-pandagott",
@@ -1089,90 +854,6 @@
     "ferment": "At least 2 hr"
   },
   {
-    "id": "cookie-undursamlegar-sukkuladibitakokur",
-    "category": "Cookies",
-    "section": "desserts",
-    "title": "Chocolate Pudding Cookies",
-    "ingredients": [
-      [
-        "Butter, softened",
-        200,
-        "g",
-        ""
-      ],
-      [
-        "Brown sugar",
-        150,
-        "g",
-        ""
-      ],
-      [
-        "Sugar",
-        50,
-        "g",
-        ""
-      ],
-      [
-        "Eggs",
-        2,
-        "pc",
-        ""
-      ],
-      [
-        "Vanilla extract",
-        2,
-        "tsp",
-        ""
-      ],
-      [
-        "Royal chocolate pudding powder",
-        1,
-        "pack (size unspecified)",
-        ""
-      ],
-      [
-        "Plain flour",
-        240,
-        "g",
-        ""
-      ],
-      [
-        "Cocoa powder",
-        30,
-        "g",
-        ""
-      ],
-      [
-        "Baking soda",
-        1,
-        "tsp",
-        ""
-      ],
-      [
-        "Salt",
-        0.5,
-        "tsp",
-        ""
-      ],
-      [
-        "Dark chocolate chips",
-        250,
-        "g",
-        ""
-      ]
-    ],
-    "steps": [
-      "Beat butter and sugar until fluffy; beat in eggs and vanilla.",
-      "Mix in the dry ingredients, then fold in the chocolate.",
-      "Shape heaped tablespoon portions and chill for 2 hours. Arrange on lined trays and bake at 175°C for about 15 minutes.",
-      "Cool on a wire rack."
-    ],
-    "tempC": 175,
-    "bake": "15 min",
-    "yield": "About 26–28 cookies",
-    "ferment": "At least 2 hr"
-  },
-  {
     "id": "cookie-hafrakokur-i-hatidarbuning",
     "category": "Cookies",
     "section": "desserts",
@@ -1425,89 +1106,6 @@
     "ferment": "At least 3 hr"
   },
   {
-    "id": "cookie-hvitsukkuladikokur-med-macadamia-hnetum",
-    "category": "Cookies",
-    "section": "desserts",
-    "title": "White Chocolate Macadamia Cookies",
-    "ingredients": [
-      [
-        "Butter, softened",
-        230,
-        "g",
-        ""
-      ],
-      [
-        "Brown sugar",
-        120,
-        "g",
-        ""
-      ],
-      [
-        "Sugar",
-        50,
-        "g",
-        ""
-      ],
-      [
-        "Eggs",
-        2,
-        "pc",
-        ""
-      ],
-      [
-        "Vanilla extract",
-        2,
-        "tsp",
-        ""
-      ],
-      [
-        "Royal vanilla pudding powder",
-        1,
-        "pack (size unspecified)",
-        ""
-      ],
-      [
-        "Plain flour",
-        270,
-        "g",
-        ""
-      ],
-      [
-        "Baking soda",
-        1,
-        "tsp",
-        ""
-      ],
-      [
-        "Salt",
-        0.5,
-        "tsp",
-        ""
-      ],
-      [
-        "White chocolate",
-        130,
-        "g",
-        ""
-      ],
-      [
-        "Macadamia nuts",
-        100,
-        "g",
-        ""
-      ]
-    ],
-    "steps": [
-      "Beat butter and sugar until fluffy; beat in eggs and vanilla.",
-      "Mix in pudding powder, flour, baking soda and salt; fold in chopped chocolate and nuts.",
-      "Portion 2 tbsp of dough per cookie onto lined trays, leaving space. Bake at 175°C for 12–15 minutes.",
-      "Cool on a wire rack."
-    ],
-    "tempC": 175,
-    "bake": "12–15 min",
-    "yield": "About 25 cookies"
-  },
-  {
     "id": "cookie-sukkuladibitakokur-3",
     "category": "Cookies",
     "section": "desserts",
@@ -1745,24 +1343,6 @@
     "title": "Chocolate-Dipped Daim Cookies",
     "ingredients": [
       [
-        "Plain flour",
-        380,
-        "g",
-        ""
-      ],
-      [
-        "Baking soda",
-        1,
-        "tsp",
-        ""
-      ],
-      [
-        "Salt",
-        1,
-        "tsp",
-        ""
-      ],
-      [
         "Butter, softened",
         230,
         "g",
@@ -1789,6 +1369,24 @@
       [
         "Vanilla extract",
         2,
+        "tsp",
+        ""
+      ],
+      [
+        "Plain flour",
+        380,
+        "g",
+        ""
+      ],
+      [
+        "Baking soda",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Salt",
+        1,
         "tsp",
         ""
       ],
@@ -1917,24 +1515,6 @@
         ""
       ],
       [
-        "Plain flour",
-        310,
-        "g",
-        ""
-      ],
-      [
-        "Baking soda",
-        1,
-        "tsp",
-        ""
-      ],
-      [
-        "Salt",
-        0.5,
-        "tsp",
-        ""
-      ],
-      [
         "Butter, softened",
         220,
         "g",
@@ -1961,6 +1541,24 @@
       [
         "Vanilla extract",
         1,
+        "tsp",
+        ""
+      ],
+      [
+        "Plain flour",
+        310,
+        "g",
+        ""
+      ],
+      [
+        "Baking soda",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Salt",
+        0.5,
         "tsp",
         ""
       ]
@@ -2276,30 +1874,6 @@
     "title": "American Chocolate Cookies",
     "ingredients": [
       [
-        "Plain flour",
-        120,
-        "g",
-        ""
-      ],
-      [
-        "Cocoa powder",
-        50,
-        "g",
-        ""
-      ],
-      [
-        "Baking soda",
-        1,
-        "tsp",
-        ""
-      ],
-      [
-        "Salt",
-        0.5,
-        "tsp",
-        ""
-      ],
-      [
         "Butter, softened",
         120,
         "g",
@@ -2326,6 +1900,30 @@
       [
         "Vanilla extract",
         2,
+        "tsp",
+        ""
+      ],
+      [
+        "Plain flour",
+        120,
+        "g",
+        ""
+      ],
+      [
+        "Cocoa powder",
+        50,
+        "g",
+        ""
+      ],
+      [
+        "Baking soda",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Salt",
+        0.5,
         "tsp",
         ""
       ],
@@ -2374,6 +1972,18 @@
     "title": "Caramel Swirl Meringues",
     "ingredients": [
       [
+        "Dumle Original caramels",
+        150,
+        "g",
+        ""
+      ],
+      [
+        "Cream",
+        130,
+        "ml",
+        ""
+      ],
+      [
         "Egg whites",
         5,
         "pc",
@@ -2389,18 +1999,6 @@
         "White wine vinegar",
         1,
         "tsp",
-        ""
-      ],
-      [
-        "Dumle Original caramels",
-        150,
-        "g",
-        ""
-      ],
-      [
-        "Cream",
-        130,
-        "ml",
         ""
       ]
     ],
@@ -2551,6 +2149,24 @@
         ""
       ],
       [
+        "Eggs",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Vanilla extract",
+        2,
+        "tsp",
+        ""
+      ],
+      [
+        "Finely ground hazelnuts",
+        50,
+        "g",
+        ""
+      ],
+      [
         "Plain flour",
         270,
         "g",
@@ -2572,24 +2188,6 @@
         "Salt",
         0.5,
         "tsp",
-        ""
-      ],
-      [
-        "Eggs",
-        2,
-        "pc",
-        ""
-      ],
-      [
-        "Vanilla extract",
-        2,
-        "tsp",
-        ""
-      ],
-      [
-        "Finely ground hazelnuts",
-        50,
-        "g",
         ""
       ],
       [
@@ -2763,12 +2361,6 @@
     "title": "Cinnamon Candied Pecans",
     "ingredients": [
       [
-        "Pecans",
-        500,
-        "g",
-        ""
-      ],
-      [
         "Sugar",
         90,
         "g",
@@ -2809,6 +2401,12 @@
         1,
         "tsp",
         ""
+      ],
+      [
+        "Pecans",
+        500,
+        "g",
+        ""
       ]
     ],
     "steps": [
@@ -2831,14 +2429,14 @@
         ""
       ],
       [
-        "Odense soft hazelnut nougat",
-        150,
+        "Dark chocolate chips",
+        200,
         "g",
         ""
       ],
       [
-        "Dark chocolate chips",
-        200,
+        "Odense soft hazelnut nougat",
+        150,
         "g",
         ""
       ]
@@ -3116,12 +2714,6 @@
         ""
       ],
       [
-        "Strawberries",
-        40,
-        "pc",
-        ""
-      ],
-      [
         "Cream",
         400,
         "ml",
@@ -3137,6 +2729,12 @@
         "Icing sugar",
         2,
         "tbsp",
+        ""
+      ],
+      [
+        "Strawberries",
+        40,
+        "pc",
         ""
       ]
     ],
@@ -3169,36 +2767,6 @@
     "title": "Apricot White Chocolate Oat Cookies",
     "ingredients": [
       [
-        "Rolled oats",
-        200,
-        "g",
-        ""
-      ],
-      [
-        "Plain flour",
-        200,
-        "g",
-        ""
-      ],
-      [
-        "Ground cinnamon",
-        1,
-        "tsp",
-        ""
-      ],
-      [
-        "Salt",
-        0.5,
-        "tsp",
-        ""
-      ],
-      [
-        "Baking powder",
-        1,
-        "tsp",
-        ""
-      ],
-      [
         "Butter, softened",
         250,
         "g",
@@ -3226,6 +2794,36 @@
         "Eggs",
         2,
         "pc",
+        ""
+      ],
+      [
+        "Rolled oats",
+        200,
+        "g",
+        ""
+      ],
+      [
+        "Plain flour",
+        200,
+        "g",
+        ""
+      ],
+      [
+        "Ground cinnamon",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        ""
+      ],
+      [
+        "Baking powder",
+        1,
+        "tsp",
         ""
       ],
       [
@@ -3422,27 +3020,9 @@
     "title": "Classic Sarah Bernhardt Cookies",
     "ingredients": [
       [
-        "Egg whites",
-        4,
-        "pc",
-        ""
-      ],
-      [
-        "Icing sugar",
-        250,
-        "g",
-        ""
-      ],
-      [
-        "Blanched almonds",
-        300,
-        "g",
-        ""
-      ],
-      [
-        "Egg yolks",
-        6,
-        "pc",
+        "Water",
+        150,
+        "ml",
         ""
       ],
       [
@@ -3452,9 +3032,9 @@
         ""
       ],
       [
-        "Water",
-        150,
-        "ml",
+        "Egg yolks",
+        6,
+        "pc",
         ""
       ],
       [
@@ -3473,6 +3053,24 @@
         "Instant coffee powder",
         1.5,
         "tsp",
+        ""
+      ],
+      [
+        "Egg whites",
+        4,
+        "pc",
+        ""
+      ],
+      [
+        "Icing sugar",
+        250,
+        "g",
+        ""
+      ],
+      [
+        "Blanched almonds",
+        300,
+        "g",
         ""
       ],
       [
@@ -3499,11 +3097,11 @@
     "ingredientSections": [
       [
         0,
-        "Meringue"
+        "Filling"
       ],
       [
-        3,
-        "Filling"
+        6,
+        "Meringue"
       ],
       [
         9,
@@ -3694,6 +3292,18 @@
         ""
       ],
       [
+        "White chocolate",
+        100,
+        "g",
+        ""
+      ],
+      [
+        "Cream",
+        1,
+        "tbsp",
+        ""
+      ],
+      [
         "Cream cheese, softened",
         80,
         "g",
@@ -3709,18 +3319,6 @@
         "Vanilla extract",
         1,
         "tsp",
-        ""
-      ],
-      [
-        "White chocolate",
-        100,
-        "g",
-        ""
-      ],
-      [
-        "Cream",
-        1,
-        "tbsp",
         ""
       ],
       [
@@ -3898,24 +3496,6 @@
         ""
       ],
       [
-        "Plain flour",
-        2.5,
-        "cup",
-        ""
-      ],
-      [
-        "Salt",
-        1,
-        "tsp",
-        ""
-      ],
-      [
-        "Baking powder",
-        0.5,
-        "tsp",
-        ""
-      ],
-      [
         "Brown sugar",
         1.5,
         "cup",
@@ -3930,6 +3510,24 @@
       [
         "Vanilla extract",
         2,
+        "tsp",
+        ""
+      ],
+      [
+        "Plain flour",
+        2.5,
+        "cup",
+        ""
+      ],
+      [
+        "Salt",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Baking powder",
+        0.5,
         "tsp",
         ""
       ],
@@ -3960,21 +3558,9 @@
     "title": "Coconut Lemon Macaroons with Sweetener",
     "ingredients": [
       [
-        "Butter",
-        25,
-        "g",
-        ""
-      ],
-      [
         "Eggs",
         2,
         "pc",
-        ""
-      ],
-      [
-        "Desiccated coconut",
-        120,
-        "g",
         ""
       ],
       [
@@ -3992,6 +3578,18 @@
       [
         "Lemon zest",
         null,
+        "g",
+        ""
+      ],
+      [
+        "Butter",
+        25,
+        "g",
+        ""
+      ],
+      [
+        "Desiccated coconut",
+        120,
         "g",
         ""
       ]
@@ -4410,15 +4008,15 @@
         ""
       ],
       [
-        "Plain flour",
-        1,
+        "Brown sugar",
+        0.6666666666666666,
         "cup",
         ""
       ],
       [
-        "Brown sugar",
-        0.6666666666666666,
-        "cup",
+        "Eggs",
+        1,
+        "pc",
         ""
       ],
       [
@@ -4428,15 +4026,15 @@
         ""
       ],
       [
-        "Rolo chocolates",
-        150,
-        "g",
+        "Vanilla extract",
+        1,
+        "tsp",
         ""
       ],
       [
-        "Eggs",
+        "Plain flour",
         1,
-        "pc",
+        "cup",
         ""
       ],
       [
@@ -4452,9 +4050,9 @@
         ""
       ],
       [
-        "Vanilla extract",
-        1,
-        "tsp",
+        "Rolo chocolates",
+        150,
+        "g",
         ""
       ]
     ],
@@ -4497,15 +4095,15 @@
         ""
       ],
       [
-        "Dark syrup",
-        1,
-        "tbsp",
-        ""
-      ],
-      [
         "Vanilla extract",
         1,
         "tsp",
+        ""
+      ],
+      [
+        "Dark syrup",
+        1,
+        "tbsp",
         ""
       ],
       [
@@ -4673,15 +4271,15 @@
         ""
       ],
       [
-        "Crunchy peanut butter",
-        1,
-        "cup",
-        ""
-      ],
-      [
         "Vanilla extract",
         0.5,
         "tsp",
+        ""
+      ],
+      [
+        "Crunchy peanut butter",
+        1,
+        "cup",
         ""
       ],
       [
@@ -4961,12 +4559,6 @@
         ""
       ],
       [
-        "Sukrin Melis powdered sweetener",
-        450,
-        "g",
-        ""
-      ],
-      [
         "Peppermint extract",
         1,
         "tsp",
@@ -4976,6 +4568,12 @@
         "Peppermint stevia drops (optional)",
         20,
         "drops",
+        ""
+      ],
+      [
+        "Sukrin Melis powdered sweetener",
+        450,
+        "g",
         ""
       ]
     ],
@@ -5129,21 +4727,9 @@
     "title": "Salted Caramel Pretzel Thumbprints",
     "ingredients": [
       [
-        "Plain flour",
-        140,
-        "g",
-        ""
-      ],
-      [
-        "Cocoa powder",
-        40,
-        "g",
-        ""
-      ],
-      [
-        "Sea salt",
-        0.25,
-        "tsp",
+        "Eggs",
+        1,
+        "pc",
         ""
       ],
       [
@@ -5165,12 +4751,6 @@
         ""
       ],
       [
-        "Eggs",
-        1,
-        "pc",
-        ""
-      ],
-      [
         "Vanilla extract",
         1.5,
         "tsp",
@@ -5183,9 +4763,27 @@
         ""
       ],
       [
-        "Pretzels",
-        50,
+        "Plain flour",
+        140,
         "g",
+        ""
+      ],
+      [
+        "Cocoa powder",
+        40,
+        "g",
+        ""
+      ],
+      [
+        "Sea salt",
+        0.25,
+        "tsp",
+        ""
+      ],
+      [
+        "Egg whites",
+        1,
+        "pc",
         ""
       ],
       [
@@ -5195,9 +4793,9 @@
         ""
       ],
       [
-        "Egg whites",
-        1,
-        "pc",
+        "Pretzels",
+        50,
+        "g",
         ""
       ],
       [
@@ -5213,14 +4811,14 @@
         ""
       ],
       [
-        "Dark chocolate",
-        50,
+        "Sea salt for topping",
+        null,
         "g",
         ""
       ],
       [
-        "Sea salt for topping",
-        null,
+        "Dark chocolate",
+        50,
         "g",
         ""
       ]
@@ -5427,12 +5025,6 @@
         ""
       ],
       [
-        "White chocolate",
-        100,
-        "g",
-        ""
-      ],
-      [
         "Sugar",
         100,
         "g",
@@ -5442,6 +5034,12 @@
         "Ground cinnamon",
         2,
         "tsp",
+        ""
+      ],
+      [
+        "White chocolate",
+        100,
+        "g",
         ""
       ]
     ],
@@ -5457,8 +5055,12 @@
         "Ingredients"
       ],
       [
-        12,
+        11,
         "Cinnamon sugar coating"
+      ],
+      [
+        13,
+        "Topping"
       ]
     ]
   },
@@ -5665,25 +5267,25 @@
     "title": "Peanut Butter Blossom Cookies",
     "ingredients": [
       [
-        "Hershey’s Kisses",
-        1,
-        "bag (size unspecified)",
-        ""
-      ],
-      [
         "Butter, softened",
         100,
         "g",
         ""
       ],
       [
-        "Whole milk",
-        2,
-        "tbsp",
+        "Peanut butter",
+        0.5,
+        "cup",
         ""
       ],
       [
-        "Peanut butter",
+        "Sugar",
+        0.5,
+        "cup",
+        ""
+      ],
+      [
+        "Brown sugar",
         0.5,
         "cup",
         ""
@@ -5695,17 +5297,17 @@
         ""
       ],
       [
+        "Whole milk",
+        2,
+        "tbsp",
+        ""
+      ],
+      [
         "Vanilla extract",
         2,
         "tsp",
         "",
         3
-      ],
-      [
-        "Sugar",
-        0.5,
-        "cup",
-        ""
       ],
       [
         "Plain flour",
@@ -5720,15 +5322,15 @@
         ""
       ],
       [
-        "Brown sugar",
-        0.5,
-        "cup",
-        ""
-      ],
-      [
         "Salt",
         0.5,
         "tsp",
+        ""
+      ],
+      [
+        "Chocolate kisses, one per cookie",
+        null,
+        "pc",
         ""
       ]
     ],
@@ -5752,9 +5354,9 @@
         ""
       ],
       [
-        "Almond flour",
-        300,
-        "g",
+        "Salt",
+        0.5,
+        "tsp",
         ""
       ],
       [
@@ -5764,32 +5366,14 @@
         ""
       ],
       [
-        "Salt",
-        0.5,
-        "tsp",
+        "Almond flour",
+        300,
+        "g",
         ""
       ],
       [
         "Dumle Original caramels",
         12,
-        "pc",
-        ""
-      ],
-      [
-        "Syrup",
-        4,
-        "tbsp",
-        ""
-      ],
-      [
-        "Butter, softened",
-        220,
-        "g",
-        ""
-      ],
-      [
-        "Egg yolks",
-        4,
         "pc",
         ""
       ],
@@ -5802,6 +5386,24 @@
       [
         "Milk chocolate",
         60,
+        "g",
+        ""
+      ],
+      [
+        "Egg yolks",
+        4,
+        "pc",
+        ""
+      ],
+      [
+        "Syrup",
+        4,
+        "tbsp",
+        ""
+      ],
+      [
+        "Butter, softened",
+        220,
         "g",
         ""
       ],
@@ -5833,86 +5435,6 @@
         "Chocolate coating"
       ]
     ]
-  },
-  {
-    "id": "vanilla-pudding-candy-cookies",
-    "category": "Cookies",
-    "section": "desserts",
-    "title": "Vanilla Pudding Candy Cookies",
-    "ingredients": [
-      [
-        "Butter, softened",
-        150,
-        "g",
-        ""
-      ],
-      [
-        "Brown sugar",
-        0.75,
-        "cup",
-        ""
-      ],
-      [
-        "Sugar",
-        0.25,
-        "cup",
-        ""
-      ],
-      [
-        "Eggs",
-        1,
-        "pc",
-        ""
-      ],
-      [
-        "Vanilla extract",
-        2,
-        "capful",
-        ""
-      ],
-      [
-        "Plain flour",
-        2,
-        "cup",
-        ""
-      ],
-      [
-        "Vanilla pudding powder",
-        0.25,
-        "cup",
-        ""
-      ],
-      [
-        "Baking powder",
-        1,
-        "tsp",
-        ""
-      ],
-      [
-        "Smarties or M&M candies",
-        1,
-        "bag (size unspecified)",
-        ""
-      ],
-      [
-        "White chocolate chips",
-        1,
-        "bag (size unspecified)",
-        ""
-      ],
-      [
-        "Salt",
-        null,
-        "g",
-        ""
-      ]
-    ],
-    "steps": [
-      "Beat butter, sugars, egg and vanilla for 4 minutes. Mix in flour, pudding powder, baking powder and salt for 1 minute. Briefly fold in candies and white chocolate chips.",
-      "Shape balls on lined trays and bake at 180°C for 11–12 minutes. Lift off carefully with a spatula and rest for 10 minutes."
-    ],
-    "tempC": 180,
-    "bake": "11–12 min"
   },
   {
     "id": "american-candy-cookies",
@@ -6098,30 +5620,6 @@
     "title": "White Chocolate Cranberry Oat Cookies",
     "ingredients": [
       [
-        "Plain flour",
-        160,
-        "g",
-        ""
-      ],
-      [
-        "Baking powder",
-        0.5,
-        "tsp",
-        ""
-      ],
-      [
-        "Baking soda",
-        0.5,
-        "tsp",
-        ""
-      ],
-      [
-        "Salt",
-        0.25,
-        "tsp",
-        ""
-      ],
-      [
         "Butter, softened",
         100,
         "g",
@@ -6148,6 +5646,30 @@
       [
         "Vanilla extract",
         1,
+        "tsp",
+        ""
+      ],
+      [
+        "Plain flour",
+        160,
+        "g",
+        ""
+      ],
+      [
+        "Baking powder",
+        0.5,
+        "tsp",
+        ""
+      ],
+      [
+        "Baking soda",
+        0.5,
+        "tsp",
+        ""
+      ],
+      [
+        "Salt",
+        0.25,
         "tsp",
         ""
       ],
@@ -6184,24 +5706,6 @@
     "section": "desserts",
     "title": "Peanut Butter Chocolate Pretzel Cookies",
     "ingredients": [
-      [
-        "Plain flour",
-        250,
-        "g",
-        ""
-      ],
-      [
-        "Baking soda",
-        0.5,
-        "tsp",
-        ""
-      ],
-      [
-        "Sea salt",
-        0.25,
-        "tsp",
-        ""
-      ],
       [
         "Butter",
         115,
@@ -6241,6 +5745,24 @@
       [
         "Vanilla extract",
         2,
+        "tsp",
+        ""
+      ],
+      [
+        "Plain flour",
+        250,
+        "g",
+        ""
+      ],
+      [
+        "Baking soda",
+        0.5,
+        "tsp",
+        ""
+      ],
+      [
+        "Sea salt",
+        0.25,
         "tsp",
         ""
       ],
@@ -6301,14 +5823,14 @@
         ""
       ],
       [
-        "Chocolate",
-        100,
+        "Licorice pieces",
+        150,
         "g",
         ""
       ],
       [
-        "Licorice pieces",
-        150,
+        "Chocolate",
+        100,
         "g",
         ""
       ]
@@ -6530,7 +6052,7 @@
         ""
       ],
       [
-        "Butter, softened",
+        "Cold butter",
         90,
         "g",
         ""

@@ -111,5 +111,15 @@ const shopping = (() => {
       const label=document.createElement('label');label.className='shopping-select-name';const text=row.firstElementChild;label.append(check,text);row.prepend(label);
     });update();
   }
-  return {decorate,all,exportText};
+  function migrateRecipeIds(renamed, collection) {
+    let changed = false;
+    for (const [oldId, newId] of renamed) {
+      if (!lists[oldId] || lists[newId]) continue;
+      lists[newId] = { ...lists[oldId], title: collection.find(r => r.id === newId)?.title || lists[oldId].title };
+      delete lists[oldId];
+      changed = true;
+    }
+    if (changed) save();
+  }
+  return {decorate,all,exportText,migrateRecipeIds};
 })();

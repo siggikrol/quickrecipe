@@ -415,16 +415,34 @@
     "tempC": 180,
     "ingredients": [
       [
-        "Sugar",
-        60,
+        "Dates",
+        210,
         "g",
-        "sugar"
+        "fruit"
+      ],
+      [
+        "Water, just enough to cover the dates",
+        null,
+        "ml",
+        "other"
+      ],
+      [
+        "Baking soda",
+        5,
+        "g",
+        "leavener"
       ],
       [
         "Butter",
         120,
         "g",
         "fat"
+      ],
+      [
+        "Sugar",
+        60,
+        "g",
+        "sugar"
       ],
       [
         "Eggs",
@@ -439,18 +457,6 @@
         "flour"
       ],
       [
-        "Dates",
-        210,
-        "g",
-        "fruit"
-      ],
-      [
-        "Baking soda",
-        5,
-        "g",
-        "leavener"
-      ],
-      [
         "Cinnamon",
         2.5,
         "g",
@@ -463,16 +469,16 @@
         "salt"
       ],
       [
-        "Vanilla extract",
-        2.5,
-        "ml",
-        "liquid"
-      ],
-      [
         "Baking powder",
         6,
         "g",
         "leavener"
+      ],
+      [
+        "Vanilla extract",
+        2.5,
+        "ml",
+        "liquid"
       ],
       [
         "Butter — sauce",
@@ -494,7 +500,7 @@
       ]
     ],
     "steps": [
-      "Heat oven to 180°C. Cover dates with water, boil, remove from heat 3–4 min and mash lightly. Stir in baking soda.",
+      "Heat oven to 180°C. Put dates in a small saucepan and add just enough water to cover them. Bring to a boil, remove from heat and leave for 3–4 min. Mash lightly with the cooking liquid, stir in baking soda and let cool.",
       "Beat butter and sugar fluffy; add eggs one at a time.",
       "Mix in flour, cinnamon, salt, baking powder and vanilla, then fold in date mixture.",
       "Bake 35–40 min.",

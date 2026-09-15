@@ -158,6 +158,12 @@
         35,
         "ml",
         "fat"
+      ],
+      [
+        "Sea salt for topping",
+        null,
+        "g",
+        "other"
       ]
     ],
     "steps": [
@@ -369,16 +375,22 @@
         "sugar"
       ],
       [
+        "Egg",
+        1,
+        "pc",
+        "egg"
+      ],
+      [
         "Butter",
         45,
         "g",
         "fat"
       ],
       [
-        "Egg",
-        1,
-        "pc",
-        "egg"
+        "Egg or milk for brushing",
+        null,
+        "ml",
+        "other"
       ]
     ],
     "steps": [
@@ -497,7 +509,7 @@
     ],
     "steps": [
       "Mix flours and most of the water. Rest 30 min.",
-      "Add starter and salt; mix thoroughly.",
+      "Add starter, salt and the remaining water; mix thoroughly.",
       "Bulk ferment 4–6 hr with folds during the first 2 hr.",
       "Shape and cold proof 8–12 hr.",
       "Score and bake in a hot Dutch oven or with steam."
@@ -579,6 +591,12 @@
         30,
         "g",
         "spice"
+      ],
+      [
+        "Salt for filling, to taste",
+        null,
+        "g",
+        "other"
       ],
       [
         "Cream cheese",
@@ -680,6 +698,12 @@
         "salt"
       ],
       [
+        "Rapeseed or canola oil for hands and tin",
+        null,
+        "ml",
+        "other"
+      ],
+      [
         "Plain flour — crumble",
         100,
         "g",
@@ -749,6 +773,24 @@
         8,
         "g",
         "salt"
+      ],
+      [
+        "Sunflower seeds (optional)",
+        null,
+        "g",
+        "other"
+      ],
+      [
+        "Flaxseed (optional)",
+        null,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil (optional)",
+        null,
+        "ml",
+        "other"
       ]
     ],
     "steps": [
@@ -809,15 +851,31 @@
         2000,
         "ml",
         "liquid"
+      ],
+      [
+        "Butter for greasing and serving",
+        null,
+        "g",
+        "other"
       ]
     ],
     "steps": [
       "Preheat to 100°C fan.",
-      "Mix all ingredients thoroughly in a large bowl.",
+      "Mix the dough ingredients thoroughly in a large bowl.",
       "Grease a large ovenproof dish with a lid. Add the dough and cover.",
       "Bake covered for 12 hours at 100°C.",
       "Serve with butter; freeze spare portions."
     ],
-    "compactMetricUnits": true
+    "compactMetricUnits": true,
+    "ingredientSections": [
+      [
+        0,
+        "Dough"
+      ],
+      [
+        7,
+        "Greasing & serving"
+      ]
+    ]
   }
 ]

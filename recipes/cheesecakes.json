@@ -228,95 +228,11 @@
       ]
     ],
     "steps": [
-      "Bake biscuit crust 7–8 min at 180°C. Reduce oven to 140°C.",
+      "Crush biscuits, mix with melted crust butter and crust sugar, and press into the tin. Bake 7–8 min at 180°C. Reduce oven to 140°C.",
       "Mix cream cheese, sugar, zest and vanilla. Add sour cream, lemon juice and eggs gently; mix in cornstarch.",
       "Pour over crust and bake about 1 hr until edges are set and centre jiggles slightly. Cool gradually and chill at least 5 hr.",
       "Cook lemon curd ingredients gently until thick; chill and spread over cheesecake.",
       "Whisk meringue ingredients over simmering water until sugar dissolves, then beat to stiff glossy peaks. Spread over curd and torch lightly."
-    ]
-  },
-  {
-    "id": "wild-blueberry-glazed-cheesecake",
-    "category": "Cheesecake",
-    "title": "Wild Blueberry Glazed Cheesecake",
-    "desc": "Baked cheesecake with a digestive base, blueberry filling and set blueberry jelly topping.",
-    "yield": "1 × 24–26 cm",
-    "prep": "20 min",
-    "bake": "30 min",
-    "tempC": 180,
-    "ingredients": [
-      [
-        "Digestive biscuits",
-        300,
-        "g",
-        "other"
-      ],
-      [
-        "Brown sugar — base",
-        25,
-        "g",
-        "sugar"
-      ],
-      [
-        "Butter — base",
-        120,
-        "g",
-        "fat"
-      ],
-      [
-        "Philadelphia cream cheese",
-        600,
-        "g",
-        "dairy"
-      ],
-      [
-        "Lemon juice",
-        15,
-        "ml",
-        "liquid"
-      ],
-      [
-        "Blueberry jam",
-        45,
-        "g",
-        "other"
-      ],
-      [
-        "Sugar",
-        100,
-        "g",
-        "sugar"
-      ],
-      [
-        "Eggs",
-        3,
-        "pc",
-        "egg"
-      ],
-      [
-        "Blueberry juice",
-        350,
-        "ml",
-        "liquid"
-      ],
-      [
-        "Gelatin powder (Melatin Blue)",
-        1,
-        "sachet",
-        "other"
-      ],
-      [
-        "Fresh blueberries — topping",
-        100,
-        "g",
-        "fruit"
-      ]
-    ],
-    "steps": [
-      "Heat oven to 180°C. Crush biscuits, mix with brown sugar and melted butter, press into base and sides of a 24–26 cm springform. Bake 5 min.",
-      "Beat cream cheese, lemon juice, blueberry jam, sugar and eggs until smooth.",
-      "Pour over the pre-baked base and bake 25 min. Cool at room temperature then refrigerate several hours.",
-      "Bring blueberry juice to a boil with gelatin powder as directed, add food colouring if desired. Pour jelly over the cold cake and decorate with fresh blueberries."
     ]
   },
   {
@@ -512,6 +428,24 @@
         "sugar"
       ],
       [
+        "Philadelphia cream cheese",
+        200,
+        "g",
+        "dairy"
+      ],
+      [
+        "Icing sugar",
+        90,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla extract",
+        10,
+        "ml",
+        "liquid"
+      ],
+      [
         "Eggs",
         2,
         "pc",
@@ -546,24 +480,6 @@
         12,
         "pc",
         "other"
-      ],
-      [
-        "Philadelphia cream cheese",
-        200,
-        "g",
-        "dairy"
-      ],
-      [
-        "Icing sugar",
-        90,
-        "g",
-        "sugar"
-      ],
-      [
-        "Vanilla extract",
-        10,
-        "ml",
-        "liquid"
       ],
       [
         "Oreo biscuits — topping",
@@ -676,6 +592,18 @@
         "fat"
       ],
       [
+        "Gelatin leaves",
+        3,
+        "pc",
+        "other"
+      ],
+      [
+        "Boiling water — gelatin",
+        60,
+        "ml",
+        "liquid"
+      ],
+      [
         "Philadelphia cream cheese",
         500,
         "g",
@@ -692,18 +620,6 @@
         15,
         "g",
         "cocoa"
-      ],
-      [
-        "Gelatin leaves",
-        3,
-        "pc",
-        "other"
-      ],
-      [
-        "Boiling water — gelatin",
-        60,
-        "ml",
-        "liquid"
       ],
       [
         "Toblerone — melted",
@@ -758,6 +674,24 @@
         "fat"
       ],
       [
+        "Gelatin leaves",
+        3,
+        "pc",
+        "other"
+      ],
+      [
+        "Boiling water — gelatin",
+        60,
+        "ml",
+        "liquid"
+      ],
+      [
+        "White Toblerone — melted",
+        200,
+        "g",
+        "chocolate"
+      ],
+      [
         "Philadelphia cream cheese",
         600,
         "g",
@@ -776,40 +710,22 @@
         "sugar"
       ],
       [
-        "White Toblerone — melted",
-        200,
-        "g",
-        "chocolate"
-      ],
-      [
-        "Gelatin leaves",
-        3,
-        "pc",
-        "other"
-      ],
-      [
-        "Boiling water — gelatin",
-        60,
-        "ml",
-        "liquid"
-      ],
-      [
         "Vanilla sugar",
         10,
         "g",
         "sugar"
       ],
       [
-        "Daim — roughly crushed",
-        150,
-        "g",
-        "other"
-      ],
-      [
         "Double cream",
         250,
         "ml",
         "liquid"
+      ],
+      [
+        "Daim — roughly crushed",
+        150,
+        "g",
+        "other"
       ]
     ],
     "steps": [
@@ -872,6 +788,12 @@
       [
         "Biscoff spread — topping",
         30,
+        "g",
+        "other"
+      ],
+      [
+        "Biscuit crumbs for topping",
+        null,
         "g",
         "other"
       ]
@@ -1026,6 +948,12 @@
         30,
         "g",
         "other"
+      ],
+      [
+        "Biscuit crumbs for topping",
+        null,
+        "g",
+        "other"
       ]
     ],
     "steps": [
@@ -1097,6 +1025,12 @@
         "liquid"
       ],
       [
+        "Cocoa powder for dusting",
+        null,
+        "g",
+        "other"
+      ],
+      [
         "Coffee beans — garnish",
         12,
         "pc",
@@ -1118,12 +1052,6 @@
     "prep": "35 min",
     "ingredients": [
       [
-        "Pecans",
-        200,
-        "g",
-        "other"
-      ],
-      [
         "Brown sugar — caramel",
         50,
         "g",
@@ -1136,6 +1064,12 @@
         "fat"
       ],
       [
+        "Pecans",
+        200,
+        "g",
+        "other"
+      ],
+      [
         "McVities oat biscuits",
         200,
         "g",
@@ -1146,6 +1080,18 @@
         70,
         "g",
         "fat"
+      ],
+      [
+        "Gelatin leaves",
+        4,
+        "pc",
+        "other"
+      ],
+      [
+        "Hot strong coffee — gelatin",
+        50,
+        "ml",
+        "liquid"
       ],
       [
         "Cream cheese",
@@ -1164,18 +1110,6 @@
         90,
         "g",
         "sugar"
-      ],
-      [
-        "Gelatin leaves",
-        4,
-        "pc",
-        "other"
-      ],
-      [
-        "Hot strong coffee — gelatin",
-        50,
-        "ml",
-        "liquid"
       ],
       [
         "Vanilla pod seeds",
@@ -1335,6 +1269,12 @@
         "other"
       ],
       [
+        "White Toblerone — melted",
+        200,
+        "g",
+        "chocolate"
+      ],
+      [
         "Cream cheese",
         500,
         "g",
@@ -1351,12 +1291,6 @@
         1,
         "pc",
         "other"
-      ],
-      [
-        "White Toblerone — melted",
-        200,
-        "g",
-        "chocolate"
       ],
       [
         "Double cream",
@@ -1393,6 +1327,18 @@
         "fat"
       ],
       [
+        "Gelatin leaves",
+        3,
+        "pc",
+        "other"
+      ],
+      [
+        "Boiling water — gelatin",
+        60,
+        "ml",
+        "liquid"
+      ],
+      [
         "Cream cheese",
         500,
         "g",
@@ -1411,40 +1357,28 @@
         "sugar"
       ],
       [
-        "White Toblerone — melted",
-        200,
-        "g",
-        "chocolate"
-      ],
-      [
-        "Gelatin leaves",
-        3,
-        "pc",
-        "other"
-      ],
-      [
-        "Boiling water — gelatin",
-        60,
-        "ml",
-        "liquid"
-      ],
-      [
         "Vanilla sugar",
         10,
         "g",
         "sugar"
       ],
       [
-        "Marabou Daim bites — roughly chopped",
-        150,
+        "White Toblerone — melted",
+        200,
         "g",
-        "other"
+        "chocolate"
       ],
       [
         "Double cream",
         250,
         "ml",
         "liquid"
+      ],
+      [
+        "Marabou Daim bites — roughly chopped",
+        150,
+        "g",
+        "other"
       ]
     ],
     "steps": [
@@ -1575,7 +1509,7 @@
     "steps": [
       "Bake brownie base: melt butter and chocolate, mix in sugar, vanilla, egg and flour. Bake at 160°C for 25 min. Cool.",
       "Dissolve soaked gelatin in 40 ml boiling water. Beat cream cheese, sugar, icing sugar and vanilla seeds. Add gelatin and whipped cream, then swirl in cherry jam. Pour over brownie. Chill.",
-      "Beat egg whites with salt and icing sugar to stiff peaks. Pipe over the cheesecake and torch until golden."
+      "Beat egg whites with salt, icing sugar and meringue vanilla to stiff peaks. Pipe over the cheesecake and torch until golden."
     ]
   },
   {
@@ -1807,6 +1741,18 @@
         "fat"
       ],
       [
+        "Gelatin leaves",
+        3,
+        "pc",
+        "other"
+      ],
+      [
+        "Boiling water — gelatin",
+        50,
+        "ml",
+        "liquid"
+      ],
+      [
         "Philadelphia cream cheese",
         400,
         "g",
@@ -1823,18 +1769,6 @@
         50,
         "g",
         "sugar"
-      ],
-      [
-        "Gelatin leaves",
-        3,
-        "pc",
-        "other"
-      ],
-      [
-        "Boiling water — gelatin",
-        50,
-        "ml",
-        "liquid"
       ],
       [
         "Vanilla sugar",
@@ -1865,6 +1799,12 @@
         200,
         "g",
         "fruit"
+      ],
+      [
+        "Icing sugar for dusting",
+        null,
+        "g",
+        "other"
       ]
     ],
     "steps": [
@@ -2083,24 +2023,6 @@
         "chocolate"
       ],
       [
-        "Small balloons",
-        10,
-        "pc",
-        "other"
-      ],
-      [
-        "Lu Digestive biscuits — crushed",
-        200,
-        "g",
-        "other"
-      ],
-      [
-        "Butter — base",
-        40,
-        "g",
-        "fat"
-      ],
-      [
         "Philadelphia cream cheese",
         300,
         "g",
@@ -2119,16 +2041,122 @@
         "sugar"
       ],
       [
+        "Fresh strawberries — puréed",
+        400,
+        "g",
+        "fruit"
+      ],
+      [
         "Double cream",
         500,
         "ml",
         "liquid"
       ],
       [
-        "Fresh strawberries — puréed",
-        400,
+        "Lu Digestive biscuits — crushed",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        40,
+        "g",
+        "fat"
+      ],
+      [
+        "Fresh strawberries — garnish",
+        200,
         "g",
         "fruit"
+      ],
+      [
+        "Whipping cream for garnish",
+        null,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Make chocolate bowls: inflate balloons, dip bases into melted chocolate, chill until firm, then pop balloons.",
+      "Beat cream cheese with icing sugar and vanilla sugar. Add puréed strawberries, then fold in whipped cream.",
+      "Mix crushed biscuits with melted butter and press into the chocolate bowl bases.",
+      "Fill bowls with the cheesecake mixture and garnish with fresh strawberries and whipped cream."
+    ]
+  },
+  {
+    "id": "strawberry-cream-cheese-cups",
+    "category": "Cheesecake",
+    "title": "Strawberry Cream Cheese Cups",
+    "desc": "Layered cream cheese dessert with a biscuit base, strawberry glaze and fresh berries.",
+    "yield": "8–10 glasses",
+    "prep": "30 min",
+    "ingredients": [
+      [
+        "Strawberries — puréed",
+        250,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Sugar — glaze",
+        250,
+        "g",
+        "sugar"
+      ],
+      [
+        "Cornflour",
+        30,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        200,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Red food colouring (optional)",
+        null,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        500,
+        "ml",
+        "liquid"
+      ],
+      [
+        "Cream cheese",
+        300,
+        "g",
+        "dairy"
+      ],
+      [
+        "Icing sugar",
+        150,
+        "g",
+        "sugar"
+      ],
+      [
+        "Vanilla sugar",
+        10,
+        "g",
+        "sugar"
+      ],
+      [
+        "Lu Digestive biscuits — crushed",
+        200,
+        "g",
+        "other"
+      ],
+      [
+        "Butter — base",
+        40,
+        "g",
+        "fat"
       ],
       [
         "Fresh strawberries — garnish",
@@ -2138,10 +2166,9 @@
       ]
     ],
     "steps": [
-      "Make chocolate bowls: inflate balloons, dip bases into melted chocolate, chill until firm, then pop balloons.",
-      "Beat cream cheese with icing sugar and vanilla sugar. Add puréed strawberries, then fold in whipped cream.",
-      "Mix crushed biscuits with melted butter and press into the chocolate bowl bases.",
-      "Fill bowls with the cheesecake mixture and garnish with fresh strawberries and whipped cream."
+      "Cook glaze: heat puréed strawberries, sugar, cornflour and water 5–8 min until thick. Add red food colouring if desired. Cool.",
+      "Whip cream. Beat cream cheese, icing sugar and vanilla sugar, fold in whipped cream.",
+      "Mix crushed biscuits with melted base butter. Layer in glasses: biscuit mixture → cream cheese mixture → sliced fresh strawberries → strawberry glaze."
     ]
   }
 ]

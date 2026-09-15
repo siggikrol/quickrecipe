@@ -28,6 +28,12 @@
         12
       ],
       [
+        "Salt",
+        2,
+        "tsp",
+        ""
+      ],
+      [
         "Large carrots",
         3,
         "pc",
@@ -82,12 +88,6 @@
         ""
       ],
       [
-        "Salt",
-        2,
-        "tsp",
-        ""
-      ],
-      [
         "Egg noodles",
         null,
         "",
@@ -124,6 +124,32 @@
         ""
       ],
       [
+        "Water",
+        2000,
+        "ml",
+        ""
+      ],
+      [
+        "Salt and pepper",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Peppercorns",
+        5,
+        "pc",
+        "",
+        6
+      ],
+      [
+        "Bay leaves",
+        1,
+        "pc",
+        "",
+        2
+      ],
+      [
         "Carrots",
         2,
         "pc",
@@ -155,26 +181,6 @@
         ""
       ],
       [
-        "Peppercorns",
-        5,
-        "pc",
-        "",
-        6
-      ],
-      [
-        "Bay leaves",
-        1,
-        "pc",
-        "",
-        2
-      ],
-      [
-        "Water",
-        2000,
-        "ml",
-        ""
-      ],
-      [
         "Tomato paste",
         2,
         "tbsp",
@@ -190,12 +196,6 @@
         "Cooked egg noodles or rice",
         1,
         "cup",
-        ""
-      ],
-      [
-        "Salt and pepper",
-        null,
-        "",
         ""
       ],
       [
@@ -224,24 +224,6 @@
     "cook": "1 hr",
     "ingredients": [
       [
-        "Chicken or beef broth",
-        7,
-        "cup",
-        ""
-      ],
-      [
-        "Prepared fermented rye soup starter",
-        2,
-        "cup",
-        ""
-      ],
-      [
-        "Smoked bacon or smoked pork ribs",
-        450,
-        "g",
-        ""
-      ],
-      [
         "Potatoes",
         151,
         "g",
@@ -266,34 +248,15 @@
         ""
       ],
       [
-        "Raw white sausage",
+        "Chicken or beef broth",
+        7,
+        "cup",
+        ""
+      ],
+      [
+        "Smoked bacon or smoked pork ribs",
         450,
         "g",
-        ""
-      ],
-      [
-        "Smoked sausage",
-        151,
-        "g",
-        ""
-      ],
-      [
-        "Dried marjoram",
-        2,
-        "tsp",
-        ""
-      ],
-      [
-        "Garlic cloves",
-        2,
-        "pc",
-        "",
-        3
-      ],
-      [
-        "Salt and pepper",
-        null,
-        "",
         ""
       ],
       [
@@ -310,9 +273,46 @@
         5
       ],
       [
+        "Raw white sausage",
+        450,
+        "g",
+        ""
+      ],
+      [
+        "Smoked sausage",
+        151,
+        "g",
+        ""
+      ],
+      [
+        "Prepared fermented rye soup starter",
+        2,
+        "cup",
+        ""
+      ],
+      [
+        "Garlic cloves",
+        2,
+        "pc",
+        "",
+        3
+      ],
+      [
+        "Dried marjoram",
+        2,
+        "tsp",
+        ""
+      ],
+      [
         "Heavy cream",
         0.3333333333333333,
         "cup",
+        ""
+      ],
+      [
+        "Salt and pepper",
+        null,
+        "",
         ""
       ],
       [
@@ -450,12 +450,6 @@
         ""
       ],
       [
-        "White vinegar",
-        1,
-        "tbsp",
-        ""
-      ],
-      [
         "Garlic cloves, minced",
         2,
         "pc",
@@ -471,6 +465,12 @@
         "Dried marjoram",
         1,
         "tsp",
+        ""
+      ],
+      [
+        "White vinegar",
+        1,
+        "tbsp",
         ""
       ],
       [
@@ -639,12 +639,6 @@
         ""
       ],
       [
-        "Butter",
-        1,
-        "tbsp",
-        ""
-      ],
-      [
         "Carrots",
         2,
         "pc",
@@ -657,8 +651,20 @@
         ""
       ],
       [
+        "Butter",
+        1,
+        "tbsp",
+        ""
+      ],
+      [
         "Broth",
         2000,
+        "ml",
+        ""
+      ],
+      [
+        "Sour cream",
+        200,
         "ml",
         ""
       ],
@@ -666,12 +672,6 @@
         "Fresh dill",
         2,
         "tbsp",
-        ""
-      ],
-      [
-        "Sour cream",
-        200,
-        "ml",
         ""
       ],
       [
@@ -711,6 +711,30 @@
         ""
       ],
       [
+        "Water",
+        2000,
+        "ml",
+        ""
+      ],
+      [
+        "Onion",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Bay leaves",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Allspice berries",
+        3,
+        "pc",
+        ""
+      ],
+      [
         "Large carrot",
         1,
         "pc",
@@ -735,12 +759,6 @@
         ""
       ],
       [
-        "Water",
-        2000,
-        "ml",
-        ""
-      ],
-      [
         "Pearl barley",
         1,
         "cup",
@@ -749,24 +767,6 @@
       [
         "Medium potatoes",
         5,
-        "pc",
-        ""
-      ],
-      [
-        "Onion",
-        1,
-        "pc",
-        ""
-      ],
-      [
-        "Bay leaves",
-        2,
-        "pc",
-        ""
-      ],
-      [
-        "Allspice berries",
-        3,
         "pc",
         ""
       ],
@@ -813,27 +813,15 @@
         ""
       ],
       [
-        "Smoked bacon",
-        100,
-        "g",
-        ""
-      ],
-      [
-        "Sauerkraut",
-        400,
-        "g",
-        ""
-      ],
-      [
-        "Russet potatoes",
-        600,
-        "g",
-        ""
-      ],
-      [
         "Water",
         2000,
         "ml",
+        ""
+      ],
+      [
+        "Salt",
+        1.5,
+        "tsp",
         ""
       ],
       [
@@ -867,18 +855,6 @@
         ""
       ],
       [
-        "Salt",
-        1.5,
-        "tsp",
-        ""
-      ],
-      [
-        "Black pepper",
-        0.3333333333333333,
-        "tsp",
-        ""
-      ],
-      [
         "Bay leaf",
         1,
         "pc",
@@ -888,6 +864,18 @@
         "Allspice berry",
         1,
         "pc",
+        ""
+      ],
+      [
+        "Russet potatoes",
+        600,
+        "g",
+        ""
+      ],
+      [
+        "Sauerkraut",
+        400,
+        "g",
         ""
       ],
       [
@@ -903,6 +891,12 @@
         ""
       ],
       [
+        "Smoked bacon",
+        100,
+        "g",
+        ""
+      ],
+      [
         "Clarified butter",
         1,
         "tbsp",
@@ -912,6 +906,12 @@
         "Plain flour, optional",
         1,
         "tbsp",
+        ""
+      ],
+      [
+        "Black pepper",
+        0.3333333333333333,
+        "tsp",
         ""
       ],
       [
@@ -943,6 +943,18 @@
         "Split peas",
         2,
         "cup",
+        ""
+      ],
+      [
+        "Extra water, for soaking and cooking peas",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Salt and pepper",
+        null,
+        "",
         ""
       ],
       [
@@ -982,31 +994,6 @@
         ""
       ],
       [
-        "Onion",
-        1,
-        "pc",
-        ""
-      ],
-      [
-        "Oil",
-        2,
-        "tbsp",
-        ""
-      ],
-      [
-        "Garlic cloves",
-        2,
-        "pc",
-        ""
-      ],
-      [
-        "Dried marjoram",
-        1,
-        "tbsp",
-        "",
-        2
-      ],
-      [
         "Bay leaves",
         2,
         "pc",
@@ -1025,15 +1012,27 @@
         ""
       ],
       [
+        "Water, for broth",
+        2000,
+        "ml",
+        ""
+      ],
+      [
         "Russet potatoes",
         454,
         "g",
         ""
       ],
       [
-        "Salt and pepper",
-        null,
-        "",
+        "Onion",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Oil",
+        2,
+        "tbsp",
         ""
       ],
       [
@@ -1043,19 +1042,20 @@
         ""
       ],
       [
-        "Fresh parsley",
-        null,
+        "Garlic cloves",
+        2,
+        "pc",
+        ""
+      ],
+      [
+        "Dried marjoram",
+        1,
+        "tbsp",
         "",
-        ""
+        2
       ],
       [
-        "Water, for broth",
-        2000,
-        "ml",
-        ""
-      ],
-      [
-        "Extra water, for soaking and cooking peas",
+        "Fresh parsley",
         null,
         "",
         ""
@@ -1088,9 +1088,27 @@
         5
       ],
       [
+        "Water, to cover potatoes",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        ""
+      ],
+      [
         "White sausage",
         907,
         "g",
+        ""
+      ],
+      [
+        "Water, for sausage",
+        500,
+        "ml",
         ""
       ],
       [
@@ -1112,21 +1130,15 @@
         ""
       ],
       [
-        "Heavy cream",
-        0.3333333333333333,
-        "cup",
-        ""
-      ],
-      [
         "Dried marjoram",
         1,
         "tbsp",
         ""
       ],
       [
-        "Salt",
-        0.5,
-        "tsp",
+        "Heavy cream",
+        0.3333333333333333,
+        "cup",
         ""
       ],
       [
@@ -1136,31 +1148,7 @@
         ""
       ],
       [
-        "Smoked bacon pieces, optional",
-        null,
-        "",
-        ""
-      ],
-      [
         "Garlic, optional",
-        null,
-        "",
-        ""
-      ],
-      [
-        "Fresh parsley or dill",
-        null,
-        "",
-        ""
-      ],
-      [
-        "Water, for sausage",
-        500,
-        "ml",
-        ""
-      ],
-      [
-        "Water, to cover potatoes",
         null,
         "",
         ""
@@ -1172,7 +1160,19 @@
         ""
       ],
       [
+        "Fresh parsley or dill",
+        null,
+        "",
+        ""
+      ],
+      [
         "Hard-boiled eggs and bread, to serve",
+        null,
+        "",
+        ""
+      ],
+      [
+        "Smoked bacon pieces, optional",
         null,
         "",
         ""

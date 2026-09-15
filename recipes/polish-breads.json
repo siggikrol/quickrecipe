@@ -43,15 +43,15 @@
         ""
       ],
       [
-        "Plain flour, plus extra for dusting",
-        250,
-        "g",
-        ""
-      ],
-      [
         "Vodka, optional",
         1,
         "tsp",
+        ""
+      ],
+      [
+        "Plain flour, plus extra for dusting",
+        250,
+        "g",
         ""
       ],
       [
@@ -102,12 +102,6 @@
         ""
       ],
       [
-        "Melted butter",
-        0.3333333333333333,
-        "cup",
-        ""
-      ],
-      [
         "White sugar",
         5,
         "tbsp",
@@ -122,6 +116,12 @@
       [
         "Plain flour",
         3.75,
+        "cup",
+        ""
+      ],
+      [
+        "Melted butter",
+        0.3333333333333333,
         "cup",
         ""
       ],
@@ -271,7 +271,7 @@
         ""
       ],
       [
-        "Poppy seeds",
+        "Vegetable oil, for onions",
         2,
         "tbsp",
         ""
@@ -283,7 +283,7 @@
         ""
       ],
       [
-        "Vegetable oil, for onions",
+        "Poppy seeds",
         2,
         "tbsp",
         ""
@@ -313,6 +313,12 @@
         "Russet potatoes, peeled",
         454,
         "g",
+        ""
+      ],
+      [
+        "Water and salt, for boiling potatoes",
+        null,
+        "",
         ""
       ],
       [
@@ -350,12 +356,6 @@
         2,
         "tbsp",
         ""
-      ],
-      [
-        "Water and salt, for boiling potatoes",
-        null,
-        "",
-        ""
       ]
     ],
     "steps": [
@@ -384,12 +384,6 @@
         ""
       ],
       [
-        "Buttermilk or kefir",
-        1,
-        "cup",
-        ""
-      ],
-      [
         "Baking soda",
         1,
         "tsp",
@@ -399,6 +393,12 @@
         "Salt",
         0.5,
         "tsp",
+        ""
+      ],
+      [
+        "Buttermilk or kefir",
+        1,
+        "cup",
         ""
       ],
       [
@@ -425,27 +425,63 @@
     "desc": "Small yeast pastries filled with sauerkraut and mushrooms.",
     "ingredients": [
       [
-        "Sauerkraut, rinsed and drained",
-        3,
-        "cup",
-        ""
-      ],
-      [
         "Mushrooms, rehydrated and chopped",
         1.5,
         "cup",
         ""
       ],
       [
-        "Large onion",
+        "Mushroom soaking liquid, strained",
         1,
+        "cup",
+        ""
+      ],
+      [
+        "Warm milk, including yeast mixture",
+        1.5,
+        "cup",
+        ""
+      ],
+      [
+        "Plain flour, including yeast mixture",
+        4.5,
+        "cup",
+        ""
+      ],
+      [
+        "Fresh yeast",
+        25,
+        "g",
+        ""
+      ],
+      [
+        "Sugar, for yeast",
+        1,
+        "tsp",
+        ""
+      ],
+      [
+        "Eggs",
+        3,
         "pc",
         ""
       ],
       [
-        "Oil",
-        2,
-        "tbsp",
+        "Butter",
+        0.25,
+        "cup",
+        ""
+      ],
+      [
+        "Salt, for dough",
+        0.5,
+        "tsp",
+        ""
+      ],
+      [
+        "Sauerkraut, rinsed and drained",
+        3,
+        "cup",
         ""
       ],
       [
@@ -467,51 +503,21 @@
         ""
       ],
       [
-        "Salt and pepper",
-        null,
-        "",
-        ""
-      ],
-      [
-        "Plain flour, including yeast mixture",
-        4.5,
-        "cup",
-        ""
-      ],
-      [
-        "Warm milk, including yeast mixture",
-        1.5,
-        "cup",
-        ""
-      ],
-      [
-        "Eggs",
-        3,
+        "Large onion",
+        1,
         "pc",
         ""
       ],
       [
-        "Butter",
-        0.25,
-        "cup",
+        "Oil",
+        2,
+        "tbsp",
         ""
       ],
       [
-        "Fresh yeast",
-        25,
-        "g",
-        ""
-      ],
-      [
-        "Sugar, for yeast",
-        1,
-        "tsp",
-        ""
-      ],
-      [
-        "Salt, for dough",
-        0.5,
-        "tsp",
+        "Salt and pepper",
+        null,
+        "",
         ""
       ],
       [
@@ -530,12 +536,6 @@
         "Sesame seeds, optional",
         null,
         "",
-        ""
-      ],
-      [
-        "Mushroom soaking liquid, strained",
-        1,
-        "cup",
         ""
       ]
     ],
@@ -775,15 +775,15 @@
         ""
       ],
       [
-        "Active dry yeast",
-        2.25,
-        "tsp",
-        ""
-      ],
-      [
         "White sugar",
         1,
         "pinch",
+        ""
+      ],
+      [
+        "Active dry yeast",
+        2.25,
+        "tsp",
         ""
       ],
       [
@@ -805,15 +805,9 @@
         ""
       ],
       [
-        "Sesame and poppy seeds",
+        "Water, for boiling",
         null,
         "",
-        ""
-      ],
-      [
-        "Large egg",
-        1,
-        "pc",
         ""
       ],
       [
@@ -823,7 +817,13 @@
         ""
       ],
       [
-        "Water, for boiling",
+        "Large egg",
+        1,
+        "pc",
+        ""
+      ],
+      [
+        "Sesame and poppy seeds",
         null,
         "",
         ""
@@ -856,15 +856,15 @@
         ""
       ],
       [
-        "Mushrooms",
-        397,
-        "g",
-        ""
-      ],
-      [
         "Large onion",
         1,
         "pc",
+        ""
+      ],
+      [
+        "Mushrooms",
+        397,
+        "g",
         ""
       ],
       [
@@ -874,15 +874,15 @@
         ""
       ],
       [
-        "Gouda cheese",
-        227,
-        "g",
-        ""
-      ],
-      [
         "Salt and pepper",
         null,
         "",
+        ""
+      ],
+      [
+        "Gouda cheese",
+        227,
+        "g",
         ""
       ],
       [

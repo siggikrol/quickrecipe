@@ -82,7 +82,7 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   ];
   for (const [multiplier, amounts] of ryeAmounts) {
     document.querySelector(`[data-scale="${multiplier}"]`).click();
-    assert.deepEqual([...document.querySelectorAll('.ingredient .amount')].map(el => el.textContent), amounts);
+    assert.deepEqual([...document.querySelectorAll('.ingredient .amount')].map(el => el.textContent), [...amounts, 'As needed']);
   }
   document.querySelector('[data-scale="1"]').click();
   assert.equal(dom.window.amountText(1500, 'g'), '1500 g');
@@ -91,12 +91,12 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   assert.deepEqual([...document.querySelectorAll('[data-cat]')].map(b => b.dataset.cat).sort(), ['All', 'Cake', 'Cheesecake', 'Dessert', 'Skyr Cake', 'Meringue', 'Brownies', 'Cookies'].sort());
   document.querySelector('[data-cat="Cookies"]').click();
   const cookieRecipes = JSON.parse(recipes).filter(r => r.category === 'Cookies');
-  assert.equal(cookieRecipes.length, 88);
+  assert.equal(cookieRecipes.length, 81);
   assert.equal(document.querySelectorAll('.card').length, cookieRecipes.length);
   const cookiesById = new Map(cookieRecipes.map(r => [r.id, r]));
   assert.equal(cookiesById.get('chocolate-pistachio-biscotti').ingredients[0][1], 130);
   assert.equal(cookiesById.get('spiced-white-chocolate-cookies').ingredients[0][1], 130);
-  assert.equal(cookiesById.get('classic-sarah-bernhardt-cookies').ingredients[0][1], 4);
+  assert.equal(cookiesById.get('classic-sarah-bernhardt-cookies').ingredients.find(i => i[0] === 'Egg whites')[1], 4);
   assert.ok(cookieRecipes.every(r => r.ingredients.every(i => i[1] === null || (i[1] > 0 && i[1] < 10000))));
   assert.ok(cookiesById.has('coffee-sarah-bernhardt-cookies') && cookiesById.has('raspberry-sarah-bernhardt-cookies'));
 
@@ -301,11 +301,11 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   }
 
   const imported = JSON.parse(recipes).filter(r => r.category === 'Meringue');
-  assert.equal(imported.length, 32);
-  assert.equal(new Set(imported.map(r => r.title)).size, 32);
+  assert.equal(imported.length, 29);
+  assert.equal(new Set(imported.map(r => r.title)).size, 29);
   document.querySelector('[data-browse="desserts"]').click();
   document.querySelector('[data-cat="Meringue"]').click();
-  assert.equal(document.querySelectorAll('.card').length, 32);
+  assert.equal(document.querySelectorAll('.card').length, 29);
   for (const recipe of imported) {
     assert.equal(recipe.section, 'desserts');
     for (const ingredient of recipe.ingredients) {
@@ -334,11 +334,11 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   assert.ok(document.getElementById('detail').textContent.includes('As needed'));
 
   const brownies = JSON.parse(recipes).filter(r => r.category === 'Brownies');
-  assert.equal(brownies.length, 24);
-  assert.equal(new Set(brownies.map(r => r.title)).size, 24);
+  assert.equal(brownies.length, 18);
+  assert.equal(new Set(brownies.map(r => r.title)).size, 18);
   document.querySelector('[data-browse="desserts"]').click();
   document.querySelector('[data-cat="Brownies"]').click();
-  assert.equal(document.querySelectorAll('.card').length, 24);
+  assert.equal(document.querySelectorAll('.card').length, 18);
   for (const recipe of brownies) {
     assert.equal(recipe.section, 'desserts');
     assert.ok(recipe.bake);
@@ -362,8 +362,7 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   document.querySelector('[data-id="brownie-mint-meadow-chocolate-squares"]').click();
   document.querySelector('[data-scale="2"]').click();
   assert.ok(document.getElementById('detail').textContent.includes('2 tbsp – 4 tbsp'));
-  const mixRecipe = brownies.find(r => r.id === 'brownie-sweet-and-salty-cracker-brownies');
-  assert.ok(mixRecipe.ingredients.some(i => i[0].includes('additional') && i[1] === 0.5 && i[2] === 'cup'));
+  assert.ok(!brownies.some(r => r.id === 'brownie-sweet-and-salty-cracker-brownies'));
   const staged = brownies.find(r => r.id === 'brownie-golden-pecan-caramel-brownie-squares');
   assert.ok(staged.steps.some(step => step.includes('20 minutes')));
   assert.ok(staged.steps.some(step => step.includes('10–12 minutes')));
@@ -493,18 +492,22 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   const ryeBread = JSON.parse(recipes).find(r => r.id === 'icelandic-rye-bread');
   const outdatedRye = { ...ryeBread, id: 'old-rye-bread', compactMetricUnits: false,
     ingredients: ryeBread.ingredients.map(i => /flour/i.test(i[0]) ? [i[0], 10, 'dl', i[3]] : i) };
-  const legacyRecipe = { ...currentRecipe, id: 'legacy-recipe-id', obsoleteMetadata: 'old value' };
+  const legacyRecipe = { ...currentRecipe, id: 'legacy-recipe-id', ingredients: [...currentRecipe.ingredients].reverse(), obsoleteMetadata: 'old value' };
+  const retiredRecipe = { ...currentRecipe, id: recipeIndex.retiredIds[0], title: 'Retired recipe' };
+  const renamedEntry = Object.entries(recipeIndex.renamedIds)[0];
+  const renamedRecipe = { ...JSON.parse(recipes).find(r => r.id === renamedEntry[1]), id: renamedEntry[0], title: 'Previous title' };
   const customRecipe = { ...currentRecipe, id: 'personal-recipe', title: 'My personal recipe' };
   const migrated = new JSDOM(html, {
     runScripts: 'dangerously', url: 'http://localhost/',
     beforeParse(w) {
       w.fetch = recipeResponse;
       w.localStorage.setItem('quickrecipe.ingredientOrder', 'quantity');
+      w.localStorage.setItem('quickrecipe.shopping.v1', JSON.stringify({ [renamedRecipe.id]: {title: renamedRecipe.title, items:[{name:'Cream cheese',amount:'1 tub',bought:true}]} }));
       w.matchMedia = () => ({ matches: false, addEventListener() {} });
-      w.localStorage.setItem('quickrecipe.recipes.v1', JSON.stringify([legacyRecipe, currentRecipe, customRecipe, outdatedRye, ryeBread]));
-      w.localStorage.setItem('quickrecipe.favs.v1', JSON.stringify([legacyRecipe.id, outdatedRye.id]));
-      w.localStorage.setItem('quickrecipe.hydration.v1', JSON.stringify({ [legacyRecipe.id]: 75 }));
-      w.localStorage.setItem('quickrecipe.ui.v1', JSON.stringify({ selectedId: outdatedRye.id, category: 'All' }));
+      w.localStorage.setItem('quickrecipe.recipes.v1', JSON.stringify([legacyRecipe, currentRecipe, customRecipe, outdatedRye, ryeBread, retiredRecipe, renamedRecipe]));
+      w.localStorage.setItem('quickrecipe.favs.v1', JSON.stringify([legacyRecipe.id, outdatedRye.id, retiredRecipe.id, renamedRecipe.id]));
+      w.localStorage.setItem('quickrecipe.hydration.v1', JSON.stringify({ [legacyRecipe.id]: 75, [retiredRecipe.id]: 60 }));
+      w.localStorage.setItem('quickrecipe.ui.v1', JSON.stringify({ selectedId: renamedRecipe.id, category: 'All' }));
     },
   });
   const migrationScript = migrated.window.document.createElement('script');
@@ -517,16 +520,21 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   assert.equal(migratedRecipes.filter(r => r.id === currentRecipe.id).length, 1);
   assert.ok(!migratedRecipes.some(r => r.id === legacyRecipe.id || r.obsoleteMetadata));
   assert.ok(migratedRecipes.some(r => r.id === customRecipe.id));
-  assert.deepEqual(JSON.parse(migratedStorage.getItem('quickrecipe.favs.v1')), [currentRecipe.id, ryeBread.id]);
+  assert.deepEqual(JSON.parse(migratedStorage.getItem('quickrecipe.favs.v1')), [currentRecipe.id, ryeBread.id, renamedEntry[1]]);
   assert.equal(migratedRecipes.filter(r => r.title === ryeBread.title).length, 1);
   assert.deepEqual(migratedRecipes.find(r => r.id === ryeBread.id), ryeBread);
   assert.equal(migrated.window.document.querySelector('.ingredient').firstElementChild.className, 'amount');
-  assert.equal(JSON.parse(migratedStorage.getItem('quickrecipe.ui.v1')).selectedId, ryeBread.id);
+  assert.equal(JSON.parse(migratedStorage.getItem('quickrecipe.ui.v1')).selectedId, renamedEntry[1]);
   assert.deepEqual(JSON.parse(migratedStorage.getItem('quickrecipe.hydration.v1')), { [currentRecipe.id]: 75 });
+  assert.ok(!migratedRecipes.some(r => recipeIndex.retiredIds.includes(r.id)));
+  const savedLists = JSON.parse(migratedStorage.getItem('quickrecipe.shopping.v1'));
+  assert.ok(!savedLists[renamedEntry[0]]);
+  assert.equal(savedLists[renamedEntry[1]].title, migratedRecipes.find(r => r.id === renamedEntry[1]).title);
+  assert.deepEqual(savedLists[renamedEntry[1]].items, [{name:'Cream cheese',amount:'1 tub',bought:true}]);
   migrated.window.close();
 
   // Failed category refreshes keep the complete previously saved collection.
-  const stored = [JSON.parse(recipes).find(r => r.category === 'Cheesecake'), { ...JSON.parse(recipes)[0], id: 'my-custom-recipe', title: 'My custom recipe' }];
+  const stored = [retiredRecipe, JSON.parse(recipes).find(r => r.category === 'Cheesecake'), { ...JSON.parse(recipes)[0], id: 'my-custom-recipe', title: 'My custom recipe' }];
   const failed = new JSDOM(html, {
     runScripts: 'dangerously', url: 'http://localhost/',
     beforeParse(w) {

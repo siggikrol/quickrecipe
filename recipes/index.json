@@ -11,5 +11,27 @@
     "brownies.json",
     "polish-soups.json",
     "polish-breads.json"
-  ]
+  ],
+  "retiredIds": [
+    "cookie-smakokur-med-karamellu",
+    "cookie-heit-sukkuladikaka-med-is",
+    "cookie-smakokudeig-i-ponnu-peppermint",
+    "cookie-smakokudeig-i-ponnu-licorice",
+    "cookie-undursamlegar-sukkuladibitakokur",
+    "cookie-hvitsukkuladikokur-med-macadamia-hnetum",
+    "vanilla-pudding-candy-cookies",
+    "meringue-tiny-caramel-nut-nests",
+    "meringue-mango-sunshine-meringue-bowl",
+    "meringue-raspberry-liquorice-meringue-wreath",
+    "brownie-ganache-topped-caramel-treasure-bars",
+    "brownie-sweet-and-salty-cracker-brownies",
+    "brownie-spring-bunny-brownie-celebration-cake",
+    "brownie-evergreen-frosted-brownie-cake",
+    "brownie-liquorice-fudge-brownies-with-vanilla-cream",
+    "brownie-berry-velvet-sherry-cream-brownie",
+    "wild-blueberry-glazed-cheesecake"
+  ],
+  "renamedIds": {
+    "strawberry-skyr-cocktail-cups": "strawberry-cream-cheese-cups"
+  }
 }

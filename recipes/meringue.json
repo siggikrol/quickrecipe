@@ -40,19 +40,19 @@
         ""
       ],
       [
-        "Whipping cream",
-        null,
-        "as needed",
-        ""
-      ],
-      [
-        "Icing sugar",
-        null,
-        "as needed",
-        ""
-      ],
-      [
         "Food colouring (optional)",
+        null,
+        "as needed",
+        ""
+      ],
+      [
+        "Whipping cream for covering the meringue",
+        null,
+        "as needed",
+        ""
+      ],
+      [
+        "Icing sugar, to taste",
         null,
         "as needed",
         ""
@@ -83,9 +83,9 @@
       ]
     ],
     "steps": [
-      "Whip whites and sugar to stiff peaks. Reserve a little for coloured piped decorations; fold baking powder, cereal and almonds into the rest.",
+      "Whip whites and sugar to stiff peaks. Reserve a little for coloured piped decorations; fold baking powder, cereal and almonds into the rest. Tint the reserved meringue with optional food colouring.",
       "Spread over a reversed number outline on parchment, roughly A3-sized. Pipe decorations alongside. Bake at 120°C fan for 90 minutes; cool in the switched-off oven for 1 hour.",
-      "Whip cream with icing sugar to taste. Pipe onto the cooled base and arrange the decorations, berries and optional macarons or edible flowers."
+      "Whip cream with icing sugar to taste. Pipe onto the cooled base and arrange the decorations, berries and optional macarons or edible flowers. Add optional sprinkles."
     ],
     "ingredientSections": [
       [
@@ -93,7 +93,7 @@
         "Meringue"
       ],
       [
-        5,
+        6,
         "Decoration"
       ]
     ],
@@ -119,18 +119,6 @@
     "bake": "2 hr 30 min",
     "ferment": "Cool, then chill 24 hr",
     "ingredients": [
-      [
-        "Chocolate-coated caramel almonds with sea salt",
-        100,
-        "g",
-        ""
-      ],
-      [
-        "Dark chocolate, melted and cooled",
-        130,
-        "g",
-        ""
-      ],
       [
         "Egg whites",
         6,
@@ -159,6 +147,18 @@
         "Almond extract",
         0.5,
         "tsp",
+        ""
+      ],
+      [
+        "Chocolate-coated caramel almonds with sea salt",
+        100,
+        "g",
+        ""
+      ],
+      [
+        "Dark chocolate, melted and cooled",
+        130,
+        "g",
         ""
       ],
       [
@@ -236,15 +236,15 @@
         ""
       ],
       [
-        "Whipping cream",
-        600,
-        "ml",
-        ""
-      ],
-      [
         "Dark chocolate",
         100,
         "g",
+        ""
+      ],
+      [
+        "Whipping cream",
+        600,
+        "ml",
         ""
       ]
     ],
@@ -497,21 +497,33 @@
         ""
       ],
       [
-        "Dark chocolate, melted",
-        200,
-        "g",
-        ""
-      ],
-      [
         "Sugar",
         1,
         "cup",
         ""
       ],
       [
+        "Eggs",
+        2,
+        "pc",
+        ""
+      ],
+      [
         "Vanilla extract",
         2,
         "tsp",
+        ""
+      ],
+      [
+        "Dark chocolate, melted",
+        200,
+        "g",
+        ""
+      ],
+      [
+        "Warm water",
+        2,
+        "tbsp",
         ""
       ],
       [
@@ -523,18 +535,6 @@
       [
         "Cocoa powder",
         1,
-        "tbsp",
-        ""
-      ],
-      [
-        "Eggs",
-        2,
-        "pc",
-        ""
-      ],
-      [
-        "Warm water",
-        2,
         "tbsp",
         ""
       ],
@@ -658,12 +658,6 @@
         ""
       ],
       [
-        "Dark chocolate",
-        270,
-        "g",
-        ""
-      ],
-      [
         "Egg yolks",
         6,
         "pc",
@@ -679,6 +673,12 @@
         "Whipping cream",
         400,
         "ml",
+        ""
+      ],
+      [
+        "Dark chocolate",
+        270,
+        "g",
         ""
       ],
       [
@@ -1010,88 +1010,6 @@
     "yield": "12–15 nests"
   },
   {
-    "id": "meringue-tiny-caramel-nut-nests",
-    "category": "Meringue",
-    "section": "desserts",
-    "title": "Tiny Caramel Nut Nests",
-    "desc": "Bite-size brown sugar nests with caramel chocolate and nuts.",
-    "tempC": 110,
-    "bake": "50 min",
-    "ferment": "Cool completely",
-    "ingredients": [
-      [
-        "Egg whites",
-        4,
-        "pc",
-        ""
-      ],
-      [
-        "Brown sugar, measured by volume",
-        400,
-        "ml",
-        ""
-      ],
-      [
-        "Caramel-filled milk chocolates",
-        1,
-        "roll (size unspecified)",
-        ""
-      ],
-      [
-        "Whipping cream",
-        3,
-        "tbsp",
-        ""
-      ],
-      [
-        "Whipping cream",
-        300,
-        "ml",
-        ""
-      ],
-      [
-        "Chopped nuts",
-        null,
-        "as needed",
-        ""
-      ]
-    ],
-    "steps": [
-      "Beat whites with sugar until stiff. Pipe 4–5 cm nests, hollow the centres and bake at 110°C for 50 minutes. Cool.",
-      "Melt the chocolates with cream until smooth; let cool slightly.",
-      "Fill nests with whipped cream, drizzle with sauce and sprinkle with chopped nuts."
-    ],
-    "ingredientSections": [
-      [
-        0,
-        "Meringue"
-      ],
-      [
-        2,
-        "Sauce"
-      ],
-      [
-        4,
-        "Topping"
-      ]
-    ],
-    "stepSections": [
-      [
-        0,
-        "Meringue"
-      ],
-      [
-        1,
-        "Sauce"
-      ],
-      [
-        2,
-        "Topping"
-      ]
-    ],
-    "yield": "35–40 nests"
-  },
-  {
     "id": "meringue-cherry-coconut-cloud-bites",
     "category": "Meringue",
     "section": "desserts",
@@ -1235,9 +1153,9 @@
         ""
       ],
       [
-        "Coffee-flavoured liquorice candies",
-        0.5,
-        "container (size unspecified)",
+        "Coffee-flavoured liquorice candies for topping",
+        null,
+        "g",
         ""
       ]
     ],
@@ -1299,7 +1217,7 @@
         ""
       ],
       [
-        "Whipping cream",
+        "Whipping cream for filling",
         null,
         "as needed",
         ""
@@ -1499,12 +1417,6 @@
         ""
       ],
       [
-        "Chocolate-filled peppermint hard candies",
-        25,
-        "pc",
-        ""
-      ],
-      [
         "Whipping cream",
         600,
         "ml",
@@ -1514,6 +1426,12 @@
         "Raspberries, mashed",
         125,
         "g",
+        ""
+      ],
+      [
+        "Chocolate-filled peppermint hard candies",
+        25,
+        "pc",
         ""
       ],
       [
@@ -1724,98 +1642,6 @@
       ]
     ],
     "yield": "16–18 nests"
-  },
-  {
-    "id": "meringue-mango-sunshine-meringue-bowl",
-    "category": "Meringue",
-    "section": "desserts",
-    "title": "Mango Sunshine Meringue Bowl",
-    "desc": "A crisp meringue bowl filled with vanilla cream and tropical fruit.",
-    "tempC": 110,
-    "bake": "90 min",
-    "ferment": "Cool completely",
-    "ingredients": [
-      [
-        "Egg whites",
-        6,
-        "pc",
-        ""
-      ],
-      [
-        "Sugar",
-        350,
-        "g",
-        ""
-      ],
-      [
-        "Potato starch",
-        1,
-        "tsp",
-        ""
-      ],
-      [
-        "White wine vinegar",
-        2,
-        "tsp",
-        ""
-      ],
-      [
-        "Whipping cream",
-        500,
-        "ml",
-        ""
-      ],
-      [
-        "Vanilla pod, seeds",
-        1,
-        "pc",
-        ""
-      ],
-      [
-        "Mango and passion fruit jam",
-        0.5,
-        "jar (size unspecified)",
-        ""
-      ],
-      [
-        "Passion fruit",
-        2,
-        "pc",
-        "",
-        3
-      ],
-      [
-        "Edible flowers (optional)",
-        null,
-        "as needed",
-        ""
-      ]
-    ],
-    "steps": [
-      "Whip whites on medium speed, gradually adding sugar until dissolved. Mix starch with vinegar and briefly beat in. Shape a tall-sided 20 cm bowl on parchment. Bake at 110°C for 90 minutes; cool in the switched-off oven.",
-      "Whip cream with vanilla seeds and fold in jam. Fill the shell, then top with passion fruit pulp and optional edible flowers."
-    ],
-    "ingredientSections": [
-      [
-        0,
-        "Meringue"
-      ],
-      [
-        4,
-        "Filling & topping"
-      ]
-    ],
-    "stepSections": [
-      [
-        0,
-        "Meringue"
-      ],
-      [
-        1,
-        "Filling & topping"
-      ]
-    ],
-    "yield": "1 × 20 cm cake"
   },
   {
     "id": "meringue-strawberry-fudge-meringue-bowl",
@@ -2279,112 +2105,6 @@
       ]
     ],
     "yield": "8 nests"
-  },
-  {
-    "id": "meringue-raspberry-liquorice-meringue-wreath",
-    "category": "Meringue",
-    "section": "desserts",
-    "title": "Raspberry Liquorice Meringue Wreath",
-    "desc": "Twin brown sugar rings sandwich raspberry cream and liquorice sauce.",
-    "tempC": 120,
-    "bake": "60 min",
-    "ferment": "Cool completely",
-    "ingredients": [
-      [
-        "Egg whites",
-        5,
-        "pc",
-        ""
-      ],
-      [
-        "Brown sugar",
-        240,
-        "g",
-        ""
-      ],
-      [
-        "Potato starch",
-        2,
-        "tsp",
-        ""
-      ],
-      [
-        "White wine vinegar",
-        2,
-        "tsp",
-        ""
-      ],
-      [
-        "Chocolate-coated liquorice caramel balls",
-        1,
-        "bag (size unspecified)",
-        ""
-      ],
-      [
-        "Whipping cream",
-        5,
-        "tbsp",
-        ""
-      ],
-      [
-        "Whipping cream",
-        500,
-        "ml",
-        ""
-      ],
-      [
-        "Raspberries, mashed",
-        125,
-        "g",
-        ""
-      ],
-      [
-        "Mixed berries",
-        null,
-        "as needed",
-        ""
-      ],
-      [
-        "Edible flowers (optional)",
-        null,
-        "as needed",
-        ""
-      ]
-    ],
-    "steps": [
-      "Whip whites with gradually added sugar until stiff, adding starch and vinegar near the end. Form two matching rings with open centres. Bake at 120°C for 60 minutes; cool in the oven.",
-      "Melt candy balls with cream; cool to room temperature.",
-      "Drizzle slightly over half the sauce across the lower ring. Fold mashed raspberries into whipped cream and sandwich the rings. Finish with remaining sauce, berries and optional edible flowers."
-    ],
-    "ingredientSections": [
-      [
-        0,
-        "Meringue"
-      ],
-      [
-        4,
-        "Sauce"
-      ],
-      [
-        6,
-        "Filling & topping"
-      ]
-    ],
-    "stepSections": [
-      [
-        0,
-        "Meringue"
-      ],
-      [
-        1,
-        "Sauce"
-      ],
-      [
-        2,
-        "Filling & topping"
-      ]
-    ],
-    "yield": "1 wreath"
   },
   {
     "id": "meringue-alpine-chocolate-meringue-torte",
