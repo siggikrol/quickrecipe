@@ -44,6 +44,16 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   await wait();
 
   const { document } = dom.window;
+  assert.equal(document.querySelector('.ingredient').firstElementChild.className, 'ingredient-name');
+  document.getElementById('ingredientOrderBtn').click();
+  assert.equal(document.querySelector('.ingredient').firstElementChild.className, 'amount');
+  assert.equal(document.getElementById('ingredientOrderBtn').getAttribute('aria-pressed'), 'true');
+  document.querySelector('[data-scale="2"]').click();
+  assert.equal(document.querySelector('.ingredient').firstElementChild.className, 'amount');
+  assert.equal(dom.window.localStorage.getItem('quickrecipe.ingredientOrder'), 'quantity');
+  document.getElementById('ingredientOrderBtn').click();
+  assert.equal(document.querySelector('.ingredient').firstElementChild.className, 'ingredient-name');
+  document.querySelector('[data-scale="1"]').click();
   const brand  = document.querySelector('.brand')?.textContent?.trim();
   const cards  = document.querySelectorAll('.card').length;
   const detail = !!document.getElementById('detail');
@@ -480,17 +490,21 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
 
   // Renamed recipe IDs preserve favorites, selection and saved adjustments.
   const currentRecipe = JSON.parse(recipes).find(r => r.category === 'Cheesecake');
+  const ryeBread = JSON.parse(recipes).find(r => r.id === 'icelandic-rye-bread');
+  const outdatedRye = { ...ryeBread, id: 'old-rye-bread', compactMetricUnits: false,
+    ingredients: ryeBread.ingredients.map(i => /flour/i.test(i[0]) ? [i[0], 10, 'dl', i[3]] : i) };
   const legacyRecipe = { ...currentRecipe, id: 'legacy-recipe-id', obsoleteMetadata: 'old value' };
   const customRecipe = { ...currentRecipe, id: 'personal-recipe', title: 'My personal recipe' };
   const migrated = new JSDOM(html, {
     runScripts: 'dangerously', url: 'http://localhost/',
     beforeParse(w) {
       w.fetch = recipeResponse;
+      w.localStorage.setItem('quickrecipe.ingredientOrder', 'quantity');
       w.matchMedia = () => ({ matches: false, addEventListener() {} });
-      w.localStorage.setItem('quickrecipe.recipes.v1', JSON.stringify([legacyRecipe, currentRecipe, customRecipe]));
-      w.localStorage.setItem('quickrecipe.favs.v1', JSON.stringify([legacyRecipe.id]));
+      w.localStorage.setItem('quickrecipe.recipes.v1', JSON.stringify([legacyRecipe, currentRecipe, customRecipe, outdatedRye, ryeBread]));
+      w.localStorage.setItem('quickrecipe.favs.v1', JSON.stringify([legacyRecipe.id, outdatedRye.id]));
       w.localStorage.setItem('quickrecipe.hydration.v1', JSON.stringify({ [legacyRecipe.id]: 75 }));
-      w.localStorage.setItem('quickrecipe.ui.v1', JSON.stringify({ selectedId: legacyRecipe.id, category: 'All' }));
+      w.localStorage.setItem('quickrecipe.ui.v1', JSON.stringify({ selectedId: outdatedRye.id, category: 'All' }));
     },
   });
   const migrationScript = migrated.window.document.createElement('script');
@@ -503,8 +517,11 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   assert.equal(migratedRecipes.filter(r => r.id === currentRecipe.id).length, 1);
   assert.ok(!migratedRecipes.some(r => r.id === legacyRecipe.id || r.obsoleteMetadata));
   assert.ok(migratedRecipes.some(r => r.id === customRecipe.id));
-  assert.deepEqual(JSON.parse(migratedStorage.getItem('quickrecipe.favs.v1')), [currentRecipe.id]);
-  assert.equal(JSON.parse(migratedStorage.getItem('quickrecipe.ui.v1')).selectedId, currentRecipe.id);
+  assert.deepEqual(JSON.parse(migratedStorage.getItem('quickrecipe.favs.v1')), [currentRecipe.id, ryeBread.id]);
+  assert.equal(migratedRecipes.filter(r => r.title === ryeBread.title).length, 1);
+  assert.deepEqual(migratedRecipes.find(r => r.id === ryeBread.id), ryeBread);
+  assert.equal(migrated.window.document.querySelector('.ingredient').firstElementChild.className, 'amount');
+  assert.equal(JSON.parse(migratedStorage.getItem('quickrecipe.ui.v1')).selectedId, ryeBread.id);
   assert.deepEqual(JSON.parse(migratedStorage.getItem('quickrecipe.hydration.v1')), { [currentRecipe.id]: 75 });
   migrated.window.close();
 

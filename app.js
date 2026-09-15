@@ -1,7 +1,7 @@
 /* ─── State ─── */
 let recipes = [];
 let seedRecipes = [];
-const RECIPE_VERSION = '40';
+const RECIPE_VERSION = '42';
 const LS = {
   recipes:   'quickrecipe.recipes.v1',
   favs:      'quickrecipe.favs.v1',
@@ -9,12 +9,14 @@ const LS = {
   hydration: 'quickrecipe.hydration.v1',
   ui:        'quickrecipe.ui.v1',
   theme:     'quickrecipe.theme',
+  ingredientOrder: 'quickrecipe.ingredientOrder',
 };
 let favs           = new Set();
 let unit           = 'metric';
 let selectedId     = null;
 let scale          = 1;
 let view           = 'amounts';
+let quantitiesFirst = false;
 let category       = 'All';
 let recipeSection = 'All';
 let listScrollTop = 0;
@@ -112,6 +114,11 @@ function mergeSeedRecipes(existing) {
   const renamed = new Map();
   const merged = (existing || []).map(r => {
     let seed = byId.get(r.id);
+    if (!seed && r.title === 'Icelandic Rye Bread' && r.category === 'Bread' &&
+        r.ingredients.some(i => /flour/i.test(i[0]) && ['dl', 'ml', 'L', 'cup', 'cups'].includes(i[2]))) {
+      seed = byId.get('icelandic-rye-bread');
+      if (seed) renamed.set(r.id, seed.id);
+    }
     if (!seed) {
       const matches = seedRecipes.filter(candidate => identity(candidate) === identity(r));
       if (matches.length === 1) {
@@ -613,9 +620,10 @@ function renderIngredients(r) {
       >${esc(recipeText(sec))}</button>`;
     }
     last = sec || last;
-    html += `<div class="ingredient${ingDimmed ? ' dimmed' : ''}" data-section="${esc(sec)}">
-      <span>${esc(recipeText(cleanIngredientName(i[0])))}</span>
-      <span class="amount">${esc(ingredientAmountText(r, i))}</span>
+    const name = `<span class="ingredient-name">${esc(recipeText(cleanIngredientName(i[0])))}</span>`;
+    const amount = `<span class="amount">${esc(ingredientAmountText(r, i))}</span>`;
+    html += `<div class="ingredient${quantitiesFirst ? ' quantities-first' : ''}${ingDimmed ? ' dimmed' : ''}" data-section="${esc(sec)}">
+      ${quantitiesFirst ? amount + name : name + amount}
     </div>`;
     return html;
   }).join('');
@@ -688,8 +696,13 @@ function renderDetail() {
     </div>
 
     <div class="detail-body">
-      <section class="pane">
-        <h2>Ingredients</h2>
+      <section class="pane${quantitiesFirst ? ' quantities-first' : ''}">
+        <div class="ingredients-heading">
+          <h2>Ingredients</h2>
+          <button type="button" id="ingredientOrderBtn" class="ingredient-order" aria-label="Show quantities first" title="${quantitiesFirst ? 'Show ingredients first' : 'Show quantities first'}" aria-pressed="${quantitiesFirst}">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10a8 8 0 0 1 13-5l3 3M20 3v5h-5M20 14a8 8 0 0 1-13 5l-3-3M4 21v-5h5"/></svg>
+          </button>
+        </div>
         ${hasSecs ? `<div class="focus-hint">Tap a section to focus it</div>` : ''}
         ${renderIngredients(r)}
       </section>
@@ -706,6 +719,12 @@ function renderDetail() {
     </div>`;
 
   shopping.decorate(r);
+  document.getElementById('ingredientOrderBtn').onclick = () => {
+    quantitiesFirst = !quantitiesFirst;
+    localStorage.setItem(LS.ingredientOrder, quantitiesFirst ? 'quantity' : 'ingredient');
+    renderDetail();
+    document.getElementById('ingredientOrderBtn').focus();
+  };
 
   /* Scale */
   document.querySelectorAll('[data-scale]').forEach(b => {
@@ -908,6 +927,7 @@ async function init() {
   /* Restore state */
   favs           = new Set(load(LS.favs, []));
   unit           = localStorage.getItem(LS.unit) || 'metric';
+  quantitiesFirst = localStorage.getItem(LS.ingredientOrder) === 'quantity';
   hydrationState = load(LS.hydration, {});
   const storedRecipes = load(LS.recipes, seedRecipes);
   // A missing category file must never remove recipes from the saved collection.

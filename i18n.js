@@ -1,6 +1,8 @@
 /* Interface translations; English keys are the fallback. Recipe data stays language-neutral. */
 const UI_MESSAGES = {
   "pl": {
+    "Show quantities first": "Pokaż najpierw ilości",
+    "Show ingredients first": "Pokaż najpierw składniki",
     "Recipe-first cooking": "Gotowanie z przepisami",
     "Language": "Język",
     "Favourites": "Ulubione",
@@ -103,6 +105,8 @@ const UI_MESSAGES = {
     "Mix ingredients.\nBulk ferment 2 hours.\nShape and proof.\nBake.": "Wymieszaj składniki.\nOdstaw do wyrośnięcia na 2 godziny.\nUformuj i pozostaw do wyrośnięcia.\nUpiecz."
   },
   "is": {
+    "Show quantities first": "Sýna magn fyrst",
+    "Show ingredients first": "Sýna hráefni fyrst",
     "Recipe-first cooking": "Matreiðsla eftir uppskriftum",
     "Language": "Tungumál",
     "Favourites": "Uppáhalds",
@@ -297,7 +301,7 @@ function translateInterface() {
   const note = document.getElementById('languageNote');
   if (note) note.hidden = language === 'en' || !hasRecipeTranslationFallback;
   // Translate only interface containers, never recipe prose or editor values.
-  const roots = document.querySelectorAll('.top, .toolbar, .browse-nav, #chips, .recipe-nav, #modalBackdrop, #toast, #languageNote, .card .stat:not(.timing-stat), .card .tag, .detail-head .tag, .timing-stat, .hydration-box, .detail-actions, #detailFav, .pane > h2, .focus-hint, .empty, .loading');
+  const roots = document.querySelectorAll('.top, .toolbar, .browse-nav, #chips, .recipe-nav, #modalBackdrop, #toast, #languageNote, .card .stat:not(.timing-stat), .card .tag, .detail-head .tag, .timing-stat, .hydration-box, .detail-actions, #detailFav, .pane > h2, .ingredients-heading, .focus-hint, .empty, .loading');
   for (const root of roots) {
     const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
     let node;

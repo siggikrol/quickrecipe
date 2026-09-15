@@ -783,3 +783,24 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .shopping-selection p {margin:0 0 12px;}
 .shopping-item-name .bought {text-decoration:line-through;color:var(--muted);}
 @media(max-width:860px) { .shopping-dialog {width:100%;max-width:100%;height:100dvh;max-height:100dvh;margin:0;border:0;border-radius:0;padding:20px;padding-bottom:max(20px,env(safe-area-inset-bottom));} }
+
+.ingredients-heading { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; }
+.ingredients-heading h2 { margin: 0; }
+.ingredient-order { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; padding: 0; border: 1px solid var(--line); border-radius: 8px; background: transparent; color: var(--muted); cursor: pointer; }
+.ingredient-order:hover, .ingredient-order[aria-pressed="true"] { color: var(--accent); }
+.ingredient-order:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+/* Share column widths across rows so flipped ingredient names line up. */
+.pane.quantities-first {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  column-gap: 20px;
+  align-content: start;
+}
+.pane.quantities-first > * { grid-column: 1 / -1; }
+.pane.quantities-first .ingredient {
+  grid-template-columns: subgrid;
+  column-gap: 20px;
+  align-items: baseline;
+}
+.ingredient.quantities-first .amount { font-variant-numeric: tabular-nums; }
+.ingredient-name { min-width: 0; overflow-wrap: anywhere; }
