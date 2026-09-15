@@ -1,0 +1,2341 @@
+[
+  {
+    "id": "pistachio-white-chocolate-truffles",
+    "title": "Pistachio & White Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 12 truffles",
+    "ingredients": [
+      [
+        "Pistachio cream spread",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Almond flour",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "White chocolate",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Coconut oil",
+        5.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Finely chopped pistachios, for topping",
+        15.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mix pistachio cream and almond flour until a soft dough forms.",
+      "Divide into equal balls and chill for 1 hour.",
+      "Melt white chocolate with coconut oil.",
+      "Dip each ball in the chocolate and sprinkle with pistachios.",
+      "Chill for 30–60 minutes until set."
+    ]
+  },
+  {
+    "id": "biscoff-cheesecake-truffles",
+    "title": "Biscoff Cheesecake Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 16 truffles",
+    "ingredients": [
+      [
+        "Lotus Biscoff biscuits",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Full-fat cream cheese",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Biscoff spread",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "White chocolate",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Crushed Biscoff biscuits, for topping",
+        20.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Crush the biscuits very finely.",
+      "Mix with cream cheese and Biscoff spread.",
+      "Divide into equal balls and chill for 45 minutes.",
+      "Melt the white chocolate and dip the balls.",
+      "Sprinkle with biscuit crumbs and chill until firm."
+    ]
+  },
+  {
+    "id": "oreo-white-chocolate-truffles",
+    "title": "Oreo & White Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Oreo cookies",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Full-fat cream cheese",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "White chocolate",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Coconut oil",
+        5.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Crush the whole Oreos, including filling, into fine crumbs.",
+      "Mix with cream cheese and vanilla.",
+      "Roll into balls and freeze for 25–30 minutes.",
+      "Melt white chocolate with coconut oil.",
+      "Dip the truffles and chill until the coating is firm."
+    ]
+  },
+  {
+    "id": "raffaello-style-coconut-almond-truffles",
+    "title": "Raffaello-Style Coconut & Almond Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 16 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White chocolate",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Desiccated coconut for filling",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Whole blanched almonds",
+        16,
+        "pc",
+        "other"
+      ],
+      [
+        "Desiccated coconut for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat the cream until just steaming and pour over chopped white chocolate.",
+      "Stir smooth, then mix in the filling coconut and vanilla.",
+      "Chill until firm enough to shape.",
+      "Wrap a portion around each almond and roll into a ball.",
+      "Roll in coconut and chill until firm."
+    ]
+  },
+  {
+    "id": "dark-chocolate-hazelnut-truffles",
+    "title": "Dark Chocolate Hazelnut Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 20 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        175.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dark chocolate",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Roasted hazelnuts, finely chopped",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder or extra chopped hazelnuts, for coating",
+        30.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream until just boiling and pour over chopped chocolate.",
+      "Leave for 2 minutes, then stir until glossy.",
+      "Stir in vanilla and chopped hazelnuts.",
+      "Chill until firm, then roll into balls.",
+      "Coat in cocoa or hazelnuts and refrigerate."
+    ]
+  },
+  {
+    "id": "lemon-cheesecake-truffles",
+    "title": "Lemon Cheesecake Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Digestive biscuits",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Full-fat cream cheese",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Icing sugar",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon zest",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        15.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White chocolate",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon zest for topping (optional)",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Crush the biscuits finely.",
+      "Mix with cream cheese, icing sugar, lemon zest and juice.",
+      "Roll into balls and chill for 1 hour.",
+      "Melt white chocolate and dip each truffle.",
+      "Chill until set. Add a little extra lemon zest on top if desired."
+    ]
+  },
+  {
+    "id": "salted-caramel-chocolate-truffles",
+    "title": "Salted Caramel Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Milk chocolate",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Thick dulce de leche or caramel",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Flaky sea salt",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Dark chocolate for coating",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Flaky sea salt for topping",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream and pour over the milk chocolate. Stir smooth.",
+      "Mix in caramel and sea salt.",
+      "Chill until firm enough to roll.",
+      "Form into balls and freeze for 20 minutes.",
+      "Dip in melted dark chocolate and finish with a tiny pinch of sea salt."
+    ]
+  },
+  {
+    "id": "tiramisu-truffles",
+    "title": "Tiramisu Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Ladyfinger biscuits",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mascarpone",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Strong espresso, cooled",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Icing sugar",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Cocoa powder, for coating",
+        25.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Crush the ladyfingers finely.",
+      "Mix with mascarpone, espresso, icing sugar and vanilla.",
+      "Chill for 30 minutes.",
+      "Roll into balls.",
+      "Coat generously in cocoa and refrigerate for at least 1 hour."
+    ]
+  },
+  {
+    "id": "peanut-butter-chocolate-truffles",
+    "title": "Peanut Butter Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Smooth peanut butter",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Icing sugar",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Finely crushed digestive biscuits",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Dark or milk chocolate",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Coconut oil",
+        5.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mix peanut butter, icing sugar, biscuit crumbs and vanilla.",
+      "Roll into balls and chill for 45 minutes.",
+      "Melt chocolate with coconut oil.",
+      "Dip each truffle in chocolate.",
+      "Refrigerate until the shell is firm."
+    ]
+  },
+  {
+    "id": "espresso-dark-chocolate-truffles",
+    "title": "Espresso Dark Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 20 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        120.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Instant espresso powder",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dark chocolate",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Cocoa powder, for coating",
+        30.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with espresso powder until steaming.",
+      "Pour over chopped dark chocolate and leave for 2 minutes.",
+      "Add butter and vanilla, then stir until smooth and glossy.",
+      "Chill until firm, roll into balls and coat with cocoa.",
+      "Keep refrigerated until serving."
+    ]
+  },
+  {
+    "id": "strawberry-white-chocolate-truffles",
+    "title": "Strawberry White Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Freeze-dried strawberries, finely ground",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White chocolate, finely chopped",
+        285.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Salt",
+        1,
+        "pinch",
+        "other"
+      ],
+      [
+        "White chocolate for coating",
+        225.0,
+        "g",
+        "other"
+      ],
+      [
+        "Coconut oil, optional",
+        5.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Crushed freeze-dried strawberries, for topping",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Grind the freeze-dried strawberries to a fine powder.",
+      "Heat the cream until steaming and pour over the filling white chocolate. Leave 2 minutes, then stir smooth.",
+      "Mix in strawberry powder, vanilla and salt. Chill for about 3 hours until firm.",
+      "Roll into balls and freeze for 15 minutes.",
+      "Melt the coating chocolate with optional coconut oil, dip the truffles and top with crushed strawberry. Chill until set."
+    ]
+  },
+  {
+    "id": "raspberry-white-chocolate-truffles",
+    "title": "Raspberry White Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 16 truffles",
+    "ingredients": [
+      [
+        "Freeze-dried raspberries, ground and sifted",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White chocolate",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Coconut oil",
+        5.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White chocolate for coating",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Extra freeze-dried raspberries, crushed, for topping",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Grind the raspberries to powder and sift out the seeds.",
+      "Heat the cream, then add the filling white chocolate and coconut oil. Stir until smooth.",
+      "Mix in the raspberry powder and chill until firm enough to shape.",
+      "Roll into balls and chill for 30 minutes.",
+      "Melt the coating chocolate, dip each truffle and sprinkle with crushed raspberries. Chill until set."
+    ]
+  },
+  {
+    "id": "strawberry-cheesecake-truffles",
+    "title": "Strawberry Cheesecake Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Digestive biscuits",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Full-fat cream cheese",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Icing sugar",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Freeze-dried strawberries, finely ground",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "White chocolate",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Coconut oil",
+        5.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Crushed freeze-dried strawberries, for topping",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Crush the biscuits finely.",
+      "Mix with cream cheese, icing sugar, strawberry powder and vanilla.",
+      "Roll into balls and chill for 1 hour.",
+      "Melt white chocolate with coconut oil and dip each truffle.",
+      "Sprinkle with crushed strawberries and chill until firm."
+    ]
+  },
+  {
+    "id": "raspberry-dark-chocolate-truffles",
+    "title": "Raspberry Dark Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 16 truffles",
+    "ingredients": [
+      [
+        "Freeze-dried raspberries, ground and sifted",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        90.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White chocolate",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Salt",
+        1,
+        "pinch",
+        "other"
+      ],
+      [
+        "Dark chocolate for coating",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Extra raspberry powder, for topping",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Grind and sift the freeze-dried raspberries.",
+      "Heat the cream until steaming and pour over the white chocolate. Stir smooth.",
+      "Mix in raspberry powder, vanilla and salt, then chill until firm.",
+      "Roll into balls and chill for 30 minutes.",
+      "Dip in melted dark chocolate, dust with raspberry powder and chill until set."
+    ]
+  },
+  {
+    "id": "passion-fruit-white-chocolate-truffles",
+    "title": "Passion Fruit & White Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 16 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        70.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Passion fruit purée",
+        45.0,
+        "g",
+        "other"
+      ],
+      [
+        "White chocolate",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "White chocolate for coating",
+        150.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream and passion fruit until steaming.",
+      "Pour over chopped white chocolate and leave for 1 minute.",
+      "Stir smooth, add butter and chill until firm.",
+      "Roll into balls and freeze for 20 minutes.",
+      "Dip in melted white chocolate and chill until set."
+    ]
+  },
+  {
+    "id": "matcha-coconut-truffles",
+    "title": "Matcha & Coconut Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 16 truffles",
+    "ingredients": [
+      [
+        "Coconut cream",
+        70.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White chocolate",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Matcha powder",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Desiccated coconut",
+        35.0,
+        "g",
+        "other"
+      ],
+      [
+        "Extra coconut or matcha, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat coconut cream until steaming.",
+      "Pour over white chocolate, then whisk in matcha.",
+      "Stir in coconut and chill until firm.",
+      "Roll into balls.",
+      "Coat in coconut or a light dusting of matcha."
+    ]
+  },
+  {
+    "id": "earl-grey-dark-chocolate-truffles",
+    "title": "Earl Grey Dark Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        140.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Earl Grey tea bags",
+        2,
+        "pc",
+        "other"
+      ],
+      [
+        "Dark chocolate",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with the tea bags and steep for 8–10 minutes.",
+      "Remove tea bags, reheat the cream and pour over chocolate.",
+      "Stir smooth with butter.",
+      "Chill until firm, roll into balls and coat in cocoa."
+    ]
+  },
+  {
+    "id": "chai-milk-chocolate-truffles",
+    "title": "Chai Milk Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Cinnamon",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground ginger",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Cardamom",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Cloves",
+        1,
+        "pinch",
+        "other"
+      ],
+      [
+        "Milk chocolate",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dark chocolate for coating",
+        120.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with all spices until steaming.",
+      "Pour over milk chocolate and stir smooth.",
+      "Chill until firm and roll into balls.",
+      "Dip in dark chocolate and chill until set."
+    ]
+  },
+  {
+    "id": "orange-ginger-dark-chocolate-truffles",
+    "title": "Orange & Ginger Dark Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        120.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Orange zest",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Finely grated fresh ginger",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Dark chocolate",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder or finely chopped candied ginger, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with orange zest and ginger.",
+      "Pour over chopped chocolate and leave for 2 minutes.",
+      "Stir in butter until glossy.",
+      "Chill, roll into balls and coat."
+    ]
+  },
+  {
+    "id": "mango-coconut-white-chocolate-truffles",
+    "title": "Mango & Coconut White Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 16 truffles",
+    "ingredients": [
+      [
+        "Coconut cream",
+        60.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White chocolate",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Freeze-dried mango powder",
+        35.0,
+        "g",
+        "other"
+      ],
+      [
+        "Desiccated coconut",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Extra coconut, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat coconut cream until steaming and pour over white chocolate.",
+      "Stir smooth, then mix in mango powder and coconut.",
+      "Chill until firm enough to shape.",
+      "Roll into balls and coat in coconut."
+    ]
+  },
+  {
+    "id": "blueberry-lemon-cheesecake-truffles",
+    "title": "Blueberry & Lemon Cheesecake Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Digestive biscuits",
+        160.0,
+        "g",
+        "other"
+      ],
+      [
+        "Full-fat cream cheese",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Icing sugar",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Freeze-dried blueberry powder",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon zest",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "White chocolate for coating",
+        180.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Crush biscuits very finely.",
+      "Mix with cream cheese, sugar, blueberry powder and lemon zest.",
+      "Roll into balls and chill for 1 hour.",
+      "Dip in melted white chocolate and chill until set."
+    ]
+  },
+  {
+    "id": "cherry-almond-dark-chocolate-truffles",
+    "title": "Cherry & Almond Dark Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        110.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dark chocolate",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Freeze-dried cherry powder",
+        35.0,
+        "g",
+        "other"
+      ],
+      [
+        "Almond extract",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Finely chopped toasted almonds",
+        30.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream and pour over chocolate.",
+      "Stir smooth, then mix in cherry powder and almond extract.",
+      "Chill until firm and roll into balls.",
+      "Coat in chopped toasted almonds."
+    ]
+  },
+  {
+    "id": "banana-peanut-butter-truffles",
+    "title": "Banana Peanut Butter Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Smooth peanut butter",
+        140.0,
+        "g",
+        "other"
+      ],
+      [
+        "Finely crushed digestive biscuits",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Freeze-dried banana powder",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Icing sugar",
+        35.0,
+        "g",
+        "other"
+      ],
+      [
+        "Milk chocolate for coating",
+        180.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mix peanut butter, biscuit crumbs, banana powder and icing sugar.",
+      "Roll into balls and chill for 45 minutes.",
+      "Dip in melted milk chocolate.",
+      "Chill until firm."
+    ]
+  },
+  {
+    "id": "coffee-cardamom-dark-chocolate-truffles",
+    "title": "Coffee & Cardamom Dark Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        120.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Instant espresso powder",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Ground cardamom",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Dark chocolate",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with espresso and cardamom until steaming.",
+      "Pour over chocolate and leave for 2 minutes.",
+      "Stir in butter until smooth.",
+      "Chill until firm, roll into balls and coat in cocoa."
+    ]
+  },
+  {
+    "id": "key-lime-pie-truffles",
+    "title": "Key Lime Pie Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 20 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        60.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Sweetened condensed milk",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lime zest",
+        2.0,
+        "pc",
+        "other"
+      ],
+      [
+        "White chocolate",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lime juice",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Finely crushed digestive biscuits, for coating",
+        80.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream, condensed milk and lime zest until steaming; leave 10 minutes.",
+      "Reheat and pour over white chocolate. Stir smooth.",
+      "Mix in lime juice and butter, then chill until firm.",
+      "Roll into balls and coat in biscuit crumbs.",
+      "Chill until set."
+    ]
+  },
+  {
+    "id": "creme-brulee-white-chocolate-truffles",
+    "title": "Crème Brûlée White Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Vanilla bean paste",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "White chocolate",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Flaky salt",
+        1,
+        "pinch",
+        "other"
+      ],
+      [
+        "Caster sugar",
+        50.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with vanilla until steaming and pour over chocolate.",
+      "Stir smooth with butter and flaky salt, then chill until firm.",
+      "Roll into balls and refrigerate.",
+      "Melt the caster sugar in a dry pan until amber, pour onto baking paper and cool completely.",
+      "Crush the caramel into fine shards and roll the truffles in them just before serving."
+    ]
+  },
+  {
+    "id": "black-forest-truffles",
+    "title": "Black Forest Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        110.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dark chocolate",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Finely chopped dried cherries",
+        45.0,
+        "g",
+        "other"
+      ],
+      [
+        "Kirsch, optional",
+        15.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dark chocolate for coating",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Extra dried cherry, finely chopped",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream and pour over dark chocolate. Leave 2 minutes, then stir smooth.",
+      "Mix in cherries and optional kirsch.",
+      "Chill until firm, then roll into balls.",
+      "Dip in melted dark chocolate and top with a little chopped cherry.",
+      "Chill until set."
+    ]
+  },
+  {
+    "id": "apple-pie-truffles",
+    "title": "Apple Pie Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Digestive biscuits",
+        160.0,
+        "g",
+        "other"
+      ],
+      [
+        "Full-fat cream cheese",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Icing sugar",
+        35.0,
+        "g",
+        "other"
+      ],
+      [
+        "Freeze-dried apple powder",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cinnamon",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Nutmeg",
+        1,
+        "pinch",
+        "other"
+      ],
+      [
+        "White chocolate for coating",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ground cinnamon for dusting",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Crush the biscuits finely.",
+      "Mix with cream cheese, icing sugar, apple powder and spices.",
+      "Roll into balls and chill for 1 hour.",
+      "Dip in melted white chocolate.",
+      "Dust lightly with cinnamon and chill until firm."
+    ]
+  },
+  {
+    "id": "pistachio-tiramisu-truffles",
+    "title": "Pistachio Tiramisu Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 16 truffles",
+    "ingredients": [
+      [
+        "Ladyfinger biscuits, finely ground",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mascarpone",
+        125.0,
+        "g",
+        "other"
+      ],
+      [
+        "Pistachio cream",
+        45.0,
+        "g",
+        "other"
+      ],
+      [
+        "Strong espresso, cooled",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Icing sugar",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder and finely chopped pistachios, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mix ladyfinger crumbs, mascarpone, pistachio cream, espresso and icing sugar.",
+      "Chill for 30 minutes.",
+      "Roll into balls.",
+      "Coat half in cocoa and half in chopped pistachios, or mix the two coatings.",
+      "Refrigerate until firm."
+    ]
+  },
+  {
+    "id": "raspberry-rose-white-chocolate-truffles",
+    "title": "Raspberry & Rose White Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 16 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        75.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White chocolate",
+        240.0,
+        "g",
+        "other"
+      ],
+      [
+        "Freeze-dried raspberry powder",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Rose water, or to taste",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "White chocolate for coating",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Crushed freeze-dried raspberries, for topping",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream until steaming and pour over white chocolate.",
+      "Stir smooth, then mix in raspberry powder and rose water.",
+      "Chill until firm and roll into balls.",
+      "Dip in white chocolate and top with raspberry pieces.",
+      "Chill until set."
+    ]
+  },
+  {
+    "id": "lemon-poppy-seed-truffles",
+    "title": "Lemon Poppy Seed Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Digestive biscuits",
+        170.0,
+        "g",
+        "other"
+      ],
+      [
+        "Full-fat cream cheese",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Icing sugar",
+        35.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon zest",
+        2.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Poppy seeds",
+        12.0,
+        "g",
+        "other"
+      ],
+      [
+        "White chocolate for coating",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Poppy seeds for topping",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Crush the biscuits finely.",
+      "Mix with cream cheese, icing sugar, lemon zest, lemon juice and poppy seeds.",
+      "Roll into balls and chill for 1 hour.",
+      "Dip in melted white chocolate.",
+      "Sprinkle with a few poppy seeds and chill until set."
+    ]
+  },
+  {
+    "id": "cinnamon-bun-truffles",
+    "title": "Cinnamon Bun Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Cinnamon biscuits or digestive biscuits",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Full-fat cream cheese",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Brown sugar",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cinnamon",
+        1.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "White chocolate for coating",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ground cinnamon for dusting",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Crush biscuits very finely.",
+      "Mix with cream cheese, brown sugar, cinnamon and vanilla.",
+      "Roll into balls and chill for 1 hour.",
+      "Dip in white chocolate.",
+      "Finish with a very light dusting of cinnamon."
+    ]
+  },
+  {
+    "id": "coconut-passion-fruit-truffles",
+    "title": "Coconut Passion Fruit Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 16 truffles",
+    "ingredients": [
+      [
+        "Coconut cream",
+        60.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Passion fruit purée",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "White chocolate",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Desiccated coconut",
+        35.0,
+        "g",
+        "other"
+      ],
+      [
+        "Extra coconut, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat coconut cream and passion fruit until steaming.",
+      "Pour over white chocolate and stir smooth.",
+      "Mix in desiccated coconut and chill until firm.",
+      "Roll into balls.",
+      "Coat in coconut and refrigerate until set."
+    ]
+  },
+  {
+    "id": "dark-chocolate-chilli-truffles",
+    "title": "Dark Chocolate Chilli Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        120.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Ancho chilli powder or mild chilli powder",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Cinnamon",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Sea salt",
+        1,
+        "pinch",
+        "other"
+      ],
+      [
+        "Dark chocolate",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with chilli, cinnamon and salt until steaming.",
+      "Pour over dark chocolate and leave for 2 minutes.",
+      "Stir until smooth and chill until firm.",
+      "Roll into balls.",
+      "Coat in cocoa powder and refrigerate."
+    ]
+  },
+  {
+    "id": "yuzu-black-sesame-truffles",
+    "title": "Yuzu & Black Sesame Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 16 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        70.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White chocolate",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Yuzu juice or yuzu purée",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Black sesame paste",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "White chocolate for coating",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Toasted black sesame seeds",
+        20.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream until steaming and pour over the white chocolate.",
+      "Stir smooth, then mix in yuzu and black sesame paste.",
+      "Chill until firm enough to shape.",
+      "Roll into balls, dip in white chocolate and sprinkle with black sesame.",
+      "Chill until set."
+    ]
+  },
+  {
+    "id": "strawberry-balsamic-truffles",
+    "title": "Strawberry Balsamic Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dark chocolate",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Freeze-dried strawberry powder",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Good balsamic vinegar",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder or crushed freeze-dried strawberries, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream and pour over chopped dark chocolate.",
+      "Stir smooth, then mix in strawberry powder, balsamic and butter.",
+      "Chill until firm.",
+      "Roll into balls and coat in cocoa or strawberry crumbs."
+    ]
+  },
+  {
+    "id": "rosemary-olive-oil-dark-chocolate-truffles",
+    "title": "Rosemary & Olive Oil Dark Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        120.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Small rosemary sprig",
+        1,
+        "pc",
+        "other"
+      ],
+      [
+        "Dark chocolate",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Extra-virgin olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Flaky sea salt",
+        1,
+        "pinch",
+        "other"
+      ],
+      [
+        "Cocoa powder, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with rosemary and steep 10 minutes.",
+      "Remove rosemary, reheat cream and pour over chocolate.",
+      "Stir smooth, then whisk in olive oil and a pinch of salt.",
+      "Chill until firm, roll into balls and coat in cocoa."
+    ]
+  },
+  {
+    "id": "shiso-lime-white-chocolate-truffles",
+    "title": "Shiso & Lime White Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 16 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        75.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh shiso leaves, finely sliced",
+        4,
+        "pc",
+        "other"
+      ],
+      [
+        "Lime zest",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "White chocolate",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lime juice",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White chocolate for coating",
+        150.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with shiso and lime zest, then steep 8 minutes.",
+      "Strain over white chocolate and stir smooth.",
+      "Mix in lime juice and chill until firm.",
+      "Roll into balls, dip in white chocolate and chill until set."
+    ]
+  },
+  {
+    "id": "black-sesame-shoyu-caramel-truffles",
+    "title": "Black Sesame & Shoyu Caramel Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Milk chocolate",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Thick caramel",
+        70.0,
+        "g",
+        "other"
+      ],
+      [
+        "Black sesame paste",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Light soy sauce",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Dark chocolate for coating",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Toasted black sesame seeds, for topping",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream and pour over milk chocolate.",
+      "Stir smooth, then mix in caramel, black sesame paste and soy sauce.",
+      "Chill until firm enough to shape.",
+      "Roll into balls, dip in dark chocolate and top with sesame."
+    ]
+  },
+  {
+    "id": "apricot-hazelnut-truffles",
+    "title": "Apricot & Hazelnut Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        90.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Milk chocolate",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dried apricots, very finely chopped",
+        45.0,
+        "g",
+        "other"
+      ],
+      [
+        "Roasted hazelnuts, finely chopped",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Extra chopped hazelnuts, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream and pour over milk chocolate.",
+      "Stir smooth, then mix in apricots, hazelnuts and vanilla.",
+      "Chill until firm.",
+      "Roll into balls and coat in chopped hazelnuts."
+    ]
+  },
+  {
+    "id": "grapefruit-tarragon-dark-chocolate-truffles",
+    "title": "Grapefruit & Tarragon Dark Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        120.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Pink grapefruit zest",
+        0.5,
+        "pc",
+        "other"
+      ],
+      [
+        "Small tarragon sprigs",
+        2,
+        "pc",
+        "other"
+      ],
+      [
+        "Dark chocolate",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with grapefruit zest and tarragon, then steep 8 minutes.",
+      "Strain and pour over chopped chocolate.",
+      "Stir smooth with butter.",
+      "Chill until firm, roll into balls and coat in cocoa."
+    ]
+  },
+  {
+    "id": "pineapple-cashew-truffles",
+    "title": "Pineapple & Cashew Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Coconut cream",
+        60.0,
+        "ml",
+        "other"
+      ],
+      [
+        "White chocolate",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Freeze-dried pineapple powder",
+        35.0,
+        "g",
+        "other"
+      ],
+      [
+        "Roasted cashews, finely ground",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Desiccated coconut",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Extra coconut or cashews, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat coconut cream and pour over white chocolate.",
+      "Stir smooth, then mix in pineapple powder, cashews and coconut.",
+      "Chill until firm enough to shape.",
+      "Roll into balls and coat in coconut or chopped cashews."
+    ]
+  },
+  {
+    "id": "sesame-shichimi-orange-truffles",
+    "title": "Sesame, Shichimi & Orange Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        120.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Orange zest",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Toasted sesame seeds",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dark chocolate",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Shichimi togarashi",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Shichimi togarashi for topping",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with orange zest and sesame.",
+      "Pour over chocolate and leave 2 minutes.",
+      "Stir smooth with butter and shichimi.",
+      "Chill until firm, roll into balls and finish with a tiny pinch of shichimi."
+    ]
+  },
+  {
+    "id": "honey-yuzu-truffles",
+    "title": "Honey Yuzu Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "No-bake truffles with a chilled filling.",
+    "yield": "About 16 truffles",
+    "ingredients": [
+      [
+        "Double cream",
+        70.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Mild honey",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "White chocolate",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Yuzu juice or yuzu purée",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "White chocolate for coating",
+        150.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with honey until steaming.",
+      "Pour over white chocolate and stir smooth.",
+      "Mix in yuzu and butter, then chill until firm.",
+      "Roll into balls, dip in white chocolate and chill until set."
+    ]
+  }
+]
