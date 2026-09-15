@@ -88,7 +88,7 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   assert.equal(dom.window.amountText(1500, 'g'), '1500 g');
   assert.equal(dom.window.amountText(2000, 'ml'), '2000 ml');
   document.querySelector('[data-browse="desserts"]').click();
-  assert.deepEqual([...document.querySelectorAll('[data-cat]')].map(b => b.dataset.cat).sort(), ['All', 'Cake', 'Cheesecake', 'Dessert', 'Skyr Cake', 'Meringue', 'Brownies', 'Cookies', 'Truffles'].sort());
+  assert.deepEqual([...document.querySelectorAll('[data-cat]')].map(b => b.dataset.cat).sort(), ['All', 'Cake', 'Cheesecake', 'Dessert', 'Skyr Cake', 'Meringue', 'Brownies', 'Cookies', 'Truffles', 'Classic desserts', 'Confections', 'Muffins & scones', 'Pies & tarts'].sort());
   document.querySelector('[data-cat="Cookies"]').click();
   const cookieRecipes = JSON.parse(recipes).filter(r => r.category === 'Cookies');
   assert.equal(cookieRecipes.length, 81);

@@ -51,6 +51,11 @@ function setup(saved) {
   d.querySelector('[data-family-back]').click();
   assert.equal(d.querySelector('#detail h1').textContent, 'Béchamel');
   d.querySelector('[data-browse="All"]').click();
+  assert(w.compareIcelandicLabels('Konfekt', 'Kökur') < 0);
+  assert(w.compareIcelandicLabels('D', 'Ð') < 0);
+  assert(w.compareIcelandicLabels('Þ', 'Æ') < 0);
+  assert(w.compareIcelandicLabels('Æ', 'Ö') < 0);
+  assert.equal(w.compareIcelandicLabels('Ö', 'O\u0308'), 0);
   w.validateRecipeFamilies(fixtures);
   assert.equal(w.foundationMultiplier(cheese.foundations[0], fixtures), 0.5);
   const invalid = [

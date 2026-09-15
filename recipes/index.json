@@ -26,7 +26,13 @@
     "sides.json",
     "salads.json",
     "soups.json",
-    "casseroles.json"
+    "casseroles.json",
+    "baking-foundations.json",
+    "pizza-flatbreads.json",
+    "muffins-scones-loaves.json",
+    "pies-tarts.json",
+    "classic-desserts.json",
+    "confections.json"
   ],
   "retiredIds": [
     "cookie-smakokur-med-karamellu",

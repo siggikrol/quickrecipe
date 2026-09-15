@@ -1,0 +1,506 @@
+[
+  {
+    "id": "apple-pie",
+    "title": "Apple Pie",
+    "category": "Pies & tarts",
+    "section": "desserts",
+    "desc": "A double-crust pie filled with cinnamon apples.",
+    "ingredients": [
+      [
+        "Apples, peeled and sliced",
+        1000.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cornflour",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ground cinnamon",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs, beaten and weighed without shells",
+        30.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 190°C fan. Roll two-thirds of the prepared pastry to 3 mm and line a 24 cm pie dish for the base batch. Keep the remaining pastry chilled for the lid.",
+      "Toss apples with sugar, cornflour, cinnamon and lemon juice. Pack into the pastry and dot with butter.",
+      "Roll the lid to 3 mm between paper sheets. Cover the filling, pinch the edges firmly and cut steam vents. Brush with beaten egg.",
+      "Bake for 20 minutes, then reduce to 170°C fan and bake for 30–40 minutes until golden and juices bubble through the vents. Shield the edges if needed.",
+      "Rest for at least 30 minutes before cutting so the filling can settle."
+    ],
+    "compactMetricUnits": true,
+    "yield": "8 servings",
+    "foundations": [
+      {
+        "recipeId": "shortcrust-pastry",
+        "amount": 600.0,
+        "unit": "g"
+      }
+    ],
+    "prep": "30 min",
+    "bake": "50–60 min",
+    "ferment": "30 min",
+    "tempC": 190
+  },
+  {
+    "id": "lemon-tart",
+    "title": "Lemon Tart",
+    "category": "Pies & tarts",
+    "section": "desserts",
+    "desc": "A crisp sweet shell with tangy lemon custard.",
+    "ingredients": [
+      [
+        "Sugar",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs, beaten and weighed without shells",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Egg yolks, weighed",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Double cream",
+        150.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Roll the prepared pastry to 3 mm and line a 24 cm tart tin for the base batch, patching tears and leaving an overhang. Chill for 30 minutes. Use extra tins for larger batches and a 17 cm tin for a half batch.",
+      "Preheat to 180°C fan. Line the pastry with baking paper and fill with baking weights. Bake for 15 minutes, remove paper and weights, then bake for 8–10 minutes until dry and lightly golden. Trim the rim.",
+      "Reduce the oven to 140°C fan. Gently whisk sugar, eggs, yolks, lemon juice and cream until combined without frothing; strain.",
+      "Pour into the warm shell on an oven tray. Bake for 25–35 minutes until edges are set and the centre trembles slightly, without liquid ripples.",
+      "Cool, then refrigerate for at least 2 hours before slicing."
+    ],
+    "compactMetricUnits": true,
+    "yield": "8 servings",
+    "foundations": [
+      {
+        "recipeId": "sweet-tart-pastry",
+        "amount": 350.0,
+        "unit": "g"
+      }
+    ],
+    "prep": "25 min",
+    "bake": "50–60 min",
+    "ferment": "2½ hr",
+    "tempC": 180
+  },
+  {
+    "id": "chocolate-tart",
+    "title": "Chocolate Tart",
+    "category": "Pies & tarts",
+    "section": "desserts",
+    "desc": "A sweet pastry shell filled with dark chocolate ganache.",
+    "ingredients": [
+      [
+        "Double cream",
+        250.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dark chocolate, chopped",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        30.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Roll the prepared pastry to 3 mm and line a 24 cm tart tin for the base batch, patching tears and leaving an overhang. Chill for 30 minutes. Use extra tins for larger batches and a 17 cm tin for a half batch.",
+      "Preheat to 180°C fan. Line the pastry with baking paper and fill with baking weights. Bake for 15 minutes, remove paper and weights, then bake for 8–10 minutes until dry and lightly golden. Trim the rim.",
+      "Cool the baked shell completely. Heat cream until steaming, then pour over chocolate in a heatproof bowl.",
+      "Leave for 2 minutes, then stir from the centre until glossy. Mix in butter until melted.",
+      "Pour into the shell and refrigerate for at least 3 hours until set. Stand at room temperature for 15 minutes before slicing."
+    ],
+    "compactMetricUnits": true,
+    "yield": "8 servings",
+    "foundations": [
+      {
+        "recipeId": "sweet-tart-pastry",
+        "amount": 350.0,
+        "unit": "g"
+      }
+    ],
+    "prep": "25 min",
+    "bake": "25 min",
+    "ferment": "3½ hr",
+    "tempC": 180
+  },
+  {
+    "id": "key-lime-pie",
+    "title": "Key Lime Pie",
+    "category": "Pies & tarts",
+    "section": "desserts",
+    "desc": "A creamy lime filling in a crisp biscuit crust.",
+    "ingredients": [
+      [
+        "Sweetened condensed milk",
+        397.0,
+        "g",
+        "other"
+      ],
+      [
+        "Egg yolks, weighed",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lime juice",
+        120.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Double cream",
+        200.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 160°C fan. Press the prepared crumb base into a 23 cm pie tin for the base batch, covering the bottom and sides evenly.",
+      "Bake for 10 minutes and cool slightly. Whisk condensed milk, yolks and lime juice until smooth.",
+      "Pour into the base and bake for 15–20 minutes until just set with a slight wobble. Cool, then refrigerate for 4 hours.",
+      "Whip cream to soft peaks and spoon over the chilled pie before serving."
+    ],
+    "compactMetricUnits": true,
+    "yield": "8 servings",
+    "foundations": [
+      {
+        "recipeId": "cookie-crumb-base",
+        "amount": 350.0,
+        "unit": "g"
+      }
+    ],
+    "prep": "20 min",
+    "bake": "25–30 min",
+    "ferment": "4 hr",
+    "tempC": 160
+  },
+  {
+    "id": "banoffee-pie",
+    "title": "Banoffee Pie",
+    "category": "Pies & tarts",
+    "section": "desserts",
+    "desc": "Banana, caramel and cream on a chilled biscuit base.",
+    "ingredients": [
+      [
+        "Dulce de leche",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Bananas, sliced",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        300.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Icing sugar",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dark chocolate, chopped",
+        20.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Press prepared crumb base into the bottom and sides of a 23 cm loose-bottomed tin for the base batch. Chill for 30 minutes.",
+      "Spread ready-made dulce de leche over the base, then arrange banana slices on top.",
+      "Whip cream with icing sugar to soft peaks and spread over the bananas.",
+      "Scatter with finely chopped chocolate. Chill for 1 hour and serve the same day."
+    ],
+    "compactMetricUnits": true,
+    "yield": "8 servings",
+    "foundations": [
+      {
+        "recipeId": "cookie-crumb-base",
+        "amount": 350.0,
+        "unit": "g"
+      }
+    ],
+    "prep": "20 min",
+    "ferment": "1½ hr"
+  },
+  {
+    "id": "pecan-pie",
+    "title": "Pecan Pie",
+    "category": "Pies & tarts",
+    "section": "desserts",
+    "desc": "A buttery tart with pecans and syrup filling.",
+    "ingredients": [
+      [
+        "Golden syrup",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Brown sugar",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs, beaten and weighed without shells",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        5.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Pecan halves",
+        250.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Roll the prepared pastry to 3 mm and line a 24 cm tart tin for the base batch, patching tears and leaving an overhang. Chill for 30 minutes. Use extra tins for larger batches and a 17 cm tin for a half batch.",
+      "Preheat to 180°C fan. Line the pastry with baking paper and fill with baking weights. Bake for 15 minutes, remove paper and weights, then bake for 8–10 minutes until dry and lightly golden. Trim the rim.",
+      "Reduce to 160°C fan. Warm syrup, sugar and butter together until melted; let cool until lukewarm.",
+      "Whisk in eggs and vanilla. Scatter pecans in the shell and pour the filling over them.",
+      "Bake for 35–45 minutes until the edges are firm and the centre has a slight wobble. Cool completely before cutting."
+    ],
+    "compactMetricUnits": true,
+    "yield": "8 servings",
+    "foundations": [
+      {
+        "recipeId": "shortcrust-pastry",
+        "amount": 350.0,
+        "unit": "g"
+      }
+    ],
+    "prep": "25 min",
+    "bake": "60–70 min",
+    "ferment": "30 min chilling",
+    "tempC": 180
+  },
+  {
+    "id": "quiche-lorraine",
+    "title": "Quiche Lorraine",
+    "category": "Pies & tarts",
+    "section": "desserts",
+    "desc": "A savoury custard tart in a crisp pastry shell.",
+    "ingredients": [
+      [
+        "Bacon, diced",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Onion, finely chopped",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs, beaten and weighed without shells",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        250.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Whole milk",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Gruyère, grated",
+        100.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Roll the prepared pastry to 3 mm and line a 24 cm tart tin for the base batch, patching tears and leaving an overhang. Chill for 30 minutes. Use extra tins for larger batches and a 17 cm tin for a half batch.",
+      "Preheat to 180°C fan. Line the pastry with baking paper and fill with baking weights. Bake for 15 minutes, remove paper and weights, then bake for 8–10 minutes until dry and lightly golden. Trim the rim.",
+      "Fry bacon in a dry pan for 5 minutes. Add onion and cook for 5 minutes until soft; drain excess fat.",
+      "Whisk eggs, cream, milk and pepper. Scatter bacon, onion and Gruyère in the shell and pour in the custard.",
+      "Reduce to 160°C fan. Bake for 30–40 minutes until the custard is set at the edges and gently wobbles in the centre. Rest for 15 minutes before slicing."
+    ],
+    "compactMetricUnits": true,
+    "yield": "8 servings",
+    "foundations": [
+      {
+        "recipeId": "shortcrust-pastry",
+        "amount": 350.0,
+        "unit": "g"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Mains"
+      }
+    ],
+    "prep": "25 min",
+    "bake": "55–65 min",
+    "ferment": "45 min",
+    "tempC": 180
+  },
+  {
+    "id": "spinach-feta-quiche",
+    "title": "Spinach & Feta Quiche",
+    "category": "Pies & tarts",
+    "section": "desserts",
+    "desc": "A savoury custard tart in a crisp pastry shell.",
+    "ingredients": [
+      [
+        "Frozen spinach, thawed",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs, beaten and weighed without shells",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        200.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Whole milk",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Ground nutmeg",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Feta, crumbled",
+        200.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Roll the prepared pastry to 3 mm and line a 24 cm tart tin for the base batch, patching tears and leaving an overhang. Chill for 30 minutes. Use extra tins for larger batches and a 17 cm tin for a half batch.",
+      "Preheat to 180°C fan. Line the pastry with baking paper and fill with baking weights. Bake for 15 minutes, remove paper and weights, then bake for 8–10 minutes until dry and lightly golden. Trim the rim.",
+      "Squeeze the thawed spinach very dry and chop finely.",
+      "Whisk eggs, cream, milk, nutmeg and pepper. Scatter spinach and feta in the shell and pour in the custard.",
+      "Reduce to 160°C fan. Bake for 30–40 minutes until the custard is set at the edges and gently wobbles in the centre. Rest for 15 minutes before slicing."
+    ],
+    "compactMetricUnits": true,
+    "yield": "8 servings",
+    "foundations": [
+      {
+        "recipeId": "shortcrust-pastry",
+        "amount": 350.0,
+        "unit": "g"
+      }
+    ],
+    "categoryMemberships": [
+      {
+        "section": "meals",
+        "category": "Mains"
+      }
+    ],
+    "prep": "25 min",
+    "bake": "55–65 min",
+    "ferment": "45 min",
+    "tempC": 180
+  }
+]

@@ -2,7 +2,7 @@
 let recipes = [];
 let seedRecipes = [];
 let recipeCatalogChanges = { retiredIds: [], renamedIds: {} };
-const RECIPE_VERSION = '49';
+const RECIPE_VERSION = '51';
 const LS = {
   recipes:   'quickrecipe.recipes.v1',
   favs:      'quickrecipe.favs.v1',
@@ -23,7 +23,7 @@ let recipeSection = 'All';
 let listScrollTop = 0;
 const recipeSections = [
   { id: 'baking', label: 'Bread & baking', categories: ['Bread', 'Polish Breads', 'Loaves', 'Rolls', 'Flatbreads', 'Pastries', 'Pizza & savoury dough', 'Baking components'] },
-  { id: 'desserts', label: 'Cakes & desserts', categories: ['Cake', 'Cakes', 'Cheesecake', 'Cheesecakes', 'Skyr Cake', 'Meringue', 'Brownies', 'Cookies', 'Truffles', 'Dessert', 'Desserts', 'Muffins & scones', 'Pies & tarts', 'Classic desserts'] },
+  { id: 'desserts', label: 'Cakes & desserts', categories: ['Cake', 'Cakes', 'Cheesecake', 'Cheesecakes', 'Skyr Cake', 'Meringue', 'Brownies', 'Cookies', 'Truffles', 'Dessert', 'Desserts', 'Muffins & scones', 'Pies & tarts', 'Classic desserts', 'Confections'] },
   { id: 'meals', label: 'Meals', categories: ['Breakfast', 'Polish Soups', 'Soups', 'Salads', 'Mains', 'Sides', 'Breakfast & brunch', 'Pasta & noodles', 'Rice & grains', 'Chicken', 'Beef, pork & sausage', 'Fish & seafood', 'Vegetarian', 'Quick dinners', 'Casseroles & one-pot'] },
   { id: 'sauces', label: 'Dressings & sauces', categories: ['Dressings', 'Sauce', 'Sauces', 'Dips', 'Stocks', 'Brown sauces', 'Béchamel', 'Velouté', 'Hollandaise', 'Tomato sauces', 'Mayonnaise', 'Butter & pan sauces', 'Sweet sauces'] },
 ];
@@ -464,7 +464,7 @@ function foundationIngredientsHtml(r) {
 }
 function familyNavigationHtml(r) {
   const children = recipes.filter(child => child.foundations?.some(f => f.recipeId === r.id))
-    .sort((a, b) => recipeText(a.title).localeCompare(recipeText(b.title), language));
+    .sort((a, b) => compareRecipeLabels(recipeText(a.title), recipeText(b.title)));
   return `${familyHistory.length ? `<button class="btn family-back" data-family-back>← ${esc(t('Back to previous recipe'))}</button>` : ''}
     ${children.length ? `<nav class="recipe-family" aria-label="${esc(t('Make from this'))}"><h3>${esc(t('Make from this'))}</h3><div>${children.map(child => `<button class="btn" data-derivative="${esc(child.id)}">${esc(recipeText(child.title))} →</button>`).join('')}</div></nav>` : ''}`;
 }
@@ -534,7 +534,7 @@ function familyShoppingAmount(item) {
 /* ─── Chips ─── */
 function categories() {
   const names = [...new Set(recipes.flatMap(r => recipeMemberships(r).filter(m => m.section === recipeSection).map(m => m.category)))];
-  names.sort((a, b) => t(a).localeCompare(t(b), language, { sensitivity: 'base' }));
+  names.sort((a, b) => compareRecipeLabels(t(a), t(b)));
   return ['All', ...names];
 }
 function browseSection(id) {
@@ -974,14 +974,14 @@ function populateRecipeOrganization(r) {
     const section = document.getElementById('fSection').value;
     const names = [...new Set([...(recipeSections.find(s => s.id === section)?.categories || []),
       ...recipes.flatMap(recipe => recipeMemberships(recipe).filter(m => m.section === section).map(m => m.category))])];
-    document.getElementById('categorySuggestions').innerHTML = names.sort((a, b) => t(a).localeCompare(t(b), language))
+    document.getElementById('categorySuggestions').innerHTML = names.sort((a, b) => compareRecipeLabels(t(a), t(b)))
       .map(name => `<option value="${esc(name)}">${esc(t(name))}</option>`).join('');
   };
   suggestions(); document.getElementById('fSection').onchange = suggestions;
   const memberships = r?.categoryMemberships || [];
   document.getElementById('fMemberships').innerHTML = recipeSections.map(section => {
     const names = [...new Set([...section.categories, ...recipes.flatMap(recipe => recipeMemberships(recipe).filter(m => m.section === section.id).map(m => m.category))])]
-      .sort((a, b) => t(a).localeCompare(t(b), language));
+      .sort((a, b) => compareRecipeLabels(t(a), t(b)));
     return `<details><summary>${esc(t(section.label))}</summary>${names.map(name => `<label class="membership-option"><input type="checkbox" data-membership-section="${section.id}" data-membership-category="${esc(name)}" ${memberships.some(m => m.section === section.id && m.category === name) ? 'checked' : ''}>${esc(t(name))}</label>`).join('')}</details>`;
   }).join('');
   document.getElementById('fBatchAmount').value = r?.batchYield?.amount ?? '';
@@ -992,7 +992,7 @@ function populateRecipeOrganization(r) {
 }
 function addFoundationField(f = {}) {
   const row = document.createElement('div'); row.className = 'foundation-editor-row';
-  const available = recipes.filter(r => r.id !== editingId && r.batchYield).sort((a, b) => recipeText(a.title).localeCompare(recipeText(b.title), language));
+  const available = recipes.filter(r => r.id !== editingId && r.batchYield).sort((a, b) => compareRecipeLabels(recipeText(a.title), recipeText(b.title)));
   row.innerHTML = `<select data-base aria-label="${esc(t('Foundation'))}"><option value="">${esc(t('Choose foundation'))}</option>${available.map(r => `<option value="${esc(r.id)}">${esc(recipeText(r.title))}</option>`).join('')}</select>
     <input data-base-amount type="number" min="0.001" step="any" aria-label="${esc(t('Foundation amount'))}">
     <select data-base-unit aria-label="${esc(t('Foundation unit'))}">${['ml', 'L', 'g', 'kg', 'pc'].map(u => `<option>${u}</option>`).join('')}</select>

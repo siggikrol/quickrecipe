@@ -2,7 +2,7 @@
 
 ## Content workflow
 
-The collection map is in [recipe-collection-map.md](recipe-collection-map.md). The original 252 recipes are retained, with 209 additions completed in steps 6–10. Béchamel and its derivatives are published alongside stocks, other sauce families and everyday meals. See [content-expansion-status.md](content-expansion-status.md) for batch counts. Calculation fixtures in `family-test.js` are not published recipes.
+The collection map is in [recipe-collection-map.md](recipe-collection-map.md). The original 252 recipes are retained, with 209 additions completed in steps 6–10. Béchamel and its derivatives are published alongside stocks, other sauce families and everyday meals. Steps 11–12 add another 58 recipes, bringing the collection to 519, including raw pastry and dough foundations and baked choux/sponge components. See [content-expansion-status.md](content-expansion-status.md) for batch counts. Calculation fixtures in `family-test.js` are not published recipes.
 
 The recipe editor has a **Categories & foundations** panel. Choose additional categories, optionally set a measured prepared yield, and select required foundations with their amounts. A foundation must have a measured yield before it can be selected. Future categories appear in this panel; browsing shows only categories containing recipes.
 

@@ -1,0 +1,735 @@
+[
+  {
+    "id": "blueberry-muffins",
+    "title": "Blueberry Muffins",
+    "category": "Muffins & scones",
+    "section": "desserts",
+    "desc": "Soft muffins mixed gently for a tender crumb.",
+    "ingredients": [
+      [
+        "Plain flour",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Baking powder",
+        8.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        2.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs, beaten and weighed without shells",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        180.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Blueberries",
+        150.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Line muffin tins for the displayed number of muffins; keep cup sizes the same when scaling.",
+      "Mix flour, sugar, baking powder and salt in a bowl.",
+      "Whisk eggs, milk and oil separately, then fold into the dry mixture just until combined; small lumps are fine.",
+      "Fold in blueberries.",
+      "Divide evenly between the cups, about three-quarters full. Bake for 20–25 minutes until risen and a skewer comes out without wet batter. Cool on a rack."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 12,
+      "unit": "pc"
+    },
+    "prep": "15 min",
+    "bake": "20–25 min",
+    "tempC": 180
+  },
+  {
+    "id": "chocolate-muffins",
+    "title": "Chocolate Muffins",
+    "category": "Muffins & scones",
+    "section": "desserts",
+    "desc": "Soft muffins mixed gently for a tender crumb.",
+    "ingredients": [
+      [
+        "Plain flour",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        140.0,
+        "g",
+        "other"
+      ],
+      [
+        "Baking powder",
+        8.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        2.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs, beaten and weighed without shells",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        200.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Chocolate chips",
+        100.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Line muffin tins for the displayed number of muffins; keep cup sizes the same when scaling.",
+      "Mix flour, cocoa, sugar, baking powder and salt in a bowl.",
+      "Whisk eggs, milk and oil separately, then fold into the dry mixture just until combined; small lumps are fine.",
+      "Fold in chocolate chips.",
+      "Divide evenly between the cups, about three-quarters full. Bake for 20–25 minutes until risen and a skewer comes out without wet batter. Cool on a rack."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 12,
+      "unit": "pc"
+    },
+    "prep": "15 min",
+    "bake": "20–25 min",
+    "tempC": 180
+  },
+  {
+    "id": "banana-muffins",
+    "title": "Banana Muffins",
+    "category": "Muffins & scones",
+    "section": "desserts",
+    "desc": "Soft muffins mixed gently for a tender crumb.",
+    "ingredients": [
+      [
+        "Plain flour",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Baking powder",
+        8.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        2.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs, beaten and weighed without shells",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        70.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Ripe banana, mashed",
+        200.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Line muffin tins for the displayed number of muffins; keep cup sizes the same when scaling.",
+      "Mix flour, sugar, baking powder and salt in a bowl.",
+      "Whisk eggs, milk and oil separately, then fold into the dry mixture just until combined; small lumps are fine.",
+      "Fold in mashed banana.",
+      "Divide evenly between the cups, about three-quarters full. Bake for 20–25 minutes until risen and a skewer comes out without wet batter. Cool on a rack."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 12,
+      "unit": "pc"
+    },
+    "prep": "15 min",
+    "bake": "20–25 min",
+    "tempC": 180
+  },
+  {
+    "id": "lemon-poppy-seed-muffins",
+    "title": "Lemon Poppy-Seed Muffins",
+    "category": "Muffins & scones",
+    "section": "desserts",
+    "desc": "Soft muffins mixed gently for a tender crumb.",
+    "ingredients": [
+      [
+        "Plain flour",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        140.0,
+        "g",
+        "other"
+      ],
+      [
+        "Baking powder",
+        8.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        2.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs, beaten and weighed without shells",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lemon zest, finely grated",
+        6.0,
+        "g",
+        "other"
+      ],
+      [
+        "Poppy seeds",
+        15.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Line muffin tins for the displayed number of muffins; keep cup sizes the same when scaling.",
+      "Mix flour, sugar, baking powder and salt in a bowl.",
+      "Whisk eggs, milk and oil separately, then fold into the dry mixture just until combined; small lumps are fine.",
+      "Fold in lemon juice, zest and poppy seeds.",
+      "Divide evenly between the cups, about three-quarters full. Bake for 20–25 minutes until risen and a skewer comes out without wet batter. Cool on a rack."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 12,
+      "unit": "pc"
+    },
+    "prep": "15 min",
+    "bake": "20–25 min",
+    "tempC": 180
+  },
+  {
+    "id": "plain-scones",
+    "title": "Plain Scones",
+    "category": "Muffins & scones",
+    "section": "desserts",
+    "desc": "Tender scones, best served warm.",
+    "ingredients": [
+      [
+        "Plain flour",
+        350.0,
+        "g",
+        "other"
+      ],
+      [
+        "Baking powder",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        3.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        85.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        180.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Plain flour for dusting",
+        20.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 200°C fan and line a tray.",
+      "Mix flour, baking powder and salt, sugar. Rub in cold diced butter until crumbly.",
+      "Stir in milk to make a soft dough.",
+      "Turn onto a lightly floured surface, fold gently twice and pat to 2.5 cm thick. Cut into the displayed number of equal pieces, handling as little as possible.",
+      "Bake for 12–16 minutes until well risen and golden. Cool briefly on a rack and serve warm."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 8,
+      "unit": "pc"
+    },
+    "prep": "20 min",
+    "bake": "12–16 min",
+    "tempC": 200
+  },
+  {
+    "id": "cheese-scones",
+    "title": "Cheese Scones",
+    "category": "Muffins & scones",
+    "section": "desserts",
+    "desc": "Tender scones, best served warm.",
+    "ingredients": [
+      [
+        "Plain flour",
+        350.0,
+        "g",
+        "other"
+      ],
+      [
+        "Baking powder",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        3.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        85.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cheddar, grated",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        180.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Plain flour for dusting",
+        20.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 200°C fan and line a tray.",
+      "Mix flour, baking powder and salt. Rub in cold diced butter until crumbly.",
+      "Stir in cheddar and milk to make a soft dough.",
+      "Turn onto a lightly floured surface, fold gently twice and pat to 2.5 cm thick. Cut into the displayed number of equal pieces, handling as little as possible.",
+      "Bake for 12–16 minutes until well risen and golden. Cool briefly on a rack and serve warm."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 8,
+      "unit": "pc"
+    },
+    "prep": "20 min",
+    "bake": "12–16 min",
+    "tempC": 200
+  },
+  {
+    "id": "cinnamon-scones",
+    "title": "Cinnamon Scones",
+    "category": "Muffins & scones",
+    "section": "desserts",
+    "desc": "Tender scones, best served warm.",
+    "ingredients": [
+      [
+        "Plain flour",
+        350.0,
+        "g",
+        "other"
+      ],
+      [
+        "Baking powder",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        3.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        60.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ground cinnamon",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Butter",
+        85.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        180.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Plain flour for dusting",
+        20.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 200°C fan and line a tray.",
+      "Mix flour, baking powder and salt, sugar, and cinnamon. Rub in cold diced butter until crumbly.",
+      "Stir in milk to make a soft dough.",
+      "Turn onto a lightly floured surface, fold gently twice and pat to 2.5 cm thick. Cut into the displayed number of equal pieces, handling as little as possible.",
+      "Bake for 12–16 minutes until well risen and golden. Cool briefly on a rack and serve warm."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 8,
+      "unit": "pc"
+    },
+    "prep": "20 min",
+    "bake": "12–16 min",
+    "tempC": 200
+  },
+  {
+    "id": "banana-bread",
+    "title": "Banana Bread",
+    "category": "Muffins & scones",
+    "section": "desserts",
+    "desc": "A simple loaf cake for slicing and sharing.",
+    "ingredients": [
+      [
+        "Plain flour",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Baking powder",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        2.0,
+        "g",
+        "other"
+      ],
+      [
+        "Brown sugar",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ripe banana, mashed",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs, beaten and weighed without shells",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Whole milk",
+        50.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 160°C fan. Line a 23 × 13 cm loaf tin for the base batch; use more tins when scaling up and a smaller tin for a half batch, keeping a similar batter depth.",
+      "Mix flour, baking powder, salt and sugar in a bowl.",
+      "Whisk banana, eggs, oil and milk together, then fold into the dry ingredients just until combined.",
+      "Transfer to the tin and bake for 55–65 minutes until a skewer comes out clean. Cover loosely with foil if browning too quickly.",
+      "Cool in the tin for 15 minutes, then lift out and cool on a rack before slicing."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 1,
+      "unit": "pc"
+    },
+    "prep": "20 min",
+    "bake": "55–65 min",
+    "tempC": 160
+  },
+  {
+    "id": "lemon-loaf",
+    "title": "Lemon Loaf",
+    "category": "Muffins & scones",
+    "section": "desserts",
+    "desc": "A simple loaf cake for slicing and sharing.",
+    "ingredients": [
+      [
+        "Plain flour",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Baking powder",
+        8.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        2.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs, beaten and weighed without shells",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        60.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        40.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lemon zest, finely grated",
+        6.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 160°C fan. Line a 23 × 13 cm loaf tin for the base batch; use more tins when scaling up and a smaller tin for a half batch, keeping a similar batter depth.",
+      "Mix flour, baking powder, salt and sugar in a bowl.",
+      "Whisk melted and cooled butter, eggs, milk, lemon juice and zest together, then fold into the dry ingredients just until combined.",
+      "Transfer to the tin and bake for 55–65 minutes until a skewer comes out clean. Cover loosely with foil if browning too quickly.",
+      "Cool in the tin for 15 minutes, then lift out and cool on a rack before slicing."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 1,
+      "unit": "pc"
+    },
+    "prep": "20 min",
+    "bake": "55–65 min",
+    "tempC": 160
+  },
+  {
+    "id": "carrot-loaf",
+    "title": "Carrot Loaf",
+    "category": "Muffins & scones",
+    "section": "desserts",
+    "desc": "A simple loaf cake for slicing and sharing.",
+    "ingredients": [
+      [
+        "Plain flour",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Baking powder",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        2.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ground cinnamon",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Brown sugar",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs, beaten and weighed without shells",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Carrot, grated",
+        250.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 160°C fan. Line a 23 × 13 cm loaf tin for the base batch; use more tins when scaling up and a smaller tin for a half batch, keeping a similar batter depth.",
+      "Mix flour, baking powder, salt, cinnamon and sugar in a bowl.",
+      "Whisk eggs and oil together, then fold into the dry ingredients just until combined.",
+      "Fold in grated carrot.",
+      "Transfer to the tin and bake for 55–65 minutes until a skewer comes out clean. Cover loosely with foil if browning too quickly.",
+      "Cool in the tin for 15 minutes, then lift out and cool on a rack before slicing."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 1,
+      "unit": "pc"
+    },
+    "prep": "20 min",
+    "bake": "55–65 min",
+    "tempC": 160
+  }
+]

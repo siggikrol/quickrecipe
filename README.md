@@ -25,6 +25,8 @@ The collection lives in `recipes/`, split by category:
 - `breakfast.json`, `pasta.json`, `chicken.json`, `quick-dinners.json`
 - `meat.json`, `seafood.json`, `rice.json`, `vegetarian.json`
 - `sides.json`, `salads.json`, `soups.json`, `casseroles.json`
+- `baking-foundations.json`, `pizza-flatbreads.json`, `muffins-scones-loaves.json`
+- `pies-tarts.json`, `classic-desserts.json`, `confections.json`
 
 `recipes/index.json` lists the files to load. Each file contains an array of recipe objects. Add recipes to the appropriate file; add new filenames to the index when introducing another file. IDs must be unique across the entire collection and should remain stable to preserve favourites and saved selections.
 
@@ -65,3 +67,5 @@ The [collection map](docs/recipe-collection-map.md) compares the content bluepri
 Use **Categories & foundations** in the recipe editor to assign additional categories, set a measured prepared yield, and choose required foundations. Browse categories appear when populated and sort by their translated names. [Recipe family documentation](docs/recipe-families.md) describes validation, navigation, scaling and shopping-list rules. `family-test.js` uses unpublished arithmetic fixtures to exercise these features without adding unverified recipes to the collection.
 
 Steps 6–10 add 209 recipes, bringing the collection to 461. The [expansion status](docs/content-expansion-status.md) records the completed batches and review limits. `content-test.js` checks every new recipe at ½×, 1×, 2× and 3×, plus published recipe-family shopping calculations.
+
+Steps 11–14 add 58 more recipes for **519 total**, connect finished bakes to their foundations, and complete the release review. See the [release report](docs/release-review.md) for the additions and checks, and the [saved roadmap](docs/implementation-roadmap.md) for the approved scope.

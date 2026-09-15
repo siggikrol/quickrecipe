@@ -1,6 +1,6 @@
 # Content expansion: steps 6–10
 
-Completed: **209 additions**, for **461 recipes** in 27 indexed files. There is no collection size limit. All 252 original recipes retain their stable IDs, ingredient quantities and methods. The existing Caesar dressing gains numeric metadata matching its already declared approximate 150 ml yield so the new Caesar salad can reference it.
+Steps 6–10 completion snapshot: **209 additions**, for **461 recipes** in 27 indexed files. The later [release review](release-review.md) records the expansion to 519. There is no collection size limit. All 252 original recipes retain their stable IDs, ingredient quantities and methods. The existing Caesar dressing gains numeric metadata matching its already declared approximate 150 ml yield so the new Caesar salad can reference it.
 
 ## Completed steps
 

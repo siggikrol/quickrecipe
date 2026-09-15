@@ -1,0 +1,396 @@
+[
+  {
+    "id": "margherita-pizza",
+    "title": "Margherita Pizza",
+    "category": "Pizza & savoury dough",
+    "section": "baking",
+    "desc": "Home-oven pizza with tomato and mozzarella.",
+    "ingredients": [
+      [
+        "Plain flour for dusting",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mozzarella, grated",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh basil leaves",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 250°C conventional with a pizza stone or heavy tray inside for 40 minutes.",
+      "Use prepared dough at room temperature. Divide into portions of about 250 g and stretch each on a lightly floured surface to about 28 cm.",
+      "Spread the prepared tomato sauce thinly over each base, leaving a rim. Divide the mozzarella over the pizzas.",
+      "Drizzle with olive oil.",
+      "Transfer carefully to the hot surface and bake in batches for 8–12 minutes until the base is crisp and the rim browned. Finish with basil and serve."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "neapolitan-pizza-dough",
+        "amount": 500.0,
+        "unit": "g"
+      },
+      {
+        "recipeId": "tomato-sauce",
+        "amount": 180.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "20 min",
+    "bake": "8–12 min per pizza",
+    "tempC": 250
+  },
+  {
+    "id": "pepperoni-pizza",
+    "title": "Pepperoni Pizza",
+    "category": "Pizza & savoury dough",
+    "section": "baking",
+    "desc": "Home-oven pizza with tomato and mozzarella.",
+    "ingredients": [
+      [
+        "Plain flour for dusting",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mozzarella, grated",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Pepperoni slices",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Olive oil",
+        10.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Fresh basil leaves",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 250°C conventional with a pizza stone or heavy tray inside for 40 minutes.",
+      "Use prepared dough at room temperature. Divide into portions of about 250 g and stretch each on a lightly floured surface to about 28 cm.",
+      "Spread the prepared tomato sauce thinly over each base, leaving a rim. Divide the mozzarella over the pizzas.",
+      "Add pepperoni evenly, then drizzle with oil.",
+      "Transfer carefully to the hot surface and bake in batches for 8–12 minutes until the base is crisp and the rim browned. Finish with basil and serve."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "neapolitan-pizza-dough",
+        "amount": 500.0,
+        "unit": "g"
+      },
+      {
+        "recipeId": "tomato-sauce",
+        "amount": 180.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "20 min",
+    "bake": "8–12 min per pizza",
+    "tempC": 250
+  },
+  {
+    "id": "garlic-naan",
+    "title": "Garlic Naan",
+    "category": "Pizza & savoury dough",
+    "section": "baking",
+    "desc": "Soft pan-cooked flatbreads with garlic butter.",
+    "ingredients": [
+      [
+        "Plain flour",
+        400.0,
+        "g",
+        "other"
+      ],
+      [
+        "Instant yeast",
+        7.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        8.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        6.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        180.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Greek yoghurt",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sunflower oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Plain flour for dusting",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Garlic, minced",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Fresh coriander, chopped",
+        10.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mix flour, yeast, sugar and salt. Add lukewarm water, yoghurt and oil and knead for 8 minutes until soft and elastic.",
+      "Cover and leave for 1 hour until doubled. Divide into portions of about 120 g and roll into thin ovals with a little dusting flour.",
+      "Heat a dry heavy frying pan over medium-high heat. Cook each naan for 2–3 minutes per side until puffed, browned and cooked through.",
+      "Melt butter with garlic over low heat for 1 minute. Brush over the hot breads and scatter with coriander."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "20 min",
+    "cook": "25 min",
+    "ferment": "1 hr"
+  },
+  {
+    "id": "pita-bread",
+    "title": "Pita Bread",
+    "category": "Pizza & savoury dough",
+    "section": "baking",
+    "desc": "Soft pocket breads baked on a hot tray.",
+    "ingredients": [
+      [
+        "Bread flour",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Instant yeast",
+        7.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        10.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        300.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Olive oil",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Plain flour for dusting",
+        20.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mix flour, yeast and salt, then add lukewarm water and oil. Knead for 10 minutes until smooth.",
+      "Cover and rise for 1 hour until doubled. Preheat to 250°C conventional with a heavy tray inside.",
+      "Divide into portions of about 100 g. Roll with dusting flour into even 5 mm thick discs; keep covered and rest for 15 minutes.",
+      "Bake on the hot tray in batches for 4–6 minutes until puffed and lightly coloured. Wrap in a clean towel to keep soft."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "prep": "25 min",
+    "ferment": "1 hr 15 min",
+    "bake": "4–6 min per batch",
+    "tempC": 250
+  },
+  {
+    "id": "flammkuchen",
+    "title": "Flammkuchen",
+    "category": "Pizza & savoury dough",
+    "section": "baking",
+    "desc": "A thin yeast-dough version with cream, onion and bacon.",
+    "ingredients": [
+      [
+        "Plain flour for dusting",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Crème fraîche",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Onion, thinly sliced",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Bacon, diced",
+        150.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 240°C conventional with a heavy tray inside for 30 minutes.",
+      "Divide prepared dough into portions of about 150 g. Roll very thinly on baking paper with a little dusting flour.",
+      "Spread with crème fraîche, season with pepper and scatter with thin onion and bacon.",
+      "Slide onto the hot tray and bake for 10–14 minutes until the base is crisp and the bacon is cooked. Serve immediately."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "quick-pizza-dough",
+        "amount": 300.0,
+        "unit": "g"
+      }
+    ],
+    "prep": "15 min",
+    "bake": "10–14 min",
+    "tempC": 240
+  },
+  {
+    "id": "calzone",
+    "title": "Calzone",
+    "category": "Pizza & savoury dough",
+    "section": "baking",
+    "desc": "Folded pizza with spinach and cheese.",
+    "ingredients": [
+      [
+        "Baby spinach",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour for dusting",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Ricotta",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mozzarella, grated",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Salt",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Black pepper, freshly ground",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Olive oil",
+        15.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 220°C fan. Wilt spinach in a covered pan over low heat, then cool and squeeze very dry; chop.",
+      "Divide prepared dough into portions of about 300 g. Roll into rounds on a lightly floured surface.",
+      "Mix spinach, ricotta, mozzarella, salt and pepper. Spread prepared tomato sauce over one half of each round and divide the filling over it, leaving a clear border.",
+      "Fold over and firmly crimp the edges. Brush with oil and cut a small steam vent. Bake for 20–25 minutes until golden and hot throughout."
+    ],
+    "compactMetricUnits": true,
+    "yield": "4 servings",
+    "foundations": [
+      {
+        "recipeId": "quick-pizza-dough",
+        "amount": 600.0,
+        "unit": "g"
+      },
+      {
+        "recipeId": "tomato-sauce",
+        "amount": 150.0,
+        "unit": "ml"
+      }
+    ],
+    "prep": "25 min",
+    "bake": "20–25 min",
+    "tempC": 220
+  }
+]

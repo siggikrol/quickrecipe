@@ -4,7 +4,7 @@ const { JSDOM } = require('jsdom');
 const index = JSON.parse(fs.readFileSync('recipes/index.json'));
 const files = Object.fromEntries(index.files.map(name => [name, JSON.parse(fs.readFileSync(`recipes/${name}`))]));
 const collection = Object.values(files).flat();
-const batches = ['foundation-sauces', 'stocks', 'dips', 'breakfast', 'pasta', 'chicken', 'quick-dinners', 'meat', 'seafood', 'rice', 'vegetarian', 'sides', 'salads', 'soups', 'casseroles'];
+const batches = ['foundation-sauces', 'stocks', 'dips', 'breakfast', 'pasta', 'chicken', 'quick-dinners', 'meat', 'seafood', 'rice', 'vegetarian', 'sides', 'salads', 'soups', 'casseroles', 'baking-foundations', 'pizza-flatbreads', 'muffins-scones-loaves', 'pies-tarts', 'classic-desserts', 'confections'];
 const additions = batches.flatMap(name => files[`${name}.json`]);
 const byId = Object.fromEntries(collection.map(r => [r.id, r]));
 assert.equal(new Set(collection.map(r => r.id)).size, collection.length, 'Recipe IDs must be globally unique');
@@ -87,6 +87,18 @@ function checkAmount(text, amount, unit, label) {
       if (r.batchYield) checkAmount(d.getElementById('recipeYield').textContent, r.batchYield.amount * multiplier, r.batchYield.unit, `${r.id}: yield`);
       else assert.equal(Number(d.getElementById('recipeYield').textContent.match(/^\d+(?:\.\d+)?/)[0]), Number(r.yield.match(/^\d+/)[0]) * multiplier, `${r.id}: servings`);
     }
+  }
+  // Baking families use dough mass or baked-shell counts, without density guesses.
+  for (const multiplier of [0.5, 1, 2, 3]) {
+    const pizza = w.familyShoppingPlan(byId['margherita-pizza'], multiplier, {}, collection);
+    near(pizza.ingredients.find(i => i.name === 'Bread flour').amount, 312.5 * multiplier, 'Pizza dough flour');
+    near(pizza.bases.find(b => b.id === 'neapolitan-pizza-dough').amount, 500 * multiplier, 'Prepared pizza dough');
+    const preparedPizza = w.familyShoppingPlan(byId['margherita-pizza'], multiplier, { 'neapolitan-pizza-dough': true }, collection);
+    assert(!preparedPizza.ingredients.some(i => i.name === 'Bread flour'));
+    const puffs = w.familyShoppingPlan(byId.profiteroles, multiplier, {}, collection);
+    near(puffs.ingredients.find(i => i.name === 'Eggs, beaten and weighed without shells').amount, 250 * multiplier, 'Choux shell eggs');
+    const preparedPuffs = w.familyShoppingPlan(byId.profiteroles, multiplier, { 'choux-pastry': true }, collection);
+    assert(!preparedPuffs.ingredients.some(i => i.name === 'Plain flour'));
   }
   // Published Béchamel -> Mornay chain: 600 ml uses 500 ml Béchamel.
   for (const multiplier of [0.5, 1, 2, 3]) {

@@ -1,0 +1,628 @@
+[
+  {
+    "id": "tiramisu",
+    "title": "Tiramisu",
+    "category": "Classic desserts",
+    "section": "desserts",
+    "desc": "An egg-free version with coffee-soaked biscuits and mascarpone cream.",
+    "ingredients": [
+      [
+        "Mascarpone",
+        500.0,
+        "g",
+        "other"
+      ],
+      [
+        "Icing sugar",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        300.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Strong coffee, cooled",
+        300.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Ladyfinger biscuits",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder",
+        20.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Stir mascarpone and icing sugar together until smooth. Whip cream separately to soft peaks and fold into the mascarpone.",
+      "Pour cooled coffee into a shallow bowl. Dip biscuits briefly on both sides, without soaking until soggy.",
+      "Layer half the dipped biscuits and half the cream mixture in a 20 × 25 cm dish for the base batch. Repeat the layers.",
+      "Cover and refrigerate for at least 6 hours. Dust with cocoa just before serving; keep leftovers refrigerated and use within 2 days."
+    ],
+    "compactMetricUnits": true,
+    "yield": "8 servings",
+    "prep": "25 min",
+    "ferment": "6 hr"
+  },
+  {
+    "id": "creme-brulee",
+    "title": "Crème Brûlée",
+    "category": "Classic desserts",
+    "section": "desserts",
+    "desc": "Vanilla custard under a crisp caramel crust.",
+    "ingredients": [
+      [
+        "Double cream",
+        500.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        5.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Egg yolks, weighed",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar for topping",
+        40.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 140°C conventional. Set shallow heatproof ramekins in a roasting tray. Warm cream and vanilla until steaming, without boiling.",
+      "Whisk yolks and sugar gently, then slowly pour in warm cream while stirring. Strain and divide between ramekins, about 100 ml per portion.",
+      "Pour hot water into the roasting tray halfway up the ramekins. Bake for 35–45 minutes until the edges are set and centres gently tremble, without liquid ripples.",
+      "Remove from the water, cool, then refrigerate for at least 4 hours.",
+      "Divide topping sugar evenly over the chilled custards. Caramelise with a kitchen torch, keeping it moving, and let the crust harden for 2 minutes before serving."
+    ],
+    "compactMetricUnits": true,
+    "yield": "6 servings",
+    "prep": "20 min",
+    "bake": "35–45 min",
+    "ferment": "4 hr",
+    "tempC": 140
+  },
+  {
+    "id": "panna-cotta",
+    "title": "Vanilla Panna Cotta",
+    "category": "Classic desserts",
+    "section": "desserts",
+    "desc": "Soft vanilla cream set in individual glasses.",
+    "ingredients": [
+      [
+        "Whole milk",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Gelatine powder",
+        6.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        500.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Sugar",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        5.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Pour cold milk into a bowl and sprinkle gelatine evenly over it. Leave for 10 minutes to hydrate.",
+      "Warm cream and sugar in a saucepan, stirring until sugar dissolves. Remove from the heat before boiling.",
+      "Stir in the soaked gelatine and milk until fully dissolved, then add vanilla. Strain into a jug.",
+      "Divide between serving glasses, cool briefly, then refrigerate for at least 6 hours until softly set. Serve in the glasses."
+    ],
+    "compactMetricUnits": true,
+    "yield": "6 servings",
+    "prep": "15 min",
+    "cook": "5 min",
+    "ferment": "6 hr"
+  },
+  {
+    "id": "chocolate-mousse",
+    "title": "Chocolate Mousse",
+    "category": "Classic desserts",
+    "section": "desserts",
+    "desc": "An egg-free dark chocolate mousse with whipped cream.",
+    "ingredients": [
+      [
+        "Dark chocolate, chopped",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream for sauce",
+        150.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Double cream for filling",
+        250.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Put chocolate in a heatproof bowl. Heat the cream for sauce until steaming and pour it over the chocolate.",
+      "Wait for 2 minutes, then stir until smooth. Cool to lukewarm, about 35°C, while keeping it fluid.",
+      "Whip the cream for filling to soft peaks. Fold a little into the chocolate to loosen it, then fold in the rest gently.",
+      "Spoon into glasses and refrigerate for at least 3 hours. Serve chilled and use within 2 days."
+    ],
+    "compactMetricUnits": true,
+    "yield": "6 servings",
+    "prep": "20 min",
+    "ferment": "3 hr"
+  },
+  {
+    "id": "sticky-toffee-pudding",
+    "title": "Sticky Toffee Pudding",
+    "category": "Classic desserts",
+    "section": "desserts",
+    "desc": "A warm date sponge with buttery toffee sauce.",
+    "ingredients": [
+      [
+        "Pitted dates, chopped",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        250.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Bicarbonate of soda",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Butter",
+        75.0,
+        "g",
+        "other"
+      ],
+      [
+        "Brown sugar",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs, beaten and weighed without shells",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Baking powder",
+        8.0,
+        "g",
+        "other"
+      ],
+      [
+        "Brown sugar for sauce",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter for sauce",
+        75.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream for sauce",
+        200.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 160°C fan and line a 20 cm square tin for the base batch. Pour boiling water over dates, stir in bicarbonate and leave for 10 minutes; mash lightly.",
+      "Beat softened butter with brown sugar until creamy. Beat in eggs gradually, then fold in flour and baking powder.",
+      "Fold in the dates and all their soaking liquid. Pour into the tin and bake for 30–40 minutes until springy and a skewer comes out clean.",
+      "Heat the sauce sugar, sauce butter and cream together. Simmer for 5 minutes, stirring, until smooth and slightly thickened.",
+      "Rest the pudding for 10 minutes, then cut into portions and serve warm with the sauce."
+    ],
+    "compactMetricUnits": true,
+    "yield": "8 servings",
+    "prep": "25 min",
+    "bake": "30–40 min",
+    "cook": "5 min",
+    "tempC": 160
+  },
+  {
+    "id": "apple-crumble",
+    "title": "Apple Crumble",
+    "category": "Classic desserts",
+    "section": "desserts",
+    "desc": "Baked apples under a crisp oat crumble.",
+    "ingredients": [
+      [
+        "Apples, peeled and sliced",
+        800.0,
+        "g",
+        "other"
+      ],
+      [
+        "Brown sugar",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        20.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Ground cinnamon",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Plain flour",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Rolled oats",
+        50.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Toss apples with brown sugar, lemon juice and cinnamon in a 20 × 25 cm baking dish for the base batch.",
+      "Rub flour and cold diced butter together until crumbly.",
+      "Stir sugar and oats into the crumbs and scatter loosely over the apples, without pressing down.",
+      "Bake for 35–45 minutes until golden and the fruit bubbles at the edges. Rest for 10 minutes before serving."
+    ],
+    "compactMetricUnits": true,
+    "yield": "6 servings",
+    "prep": "20 min",
+    "bake": "35–45 min",
+    "tempC": 180
+  },
+  {
+    "id": "bread-pudding",
+    "title": "Bread Pudding",
+    "category": "Classic desserts",
+    "section": "desserts",
+    "desc": "Bread baked in vanilla custard with sultanas.",
+    "ingredients": [
+      [
+        "Butter for greasing",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "White bread, cubed",
+        350.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sultanas",
+        80.0,
+        "g",
+        "other"
+      ],
+      [
+        "Eggs, beaten and weighed without shells",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Whole milk",
+        500.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Double cream",
+        200.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        5.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Ground cinnamon",
+        0.5,
+        "tsp",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 160°C fan. Butter a deep 20 × 25 cm dish for the base batch and fill with bread and sultanas.",
+      "Whisk eggs, sugar, milk, cream, vanilla and cinnamon until blended.",
+      "Pour over the bread and press lightly to soak. Leave for 20 minutes.",
+      "Bake for 40–50 minutes until golden and the centre is set with no liquid custard. Rest for 10 minutes and serve warm."
+    ],
+    "compactMetricUnits": true,
+    "yield": "8 servings",
+    "prep": "15 min",
+    "bake": "40–50 min",
+    "ferment": "30 min",
+    "tempC": 160
+  },
+  {
+    "id": "lemon-posset",
+    "title": "Lemon Posset",
+    "category": "Classic desserts",
+    "section": "desserts",
+    "desc": "A silky lemon cream set without eggs or gelatine.",
+    "ingredients": [
+      [
+        "Double cream",
+        600.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Sugar",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Lemon juice",
+        80.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Put cream and sugar in a saucepan with plenty of headroom.",
+      "Bring to a gentle boil, stirring to dissolve the sugar, and simmer for 3 minutes. Watch closely to prevent boiling over.",
+      "Remove from heat and stir in lemon juice. Leave for 10 minutes, then strain into small serving glasses.",
+      "Refrigerate for at least 4 hours until set. Serve chilled."
+    ],
+    "compactMetricUnits": true,
+    "yield": "6 servings",
+    "prep": "10 min",
+    "cook": "5 min",
+    "ferment": "4 hr"
+  },
+  {
+    "id": "profiteroles",
+    "title": "Profiteroles",
+    "category": "Classic desserts",
+    "section": "desserts",
+    "desc": "Cream-filled choux shells with warm chocolate sauce.",
+    "ingredients": [
+      [
+        "Double cream for filling",
+        300.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Icing sugar",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dark chocolate, chopped",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream for sauce",
+        100.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Use the prepared baked choux shells, completely cooled. Split each shell horizontally.",
+      "Whip filling cream with icing sugar to soft peaks. Spoon or pipe into the lower halves and replace the tops.",
+      "Put chocolate in a heatproof bowl. Heat sauce cream until steaming, pour over chocolate and stir until smooth.",
+      "Let the sauce cool until just warm, then drizzle over the filled shells and serve immediately. Keep filled shells refrigerated if waiting briefly."
+    ],
+    "compactMetricUnits": true,
+    "yield": "6 servings",
+    "foundations": [
+      {
+        "recipeId": "choux-pastry",
+        "amount": 24.0,
+        "unit": "pc"
+      }
+    ],
+    "prep": "20 min",
+    "cook": "5 min"
+  },
+  {
+    "id": "chocolate-lava-cake",
+    "title": "Chocolate Lava Cake",
+    "category": "Classic desserts",
+    "section": "desserts",
+    "desc": "Individual chocolate cakes with a soft centre.",
+    "ingredients": [
+      [
+        "Butter for greasing",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder for dusting",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dark chocolate, chopped",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        150.0,
+        "g",
+        "other"
+      ],
+      [
+        "Pasteurised eggs, beaten",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Plain flour",
+        50.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Preheat to 180°C fan. Butter individual 150 ml heatproof moulds and dust with cocoa, tapping out excess.",
+      "Melt chocolate and butter gently together and cool until lukewarm.",
+      "Whisk pasteurised eggs and sugar until thick. Fold in the chocolate mixture, then sift in flour and fold just until combined.",
+      "Divide evenly between moulds and bake for 10–13 minutes until the edges are set but centres remain soft. Rest for 1 minute, loosen the edges and turn out carefully; serve immediately."
+    ],
+    "compactMetricUnits": true,
+    "yield": "6 servings",
+    "prep": "20 min",
+    "bake": "10–13 min",
+    "tempC": 180
+  },
+  {
+    "id": "vanilla-ice-cream",
+    "title": "Vanilla Ice Cream",
+    "category": "Classic desserts",
+    "section": "desserts",
+    "desc": "A churned vanilla ice cream with a cooked custard base.",
+    "ingredients": [
+      [
+        "Whole milk",
+        300.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Double cream",
+        300.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        5.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Egg yolks, weighed",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        120.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "If required, freeze the ice-cream machine bowl according to its instructions. Warm milk, cream and vanilla until steaming.",
+      "Whisk yolks and sugar together. Slowly pour in the warm dairy while whisking, then return to the saucepan.",
+      "Cook over low heat, stirring continuously, until the custard coats a spoon and reaches 82°C. Do not boil; strain into a clean bowl.",
+      "Cool the bowl in an ice-water bath, stirring, then cover and refrigerate for at least 4 hours until thoroughly cold.",
+      "Churn according to the machine instructions, then transfer to a freezer container and freeze for at least 3 hours until scoopable."
+    ],
+    "compactMetricUnits": true,
+    "yield": "8 servings",
+    "prep": "20 min",
+    "cook": "10 min",
+    "ferment": "7 hr chilling and freezing"
+  }
+]

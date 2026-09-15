@@ -2,7 +2,7 @@
 
 ## Scope
 
-Current catalogue: **461 recipes**, including **209 additions in steps 6–10**. The original 252 recipes retain their IDs, quantities and methods. There is no collection size limit.
+Current catalogue: **519 recipes**, including **209 additions in steps 6–10** and **58 additions in steps 11–12**. All 461 recipes present before steps 11–12 retain their IDs, quantities and methods. There is no collection size limit.
 
 The blueprint tables below identify the canonical recipe IDs. “Covered” means content is present and passed the application checks; it does not mean independently kitchen-tested. “Related” entries still require comparison in the later baking and dessert phases.
 
@@ -12,6 +12,7 @@ Recipes can appear in more than one category without being duplicated. The follo
 
 | Category | Recipes |
 |---|---:|
+| Baking components | 18 |
 | Beef, pork & sausage | 12 |
 | Bread | 13 |
 | Breakfast & brunch | 12 |
@@ -23,6 +24,8 @@ Recipes can appear in more than one category without being duplicated. The follo
 | Casseroles & one-pot | 9 |
 | Cheesecake | 25 |
 | Chicken | 12 |
+| Classic desserts | 11 |
+| Confections | 3 |
 | Cookies | 81 |
 | Dessert | 2 |
 | Dips | 7 |
@@ -31,7 +34,10 @@ Recipes can appear in more than one category without being duplicated. The follo
 | Hollandaise | 7 |
 | Mayonnaise | 8 |
 | Meringue | 29 |
+| Muffins & scones | 10 |
 | Pasta & noodles | 14 |
+| Pies & tarts | 8 |
+| Pizza & savoury dough | 8 |
 | Polish Breads | 11 |
 | Polish Soups | 10 |
 | Quick dinners | 11 |
@@ -52,7 +58,9 @@ Recipes can appear in more than one category without being duplicated. The follo
 - Steps 6–8: 77 stock, sauce and dip recipes, including the Béchamel pilot and complete linked sauce families.
 - Step 9: 49 breakfast, pasta, chicken and quick-dinner recipes.
 - Step 10: 83 meat, seafood, grains, vegetarian, side, salad, soup and casserole recipes.
-- Every entry scoped to these steps is covered below. Pizza, baking, pastry and remaining classic desserts belong to the later phases.
+- Step 11: 20 dough, pastry and sponge foundations, plus 6 finished pizza and flatbread recipes.
+- Step 12: 10 muffins, scones and loaves; 8 pies and tarts; 11 classic desserts; and 3 additional confections.
+- Every blueprint entry is now covered. The additional confections are Chocolate Fudge, Peanut Brittle and Fruit & Nut Chocolate Bark.
 - All 16 requested truffle flavours remain covered by the existing 44-truffle collection.
 - See [content-expansion-status.md](content-expansion-status.md) for batch counts and validation details.
 
@@ -66,7 +74,9 @@ Recipes can appear in more than one category without being duplicated. The follo
 - White veal stock and brown veal stock are separate formulas. Chicken, veal and fish velouté each reference the corresponding stock.
 - Caesar salad uses the existing dressing. Numeric yield metadata follows its existing “About 150 ml” yield; its cooking content is unchanged. This remains an approximate declared yield.
 - Sauce outputs that depend on evaporation specify a final measurement and reduction or top-up. No mass-to-volume density conversion is assumed.
-- Future pastry overlap decisions remain: consolidate panna cotta variants and use one canonical shortcrust pastry and one sweet tart pastry unless a different formula justifies a separate entry.
+- Panna cotta and vanilla panna cotta share one entry. Shortcrust pastry / pâte brisée and sweet tart pastry / pâte sucrée each share one canonical foundation; pâte sablée remains a distinct richer formula.
+- The existing date cake, apple crumb cake, mousse layer cake and sourdough brioche are unchanged. New standalone desserts and doughs use distinct formulas.
+- Recipe review and release evidence for the final phase are recorded in [release-review.md](release-review.md).
 
 ## Blueprint coverage
 
@@ -357,14 +367,14 @@ Recipes can appear in more than one category without being duplicated. The follo
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Neapolitan-style pizza dough | Missing | Add a complete, checked recipe. |
-| Quick pizza dough | Missing | Add a complete, checked recipe. |
-| Margherita pizza | Missing | Add a complete, checked recipe. |
-| Pepperoni pizza | Missing | Add a complete, checked recipe. |
-| Garlic naan | Missing | Add a complete, checked recipe. |
-| Pita bread | Missing | Add a complete, checked recipe. |
-| Flammkuchen | Missing | Add a complete, checked recipe. |
-| Calzone | Missing | Add a complete, checked recipe. |
+| Neapolitan-style pizza dough | Covered | `neapolitan-pizza-dough` — Neapolitan-Style Pizza Dough |
+| Quick pizza dough | Covered | `quick-pizza-dough` — Quick Pizza Dough |
+| Margherita pizza | Covered | `margherita-pizza` — Margherita Pizza |
+| Pepperoni pizza | Covered | `pepperoni-pizza` — Pepperoni Pizza |
+| Garlic naan | Covered | `garlic-naan` — Garlic Naan |
+| Pita bread | Covered | `pita-bread` — Pita Bread |
+| Flammkuchen | Covered | `flammkuchen` — Flammkuchen |
+| Calzone | Covered | `calzone` — Calzone |
 
 ### One-Pot, Casserole & Comfort Food
 
@@ -402,50 +412,50 @@ Recipes can appear in more than one category without being duplicated. The follo
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Blueberry muffins | Missing | Add a complete, checked recipe. |
-| Chocolate muffins | Missing | Add a complete, checked recipe. |
-| Banana muffins | Missing | Add a complete, checked recipe. |
-| Lemon poppy-seed muffins | Missing | Add a complete, checked recipe. |
-| Plain scones | Missing | Add a complete, checked recipe. |
-| Cheese scones | Missing | Add a complete, checked recipe. |
-| Cinnamon scones | Missing | Add a complete, checked recipe. |
-| Banana bread | Missing | Add a complete, checked recipe. |
-| Lemon loaf | Missing | Add a complete, checked recipe. |
-| Carrot loaf | Missing | Add a complete, checked recipe. |
+| Blueberry muffins | Covered | `blueberry-muffins` — Blueberry Muffins |
+| Chocolate muffins | Covered | `chocolate-muffins` — Chocolate Muffins |
+| Banana muffins | Covered | `banana-muffins` — Banana Muffins |
+| Lemon poppy-seed muffins | Covered | `lemon-poppy-seed-muffins` — Lemon Poppy-Seed Muffins |
+| Plain scones | Covered | `plain-scones` — Plain Scones |
+| Cheese scones | Covered | `cheese-scones` — Cheese Scones |
+| Cinnamon scones | Covered | `cinnamon-scones` — Cinnamon Scones |
+| Banana bread | Covered | `banana-bread` — Banana Bread |
+| Lemon loaf | Covered | `lemon-loaf` — Lemon Loaf |
+| Carrot loaf | Covered | `carrot-loaf` — Carrot Loaf |
 
 ### Pies, Tarts & Pastry
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Apple pie | Missing | Add a complete, checked recipe. |
-| Lemon tart | Missing | Add a complete, checked recipe. |
-| Chocolate tart | Missing | Add a complete, checked recipe. |
-| Key lime pie | Missing | Add a complete, checked recipe. |
-| Banoffee pie | Missing | Add a complete, checked recipe. |
-| Pecan pie | Missing | Add a complete, checked recipe. |
-| Shortcrust pastry | Missing | Add a complete, checked recipe. |
-| Sweet tart pastry | Missing | Add a complete, checked recipe. |
-| Quiche Lorraine | Missing | Add a complete, checked recipe. |
-| Spinach & feta quiche | Missing | Add a complete, checked recipe. |
+| Apple pie | Covered | `apple-pie` — Apple Pie |
+| Lemon tart | Covered | `lemon-tart` — Lemon Tart |
+| Chocolate tart | Covered | `chocolate-tart` — Chocolate Tart |
+| Key lime pie | Covered | `key-lime-pie` — Key Lime Pie |
+| Banoffee pie | Covered | `banoffee-pie` — Banoffee Pie |
+| Pecan pie | Covered | `pecan-pie` — Pecan Pie |
+| Shortcrust pastry | Covered | `shortcrust-pastry` — Shortcrust Pastry |
+| Sweet tart pastry | Covered | `sweet-tart-pastry` — Sweet Tart Pastry |
+| Quiche Lorraine | Covered | `quiche-lorraine` — Quiche Lorraine |
+| Spinach & feta quiche | Covered | `spinach-feta-quiche` — Spinach & Feta Quiche |
 
 ### Classic Desserts
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Tiramisu | Missing | Add a complete, checked recipe. |
-| Crème brûlée | Missing | Add a complete, checked recipe. |
-| Panna cotta | Missing | Add a complete, checked recipe. |
-| Chocolate mousse | Review related recipe | `meringue-chocolate-mousse-meringue-layer-cake` — Layer cake contains mousse; standalone mousse still missing. |
-| Vanilla panna cotta | Reuse planned entry | Same entry as CLASSIC DESSERTS. |
-| Sticky toffee pudding | Review related recipe | `date-cake-caramel` — Related date cake; compare method before adding a separate pudding. |
-| Apple crumble | Review related recipe | `apple-crumb-cake` — Cake is distinct from fruit crumble; still missing. |
-| Bread pudding | Missing | Add a complete, checked recipe. |
+| Tiramisu | Covered | `tiramisu` — Tiramisu |
+| Crème brûlée | Covered | `creme-brulee` — Crème Brûlée |
+| Panna cotta | Covered | `panna-cotta` — Vanilla Panna Cotta |
+| Chocolate mousse | Covered | `chocolate-mousse` — Chocolate Mousse |
+| Vanilla panna cotta | Covered | `panna-cotta` — Vanilla Panna Cotta |
+| Sticky toffee pudding | Covered | `sticky-toffee-pudding` — Sticky Toffee Pudding |
+| Apple crumble | Covered | `apple-crumble` — Apple Crumble |
+| Bread pudding | Covered | `bread-pudding` — Bread Pudding |
 | Rice pudding | Covered | `rice-pudding` — Rice Pudding |
-| Lemon posset | Missing | Add a complete, checked recipe. |
-| Profiteroles | Missing | Add a complete, checked recipe. |
-| Chocolate lava cake | Missing | Add a complete, checked recipe. |
+| Lemon posset | Covered | `lemon-posset` — Lemon Posset |
+| Profiteroles | Covered | `profiteroles` — Profiteroles |
+| Chocolate lava cake | Covered | `chocolate-lava-cake` — Chocolate Lava Cake |
 | Vanilla custard | Covered | `vanilla-custard` — Vanilla Custard |
-| Vanilla ice cream | Missing | Add a complete, checked recipe. |
+| Vanilla ice cream | Covered | `vanilla-ice-cream` — Vanilla Ice Cream |
 
 ### Truffles & Confections
 
@@ -472,21 +482,21 @@ Recipes can appear in more than one category without being duplicated. The follo
 
 | Planned recipe | Status | Action / current entry |
 |---|---|---|
-| Tulip dough / tulip paste | Missing | Add a complete, checked recipe. |
-| Pâte sucrée | Reuse planned entry | Same entry as PIES, TARTS & PASTRY. |
-| Pâte sablée | Missing | Add a complete, checked recipe. |
-| Shortcrust pastry / pâte brisée | Reuse planned entry | Same entry as PIES, TARTS & PASTRY. |
-| Rough puff pastry | Missing | Add a complete, checked recipe. |
-| Classic puff pastry | Missing | Add a complete, checked recipe. |
-| Choux pastry | Missing | Add a complete, checked recipe. |
-| Danish pastry dough | Missing | Add a complete, checked recipe. |
-| Croissant dough | Missing | Add a complete, checked recipe. |
-| Brioche dough | Review related recipe | `sourdough-spelt-crumb-brioche` — Finished sourdough brioche; basic reusable dough still missing. |
-| Sweet yeast dough | Review related recipe | `cinnabon-rolls` — Embedded dough; standalone recipe and measured yield needed. |
-| Strudel dough | Missing | Add a complete, checked recipe. |
-| Filo / phyllo-style dough | Missing | Add a complete, checked recipe. |
-| Hot-water crust pastry | Missing | Add a complete, checked recipe. |
-| Cookie crumb base | Review related recipe | `lotus-biscoff-velvet-cheesecake` — Embedded base; standalone recipe and measured yield needed. |
-| Joconde sponge | Missing | Add a complete, checked recipe. |
-| Dacquoise | Review related recipe | `meringue-almond-praline-meringue-torte` — Related nut meringue layers; component needs separate review. |
-| Basic génoise sponge | Missing | Add a complete, checked recipe. |
+| Tulip dough / tulip paste | Covered | `tulip-paste` — Tulip Paste |
+| Pâte sucrée | Covered | `sweet-tart-pastry` — Sweet Tart Pastry |
+| Pâte sablée | Covered | `pate-sablee` — Pâte Sablée |
+| Shortcrust pastry / pâte brisée | Covered | `shortcrust-pastry` — Shortcrust Pastry |
+| Rough puff pastry | Covered | `rough-puff-pastry` — Rough Puff Pastry |
+| Classic puff pastry | Covered | `classic-puff-pastry` — Classic Puff Pastry |
+| Choux pastry | Covered | `choux-pastry` — Choux Pastry |
+| Danish pastry dough | Covered | `danish-pastry-dough` — Danish Pastry Dough |
+| Croissant dough | Covered | `croissant-dough` — Croissant Dough |
+| Brioche dough | Covered | `brioche-dough` — Brioche Dough |
+| Sweet yeast dough | Covered | `sweet-yeast-dough` — Sweet Yeast Dough |
+| Strudel dough | Covered | `strudel-dough` — Strudel Dough |
+| Filo / phyllo-style dough | Covered | `filo-dough` — Filo Dough |
+| Hot-water crust pastry | Covered | `hot-water-crust` — Hot-Water Crust Pastry |
+| Cookie crumb base | Covered | `cookie-crumb-base` — Cookie Crumb Base |
+| Joconde sponge | Covered | `joconde-sponge` — Joconde Sponge |
+| Dacquoise | Covered | `dacquoise` — Dacquoise |
+| Basic génoise sponge | Covered | `genoise-sponge` — Génoise Sponge |

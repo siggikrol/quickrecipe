@@ -1,0 +1,160 @@
+[
+  {
+    "id": "chocolate-fudge",
+    "title": "Chocolate Fudge",
+    "category": "Confections",
+    "section": "desserts",
+    "desc": "An easy condensed-milk chocolate confection.",
+    "ingredients": [
+      [
+        "Dark chocolate, chopped",
+        450.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sweetened condensed milk",
+        397.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        30.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        5.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Line a 20 cm square tin for the base batch, leaving paper over the sides. Keep the same mixture depth when scaling.",
+      "Put chocolate, condensed milk and butter in a heavy saucepan. Warm over very low heat, stirring constantly, until melted and smooth; do not boil.",
+      "Remove from heat, stir in vanilla and spread in the tin. Smooth the top.",
+      "Cool, then refrigerate for at least 4 hours until firm. Lift out and cut into the displayed number of pieces; keep refrigerated."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 25,
+      "unit": "pc"
+    },
+    "prep": "10 min",
+    "cook": "10 min",
+    "ferment": "4 hr"
+  },
+  {
+    "id": "peanut-brittle",
+    "title": "Peanut Brittle",
+    "category": "Confections",
+    "section": "desserts",
+    "desc": "Crisp caramel shards packed with roasted peanuts.",
+    "ingredients": [
+      [
+        "Roasted unsalted peanuts",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sugar",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Golden syrup",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Water",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Bicarbonate of soda",
+        3.0,
+        "g",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        5.0,
+        "ml",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Line a heatproof tray with a silicone mat. Warm peanuts briefly in a dry pan over low heat and keep them ready.",
+      "Heat sugar, syrup and water in a deep heavy saucepan, stirring until sugar dissolves. Stop stirring and boil until a sugar thermometer reads 150°C.",
+      "Remove from heat and quickly stir in warm peanuts, butter, bicarbonate and vanilla. The mixture foams and is extremely hot.",
+      "Pour onto the mat and spread thinly with a heatproof spatula; never touch the hot caramel. Cool completely for 1 hour, then break into the displayed number of pieces and store airtight in a dry place."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 20,
+      "unit": "pc"
+    },
+    "prep": "10 min",
+    "cook": "20 min",
+    "ferment": "1 hr"
+  },
+  {
+    "id": "fruit-nut-chocolate-bark",
+    "title": "Fruit & Nut Chocolate Bark",
+    "category": "Confections",
+    "section": "desserts",
+    "desc": "Chilled chocolate shards with fruit, nuts and sea salt.",
+    "ingredients": [
+      [
+        "Dark chocolate, chopped",
+        300.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mixed roasted nuts, chopped",
+        100.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dried cranberries",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Sea salt flakes",
+        1.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Line a tray with baking paper.",
+      "Melt chocolate gently in a bowl over barely simmering water, keeping the bowl above the water and stirring until smooth.",
+      "Spread chocolate about 5 mm thick on the paper. Scatter with nuts, cranberries and salt, pressing them lightly into the chocolate.",
+      "Refrigerate for 1 hour until firm, then break into the displayed number of pieces. This untempered bark is best stored and served chilled."
+    ],
+    "compactMetricUnits": true,
+    "batchYield": {
+      "amount": 16,
+      "unit": "pc"
+    },
+    "prep": "15 min",
+    "ferment": "1 hr"
+  }
+]

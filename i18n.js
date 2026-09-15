@@ -324,6 +324,7 @@ const familyMessages = {
     "Klasyczne desery",
     "Klassískir eftirréttir"
   ],
+  "Confections": ["Słodycze", "Konfekt"],
   "Breakfast & brunch": [
     "Śniadania i brunch",
     "Morgunmatur og bröns"
@@ -405,6 +406,29 @@ const LANGUAGE_KEY = 'quickrecipe.language';
 let language = 'en';
 try { const saved = localStorage.getItem(LANGUAGE_KEY); if (['en', 'pl', 'is'].includes(saved)) language = saved; } catch {}
 function t(key) { return UI_MESSAGES[language]?.[key] || key; }
+
+// Some browsers omit Icelandic sorting rules from their locale data.
+const hasIcelandicCollation = Intl.Collator.supportedLocalesOf(['is']).length > 0;
+const icelandicLetterOrder = 'aábcdðeéfghiíjklmnoópqrstuúvwxyýzþæö';
+function compareIcelandicLabels(left, right) {
+  const letters = text => [...String(text).normalize('NFC').toLowerCase()];
+  const rank = letter => {
+    let index = icelandicLetterOrder.indexOf(letter);
+    if (index < 0) index = icelandicLetterOrder.indexOf(letter.normalize('NFD')[0]);
+    return index < 0 ? letter.codePointAt(0) : 65536 + index;
+  };
+  const a = letters(left), b = letters(right);
+  for (let i = 0; i < Math.min(a.length, b.length); i++) {
+    const difference = rank(a[i]) - rank(b[i]);
+    if (difference) return difference;
+  }
+  return a.length - b.length;
+}
+function compareRecipeLabels(left, right, locale = language) {
+  if (locale === 'is' && !hasIcelandicCollation) return compareIcelandicLabels(left, right);
+  return left.localeCompare(right, locale, { sensitivity: 'base' });
+}
+
 function recipeCount(n) {
   const form = new Intl.PluralRules(language).select(n);
   const words = { en: {one:'recipe',other:'recipes'}, pl:{one:'przepis',few:'przepisy',many:'przepisów',other:'przepisu'}, is:{one:'uppskrift',other:'uppskriftir'} };
