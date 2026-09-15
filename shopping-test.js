@@ -37,5 +37,20 @@ function setup(saved) {
  rd.querySelector('[data-share]').click();await new Promise(r=>setTimeout(r,0));assert(rd.querySelector('.shopping-export').hidden);assert(!rd.querySelector('[data-share]').disabled);
  
  rd.querySelector('[data-remove]').click();assert.equal(rd.querySelectorAll('.shopping-list-link').length,0);restored.window.close();
- console.log('Shopping list selection, amounts, copy/share, persistence, editing and fallback passed.');
+ const truffleDom=setup();await new Promise(r=>setTimeout(r,80));const td=truffleDom.window.document;
+ td.querySelector('[data-browse="desserts"]').click();td.querySelector('[data-cat="Truffles"]').click();
+ td.querySelector('[data-id="strawberry-white-chocolate-truffles"]').click();td.querySelector('#shoppingStart').click();
+ const truffleChecks=[...td.querySelectorAll('[data-shopping-name]')];
+ const ingredientNames=truffleChecks.map(el=>el.dataset.shoppingName);
+ assert(ingredientNames.includes('White chocolate, finely chopped'));
+ assert(ingredientNames.includes('White chocolate for coating'));
+ assert(ingredientNames.includes('Crushed freeze-dried strawberries, for topping'));
+ truffleChecks.forEach(el=>el.click());td.querySelector('[data-view-list]').click();
+ assert.deepEqual([...td.querySelectorAll('.shopping-item-name span')].map(el=>el.textContent),ingredientNames);
+ const truffleSaved=truffleDom.window.localStorage.getItem('quickrecipe.shopping.v1');truffleDom.window.close();
+ const truffleRestored=setup(truffleSaved);await new Promise(r=>setTimeout(r,80));const trd=truffleRestored.window.document;
+ trd.querySelector('#shoppingListsBtn').click();trd.querySelector('.shopping-list-link').click();
+ assert.deepEqual([...trd.querySelectorAll('.shopping-item-name span')].map(el=>el.textContent),ingredientNames);
+ truffleRestored.window.close();
+ console.log('Shopping list selection, amounts, copy/share, persistence, editing, fallback and truffle coatings passed.');
 })().catch(e=>{console.error(e);process.exitCode=1;});

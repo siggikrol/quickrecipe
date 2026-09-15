@@ -2,7 +2,7 @@
 let recipes = [];
 let seedRecipes = [];
 let recipeCatalogChanges = { retiredIds: [], renamedIds: {} };
-const RECIPE_VERSION = '43';
+const RECIPE_VERSION = '45';
 const LS = {
   recipes:   'quickrecipe.recipes.v1',
   favs:      'quickrecipe.favs.v1',
@@ -23,7 +23,7 @@ let recipeSection = 'All';
 let listScrollTop = 0;
 const recipeSections = [
   { id: 'baking', label: 'Bread & baking', categories: ['Bread', 'Polish Breads', 'Loaves', 'Rolls', 'Flatbreads', 'Pastries'] },
-  { id: 'desserts', label: 'Cakes & desserts', categories: ['Cake', 'Cakes', 'Cheesecake', 'Cheesecakes', 'Skyr Cake', 'Meringue', 'Brownies', 'Cookies', 'Dessert', 'Desserts'] },
+  { id: 'desserts', label: 'Cakes & desserts', categories: ['Cake', 'Cakes', 'Cheesecake', 'Cheesecakes', 'Skyr Cake', 'Meringue', 'Brownies', 'Cookies', 'Truffles', 'Dessert', 'Desserts'] },
   { id: 'meals', label: 'Meals', categories: ['Breakfast', 'Polish Soups', 'Soups', 'Salads', 'Mains', 'Sides'] },
   { id: 'sauces', label: 'Dressings & sauces', categories: ['Dressings', 'Sauce', 'Sauces', 'Dips'] },
 ];
@@ -209,9 +209,9 @@ function yieldText(value, multiplier = scale) {
     dimensions.push(match);
     return '\uFFF0';
   });
-  const plurals = { loaf: 'loaves', tray: 'trays', cake: 'cakes', tin: 'tins', bun: 'buns', roll: 'rolls', baguette: 'baguettes', serving: 'servings', slice: 'slices', glass: 'glasses', bowl: 'bowls', dish: 'dishes', nest: 'nests', batch: 'batches', wreath: 'wreaths', sandwich: 'sandwiches' };
+  const plurals = { loaf: 'loaves', tray: 'trays', cake: 'cakes', tin: 'tins', bun: 'buns', roll: 'rolls', baguette: 'baguettes', serving: 'servings', slice: 'slices', glass: 'glasses', bowl: 'bowls', dish: 'dishes', nest: 'nests', batch: 'batches', wreath: 'wreaths', sandwich: 'sandwiches', truffle: 'truffles' };
   let changed = false;
-  const scaled = protectedValue.replace(/(\d+(?:\.\d+)?)(?:([–-])(\d+(?:\.\d+)?))?(\s+(?:(?:large|small|chocolate|serving)\s+)?(?:loaves|loaf|trays?|cakes?|tins?|buns?|rolls?|baguettes?|servings?|slices?|glasses|glass|bowls?|dishes|dish|nests?|batches|batch|wreaths?|sandwiches|sandwich)\b)?/g,
+  const scaled = protectedValue.replace(/(\d+(?:\.\d+)?)(?:([–-])(\d+(?:\.\d+)?))?(\s+(?:(?:large|small|chocolate|serving)\s+)?(?:loaves|loaf|trays?|cakes?|tins?|buns?|rolls?|baguettes?|servings?|slices?|glasses|glass|bowls?|dishes|dish|nests?|batches|batch|wreaths?|sandwiches|sandwich|truffles|truffle)\b)?/g,
     (_, low, dash, high, label = '') => {
       changed = true;
       const quantity = Number(low) * multiplier;
@@ -404,7 +404,9 @@ async function releaseWakeLock() {
 
 /* ─── Chips ─── */
 function categories() {
-  return ['All', ...new Set(recipes.filter(r => sectionForRecipe(r) === recipeSection).map(r => r.category || 'Other'))];
+  const names = [...new Set(recipes.filter(r => sectionForRecipe(r) === recipeSection).map(r => r.category || 'Other'))];
+  names.sort((a, b) => t(a).localeCompare(t(b), language, { sensitivity: 'base' }));
+  return ['All', ...names];
 }
 function browseSection(id) {
   recipeSection = id;
