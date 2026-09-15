@@ -68,7 +68,7 @@ function open(saved) {
     for (const lang of ['pl', 'is']) {
       d.querySelector(`[data-language="${lang}"]`).click();
       d.dispatchEvent(new w.Event('visibilitychange'));
-      assert.ok(!d.querySelector('[data-fold-stop]').textContent.includes('Finish timer'));
+      assert.ok(!d.querySelector('[data-fold-stop]').getAttribute('aria-label').includes('Finish timer'));
       assert.ok(!d.querySelector('[data-fold-recipe]').textContent.includes('Keep the app open'));
     }
     d.querySelector('[data-fold-stop]').click();

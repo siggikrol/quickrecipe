@@ -2,7 +2,7 @@
 let recipes = [];
 let seedRecipes = [];
 let recipeCatalogChanges = { retiredIds: [], renamedIds: {} };
-const RECIPE_VERSION = '52';
+const RECIPE_VERSION = '53';
 const LS = {
   recipes:   'quickrecipe.recipes.v1',
   favs:      'quickrecipe.favs.v1',
@@ -1129,10 +1129,18 @@ function foldTimerControls(recipe, step) {
   const plan = foldTimerSteps[recipe.id];
   if (!plan || plan.step !== step) return '';
   return `<form class="fold-timer-controls" data-fold-recipe="${esc(recipe.id)}">
-    <label>${esc(t('Minutes until next fold'))} <input name="minutes" type="number" inputmode="numeric" min="1" max="240" required value="${plan.minutes || ''}" aria-label="${esc(t('Minutes until next fold'))}"></label>
-    <button class="btn" type="submit" ${foldTimer ? 'disabled' : ''}>${esc(t('Start folding timer'))}</button>
-    <small>${esc(t(plan.minutes ? 'Start after a fold to time the next one.' : 'Choose your interval; this recipe does not specify minutes between folds.'))}</small>
-    <small>${esc(t('Keep the app open and your phone unlocked for alerts. For locked-screen reminders, also set a phone alarm.'))}</small>
+    <div class="fold-timer-inline">
+      <button class="fold-link" type="submit" ${foldTimer ? 'disabled' : ''}>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6M12 2v3"/></svg>
+        ${esc(t('Start timer'))}
+      </button>
+      <label class="fold-interval"><input name="minutes" type="number" inputmode="numeric" min="1" max="240" required placeholder="—" value="${plan.minutes || ''}" aria-label="${esc(t('Minutes until next fold'))}"><span>${esc(t('min'))}</span></label>
+    </div>
+    <details class="fold-timer-help">
+      <summary>${esc(t('Keep app open for alerts'))}</summary>
+      <p>${esc(t(plan.minutes ? 'Start after a fold to time the next one.' : 'Choose your interval; this recipe does not specify minutes between folds.'))}</p>
+      <p>${esc(t('Keep the app open and your phone unlocked for alerts. For locked-screen reminders, also set a phone alarm.'))}</p>
+    </details>
   </form>`;
 }
 function saveFoldTimer() {
@@ -1210,9 +1218,13 @@ function tickFoldTimer() {
       <span role="status">${esc(t(due ? 'Time to fold the dough!' : 'Next fold'))}</span>
       <span class="fold-countdown" role="timer"></span></div>
       <div class="fold-timer-actions">
-      ${due ? `<button class="btn primary" data-fold-next>${esc(t('Folded — start next timer'))}</button>` : ''}
-      <button class="btn" data-fold-sound>${esc(t('Test / enable sound'))}</button>
-      <button class="btn" data-fold-stop>${esc(t('Finish timer'))}</button></div>`;
+      ${due ? `<button class="fold-link" data-fold-next>${esc(t('Folded — start next timer'))}</button>` : ''}
+      <button class="fold-icon" data-fold-sound aria-label="${esc(t('Test / enable sound'))}" title="${esc(t('Test / enable sound'))}">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H3v6h3l5 4ZM15 8c3 2 3 6 0 8M18 5c5 4 5 10 0 14"/></svg>
+      </button>
+      <button class="fold-icon" data-fold-stop aria-label="${esc(t('Finish timer'))}" title="${esc(t('Finish timer'))}">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button></div>`;
     panel.querySelector('[data-fold-next]')?.addEventListener('click', () => {
       foldTimer.dueAt = Date.now() + foldTimer.minutes * 60000;
       foldLastSound = 0;

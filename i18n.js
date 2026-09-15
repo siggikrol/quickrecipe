@@ -1,6 +1,9 @@
 /* Interface translations; English keys are the fallback. Recipe data stays language-neutral. */
 const UI_MESSAGES = {
   "pl": {
+    "Start timer": "Włącz minutnik",
+    "min": "min",
+    "Keep app open for alerts": "Pozostaw aplikację otwartą, aby otrzymywać alerty",
     "Sound is unavailable in this browser.": "Dźwięk jest niedostępny w tej przeglądarce.",
     "If you heard the test, sound is ready. Keep your phone volume up.": "Jeśli słychać było sygnał testowy, dźwięk jest gotowy. Pozostaw głośność telefonu włączoną.",
     "Minutes until next fold": "Minuty do następnego składania",
@@ -120,6 +123,9 @@ const UI_MESSAGES = {
     "Mix ingredients.\nBulk ferment 2 hours.\nShape and proof.\nBake.": "Wymieszaj składniki.\nOdstaw do wyrośnięcia na 2 godziny.\nUformuj i pozostaw do wyrośnięcia.\nUpiecz."
   },
   "is": {
+    "Start timer": "Ræsa tímamæli",
+    "min": "mín",
+    "Keep app open for alerts": "Hafðu appið opið til að fá viðvörun",
     "Sound is unavailable in this browser.": "Hljóð er ekki í boði í þessum vafra.",
     "If you heard the test, sound is ready. Keep your phone volume up.": "Ef þú heyrðir prufuhljóðið er hljóðið tilbúið. Hafðu hljóðstyrk símans nægan.",
     "Minutes until next fold": "Mínútur þar til næst á að brjóta deigið",
