@@ -370,18 +370,19 @@ const canteen = (() => {
     let result;
     try { result = RecipeMath.deriveRecipeAllergens(r, recipes); }
     catch { return `<p class="canteen-warning">${label('Allergen declarations unavailable')}</p>`; }
+    const ingredientRows = r.ingredients.map((ingredient, index) => {
+        const profile = RecipeMath.ingredientProfile(r, ingredient[0]);
+        if (!profile.allergens.length && !profile.possible.length && profile.known && !profile.productDependent) return '';
+        return `<li data-ingredient="${index}"><strong>${esc(recipeText(cleanIngredientName(ingredient[0])))}</strong>${profile.allergens.length ? `<span>${names(profile.allergens)}</span>` : ''}${!profile.known ? `<span>${label('Ingredient not in database')}</span>` : ''}${profile.possible.length ? `<span><strong>${label('Possible allergens')}:</strong> ${names(profile.possible)}</span>` : ''}${profile.productDependent ? `<small>${label('Varies by product')}</small>` : ''}${profile.saved ? `<small>${label('Saved declaration')}</small>` : ''}</li>`;
+      }).join('');
     return `<section class="automatic-allergens">${heading ? `<h3>${label('Allergens')}</h3>` : ''}
       <div class="declared-allergens">${result.allergens.length ? `<p><strong>${label('Contains')}:</strong> ${names(result.allergens)}</p>` : ''}${result.possible.length ? `<p><strong>${label('Possible allergens')}:</strong> ${names(result.possible)}</p>` : ''}${!result.allergens.length && !result.possible.length ? `<p>${label(result.complete ? 'None listed' : 'Allergen information incomplete')}</p>` : ''}${result.unknown.length ? `<p class="canteen-warning">${label('Ingredient not in database')}: ${result.unknown.map(name => esc(recipeText(name))).join(' · ')}</p>` : ''}</div>
-      <details><summary>${label('Ingredient details')}</summary><p class="allergen-product-note">${label('Check product labels for differences and traces.')}</p><ul class="ingredient-allergen-list">
-      ${r.ingredients.map((ingredient, index) => {
-        const profile = RecipeMath.ingredientProfile(r, ingredient[0]);
-        return `<li data-ingredient="${index}"><strong>${esc(recipeText(cleanIngredientName(ingredient[0])))}</strong><span>${names(profile.allergens) || label(profile.known ? 'None listed' : 'Ingredient not in database')}</span>${profile.possible.length ? `<span><strong>${label('Possible allergens')}:</strong> ${names(profile.possible)}</span>` : ''}${profile.productDependent ? `<small>${label('Varies by product')}</small>` : ''}${profile.saved ? `<small>${label('Saved declaration')}</small>` : ''}</li>`;
-      }).join('')}</ul>${result.labelDependent.length ? `<p class="allergen-product-note">${label('Varies by product')}: ${result.labelDependent.map(name => esc(recipeText(name))).join(' · ')}</p>` : ''}</details></section>`;
+      ${ingredientRows || result.labelDependent.length ? `<details><summary>${label('Ingredient details')}</summary><p class="allergen-product-note">${label('Check product labels for differences and traces.')}</p><ul class="ingredient-allergen-list">
+      ${ingredientRows}</ul>${result.labelDependent.length ? `<p class="allergen-product-note">${label('Varies by product')}: ${result.labelDependent.map(name => esc(recipeText(name))).join(' · ')}</p>` : ''}</details>` : ''}</section>`;
   }
   function recipeSettings(r) {
     modal('Recipe settings', `<div class="recipe-settings-summary"><h3>${esc(recipeText(r.title))}</h3><p>${label('Original yield')}: ${esc(r.yield ? recipeText(r.yield) : t('Not declared'))}${r.batchYield ? ` · ${esc(familyAmount(r.batchYield.amount, r.batchYield.unit))}` : ''}</p></div>
       <label>${label('Recipe portions')}${number(RecipeMath.servingYield(r), 'data-servings')}</label>
-      ${allergenDetailsHtml(r)}
       <div class="canteen-settings-save">${button('Save portions', 'data-save-settings')}</div>${(r.foundations || []).map(f => `<button class="btn" data-review-foundation="${esc(f.recipeId)}">${label('Base recipe')}: ${esc(recipeText(recipe(f.recipeId)?.title || f.recipeId))}</button>`).join('')}`, d => {
       const saveSettings = () => {
         const input = d.querySelector('[data-servings]');

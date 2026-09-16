@@ -2,7 +2,7 @@
 let recipes = [];
 let seedRecipes = [];
 let recipeCatalogChanges = { retiredIds: [], renamedIds: {} };
-const RECIPE_VERSION = '73';
+const RECIPE_VERSION = '75';
 const LS = {
   recipes:   'quickrecipe.recipes.v1',
   favs:      'quickrecipe.favs.v1',

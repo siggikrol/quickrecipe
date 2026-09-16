@@ -98,12 +98,17 @@ async function unlock(w, password = testPassword) {
   assert.equal(d.querySelector('[data-portions]').value, '0');
   change(d.querySelector('[data-portions]'), '355');
   d.querySelector('[data-settings]').click();
+  assert.equal(d.querySelector('.automatic-allergens'), null);
+  assert(d.querySelector('[data-servings]'));
+  d.querySelector('.canteen-dialog [data-close]').click();
+  d.querySelector('[data-allergen-details]').click();
   assert.equal(d.querySelectorAll('.automatic-allergens input[type="checkbox"]').length, 0);
-  assert(d.querySelector('.automatic-allergens').textContent.includes('Automatic allergens'));
-  assert(d.querySelector('[data-ingredient="1"]').textContent.includes('None identified in the ingredient database'));
+  assert(d.querySelector('.canteen-dialog-head').textContent.includes('Allergens'));
+  assert.equal(d.querySelector('[data-ingredient="1"]'), null);
+  assert(!d.querySelector('.ingredient-allergen-list').textContent.includes('None listed'));
   const automaticSummary = d.querySelector('.automatic-allergens .declared-allergens').textContent;
   d.querySelector('.canteen-dialog [data-close]').click();
-  d.querySelector('[data-settings]').click();
+  d.querySelector('[data-allergen-details]').click();
   assert.equal(d.querySelector('.automatic-allergens .declared-allergens').textContent, automaticSummary);
   d.querySelector('.canteen-dialog [data-close]').click();
   // Simulate a declaration saved with the earlier checklist; editing portions must retain it.
@@ -113,12 +118,35 @@ async function unlock(w, password = testPassword) {
     const r = recipes.find(r => r.id === item.recipeId); r.ingredientAllergens = { [r.ingredients[0][0]]: ['milk'] };
     r.allergenAdjustments = { add: ['mustard'], remove: [] }; saveAll(); }`);
   d.querySelector('[data-settings]').click(); change(d.querySelector('[data-servings]'), '10');
-  assert(d.querySelector('[data-ingredient="0"]').textContent.includes('Saved declaration'));
-  assert(d.querySelector('[data-ingredient="0"]').textContent.includes('Milk'));
+  assert.equal(d.querySelector('.automatic-allergens'), null);
   d.querySelector('[data-save-settings]').click();
-  assert(d.querySelector('.canteen-menu-item .declared-allergens').textContent.includes('Milk'));
-  assert(d.querySelector('.canteen-menu-item .declared-allergens').textContent.includes('Mustard'));
-  d.querySelector('[data-settings]').click();
+  const badge = d.querySelector('[data-allergen-details]');
+  assert(badge.classList.contains('allergen-identified'));
+  assert(badge.textContent.includes('Contains allergens'));
+  assert(!d.querySelector('.canteen-menu-item').textContent.includes('Milk'));
+  assert(!d.querySelector('.canteen-menu-item .declared-allergens'));
+  badge.click();
+  assert(d.querySelector('.canteen-dialog .declared-allergens').textContent.includes('Milk'));
+  assert(d.querySelector('.canteen-dialog .declared-allergens').textContent.includes('Mustard'));
+  assert(!d.querySelector('.canteen-dialog [data-servings]'));
+  d.querySelector('.canteen-dialog [data-close]').click();
+  w.eval(`{const plans=JSON.parse(localStorage.getItem('quickrecipe.canteen.v1'));
+    const item=Object.values(plans.weeks).flatMap(p=>p.days.flatMap(d=>d.items)).find(i=>i.id===${JSON.stringify(plannedId)});
+    window.allergenRecipeIndex=recipes.findIndex(r=>r.id===item.recipeId);window.allergenRecipeBackup=recipes[window.allergenRecipeIndex];}`);
+  for (const ingredient of ['Dark chocolate', 'Unknown sauce mixture', 'Water']) {
+    w.eval(`recipes[window.allergenRecipeIndex]={...window.allergenRecipeBackup,ingredients:[[${JSON.stringify(ingredient)},10,'g']],foundations:[],ingredientAllergens:undefined,allergenAdjustments:undefined};canteen.render();`);
+    const possible = d.querySelector('[data-allergen-details]');
+    if (ingredient === 'Water') assert.equal(possible, null);
+    else {
+      assert(possible.classList.contains('allergen-possible'));
+      assert(possible.textContent.includes('Possible allergens'));
+      possible.click();
+      assert(d.querySelector('.canteen-dialog').textContent.includes(ingredient === 'Dark chocolate' ? 'Soybeans' : 'Ingredient not in database'));
+      d.querySelector('.canteen-dialog [data-close]').click();
+    }
+  }
+  w.eval('recipes[window.allergenRecipeIndex]=window.allergenRecipeBackup;delete window.allergenRecipeBackup;delete window.allergenRecipeIndex;canteen.render();');
+  d.querySelector('[data-allergen-details]').click();
   assert(d.querySelector('[data-ingredient="0"]').textContent.includes('Saved declaration'));
   assert.equal(d.querySelectorAll('[data-allergen], [data-reviewed]').length, 0);
   d.querySelector('.canteen-dialog [data-close]').click();
@@ -191,9 +219,10 @@ async function unlock(w, password = testPassword) {
   assert.equal(w.eval(`recipes.find(r => r.id === ${JSON.stringify(itemId)}).servings`), 10);
   assert(w.eval(`recipes.find(r => r.id === ${JSON.stringify(itemId)}).ingredientAllergens[recipes.find(r => r.id === ${JSON.stringify(itemId)}).ingredients[0][0]].includes('milk')`));
   assert(w.eval(`recipes.find(r => r.id === ${JSON.stringify(itemId)}).allergenAdjustments.add.includes('mustard')`));
-  d.querySelector('[data-settings]').click();
+  d.querySelector('[data-allergen-details]').click();
   assert(d.querySelector('[data-ingredient="0"]').textContent.includes('Saved declaration'));
-  assert(d.querySelector('[data-ingredient="1"]').textContent.includes('None identified in the ingredient database'));
+  assert.equal(d.querySelector('[data-ingredient="1"]'), null);
+  assert(!d.querySelector('.ingredient-allergen-list').textContent.includes('None listed'));
   assert.equal(d.querySelectorAll('[data-allergen], [data-reviewed]').length, 0);
   d.querySelector('.canteen-dialog [data-close]').click();
   w.changeLanguage('pl'); assert(d.querySelector('[data-tab="week"]').textContent.includes('Tydzień'));

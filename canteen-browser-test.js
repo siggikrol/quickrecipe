@@ -158,13 +158,11 @@ async function connect(url) {
     }
     await size(1280);
     await click('[data-tab="week"]'); await click('[data-settings]');
-    await click('.automatic-allergens details summary');
-    assert.equal(await evaluate(`document.querySelectorAll('.automatic-allergens input[type="checkbox"]').length`), 0);
-    assert(await evaluate(`document.querySelector('.automatic-allergens').textContent.includes('Automatic allergens')`));
-    assert(await evaluate(`document.querySelector('.ingredient-allergen-list').children.length > 0`));
+    assert.equal(await evaluate(`document.querySelector('.canteen-dialog .automatic-allergens') === null`), true);
+    assert(await evaluate(`!!document.querySelector('[data-servings]')`));
     await shot('recipe-settings');
     await size(390); await shot('recipe-settings-mobile');
-    assert(await evaluate('(()=>{const d=document.querySelector(".canteen-dialog");return d.scrollWidth<=d.clientWidth})()'), 'Allergen cards overflow on mobile');
+    assert(await evaluate('(()=>{const d=document.querySelector(".canteen-dialog");return d.scrollWidth<=d.clientWidth})()'), 'Recipe settings overflow on mobile');
     await size(1280); await click('.canteen-dialog [data-close]');
     await click('[data-config]'); assert.equal(await evaluate('document.querySelectorAll("[data-operating]").length'), 7); await click('.canteen-dialog [data-close]');
     await size(390);
