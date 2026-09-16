@@ -1053,3 +1053,8 @@ body.canteen-active { height: auto; min-height: 100%; overflow: auto; }
   .canteen-print-dialog .canteen-dialog-head { top: -12px; }
   .print-preview-stage { padding: 0; }
 }
+
+/* Keep the saved Pro shell visible while recipe data loads after a refresh. */
+body.canteen-loading #canteenArea { display: block !important; }
+.canteen-loading .brand::after { content: ' Pro'; }
+.canteen-loading .top-actions { visibility: hidden; }

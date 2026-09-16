@@ -4,11 +4,11 @@ const { JSDOM } = require('jsdom');
 const { createHash, webcrypto } = require('node:crypto');
 const testPassword = 'canteen-test-password';
 const testHash = createHash('sha256').update(testPassword).digest('hex');
-function setup(saved = {}, session = {}) {
+function setup(saved = {}, session = {}, fetchGate = Promise.resolve()) {
   const dom = new JSDOM(fs.readFileSync('index.html', 'utf8'), { url: 'http://localhost', runScripts: 'dangerously', beforeParse(w) {
     w.TextEncoder = TextEncoder; Object.defineProperty(w.crypto, 'subtle', { value: webcrypto.subtle });
     w.matchMedia = () => ({ matches: false, addEventListener() {} }); w.scrollTo = () => {}; w.confirm = () => true;
-    w.fetch = async url => ({ ok: true, json: async () => JSON.parse(fs.readFileSync(new URL(url, 'http://localhost').pathname.slice(1))) });
+    w.fetch = async url => { await fetchGate; return { ok: true, json: async () => JSON.parse(fs.readFileSync(new URL(url, 'http://localhost').pathname.slice(1))) }; };
     w.HTMLDialogElement.prototype.showModal = function () { this.open = true; };
     w.HTMLDialogElement.prototype.close = function () { this.open = false; this.dispatchEvent(new w.Event('close')); };
     Object.entries(session).forEach(([key, value]) => w.sessionStorage.setItem(key, value));
@@ -27,6 +27,18 @@ async function unlock(w, password = testPassword) {
   await wait();
 }
 (async () => {
+  let releaseFetch;
+  const delayed = setup({}, { 'quickrecipe.pro.active': 'true' }, new Promise(resolve => { releaseFetch = resolve; }));
+  assert(delayed.window.document.body.classList.contains('canteen-active'));
+  assert(delayed.window.document.body.classList.contains('canteen-loading'));
+  await wait();
+  assert(delayed.window.document.body.classList.contains('canteen-loading'));
+  assert.equal(delayed.window.document.querySelectorAll('.canteen-day').length, 0);
+  releaseFetch(); await wait();
+  assert(!delayed.window.document.body.classList.contains('canteen-loading'));
+  assert(delayed.window.document.body.classList.contains('canteen-active'));
+  assert(!delayed.window.document.getElementById('canteenArea').hidden);
+  delayed.window.close();
   let dom = setup(); await wait(); let w = dom.window, d = w.document;
   const change = (el, value) => { el.value = value; el.dispatchEvent(new w.Event('change', { bubbles: true })); };
   assert(d.getElementById('canteenArea').hidden);

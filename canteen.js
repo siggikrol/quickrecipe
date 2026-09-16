@@ -73,6 +73,7 @@ const canteen = (() => {
   }
   function enter() {
     try { sessionStorage.setItem(sessionKey, 'true'); } catch {}
+    document.body.classList.remove('canteen-loading');
     document.querySelector('.brand').textContent = 'QuickRecipe Pro';
     active = true; root.hidden = false; document.body.classList.add('canteen-active');
     document.getElementById('canteenBtn').setAttribute('aria-pressed', 'true'); render(); window.scrollTo(0, 0);
