@@ -938,20 +938,12 @@ body.canteen-active { height: auto; min-height: 100%; overflow: auto; }
 .canteen-recipe #detail { display: block !important; height: auto; overflow: visible; }
 .canteen-recipe-context { padding: 20px; background: var(--accent-light); border-bottom: 1px solid var(--line); }
 .canteen-print { display: none; }
-.canteen-print-preview { font-size: 13px; }
-.canteen-print-preview .canteen-requirements { display: block; }
 @page { size: A4; margin: 14mm; }
 @media print {
   body.canteen-printing { display: block; height: auto; background: white; color: black; }
   body.canteen-printing > * { display: none !important; }
-  body.canteen-printing > #canteenPrint { display: block !important; font: 11pt/1.4 sans-serif; }
-  #canteenPrint h1 { font-size: 20pt; } #canteenPrint h2 { font-size: 15pt; }
-  #canteenPrint h2, #canteenPrint h3 { break-after: avoid; }
-  #canteenPrint li, #canteenPrint .canteen-menu-item { break-inside: avoid; }
-  #canteenPrint ul { padding-left: 18px; }
-  #canteenPrint .canteen-panel { background: white; border: 0; padding: 0; color: black; }
-  #canteenPrint .canteen-requirements { display: block; }
-  #canteenPrint .canteen-warning { color: black; }
+  body.canteen-printing > #canteenPrint { display: block !important; width: auto; padding: 0; margin: 0; }
+
 }
 .declared-allergens { font-size: 13px; margin: 10px 0; line-height: 1.6; }
 .canteen-kitchen .declared-allergens { font-size: 16px; }
@@ -964,9 +956,6 @@ body.canteen-active { height: auto; min-height: 100%; overflow: auto; }
 @media print {
   :root { color-scheme: light !important; background: white !important; }
   .canteen-dialog::backdrop { display: none !important; background: transparent !important; }
-  #canteenPrint { background: white !important; }
-  #canteenPrint, #canteenPrint * { color: black !important; box-shadow: none !important; }
-  #canteenPrint .canteen-panel { border-radius: 0; }
 }
 
 .pro-unlock { width: min(380px, calc(100vw - 32px)); }
@@ -1003,13 +992,12 @@ body.canteen-active { height: auto; min-height: 100%; overflow: auto; }
 
 /* Kitchen paper: compact headings, generous checkboxes, and strong item rows. */
 .kitchen-sheet { color: #171717; background: #fff; font: 14px/1.45 Arial, sans-serif; }
-.canteen-print-preview.kitchen-sheet { padding: 22px; border: 1px solid #d2d2d2; border-radius: 6px; }
 .kitchen-sheet header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; border-bottom: 2px solid #222; padding-bottom: 8px; }
 .kitchen-sheet header p { font-size: 10px; margin: 0; color: #444; }
-.kitchen-sheet h1, #canteenPrint.kitchen-sheet h1 { font: 700 18px/1.3 Arial, sans-serif; margin: 0; }
-.kitchen-sheet h2, #canteenPrint.kitchen-sheet h2 { font: 700 12px/1.4 Arial, sans-serif; text-transform: uppercase; letter-spacing: .05em; margin: 20px 0 6px; border-bottom: 1px solid #888; padding-bottom: 5px; }
+.kitchen-sheet h1 { font: 700 18px/1.3 Arial, sans-serif; margin: 0; }
+.kitchen-sheet h2 { font: 700 12px/1.4 Arial, sans-serif; text-transform: uppercase; letter-spacing: .05em; margin: 20px 0 6px; border-bottom: 1px solid #888; padding-bottom: 5px; }
 .kitchen-sheet-date { font-size: 13px; font-weight: 600; margin: 12px 0; }
-.kitchen-sheet ul, #canteenPrint.kitchen-sheet ul { list-style: none; padding: 0; margin: 0; }
+.kitchen-sheet ul { list-style: none; padding: 0; margin: 0; }
 .kitchen-sheet-row { display: flex; align-items: flex-start; gap: 12px; padding: 15px 0; border-bottom: 1px solid #ccc; break-inside: avoid; }
 .kitchen-sheet-check { display: inline-flex; flex: 0 0 24px; width: 24px; height: 24px; box-sizing: border-box; border: 2px solid #222; border-radius: 3px; align-items: center; justify-content: center; font: 700 19px/1 Arial, sans-serif; }
 .kitchen-sheet-item { flex: 1; min-width: 0; }
@@ -1018,15 +1006,50 @@ body.canteen-active { height: auto; min-height: 100%; overflow: auto; }
 .kitchen-sheet .declared-allergens, .kitchen-sheet-batch { font-size: 11px; line-height: 1.5; margin: 6px 0 0; }
 .kitchen-sheet .canteen-warning { color: #222; font-weight: 700; }
 .kitchen-sheet .canteen-day-note { font-size: 12px; color: #222; background: #fff; border-left: 2px solid #777; margin: 12px 0; }
-@media print {
-  body.canteen-printing > #canteenPrint.kitchen-sheet { font: 11pt/1.45 Arial, sans-serif; }
-  #canteenPrint.kitchen-sheet h1 { font-size: 14pt; }
-  #canteenPrint.kitchen-sheet h2 { font-size: 10pt; }
-  #canteenPrint.kitchen-sheet .kitchen-sheet-line { font-size: 12pt; }
-  #canteenPrint.kitchen-sheet .kitchen-sheet-check { flex-basis: 6mm; width: 6mm; height: 6mm; }
-}
-@media (max-width: 600px) { .canteen-print-preview.kitchen-sheet { padding: 14px; } }
 
 .canteen-dialog .canteen-print-button { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; min-height: 52px; background: var(--accent); border: 2px solid var(--accent); color: #171717; font-size: 17px; font-weight: 700; box-shadow: 0 3px 8px #0003; }
 .canteen-dialog .canteen-print-button:hover { filter: brightness(1.1); background: var(--accent); }
 .canteen-dialog .canteen-print-button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }
+
+/* Shared paper styles keep every preview and printed sheet in the same layout. */
+.canteen-print-dialog { width: min(900px, calc(100vw - 24px)); }
+.print-preview-stage { min-width: 0; background: #dfe2e5; padding: 12px; overflow: hidden; }
+.print-document {
+  --ink: #171717; --muted: #454545; --line: #d0d0d0; --card: #fff; --accent: #555;
+  box-sizing: border-box; width: 210mm; padding: 14mm; margin: 0 auto;
+  color-scheme: light; color: #171717; background: #fff;
+  font: 11pt/1.45 Arial, sans-serif; overflow-wrap: anywhere;
+}
+.print-document > header { display: flex; flex-direction: column; align-items: flex-start; gap: 5mm; border-bottom: 2px solid #222; padding: 0 0 5mm; margin: 0 0 6mm; }
+.print-document > header p { font-size: 9pt; color: #454545; margin: 0; }
+.print-document h1 { font: 700 22pt/1.15 Arial, sans-serif; margin: 0; }
+.print-document h2 { font: 700 13pt/1.3 Arial, sans-serif; margin: 6mm 0 3mm; text-transform: none; letter-spacing: normal; border: 0; padding: 0; }
+.print-document h3 { font: 700 10pt/1.4 Arial, sans-serif; margin: 4mm 0 2mm; }
+.print-document h2, .print-document h3, .print-day-heading { break-after: avoid; }
+.print-document ul { list-style: none; padding: 0; margin: 0; }
+.print-document li { break-inside: avoid; }
+.print-document .canteen-print-day { margin: 0 0 6mm; padding-bottom: 5mm; border-bottom: 1px solid #aaa; break-inside: avoid; }
+.print-day-heading { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2mm 5mm; }
+.print-day-heading h2 { margin: 0; }
+.print-day-heading p { font-size: 9pt; margin: 0; }
+.print-document .canteen-print-day li { padding: 3mm 0; border-bottom: 1px solid #ddd; }
+.print-document .canteen-print-day li:last-child { border-bottom: 0; }
+.print-menu-line { display: flex; justify-content: space-between; align-items: baseline; gap: 5mm; }
+.print-menu-line > span { flex-shrink: 0; font-size: 10pt; }
+.print-document .declared-allergens { font-size: 9pt; line-height: 1.45; margin: 1.5mm 0 0; }
+.print-document .canteen-warning { color: #222; }
+.print-document .canteen-day-note { color: #222; background: #fff; border-left: 2px solid #777; font-size: 10pt; padding: 2mm 3mm; margin: 3mm 0; }
+.print-document .canteen-requirements { display: block; margin: 0; }
+.print-document .canteen-panel { color: #171717; background: #fff; border: 0; border-radius: 0; box-shadow: none; padding: 0; margin: 0 0 6mm; }
+.print-document .canteen-requirements li { padding: 2.5mm 0; border-bottom: 1px solid #d0d0d0; }
+.print-document.kitchen-sheet h1 { font-size: 22pt; }
+.print-document.kitchen-sheet h2 { font-size: 11pt; border-bottom: 1px solid #888; padding-bottom: 2mm; }
+.print-document .kitchen-sheet-line { font-size: 11pt; }
+.print-document .kitchen-sheet-check { flex-basis: 6mm; width: 6mm; height: 6mm; }
+.print-document .kitchen-sheet-batch { font-size: 9pt; }
+@media screen { .canteen-print-preview { min-height: 297mm; box-shadow: 0 2px 8px #0002; } }
+@media (max-width: 600px) {
+  .canteen-print-dialog { padding: 12px; }
+  .canteen-print-dialog .canteen-dialog-head { top: -12px; }
+  .print-preview-stage { padding: 0; }
+}

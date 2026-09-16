@@ -7,7 +7,7 @@ const canteen = (() => {
   const root = document.getElementById('canteenArea');
   const dialog = document.createElement('dialog'); dialog.className = 'canteen-dialog'; document.body.append(dialog);
   const unlockDialog = document.createElement('dialog'); unlockDialog.className = 'canteen-dialog pro-unlock'; document.body.append(unlockDialog);
-  let unlockAttempt = 0;
+  let unlockAttempt = 0, printPreviewObserver = null;
   unlockDialog.addEventListener('close', () => { unlockAttempt++; unlockDialog.innerHTML = ''; document.getElementById('canteenBtn').focus({ preventScroll: true }); });
   let state = { version: 1, weeks: {}, templates: [] }, storageError = false;
   try {
@@ -41,7 +41,7 @@ const canteen = (() => {
     dialog.querySelector('[data-close]').onclick = () => dialog.close();
     bind?.(dialog); dialog.showModal();
   }
-  dialog.addEventListener('close', () => { document.body.classList.remove('canteen-printing'); document.getElementById('canteenPrint')?.remove(); if (opener?.isConnected) opener.focus(); });
+  dialog.addEventListener('close', () => { printPreviewObserver?.disconnect(); printPreviewObserver = null; dialog.classList.remove('canteen-print-dialog'); document.body.classList.remove('canteen-printing'); document.getElementById('canteenPrint')?.remove(); if (opener?.isConnected) opener.focus(); });
   function open() {
     if (active || unlockDialog.open) return;
     unlockDialog.innerHTML = `<form data-pro-unlock><h2 id="proUnlockTitle">${label('Unlock Pro')}</h2><label for="proPassword">${label('Password')}</label><input id="proPassword" type="password" autocomplete="current-password" required autofocus><p data-pro-error role="alert"></p><div class="canteen-actions">${button('Cancel', 'data-pro-cancel')}<button type="submit" class="btn primary">${label('Unlock')}</button></div></form>`;
@@ -401,18 +401,25 @@ const canteen = (() => {
   }
   function allergensHtml(r) { return declaredAllergensHtml(r); }
   function menuSheet(allergensOnly) {
-    return operating().map(day => `<section class="canteen-print-day"><h2>${esc(dateLabel(day.date))} · ${day.defaultPortions} ${label('Portions to prepare')}</h2>${dayNoteHtml(day)}${week().slots.map(slot => {
+    return operating().map(day => `<section class="canteen-print-day"><div class="print-day-heading"><h2>${esc(dateLabel(day.date))}</h2><p>${day.defaultPortions} ${label('Portions to prepare')}</p></div>${dayNoteHtml(day)}${week().slots.map(slot => {
       const items = day.items.filter(item => item.slotId === slot.id); if (!items.length) return '';
       const total = CanteenPlans.totals(items, day);
-      return `<h3>${label(slot.label)}${allergensOnly ? '' : ` · ${label('Total')}: ${total.total}${total.mismatch ? ` / ${total.expected} · ${label('Portion mismatch')}` : ''}`}</h3><ul>${items.map(item => { const r = recipe(item.recipeId); return `<li><strong>${esc(r ? recipeText(r.title) : t('Recipe unavailable'))}</strong>${item.variant ? ` (${esc(item.variant)})` : ''} — ${CanteenPlans.portions(item, day)} ${label('Portions')}${r ? allergensHtml(r) : ''}</li>`; }).join('')}</ul>`;
+      return `<h3>${label(slot.label)}${allergensOnly ? '' : ` · ${label('Total')}: ${total.total}${total.mismatch ? ` / ${total.expected} · ${label('Portion mismatch')}` : ''}`}</h3><ul>${items.map(item => { const r = recipe(item.recipeId); return `<li><div class="print-menu-line"><strong>${esc(r ? recipeText(r.title) : t('Recipe unavailable'))}${item.variant ? ` (${esc(item.variant)})` : ''}</strong><span>${CanteenPlans.portions(item, day)} ${label('Portions')}</span></div>${r ? allergensHtml(r) : ''}</li>`; }).join('')}</ul>`;
     }).join('')}</section>`).join('');
   }
   function printSheet(title, html, layout = '') {
     document.getElementById('canteenPrint')?.remove();
-    const sheet = document.createElement('section'); sheet.id = 'canteenPrint'; sheet.className = `canteen-print ${layout}`;
+    const sheet = document.createElement('section'); sheet.id = 'canteenPrint'; sheet.className = `canteen-print print-document ${layout}`;
     sheet.innerHTML = `<header><p>QuickRecipe Pro · ${label('Week of')} ${start}</p><h1>${label(title)}</h1></header>${html}`;
     document.body.append(sheet); document.body.classList.add('canteen-printing');
-    modal(title, `<p>${label('Use Print to print or save as PDF.')}</p><button type="button" class="btn canteen-print-button" data-print><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6zM18 12h.01"/></svg><span>${label('Print')}</span></button><div class="canteen-print-preview ${layout}">${sheet.innerHTML}</div>`, d => {
+    modal(title, `<p>${label('Use Print to print or save as PDF.')}</p><button type="button" class="btn canteen-print-button" data-print><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v8H6zM18 12h.01"/></svg><span>${label('Print')}</span></button><div class="print-preview-stage"><div class="canteen-print-preview print-document ${layout}">${sheet.innerHTML}</div></div>`, d => {
+      d.classList.add('canteen-print-dialog');
+      const stage = d.querySelector('.print-preview-stage'), preview = stage.firstElementChild;
+      const fitPreview = () => { preview.style.zoom = Math.min(1, (stage.clientWidth - parseFloat(getComputedStyle(stage).paddingLeft) - parseFloat(getComputedStyle(stage).paddingRight)) / preview.offsetWidth); };
+      if (typeof ResizeObserver !== 'undefined') {
+        printPreviewObserver = new ResizeObserver(fitPreview);
+        printPreviewObserver.observe(stage);
+      }
       d.querySelector('[data-print]').onclick = () => window.print();
     });
   }

@@ -131,6 +131,32 @@ async function connect(url) {
     await send('Emulation.setEmulatedMedia', { media: 'print' });
     assert.equal(await evaluate('getComputedStyle(document.querySelector(".app")).display'), 'none'); await shot('print-production');
     await send('Emulation.setEmulatedMedia', { media: 'screen' }); await click('.canteen-dialog [data-close]');
+    // Every paper view shares its content and typography with the print target.
+    for (const lang of ['is', 'pl', 'en']) {
+      await evaluate(`changeLanguage('${lang}')`);
+      for (const [tab, trigger, name] of [
+        ['week', 'data-print-week', 'menu'], ['week', 'data-allergen-sheet', 'allergens'],
+        ['requirements', 'data-print-requirements', 'ingredients'], ['kitchen', 'data-print-production', 'kitchen']
+      ]) {
+        await size(1280); await click(`[data-tab="${tab}"]`); await click(`[${trigger}]`); await pause(50);
+        assert(await evaluate(`document.querySelector('.canteen-print-preview').innerHTML === document.getElementById('canteenPrint').innerHTML`));
+        const paperStyles = selector => evaluate(`(()=>{
+          const root=document.querySelector(${JSON.stringify(selector)});
+          return [...root.querySelectorAll('header,h1,h2,h3,p,li,strong,span')].map(el=>{
+            const s=getComputedStyle(el);return [s.fontSize,s.lineHeight,s.color,s.marginTop,s.marginBottom,s.paddingTop,s.paddingBottom];
+          });
+        })()`);
+        const previewStyles = await paperStyles('.canteen-print-preview');
+        assert.equal(await evaluate(`getComputedStyle(document.querySelector('.canteen-print-preview')).backgroundColor`), 'rgb(255, 255, 255)');
+        await shot(`${lang}-${name}-preview`);
+        await size(390); await pause(50);
+        assert(await evaluate(`(()=>{const d=document.querySelector('.canteen-dialog');return d.scrollWidth<=d.clientWidth})()`), `${lang}/${name}: preview overflow`);
+        await send('Emulation.setEmulatedMedia', { media: 'print' });
+        assert.deepEqual(await paperStyles('#canteenPrint'), previewStyles, `${lang}/${name}: print styles differ from preview`);
+        await send('Emulation.setEmulatedMedia', { media: 'screen' }); await click('.canteen-dialog [data-close]');
+      }
+    }
+    await size(1280);
     await click('[data-tab="week"]'); await click('[data-settings]');
     await click('[data-ingredient="0"] summary'); await click('[data-ingredient="0"] [data-no-allergens]');
     assert(await evaluate(`document.querySelector('[data-ingredient="0"]').classList.contains("is-reviewed")`));

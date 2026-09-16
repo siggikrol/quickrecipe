@@ -13,7 +13,7 @@ Open **Pro** and enter the shared password. Refreshing keeps Pro open in the sam
 - **Ingredients needed:** Toggle the highlighted day buttons to select one or multiple days. Entire week selects all days, or clears them when all are selected. Optionally choose a single meal slot. Bases to prepare and raw ingredients are shown separately. Invalid references or missing serving yields stop the calculation with an explanation instead of presenting partial totals as complete.
 - **Kitchen:** Choose a day, check off prepared components and production items, and open full recipes or individual batches in the existing recipe interface. Back to kitchen restores the earlier recipe browsing context. Quantity changes invalidate affected completion checkmarks.
 - **Batches:** Expand **Split into batches** when needed. Choose a batch count or maximum portions per batch. Maximum size uses enough equal batches to stay below the maximum (355 portions with a maximum of 80 gives five batches of 71). Requirements always use the full quantity.
-- **Paper:** Preview and print weekly menus, daily production sheets, selected requirements and allergen sheets. Browser Print also supports Save as PDF. Print styles target A4 and omit navigation and controls.
+- **Paper:** Preview and print weekly menus, daily production sheets, selected requirements and allergen sheets. Browser Print also supports Save as PDF. All four previews share the printed content, typography and spacing on white A4 paper, scaled to fit smaller screens. Print styles omit navigation and controls.
 
 ## Shared architecture
 
@@ -60,7 +60,7 @@ There is no automatic task generation from ingredient names. Current method sect
 
 ## Validation
 
-Run `npm test`. This includes the original six suites plus planning-model, shared-calculation and Canteen UI suites. Coverage includes zero overrides, decimal scales, nested foundations/cycles, compatible/incompatible units, ranges, unknown yields, allergens, batches, copying, reloads, translations, print structure and restoring recipe selection. Version 69 aligns app, HTML assets and offline caching, including all new modules.
+Run `npm test`. This includes the original six suites plus planning-model, shared-calculation and Canteen UI suites. Coverage includes zero overrides, decimal scales, nested foundations/cycles, compatible/incompatible units, ranges, unknown yields, allergens, batches, copying, reloads, translations, print structure and restoring recipe selection. Version 70 aligns app, HTML assets and offline caching, including all new modules.
 
 All planning and progress is local to this browser. V1 has no inventory, ordering, suppliers, costing, accounts or server synchronization.
 
