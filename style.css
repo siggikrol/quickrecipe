@@ -858,3 +858,175 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 .fold-timer-row.is-due [role=status], .fold-timer-row.is-due .fold-countdown { color:var(--accent); }
 @media (max-width:560px) { .fold-timer-heading { gap:2px 10px; } .fold-timer-heading strong { flex-basis:100%; } }
 @media print { .fold-timer-controls, .fold-timer-panel { display:none; } }
+
+/* Canteen uses the existing colours and controls, with an independent planning surface. */
+[hidden] { display: none !important; }
+body.canteen-active { height: auto; min-height: 100%; overflow: auto; }
+.canteen-active .app { height: auto; min-height: 100dvh; overflow: visible; max-width: none; margin: 0 auto; padding-inline: clamp(16px, 2vw, 36px); }
+.canteen-active .toolbar, .canteen-active .browse-nav, .canteen-active #chips,
+.canteen-active #languageNote, .canteen-active #resultSummary, .canteen-active .layout,
+.canteen-active #canteenBtn, .canteen-active #favFilter, .canteen-active #shoppingListsBtn, .canteen-active #addBtn { display: none !important; }
+#canteenArea { padding: 12px 0 40px; }
+.canteen-toolbar, .canteen-actions, .canteen-week-picker, .canteen-toolbar nav,
+.canteen-dialog-head, .canteen-item-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.canteen-toolbar, .canteen-dialog-head { justify-content: space-between; }
+.canteen-toolbar { padding: 16px 0; border-block: 1px solid var(--line); }
+.canteen-toolbar [aria-pressed="true"] { background: var(--accent); color: #fff; }
+.canteen-actions { margin: 16px 0; }
+.canteen-days { display: grid; grid-template-columns: repeat(var(--canteen-day-count, 5), minmax(0, 1fr)); gap: 12px; align-items: start; }
+.canteen-day { overflow-wrap: anywhere; }
+.canteen-day .btn { max-width: 100%; white-space: normal; }
+.canteen-item-fields > label { min-width: 0; }
+@media (min-width: 601px) and (max-width: 1023px) {
+  .canteen-days { grid-template-columns: repeat(var(--canteen-day-count, 5), minmax(240px, 1fr)); overflow-x: auto; padding-bottom: 12px; }
+}
+@media (min-width: 1024px) {
+  .canteen-day { padding: clamp(10px, 1vw, 18px); }
+  .canteen-day .canteen-item-fields { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+}
+.canteen-day, .canteen-panel { border: 1px solid var(--line); border-radius: var(--radius); background: var(--card); padding: 18px; min-width: 0; }
+.canteen-day h2 { font-size: clamp(16px, 1.2vw, 20px); margin: 0 0 12px; text-transform: capitalize; }
+#canteenArea label, .canteen-dialog label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+#canteenArea input, #canteenArea select, .canteen-dialog input, .canteen-dialog select { min-height: 44px; border: 1px solid var(--line); background: var(--bg); color: var(--ink); border-radius: 8px; padding: 8px; font: inherit; max-width: 100%; min-width: 0; }
+#canteenArea input[type=number] { width: 110px; }
+#canteenArea input[type=checkbox], .canteen-dialog input[type=checkbox] { width: 24px; height: 24px; min-height: 24px; accent-color: var(--accent); }
+.canteen-day header { display: grid; gap: 8px; }
+.canteen-day header .btn { justify-self: start; }
+.canteen-slot { border-top: 1px solid var(--line); margin-top: 18px; padding-top: 12px; }
+.canteen-slot h3 { font-size: 13px; text-transform: uppercase; color: var(--muted); letter-spacing: .08em; margin: 0 0 10px; }
+.canteen-menu-item { padding: 12px 0; border-bottom: 1px dashed var(--line); overflow-wrap: anywhere; }
+.canteen-item-fields { display: grid; grid-template-columns: 90px 1fr; gap: 8px; margin: 8px 0; }
+.canteen-item-fields input { width: 100% !important; }
+.canteen-menu-item small { color: var(--muted); display: block; margin-bottom: 8px; }
+.canteen-warning { color: var(--danger); font-weight: 600; }
+.canteen-total { color: var(--muted); }
+.canteen-dialog { background: var(--card); color: var(--ink); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; width: min(650px, calc(100vw - 24px)); max-height: 90dvh; }
+.canteen-dialog::backdrop { background: #0008; }
+.canteen-dialog-head { position: sticky; top: -24px; background: var(--card); z-index: 1; padding-block: 8px; }
+.canteen-dialog h2 { margin: 0; }
+.canteen-dialog-body { display: grid; gap: 14px; padding-top: 16px; }
+.canteen-dialog fieldset { border: 1px solid var(--line); border-radius: 8px; }
+.canteen-dialog fieldset label { flex-direction: row; align-items: center; margin: 8px 0; }
+.canteen-search-results { display: grid; gap: 6px; max-height: 50vh; overflow-y: auto; }
+.canteen-search-results .btn { text-align: left; white-space: normal; }
+@media (max-width: 600px) { .canteen-days { grid-template-columns: 1fr; } .canteen-week-picker { width: 100%; } }
+.canteen-requirements { display: grid; grid-template-columns: 1fr 2fr; gap: 16px; margin: 16px 0; }
+.canteen-requirements ul { list-style: none; margin: 0; padding: 0; }
+.canteen-requirements li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.canteen-requirements li > span { min-width: 0; overflow-wrap: anywhere; }
+.canteen-requirements strong { white-space: normal; text-align: right; flex-shrink: 0; max-width: 55%; }
+.canteen-day-selection { border: 0; padding: 0; margin: 16px 0; display: flex; flex-wrap: wrap; gap: 8px; min-width: 0; }
+.canteen-day-selection legend { padding: 0; margin-bottom: 8px; font-size: 13px; color: var(--muted); }
+.canteen-day-selection .btn { min-height: 44px; }
+.canteen-day-selection [aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+#canteenArea .canteen-inline-select { flex-direction: row; align-items: center; gap: 10px; min-width: 0; max-width: 100%; }
+.canteen-inline-select > span { flex-shrink: 0; }
+#canteenArea .canteen-filter-actions select { height: 44px; border-width: 1.5px; border-radius: var(--radius-sm); background: var(--card); font-size: 13.5px; font-weight: 600; }
+.canteen-filter-actions > .btn { min-height: 44px; }
+@media (max-width: 700px) { .canteen-requirements { grid-template-columns: 1fr; } }
+.canteen-kitchen { max-width: 980px; margin: 24px auto; font-size: 18px; }
+.canteen-kitchen h2 { text-transform: capitalize; }
+.canteen-meals { font-size: 28px; color: var(--accent); }
+.canteen-kitchen .canteen-panel { margin: 20px 0; }
+.canteen-production-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 12px; padding: 14px 0; border-top: 1px solid var(--line); }
+#canteenArea .canteen-production-row label, #canteenArea .canteen-production-check { flex-direction: row; align-items: center; gap: 16px; font-size: 20px; }
+.canteen-production-item { padding: 20px 0; border-top: 1px solid var(--line); }
+.canteen-production-check:has(input:checked) span { text-decoration: line-through; opacity: .65; }
+.canteen-batches { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
+.canteen-recipe #canteenView, .canteen-recipe .layout #list, .canteen-recipe .recipe-nav { display: none !important; }
+.canteen-active.canteen-recipe .layout { display: block !important; overflow: visible; height: auto; }
+.canteen-recipe #detail { display: block !important; height: auto; overflow: visible; }
+.canteen-recipe-context { padding: 20px; background: var(--accent-light); border-bottom: 1px solid var(--line); }
+.canteen-print { display: none; }
+.canteen-print-preview { font-size: 13px; }
+.canteen-print-preview .canteen-requirements { display: block; }
+@page { size: A4; margin: 14mm; }
+@media print {
+  body.canteen-printing { display: block; height: auto; background: white; color: black; }
+  body.canteen-printing > * { display: none !important; }
+  body.canteen-printing > #canteenPrint { display: block !important; font: 11pt/1.4 sans-serif; }
+  #canteenPrint h1 { font-size: 20pt; } #canteenPrint h2 { font-size: 15pt; }
+  #canteenPrint h2, #canteenPrint h3 { break-after: avoid; }
+  #canteenPrint li, #canteenPrint .canteen-menu-item { break-inside: avoid; }
+  #canteenPrint ul { padding-left: 18px; }
+  #canteenPrint .canteen-panel { background: white; border: 0; padding: 0; color: black; }
+  #canteenPrint .canteen-requirements { display: block; }
+  #canteenPrint .canteen-warning { color: black; }
+}
+.declared-allergens { font-size: 13px; margin: 10px 0; line-height: 1.6; }
+.canteen-kitchen .declared-allergens { font-size: 16px; }
+.canteen-allergen-editor summary { cursor: pointer; padding: 10px 0; font-weight: 600; }
+.canteen-allergen-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+
+.canteen-week-actions { margin: 16px 0; }
+.canteen-week-actions summary { cursor: pointer; font-weight: 600; padding: 8px 0; }
+.canteen-week-picker > .btn { font-size: 24px; min-width: 44px; }
+@media print {
+  :root { color-scheme: light !important; background: white !important; }
+  .canteen-dialog::backdrop { display: none !important; background: transparent !important; }
+  #canteenPrint { background: white !important; }
+  #canteenPrint, #canteenPrint * { color: black !important; box-shadow: none !important; }
+  #canteenPrint .canteen-panel { border-radius: 0; }
+}
+
+.pro-unlock { width: min(380px, calc(100vw - 32px)); }
+.pro-unlock h2 { margin-bottom: 20px; }
+.pro-unlock input { width: 100%; margin-top: 6px; }
+.pro-unlock [data-pro-error] { color: var(--danger); min-height: 1.5em; }
+.pro-unlock .canteen-actions { justify-content: flex-end; margin-bottom: 0; }
+
+.canteen-notes summary, .canteen-batch-options summary { cursor: pointer; padding: 8px 0; font-size: 13px; font-weight: 600; }
+.canteen-batch-options { margin-top: 12px; }
+.canteen-day-note { white-space: pre-wrap; overflow-wrap: anywhere; padding: 12px; border-left: 3px solid var(--accent); background: var(--card); }
+#canteenArea textarea, .canteen-dialog textarea { width: 100%; max-width: 100%; min-width: 0; box-sizing: border-box; border: 1px solid var(--line); border-radius: 8px; padding: 8px; background: var(--bg); color: var(--ink); font: inherit; resize: vertical; }
+.canteen-batches > label { min-width: 0; max-width: 100%; }
+
+.canteen-allergen-editor { border: 1px solid var(--line); border-radius: 10px; padding: 0 12px; min-width: 0; }
+.canteen-allergen-editor summary { padding: 12px 0; }
+.canteen-ingredient-name { overflow-wrap: anywhere; }
+.canteen-review-status { display: inline-block; margin-left: 10px; font-size: 12px; color: var(--muted); }
+.canteen-review-allergens { display: block; margin-top: 5px; font-size: 12px; font-weight: 400; color: var(--muted); overflow-wrap: anywhere; }
+.canteen-allergen-editor.is-reviewed { border-color: #21854a; background: #21854a18; }
+.canteen-allergen-editor.is-reviewed .canteen-review-status { color: #176736; }
+[data-theme="light"] .canteen-allergen-editor.is-reviewed .canteen-review-status { color: #176736; }
+.canteen-allergen-editor fieldset { margin: 0 0 12px; padding: 12px; min-width: 0; }
+.canteen-allergen-options { gap: 8px; margin: 12px 0; grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr)); }
+.canteen-review-progress { font-weight: 600; margin-bottom: 0; }
+.canteen-settings-save { position: sticky; bottom: -24px; padding: 12px 0; background: var(--card); border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; z-index: 1; }
+.canteen-settings-save small { color: var(--muted); }
+
+:root[data-theme="dark"] .canteen-allergen-editor.is-reviewed .canteen-review-status { color: #65d994; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .canteen-allergen-editor.is-reviewed .canteen-review-status { color: #65d994; } }
+
+#canteenExitBtn { display: none; }
+.canteen-active #canteenExitBtn { display: inline-flex; }
+
+/* Kitchen paper: compact headings, generous checkboxes, and strong item rows. */
+.kitchen-sheet { color: #171717; background: #fff; font: 14px/1.45 Arial, sans-serif; }
+.canteen-print-preview.kitchen-sheet { padding: 22px; border: 1px solid #d2d2d2; border-radius: 6px; }
+.kitchen-sheet header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; border-bottom: 2px solid #222; padding-bottom: 8px; }
+.kitchen-sheet header p { font-size: 10px; margin: 0; color: #444; }
+.kitchen-sheet h1, #canteenPrint.kitchen-sheet h1 { font: 700 18px/1.3 Arial, sans-serif; margin: 0; }
+.kitchen-sheet h2, #canteenPrint.kitchen-sheet h2 { font: 700 12px/1.4 Arial, sans-serif; text-transform: uppercase; letter-spacing: .05em; margin: 20px 0 6px; border-bottom: 1px solid #888; padding-bottom: 5px; }
+.kitchen-sheet-date { font-size: 13px; font-weight: 600; margin: 12px 0; }
+.kitchen-sheet ul, #canteenPrint.kitchen-sheet ul { list-style: none; padding: 0; margin: 0; }
+.kitchen-sheet-row { display: flex; align-items: flex-start; gap: 12px; padding: 15px 0; border-bottom: 1px solid #ccc; break-inside: avoid; }
+.kitchen-sheet-check { display: inline-flex; flex: 0 0 24px; width: 24px; height: 24px; box-sizing: border-box; border: 2px solid #222; border-radius: 3px; align-items: center; justify-content: center; font: 700 19px/1 Arial, sans-serif; }
+.kitchen-sheet-item { flex: 1; min-width: 0; }
+.kitchen-sheet-line { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; font-size: 15px; overflow-wrap: anywhere; }
+.kitchen-sheet-amount { white-space: normal; }
+.kitchen-sheet .declared-allergens, .kitchen-sheet-batch { font-size: 11px; line-height: 1.5; margin: 6px 0 0; }
+.kitchen-sheet .canteen-warning { color: #222; font-weight: 700; }
+.kitchen-sheet .canteen-day-note { font-size: 12px; color: #222; background: #fff; border-left: 2px solid #777; margin: 12px 0; }
+@media print {
+  body.canteen-printing > #canteenPrint.kitchen-sheet { font: 11pt/1.45 Arial, sans-serif; }
+  #canteenPrint.kitchen-sheet h1 { font-size: 14pt; }
+  #canteenPrint.kitchen-sheet h2 { font-size: 10pt; }
+  #canteenPrint.kitchen-sheet .kitchen-sheet-line { font-size: 12pt; }
+  #canteenPrint.kitchen-sheet .kitchen-sheet-check { flex-basis: 6mm; width: 6mm; height: 6mm; }
+}
+@media (max-width: 600px) { .canteen-print-preview.kitchen-sheet { padding: 14px; } }
+
+.canteen-dialog .canteen-print-button { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; min-height: 52px; background: var(--accent); border: 2px solid var(--accent); color: #171717; font-size: 17px; font-weight: 700; box-shadow: 0 3px 8px #0003; }
+.canteen-dialog .canteen-print-button:hover { filter: brightness(1.1); background: var(--accent); }
+.canteen-dialog .canteen-print-button:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; }

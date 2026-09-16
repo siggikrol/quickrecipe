@@ -29,7 +29,7 @@ function setup(saved) {
     if (saved) w.localStorage.setItem('quickrecipe.shopping.v1', saved);
   }});
   const script = dom.window.document.createElement('script');
-  script.textContent = ['i18n.js', 'shopping.js', 'app.js'].map(f => fs.readFileSync(f, 'utf8')).join('\n');
+  script.textContent = ['i18n.js', 'recipe-calculations.js', 'shopping.js', 'app.js'].map(f => fs.readFileSync(f, 'utf8')).join('\n');
   dom.window.document.body.append(script);
   return dom;
 }

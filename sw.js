@@ -1,4 +1,4 @@
-const VERSION = '55';
+const VERSION = '68';
 const CACHE = `quickrecipe-v${VERSION}`;
 const ASSETS = [
   './',
@@ -9,6 +9,12 @@ const ASSETS = [
   `./i18n.js?v=${VERSION}`,
   './shopping.js',
   `./shopping.js?v=${VERSION}`,
+  './recipe-calculations.js',
+  `./recipe-calculations.js?v=${VERSION}`,
+  './canteen-model.js',
+  `./canteen-model.js?v=${VERSION}`,
+  './canteen.js',
+  `./canteen.js?v=${VERSION}`,
   './app.js',
   `./app.js?v=${VERSION}`,
   './translations/pl.json',

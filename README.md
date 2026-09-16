@@ -86,3 +86,11 @@ Keep the app open, the phone unlocked and the volume audible for alerts. The
 app requests a screen wake lock where supported. Use **Test / enable sound**
 after reloading to reactivate audio. A suspended or closed web app cannot
 reliably ring on time; also set a phone alarm if you need a locked-screen reminder.
+
+## Canteen Mode
+
+**Pro** adds weekly portion planning, recipe variants,
+consolidated ingredient requirements, kitchen checklists, batches, declared
+allergens and A4 print sheets. It shares the existing recipes and foundation
+engine. See [Canteen Mode](docs/canteen.md) for the workflow, serving declarations,
+local persistence and calculation rules.

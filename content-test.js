@@ -8,7 +8,7 @@ const batches = ['foundation-sauces', 'stocks', 'dips', 'breakfast', 'pasta', 'c
 const additions = batches.flatMap(name => files[`${name}.json`]);
 const byId = Object.fromEntries(collection.map(r => [r.id, r]));
 assert.equal(new Set(collection.map(r => r.id)).size, collection.length, 'Recipe IDs must be globally unique');
-const allowed = new Set(['id', 'title', 'category', 'section', 'desc', 'ingredients', 'steps', 'compactMetricUnits', 'yield', 'batchYield', 'foundations', 'categoryMemberships', 'prep', 'cook', 'bake', 'ferment', 'tempC']);
+const allowed = new Set(['id', 'title', 'category', 'section', 'desc', 'ingredients', 'steps', 'compactMetricUnits', 'yield', 'batchYield', 'foundations', 'categoryMemberships', 'prep', 'cook', 'bake', 'ferment', 'tempC', 'servings', 'ingredientAllergens', 'allergenAdjustments']);
 for (const r of additions) {
   assert(r, 'All content batches must be indexed');
   Object.keys(r).forEach(key => assert(allowed.has(key), `${r.id}: unexpected metadata ${key}`));
@@ -43,7 +43,7 @@ const dom = new JSDOM(fs.readFileSync('index.html', 'utf8'), {
 });
 const w = dom.window, d = w.document;
 const script = d.createElement('script');
-script.textContent = ['i18n.js', 'shopping.js', 'app.js'].map(f => fs.readFileSync(f, 'utf8')).join('\n');
+script.textContent = ['i18n.js', 'recipe-calculations.js', 'shopping.js', 'app.js'].map(f => fs.readFileSync(f, 'utf8')).join('\n');
 d.body.append(script);
 const wait = () => new Promise(resolve => setTimeout(resolve, 80));
 const near = (actual, expected, label, tolerance = 1e-8) => assert(Math.abs(actual - expected) <= tolerance, `${label}: ${actual} != ${expected}`);

@@ -4,7 +4,8 @@
   "description": "My recipes",
   "main": "sw.js",
   "scripts": {
-    "test": "node smoke-test.js && node translation-test.js && node shopping-test.js && node family-test.js && node content-test.js && node timer-test.js"
+    "test": "node canteen-model-test.js && node recipe-calculations-test.js && node canteen-test.js && node smoke-test.js && node translation-test.js && node shopping-test.js && node family-test.js && node content-test.js && node timer-test.js",
+    "test:browser": "node canteen-browser-test.js"
   },
   "repository": {
     "type": "git",

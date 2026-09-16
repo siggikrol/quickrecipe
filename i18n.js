@@ -438,6 +438,644 @@ for (const [key, values] of Object.entries(familyMessages)) {
   UI_MESSAGES.pl[key] = values[0]; UI_MESSAGES.is[key] = values[1];
 }
 
+const canteenMessages = {
+  "Unlock Pro": ["Odblokuj Pro", "Opna Pro"],
+  "Password": ["Hasło", "Lykilorð"],
+  "Unlock": ["Odblokuj", "Opna"],
+  "Incorrect password. Try again.": ["Nieprawidłowe hasło. Spróbuj ponownie.", "Rangt lykilorð. Reyndu aftur."],
+  "Pro password has not been configured.": ["Hasło Pro nie zostało ustawione.", "Lykilorð fyrir Pro hefur ekki verið stillt."],
+  "Password checking requires HTTPS or localhost.": ["Sprawdzanie hasła wymaga HTTPS lub localhost.", "Staðfesting lykilorðs krefst HTTPS eða localhost."],
+  "Could not check the password. Try again.": ["Nie udało się sprawdzić hasła. Spróbuj ponownie.", "Ekki tókst að staðfesta lykilorðið. Reyndu aftur."],
+  "Week actions": ["Działania tygodniowe", "Vikuaðgerðir"],
+  "Save and review foundation": ["Zapisz i sprawdź półprodukt", "Vista og yfirfara grunnuppskrift"],
+  "Pro": ["Pro", "Pro"],
+  "Canteen": [
+    "Stołówka",
+    "Mötuneyti"
+  ],
+  "Recipes": [
+    "Przepisy",
+    "Uppskriftir"
+  ],
+  "Week": [
+    "Tydzień",
+    "Vika"
+  ],
+  "Requirements": [
+    "Zapotrzebowanie",
+    "Hráefnaþörf"
+  ],
+  "Kitchen": [
+    "Kuchnia",
+    "Eldhús"
+  ],
+  "Week of": [
+    "Tydzień od",
+    "Vika frá"
+  ],
+  "Previous week": [
+    "Poprzedni tydzień",
+    "Fyrri vika"
+  ],
+  "Next week": [
+    "Następny tydzień",
+    "Næsta vika"
+  ],
+  "Soup": [
+    "Zupa",
+    "Súpa"
+  ],
+  "Main": [
+    "Danie główne",
+    "Aðalréttur"
+  ],
+  "Side": [
+    "Dodatek",
+    "Meðlæti"
+  ],
+  "Portions": [
+    "Porcje",
+    "Skammtar"
+  ],
+  "Expected portions": [
+    "Oczekiwane porcje",
+    "Áætlaðir skammtar"
+  ],
+  "Variant": [
+    "Wariant",
+    "Útfærsla"
+  ],
+  "Standard": [
+    "Standardowy",
+    "Hefðbundið"
+  ],
+  "Blank portions inherit the day total.": [
+    "Puste pole oznacza liczbę porcji dla całego dnia.",
+    "Tómur reitur notar skammtafjölda dagsins."
+  ],
+  "Total": [
+    "Razem",
+    "Samtals"
+  ],
+  "Portion mismatch": [
+    "Niezgodna liczba porcji",
+    "Skammtafjöldi stemmir ekki"
+  ],
+  "Recipe settings": [
+    "Ustawienia przepisu",
+    "Stillingar uppskriftar"
+  ],
+  "Configure week": [
+    "Ustaw tydzień",
+    "Stilla viku"
+  ],
+  "Copy week": [
+    "Kopiuj tydzień",
+    "Afrita viku"
+  ],
+  "Copy day": [
+    "Kopiuj dzień",
+    "Afrita dag"
+  ],
+  "Templates": [
+    "Szablony",
+    "Sniðmát"
+  ],
+  "Print weekly menu": [
+    "Drukuj jadłospis tygodniowy",
+    "Prenta vikumatseðil"
+  ],
+  "Allergen sheet": [
+    "Karta alergenów",
+    "Ofnæmisvakayfirlit"
+  ],
+  "Operating days": [
+    "Dni pracy",
+    "Starfsdagar"
+  ],
+  "Meal slots": [
+    "Pozycje posiłków",
+    "Máltíðarflokkar"
+  ],
+  "Meal slot": [
+    "Pozycja posiłku",
+    "Máltíðarflokkur"
+  ],
+  "Clear a slot name to remove it. Assigned recipes must be removed first.": [
+    "Usuń nazwę pozycji, aby ją usunąć. Najpierw usuń przypisane przepisy.",
+    "Tæmdu heiti flokks til að fjarlægja hann. Fjarlægðu fyrst tengdar uppskriftir."
+  ],
+  "Add slot": [
+    "Dodaj pozycję",
+    "Bæta við flokki"
+  ],
+  "Save": [
+    "Zapisz",
+    "Vista"
+  ],
+  "Choose at least one day and one slot.": [
+    "Wybierz co najmniej jeden dzień i jedną pozycję.",
+    "Veldu að minnsta kosti einn dag og einn flokk."
+  ],
+  "Remove assigned recipes before removing their slot.": [
+    "Usuń przypisane przepisy przed usunięciem pozycji.",
+    "Fjarlægðu tengdar uppskriftir áður en flokknum er eytt."
+  ],
+  "Destination week": [
+    "Tydzień docelowy",
+    "Markvika"
+  ],
+  "Destination day": [
+    "Dzień docelowy",
+    "Markdagur"
+  ],
+  "Choose another week.": [
+    "Wybierz inny tydzień.",
+    "Veldu aðra viku."
+  ],
+  "Replace the destination plan?": [
+    "Zastąpić plan docelowy?",
+    "Skipta út núverandi áætlun?"
+  ],
+  "Template name": [
+    "Nazwa szablonu",
+    "Heiti sniðmáts"
+  ],
+  "Save menu as template": [
+    "Zapisz jadłospis jako szablon",
+    "Vista matseðil sem sniðmát"
+  ],
+  "Apply to this week": [
+    "Zastosuj do tego tygodnia",
+    "Nota fyrir þessa viku"
+  ],
+  "Could not save the plan on this device.": [
+    "Nie udało się zapisać planu na tym urządzeniu.",
+    "Ekki tókst að vista áætlun á þessu tæki."
+  ],
+  "Saved plans could not be read. Export a backup before resetting.": [
+    "Nie można odczytać zapisanych planów. Wyeksportuj kopię przed resetowaniem.",
+    "Ekki tókst að lesa vistaðar áætlanir. Flyttu út öryggisafrit áður en þú endurstillir."
+  ],
+  "Export saved data": [
+    "Eksportuj zapisane dane",
+    "Flytja út vistuð gögn"
+  ],
+  "Reset plans": [
+    "Resetuj plany",
+    "Endurstilla áætlanir"
+  ],
+  "Reset plans?": [
+    "Zresetować plany?",
+    "Endurstilla áætlanir?"
+  ],
+  "No recipes found.": [
+    "Nie znaleziono przepisów.",
+    "Engar uppskriftir fundust."
+  ],
+  "Recipe unavailable": [
+    "Przepis niedostępny",
+    "Uppskrift ekki tiltæk"
+  ],
+  "Original yield": [
+    "Pierwotna wydajność",
+    "Upprunalegt magn"
+  ],
+  "Not declared": [
+    "Nie zadeklarowano",
+    "Ekki skráð"
+  ],
+  "Base servings": [
+    "Porcje w przepisie bazowym",
+    "Skammtar í grunnuppskrift"
+  ],
+  "Declare how many portions the original recipe makes. Cooking quantities stay unchanged.": [
+    "Podaj liczbę porcji z oryginalnego przepisu. Ilości składników pozostają bez zmian.",
+    "Skráðu hversu marga skammta grunnuppskriftin gefur. Hráefnamagn helst óbreytt."
+  ],
+  "Declare the base serving count": [
+    "Podaj liczbę porcji bazowych",
+    "Skráðu skammtafjölda grunnuppskriftar"
+  ],
+  "Ingredient requirements": [
+    "Zapotrzebowanie na składniki",
+    "Hráefnaþörf"
+  ],
+  "Prepared components": [
+    "Przygotowane półprodukty",
+    "Undirbúnir grunnþættir"
+  ],
+  "Raw ingredients": [
+    "Surowe składniki",
+    "Hráefni"
+  ],
+  "None required.": [
+    "Nie są wymagane.",
+    "Engra þörf."
+  ],
+  "No ingredients required.": [
+    "Żadne składniki nie są wymagane.",
+    "Engra hráefna þörf."
+  ],
+  "Unit unspecified": [
+    "Niepodana jednostka",
+    "Eining ekki tilgreind"
+  ],
+  "Select days": [
+    "Wybierz dni",
+    "Veldu daga"
+  ],
+  "Entire week": [
+    "Cały tydzień",
+    "Öll vikan"
+  ],
+  "All meals": [
+    "Wszystkie posiłki",
+    "Allar máltíðir"
+  ],
+  "Print requirements": [
+    "Drukuj zapotrzebowanie",
+    "Prenta hráefnaþörf"
+  ],
+  "Requirements are unavailable until this is resolved.": [
+    "Zapotrzebowanie jest niedostępne do czasu rozwiązania problemu.",
+    "Ekki er hægt að reikna hráefnaþörf fyrr en þetta er leyst."
+  ],
+  "Production day": [
+    "Dzień produkcji",
+    "Framleiðsludagur"
+  ],
+  "Print production sheet": [
+    "Drukuj kartę produkcji",
+    "Prenta framleiðslublað"
+  ],
+  "Open recipe": [
+    "Otwórz przepis",
+    "Opna uppskrift"
+  ],
+  "Batch planning": [
+    "Planowanie partii",
+    "Skipulag lota"
+  ],
+  "Number of batches": [
+    "Liczba partii",
+    "Fjöldi lota"
+  ],
+  "Maximum batch size": [
+    "Maksymalna wielkość partii",
+    "Hámarksstærð lotu"
+  ],
+  "Batch value": [
+    "Wartość partii",
+    "Lotugildi"
+  ],
+  "Portions per batch": [
+    "Porcje na partię",
+    "Skammtar í lotu"
+  ],
+  "Open full recipe": [
+    "Otwórz pełny przepis",
+    "Opna alla uppskriftina"
+  ],
+  "Open one batch": [
+    "Otwórz jedną partię",
+    "Opna eina lotu"
+  ],
+  "No meals planned for this day.": [
+    "Brak zaplanowanych posiłków na ten dzień.",
+    "Engar máltíðir áætlaðar þennan dag."
+  ],
+  "Invalid batch size": [
+    "Nieprawidłowa wielkość partii",
+    "Ógild lotustærð"
+  ],
+  "Invalid batch count": [
+    "Nieprawidłowa liczba partii",
+    "Ógildur lotufjöldi"
+  ],
+  "Back to kitchen": [
+    "Wróć do kuchni",
+    "Til baka í eldhús"
+  ],
+  "Production requirement": [
+    "Wymagana produkcja",
+    "Framleiðsluþörf"
+  ],
+  "Scale": [
+    "Skala",
+    "Margföldun"
+  ],
+  "Daily production sheet": [
+    "Dzienna karta produkcji",
+    "Daglegt framleiðslublað"
+  ],
+  "Ingredient requirements could not be calculated. Check recipe settings.": [
+    "Nie udało się obliczyć zapotrzebowania. Sprawdź ustawienia przepisów.",
+    "Ekki tókst að reikna hráefnaþörf. Athugaðu stillingar uppskrifta."
+  ],
+  "Weekly menu": [
+    "Jadłospis tygodniowy",
+    "Vikumatseðill"
+  ],
+  "Use Print to print or save as PDF.": [
+    "Wybierz Drukuj, aby wydrukować lub zapisać jako PDF.",
+    "Veldu Prenta til að prenta eða vista sem PDF."
+  ],
+  "Print": [
+    "Drukuj",
+    "Prenta"
+  ],
+  "Declared allergens": [
+    "Zadeklarowane alergeny",
+    "Skráðir ofnæmisvakar"
+  ],
+  "None declared": [
+    "Nie zadeklarowano żadnych",
+    "Engir skráðir"
+  ],
+  "Declarations incomplete": [
+    "Deklaracje niekompletne",
+    "Skráningu ólokið"
+  ],
+  "Allergen declarations unavailable": [
+    "Deklaracje alergenów niedostępne",
+    "Skráðir ofnæmisvakar ekki tiltækir"
+  ],
+  "Ingredient allergen declarations": [
+    "Deklaracje alergenów składników",
+    "Skráning ofnæmisvaka hráefna"
+  ],
+  "Review each ingredient. An unchecked review remains undeclared.": [
+    "Sprawdź każdy składnik. Brak zaznaczenia sprawdzenia oznacza brak deklaracji.",
+    "Farðu yfir hvert hráefni. Ómerkt yfirferð telst óskráð."
+  ],
+  "Declaration reviewed": [
+    "Deklaracja sprawdzona",
+    "Skráning yfirfarin"
+  ],
+  "Recipe adjustments": [
+    "Korekty przepisu",
+    "Leiðréttingar uppskriftar"
+  ],
+  "Manual adjustments apply after ingredient and foundation declarations.": [
+    "Ręczne korekty stosuje się po deklaracjach składników i półproduktów.",
+    "Handvirkar leiðréttingar gilda eftir skráningu hráefna og grunnuppskrifta."
+  ],
+  "Add declared allergens": [
+    "Dodaj zadeklarowane alergeny",
+    "Bæta við skráðum ofnæmisvökum"
+  ],
+  "Exclude declared allergens": [
+    "Wyklucz zadeklarowane alergeny",
+    "Undanskilja skráða ofnæmisvaka"
+  ],
+  "Cereals containing gluten": [
+    "Zboża zawierające gluten",
+    "Korn sem inniheldur glúten"
+  ],
+  "Crustaceans": [
+    "Skorupiaki",
+    "Krabbadýr"
+  ],
+  "Eggs": [
+    "Jaja",
+    "Egg"
+  ],
+  "Fish": [
+    "Ryby",
+    "Fiskur"
+  ],
+  "Peanuts": [
+    "Orzeszki ziemne",
+    "Jarðhnetur"
+  ],
+  "Soybeans": [
+    "Soja",
+    "Sojabaunir"
+  ],
+  "Milk": [
+    "Mleko",
+    "Mjólk"
+  ],
+  "Nuts": [
+    "Orzechy",
+    "Hnetur"
+  ],
+  "Celery": [
+    "Seler",
+    "Sellerí"
+  ],
+  "Mustard": [
+    "Gorczyca",
+    "Sinnep"
+  ],
+  "Sesame": [
+    "Sezam",
+    "Sesam"
+  ],
+  "Sulphur dioxide / sulphites": [
+    "Dwutlenek siarki / siarczyny",
+    "Brennisteinsdíoxíð / súlfít"
+  ],
+  "Lupin": [
+    "Łubin",
+    "Lúpína"
+  ],
+  "Molluscs": [
+    "Mięczaki",
+    "Lindýr"
+  ],
+  "Invalid quantity": [
+    "Nieprawidłowa ilość",
+    "Ógilt magn"
+  ],
+  "Invalid quantity range": [
+    "Nieprawidłowy zakres ilości",
+    "Ógilt magnbil"
+  ],
+  "Invalid foundation measure": [
+    "Nieprawidłowa miara półproduktu",
+    "Ógild mæling grunnuppskriftar"
+  ],
+  "Missing foundation yield": [
+    "Brak wydajności półproduktu",
+    "Magn grunnuppskriftar vantar"
+  ],
+  "Incompatible foundation units": [
+    "Niezgodne jednostki półproduktu",
+    "Ósamrýmanlegar einingar grunnuppskriftar"
+  ],
+  "Circular recipe family": [
+    "Cykliczne zależności przepisów",
+    "Hringvísun milli uppskrifta"
+  ],
+  "Duplicate foundation": [
+    "Powtórzony półprodukt",
+    "Endurtekin grunnuppskrift"
+  ]
+};
+Object.assign(canteenMessages, {
+  "Portions to prepare": [
+    "Porcje do przygotowania",
+    "Skammtar til undirbúnings"
+  ],
+  "Course": [
+    "Rodzaj dania",
+    "Réttaflokkur"
+  ],
+  "Courses": [
+    "Rodzaje dań",
+    "Réttaflokkar"
+  ],
+  "Ingredients needed": [
+    "Potrzebne składniki",
+    "Hráefnaþörf"
+  ],
+  "Bases to prepare": [
+    "Bazy do przygotowania",
+    "Grunnar til undirbúnings"
+  ],
+  "Day": [
+    "Dzień",
+    "Dagur"
+  ],
+  "Version": [
+    "Wersja",
+    "Útfærsla"
+  ],
+  "Allergens": [
+    "Alergeny",
+    "Ofnæmisvakar"
+  ],
+  "Allergen information incomplete": [
+    "Informacje o alergenach są niekompletne",
+    "Upplýsingar um ofnæmisvaka eru ófullnægjandi"
+  ],
+  "None identified": [
+    "Nie stwierdzono",
+    "Engir fundust"
+  ],
+  "Not checked": [
+    "Nie sprawdzono",
+    "Ekki yfirfarið"
+  ],
+  "Split into batches": [
+    "Podziel na partie",
+    "Skipta í lotur"
+  ],
+  "Split by": [
+    "Sposób podziału",
+    "Skipting"
+  ],
+  "Maximum portions per batch": [
+    "Maksymalna liczba porcji na partię",
+    "Hámarksfjöldi skammta í lotu"
+  ],
+  "Print ingredients": [
+    "Drukuj składniki",
+    "Prenta hráefni"
+  ],
+  "Copy ingredients": [
+    "Kopiuj składniki",
+    "Afrita hráefni"
+  ],
+  "Print kitchen sheet": [
+    "Drukuj plan dla kuchni",
+    "Prenta eldhúsblað"
+  ],
+  "Kitchen sheet": [
+    "Plan dla kuchni",
+    "Eldhúsblað"
+  ],
+  "Add course": [
+    "Dodaj rodzaj dania",
+    "Bæta við réttaflokki"
+  ],
+  "Recipe portions": [
+    "Liczba porcji w przepisie",
+    "Skammtar í uppskrift"
+  ],
+  "e.g. Vegetarian": [
+    "np. wegetariańska",
+    "t.d. grænmetisréttur"
+  ],
+  "Kitchen note": [
+    "Notatka dla kuchni",
+    "Athugasemd fyrir eldhús"
+  ],
+  "Note for this day": [
+    "Notatka na ten dzień",
+    "Athugasemd fyrir þennan dag"
+  ],
+  "e.g. Serve lunch at 12:30": [
+    "np. Podaj obiad o 12:30",
+    "t.d. Hádegismatur kl. 12:30"
+  ]
+});
+Object.assign(canteenMessages, {
+  "Ingredient allergens": [
+    "Alergeny składników",
+    "Ofnæmisvakar í hráefnum"
+  ],
+  "Check each ingredient and mark it as checked, even if no allergens are identified.": [
+    "Sprawdź każdy składnik i oznacz go jako sprawdzony, nawet jeśli nie stwierdzono alergenów.",
+    "Farðu yfir hvert hráefni og merktu það sem yfirfarið, jafnvel þótt engir ofnæmisvakar finnist."
+  ],
+  "Checked": [
+    "Sprawdzono",
+    "Yfirfarið"
+  ],
+  "How many portions does this recipe make?": [
+    "Ile porcji powstaje z tego przepisu?",
+    "Hversu marga skammta gefur uppskriftin?"
+  ],
+  "Add allergens": [
+    "Dodaj alergeny",
+    "Bæta við ofnæmisvökum"
+  ],
+  "Remove allergens": [
+    "Usuń alergeny",
+    "Fjarlægja ofnæmisvaka"
+  ],
+  "These changes override the allergens from ingredients and base recipes.": [
+    "Te zmiany zastępują informacje o alergenach ze składników i przepisów bazowych.",
+    "Þessar breytingar ganga framar upplýsingum um ofnæmisvaka úr hráefnum og grunnuppskriftum."
+  ],
+  "Save and check base recipe": [
+    "Zapisz i sprawdź przepis bazowy",
+    "Vista og yfirfara grunnuppskrift"
+  ]
+});
+Object.assign(canteenMessages, {
+  "Select the allergens in each ingredient, or choose No allergens identified. Green means checked.": [
+    "Wybierz alergeny dla każdego składnika lub opcję Nie stwierdzono alergenów. Zielony kolor oznacza, że składnik został sprawdzony.",
+    "Veldu ofnæmisvaka í hverju hráefni eða Engir ofnæmisvakar fundust. Grænt merkir yfirfarið."
+  ],
+  "Ingredient checked": [
+    "Składnik sprawdzony",
+    "Hráefni yfirfarið"
+  ],
+  "No allergens identified": [
+    "Nie stwierdzono alergenów",
+    "Engir ofnæmisvakar fundust"
+  ],
+  "Choose allergens or confirm none.": [
+    "Wybierz alergeny lub potwierdź ich brak.",
+    "Veldu ofnæmisvaka eða staðfestu að engir fundust."
+  ],
+  "ingredients checked": [
+    "składników sprawdzonych",
+    "hráefni yfirfarin"
+  ],
+  "Save to keep your changes.": [
+    "Zapisz, aby zachować zmiany.",
+    "Vistaðu til að halda breytingunum."
+  ]
+});
+for (const [key, values] of Object.entries(canteenMessages)) {
+  UI_MESSAGES.pl[key] = values[0]; UI_MESSAGES.is[key] = values[1];
+}
+
 const LANGUAGE_KEY = 'quickrecipe.language';
 let language = 'en';
 try { const saved = localStorage.getItem(LANGUAGE_KEY); if (['en', 'pl', 'is'].includes(saved)) language = saved; } catch {}

@@ -2,7 +2,7 @@
 let recipes = [];
 let seedRecipes = [];
 let recipeCatalogChanges = { retiredIds: [], renamedIds: {} };
-const RECIPE_VERSION = '55';
+const RECIPE_VERSION = '68';
 const LS = {
   recipes:   'quickrecipe.recipes.v1',
   favs:      'quickrecipe.favs.v1',
@@ -139,7 +139,14 @@ function mergeSeedRecipes(existing) {
         renamed.set(r.id, seed.id);
       }
     }
-    return seed ? cloneValue(seed) : r;
+    if (!seed) return r;
+    const mergedRecipe = cloneValue(seed);
+    if (Number.isFinite(r.servings) && r.servings > 0) mergedRecipe.servings = r.servings;
+    if (r.ingredientAllergens && typeof r.ingredientAllergens === 'object') {
+      mergedRecipe.ingredientAllergens = Object.fromEntries(seed.ingredients.filter(i => Array.isArray(r.ingredientAllergens[i[0]])).map(i => [i[0], cloneValue(r.ingredientAllergens[i[0]])]));
+    }
+    if (r.allergenAdjustments && JSON.stringify([r.ingredients, r.foundations || []]) === JSON.stringify([seed.ingredients, seed.foundations || []])) mergedRecipe.allergenAdjustments = cloneValue(r.allergenAdjustments);
+    return mergedRecipe;
   });
   for (const [oldId, newId] of Object.entries(recipeCatalogChanges.renamedIds)) renamed.set(oldId, newId);
   favs = new Set([...favs].filter(id => !retired.has(id)).map(id => renamed.get(id) || id));
@@ -157,6 +164,7 @@ function mergeSeedRecipes(existing) {
       localStorage.setItem(LS.ui, JSON.stringify(saved));
     }
     shopping.migrateRecipeIds(renamed, seedRecipes);
+    if (typeof canteen !== 'undefined') canteen.migrateRecipeIds(renamed);
   }
   const ids = new Set(merged.map(r => r.id));
   seedRecipes.forEach(r => { if (!ids.has(r.id)) merged.push(cloneValue(r)); });
@@ -177,7 +185,7 @@ function restoreUiState() {
 /* ─── Unit conversion ─── */
 const fmt = n => {
   const r = Math.round(n * 100) / 100;
-  return Number.isInteger(r) ? String(r) : r.toFixed(r < 10 ? 2 : 1).replace(/0+$/, '').replace(/\.$/, '');
+  return Number.isInteger(r) ? String(r) : r.toFixed(2).replace(/0+$/, '').replace(/\.$/, '');
 };
 const cToF     = c  => Math.round(c * 9 / 5 + 32);
 const gToOz    = g  => g * 0.0352739619;
@@ -197,8 +205,8 @@ function amountText(v, u, compactMetricUnits = false) {
 function ingredientAmountText(r, ing) {
   if (ing[1] === null) return view === 'bakers' ? '—' : t('As needed');
   if (view === 'bakers') return bakers(r, ing);
-  const amount = amountText(adjustedIngredientValue(r, ing), ing[2], r.compactMetricUnits);
-  return Number.isFinite(ing[4]) ? `${amount} – ${amountText(ing[4], ing[2], r.compactMetricUnits)}` : amount;
+  const amount = amountText(adjustedIngredientValue(r, ing), ing[2], r.compactMetricUnits || (typeof canteen !== 'undefined' && canteen.productionRecipe));
+  return Number.isFinite(ing[4]) ? `${amount} – ${amountText(ing[4], ing[2], r.compactMetricUnits || (typeof canteen !== 'undefined' && canteen.productionRecipe))}` : amount;
 }
 
 function yieldText(value, multiplier = scale) {
@@ -410,19 +418,8 @@ function recipeMemberships(r) {
   return [...new Map([primary, ...(r.categoryMemberships || [])].map(m => [`${m.section}:${m.category}`, m])).values()];
 }
 function recipeInSection(r, section) { return recipeMemberships(r).some(m => m.section === section); }
-function familyMeasure(amount, unitName) {
-  const units = { g: ['mass', 1, 'g'], kg: ['mass', 1000, 'g'], ml: ['volume', 1, 'ml'], L: ['volume', 1000, 'ml'], pc: ['count', 1, 'pc'] };
-  const spec = units[unitName];
-  if (!spec || !Number.isFinite(amount) || amount <= 0) throw new Error('Invalid foundation measure');
-  return { dimension: spec[0], amount: amount * spec[1], unit: spec[2] };
-}
-function foundationMultiplier(f, collection = recipes) {
-  const parent = collection.find(r => r.id === f.recipeId);
-  if (!parent?.batchYield) throw new Error('Missing foundation yield');
-  const required = familyMeasure(f.amount, f.unit), output = familyMeasure(parent.batchYield.amount, parent.batchYield.unit);
-  if (required.dimension !== output.dimension) throw new Error('Incompatible foundation units');
-  return required.amount / output.amount;
-}
+function familyMeasure(amount, unitName) { return RecipeMath.measure(amount, unitName); }
+function foundationMultiplier(f, collection = recipes) { return RecipeMath.foundationMultiplier(f, collection); }
 function validateRecipeFamilies(collection) {
   const byId = new Map(collection.map(r => [r.id, r]));
   const visited = new Set(), visiting = new Set();
@@ -499,31 +496,7 @@ function bindFamilyNavigation() {
 function familyShoppingPlan(r, multiplier, prepared = {}, collection = recipes) {
   validateRecipeFamilies(collection);
   if (!Number.isFinite(multiplier) || multiplier <= 0) throw new Error('Invalid recipe scale');
-  const ingredients = new Map(), bases = new Map();
-  function expand(recipe, factor) {
-    for (const f of recipe.foundations || []) {
-      const parent = collection.find(p => p.id === f.recipeId);
-      const measured = familyMeasure(f.amount * factor, f.unit);
-      const entry = bases.get(parent.id) || { id: parent.id, title: parent.title, amount: 0, unit: measured.unit };
-      entry.amount += measured.amount; bases.set(parent.id, entry);
-      if (!prepared[parent.id]) expand(parent, factor * foundationMultiplier(f, collection));
-    }
-    for (const ing of recipe.ingredients) {
-      const name = cleanIngredientName(ing[0]);
-      const conversion = { kg: [1000, 'g'], L: [1000, 'ml'] }[ing[2]] || [1, ing[2]];
-      const key = JSON.stringify([name.toLocaleLowerCase('en').trim(), conversion[1]]);
-      const item = ingredients.get(key) || { key, name, amount: 0, maximum: 0, asNeeded: false, unit: conversion[1] };
-      if (ing[1] === null) item.asNeeded = true;
-      else {
-        const amount = adjustedIngredientValue(recipe, ing) * factor * conversion[0];
-        item.amount += amount;
-        item.maximum += Number.isFinite(ing[4]) ? ing[4] * factor * conversion[0] : amount;
-      }
-      ingredients.set(key, item);
-    }
-  }
-  expand(r, multiplier);
-  return { bases: [...bases.values()], ingredients: [...ingredients.values()] };
+  return RecipeMath.expandFoundationRequirements(r, multiplier, collection, { prepared, ingredientValue: adjustedIngredientValue });
 }
 function familyShoppingAmount(item) {
   const measured = familyAmount(item.amount, item.unit);
@@ -627,6 +600,7 @@ function renderList() {
         <span class="heart ${favs.has(r.id) ? 'on' : ''}" data-fav="${r.id}">${favs.has(r.id) ? '♥' : '♡'}</span>
       </div>
       <div class="desc">${esc(recipeText(r.desc || ''))}</div>
+          ${r.ingredientAllergens || r.allergenAdjustments ? declaredAllergensHtml(r) : ''}
       <div class="stats">
         ${r.hydration ? `<span class="stat">${fmt(r.hydration)}% hydration</span>` : ''}
         ${recipeTimingHtml(r)}
@@ -781,6 +755,14 @@ function renderIngredients(r) {
 }
 
 /* ─── Detail panel ─── */
+function declaredAllergensHtml(r) {
+  try {
+    const declaration = RecipeMath.deriveRecipeAllergens(r, recipes);
+    const names = declaration.allergens.map(id => t(RecipeMath.allergens[id])).join(' · ');
+    return `<p class="declared-allergens"><strong>${esc(t('Allergens'))}:</strong> ${esc(names || t(declaration.complete ? 'None identified' : 'Not checked'))}${!declaration.complete ? `<br><span class="canteen-warning">${esc(t('Allergen information incomplete'))}</span>` : ''}</p>`;
+  } catch { return `<p class="canteen-warning">${esc(t('Allergen declarations unavailable'))}</p>`; }
+}
+
 function renderDetail() {
   const r  = recipes.find(x => x.id === selectedId);
   const el = document.getElementById('detail');
@@ -828,6 +810,7 @@ function renderDetail() {
           <div class="tag">${esc(r.category || 'Recipe')}${r.hydration ? ` · ${fmt(hyd)}% hydration` : ''}</div>
           <h1>${esc(recipeText(r.title))}</h1>
           <div class="desc">${esc(recipeText(r.desc || ''))}</div>
+          ${r.ingredientAllergens || r.allergenAdjustments ? declaredAllergensHtml(r) : ''}
         </div>
         <div style="display:flex;gap:7px;flex-shrink:0;flex-wrap:wrap;justify-content:flex-end">
           <button class="btn" id="detailFav">${favs.has(r.id) ? '♥ Saved' : '♡ Save'}</button>
@@ -874,6 +857,7 @@ function renderDetail() {
   bindFoldTimers();
   bindFamilyNavigation();
   shopping.decorate(r);
+  if (typeof canteen !== 'undefined') canteen.decorateRecipe();
   document.getElementById('ingredientOrderBtn').onclick = () => {
     quantitiesFirst = !quantitiesFirst;
     localStorage.setItem(LS.ingredientOrder, quantitiesFirst ? 'quantity' : 'ingredient');
@@ -967,6 +951,7 @@ function render() {
   renderDetail();
   syncNavigation();
   saveAll();
+  if (typeof canteen !== 'undefined') canteen.render();
 }
 
 /* ─── Modal ─── */
@@ -1078,6 +1063,9 @@ function saveRecipe() {
     steps,
   };
   Object.assign(data, readRecipeOrganization());
+  const previousRecipe = recipes.find(r => r.id === editingId);
+  if (data.ingredientAllergens) data.ingredientAllergens = Object.fromEntries(ingredients.filter(i => Array.isArray(data.ingredientAllergens[i[0]])).map(i => [i[0], data.ingredientAllergens[i[0]]]));
+  if (previousRecipe && JSON.stringify([previousRecipe.ingredients, previousRecipe.foundations]) !== JSON.stringify([data.ingredients, data.foundations])) delete data.allergenAdjustments;
   try { validateRecipeFamilies([...recipes.filter(r => r.id !== data.id), data]); }
   catch { toast(t('Check foundation quantities, yields and links. A recipe cannot depend on itself.')); return; }
   if (editingId) { recipes = recipes.map(r => r.id === editingId ? data : r); }
@@ -1333,6 +1321,7 @@ async function init() {
 
   initFoldTimer();
   render();
+  if (typeof canteen !== 'undefined') canteen.restoreSession();
   if (seedLoadFailed) {
     if (recipes.length) toast('Could not refresh recipes. Showing your saved collection.');
     else document.getElementById('list').innerHTML = '<div class="empty">Recipes could not be loaded. Check your connection and reload.</div>';
