@@ -60,7 +60,7 @@ There is no automatic task generation from ingredient names. Current method sect
 
 ## Validation
 
-Run `npm test`. This includes ingredient-database coverage, planning-model, shared-calculation and Canteen UI suites alongside the existing recipe suites. Coverage includes zero overrides, decimal scales, nested foundations/cycles, compatible/incompatible units, ranges, unknown yields, allergens, batches, copying, reloads, translations, print structure and restoring recipe selection. Version 72 aligns app, HTML assets and offline caching, including all new modules.
+Run `npm test`. This includes ingredient-database coverage, planning-model, shared-calculation and Canteen UI suites alongside the existing recipe suites. Coverage includes zero overrides, decimal scales, nested foundations/cycles, compatible/incompatible units, ranges, unknown yields, allergens, batches, copying, reloads, translations, print structure and restoring recipe selection. Version 73 aligns app, HTML assets and offline caching, including all new modules.
 
 All planning and progress is local to this browser. V1 has no inventory, ordering, suppliers, costing, accounts or server synchronization.
 

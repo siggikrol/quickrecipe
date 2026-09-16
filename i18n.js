@@ -1,6 +1,12 @@
 /* Interface translations; English keys are the fallback. Recipe data stays language-neutral. */
 const UI_MESSAGES = {
   "pl": {
+    "Contains allergens": "Zawiera alergeny",
+    "Contains": "Zawiera",
+    "None listed": "Nie wymieniono",
+    "Ingredient details": "Szczegóły składników",
+    "Check product labels for differences and traces.": "Sprawdź etykiety: skład i śladowe ilości mogą się różnić.",
+
     "Save portions": "Zapisz porcje",
     "Save changes to the portion count.": "Zapisz zmiany liczby porcji.",
     "Automatic allergens": "Automatyczne alergeny",
@@ -137,6 +143,12 @@ const UI_MESSAGES = {
     "Mix ingredients.\nBulk ferment 2 hours.\nShape and proof.\nBake.": "Wymieszaj składniki.\nOdstaw do wyrośnięcia na 2 godziny.\nUformuj i pozostaw do wyrośnięcia.\nUpiecz."
   },
   "is": {
+    "Contains allergens": "Inniheldur ofnæmisvaka",
+    "Contains": "Inniheldur",
+    "None listed": "Engir tilgreindir",
+    "Ingredient details": "Nánar um hráefni",
+    "Check product labels for differences and traces.": "Athugaðu umbúðir vegna mismunandi innihalds og snefilmagns.",
+
     "Save portions": "Vista skammtafjölda",
     "Save changes to the portion count.": "Vista breytingar á skammtafjölda.",
     "Automatic allergens": "Sjálfvirkar ofnæmisvakaupplýsingar",

@@ -1066,3 +1066,21 @@ body.canteen-loading #canteenArea { display: block !important; }
 .ingredient-allergen-list li { display: grid; gap: 5px; padding: 12px 0; border-top: 1px solid var(--line); overflow-wrap: anywhere; }
 .ingredient-allergen-list small, .allergen-product-note { color: var(--muted); font-size: 12px; }
 .print-document .allergen-product-note { color: #454545; font-size: 9pt; }
+
+.recipe-settings-summary h3 { margin: 0 0 6px; }
+.recipe-settings-summary p { margin: 0; color: var(--muted); font-size: 13px; }
+.automatic-allergens .declared-allergens { margin: 8px 0; }
+.automatic-allergens .declared-allergens p { margin: 5px 0; }
+.allergen-badge { display: flex; align-items: center; gap: 7px; max-width: 100%; margin: 10px 0; padding: 8px 10px; border: 1px solid; border-radius: 8px; font-size: 12px; line-height: 1.4; font-weight: 700; text-align: left; }
+.allergen-badge > span:first-child { display: inline-flex; align-items: center; justify-content: center; flex: 0 0 17px; height: 17px; border: 1px solid currentColor; border-radius: 50%; }
+.allergen-badge > span:last-child { margin-left: auto; font-size: 18px; }
+.allergen-identified { color: #991b1b; border-color: #d97777; background: #fff0f0; }
+.allergen-possible { color: #854d0e; border-color: #cb9d3e; background: #fff7db; }
+.allergen-badge:hover { filter: brightness(.96); }
+.allergen-badge:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+:root[data-theme="dark"] .allergen-identified { color: #ffb4b4; border-color: #a94b4b; background: #4a242a; }
+:root[data-theme="dark"] .allergen-possible { color: #ffda8a; border-color: #a27a35; background: #40331e; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .allergen-identified { color: #ffb4b4; border-color: #a94b4b; background: #4a242a; }
+  :root:not([data-theme="light"]) .allergen-possible { color: #ffda8a; border-color: #a27a35; background: #40331e; }
+}

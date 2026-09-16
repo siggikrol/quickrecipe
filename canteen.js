@@ -102,12 +102,22 @@ const canteen = (() => {
     root.querySelectorAll('[data-tab]').forEach(b => b.onclick = () => { if (recipeContext) returnToKitchen(); tab = b.dataset.tab; render(); window.scrollTo(0, 0); root.querySelector(`[data-tab="${tab}"]`).focus({ preventScroll: true }); });
     if (tab === 'week') { renderWeek(plan); root.querySelector('.canteen-days').scrollLeft = weekScroll; } else if (tab === 'requirements') renderRequirements(); else renderKitchen();
   }
+  function allergenBadge(r) {
+    let identified = false;
+    try {
+      const result = RecipeMath.deriveRecipeAllergens(r, recipes);
+      identified = result.allergens.length > 0;
+      if (!identified && !result.possible.length && result.complete) return '';
+    } catch {}
+    const message = identified ? 'Contains allergens' : 'Possible allergens';
+    return `<button type="button" class="allergen-badge ${identified ? 'allergen-identified' : 'allergen-possible'}" data-allergen-details aria-haspopup="dialog"><span aria-hidden="true">${identified ? '!' : '?'}</span>${label(message)}<span aria-hidden="true">›</span></button>`;
+  }
   function itemHtml(item, day) {
     const r = recipe(item.recipeId);
     return `<div class="canteen-menu-item" data-item="${esc(item.id)}"><strong>${esc(r ? recipeText(r.title) : t('Recipe unavailable'))}</strong>
       <div class="canteen-item-fields"><label>${label('Portions')}${number(item.portions, `data-portions placeholder="${day.defaultPortions}" aria-label="${label('Portions')} — ${esc(r ? recipeText(r.title) : item.recipeId)}"`)}</label>
       <label>${label('Version')}<input data-variant value="${esc(item.variant)}" placeholder="${label('e.g. Vegetarian')}"></label></div>
-      <small>${label('Blank portions inherit the day total.')}</small>${r ? allergensHtml(r) : ''}
+      <small>${label('Blank portions inherit the day total.')}</small>${r ? allergenBadge(r) : ''}
       <div class="canteen-item-actions">${r ? button('Recipe settings', 'data-settings') : ''}${button('Remove', 'data-remove')}</div></div>`;
   }
   function renderWeek(plan) {
@@ -133,6 +143,10 @@ const canteen = (() => {
         row.querySelector('[data-variant]').onchange = e => { item.variant = e.target.value.trim(); commit(); };
         row.querySelector('[data-remove]').onclick = () => { day.items = day.items.filter(i => i !== item); delete week().production[item.id]; clearProgress(day); commit(); };
         row.querySelector('[data-settings]')?.addEventListener('click', () => recipeSettings(recipe(item.recipeId)));
+        row.querySelector('[data-allergen-details]')?.addEventListener('click', () => {
+          const r = recipe(item.recipeId);
+          modal('Allergens', `<h3>${esc(recipeText(r.title))}</h3>${allergenDetailsHtml(r, false)}`);
+        });
       });
     });
   }
@@ -351,18 +365,24 @@ const canteen = (() => {
       }).join('')}</ul>`; }).join('')}${!result ? `<p>${label('Ingredient requirements could not be calculated. Check recipe settings.')}</p>` : ''}`;
   }
 
-  function recipeSettings(r) {
+  function allergenDetailsHtml(r, heading = true) {
     const names = ids => ids.map(id => label(RecipeMath.allergens[id])).join(' · ');
-    modal('Recipe settings', `<h3>${esc(recipeText(r.title))}</h3><p>${label('Original yield')}: ${esc(r.yield ? recipeText(r.yield) : t('Not declared'))}${r.batchYield ? ` · ${esc(familyAmount(r.batchYield.amount, r.batchYield.unit))}` : ''}</p>
-      <label>${label('Recipe portions')}${number(RecipeMath.servingYield(r), 'data-servings')}</label><p>${label('How many portions does this recipe make?')}</p>
-      <section class="automatic-allergens"><h3>${label('Automatic allergens')}</h3><p>${label('Allergens are filled in from the ingredient database. No ticking or saving is needed.')}</p>${allergensHtml(r)}
-      <p class="allergen-product-note">${label('Product formulations and cross-contact can vary. Product labels take precedence over automatic estimates.')}</p>
-      <details><summary>${label('Ingredient allergens')}</summary><ul class="ingredient-allergen-list">
+    let result;
+    try { result = RecipeMath.deriveRecipeAllergens(r, recipes); }
+    catch { return `<p class="canteen-warning">${label('Allergen declarations unavailable')}</p>`; }
+    return `<section class="automatic-allergens">${heading ? `<h3>${label('Allergens')}</h3>` : ''}
+      <div class="declared-allergens">${result.allergens.length ? `<p><strong>${label('Contains')}:</strong> ${names(result.allergens)}</p>` : ''}${result.possible.length ? `<p><strong>${label('Possible allergens')}:</strong> ${names(result.possible)}</p>` : ''}${!result.allergens.length && !result.possible.length ? `<p>${label(result.complete ? 'None listed' : 'Allergen information incomplete')}</p>` : ''}${result.unknown.length ? `<p class="canteen-warning">${label('Ingredient not in database')}: ${result.unknown.map(name => esc(recipeText(name))).join(' · ')}</p>` : ''}</div>
+      <details><summary>${label('Ingredient details')}</summary><p class="allergen-product-note">${label('Check product labels for differences and traces.')}</p><ul class="ingredient-allergen-list">
       ${r.ingredients.map((ingredient, index) => {
         const profile = RecipeMath.ingredientProfile(r, ingredient[0]);
-        return `<li data-ingredient="${index}"><strong>${esc(recipeText(cleanIngredientName(ingredient[0])))}</strong><span>${names(profile.allergens) || label(profile.known ? 'None identified in the ingredient database' : 'Ingredient not in database')}</span>${profile.possible.length ? `<span><strong>${label('Possible allergens')}:</strong> ${names(profile.possible)}</span>` : ''}${profile.productDependent ? `<small>${label('Varies by product')}</small>` : ''}${profile.saved ? `<small>${label('Saved declaration')}</small>` : ''}</li>`;
-      }).join('')}</ul></details></section>
-      <div class="canteen-settings-save"><small>${label('Save changes to the portion count.')}</small>${button('Save portions', 'data-save-settings')}</div>${(r.foundations || []).map(f => `<button class="btn" data-review-foundation="${esc(f.recipeId)}">${label('Base recipe')}: ${esc(recipeText(recipe(f.recipeId)?.title || f.recipeId))}</button>`).join('')}`, d => {
+        return `<li data-ingredient="${index}"><strong>${esc(recipeText(cleanIngredientName(ingredient[0])))}</strong><span>${names(profile.allergens) || label(profile.known ? 'None listed' : 'Ingredient not in database')}</span>${profile.possible.length ? `<span><strong>${label('Possible allergens')}:</strong> ${names(profile.possible)}</span>` : ''}${profile.productDependent ? `<small>${label('Varies by product')}</small>` : ''}${profile.saved ? `<small>${label('Saved declaration')}</small>` : ''}</li>`;
+      }).join('')}</ul>${result.labelDependent.length ? `<p class="allergen-product-note">${label('Varies by product')}: ${result.labelDependent.map(name => esc(recipeText(name))).join(' · ')}</p>` : ''}</details></section>`;
+  }
+  function recipeSettings(r) {
+    modal('Recipe settings', `<div class="recipe-settings-summary"><h3>${esc(recipeText(r.title))}</h3><p>${label('Original yield')}: ${esc(r.yield ? recipeText(r.yield) : t('Not declared'))}${r.batchYield ? ` · ${esc(familyAmount(r.batchYield.amount, r.batchYield.unit))}` : ''}</p></div>
+      <label>${label('Recipe portions')}${number(RecipeMath.servingYield(r), 'data-servings')}</label>
+      ${allergenDetailsHtml(r)}
+      <div class="canteen-settings-save">${button('Save portions', 'data-save-settings')}</div>${(r.foundations || []).map(f => `<button class="btn" data-review-foundation="${esc(f.recipeId)}">${label('Base recipe')}: ${esc(recipeText(recipe(f.recipeId)?.title || f.recipeId))}</button>`).join('')}`, d => {
       const saveSettings = () => {
         const input = d.querySelector('[data-servings]');
         if (input.value && (!input.checkValidity() || Number(input.value) <= 0)) return toast(t('Declare the base serving count'));
