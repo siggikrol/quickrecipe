@@ -2,7 +2,7 @@ const fs = require('node:fs');
 const assert = require('node:assert/strict');
 const { JSDOM } = require('jsdom');
 const html = fs.readFileSync('index.html', 'utf8');
-const scripts = ['i18n.js', 'recipe-calculations.js', 'shopping.js', 'app.js'].map(file => fs.readFileSync(file, 'utf8')).join('\n');
+const scripts = ['i18n.js', 'ingredient-allergens.js', 'recipe-calculations.js', 'shopping.js', 'app.js'].map(file => fs.readFileSync(file, 'utf8')).join('\n');
 const timerKey = 'quickrecipe.foldTimer.v1';
 const wait = () => new Promise(resolve => setTimeout(resolve, 50));
 function open(saved) {

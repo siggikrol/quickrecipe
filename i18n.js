@@ -1,6 +1,19 @@
 /* Interface translations; English keys are the fallback. Recipe data stays language-neutral. */
 const UI_MESSAGES = {
   "pl": {
+    "Save portions": "Zapisz porcje",
+    "Save changes to the portion count.": "Zapisz zmiany liczby porcji.",
+    "Automatic allergens": "Automatyczne alergeny",
+    "Allergens are filled in from the ingredient database. No ticking or saving is needed.": "Alergeny są uzupełniane z bazy składników. Nie trzeba nic zaznaczać ani zapisywać.",
+    "Allergens from ingredients": "Alergeny wynikające ze składników",
+    "Possible allergens": "Możliwe alergeny",
+    "None identified in the ingredient database": "Nie wykryto w bazie składników",
+    "Varies by product": "Zależy od produktu",
+    "Ingredient not in database": "Składnika nie ma w bazie",
+    "Saved declaration": "Zapisana deklaracja",
+    "Product formulations and cross-contact can vary. Product labels take precedence over automatic estimates.": "Skład produktów i ryzyko kontaktu krzyżowego mogą się różnić. Informacje na etykietach mają pierwszeństwo przed automatycznymi szacunkami.",
+    "Base recipe": "Przepis bazowy",
+
     "Started": "Uruchomiono",
     "Start timer": "Włącz minutnik",
     "min": "min",
@@ -124,6 +137,19 @@ const UI_MESSAGES = {
     "Mix ingredients.\nBulk ferment 2 hours.\nShape and proof.\nBake.": "Wymieszaj składniki.\nOdstaw do wyrośnięcia na 2 godziny.\nUformuj i pozostaw do wyrośnięcia.\nUpiecz."
   },
   "is": {
+    "Save portions": "Vista skammtafjölda",
+    "Save changes to the portion count.": "Vista breytingar á skammtafjölda.",
+    "Automatic allergens": "Sjálfvirkar ofnæmisvakaupplýsingar",
+    "Allergens are filled in from the ingredient database. No ticking or saving is needed.": "Ofnæmisvakar eru sóttir í hráefnagagnagrunninn. Ekki þarf að haka við eða vista neitt.",
+    "Allergens from ingredients": "Ofnæmisvakar úr hráefnum",
+    "Possible allergens": "Mögulegir ofnæmisvakar",
+    "None identified in the ingredient database": "Engir tilgreindir í hráefnagagnagrunninum",
+    "Varies by product": "Fer eftir vörutegund",
+    "Ingredient not in database": "Hráefni vantar í gagnagrunninn",
+    "Saved declaration": "Vistaðar upplýsingar",
+    "Product formulations and cross-contact can vary. Product labels take precedence over automatic estimates.": "Samsetning vara og krossmengun geta verið mismunandi. Upplýsingar á umbúðum ganga framar sjálfvirku mati.",
+    "Base recipe": "Grunnuppskrift",
+
     "Started": "Ræst",
     "Start timer": "Ræsa tímamæli",
     "min": "mín",

@@ -2,7 +2,7 @@
 let recipes = [];
 let seedRecipes = [];
 let recipeCatalogChanges = { retiredIds: [], renamedIds: {} };
-const RECIPE_VERSION = '71';
+const RECIPE_VERSION = '72';
 const LS = {
   recipes:   'quickrecipe.recipes.v1',
   favs:      'quickrecipe.favs.v1',
@@ -758,8 +758,9 @@ function renderIngredients(r) {
 function declaredAllergensHtml(r) {
   try {
     const declaration = RecipeMath.deriveRecipeAllergens(r, recipes);
-    const names = declaration.allergens.map(id => t(RecipeMath.allergens[id])).join(' · ');
-    return `<p class="declared-allergens"><strong>${esc(t('Allergens'))}:</strong> ${esc(names || t(declaration.complete ? 'None identified' : 'Not checked'))}${!declaration.complete ? `<br><span class="canteen-warning">${esc(t('Allergen information incomplete'))}</span>` : ''}</p>`;
+    const names = ids => ids.map(id => t(RecipeMath.allergens[id])).join(' · ');
+    const confirmed = names(declaration.allergens);
+    return `<p class="declared-allergens"><strong>${esc(t('Allergens from ingredients'))}:</strong> ${esc(confirmed || t('None identified in the ingredient database'))}${declaration.possible.length ? `<br><strong>${esc(t('Possible allergens'))}:</strong> ${esc(names(declaration.possible))}` : ''}${declaration.labelDependent.length ? `<br><span class="allergen-product-note">${esc(t('Varies by product'))}: ${declaration.labelDependent.map(name => esc(recipeText(name))).join(' · ')}</span>` : ''}${declaration.unknown.length ? `<br><span class="canteen-warning">${esc(t('Ingredient not in database'))}: ${declaration.unknown.map(name => esc(recipeText(name))).join(' · ')}</span>` : ''}</p>`;
   } catch { return `<p class="canteen-warning">${esc(t('Allergen declarations unavailable'))}</p>`; }
 }
 
@@ -810,7 +811,7 @@ function renderDetail() {
           <div class="tag">${esc(r.category || 'Recipe')}${r.hydration ? ` · ${fmt(hyd)}% hydration` : ''}</div>
           <h1>${esc(recipeText(r.title))}</h1>
           <div class="desc">${esc(recipeText(r.desc || ''))}</div>
-          ${r.ingredientAllergens || r.allergenAdjustments ? declaredAllergensHtml(r) : ''}
+          ${declaredAllergensHtml(r)}
         </div>
         <div style="display:flex;gap:7px;flex-shrink:0;flex-wrap:wrap;justify-content:flex-end">
           <button class="btn" id="detailFav">${favs.has(r.id) ? '♥ Saved' : '♡ Save'}</button>

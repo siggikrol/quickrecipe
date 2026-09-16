@@ -352,51 +352,33 @@ const canteen = (() => {
   }
 
   function recipeSettings(r) {
-    const allergenFields = (values, attribute) => Object.entries(RecipeMath.allergens).map(([id, name]) => `<label><input type="checkbox" ${attribute}="${id}" ${values?.includes(id) ? 'checked' : ''}>${label(name)}</label>`).join('');
+    const names = ids => ids.map(id => label(RecipeMath.allergens[id])).join(' · ');
     modal('Recipe settings', `<h3>${esc(recipeText(r.title))}</h3><p>${label('Original yield')}: ${esc(r.yield ? recipeText(r.yield) : t('Not declared'))}${r.batchYield ? ` · ${esc(familyAmount(r.batchYield.amount, r.batchYield.unit))}` : ''}</p>
       <label>${label('Recipe portions')}${number(RecipeMath.servingYield(r), 'data-servings')}</label><p>${label('How many portions does this recipe make?')}</p>
-      <div><h3>${label('Ingredient allergens')}</h3><p>${label('Select the allergens in each ingredient, or choose No allergens identified. Green means checked.')}</p><p class="canteen-review-progress" data-review-progress role="status"></p></div>
-      ${r.ingredients.map((ingredient, index) => { const declared = RecipeMath.ingredientAllergens(r, ingredient[0]); return `<details class="canteen-allergen-editor" data-ingredient="${index}"><summary><span class="canteen-ingredient-name">${esc(recipeText(cleanIngredientName(ingredient[0])))}</span><span class="canteen-review-status" data-review-status></span><span class="canteen-review-allergens" data-review-allergens></span></summary><fieldset ${RecipeMath.isPlainWater(ingredient[0]) ? 'disabled' : ''}><legend>${label('Allergens')}</legend>
-        <label><input type="checkbox" data-reviewed ${Array.isArray(declared) ? 'checked' : ''}>${label('Ingredient checked')}</label><div class="canteen-allergen-options">${allergenFields(declared, 'data-allergen')}</div>${button('No allergens identified', 'data-no-allergens')}</fieldset></details>`; }).join('')}
-      <details><summary>${label('Recipe adjustments')}</summary><p>${label('These changes override the allergens from ingredients and base recipes.')}</p><fieldset><legend>${label('Add allergens')}</legend>${allergenFields(r.allergenAdjustments?.add, 'data-allergen-add')}</fieldset><fieldset><legend>${label('Remove allergens')}</legend>${allergenFields(r.allergenAdjustments?.remove, 'data-allergen-remove')}</fieldset></details>
-      <div class="canteen-settings-save"><small>${label('Save to keep your changes.')}</small>${button('Save', 'data-save-settings')}</div>${(r.foundations || []).map(f => `<button class="btn" data-review-foundation="${esc(f.recipeId)}">${label('Save and check base recipe')}: ${esc(recipeText(recipe(f.recipeId)?.title || f.recipeId))}</button>`).join('')}`, d => {
-      const updateReview = () => {
-        const rows = [...d.querySelectorAll('[data-ingredient]')];
-        let checkedCount = 0;
-        rows.forEach(row => {
-          const checked = row.querySelector('[data-reviewed]').checked;
-          if (checked) checkedCount++;
-          row.classList.toggle('is-reviewed', checked);
-          row.querySelector('[data-review-status]').textContent = `${checked ? '✓' : '○'} ${t(checked ? 'Checked' : 'Not checked')}`;
-          const names = [...row.querySelectorAll('[data-allergen]:checked')].map(input => t(RecipeMath.allergens[input.dataset.allergen]));
-          row.querySelector('[data-review-allergens]').textContent = checked ? (names.join(' · ') || t('No allergens identified')) : t('Choose allergens or confirm none.');
-        });
-        d.querySelector('[data-review-progress]').textContent = `${checkedCount} / ${rows.length} ${t('ingredients checked')}`;
-      };
-      d.querySelectorAll('[data-ingredient]').forEach(row => {
-        row.querySelector('[data-reviewed]').onchange = updateReview;
-        row.querySelectorAll('[data-allergen]').forEach(check => check.onchange = () => {
-          row.querySelector('[data-reviewed]').checked = true; updateReview();
-        });
-        row.querySelector('[data-no-allergens]').onclick = () => {
-          row.querySelectorAll('[data-allergen]').forEach(check => { check.checked = false; });
-          row.querySelector('[data-reviewed]').checked = true; updateReview(); row.open = false;
-        };
-      });
-      updateReview();
+      <section class="automatic-allergens"><h3>${label('Automatic allergens')}</h3><p>${label('Allergens are filled in from the ingredient database. No ticking or saving is needed.')}</p>${allergensHtml(r)}
+      <p class="allergen-product-note">${label('Product formulations and cross-contact can vary. Product labels take precedence over automatic estimates.')}</p>
+      <details><summary>${label('Ingredient allergens')}</summary><ul class="ingredient-allergen-list">
+      ${r.ingredients.map((ingredient, index) => {
+        const profile = RecipeMath.ingredientProfile(r, ingredient[0]);
+        return `<li data-ingredient="${index}"><strong>${esc(recipeText(cleanIngredientName(ingredient[0])))}</strong><span>${names(profile.allergens) || label(profile.known ? 'None identified in the ingredient database' : 'Ingredient not in database')}</span>${profile.possible.length ? `<span><strong>${label('Possible allergens')}:</strong> ${names(profile.possible)}</span>` : ''}${profile.productDependent ? `<small>${label('Varies by product')}</small>` : ''}${profile.saved ? `<small>${label('Saved declaration')}</small>` : ''}</li>`;
+      }).join('')}</ul></details></section>
+      <div class="canteen-settings-save"><small>${label('Save changes to the portion count.')}</small>${button('Save portions', 'data-save-settings')}</div>${(r.foundations || []).map(f => `<button class="btn" data-review-foundation="${esc(f.recipeId)}">${label('Base recipe')}: ${esc(recipeText(recipe(f.recipeId)?.title || f.recipeId))}</button>`).join('')}`, d => {
       const saveSettings = () => {
         const input = d.querySelector('[data-servings]');
         if (input.value && (!input.checkValidity() || Number(input.value) <= 0)) return toast(t('Declare the base serving count'));
+        const previousServings = r.servings;
         if (input.value) r.servings = Number(input.value); else delete r.servings;
-        r.ingredientAllergens = Object.create(null);
-        d.querySelectorAll('[data-ingredient]').forEach(row => { if (row.querySelector('[data-reviewed]').checked) r.ingredientAllergens[r.ingredients[Number(row.dataset.ingredient)][0]] = [...row.querySelectorAll('[data-allergen]:checked')].map(check => check.dataset.allergen); });
-        r.allergenAdjustments = { add: [...d.querySelectorAll('[data-allergen-add]:checked')].map(check => check.dataset.allergenAdd), remove: [...d.querySelectorAll('[data-allergen-remove]:checked')].map(check => check.dataset.allergenRemove) };
-        try { saveAll(); } catch { return toast(t('Could not save the plan on this device.')); } dialog.close(); commit(); renderDetail(); return true;
+        try { saveAll(); } catch {
+          if (previousServings === undefined) delete r.servings; else r.servings = previousServings;
+          toast(t('Could not save the plan on this device.')); return false;
+        }
+        dialog.close(); commit(); renderDetail(); return true;
       };
       d.querySelector('[data-save-settings]').onclick = saveSettings;
       d.querySelectorAll('[data-review-foundation]').forEach(b => b.onclick = () => { const next = recipe(b.dataset.reviewFoundation); if (next && saveSettings()) recipeSettings(next); });
     });
   }
+
   function dayNoteHtml(day) {
     return day.note ? `<p class="canteen-day-note"><strong>${label('Kitchen note')}:</strong> ${esc(day.note)}</p>` : '';
   }

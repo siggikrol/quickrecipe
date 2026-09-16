@@ -4,7 +4,7 @@ const path = require('path');
 const { JSDOM } = require('jsdom');
 
 const html    = fs.readFileSync('./index.html',   'utf8');
-const appJs   = fs.readFileSync('./i18n.js', 'utf8') + '\n' + fs.readFileSync('./recipe-calculations.js', 'utf8') + '\n' + fs.readFileSync('./shopping.js', 'utf8') + '\n' + fs.readFileSync('./app.js', 'utf8');
+const appJs   = fs.readFileSync('./i18n.js', 'utf8') + '\n' + fs.readFileSync('./ingredient-allergens.js', 'utf8') + '\n' + fs.readFileSync('./recipe-calculations.js', 'utf8') + '\n' + fs.readFileSync('./shopping.js', 'utf8') + '\n' + fs.readFileSync('./app.js', 'utf8');
 const recipeIndex = JSON.parse(fs.readFileSync('./recipes/index.json', 'utf8'));
 const recipeFiles = Object.fromEntries(recipeIndex.files.map(file => [file, JSON.parse(fs.readFileSync(path.join('recipes', file), 'utf8'))]));
 const recipes = JSON.stringify(Object.values(recipeFiles).flat());

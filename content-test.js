@@ -43,7 +43,7 @@ const dom = new JSDOM(fs.readFileSync('index.html', 'utf8'), {
 });
 const w = dom.window, d = w.document;
 const script = d.createElement('script');
-script.textContent = ['i18n.js', 'recipe-calculations.js', 'shopping.js', 'app.js'].map(f => fs.readFileSync(f, 'utf8')).join('\n');
+script.textContent = ['i18n.js', 'ingredient-allergens.js', 'recipe-calculations.js', 'shopping.js', 'app.js'].map(f => fs.readFileSync(f, 'utf8')).join('\n');
 d.body.append(script);
 const wait = () => new Promise(resolve => setTimeout(resolve, 80));
 const near = (actual, expected, label, tolerance = 1e-8) => assert(Math.abs(actual - expected) <= tolerance, `${label}: ${actual} != ${expected}`);

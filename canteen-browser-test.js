@@ -158,11 +158,10 @@ async function connect(url) {
     }
     await size(1280);
     await click('[data-tab="week"]'); await click('[data-settings]');
-    await click('[data-ingredient="0"] summary'); await click('[data-ingredient="0"] [data-no-allergens]');
-    assert(await evaluate(`document.querySelector('[data-ingredient="0"]').classList.contains("is-reviewed")`));
-    await click('[data-ingredient="1"] summary'); await click('[data-ingredient="1"] [data-allergen="milk"]');
-    await click('[data-ingredient="1"] summary');
-    assert(await evaluate(`document.querySelector('[data-ingredient="1"] summary').textContent.includes("Milk")`));
+    await click('.automatic-allergens details summary');
+    assert.equal(await evaluate(`document.querySelectorAll('.automatic-allergens input[type="checkbox"]').length`), 0);
+    assert(await evaluate(`document.querySelector('.automatic-allergens').textContent.includes('Automatic allergens')`));
+    assert(await evaluate(`document.querySelector('.ingredient-allergen-list').children.length > 0`));
     await shot('recipe-settings');
     await size(390); await shot('recipe-settings-mobile');
     assert(await evaluate('(()=>{const d=document.querySelector(".canteen-dialog");return d.scrollWidth<=d.clientWidth})()'), 'Allergen cards overflow on mobile');

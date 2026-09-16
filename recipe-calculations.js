@@ -1,5 +1,6 @@
 /* Shared calculation layer. Values stay unrounded until presentation. */
 const RecipeMath = (() => {
+  const ingredientDatabase = typeof IngredientAllergens !== 'undefined' ? IngredientAllergens : require('./ingredient-allergens');
   const units = { g: ['mass', 1, 'g'], kg: ['mass', 1000, 'g'], ml: ['volume', 1, 'ml'], L: ['volume', 1000, 'ml'], dl: ['volume', 100, 'ml'], pc: ['count', 1, 'pc'] };
   function nonnegative(value) { if (!Number.isFinite(value) || value < 0) throw new Error('Invalid quantity'); return value; }
   function measure(amount, unit) {
@@ -98,28 +99,41 @@ const RecipeMath = (() => {
   function isPlainWater(name) {
     return /^(?:(?:warm|lukewarm|boiling|cold|hot|extra) )?water(?: — gelatin| for adjusting yield|, (?:for (?:boiling|broth|glaze|sausage|steamer|stock|soaking and cooking peas)|just enough to cover the dates|plus extra as needed|to cover potatoes))?$/i.test(String(name).trim());
   }
-  function ingredientAllergens(recipe, name) {
-    return isPlainWater(name) ? [] : recipe.ingredientAllergens?.[name];
+  function ingredientProfile(recipe, name) {
+    if (isPlainWater(name)) return { allergens: [], possible: [], productDependent: false, known: true };
+    const saved = recipe.ingredientAllergens?.[name];
+    if (Array.isArray(saved)) return { allergens: [...saved], possible: [], productDependent: false, known: true, saved: true };
+    return ingredientDatabase.lookup(name);
   }
+  function ingredientAllergens(recipe, name) { return ingredientProfile(recipe, name).allergens; }
   function deriveRecipeAllergens(recipe, collection, visiting = new Set()) {
     if (!recipe) throw new Error('Recipe unavailable');
     if (visiting.has(recipe.id)) throw new Error('Circular recipe family');
     visiting.add(recipe.id);
-    const declared = new Set(); let complete = true;
+    const declared = new Set(), possible = new Set(), labelDependent = new Set(), unknown = new Set();
+    let complete = true;
     for (const ingredient of recipe.ingredients) {
-      const entries = ingredientAllergens(recipe, ingredient[0]);
-      if (!Array.isArray(entries)) { complete = false; continue; }
-      for (const id of entries) { if (Object.hasOwn(allergens, id)) declared.add(id); else complete = false; }
+      const profile = ingredientProfile(recipe, ingredient[0]);
+      if (!profile.known) unknown.add(ingredient[0]);
+      if (profile.productDependent) labelDependent.add(ingredient[0]);
+      complete &&= profile.known && !profile.productDependent;
+      for (const id of profile.allergens) { if (Object.hasOwn(allergens, id)) declared.add(id); else complete = false; }
+      for (const id of profile.possible) { if (Object.hasOwn(allergens, id)) possible.add(id); else complete = false; }
     }
     for (const foundation of recipe.foundations || []) {
       const nested = deriveRecipeAllergens(collection.find(r => r.id === foundation.recipeId), collection, visiting);
-      nested.allergens.forEach(id => declared.add(id)); complete &&= nested.complete;
+      nested.allergens.forEach(id => declared.add(id)); nested.possible.forEach(id => possible.add(id));
+      nested.labelDependent.forEach(name => labelDependent.add(name)); nested.unknown.forEach(name => unknown.add(name));
+      complete &&= nested.complete;
     }
-    for (const id of recipe.allergenAdjustments?.remove || []) { if (Object.hasOwn(allergens, id)) declared.delete(id); else complete = false; }
+    for (const id of recipe.allergenAdjustments?.remove || []) {
+      if (Object.hasOwn(allergens, id)) { declared.delete(id); possible.delete(id); } else complete = false;
+    }
     for (const id of recipe.allergenAdjustments?.add || []) { if (Object.hasOwn(allergens, id)) declared.add(id); else complete = false; }
     visiting.delete(recipe.id);
-    return { allergens: Object.keys(allergens).filter(id => declared.has(id)), complete };
+    return { allergens: Object.keys(allergens).filter(id => declared.has(id)), possible: Object.keys(allergens).filter(id => possible.has(id) && !declared.has(id)),
+      complete, labelDependent: [...labelDependent], unknown: [...unknown] };
   }
-  return { allergens, isPlainWater, ingredientAllergens, deriveRecipeAllergens, measure, foundationMultiplier, servingYield, scaleRecipe, normalizeIngredientQuantity, aggregateIngredients, expandFoundationRequirements, calculateRequirements, batches };
+  return { allergens, isPlainWater, ingredientProfile, ingredientAllergens, deriveRecipeAllergens, measure, foundationMultiplier, servingYield, scaleRecipe, normalizeIngredientQuantity, aggregateIngredients, expandFoundationRequirements, calculateRequirements, batches };
 })();
 if (typeof module !== 'undefined') module.exports = RecipeMath;

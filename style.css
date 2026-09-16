@@ -1058,3 +1058,11 @@ body.canteen-active { height: auto; min-height: 100%; overflow: auto; }
 body.canteen-loading #canteenArea { display: block !important; }
 .canteen-loading .brand::after { content: ' Pro'; }
 .canteen-loading .top-actions { visibility: hidden; }
+
+.automatic-allergens { border: 1px solid var(--line); border-radius: 10px; padding: 16px; min-width: 0; }
+.automatic-allergens > h3 { margin-top: 0; }
+.automatic-allergens summary { cursor: pointer; font-weight: 600; padding: 10px 0; }
+.ingredient-allergen-list { padding: 0; margin: 0; list-style: none; }
+.ingredient-allergen-list li { display: grid; gap: 5px; padding: 12px 0; border-top: 1px solid var(--line); overflow-wrap: anywhere; }
+.ingredient-allergen-list small, .allergen-product-note { color: var(--muted); font-size: 12px; }
+.print-document .allergen-product-note { color: #454545; font-size: 9pt; }
