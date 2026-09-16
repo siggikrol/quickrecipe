@@ -99,7 +99,14 @@ async function unlock(w, password = testPassword) {
   assert(allergenCard.classList.contains('is-reviewed'));
   assert.equal(allergenCard.querySelectorAll('[data-allergen]:checked').length, 0);
   assert(allergenCard.querySelector('summary').textContent.includes('No allergens identified'));
-  assert(d.querySelector('[data-review-progress]').textContent.startsWith('1 /'));
+  const waterRows = [...d.querySelectorAll('[data-ingredient]')].filter(row => row.querySelector('fieldset').disabled);
+  assert.equal(waterRows.length, 1);
+  assert(waterRows[0].querySelector('.canteen-ingredient-name').textContent.includes('Water'));
+  assert(waterRows[0].classList.contains('is-reviewed'));
+  assert(waterRows[0].querySelector('[data-reviewed]').checked);
+  assert.equal(waterRows[0].querySelectorAll('[data-allergen]:checked').length, 0);
+  assert(waterRows[0].querySelector('summary').textContent.includes('No allergens identified'));
+  assert(d.querySelector('[data-review-progress]').textContent.startsWith('2 /'));
   milk.checked = true; milk.dispatchEvent(new w.Event('change'));
 
   d.querySelector('[data-save-settings]').click();
@@ -107,7 +114,9 @@ async function unlock(w, password = testPassword) {
   d.querySelector('[data-settings]').click();
   assert(d.querySelector('[data-ingredient="0"]').classList.contains('is-reviewed'));
   assert(d.querySelector('[data-ingredient="0"] summary').textContent.includes('Milk'));
-  assert(!d.querySelector('[data-ingredient="1"]').classList.contains('is-reviewed'));
+  assert(d.querySelector('[data-ingredient="1"]').classList.contains('is-reviewed'));
+  assert(d.querySelector('[data-ingredient="1"] fieldset').disabled);
+  assert(!d.querySelector('[data-ingredient="2"]').classList.contains('is-reviewed'));
   d.querySelector('.canteen-dialog [data-close]').click();
 
   d.querySelector('[data-tab="requirements"]').click();

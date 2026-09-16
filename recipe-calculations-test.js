@@ -45,3 +45,15 @@ assert.equal(M.deriveRecipeAllergens(meal, collection).complete, false);
 assert.throws(() => M.deriveRecipeAllergens(circular, [circular]), /Circular/);
 assert.equal(Object.keys(M.allergens).length, 14);
 console.log('Allergens: ingredient declarations, nested inheritance, manual adjustments, unknown declarations and cycles passed.');
+
+for (const name of ['Water', 'Warm water', 'Boiling water — gelatin', 'Water, for stock', 'Extra water, for soaking and cooking peas']) {
+  const water = { id: 'water', ingredients: [[name, 100, 'ml']] };
+  assert.deepEqual(M.deriveRecipeAllergens(water, [water]), { allergens: [], complete: true });
+  water.ingredientAllergens = { [name]: ['milk'] };
+  assert.deepEqual(M.deriveRecipeAllergens(water, [water]), { allergens: [], complete: true });
+}
+for (const name of ['Rose water, or to taste', 'Water or milk', 'Water with milk', 'Salt, for boiling water']) {
+  assert.equal(M.isPlainWater(name), false);
+  assert.equal(M.deriveRecipeAllergens({ id: 'mixture', ingredients: [[name, 100, 'ml']] }, []).complete, false);
+}
+console.log('Plain water: automatic allergen review and mixed-ingredient exclusions passed.');

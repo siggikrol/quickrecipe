@@ -95,13 +95,19 @@ const RecipeMath = (() => {
     soybeans: 'Soybeans', milk: 'Milk', nuts: 'Nuts', celery: 'Celery', mustard: 'Mustard', sesame: 'Sesame',
     sulphites: 'Sulphur dioxide / sulphites', lupin: 'Lupin', molluscs: 'Molluscs'
   };
+  function isPlainWater(name) {
+    return /^(?:(?:warm|lukewarm|boiling|cold|hot|extra) )?water(?: — gelatin| for adjusting yield|, (?:for (?:boiling|broth|glaze|sausage|steamer|stock|soaking and cooking peas)|just enough to cover the dates|plus extra as needed|to cover potatoes))?$/i.test(String(name).trim());
+  }
+  function ingredientAllergens(recipe, name) {
+    return isPlainWater(name) ? [] : recipe.ingredientAllergens?.[name];
+  }
   function deriveRecipeAllergens(recipe, collection, visiting = new Set()) {
     if (!recipe) throw new Error('Recipe unavailable');
     if (visiting.has(recipe.id)) throw new Error('Circular recipe family');
     visiting.add(recipe.id);
     const declared = new Set(); let complete = true;
     for (const ingredient of recipe.ingredients) {
-      const entries = recipe.ingredientAllergens?.[ingredient[0]];
+      const entries = ingredientAllergens(recipe, ingredient[0]);
       if (!Array.isArray(entries)) { complete = false; continue; }
       for (const id of entries) { if (Object.hasOwn(allergens, id)) declared.add(id); else complete = false; }
     }
@@ -114,6 +120,6 @@ const RecipeMath = (() => {
     visiting.delete(recipe.id);
     return { allergens: Object.keys(allergens).filter(id => declared.has(id)), complete };
   }
-  return { allergens, deriveRecipeAllergens, measure, foundationMultiplier, servingYield, scaleRecipe, normalizeIngredientQuantity, aggregateIngredients, expandFoundationRequirements, calculateRequirements, batches };
+  return { allergens, isPlainWater, ingredientAllergens, deriveRecipeAllergens, measure, foundationMultiplier, servingYield, scaleRecipe, normalizeIngredientQuantity, aggregateIngredients, expandFoundationRequirements, calculateRequirements, batches };
 })();
 if (typeof module !== 'undefined') module.exports = RecipeMath;
