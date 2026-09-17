@@ -2337,5 +2337,1188 @@
       "Mix in yuzu and butter, then chill until firm.",
       "Roll into balls, dip in white chocolate and chill until set."
     ]
+  },
+  {
+    "id": "irish-whiskey-dark-chocolate-truffles",
+    "title": "Irish Whiskey Dark Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Dark chocolate",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Irish whiskey",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder, for coating",
+        30.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream until steaming and pour over chopped chocolate.",
+      "Leave 2 minutes, then stir until smooth.",
+      "Stir in butter and whiskey.",
+      "Chill until firm, roll into balls and coat in cocoa."
+    ]
+  },
+  {
+    "id": "bourbon-salted-caramel-truffles",
+    "title": "Bourbon & Salted Caramel Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Milk chocolate",
+        180.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        75.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Thick caramel or dulce de leche",
+        70.0,
+        "g",
+        "other"
+      ],
+      [
+        "Bourbon",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Flaky sea salt",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Dark chocolate, for coating",
+        180.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream and pour over milk chocolate. Stir smooth.",
+      "Mix in caramel, bourbon and salt.",
+      "Chill until firm enough to roll.",
+      "Form into balls, chill again, then dip in dark chocolate.",
+      "Finish with a tiny pinch of sea salt."
+    ]
+  },
+  {
+    "id": "scotch-whisky-espresso-truffles",
+    "title": "Scotch Whisky & Espresso Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Dark chocolate",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Instant espresso powder",
+        2.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Scotch whisky",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with espresso until steaming.",
+      "Pour over chocolate and leave 2 minutes.",
+      "Stir smooth, then add butter and whisky.",
+      "Chill until firm, roll into balls and coat in cocoa."
+    ]
+  },
+  {
+    "id": "dark-rum-vanilla-truffles",
+    "title": "Dark Rum & Vanilla Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Dark chocolate",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        100.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dark rum",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Vanilla extract",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder or chocolate sprinkles, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream and pour over chopped chocolate.",
+      "Stir smooth with butter and vanilla.",
+      "Stir in rum once the ganache has cooled slightly.",
+      "Chill until firm, roll and coat."
+    ]
+  },
+  {
+    "id": "spiced-rum-coconut-truffles",
+    "title": "Spiced Rum & Coconut Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Milk chocolate",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        85.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Spiced rum",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Desiccated coconut",
+        35.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cinnamon",
+        0.5,
+        "tsp",
+        "other"
+      ],
+      [
+        "Extra coconut, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with cinnamon and pour over chocolate.",
+      "Stir until smooth, then mix in rum and coconut.",
+      "Chill until firm.",
+      "Roll into balls and coat in coconut."
+    ]
+  },
+  {
+    "id": "coconut-rum-white-chocolate-truffles",
+    "title": "Coconut Rum White Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 16 truffles",
+    "ingredients": [
+      [
+        "White chocolate",
+        250.0,
+        "g",
+        "other"
+      ],
+      [
+        "Coconut cream",
+        65.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Coconut rum",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Desiccated coconut",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Extra coconut, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat coconut cream until steaming and pour over white chocolate.",
+      "Stir smooth, then mix in coconut rum and coconut.",
+      "Chill until firm enough to shape.",
+      "Roll into balls and coat in coconut."
+    ]
+  },
+  {
+    "id": "irish-cream-milk-chocolate-truffles",
+    "title": "Irish Cream Milk Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Milk chocolate",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Irish cream liqueur",
+        40.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Milk or dark chocolate, for coating",
+        180.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream and pour over milk chocolate.",
+      "Stir smooth with butter.",
+      "Stir in Irish cream liqueur.",
+      "Chill until firm, roll into balls and dip in chocolate."
+    ]
+  },
+  {
+    "id": "coffee-liqueur-espresso-truffles",
+    "title": "Coffee Liqueur Espresso Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Dark chocolate",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        90.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Coffee liqueur",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Instant espresso powder",
+        1.0,
+        "tsp",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with espresso powder.",
+      "Pour over chocolate and stir smooth.",
+      "Mix in butter and coffee liqueur.",
+      "Chill until firm, roll into balls and coat in cocoa."
+    ]
+  },
+  {
+    "id": "amaretto-almond-truffles",
+    "title": "Amaretto & Almond Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Dark chocolate",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        95.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Amaretto",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Almond extract, optional",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Toasted almonds, finely chopped",
+        50.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream and pour over chocolate.",
+      "Stir smooth, then add amaretto and almond extract.",
+      "Chill until firm.",
+      "Roll into balls and coat in toasted almonds."
+    ]
+  },
+  {
+    "id": "grand-marnier-orange-truffles",
+    "title": "Grand Marnier Orange Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Dark chocolate",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        95.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Orange liqueur",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Orange zest",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with orange zest and leave to infuse for 5 minutes.",
+      "Reheat and pour over chocolate.",
+      "Stir smooth with butter, then add orange liqueur.",
+      "Chill, roll into balls and coat in cocoa."
+    ]
+  },
+  {
+    "id": "cointreau-white-chocolate-orange-truffles",
+    "title": "Cointreau White Chocolate & Orange Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 16 truffles",
+    "ingredients": [
+      [
+        "White chocolate",
+        260.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        70.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Cointreau",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Orange zest",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "White chocolate, for coating",
+        180.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with orange zest until steaming.",
+      "Pour over white chocolate and stir smooth.",
+      "Mix in Cointreau and chill until firm.",
+      "Roll into balls, dip in white chocolate and chill until set."
+    ]
+  },
+  {
+    "id": "frangelico-hazelnut-truffles",
+    "title": "Frangelico Hazelnut Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Milk chocolate",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        90.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Hazelnut liqueur",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Roasted hazelnuts, finely chopped",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dark chocolate, for coating",
+        180.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream and pour over milk chocolate.",
+      "Stir smooth and add hazelnut liqueur.",
+      "Mix in half the hazelnuts and chill until firm.",
+      "Roll into balls, dip in dark chocolate and top with remaining hazelnuts."
+    ]
+  },
+  {
+    "id": "limoncello-white-chocolate-truffles",
+    "title": "Limoncello White Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 16 truffles",
+    "ingredients": [
+      [
+        "White chocolate",
+        270.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        65.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Limoncello",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Lemon zest",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "White chocolate, for coating",
+        180.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with lemon zest and pour over white chocolate.",
+      "Stir until smooth.",
+      "Stir in limoncello and chill until firm.",
+      "Roll into balls, dip in white chocolate and chill until set."
+    ]
+  },
+  {
+    "id": "chambord-raspberry-truffles",
+    "title": "Chambord Raspberry Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Dark chocolate",
+        230.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        90.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Raspberry liqueur",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Freeze-dried raspberry powder",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa or crushed freeze-dried raspberries, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream and pour over dark chocolate.",
+      "Stir smooth with butter.",
+      "Mix in raspberry liqueur and raspberry powder.",
+      "Chill until firm, roll and coat."
+    ]
+  },
+  {
+    "id": "cherry-liqueur-dark-chocolate-truffles",
+    "title": "Cherry Liqueur Dark Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Dark chocolate",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        90.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Cherry liqueur or kirsch",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dried cherries, very finely chopped",
+        40.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dark chocolate, for coating",
+        180.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream and pour over chocolate.",
+      "Stir smooth, then mix in cherry liqueur and chopped cherries.",
+      "Chill until firm and roll into balls.",
+      "Dip in dark chocolate and chill until set."
+    ]
+  },
+  {
+    "id": "port-dark-chocolate-truffles",
+    "title": "Port & Dark Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Dark chocolate",
+        230.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        85.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Ruby port",
+        35.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream and pour over chocolate.",
+      "Stir smooth with butter.",
+      "Add port and mix thoroughly.",
+      "Chill until firm, roll into balls and coat in cocoa."
+    ]
+  },
+  {
+    "id": "port-fig-dark-chocolate-truffles",
+    "title": "Port, Fig & Dark Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Dark chocolate",
+        230.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        80.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Ruby port",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dried figs, very finely chopped",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream and pour over dark chocolate.",
+      "Stir smooth with butter.",
+      "Mix in port and chopped figs.",
+      "Chill until firm, roll and coat in cocoa."
+    ]
+  },
+  {
+    "id": "red-wine-dark-chocolate-truffles",
+    "title": "Red Wine & Dark Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Dark chocolate",
+        230.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        75.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dry red wine",
+        60.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Caster sugar",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Simmer wine with sugar until reduced to about 30 ml; cool slightly.",
+      "Heat cream and pour over chocolate. Stir smooth with butter.",
+      "Mix in the wine reduction.",
+      "Chill until firm, roll into balls and coat in cocoa."
+    ]
+  },
+  {
+    "id": "prosecco-strawberry-white-chocolate-truffles",
+    "title": "Prosecco & Strawberry White Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 16 truffles",
+    "ingredients": [
+      [
+        "White chocolate",
+        280.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        55.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Prosecco",
+        70.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Freeze-dried strawberry powder",
+        20.0,
+        "g",
+        "other"
+      ],
+      [
+        "White chocolate, for coating",
+        180.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Simmer Prosecco until reduced to about 30 ml and let cool slightly.",
+      "Heat cream and pour over white chocolate. Stir smooth.",
+      "Mix in the Prosecco reduction and strawberry powder.",
+      "Chill until firm, roll into balls and dip in white chocolate."
+    ]
+  },
+  {
+    "id": "champagne-white-chocolate-truffles",
+    "title": "Champagne White Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 16 truffles",
+    "ingredients": [
+      [
+        "White chocolate",
+        280.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        55.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Champagne or dry sparkling wine",
+        70.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "White chocolate, for coating",
+        180.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Reduce the sparkling wine to about 30 ml over medium heat and cool slightly.",
+      "Heat cream and pour over white chocolate.",
+      "Stir smooth with butter, then mix in the wine reduction.",
+      "Chill until firm, roll into balls and dip in white chocolate."
+    ]
+  },
+  {
+    "id": "marsala-tiramisu-truffles",
+    "title": "Marsala Tiramisu Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Ladyfinger biscuits, finely crushed",
+        170.0,
+        "g",
+        "other"
+      ],
+      [
+        "Mascarpone",
+        120.0,
+        "g",
+        "other"
+      ],
+      [
+        "Strong espresso, cooled",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Marsala",
+        25.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Icing sugar",
+        25.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Mix biscuit crumbs, mascarpone, espresso, Marsala and icing sugar.",
+      "Chill for 30\u201345 minutes.",
+      "Roll into balls.",
+      "Coat generously in cocoa and refrigerate until firm."
+    ]
+  },
+  {
+    "id": "rum-raisin-dark-chocolate-truffles",
+    "title": "Rum & Raisin Dark Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Dark chocolate",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        90.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Dark rum",
+        35.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Raisins, finely chopped",
+        50.0,
+        "g",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Soak raisins in rum for 20\u201330 minutes.",
+      "Heat cream and pour over chocolate. Stir smooth with butter.",
+      "Mix in the rum-soaked raisins and any remaining rum.",
+      "Chill until firm, roll and coat in cocoa."
+    ]
+  },
+  {
+    "id": "whiskey-orange-dark-chocolate-truffles",
+    "title": "Whiskey & Orange Dark Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Dark chocolate",
+        220.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        90.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Whiskey",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Orange zest",
+        1.0,
+        "pc",
+        "other"
+      ],
+      [
+        "Butter",
+        15.0,
+        "g",
+        "other"
+      ],
+      [
+        "Cocoa powder, for coating",
+        null,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream with orange zest and steep for 5 minutes.",
+      "Pour over chocolate and stir smooth with butter.",
+      "Mix in whiskey.",
+      "Chill until firm, roll into balls and coat in cocoa."
+    ]
+  },
+  {
+    "id": "rum-salted-caramel-milk-chocolate-truffles",
+    "title": "Rum & Salted Caramel Milk Chocolate Truffles",
+    "category": "Truffles",
+    "section": "desserts",
+    "desc": "Boozy ganache truffles with a smooth alcoholic kick.",
+    "yield": "About 18 truffles",
+    "ingredients": [
+      [
+        "Milk chocolate",
+        200.0,
+        "g",
+        "other"
+      ],
+      [
+        "Double cream",
+        70.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Thick caramel",
+        70.0,
+        "g",
+        "other"
+      ],
+      [
+        "Dark rum",
+        30.0,
+        "ml",
+        "other"
+      ],
+      [
+        "Flaky sea salt",
+        0.25,
+        "tsp",
+        "other"
+      ],
+      [
+        "Dark chocolate, for coating",
+        180.0,
+        "g",
+        "other"
+      ]
+    ],
+    "steps": [
+      "Heat cream and pour over milk chocolate. Stir smooth.",
+      "Mix in caramel, rum and salt.",
+      "Chill until firm enough to shape.",
+      "Roll into balls, dip in dark chocolate and chill until set."
+    ]
   }
 ]

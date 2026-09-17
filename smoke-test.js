@@ -114,8 +114,8 @@ const wait = (ms = 300) => new Promise(resolve => setTimeout(resolve, ms));
   }
   document.querySelector('[data-cat="Truffles"]').click();
   const truffles = JSON.parse(recipes).filter(r => r.category === 'Truffles');
-  assert.equal(truffles.length, 44);
-  assert.equal(document.querySelectorAll('.card').length, 44);
+  assert.equal(truffles.length, 68);
+  assert.equal(document.querySelectorAll('.card').length, 68);
   for (const recipe of truffles) {
     document.querySelector(`[data-id="${recipe.id}"]`).click();
     assert.equal(document.querySelector('#detail h1').textContent, recipe.title);
